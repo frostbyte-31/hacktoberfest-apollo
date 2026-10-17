@@ -30,8 +30,12 @@
 - [x] Executed active upstream yaw-model component sign/sensor checks, explicitly not an AGC-driven loop
 - [x] Delivered docs/PHASE4_CONTROL_PATH_VALIDATION.md and docs/phase4-evidence/; six evidence checks pass
 
-## Minimum next control prerequisite (not authorized follow-on work)
-- Establish a synchronized Luminary099-compatible IMU startup fixture that clears software unusable status without direct readiness writes, then validate actual RCS/CDU feedback and disconnect controls.
+## Phase 5 (in progress — IMU readiness and autopilot initialization)
+- [ ] Preserve Phase 1–4 evidence and reproduce the Phase 4 failure
+- [ ] Trace readiness/alignment requirements and capture the first failed condition
+- [ ] Test only source-justified interface corrections, or document the minimum missing hardware prerequisite
+- [ ] Assess authentic autopilot acceptance and RCS feedback only if readiness is established
+- [ ] Deliver docs/PHASE5_IMU_READINESS.md and docs/phase5-evidence/, with execution checks and preservation verification
 
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
