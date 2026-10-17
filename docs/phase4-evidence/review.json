@@ -1,0 +1,775 @@
+{
+  "status": "VERIFIED",
+  "prior_files_fingerprinted": 78,
+  "phase3_preservation_mismatches": [],
+  "phase_inventory": [
+    {
+      "phase": 1,
+      "files": 13,
+      "manifests": [
+        "docs/phase1-evidence/07_sha256.txt"
+      ]
+    },
+    {
+      "phase": 2,
+      "files": 27,
+      "manifests": [
+        "docs/phase2-evidence/49_sha256.txt",
+        "docs/phase2-evidence/50_source_hashes.txt",
+        "docs/phase2-evidence/51_phase1_hashes.txt"
+      ]
+    },
+    {
+      "phase": 3,
+      "files": 35,
+      "manifests": [
+        "docs/phase3-evidence/prior_hashes.json",
+        "docs/phase3-evidence/sha256.json"
+      ]
+    }
+  ],
+  "phase3_results": {
+    "positive": {
+      "sha256": "8febc5d9d2f9a307bdfef62607abab2ace1ed52a66c2f26a6338442a50a32ef9",
+      "events": {
+        "initial": 1,
+        "output": 13185,
+        "sample": 800,
+        "crew": 28,
+        "plant": 10,
+        "sensor": 912,
+        "checkpoint": 5
+      },
+      "final": {
+        "ev": "sample",
+        "cycle": 8000000,
+        "position_counts": [
+          912,
+          0,
+          0
+        ],
+        "sent": [
+          912,
+          0,
+          0
+        ],
+        "pending": [
+          0,
+          0,
+          0
+        ],
+        "cdu": [
+          912,
+          0,
+          0
+        ],
+        "chan12": 40,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      "checkpoints": [
+        {
+          "ev": "checkpoint",
+          "cycle": 1243824,
+          "bank": 7,
+          "z": 1595,
+          "a": 2,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243841,
+          "bank": 7,
+          "z": 1595,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243858,
+          "bank": 7,
+          "z": 1595,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243872,
+          "bank": 7,
+          "z": 1608,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243886,
+          "bank": 7,
+          "z": 1950,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        }
+      ],
+      "first_plant": {
+        "ev": "plant",
+        "cycle": 1013503,
+        "axis": 0,
+        "drive_pulses": 24,
+        "position_counts": 96,
+        "angle_degrees": 1.054752,
+        "enable12": 40
+      },
+      "last_plant": {
+        "ev": "plant",
+        "cycle": 1071094,
+        "axis": 0,
+        "drive_pulses": 12,
+        "position_counts": 912,
+        "angle_degrees": 10.020144,
+        "enable12": 40
+      }
+    },
+    "repeat": {
+      "sha256": "8febc5d9d2f9a307bdfef62607abab2ace1ed52a66c2f26a6338442a50a32ef9",
+      "events": {
+        "initial": 1,
+        "output": 13185,
+        "sample": 800,
+        "crew": 28,
+        "plant": 10,
+        "sensor": 912,
+        "checkpoint": 5
+      },
+      "final": {
+        "ev": "sample",
+        "cycle": 8000000,
+        "position_counts": [
+          912,
+          0,
+          0
+        ],
+        "sent": [
+          912,
+          0,
+          0
+        ],
+        "pending": [
+          0,
+          0,
+          0
+        ],
+        "cdu": [
+          912,
+          0,
+          0
+        ],
+        "chan12": 40,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      "checkpoints": [
+        {
+          "ev": "checkpoint",
+          "cycle": 1243824,
+          "bank": 7,
+          "z": 1595,
+          "a": 2,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243841,
+          "bank": 7,
+          "z": 1595,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243858,
+          "bank": 7,
+          "z": 1595,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243872,
+          "bank": 7,
+          "z": 1608,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243886,
+          "bank": 7,
+          "z": 1950,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        }
+      ],
+      "first_plant": {
+        "ev": "plant",
+        "cycle": 1013503,
+        "axis": 0,
+        "drive_pulses": 24,
+        "position_counts": 96,
+        "angle_degrees": 1.054752,
+        "enable12": 40
+      },
+      "last_plant": {
+        "ev": "plant",
+        "cycle": 1071094,
+        "axis": 0,
+        "drive_pulses": 12,
+        "position_counts": 912,
+        "angle_degrees": 10.020144,
+        "enable12": 40
+      }
+    },
+    "open": {
+      "sha256": "4c990eb0e2803331521fde77dd57739f0548f7be8ca86349ecb142fc0bed717f",
+      "events": {
+        "initial": 1,
+        "output": 13189,
+        "sample": 800,
+        "crew": 28,
+        "plant": 10,
+        "checkpoint": 5
+      },
+      "final": {
+        "ev": "sample",
+        "cycle": 8000000,
+        "position_counts": [
+          912,
+          0,
+          0
+        ],
+        "sent": [
+          0,
+          0,
+          0
+        ],
+        "pending": [
+          912,
+          0,
+          0
+        ],
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "chan12": 40,
+        "failreg": [
+          583,
+          137,
+          0
+        ]
+      },
+      "checkpoints": [
+        {
+          "ev": "checkpoint",
+          "cycle": 1243825,
+          "bank": 7,
+          "z": 1595,
+          "a": 2,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243842,
+          "bank": 7,
+          "z": 1595,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243859,
+          "bank": 7,
+          "z": 1595,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243873,
+          "bank": 7,
+          "z": 1608,
+          "a": 909,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243915,
+          "bank": 7,
+          "z": 1951,
+          "a": 1612,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        }
+      ],
+      "first_plant": {
+        "ev": "plant",
+        "cycle": 1013503,
+        "axis": 0,
+        "drive_pulses": 24,
+        "position_counts": 96,
+        "angle_degrees": 1.054752,
+        "enable12": 40
+      },
+      "last_plant": {
+        "ev": "plant",
+        "cycle": 1071095,
+        "axis": 0,
+        "drive_pulses": 12,
+        "position_counts": 912,
+        "angle_degrees": 10.020144,
+        "enable12": 40
+      }
+    },
+    "blocked": {
+      "sha256": "8e3c54fb8632cb6e97f62d702bae82a396ed48c02d8746ba858946de5753cf2a",
+      "events": {
+        "initial": 1,
+        "output": 13189,
+        "sample": 800,
+        "crew": 28,
+        "blocked": 10,
+        "checkpoint": 5
+      },
+      "final": {
+        "ev": "sample",
+        "cycle": 8000000,
+        "position_counts": [
+          0,
+          0,
+          0
+        ],
+        "sent": [
+          0,
+          0,
+          0
+        ],
+        "pending": [
+          0,
+          0,
+          0
+        ],
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "chan12": 40,
+        "failreg": [
+          583,
+          137,
+          0
+        ]
+      },
+      "checkpoints": [
+        {
+          "ev": "checkpoint",
+          "cycle": 1243825,
+          "bank": 7,
+          "z": 1595,
+          "a": 2,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243842,
+          "bank": 7,
+          "z": 1595,
+          "a": 1,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243859,
+          "bank": 7,
+          "z": 1595,
+          "a": 0,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243873,
+          "bank": 7,
+          "z": 1608,
+          "a": 909,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243915,
+          "bank": 7,
+          "z": 1951,
+          "a": 1612,
+          "target": [
+            910,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        }
+      ],
+      "first_plant": null,
+      "last_plant": null
+    },
+    "negative": {
+      "sha256": "0fcb584da8e1489cc263c14672ec25187d3232ddf48efc032c4c43606213835e",
+      "events": {
+        "initial": 1,
+        "output": 13185,
+        "sample": 800,
+        "crew": 28,
+        "plant": 10,
+        "sensor": 912,
+        "checkpoint": 5
+      },
+      "final": {
+        "ev": "sample",
+        "cycle": 8000000,
+        "position_counts": [
+          -912,
+          0,
+          0
+        ],
+        "sent": [
+          -912,
+          0,
+          0
+        ],
+        "pending": [
+          0,
+          0,
+          0
+        ],
+        "cdu": [
+          31856,
+          0,
+          0
+        ],
+        "chan12": 40,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      "checkpoints": [
+        {
+          "ev": "checkpoint",
+          "cycle": 1242971,
+          "bank": 7,
+          "z": 1595,
+          "a": 2,
+          "target": [
+            31858,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1242988,
+          "bank": 7,
+          "z": 1595,
+          "a": 1,
+          "target": [
+            31858,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243005,
+          "bank": 7,
+          "z": 1595,
+          "a": 0,
+          "target": [
+            31858,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243019,
+          "bank": 7,
+          "z": 1608,
+          "a": 1,
+          "target": [
+            31858,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        },
+        {
+          "ev": "checkpoint",
+          "cycle": 1243033,
+          "bank": 7,
+          "z": 1950,
+          "a": 0,
+          "target": [
+            31858,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "imucadr": 27795
+        }
+      ],
+      "first_plant": {
+        "ev": "plant",
+        "cycle": 1012652,
+        "axis": 0,
+        "drive_pulses": -24,
+        "position_counts": -96,
+        "angle_degrees": -1.054752,
+        "enable12": 40
+      },
+      "last_plant": {
+        "ev": "plant",
+        "cycle": 1070242,
+        "axis": 0,
+        "drive_pulses": -12,
+        "position_counts": -912,
+        "angle_degrees": -10.020144,
+        "enable12": 40
+      }
+    }
+  }
+}
