@@ -1,0 +1,95 @@
+{
+  "sequences": {
+    "P63_entry": {
+      "bank_octal": "32",
+      "z_octal": "2776",
+      "words_octal": [
+        "05353",
+        "04024",
+        "04616",
+        "11254",
+        "33253",
+        "55455"
+      ]
+    },
+    "R02_readiness": {
+      "bank_octal": "04",
+      "z_octal": "3254",
+      "words_octal": [
+        "34737",
+        "70077",
+        "10000",
+        "03270",
+        "31302",
+        "74743",
+        "00006",
+        "13265",
+        "44750",
+        "63273",
+        "05744",
+        "06001",
+        "05504",
+        "00007",
+        "14631",
+        "00220"
+      ]
+    },
+    "engine_off_throttle_reset": {
+      "bank_octal": "36",
+      "z_octal": "3555",
+      "words_octal": [
+        "40103",
+        "74745",
+        "26103",
+        "02653",
+        "00006",
+        "30025",
+        "53345",
+        "44745",
+        "70101",
+        "54101",
+        "44355",
+        "00006",
+        "02011",
+        "64736",
+        "00006",
+        "01011",
+        "40111",
+        "74736",
+        "26111",
+        "44737",
+        "54055",
+        "34750",
+        "00006",
+        "05014",
+        "04707"
+      ]
+    },
+    "THROTTLE_entry": {
+      "bank_octal": "31",
+      "z_octal": "2216",
+      "words_octal": [
+        "31246"
+      ]
+    },
+    "DOIT_throttle_guidance": {
+      "bank_octal": "31",
+      "z_octal": "2312",
+      "words_octal": [
+        "31612",
+        "61606",
+        "55614",
+        "54055",
+        "34750",
+        "00006",
+        "05014"
+      ]
+    }
+  },
+  "resolution": "yaYUL listing from unchanged pinned source, compiled rope independently byte-identical to Phase1 rope; addresses are observations only",
+  "state_base_octal": "0074",
+  "flagword3_octal": "0077",
+  "refsm_bit_octal": "10000",
+  "thrust_octal": "0055",
+  "modreg_encoding": "integer 63 is P63, octal00077; channel/address/bit prose is octal"
+}

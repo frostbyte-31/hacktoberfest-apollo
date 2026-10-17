@@ -1,0 +1,224 @@
+=== original yaYUL MAIN.agc.lst physical lines33340-33366 ===
+034140,000042:                                                                                          	#       P63: THE LUNAR LANDING, BRAKING PHASE
+034141,000043:                                                                                          	#       ****************************************
+034142,000044: 
+034143,000045: 32,2776                                           COUNT*   $$/P63                        	#
+034144,000046: 
+034145,000047: 32,2776           05353        P63LM              TC       PHASCHNG                      	#
+034146,000048: 32,2777           04024                           OCT      04024                         	#
+034147,000049: 
+034148,000050: 32,3000           04616                           TC       BANKCALL                      	# DO IMU STATUS CHECK ROUTINE R02
+034149,000051: 32,3001           11254                           CADR     R02BOTH                       	#
+034150,000052: 
+034151,000053: 32,3002           33253                           CAF      P63ADRES                      	# INITIALIZE WHICH FOR BURNBABY
+034152,000054: 32,3003           55455                           TS       WHICH                         	#
+034153,000055: 
+034154,000056: 32,3004           32000                           CAF      DPSTHRSH                      	# INITIALIZE DVMON
+034155,000057: 32,3005           55251                           TS       DVTHRUSH                      	#
+034156,000058: 32,3006           34751                           CAF      FOUR                          	#
+034157,000059: 32,3007           55515                           TS       DVCNTR                        	#
+034158,000060: 
+034159,000061: 32,3010           44753                           CS       ONE                           	# INITIALIZE WCHPHASE AND FLPASSO
+034160,000062: 32,3011           55351                           TS       WCHPHASE                      	#
+034161,000063: 
+034162,000064: 32,3012           34755                           CA       ZERO                          	#
+034163,000065: 32,3013           55623                           TS       FLPASS0                       	#
+034164,000066: 
+034165,000067: 32,3014           44736                           CS       BIT14                         	#
+034166,000068: 32,3015           00006                           EXTEND                                 	#
+
+=== original yaYUL MAIN.agc.lst physical lines55827-55881 ===
+057155,000911: 
+057156,000912: 34,3775                                           BANK     34                            	#
+057157,000913: 04,2000                                           SETLOC   R02                           	#
+057158,000914: 04,2000                                           BANK                                   	#
+057159,000915: 04,3253                                           COUNT*   $$/R02                        	#
+057160,000916: 04,3253           00063        DEC51              DEC      51         B-14               	#
+057161,000917: 04,3254           34737        R02BOTH            CAF      REFSMBIT                      	#
+057162,000918: 04,3255           70077                           MASK     FLAGWRD3                      	#
+057163,000919: 04,3256           10000                           CCS      A                             	#
+057164,000920: 04,3257           03270                           TC       R02ZERO                       	# ZERO IMUS
+057165,000921: 
+057166,000922: 04,3260           31302                           CA       IMODES30                      	#
+057167,000923: 04,3261           74743                           MASK     BIT9                          	# IS ISS INITIALIZED
+057168,000924: 04,3262           00006                           EXTEND                                 	#
+057169,000925: 04,3263           13265                           BZF      +2                            	#
+057170,000926: 04,3264           44750                           CS       BIT4                          	# SEND IMU ALARM CODE 210
+057171,000927: 04,3265           63273                           AD       OCT220                        	# SEND REFSMM ALARM
+057172,000928: 04,3266           05744                           TC       VARALARM                      	#
+057173,000929: 
+057174,000930: 04,3267           06001                           TC       GOTOPOOH                      	#
+057175,000931: 
+057176,000932: 04,3270           05504        R02ZERO            TC       UPFLAG                        	#
+057178,000934: 04,3271           00007                           ADRES    IMUSE                         	#
+057179,000935: 04,3272           14631                           TCF      SWRETURN                      	#
+057180,000936: 04,3273           00220        OCT220             OCT      220                           	#
+057181,000937: 
+057183,000939:                                                                                          	# PROGRAM DESCRIPTION           P06             10 FEB 67
+057184,000940: 
+057185,000941:                                                                                          	# TRANSFER THE ISS/CMC FROM THE OPERATE TO THE STANDBY CONDITION.
+057186,000942: 
+057187,000943:                                                                                          	# THE NORMAL CONDITION OF READINESS OF THE GNCS WHEN NOT IN USE IS STANDBY.  IN THIS CONDITION THE IMU
+057188,000944:                                                                                          	# HEATER POWER IS ON.  THE IMU OPERATE POWER IS OFF.  THE COMPUTER POWER IS ON.  THE OPTICS POWER IS OFF.  THE
+057189,000945:                                                                                          	# CMC STANDBY ON THE MAIN AND LEB DISKYS IS ON.
+057190,000946: 
+057191,000947:                                                                                          	# CALLING SEQUENCE:
+057192,000948:                                                                                          	#       ASTRONAUT REQUEST THROUGH DSKY  V37E 06E.
+057193,000949: 
+057194,000950:                                                                                          	# SUBROUTINES CALLED:
+057195,000951:                                                                                          	#       GOPERF1
+057196,000952:                                                                                          	#       BANKCALL
+057197,000953:                                                                                          	#       FLAGDOWN
+057198,000954: 
+057200,000956:                                                                                          	# PRESTAND PREPARES FOR STANDBY BY SNAPSHOTTING THE SCALER AND TIME1 TIME2
+057201,000957:                                                                                          	# THE LOW 5 BITS OF THE SCALER ARE INSPECTED TO INSURE COMPATABILITY
+057202,000958:                                                                                          	# BETWEEN THE SCALER READING AND THE TIME1 TIME2 READING.
+057203,000959: 
+057204,000960: 37,2000                                           SETLOC   P05P06                        	#
+057205,000961: 37,2000                                           BANK                                   	#
+057206,000962: 
+057207,000963: 37,3655     0314                                  EBANK=   TIME2SAV                      	#
+057208,000964: 37,3655                                           COUNT*   $$/P06                        	#
+057209,000965: 
+057210,000966: 37,3655           05504        P06                TC       UPFLAG                        	# SET NODOV37 BIT
+057211,000967: 37,3656           00054                           ADRES    NODOFLAG                      	#
+057212,000968: 
+
+=== original yaYUL MAIN.agc.lst physical lines32300-32339 ===
+033076,000461: 36,3551           34753        ENGINOF2           CAF      BIT1                          	#
+033077,000462: 36,3552           05203                           TC       WAITLIST                      	#
+033078,000463: 36,3553  E6,1422                                  EBANK=   OMEGAQ                        	#
+033079,000464: 36,3553           03606 74066                     2CADR    COASTSET                      	#
+033080,000465: 
+033081,000466: 36,3555           40103        ENGINOF1           CS       FLAGWRD7                      	# SET THE IDLE BIT.
+033082,000467: 36,3556           74745                           MASK     IDLEFBIT                      	#
+033083,000468: 36,3557           26103                           ADS      FLAGWRD7                      	#
+033084,000469: 
+033085,000470: 36,3560           02653                           TC       NOULLAGE                      	#
+033086,000471: 
+033087,000472: 36,3561           00006        ENGINOF4           EXTEND                                 	#
+033088,000473: 36,3562           30025                           DCA      TIME2                         	#
+033089,000474: 36,3563           53345                           DXCH     TEVENT                        	#
+033090,000475: 
+033091,000476: 36,3564           44745        ENGINOF3           CS       ENGONBIT                      	# INSURE ENGONFLG IS CLEAR.
+033092,000477: 36,3565           70101                           MASK     FLAGWRD5                      	#
+033093,000478: 36,3566           54101                           TS       FLAGWRD5                      	#
+033094,000479: 36,3567           44355                           CS       PRIO30                        	# ENGINOF3 IS USED AS A PRE-ENGINE ARM
+033095,000480: 36,3570           00006                           EXTEND                                 	# SUBROUTINE.
+033096,000481: 36,3571           02011                           RAND     DSALMOUT                      	#
+033097,000482: 36,3572           64736                           AD       PRIO20                        	# TURN OFF THE ENGINE - DPS OR APS
+033098,000483: 36,3573           00006                           EXTEND                                 	#
+033099,000484: 36,3574           01011                           WRITE    DSALMOUT                      	#
+033100,000485: 
+033101,000486: 36,3575           40111                           CS       DAPBOOLS                      	# TURN OFF TRIM GIMBAL
+033102,000487: 36,3576           74736                           MASK     USEQRJTS                      	#
+033103,000488: 36,3577           26111                           ADS      DAPBOOLS                      	#
+033104,000489: 
+033105,000490: 36,3600           44737                           CS       HIRTHROT                      	# ZERO AUTO-THROTTLE WHENEVER THE ENGINE
+033106,000491: 36,3601           54055                           TS       THRUST                        	# IS TURNED OFF.
+033107,000492: 36,3602           34750                           CAF      BIT4                          	# THE HARDWARE DOES SO ONLY WHEN THE
+033108,000493: 36,3603           00006                           EXTEND                                 	# ENGINE IS DISARMED.
+033109,000494: 36,3604           05014                           WOR      CHAN14                        	#
+033110,000495: 
+033111,000496: 36,3605           04707                           TC       ISWRETRN                      	#
+033113,000498: 36,3606           04674        COASTSET           TC       IBNKCALL                      	# DO DAP COASTING INITIALIZATION
+033114,000499: 36,3607           40204                           CADR     ALLCOAST                      	#
+033115,000500: 36,3610           05261                           TC       TASKOVER                      	#
+033116,000501: 
+
+=== original yaYUL MAIN.agc.lst physical lines33670-33680 ===
+034477,000037: 31,2216  E7,1612                                  EBANK=   PIF                           	#
+034478,000038: 31,2216                                           COUNT*   $$/THROT                      	#
+034479,000039: 
+034480,000040:                                                                                          	# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+034481,000041:                                                                                          	# HERE FC, DESIRED THRUST, AND FP, PRESENT THRUST, UNWEIGHTED, ARE COMPUTED.
+034482,000042: 
+034483,000043: 31,2216           31246        THROTTLE           CA       ABDELV                        	# COMPUTE PRESENT ACCELERATION IN UNITS OF
+034484,000044: 31,2217           00006                           EXTEND                                 	# 2(-4) M/CS/CS, SAVING SERVICER TROUBLE
+034485,000045: 31,2220           72417                           MP       /AF/CNST                      	#
+034486,000046: 31,2221           00006                 +3        EXTEND                                 	#
+034487,000047: 31,2222           23607                           QXCH     RTNHOLD                       	#
+
+=== original yaYUL MAIN.agc.lst physical lines33758-33770 ===
+034567,000127: 31,2310           41470                           DCS      FP                            	#
+034568,000128: 31,2311           21613                           DAS      PIF                           	# PIF = FC - FP, NEVER EQUALS +0
+034569,000129: 
+034570,000130: 31,2312           31612        DOIT               CA       PIF                           	#
+034571,000131: 31,2313           61606                           AD       PIFPSET                       	# ADD IN PIFPSET, WITHOUT CHANGING PIF
+034572,000132: 31,2314           55614                           TS       PSEUDO55                      	#
+034573,000133: 31,2315           54055                           TS       THRUST                        	#
+034574,000134: 31,2316           34750                           CAF      BIT4                          	#
+034575,000135: 31,2317           00006                           EXTEND                                 	#
+034576,000136: 31,2320           05014                           WOR      CHAN14                        	#
+034577,000137: 31,2321           30025                           CA       TIME1                         	#
+034578,000138: 31,2322           55617                           TS       TTHROT                        	#
+034579,000139: 
+
+=== original yaYUL MAIN.agc.lst physical lines1589-1597 ===
+001621,000114: 36,2000                                           SETLOC   P40S                          	#
+001622,000115: 36,2000                                           BANK                                   	#
+001623,000116: 36,2020                                           COUNT*   $$/P40                        	#
+001624,000117: 
+001625,000118: 36,2020           00030        THRESH1            DEC      24         B-14               	#
+001626,000119: 36,2021           00014        THRESH3            DEC      12         B-14               	#
+001627,000120: 36,2022     4737               HIRTHROT           =        BIT13                         	#
+001628,000121: 
+001629,000122:    6000                                           SETLOC   FFTAG5                        	#
+
+=== original yaYUL MAIN.agc.lst physical lines2698-2720 ===
+002758,000458: 
+002759,000459:                                                                                          	# BIT 1 FLAG 2 (S)
+002760,000460: 26,2022                        NODOFLAG           =        044D                          	#       V37 NOT PERMITTED       V37 PERMITTED
+002761,000461: 26,2022     4753               NODOBIT            =        BIT1                          	#
+002762,000462: 
+002763,000463: 26,2022     0077               FLAGWRD3           =        STATE      +3                 	# (045-059)
+002764,000464: 
+002765,000465:                                                                                          	#       (SET)                   (RESET)
+002766,000466: 
+002767,000467:                                                                                          	# BIT 15 FLAG 3                 
+002768,000468:                                                                                          	#               =       045D
+002769,000469: 
+002770,000470:                                                                                          	# BIT 14 FLAG 3 (S)
+002771,000471: 26,2022                        GLOKFAIL           =        046D                          	#       GIMBAL LOCK HAS         NOT IN GIMBAL LOCK
+002772,000472: 26,2022     4736               GLOKFBIT           =        BIT14                         	#       OCCURRED
+002773,000473: 
+002774,000474:                                                                                          	# BIT 13 FLAG 3 *** PROTECTED FROM FRESH START ***
+002775,000475: 26,2022                        REFSMFLG           =        047D                          	#       REFSMMAT GOOD           REFSMMAT NO GOOD
+002776,000476: 26,2022     4737               REFSMBIT           =        BIT13                         	#
+002777,000477: 
+002778,000478:                                                                                          	# BIT 12 FLAG 3 (S)
+002779,000479: 26,2022                        LUNAFLAG           =        048D                          	#       LUNAR LAT-LONG          EARTH LAT-LONG
+002780,000480: 26,2022     4740               LUNABIT            =        BIT12                         	#
+
+=== original yaYUL MAIN.agc.lst physical lines8997-9027 ===
+009204,000647:    6000                                           SETLOC   FFTAG5                        	#
+009205,000648:    6000                                           BANK                                   	#
+009206,000649: 
+009207,000650:    6001                                           COUNT*   $$/P00                        	#
+009208,000651:    6001           34764        GOTOPOOH           CAF      OCT33                         	# 4.33 SPOT FOR GOPOOFIX
+009209,000652:    6002           54001                           TS       L                             	#
+009210,000653:    6003           40000                           COM                                    	#
+009211,000654:    6004           52761                           DXCH     -PHASE4                       	#
+009212,000655: 
+009213,000656:    6005           04635                           TC       POSTJUMP                      	#
+009214,000657:    6006           10024                           CADR     GOPOOFIX                      	#
+009215,000658:    6007           00024        OCT24              MM       20         B-14               	#
+009216,000659:    6010           00031        OCT31              MM       25         B-14               	#
+009217,000660: 
+009218,000661: 20,2004                                           BANK     20                            	#
+009219,000662: 04,2000                                           SETLOC   VERB37                        	#
+009220,000663: 04,2000                                           BANK                                   	#
+009221,000664: 
+009222,000665: 04,2024                                           COUNT*   $$/P00                        	# VERB 37 AND P00 IN BANK 4.
+009223,000666: 04,2024           05516        GOPOOFIX           TC       DOWNFLAG                      	# ALLOW X-AXIS OVERRIDE
+009224,000667: 04,2025           00311                           ADRES    XOVINFLG                      	#
+009225,000668: 
+009226,000669: 04,2026           05516                           TC       DOWNFLAG                      	# INSURE THAT ULLAGE IS OFF
+009227,000670: 04,2027           00314                           ADRES    ULLAGFLG                      	#
+009229,000672: 04,2030           05476                           TC       CLEARMRK   +2                 	# RELEASE MARK DISPLAY SYSTEM.
+009230,000673: 04,2031           32037                           CAF      V37N99                        	#
+009231,000674: 04,2032           04616                           TC       BANKCALL                      	#
+009232,000675: 04,2033           20476                           CADR     GOFLASH                       	#
+009233,000676: 04,2034           12031                           TCF      -3                            	#
+009234,000677: 04,2035           12031                           TCF      -4                            	#
+009235,000678: 04,2036           12031                           TCF      -5                            	#

@@ -1,0 +1,3062 @@
+{
+  "checks": {
+    "original_phase5_schedule_byte_identical": true,
+    "only_added_input_is_v37e63e": true,
+    "startup_trace_unchanged_before_addition": true,
+    "fresh_phase5_probe_matches_retained_operate_trace": true,
+    "exact_fresh_process_replay": true,
+    "no_external_ram_writes": true,
+    "no_counter_operation_inputs": true,
+    "p63_selected_by_original_program": true,
+    "refsm_flag_clear_at_actual_readiness_check": true,
+    "actual_r02_branch_builds_00220": true,
+    "new_alarm_preserves_legacy_01520": true,
+    "p63_cannot_return_from_r02_into_landing_setup": true,
+    "throttle_reset_is_engine_off_before_p63": false,
+    "no_guidance_throttle_routine_executed": true,
+    "no_engine_on_signal_after_p63_request": true
+  },
+  "all_pass": false,
+  "baseline": {
+    "raw_sha256": "61a99f67031d5ad166397eea969867cbf98ca0861a41b22fb912c7bfec982eda",
+    "rows": 7303,
+    "last_state": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 32767,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "thrust": 32767,
+      "chan12": 32,
+      "chan14": 28672,
+      "chan30": 15615,
+      "chan31": 28671,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "state": [
+        0,
+        0,
+        16384,
+        1024,
+        0,
+        16384,
+        0,
+        64,
+        0,
+        0,
+        0,
+        16384,
+        66,
+        8926,
+        0,
+        0
+      ]
+    },
+    "first_p63": null,
+    "alarm_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 1128360,
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    ],
+    "channel014_outputs": [
+      {
+        "ev": "output",
+        "cycle": 163,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 495,
+        "channel": 12,
+        "value": 8
+      },
+      {
+        "ev": "output",
+        "cycle": 812,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491042,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491427,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 1518274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1535342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1552409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1569474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1586542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1603608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1620674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1637741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1654808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1671875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1688941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1706009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1723074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1740141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1757208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1774274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1791341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1808408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1825474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1842603,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1859609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1876674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1893741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1910808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1927875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1944941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1962008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1979074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1996142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2013209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2030275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2047341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2064408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2081476,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2098541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2115611,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2132674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2149743,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2166811,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2183875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2201004,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2218008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2235075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2252142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2269209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2286275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2303342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2320408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2337475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2354603,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2371609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2388675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2405743,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2422808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2439874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2456941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2474009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2491075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2508141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2525209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2542275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2559342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2576409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2593474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2610542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2627608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2644675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2661741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2678809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2695907,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2712941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2730009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2747074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2764141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2781209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2798275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2815342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2832408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2849474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2866542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2883609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2900674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2917807,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2934808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2951874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2968941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2986008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3003075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3020142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3037208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3054274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3071404,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3088409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3105475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3122542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3139611,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3156675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3173741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3190808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3207874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3224941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3242008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3259100,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3276142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3293209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3310275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3327341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3344409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3361475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3378541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3395609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3412674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3429741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3446808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3463874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3480942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3498008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3515074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3532142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3549208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3566274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3583341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3600408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3617474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3634640,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3651608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3668674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3685741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3702808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3719875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3736942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3754009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3771074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3788211,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3805208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3822274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3839342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3856408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3873475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3890547,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3907609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3924675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3941742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3958808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3975903,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3992942,
+        "channel": 12,
+        "value": 28672
+      }
+    ],
+    "thrust_changes": [
+      {
+        "cycle": 0,
+        "thrust": 0
+      },
+      {
+        "cycle": 491380,
+        "thrust": 32767
+      }
+    ],
+    "nonzero_rcs_outputs": 25
+  },
+  "p63": {
+    "raw_sha256": "9f6ccab4329633944b4135c295e01376db665825a9c00cb47cb15eb6208c29ce",
+    "rows": 7479,
+    "last_state": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 63,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "thrust": 28671,
+      "chan12": 32,
+      "chan14": 28672,
+      "chan30": 15615,
+      "chan31": 28671,
+      "failreg": [
+        848,
+        144,
+        0
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "state": [
+        0,
+        0,
+        16384,
+        1024,
+        4096,
+        16384,
+        0,
+        64,
+        0,
+        0,
+        0,
+        16384,
+        66,
+        8926,
+        0,
+        0
+      ]
+    },
+    "first_p63": 2333860,
+    "alarm_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 1128360,
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 2335061,
+        "failreg": [
+          848,
+          144,
+          0
+        ]
+      }
+    ],
+    "channel014_outputs": [
+      {
+        "ev": "output",
+        "cycle": 163,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 495,
+        "channel": 12,
+        "value": 8
+      },
+      {
+        "ev": "output",
+        "cycle": 812,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491042,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491427,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 1518274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1535342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1552409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1569474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1586542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1603608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1620674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1637741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1654808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1671875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1688941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1706009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1723074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1740141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1757208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1774274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1791341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1808408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1825474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1842603,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1859609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1876674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1893741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1910808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1927875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1944941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1962008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1979074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1996142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2013209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2030275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2047341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2064408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2081476,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2098541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2115611,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2132674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2149743,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2166811,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2183875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2201005,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2218008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2235075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2252141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2269209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2286274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2303342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2320409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2331821,
+        "channel": 12,
+        "value": 28680
+      },
+      {
+        "ev": "output",
+        "cycle": 2332234,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 2337475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2354541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2371608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2388674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2405742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2422808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2439874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2456942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2474008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2491074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2508142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2525208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2542275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2559401,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2576408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2593474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2610542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2627609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2644677,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2661741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2678808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2695877,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2712980,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2730008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2747075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2764141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2781209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2798274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2815341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2832408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2849474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2866544,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2883608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2900674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2917741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2934809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2951874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2968942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2986008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3003075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3020141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3037210,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3054275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3071408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3088408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3105475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3122544,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3139609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3156675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3173742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3190809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3207875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3224941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3242009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3259124,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3276142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3293208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3310277,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3327342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3344409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3361524,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3378541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3395609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3412674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3429741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3446809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3463875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3480941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3498009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3515076,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3532141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3549209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3566274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3583341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3600408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3617475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3634543,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3651609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3668677,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3685741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3702808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3719877,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3736941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3754009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3771077,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3788142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3805209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3822275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3839342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3856409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3873474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3890542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3907608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3924674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3941742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3958809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3975874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3992941,
+        "channel": 12,
+        "value": 28672
+      }
+    ],
+    "thrust_changes": [
+      {
+        "cycle": 0,
+        "thrust": 0
+      },
+      {
+        "cycle": 491380,
+        "thrust": 32767
+      },
+      {
+        "cycle": 2331816,
+        "thrust": 28671
+      }
+    ],
+    "nonzero_rcs_outputs": 25
+  },
+  "repeat": {
+    "raw_sha256": "9f6ccab4329633944b4135c295e01376db665825a9c00cb47cb15eb6208c29ce",
+    "rows": 7479,
+    "last_state": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 63,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "thrust": 28671,
+      "chan12": 32,
+      "chan14": 28672,
+      "chan30": 15615,
+      "chan31": 28671,
+      "failreg": [
+        848,
+        144,
+        0
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "state": [
+        0,
+        0,
+        16384,
+        1024,
+        4096,
+        16384,
+        0,
+        64,
+        0,
+        0,
+        0,
+        16384,
+        66,
+        8926,
+        0,
+        0
+      ]
+    },
+    "first_p63": 2333860,
+    "alarm_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 1128360,
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 2335061,
+        "failreg": [
+          848,
+          144,
+          0
+        ]
+      }
+    ],
+    "channel014_outputs": [
+      {
+        "ev": "output",
+        "cycle": 163,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 495,
+        "channel": 12,
+        "value": 8
+      },
+      {
+        "ev": "output",
+        "cycle": 812,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491042,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 491427,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 1518274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1535342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1552409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1569474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1586542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1603608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1620674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1637741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1654808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1671875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1688941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1706009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1723074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1740141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1757208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1774274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1791341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1808408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1825474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1842603,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1859609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1876674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1893741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1910808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1927875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1944941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1962008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1979074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 1996142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2013209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2030275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2047341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2064408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2081476,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2098541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2115611,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2132674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2149743,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2166811,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2183875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2201005,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2218008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2235075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2252141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2269209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2286274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2303342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2320409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2331821,
+        "channel": 12,
+        "value": 28680
+      },
+      {
+        "ev": "output",
+        "cycle": 2332234,
+        "channel": 12,
+        "value": 0
+      },
+      {
+        "ev": "output",
+        "cycle": 2337475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2354541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2371608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2388674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2405742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2422808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2439874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2456942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2474008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2491074,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2508142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2525208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2542275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2559401,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2576408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2593474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2610542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2627609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2644677,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2661741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2678808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2695877,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2712980,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2730008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2747075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2764141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2781209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2798274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2815341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2832408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2849474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2866544,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2883608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2900674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2917741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2934809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2951874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2968942,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 2986008,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3003075,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3020141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3037210,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3054275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3071408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3088408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3105475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3122544,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3139609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3156675,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3173742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3190809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3207875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3224941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3242009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3259124,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3276142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3293208,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3310277,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3327342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3344409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3361524,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3378541,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3395609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3412674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3429741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3446809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3463875,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3480941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3498009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3515076,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3532141,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3549209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3566274,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3583341,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3600408,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3617475,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3634543,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3651609,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3668677,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3685741,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3702808,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3719877,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3736941,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3754009,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3771077,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3788142,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3805209,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3822275,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3839342,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3856409,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3873474,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3890542,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3907608,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3924674,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3941742,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3958809,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3975874,
+        "channel": 12,
+        "value": 28672
+      },
+      {
+        "ev": "output",
+        "cycle": 3992941,
+        "channel": 12,
+        "value": 28672
+      }
+    ],
+    "thrust_changes": [
+      {
+        "cycle": 0,
+        "thrust": 0
+      },
+      {
+        "cycle": 491380,
+        "thrust": 32767
+      },
+      {
+        "cycle": 2331816,
+        "thrust": 28671
+      }
+    ],
+    "nonzero_rcs_outputs": 25
+  }
+}

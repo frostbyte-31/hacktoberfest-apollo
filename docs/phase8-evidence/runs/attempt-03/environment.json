@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-17T18:13:57.508592+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "source_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "repository_head": "d8969a456cf59ae6873aea42bc2e480e84adae3a",
+  "engine_backend": "pinned ringbuffer",
+  "engine_seconds_per_cpu_call": 1.171875e-05,
+  "initialization": "fresh cpu_reset/set_fixed; original Phase5 operate_inputs unchanged",
+  "vehicle_model": false,
+  "external_erasable_writes": 0,
+  "p63_keys": [
+    [
+      2200000,
+      "V",
+      17
+    ],
+    [
+      2221333,
+      "3",
+      3
+    ],
+    [
+      2242666,
+      "7",
+      7
+    ],
+    [
+      2263999,
+      "E",
+      28
+    ],
+    [
+      2285332,
+      "6",
+      6
+    ],
+    [
+      2306665,
+      "3",
+      3
+    ],
+    [
+      2327998,
+      "E",
+      28
+    ]
+  ]
+}

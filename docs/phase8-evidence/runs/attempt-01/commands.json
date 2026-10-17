@@ -1,0 +1,103 @@
+[
+  {
+    "argv": [
+      "cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:38.907406+00:00",
+    "end_utc": "2026-10-17T18:10:39.040112+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "cc",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase8-evidence/p63_probe.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_engine.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/p63_probe"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:39.040556+00:00",
+    "end_utc": "2026-10-17T18:10:39.936637+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "cc",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/readiness_probe.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_engine.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/phase5_probe"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:39.937281+00:00",
+    "end_utc": "2026-10-17T18:10:40.447612+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/p63_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/baseline.inputs.txt",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/checkpoints.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:40.449315+00:00",
+    "end_utc": "2026-10-17T18:10:41.916906+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/p63_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/p63.inputs.txt",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/checkpoints.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:41.917576+00:00",
+    "end_utc": "2026-10-17T18:10:42.155277+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/p63_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/repeat.inputs.txt",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/checkpoints.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:42.156152+00:00",
+    "end_utc": "2026-10-17T18:10:42.395204+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase8/attempt-01/phase5_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/operate_inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:10:42.395833+00:00",
+    "end_utc": "2026-10-17T18:10:43.012036+00:00",
+    "exit": 0
+  }
+]
