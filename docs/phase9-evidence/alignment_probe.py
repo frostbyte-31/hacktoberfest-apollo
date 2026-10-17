@@ -92,15 +92,23 @@ def main():
     # Event-driven script. Each step: (name, precondition, actions).
     # precondition: ('flash', verb, noun) on VERBREG/NOUNREG, or ('p00',).
     # actions: ('keys', text), ('pro',), ('marks',), ('load', verb, noun, text)
+    # Every action of a step waits for the step's precondition to hold again
+    # before firing, because a monitor load (V21/V22) replaces VERBREG/NOUNREG
+    # until Pinball re-establishes the flash (observed at cycle 4516257 in the
+    # 2026-10-17 debug run).
     def sighting(code_text, az, el):
-        return [('load', '21', '71', code_text), ('pro',),
-                ('load', '21', '87', deg_str(az)), ('load', '22', '87', deg_str(el)),
-                ('pro',), ('marks',), ('pro',)]
+        return [('load-code', ('flash', 1, 71), [('load', '21', '71', code_text)]),
+                ('pro-code', ('flash', 1, 71), [('pro',)]),
+                ('load-az', ('flash', 6, 87), [('load', '21', '87', deg_str(az))]),
+                ('load-el', ('flash', 6, 87), [('load', '22', '87', deg_str(el))]),
+                ('pro-azel', ('flash', 6, 87), [('pro',)]),
+                ('marks', ('flash', 54, 71), [('marks',)]),
+                ('pro-marks', ('flash', 54, 71), [('pro',)])]
     steps = [
         ('enter-p51', ('always',), [('keys', 'V37E51E')]),
         ('v50n25-proceed', ('flash', 50, 25), [('pro',)]),
-        ('star1', ('flash', 1, 71), sighting('00701', az1, el1)),
-        ('star2', ('flash', 1, 71), sighting('00717', az2, el2)),
+    ] + [('s1-' + n, p, a) for n, p, a in sighting('00701', az1, el1)] \
+      + [('s2-' + n, p, a) for n, p, a in sighting('00717', az2, el2)] + [
         ('r54-accept', ('flash', 6, 5), [('pro',)]),
         ('back-in-p00', ('p00',), []),
         ('p63-attempt', ('always',), [('keys', 'V37E63E')]),
