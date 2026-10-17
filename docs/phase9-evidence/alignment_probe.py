@@ -192,12 +192,16 @@ def main():
             elif pre[0] == 'p00':
                 ok = (s['MODREG'] == 0o77777)
             if ok:
+                if ok_since is None:
+                    ok_since = tick
+                if tick - ok_since < SETTLE:
+                    continue
                 if step_since is None:
                     start_actions(tick)  # emits 'step', fills action_q
                 if action_q:
                     queue_action(tick + KEYGAP, action_q.pop(0))
                 else:
-                    step_i += 1; step_since = None
+                    step_i += 1; step_since = None; ok_since = None
             else:
                 if step_since is not None and action_q:
                     # Flash temporarily replaced by a monitor load; keep waiting.
