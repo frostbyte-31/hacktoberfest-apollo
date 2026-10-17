@@ -1,0 +1,1293 @@
+VERIFIED source inspection. Revision f577e3fd917866c59334e6cdd32504f09df76f60
+
+FILE Contributed/LM_Simulator/lm_simulator.tcl SHA256 74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5
+103: set gimbalLock                    0
+104: set path                          "./"
+105: #set path                          "/LM_Simulator/"
+106: set docpath                       "${path}doc/"
+107: set modulpath                     "${path}modules/"
+108: set config_file                   "lm_simulator.ini/"
+109: set source0                       "${modulpath}AGC_DSKY.tcl"
+110: set source1                       "${modulpath}AGC_Outputs.tcl"
+111: set source2                       "${modulpath}AGC_System_Inputs.tcl"
+112: set source3                       "${modulpath}AGC_Crew_Inputs.tcl"
+113: set source4                       "${modulpath}AGC_IMU.tcl"
+114: set source5                       "${modulpath}AGC_Simulation_Monitor_Control.tcl"
+124: # ---- IN ----
+125: set unpSeq(PINC)                  000000000000000
+126: set unpSeq(MINC)                  000000000000010
+127: set unpSeq(DINC)                  000000000000100
+128: # ---- 400cps ----
+129: set unpSeq(PCDU)                  000000000000001
+130: set unpSeq(MCDU)                  000000000000011
+131: # ---- 6400cps ----
+132: set unpSeq(PCDU_FAST)             000000000010001
+133: set unpSeq(MCDU_FAST)             000000000010011
+134: 
+135: # ---- OUT ----
+136: set unpSeq(000000000001101)       POUT
+137: set unpSeq(000000000001110)       MOUT
+138: set unpSeq(000000000001111)       ZOUT
+139: 
+140: # ---------------- IMU Simulation Initialization ---------------------
+141: # ---- 39.55078125'' of arc ----
+142: set ANGLE_INCR                    [expr 360.0 / 32768.0]
+143: set CA_ANGLE                      0.043948
+144: set FA_ANGLE                      [expr 0.617981/3600.0]
+145: set PIPA_INCR                     0.0585
+146: set NEEDLE_SCALE                  [expr 42.1875/384.0]
+147: set IMUX_ANGLE                    0
+148: set IMUY_ANGLE                    0
+149: set IMUZ_ANGLE                    0
+150: set PIMUX                         0
+151: set PIMUY                         0
+152: set PIMUZ                         0
+153: set PIPAX_COUNT                   0
+154: set PIPAY_COUNT                   0
+155: set PIPAZ_COUNT                   0
+156: set xVelocity                     0
+157: set yVelocity                     0
+158: set zVelocity                     0
+159: set RHCRoll                       0
+160: set RHCPitch                      0
+161: set RHCYaw                        0
+162: 
+163: # ---------------- Constant ------------------------------------------
+164: set PI                            [expr 4.0 * atan(1)]
+165: set 2PI                           [expr 2.0 * $PI]
+166: set PI4                           [expr $PI/4.0]
+167: set RAD_TO_DEG                    [expr 180.0/$PI]
+168: set DEG_TO_RAD                    [expr $PI/180.0]
+169: set RAD_TO_DEG_PI4                [expr 180.0/$PI*$PI4]
+170: 
+171: # ---------------- Simulation Start Values (LM-7 Configuration) ----------------------
+172: set Simulation_Timer_Init         [expr abs([clock clicks -milliseconds])]
+173: set Simulation_Timer              0
+174: set Delta_Time                    0
+175: set Delta_Time2                   0
+176: set Delta_Time3                   0
+177: set LM_Weight_KG                  0
+178: set LM_Weight_Ascent_KG           4670.0
+179: set LM_Weight_Descent_KG          10694.0
+180: # ---- Reaction Control System ----
+181: set RCS_Propellant_Mass_KG        287.0
+182: set RCS_Thrust_N                  445.0
+183: set RCS_Specific_Impulse_MS       2840.0
+184: # ---- Descent Engine ----
+185: set Descent_Propellant_Mass_KG    8355.0
+186: set Descent_Propulsion_Max_N      45040.0
+187: set Descent_Propulsion_Min_N      4560.0
+188: set Descent_Specific_Impulse_MS   3050.0
+189: set Descent_Propulsion_N          0
+190: set Descent_Fuel_Flow_SEC         0
+191: set Descent_Thrust_Procent        0
+192: set Descent_Acceleration          0
+193: set DESCENT_ENGINE_FLAG           0
+194: # ---- Ascent Engine ----
+195: set Ascent_Propellant_Mass_KG     2353.0
+196: set Ascent_Thrust_N               15600.0
+197: set Ascent_Specific_Impulse_MS    3050.0
+198: set Ascent_Fuel_Flow_SEC          0
+199: set Ascent_Acceleration           0
+200: set ASCENT_ENGINE_FLAG            0
+201: set ASCENT_SEPARATION             0
+202: # ----
+203: set Omega_Roll                    0
+204: set Omega_Pitch                   0
+205: set Omega_Yaw                     0
+206: set Alpha_Yaw                     0
+207: set Alpha_Pitch                   0
+208: set Alpha_Roll                    0
+209: set error_x                       0
+210: set error_y                       0
+211: set error_z                       0
+212: # ---- Parameter to calculate Moment of Inertia ----
+213: set LM_CONFIG                     "DESCENT"
+214: # ---- LM Ascent Configuration ----
+215: set a(ASCENT,YAW)                 0.0065443852
+216: set b(ASCENT,YAW)                 0.000032
+217: set c(ASCENT,YAW)                -0.006923
+218: set a(ASCENT,PITCH)               0.0035784354
+219: set b(ASCENT,PITCH)               0.162862
+220: set c(ASCENT,PITCH)               0.002588
+221: set a(ASCENT,ROLL)                0.0056946631
+222: set b(ASCENT,ROLL)                0.009312
+223: set c(ASCENT,ROLL)               -0.023608
+224: # ---- LM Descent Configuration ----
+225: set a(DESCENT,YAW)                0.0059347674
+226: set b(DESCENT,YAW)                0.002989
+227: set c(DESCENT,YAW)                0.008721
+228: set a(DESCENT,PITCH)              0.0014979264
+229: set b(DESCENT,PITCH)              0.018791
+230: set c(DESCENT,PITCH)             -0.068163
+231: set a(DESCENT,ROLL)               0.0010451889
+232: set b(DESCENT,ROLL)               0.021345
+233: set c(DESCENT,ROLL)              -0.066027
+234: # ---- Set RCS Thruster to 0 ----
+235: set Q4U 0; set Q4D 0; set Q3U 0; set Q3D 0
+236: set Q2U 0; set Q2D 0; set Q1U 0; set Q1D 0
+237: set Q3A 0; set Q4F 0; set Q1F 0; set Q2A 0
+238: set Q2L 0; set Q3R 0; set Q4R 0; set Q1L 0
+239: 
+240: 
+716:    # ---- Read Data from the Socket ----
+717:    set res [read $sockChan 1]
+718:    if {$res == ""} {
+719:      # ---- Dynamic CPU Load Control and Dynamic Simulation ----
+720:      set t [expr abs([clock clicks -milliseconds])]
+721:      set Delta_Time_int [expr abs($Simulation_Timer_Init - $t)]
+722:      set Delta_Time [expr $Delta_Time_int / 1000.0]
+723:      set Delta_Time2 [expr $Delta_Time2 + $Delta_Time]
+724:      set Simulation_Timer [expr $Simulation_Timer + $Delta_Time]
+725:      set Simulation_Timer_Init $t
+726:      if {$JET_FLAG == 1} {update_RCS; set zeit 5} else {set zeit 10}
+727:      # ---- Update Dynamic Model - Every 25ms ----
+728:      if {$Delta_Time2 > 0.025} {
+729:        dynamic_simulation
+730:        set Delta_Time3 [expr $Delta_Time3 + $Delta_Time2]
+731:        set Delta_Time4 [expr $Delta_Time4 + $Delta_Time2]
+732:        set Delta_Time5 [expr $Delta_Time5 + $Delta_Time2]
+733:        set Delta_Time2 0
+790: 
+791: 
+792:  if {$t == 0} {
+793:    set cdata($octChannel) [string range $data 13 15][string range $data 18 23][string range $data 26 31]
+794: 
+795:    # ---- Gyro Fine Align if Octal Channel = 0177 ----
+796:    if {$octChannel == 177} {gyro_fine_align} 
+797:    # ----------------------------------------------
+798: 
+799:    # ---- Gyro Coarse Align if Octal Channel = 0174; 0175; 0176 ----
+800:    if {$octChannel == 174 || $octChannel == 175 || $octChannel == 176} {gyro_coarse_align $octChannel}
+801:    # ---------------------------------------------------------------
+802: 
+803:    # ---- Joystick Channel ----
+804:    #if {$octChannel == 31 || $octChannel == 166 || $octChannel == 167 || $octChannel == 170} {read_joystick $octChannel}
+805: 
+806:    # ---- Heart Beat ----
+807:    #if {$octChannel == 165} {
+808:    #  .text insert end "HB: $cdata(165)\n"
+809:    #  .text yview moveto 1
+810:    #}
+811: 
+812:    # ---- Check if there is a Jet Firing on Channel 5 or 6 ----
+813:    if {$octChannel == 5 || $octChannel == 6} {
+814:      set Q4U $bo(5,1); set Q4D $bo(5,2); set Q3U $bo(5,3); set Q3D $bo(5,4)
+815:      set Q2U $bo(5,5); set Q2D $bo(5,6); set Q1U $bo(5,7); set Q1D $bo(5,8)
+816: 
+817:      set Q3A $bo(6,1); set Q4F $bo(6,2); set Q1F $bo(6,3); set Q2A $bo(6,4)
+818:      set Q2L $bo(6,5); set Q3R $bo(6,6); set Q4R $bo(6,7); set Q1L $bo(6,8)
+819: 
+820:      if {$Q4U == 0 && $Q4D == 0 && $Q3U == 0 && $Q3D == 0 && $Q2U == 0 && $Q2D == 0 && $Q1U == 0 && $Q1D == 0 && $Q3A == 0 && $Q4F == 0 && $Q1F == 0 && $Q2A == 0 && $Q2L == 0 && $Q3R == 0 && $Q4R == 0 && $Q1L == 0} {set JET_FLAG 0} else {set JET_FLAG 1}
+821:    }
+822: 
+823:    for {set j 0} {$j <= 15} {incr j 1} {
+824:      set bit [expr 15-$j]
+825:      set tmp [string index $cdata($octChannel) $j]
+826:      catch {set tmp2 $bo($octChannel,$bit)}
+827:      if {$tmp != $tmp2} {
+828:        set bo($octChannel,$bit) $tmp
+829:        # ---------------- Set Output Signals -------------------
+830:        if {[winfo exists .lmsys] == 1 && ($octChannel == 5 || $octChannel == 6 || $octChannel == 11 || $octChannel == 12 || $octChannel == 13 || $octChannel == 14)} {
+831:          if {$bo($octChannel,$bit) == 1} {
+832:            catch {.lmsys.l_${octChannel}_${bit} configure -background $colact}
+833:          } else {
+834:            catch {.lmsys.l_${octChannel}_${bit} configure -background $colb}
+835:          }
+836:        }
+837:      }
+838:    }
+839: 
+840:    # ---------------- Check if Zero IMU CDU is active ------------------
+841:    if {$bo(12,5) == 1 && $m4 == 0} {zeroIMU; set m4 1} elseif {$bo(12,5) == 0 && $m4 == 1} {set m4 0}
+842: 
+843:    if {$log_out_flag == 1} {
+844:      catch {.text insert end "Out: [format %2d $octChannel]  $channel  $cdata($octChannel)\n"}
+845:      .text yview moveto 1
+846:    }
+847:  } else {
+946: # *********************************************************************************************
+947: # **** Read Sources                                                                        ****
+948: # *********************************************************************************************
+949: 
+950: # ----------------------------- Source: AGC DSKY ----------------------------------------------
+951: source $source0
+952: 
+953: # ----------------------------- Source: AGC Outputs -------------------------------------------
+954: source $source1
+955: 
+956: # ----------------------------- Source: AGC System Inputs -------------------------------------
+957: source $source2
+958: 
+959: # ----------------------------- Source: AGC Crew Inputs ---------------------------------------
+960: source $source3
+961: 
+962: # ----------------------------- Source: AGC IMU -----------------------------------------------
+963: source $source4
+964: 
+965: # ----------------------------- Source: AGC Attitude ------------------------------------------
+966: source $source5
+
+FILE Contributed/LM_Simulator/modules/AGC_IMU.tcl SHA256 4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e
+463: proc gyro_coarse_align {par1} {
+464:  global cdata CA_ANGLE bo error_x error_y error_z
+465: 
+466:  set sign [string index $cdata($par1) 0]
+467:  if {$sign == 0} {set sign 1} else {set sign -1}
+468:  set cdu_pulses [expr $sign * [convert_bin_dec [string range $cdata($par1) 1 14]]]
+469: 
+470:  # ---- Coarse Align Enable ----
+471:  if {$bo(12,4) == 1} {
+472:    if {$par1 == 174} {
+473:       .text insert end "DRIVE CDU X: $cdu_pulses\n"; .text yview moveto 1
+474:       modify_gimbal_angle [expr $cdu_pulses * $CA_ANGLE] 0 0
+475:    }
+476: 
+477:    if {$par1 == 175} {
+478:       .text insert end "DRIVE CDU Y: $cdu_pulses\n"; .text yview moveto 1
+479:       modify_gimbal_angle 0 [expr $cdu_pulses * $CA_ANGLE] 0
+480:    }
+481: 
+482:    if {$par1 == 176} {
+483:       .text insert end "DRIVE CDU Z: $cdu_pulses\n"; .text yview moveto 1
+484:       modify_gimbal_angle 0 0 [expr $cdu_pulses * $CA_ANGLE]
+485:    }
+486: 
+487:    move_fdai_marker
+488:  } else {
+489:    # ---- Error Needles ----
+490:    if {$par1 == 174} {set error_x [expr $error_x + $cdu_pulses]}
+491:    if {$par1 == 175} {set error_y [expr $error_y + $cdu_pulses]}
+492:    if {$par1 == 176} {set error_z [expr $error_z + $cdu_pulses]}
+493:  }
+494: }
+495: 
+496: 
+497: # *************************************************************************************************
+498: # **** Function: Modify a specific IMU Delta Gimbal-Angle par1=X; par2=Y; par3=Z               ****
+499: # *************************************************************************************************
+500: proc modify_gimbal_angle {dx dy dz} {
+501:  global IMUX_ANGLE IMUY_ANGLE IMUZ_ANGLE ANGLE_INCR
+502:  global PIMUX PIMUY PIMUZ bo gimbalLock
+503:  global Omega_Roll Omega_Pitch Omega_Yaw DEG_TO_RAD RAD_TO_DEG PI 2PI
+504: 
+505:  if {$gimbalLock == 1 || $bo(12,5) == 1} {return}
+506:  set ang_delta 0
+507: 
+508:  # ---- Modify X-Axis ----
+509:  if {$dx != 0} {
+510:    # ---- Calculate New X-Angle ----
+511:    set IMUX_ANGLE [expr $IMUX_ANGLE + $dx]
+512:    if {$IMUX_ANGLE < 0}   {set IMUX_ANGLE [expr $IMUX_ANGLE + 360]}
+513:    if {$IMUX_ANGLE >= 360} {set IMUX_ANGLE [expr $IMUX_ANGLE - 360]}
+514: 
+515:    # ---- Calculate Delta between X-Angle and already feeded IMU X-Angle ----
+516:    set dx [expr  $IMUX_ANGLE - $PIMUX]
+517:    if {$dx < -180}   {set dx [expr $dx + 360]}
+518:    if {$dx > 180} {set dx [expr $dx - 360]}
+519: 
+520:    # ---- Feed yaAGC with the new Angular Delta ----
+521:    if {$dx >= 0} {set ANGLE_INCR_SIGN $ANGLE_INCR} else {set ANGLE_INCR_SIGN -$ANGLE_INCR}
+522:    set ang_delta [expr abs($dx)]
+523:    while {$ang_delta > $ANGLE_INCR} {
+524:      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]
+525:      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+526:      # ---- LM X-Axis/YAW-Axis ----
+527:      if {$Omega_Yaw < 4} {
+528:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 32} else {write_socket "PCDU" 32}
+529:      } else {
+530:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 32} else {write_socket "PCDU_FAST" 32}
+531:      }
+532:    }
+533: 
+660: proc Transform_BodyAxes_StableMember {dp dq dr} {
+661:  global IMUX_ANGLE IMUY_ANGLE IMUZ_ANGLE RAD_TO_DEG DEG_TO_RAD PI 2PI
+662: 
+663:  set dp [expr $dp * $DEG_TO_RAD]
+664:  set dq [expr $dq * $DEG_TO_RAD]
+665:  set dr [expr $dr * $DEG_TO_RAD]
+666: 
+667:  set IMUX_ANGLE_b [expr $IMUX_ANGLE * $DEG_TO_RAD]
+668:  set IMUY_ANGLE_b [expr $IMUY_ANGLE * $DEG_TO_RAD]
+669:  set IMUZ_ANGLE_b [expr $IMUZ_ANGLE * $DEG_TO_RAD]
+670: 
+671:  set MPI [expr sin($IMUZ_ANGLE_b)]
+672:  set MQI [expr cos($IMUZ_ANGLE_b) * cos($IMUX_ANGLE_b)]
+673:  set MQM [expr sin($IMUX_ANGLE_b)]
+674:  set MRI [expr -cos($IMUZ_ANGLE_b) * sin($IMUX_ANGLE_b)]
+675:  set MRM [expr cos($IMUX_ANGLE_b)]
+676:  set nenner [expr $MRM * $MQI - $MRI * $MQM]
+677: 
+678:  # ---- Calculate Angular Change ----
+679:  set do_b [expr $dp - ($dq * $MRM * $MPI - $dr * $MQM * $MPI) / $nenner]
+680:  set di_b [expr ($dq * $MRM - $dr * $MQM) / $nenner]
+681:  set dm_b [expr ($dr * $MQI - $dq * $MRI) / $nenner]
+682: 
+683:  # ---- Check for Angular Boundaries ----
+684:  if {$do_b < -$2PI}   {set do_b [expr $do_b + $2PI]}
+685:  if {$do_b >= $2PI} {set do_b [expr $do_b - $2PI]}
+686:  if {$di_b < -$2PI}   {set di_b [expr $di_b + $2PI]}
+687:  if {$di_b >= $2PI} {set di_b [expr $di_b - $2PI]}
+688:  if {$dm_b < -$2PI}   {set dm_b [expr $dm_b + $2PI]}
+689:  if {$dm_b >= $2PI} {set dm_b [expr $dm_b - $2PI]}
+690: 
+691:  # ---- Rad to Deg and call of Gimbal Angle Modification ----
+692:  modify_gimbal_angle [expr $do_b * $RAD_TO_DEG] [expr $di_b * $RAD_TO_DEG] [expr $dm_b * $RAD_TO_DEG]
+
+FILE Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl SHA256 594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60
+151: proc dynamic_simulation {} {
+152:  global LM_Weight_KG Descent_Propulsion_Max_N Descent_Propulsion_Min_N LM_CONFIG a b c
+153:  global Descent_Propellant_Mass_KG Propellant_Flow_Max_KGS Descent_Thrust_Procent
+154:  global Descent_Acceleration DESCENT_ENGINE_FLAG Descent_Propulsion_N
+155:  global Descent_Specific_Impulse_MS Descent_Fuel_Flow_SEC RCS_Propellant_Mass_KG
+156:  global Omega_Roll Omega_Pitch Omega_Yaw
+157:  global LM_Weight_Descent_KG LM_Weight_Ascent_KG Ascent_Propellant_Mass_KG 
+158:  global Ascent_Fuel_Flow_SEC Ascent_Acceleration ASCENT_ENGINE_FLAG Ascent_Thrust_N
+159:  global Ascent_Specific_Impulse_MS Delta_Time Delta_Time2
+160:  global Alpha_Yaw Alpha_Pitch Alpha_Roll RAD_TO_DEG_PI4
+161:  global Delta_Time2 ASCENT_SEPARATION
+162: 
+163:  # -------------------------- Main Engine Simulation ----------------------------------
+164:  set LM_Weight_KG [expr $LM_Weight_Ascent_KG + $LM_Weight_Descent_KG]
+165:  catch {set Descent_Propulsion_N [.att.p1_s1 get]}
+166:  set Descent_Thrust_Procent [expr $Descent_Propulsion_N / $Descent_Propulsion_Max_N]
+167: 
+168:  catch {.att.p1_l2 configure -text [format "%10.1f SEC" $Simulation_Timer]}
+169:  catch {.att.p1_l4 configure -text [format "%5.1f " [expr 100 * $Descent_Thrust_Procent]]%}
+170:  catch {.att.p1_l6 configure -text [format "%5.0f KG" $LM_Weight_KG]}
+171:  catch {.att.p1_l8 configure -text [format "%5.0f KG" $Descent_Propellant_Mass_KG]}
+172:  catch {.att.p1_l10 configure -text [format "%5.2f KG/S" $Descent_Fuel_Flow_SEC]}
+173:  catch {.att.p1_l12 configure -text [format "%5.3f M/S*S" $Descent_Acceleration]}
+174:  catch {.att.p1_l16 configure -text [format "%5.1f KG" $RCS_Propellant_Mass_KG]}
+175:  catch {.att.p1_l24 configure -text [format "%5.0f KG" $Ascent_Propellant_Mass_KG]}
+176:  catch {.att.p1_l26 configure -text [format "%5.1f KG" $Ascent_Fuel_Flow_SEC]}
+177:  catch {.att.p1_l28 configure -text [format "%5.3f M/S*S" $Ascent_Acceleration]}
+178: 
+179:  if {$DESCENT_ENGINE_FLAG == 1 && $Descent_Propellant_Mass_KG > 0} {
+180:    set Descent_Fuel_Flow_SEC [expr $Descent_Propulsion_N / $Descent_Specific_Impulse_MS]
+181:    set Descent_Fuel_Flow [expr $Descent_Fuel_Flow_SEC * $Delta_Time2]
+182:    set Descent_Propellant_Mass_KG [expr $Descent_Propellant_Mass_KG - $Descent_Fuel_Flow]
+183:    set LM_Weight_Descent_KG [expr $LM_Weight_Descent_KG - $Descent_Fuel_Flow]
+184:    set Descent_Acceleration [expr $Descent_Propulsion_N / $LM_Weight_KG]
+185:    set yawDeltaV [expr $Descent_Acceleration * $Delta_Time2]
+186:    modify_pipaXYZ $yawDeltaV 0.0 0.0
+187:  } else {
+188:    set DESCENT_ENGINE_FLAG 0
+189:    set Descent_Acceleration 0
+190:    set Descent_Fuel_Flow_SEC 0
+191:  }
+192: 
+193:  if {$ASCENT_ENGINE_FLAG == 1 && $Ascent_Propellant_Mass_KG > 0} {
+194:    set Ascent_Fuel_Flow_SEC [expr $Ascent_Thrust_N / $Ascent_Specific_Impulse_MS]
+195:    set Ascent_Fuel_Flow [expr $Ascent_Fuel_Flow_SEC * $Delta_Time2]
+196:    set Ascent_Propellant_Mass_KG [expr $Ascent_Propellant_Mass_KG - $Ascent_Fuel_Flow]
+197:    set LM_Weight_Ascent_KG [expr $LM_Weight_Ascent_KG - $Ascent_Fuel_Flow]
+198:    set Ascent_Acceleration [expr $Ascent_Thrust_N / $LM_Weight_Ascent_KG]
+199:    set yawDeltaV [expr $Ascent_Acceleration * $Delta_Time2]
+200:    modify_pipaXYZ $yawDeltaV 0.0 0.0
+201:  } else {
+202:    set ASCENT_ENGINE_FLAG 0
+203:    set Ascent_Acceleration 0
+204:    set Ascent_Fuel_Flow_SEC 0
+205:  }
+206: 
+207:  # ---- Calculate Single Jet Accelleration / Moment of Inertia depend on LM weight ----
+208:  set m [expr $LM_Weight_KG / 65535.0]
+209:  set Alpha_Yaw [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,YAW) + $a($LM_CONFIG,YAW)/($m + $c($LM_CONFIG,YAW)))]
+210:  set Alpha_Pitch [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,PITCH) + $a($LM_CONFIG,PITCH)/($m + $c($LM_CONFIG,PITCH)))]
+211:  set Alpha_Roll [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,ROLL) + $a($LM_CONFIG,ROLL)/($m + $c($LM_CONFIG,ROLL)))]
+212: 
+213:  # ---- Feed Angular Changes (Delta Time * Omega) into the IMU ----
+214:  Transform_BodyAxes_StableMember [expr $Omega_Yaw * $Delta_Time2] [expr $Omega_Pitch * $Delta_Time2] [expr $Omega_Roll * $Delta_Time2]
+215: }
+221: proc update_RCS {} {
+222:  global RCS_Propellant_Mass_KG LM_Weight_KG LM_Weight_Ascent_KG RCS_Thrust_N RCS_Specific_Impulse_MS RCS_Thrust_N
+223:  global Omega_Roll Omega_Pitch Omega_Yaw Delta_Time
+224:  global Alpha_Yaw Alpha_Pitch Alpha_Roll
+225:  global Acc_Yaw Acc_Pitch Acc_Roll
+226:  global Q4U Q4D Q3U Q3D
+227:  global Q2U Q2D Q1U Q1D
+228:  global Q3A Q4F Q1F Q2A
+229:  global Q2L Q3R Q4R Q1L
+230: 
+231:  if {$Q2D == 1 || $Q4U == 1} {set nv1 [expr $Q2D + $Q4U]} else {set nv1 0}
+232:  if {$Q2U == 1 || $Q4D == 1} {set nv2 [expr -($Q2U + $Q4D)]} else {set nv2 0}
+233: 
+234:  if {$Q1D == 1 || $Q3U == 1} {set nu1 [expr $Q1D + $Q3U]} else {set nu1 0}
+235:  if {$Q1U == 1 || $Q3D == 1} {set nu2 [expr -($Q1U + $Q3D)]} else {set nu2 0}
+236: 
+237:  if {$Q1F == 1 || $Q2L == 1 || $Q3A == 1 || $Q4R == 1} {set np1 [expr $Q1F + $Q2L + $Q3A + $Q4R]} else {set np1 0}
+238:  if {$Q1L == 1 || $Q2A == 1 || $Q3R == 1 || $Q4F == 1} {set np2 [expr -($Q1L + $Q2A + $Q3R + $Q4F)]} else {set np2 0}
+239: 
+240:  set nv [expr $nv1 + $nv2]
+241:  set nu [expr $nu1 + $nu2]
+242:  set np [expr $np1 + $np2]
+243: 
+244:  # ---- Check for translational commands to calculate change in LM's speed along the pilot axis ----
+245:  # ---- Along Yaw Axis ----
+246:  if {$nv1 != 0 && [expr $nv1 + $nv2] == 0} {
+247:    if {$Q2D == 1} {
+248:      set RCS_Yaw [expr $Q2D + $Q4D]
+249:    } else {
+250:      set RCS_Yaw [expr -($Q2U + $Q4U)]
+251:    }
+252:  } else {
+253:    set RCS_Yaw 0
+254:  }
+255: 
+256:  if {$nu1 != 0 && [expr $nu1 + $nu2] == 0} {
+257:    if {$Q1D == 1} {
+258:      set RCS_Yaw [expr $RCS_Yaw + $Q1D + $Q3D]
+259:    } else {
+260:      set RCS_Yaw [expr $RCS_Yaw - $Q1U - $Q3U]
+261:    }
+262:  }
+263: 
+264:  if {$RCS_Yaw != 0} {
+265:    set yawDeltaV [expr $Delta_Time * $RCS_Yaw * $RCS_Thrust_N / $LM_Weight_KG]
+266:    modify_pipaXYZ $yawDeltaV 0.0 0.0
+267:  }
+268: 
+269:  # ---- Along Pitch or Roll Axis ----
+270:  if {$np1 != 0 && [expr $np1 + $np2] == 0} {
+271:     # ---- Pitch Axis ----
+272:     if {$Q1L == 1} {
+273:       set PitchDeltaV [expr $Delta_Time * 2.0 * $RCS_Thrust_N / $LM_Weight_KG]
+274:       modify_pipaXYZ 0.0 $PitchDeltaV 0.0
+275:     }
+276:     if {$Q3R == 1} {
+277:       set PitchDeltaV [expr -$Delta_Time * 2.0 * $RCS_Thrust_N / $LM_Weight_KG]
+278:       modify_pipaXYZ 0.0 $PitchDeltaV 0.0
+279:     }
+280:     # ---- Roll Axis ----
+281:     if {$Q2A == 1} {
+282:       set RollDeltaV [expr $Delta_Time * 2.0 * $RCS_Thrust_N / $LM_Weight_KG]
+283:       modify_pipaXYZ 0.0 0.0 $RollDeltaV
+284:     }
+285:     if {$Q1F == 1} {
+286:       set RollDeltaV [expr -$Delta_Time * 2.0 * $RCS_Thrust_N / $LM_Weight_KG]
+287:       modify_pipaXYZ 0.0 0.0 $RollDeltaV
+288:     }
+289:  }
+290: 
+291:  # ---- Calculate Delta Omega, Omega and LM weight change ----
+292:  if {$RCS_Propellant_Mass_KG > 0} {
+293:    set Delta_Omega_Yaw [expr $Alpha_Yaw * $Delta_Time * $np]
+294:    set Delta_Omega_Pitch [expr $Alpha_Pitch * $Delta_Time * ($nu - $nv)]
+295:    set Delta_Omega_Roll [expr $Alpha_Roll * $Delta_Time * ($nu + $nv)]
+296: 
+297:    set Omega_Yaw [expr $Omega_Yaw + $Delta_Omega_Yaw]
+298:    set Omega_Pitch [expr $Omega_Pitch + $Delta_Omega_Pitch]
+299:    set Omega_Roll [expr $Omega_Roll + $Delta_Omega_Roll]
+300: 
+301:    set RCS_Fuel_Flow [expr (abs($nv1) + abs($nv2) + abs($nu1) + abs($nu2) + abs($np1) + abs($np2)) * $RCS_Thrust_N / $RCS_Specific_Impulse_MS * $Delta_Time]
+302:    set LM_Weight_Ascent_KG [expr $LM_Weight_Ascent_KG - $RCS_Fuel_Flow]
+303:    set RCS_Propellant_Mass_KG [expr $RCS_Propellant_Mass_KG - $RCS_Fuel_Flow]
+304:  }
+305: }
+
+FILE Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl SHA256 7cc5247c261dd3cb89b5e42ebdbcb1b3cf55fd99b8543eb4b51a46633f0f620d
+115:  checkbutton .crewinp.cb51c -text "AGC HAS CONTROL OF LM\n(NOT AGS)" -variable b(30,10) -relief raised -borderwidth 2 -anchor w -font ${font11} -command {set bmask(30) "000001000000000"; write_socket b 30} -onvalue 0 -offvalue 1 -justify left -bg $colb
+116:  pack .crewinp.cb51c -side top -in .crewinp.fmb -anchor w -fill x -pady 1
+117: 
+118:  radiobutton .crewinp.cb61b -text "DAP OFF" -variable DAPMODE -relief raised -borderwidth 2 -anchor w -font ${font11} -value "OFF" -command {set b(31,13) 1; set bmask(31) "001000000000000"; write_socket b 31; set b(31,14) 1; set bmask(31) "010000000000000"; write_socket b 31} -bg $colb
+119: 
+120:  radiobutton .crewinp.cb6b -text "ATTITUDE HOLD MODE ON" -variable DAPMODE -relief raised -borderwidth 2 -anchor w -font ${font11} -value "ATTHOLD" -command {set b(31,13) 0; set bmask(31) "001000000000000"; write_socket b 31; set b(31,14) 1; set bmask(31) "010000000000000"; write_socket b 31} -bg $colb
+121: 
+122:  pack .crewinp.cb61b .crewinp.cb6b -side top -in .crewinp.fmb -anchor w -fill x -pady 1
+123: 
+124:  radiobutton .crewinp.cb7b -text "AUTO STABILIZATION\nOF ATTITUDE ON" -variable DAPMODE -relief raised -borderwidth 2 -anchor w -font ${font11} -value "AUTO" -justify left -command {set b(31,14) 0; set bmask(31) "010000000000000"; write_socket b 31; set b(31,13) 1; set bmask(31) "001000000000000"; write_socket b 31} -bg $colb
+125: 
+288:  if {$par1 == "YAW"} {
+289:    if {$RHCYaw < 0} {
+290:      if {$b(31,15) == 1} {set b(31,3) 1; set b(31,4) 0; after 100 {reset_rhc}}
+291:      set b(31,15) 0
+292:      set yaw [expr $RHCYaw + 63]
+293:      set prefix "111111111"
+294:    } elseif {$RHCYaw > 0} {
+295:      if {$b(31,15) == 1} {set b(31,3) 0; set b(31,4) 1; after 100 {reset_rhc}}
+296:      set b(31,15) 0
+297:      set yaw $RHCYaw
+298:      set prefix "000000000"
+299:    } else {
+300:      set yaw 0
+301:      set prefix "000000000"
+302:    }
+303:    set tmp [format %c $yaw]
+304:    binary scan $tmp B8 yaw
+305:    set yaw $prefix[string range $yaw 2 7]
+306:    set bmask(31) "100000000001100"
+307:    set wdata(167) $yaw
+308:    set bmask(167) "111111111111111"
+309:    write_socket b 31; write_socket w 167
+310:  }
+311: 
+312:  # ---- Check for Out of Detend ----
+313:  if {$RHCRoll == 0 && $RHCPitch == 0 && $RHCYaw == 0 && $b(31,15) == 0} {
+314:    set b(31,15) 1
+315:    set bmask(31) "100000000000000"
+316:    write_socket b 31
+
+FILE Contributed/LM_Simulator/modules/AGC_System_Inputs.tcl SHA256 012e5c831b6456ea8d61a75188e360fa8abf7e7ada197552374a37558d279287
+73:  pack  .sysinp.l10a -side top -in .sysinp.fma -anchor w -pady 1
+74: 
+75:  checkbutton .sysinp.cb12c -text "IMU OPERATE WITH\nNO MALFUNCTION" -variable b(30,9) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(30) "000000100000000"; write_socket b 30} -justify left -bg $colb
+76:  pack .sysinp.cb12c -side top -in .sysinp.fma -anchor w -fill x -pady 1
+77: 
+78:  checkbutton .sysinp.cb14c -text "IMU CDU FAIL" -variable b(30,12) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(30) "000100000000000"; write_socket b 30} -bg $colb
+79:  pack .sysinp.cb14c -side top -in .sysinp.fma -anchor w -fill x -pady 1
+80: 
+81:  checkbutton .sysinp.cb15c -text "IMU FAIL" -variable b(30,13) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(30) "001000000000000"; write_socket b 30} -bg $colb
+82:  pack .sysinp.cb15c -side top -in .sysinp.fma -anchor w -fill x -pady 1
+83: 
+84:   checkbutton .sysinp.cb16c -text "PIPA FAIL" -variable b(33,13) -relief raised -borderwidth 2 -anchor w -font ${font11}  -command {set bmask(33) "001000000000000"; write_socket b 33} -onvalue 0 -offvalue 1 -bg $colb
+85:  pack .sysinp.cb16c -side top -in .sysinp.fma -anchor w -fill x -pady 1
+86: 
+87: # --------------------- 2nd column -----------------------------------------------
+88:  label .sysinp.l0b -text "RADAR:" -font ${font11b} -bg $colb
+89:  pack  .sysinp.l0b -side top -in .sysinp.fmb -anchor w
+90: 
+91:  checkbutton .sysinp.cb0b -text "RR CDU FAIL" -variable b(30,7) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(30) "000000001000000"; write_socket b 30} -bg $colb
+92:  pack .sysinp.cb0b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+93: 
+94:  checkbutton .sysinp.cb2b -text "RR RANGE LOW SCALE" -variable b(33,3) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(33) "000000000000100"; write_socket b 33} -bg $colb
+95:  pack .sysinp.cb2b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+96: 
+
+FILE Luminary099/EXTENDED_VERBS.agc SHA256 fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29
+235: # VBCOARK	VERB 41		DESCRIPTION
+236: #	COARSE ALIGN IMU OR RADAR
+237: #
+238: #	1.	REQUIRE NOUN 20 OR NOUN 72 OR TURN ON OPERATOR ERROR.
+239: #	2.	REQUIRE EXT VERB DISPLAY SYS AVAILABLE OR TURN ON OPERATOR ERROR LIGHT AND GO TO PINBRNCH.
+240: #				CASE 1 NOUN 20 (ICDU ANGLES)
+241: #	3.	SET EXT VERB DISPLAY ACTIVE FLAG.
+242: #	4.	DISPLAY FLASHING V25,N22 (LOAD NEW ICDU ANGLES).
+243: #		RESPONSES
+244: #		A.	TERMINATE
+245: #			1.	RELEASE EXT VERB DISPLAY SYSTEM
+246: #		B.	PROCEED
+247: #			1.	COARSE ALIGN TO THE EXISTING THETAD'S (ICORK2).
+248: #		C.	ENTER
+249: #			1.	COARSE ALIGN TO THE LOADED THETAD'S (ICORK2).
+250: # ICORK2
+251: #	1.	RE-DISPLAY VERB 41.
+252: #	2.	EXECUTE IMUCOARS (IMU COARSE ALIGN).
+253: #	3.	EXECUTE IMUSTALL (ALLOW TIME FOR DATA TRANSFER).
+254: #	4.	RELEASE EXT VERB DISPLAY SYSTEM.
+255: #				CASE 2 NOUN 72 (RCDU ANGLES)
+256: #		EXIT WITH OP ERROR IF SOMEONE IS USING EITHER RADAD.
+257: #	5.	DISPLAY FLASHING V24, N73 (LOAD NEW RR TRUNION ANGLE AND NEW SHAFT ANGLE).
+258: #		RESPONSES
+259: #		A.	TERMINATE
+260: #			1.	RELEASE EXT VERB DISPLAY SYS.
+261: #		B.	PROCEED OR ENTER
+262: #			1.	EXECUTE AURLOKON (ASK OPERATOR FOR LOCK-ON REQUIREMENTS).
+263: #			2.	RE-DISPLAY VERB 41.
+264: #			3.	SCHEDULE RRDESK2 WITH PRIORITY 20.
+265: #			4.	RELEASE EXT VERB DISPLAY SYS.
+266: # AURLOKON
+267: #	1.	FLASH V04 N12 R1 = 00006 R2 = 00002
+268: #		RESPONSES
+269: #		A.	TERMINATE
+270: #		B.	PROCEED
+271: #			1.	RESET LOCK-ON SWITCH
+272: #			2.	SET CONTINUOUS DESIGNATE FLAG
+273: #			3.	DISABLE R25
+274: #		C.	V22 E 1 E, R1 = 00001, PROCEED
+275: #			1.	SET LOCK-ON SWITCH
+276: 
+277: VBCOARK		TC	OP/INERT
+278: 		TC	IMUCOARK		# RETURN HERE IF NOUN = ICDU (20)
+279: 		TC	RRDESNBK		# RETURN HERE IF NOUN = RCDU (72)
+280: 		
+281: # RETURNS TO L+1 IF IMU OR L+2 IF RR.
+282: 
+283: OP/INERT	CS	OCT24
+284: 		AD	NOUNREG
+285: 		EXTEND
+286: ## Page 268
+287: 		BZF	TCQ			# IF = 20.
+288: 		
+289: 		AD	RRIMUDIF		# -52
+290: 		EXTEND
+291: 		BZF	Q+1
+292: 		
+293: 		TC	ALM/END			# ILLEGAL.
+294: 		
+295: RRIMUDIF	DEC	-52			# THE IMU
+296: IMUCOARK	TC	CKMODCAD
+297: 		TC	TESTXACT		# COARSE ALIGN FROM KEYBOARD.
+298: 		CAF	VNLODCDU		# CALL FOR THETAD LOAD
+299: 		TC	BANKCALL
+300: 		CADR	GOXDSPF
+301: 		TC	TERMEXTV
+302: 		TCF	+1
+303: 		
+304: ICORK2		CAF	IMUCOARV		# RE-DISPLAY COARSE ALIGN VERB.
+305: 		TC	BANKCALL
+306: 		CADR	EXDSPRET
+307: 		
+308: 		TC	BANKCALL		# CALL MODE SWITCHING PROG
+309: 		CADR	IMUCOARS
+310: 		
+311: 		TC	BANKCALL		# STALL
+312: 		CADR	IMUSTALL
+313: 		TC	ENDEXTVB
+314: 		TC	ENDEXTVB
+315: 		
+316: VNLODCDU	VN	2522
+317: IMUCOARV	VN	4100
+1040: # MINIMP	VERB 76		DESCRIPTION
+1041: #	MINIMUM IMPULSE MODE
+1042: #
+1043: #	1.	SET MINIMUM IMPULSE RHC MODE FLAG TO 1.
+1044: 
+1045: MINIMP		INHINT
+1046: 		CS	DAPBOOLS
+1047: 		MASK	PULSES		# PULSES = 1 INDICATES MIN IMP MODE
+1048: 		ADS	DAPBOOLS
+1049: 		TCF	GOPIN		# RETURN VIA PINBRNCH
+1050: 		
+1051: # NOMINIMP	VERB 77		DESCRIPTION
+1052: #	RATE COMMAND MODE
+1053: 
+1054: ## Page 285
+1055: 
+1056: #
+1057: #	1.	SET MINIMUM IMPULSE RHC MODE FLAG TO 0.  (ZERO INDICATES NOT MINIMUM IMPULSE MODE.).
+1058: #	2.	MOVE CDUX, CDUY, CDUZ INTO CDUXD, CDUYD, CDUZD.
+1059: 
+1060: 
+1061: NOMINIMP	INHINT
+1062: 		CS	PULSES
+1063: 		MASK	DAPBOOLS
+1064: 		TS	DAPBOOLS	# PULSES = 0 NOT IN MINIMUM UMPULSE MODE
+1065: 		TC	IBNKCALL
+1066: 		CADR	ZATTEROR
+1067: 		TC	GOPIN
+1290: #	LOAD AUTO PILOT DATA
+1291: #
+1292: #	1.	REQUIRE EXT VERB DISPLAY AVAILABLE AND SET BUSY FLAG.
+1293: #	2.	EXECUTE DAPDATA1, DAPDATA2, AND DAPDATA3.
+1294: #	3.	RELEASE EXT VERB DISPLAY SYSTEM.
+1295: 
+1296: DAPDISP		TC	TESTXACT
+1297: 		CAF	PRIO7		# R03
+1298: 		TC	PRIOCHNG
+1299: 		TC	POSTJUMP
+1300: 		CADR	DAPDATA1
+1301: 		
+1302: 		BANK	34
+1303: 		SETLOC	LOADDAP
+1304: 		BANK
+1305: 		
+1306: 		COUNT*	$$/R03
+1307: 		
+1308: 		SBANK=	LOWSUPER	# FOR SUBSEQUENT LOW 2CADR'S.
+1309: 		
+1310: DAPDATA1	CAF	BOOLSMSK	# SET DISPLAY ACCORDING TO DAPBOOLS BITS.
+1311: 		MASK	DAPBOOLS	# LM
+1312: 		TS	DAPDATR1	# LM
+1313: 		CS	FLGWRD10	# SET BIT 14 TO BE COMPLEMENT OF APSFLAG.
+1314: 		MASK	APSFLBIT
+1315: 		CCS	A
+1316: 		CAF	BIT14
+1317: 		ADS	DAPDATR1
+1318: CHKDATA1	CAE	DAPDATR1	# IF BITS 13 AND 14 ARE BOTH ZERO, FORCE
+1319: 		MASK	BIT13-14	#	A ONE INTO BIT 13.
+1320: 		EXTEND
+1321: 		BZF	FORCEONE
+1322: 		CAE	DAPDATR1	# ENSURE THAT NO ILLEGAL BITS SET BY CREW.
+1323: MSKDATR1	MASK	DSPLYMSK
+1324: 		TS	DAPDATR1
+1325: 		CAF	V01N46		# LM
+1326: 		TC	BANKCALL
+1327: 		CADR	GOXDSPFR
+1328: 		TCF	ENDEXT		# V34E TERMINATE
+1329: 		TCF	DPDAT1		# V33E PROCEED
+1330: 		TCF	CHKDATA1	# E	NEW DATA	CHECK AND REDISPLAY
+1331: 		CAF	REVCNT		# BITS 2 & 3:  BLANKS R2 & R3.
+1332: 		TC	BLANKET
+1333: 		TCF	ENDOFJOB
+1334: FORCEONE	CAF	BIT13
+1335: 		ADS	DAPDATR1
+1336: 		TCF	MSKDATR1
+1337: 		
+1338: DPDAT1		INHINT			# INHINT FOR SETTING OF FLAG BITS AND MASS
+1339: 		CS	APSFLBIT	# 	ON BASIS OF DISPLAYED DAPDATR1.
+1340: 		MASK	FLGWRD10
+1341: 		TS	L		# SET APSFLAG TO BE COMPLEMENT OF BIT 14.
+1342: ## Page 293
+1343: 		CS	DAPDATR1
+1344: 		MASK	BIT14
+1345: 		CCS	A
+1346: 		CAF	APSFLBIT
+1347: 		AD	L
+1348: 		TS	FLGWRD10
+1349: 		CS	DAPDATR1	# SET BITS OF DAPBOOLS ON BASIS OF DISPLAY
+1350: 		MASK	BIT13-14	#	MASK OUT CSMDOCKD (BIT 13) UNLESS BOTH
+1351: 		CCS	A		# 	13 AND 14 ARE SET.
+1352: 		CS	CSMDOCKD
+1353: 		AD	BOOLSMSK
+1354: 		MASK	DAPDATR1
+1355: 		TS	L
+1356: 		CS	BOOLSMSK
+1357: 		MASK	DAPBOOLS
+1358: 		AD	L
+1359: 		TS	DAPBOOLS
+1360: 		MASK	CSMDOCKD	# LOAD MASS IN ACCORDANCE WITH CSMDOCKD.
+1361: 		CCS	A		#	MASS IS USUALLY ALREADY OKAY, SO DO
+1362: 		CAE	CSMMASS		# 	NOT TOUCH ITS LOW-ORDER PART.
+1363: 		AD	LEMMASS
+1364: 		TS	MASS
+1365: 		CAE	DAPBOOLS
+1366: 		MASK	ACC4OR2X	# 2 OR 4 JET X-TRANSLATION
+1367: 		EXTEND			# (BIT ACC4OR2X = 1 FOR 4 JETS)
+1368: 		BZF	+5
+1369: 		CS	BIT15
+1370: 		MASK	FLAGWRD1	# CLEAR NJTSFLAG TO 0 FOR 4 JETS
+1371: 		TS	FLAGWRD1
+1372: 		TCF	+4
+1373: 		CS	FLAGWRD1	# SET NJTSFLAG TO 1 FOR 2 JETS
+1374: 		MASK	BIT15
+1375: 		ADS	FLAGWRD1
+1376: 		CA	DAPBOOLS	# SELECT DESIRED KALCMANU AUTOMATIC
+1377: 		MASK	THREE		# MANEUVER RATE
+1378: 		DOUBLE			# RATEINDX HAS TO BE 0,2,4,6 SINCE RATES
+1379: 		TS	RATEINDX	# ARE DP
+1380: 		TC	POSTJUMP
+1381: 		CADR	STIKLOAD
+1382: 		
+1383: V01N46		VN	0146
+1384: DSPLYMSK	OCT	33113
+1385: BOOLSMSK	OCT	13113
+1386: 
+1387: 		BANK	01
+1388: 		SETLOC	LOADDAP1
+1389: 		BANK
+1390: 		
+1391: 		COUNT*	$$/R03
+1392: 		
+1393: STIKLOAD	CAF	EBANK6
+1394: ## Page 294
+1395: 		TS	EBANK
+1396: 		EBANK=	STIKSENS
+1397: 		CA	RHCSCALE	# SET STICK SENSITIVITY TO CORRESPOND TO A
+1398: 		MASK	DAPBOOLS	# MAXIMUM COMMANDED RATE (AT 42 COUNTS) OF
+1399: 		CCS	A		# 20 D/S (NORMAL) OR 4 D/S (FINE), SCALED
+1400: 		CA	NORMAL		# AT 45 D/S.
+1401: 		AD	FINE
+1402: 		TS	STIKSENS
+1403: 		CA	-0.6D/S
+1404: 		TS	-RATEDB		# LM-ONLY BREAKOUT LEVEL IS .6 D/S.
+1405: 		CA	CSMDOCKD	# IF CSM-DOCKED, DIVIDE STICK SENSITIVITY
+1406: 		MASK	DAPBOOLS	# BY 10.  NORMAL SCALING IS THEN 2 D/S AND
+1407: 		EXTEND			# FINE SCALING IS 0.4 D/S
+1408: 		BZF	+7		# BRANCH IF CSM IS NOT DOCKED.
+1409: 		CA	STIKSENS
+1410: 		EXTEND
+1411: 		MP	1/10
+1412: 		TS	STIKSENS
+1413: 		CA	-0.3D/S		# CSM-DOCKED BREAKOUT LEVEL IS .3 D/S.
+1414: 		TS	-RATEDB
+1415: 		RELINT			# PROCEED TO NOUN 47, MASS LOAD,
+1416: 		
+1417: DAPDATA2	CAF	V0647
+1418: 		TC	BANKCALL
+1419: 		CADR	GOXDSPFR
+1420: 		TCF	ENDR03		# V34E	TERMINATE. FIRST SET DB, DO 1/ACCS
+1421: 		TCF	DAPDAT2		# V33E	PROCEED
+1422: 		TCF	DAPDATA2	# 	LOAD NEW DATA AND RECYCLE
+1423: 		CAF	BIT3		# BLANKS R3
+1424: 		TC	BLANKET		#		LM
+1425: 		TCF	ENDOFJOB
+1426: ENDR03		INHINT
+1427: 		TC	IBNKCALL
+1428: 		CADR	RESTORDB
+1429: 		TCF	ENDEXT		# DOES RELINT
+1430: 
+1431: DAPDAT2		CS	FLGWRD10	# DETERMINE STAGE FROM APSFLAG
+1432: 		MASK	APSFLBIT
+1433: 		CCS	A
+1434: 		CA	MINLMD
+1435: 		AD	MINMINLM
+1436: 		AD	LEMMASS		# LEMMASS MUST BE GREATER THAN EMPTY LEM
+1437: 		EXTEND
+1438: 		BZMF	DAPDATA2	# ASK FOR NEW MASSES
+1439: 		CAE	DAPBOOLS
+1440: 		MASK	CSMDOCKD
+1441: 		EXTEND
+1442: 		BZF	LEMALONE	# SKIP TEST ON CSMMASS IF NOT DOCKED.
+1443: 		CS	MINCSM		# TEST CSM MASS
+1444: 		AD	CSMMASS		# CSMMASS MUST BE GREATER THAN EMPTY CSM
+1445: ## Page 295
+1446: 		EXTEND
+1447: 		BZMF	DAPDATA2	# ASK FOR NEW MASSES
+1448: 		CAE	CSMMASS		# DOCKED:  MASS = CSMMASS + LEMMASS
+1449: LEMALONE	AD	LEMMASS		# LEM ALONE:  MASS = LEMMASS
+1450: 		ZL
+1451: 		DXCH	MASS
+1452: 		INHINT
+1453: 		TC	IBNKCALL	# SET DEADBANK AND COMPUTE MOMENTS OF
+1454: 		CADR	RESTORDB	#	INERTIA.
+1455: 		RELINT			# PROCEED TO NOUN 48 (OR END).
+
+FILE Luminary099/DAPIDLER_PROGRAM.agc SHA256 903ef74e8062d3957e96dc3222df29b5940696a238dc858c7192748190f698ab
+33: ## Page 1410
+34: # THE DAPIDLER PROGRAM IS STARTED BY FRESH START AND RESTART.  THE DAPIDLER PROGRAM IS DONE 10 TIMES
+35: # PER SECOND UNTIL THE ASTRONAUT DESIRES THE DAP TO WAKE UP, AND THE IMU AND CDUS ARE READY FOR USE BY THE DAP.
+36: # THE NECESSARY INITIALIZATION OF THE DAP IS DONE BY THE DAPIDLER PROGRAM.
+37: 
+38: 		BANK	16
+39: 		SETLOC	DAPS1
+40: 		BANK
+41: 
+42: 		EBANK=	AOSQ
+43: 
+44: 		COUNT*	$$/DAPID
+45: 
+46: CHEKBITS	EXTEND
+47: 		READ	CHAN31		# IF BOTH BIT13 AND BIT14 ARE ONE, THEN
+48: 		COM			# THE MODE SELECT SWITCH IS IN THE OFF
+49: 		MASK	BIT13-14	# POSITION, AND SO THE DAP SHOULD BE OFF,
+50: 		EXTEND			# WITH NO ATTITUDE ERROR DISPLAY.
+51: 		BZF	MOREIDLE
+52: 
+53: 		CS	IMODES33
+54: 		MASK	BIT6
+55: 		CCS	A
+56: 		TCF	JUMPDSP
+57: 		CS	RCSFLAGS	# IMU NOT USABLE.  SET UP INITIALIZATION
+58: 		MASK	BIT3		# FLAG FOR ATT ERROR DISPLAY ROUTINE.
+59: 		ADS	RCSFLAGS
+60: 		TCF	SHUTDOWN
+61: 
+62: CHEKMORE	CAF	BIT10		# BIT 10 OF 30 IS PGNCS CONTROL OF S/C
+63: 		EXTEND
+64: 		RAND	CHAN30		# BITS IN 30 ARE INVERTED
+65: 		CCS	A
+66: 		TCF	MOREIDLE
+67: 
+68: 		RETURN
+69: 
+70: ## Page 1411
+71: # DAPIDLER ENTRY.
+72: 
+73: DAPIDLER	LXCH	BANKRUPT	# INTERRUPT LEAD INS (CONTINUED)
+74: 		EXTEND
+75: 		QXCH	QRUPT
+76: 
+77: 		CA	RCSFLAGS
+78: 		MASK	BIT13
+79: 		CCS	A		# CHECK IF 1/ACCJOB HAS BEEN SET UP SINCE
+80: 		TCF	CHECKUP		# THE LAST FRESH START OR RESTART.
+81: 		CA	BIT13
+82: 		ADS	RCSFLAGS	# BIT 13 IS 1.
+83: 		CAF	PRIO27
+84: 		TC	NOVAC		# SET UP JOB TO DO A LITTLE INITIALIZATION
+85: 		EBANK=	AOSQ		#	AND EXECUTE 1/ACCS.
+86: 		2CADR	1/ACCSET	# (WILL BRANCH TO MOREIDLE ON ACCSOKAY)
+87: 
+88: CHECKUP		TC	CHEKBITS	# CHECK TO SEE IF LM DAP IS TO GO ON AND
+89: 					#	DO ERROR DISPLAY.
+90: 
+91: 		CAE	DAPBOOLS	# IF 1/ACCS HAS NOT BEEN COMPLETED, IDLE.
+92: 		MASK	ACCSOKAY	#	NOTE:	ONLY FRESH START AND RESTART
+93: 		EXTEND			#		KNOCK THIS BIT DOWN.
+94: 		BZF	MOREIDLE
+176: MOREIDLE	TC	IBNKCALL	# CALCULATE Q,R-AXES ATTITUDE ERRORS.
+177: 		CADR	QERRCALC
+178: 
+179: 		TC	IBNKCALL
+180: 		CADR	CALCPERR	# CALCULATE P AXIS ATTITUDE ERRORS.
+181: 
+182: SHUTDOWN	EXTEND
+183: 		DCA	IDLERADR
+184: 		DXCH	T5ADR
+185: 
+186: 		CAF	ZERO		# KILL ANY POSSIBLE JET REQUESTS
+187: 		TS	NEXTP
+188: 		TS	NEXTU
+189: 		TS	NEXTV
+190: 		EXTEND			# COMMAND JETS OFF.
+191: 		WRITE	CHAN5
+192: 		EXTEND
+193: 		WRITE	CHAN6
+194: 		CS	BGIM23		# TURN TRIM GIMBAL OFF
+195: 		EXTEND
+196: 		WAND	CHAN12
+197: 		TCF	SETTIME5	# RETURN IN 100 MSEC.
+198: 
+199: MANFLAG		OCT	03021
+
+FILE Luminary099/FLAGWORD_ASSIGNMENTS.agc SHA256 a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d
+1235: 
+1236: # BIT 5 FLAG 13
+1237: AORBSFLG	=	205D			#	P-AXIS COUPLES 7.15	P-AXIS COUPLES 4.12
+1238: AORBSYST	=	BIT5			#	AND 8,16 PREFERRED	AND 3,11 PREFERRED
+1239: 
+1240: # BIT 4 FLAG 13
+1241: DBSELFLG	=	206D			#	MAX DB SELECTED		MIN DB SELECTED BY
+1242: DBSELECT	=	BIT4			#	BY CREW	(5 DEG)		CREW (0.3 DEG)
+1243: 
+1244: # BIT 3 FLAG 13
+1245: ACCOKFLG	=	207D			#	CONTROL AUTHORITY	RESTART OR FRESH ST.
+1246: ACCSOKAY	=	BIT3			#	VALUES FROM 1/ACCS	SINCE LAST 1/ACCS;
+1247: 						#	USABLE			OUTPUTS SUSPECT.
+1248: 
+1249: # BIT 2 FLAG 13
+1250: AUTR2FLG	=	208D			# THESE FLAGS ARE USED TOGETHER TO INDICAT
+
+FILE Luminary099/R60,R62.agc SHA256 beff6629b32c4c925d04093d76b7fbf5d7347c86f5ce76298e2931b3cb0ff401
+567: # ROUTINE FOR INITIATING AUTOMATIC MANEUVER VIA KEYBOARD (V49)
+568: 
+569: 		BANK	34
+570: 		SETLOC	R62
+571: 		BANK
+572: 		EBANK=	BCDU
+573: 		
+574: 		COUNT*	$$/R62
+575: 		
+576: R62DISP		EQUALS	R62FLASH
+577: 
+578: R62FLASH	CAF	V06N22		# FLASH V06N22 AND
+579: 		TC	BANKCALL	# ICDU ANGLES
+580: 		CADR	GOFLASH
+581: 		TCF	ENDEXT		# TERMINATE
+582: 		TCF	GOMOVE		# PROCEED
+583: 		TCF	R62FLASH	# ENTER
+584: 		
+585: 					# ASTRONAUT MAY LOAD NEW ICDUS AT THIS
+586: 					# POINT
+587: GOMOVE		TC	UPFLAG		# SET FOR 3-AXIS MANEUVER
+588: 		ADRES	3AXISFLG
+589: 		
+590: 		TC	BANKCALL
+591: 		CADR	R60LEM
+592: 		TCF	ENDEXT		# END R62
+
+FILE Luminary099/T4RUPT_PROGRAM.agc SHA256 daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07
+250: 
+251: # FUNCTIONAL DESCRIPTION:  THIS PROGRAM IS ENTERED EVERY 480 MS.  IT DETECTS CHANGES OF THE IMU STATUS BITS IN
+252: # CHANNEL 30 AND CALLS THE APPROPRIATE SUBROUTINES.  THE BITS PROCESSED AND THEIR RELEVANT SUBROUTINES ARE:
+253: 
+254: #	FUNCTION		BIT	SUBROUTINE CALLED
+255: #	--------		---	-----------------
+256: #	TEMP IN LIMITS		 15	TLIM
+257: #	ISS TURN-ON REQUEST	 14	ITURNON
+258: #	IMU FAIL		 13	IMUFAIL (SETISSW)
+259: #	IMU CDU FAIL		 12	ICDUFAIL (SETISSW)
+260: #	IMU CAGE		 11	IMUCAGE
+261: #	IMU OPERATE		  9	IMUOP
+262: 
+263: # THE LAST SAMPLED STATE OF THESE BITS IS LEFT IN IMODES30.  ALSO, EACH SUBROUTINE CALLED FINDS THE NEW
+264: # VALUE OF THE BIT IN A, WITH Q SET TO THE PROPER RETURN LOCATION, NXTIFAIL.
+265: 
+266: # CALLING SEQUENCE:  T4RUPT EVERY 480 MILLISECONDS.
+267: 
+268: # JOBS OR TASKS INITIATED:  NONE.
+269: 
+270: # SUBROUTINES CALLED:  TLIM, ITURNON, SETISSW, IMUCAGE, IMUOP.
+271: 
+272: # ERASABLE INITIALIZATION:
+273: #	FRESH START OR RESTART WITH NO GROUPS ACTIVE:  C(IMODES30) = OCT 37411.
+274: #	RESTART WITH ACTIVE GROUPS:	C(IMODES30) = (B(IMODES30)AND(OCT 00035)) PLUS OCT 37400.
+275: #					THIS LEAVES IMU FAIL BITS INTACT.
+276: 
+277: # ALARMS:  NONE.
+278: 
+279: # EXIT:  TNONTEST.
+280: 
+281: # OUTPUT:  UPDATED IMODES30 WITH CHANGES PROCESSED BY APPROPRIATE SUBROUTINE.
+282: 
+283: IMUMON		CA	IMODES30	# SEE IF THERE HAS BEEN A CHANGE IN THE
+284: 		EXTEND			# RELEVANT BITS OF CHAN 30.
+285: 		RXOR	CHAN30
+286: 		MASK	30RDMSK
+287: 		EXTEND
+288: 		BZF	TNONTEST	# NO CHANGE IN STATUS.
+289: 		
+290: 		TS	RUPTREG1	# SAVE BITS WHICH HAVE CHANGED.
+340: # PROCEEDS, SETTING BITS 8 AND 7 = 0.  AT PROCTNON, IF ISS TURN-ON REQUEST IS PRESENT, THE ISS IS CAGED (ZERO +
+341: # COARSE).  IF ISS OPERATE IS NOT PRESENT PROGRAM ALARM 00213 IS ISSUED.  AT THE END OF A 90 SECOND CAGE, BIT 2
+342: # OF IMODES30 IS TESTED.  IF IT IS = 1, ISS TURN-ON WAS NOT PRESENT FOR THE ENTIRE 90 SECONDS.  IN THAT CASE, IF
+343: # THE ISS TURN-ON REQUEST IS PRESENT THE 90 SECOND WAIT IS REPEATED, OTHERWISE NO ACTION OCCURS UNLESS A PROGRAM
+344: # WAS WAITING FOR THE INITIALIZATION IN WHICH CASE THE PROGRAM IS GIVEN AN IMUSTALL ERROR RETURN.  IF THE DELAY
+345: # WENT PROPERLY, THE ISS DELAY OUTBIT IS SENT AND THE ICDU'S ZEROED.  A TASK IS INITIATED TO REMOVE THE PIPA FAIL
+346: # INHIBIT BIT IN 10.24 SECONDS.  IF A MISSION PROGRAM WAS WAITING IT IS INFORMED VIA ENDIMU.
+347: 
+348: # AT PROCTNON, IF ONLY ISS OPERATE IS PRESENT (OPONLY), THE CDU'S ARE ZEROED UNLESS THE PLATFORM IS IN COARSE
+349: # ALIGN (= GIMBAL LOCK HERE) OR A MISSION PROGRAM IS USING THE IMU (IMUSEFLG = 1).
+350: 
+351: # CALLING SEQUENCE:  T4RUPT EVERY 480 MILLISECONDS AFTER IMUMON.
+352: 
+353: # JOBS OR TASKS INITIATED:  1) ENDTNON, 90 SECONDS AFTER CAGING STARTED.  2) ISSUP, 4 SECONDS AFTER CAGING DONE.
+354: #	3) PFAILOK, 10.24 SECONDS AFTER INITIALIZATION COMPLETED.  4) UNZ2, 320 MILLISECONDS AFTER ZEROING
+355: #	STARTED.
+356: 
+357: # SUBROUTINES CALLED: CAGESUB, CAGESUB2, ZEROICDU, ENDIMU, IMUBAD, NOATTOFF, SETISSW, VARDELAY.
+358: 
+359: # ERASABLE INITIALIZATION:  SEE IMUMON.
+360: 
+361: # ALARMS:  PROGRAM ALARM 00213 IF ISS TURN-ON REQUESTED WITHOUT ISS OPERATE.
+362: 
+363: # EXIT:  ENDTNON EXITS TO C33TEST.  TASKS HAVING TO DO WITH INITIALIZATION EXIT AS FOLLOWS:  MISSION PROGRAM
+364: # WAITING AND INITIALIZATION COMPLETE, EXIT TO ENDIMU, MISSION PROGRAM WAITING AND INITIALIZATION FAILED, EXIT TO
+365: # IMUBAD, IMU NOT IN USE, EXIT TO TASKOVER.
+366: 
+367: # OUTPUT:  ISS INITIALIZED.
+368: 
+369: TNONTEST	CS	IMODES30	# AFTER PROCESSING ALL CHANGES, SEE IF IT
+370: ## Page 164
+371: 		MASK	BIT7		# IS TIME TO ACT ON A TURN-ON SEQUENCE.
+372: 		CCS	A
+373: 		TCF	C33TEST		# NO - EXAMINE CHANNEL 33.
+374: 			
+375: 		CAF	BIT8		# SEE IF FIRST SAMPLE OR SECOND.
+376: 		MASK	IMODES30
+377: 		CCS	A
+378: 		TCF	PROCTNON	# REACT AFTER SECOND SAMPLE.
+379: 			
+380: 		CAF	BIT8		# IF FIRST SAMPLE, SET BIT TO REACT NEXT
+381: 		ADS	IMODES30	# TIME.
+382: 		TCF	C33TEST
+383: 			
+384: 		# PROCESS IMU TURN-ON REQUESTS AFTER WAITING 1 SAMPLE FOR ALL SIGNALS TO ARRIVE.
+385: 			
+386: PROCTNON	CS	BITS7&8
+387: 		MASK	IMODES30
+388: 		TS	IMODES30
+389: 		MASK	BIT14		# SEE IF TURN-ON REQUEST.
+390: 		CCS	A
+391: 		TCF	OPONLY		# OPERATE ON ONLY.
+392: 			
+393: 		CS	IMODES30	# IF TURN-ON REQUEST, WE SHOULD HAVE IMU
+394: 		MASK	BIT9		# OPERATE.
+395: 		CCS	A
+396: 		TCF	+3
+397: 			
+398: 		TC	ALARM		# ALARM IF NOT.
+399: 		OCT	213
+400: 			
+401:  +3		TC	CAGESUB
+402: 		CAF	90SECS
+403: 		TC	WAITLIST
+404: 		EBANK=	M11
+405: 		2CADR	ENDTNON
+406: 
+407: 		TCF	C33TEST
+408: 			
+409: RETNON		CAF	90SECS
+410: 		TC	VARDELAY
+411: 			
+412: ENDTNON		CS	BIT2		# RESET TURN-ON REQUEST FAIL BIT.
+413: 		MASK	IMODES30
+414: 		XCH	IMODES30
+415: 		MASK	BIT2		# IF IT WAS OFF, SEND ISS DELAY COMPLETE.
+416: 		EXTEND
+417: 		BZF	ENDTNON2
+418: 			
+419: 		CAF	BIT14		# IF IT WAS ON AND TURN-ON REQUEST NOW
+420: ## Page 165
+421: 		MASK	IMODES30	# PRESENT, RE-ENTER 90 SEC DELAY IN WL.
+422: 		EXTEND
+423: 		BZF	RETNON
+424: 			
+425: 		CS	FLAGWRD0	# IF IT IS NOT ON NOW, SEE IF A PROG WAS
+426: 		MASK	IMUSEBIT	# WAITING.
+427: 		CCS	A
+428: 		TCF	TASKOVER
+429: 		TC	POSTJUMP
+430: 		CADR	IMUBAD		# UNSUCCESSFUL TURN-ON.
+431: 			
+432: ENDTNON2	CAF	BIT15		# SEND ISS DELAY COMPLETE.
+433: 		EXTEND
+434: 		WOR	CHAN12
+435: 			
+436: 		TC 	IBNKCALL	# TURN OFF NO ATT LAMP.
+437: 		CADR	NOATTOFF
+438: 			
+439: UNZ2		TC	ZEROICDU
+440: 
+441: 		CS	BITS4&5		# REMOVE ZERO AND COARSE.
+442: 		EXTEND
+443: 		WAND	CHAN12
+444: 			
+445: 		CAF	BIT11		# WAIT 10 SECS FOR CTRS TO FIND GIMBALS
+
+FILE Luminary099/FRESH_START_AND_RESTART.agc SHA256 47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869
+299: GOPROG3		CAF	NUMGRPS		# VERIFY PHASE TABLE AGREEMENTS
+300: PCLOOP		TS	MPAC +5
+301: 		DOUBLE
+302: 		EXTEND
+303: 		INDEX	A
+304: 		DCA	-PHASE1		# COMPLEMENT INTO A, DIRECT INTO L.
+305: 		EXTEND
+306: 		RXOR	LCHAN		# RESULT MUST BE -0 FOR AGREEMENT.
+307: 		CCS	A
+308: 		TCF	PTBAD		# RESTART FAILURE.
+309: 		TCF	PTBAD
+310: 		TCF	PTBAD
+311: ## Page 217
+350: 		TCF	ENDRSTRT	# PHASE ACTIVE
+351: 		CAF	BIT15		# IS MODE -0
+352: 		MASK	MODREG
+353: 		EXTEND
+354: 		BZF	GOTOPOOH	# NO
+355: 		TCF	ENDRSTRT	# YES
+356: PTBAD		TC	ALARM		# SET ALARM TO SHOW PHASE TABLE FAILURE.
+357: 		OCT	1107
+358: 		
+359: 		TCF	DOFSTRT1
+360: #******** ****** ******
+
+FILE yaAGC/ringbuffer_api.c SHA256 554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530
+75: ChannelOutput (agc_t* State, int Channel, int Value)
+76: {
+77:   if (!ChannelIsSetUp)
+78:     ChannelSetup (State);
+79: 
+80:   // Some output channels have purposes within the CPU, so we have to
+81:   // account for those separately.
+82:   if (Channel == 7)
+83:     {
+84:       State->InputChannel[7] = State->OutputChannel7 = (Value & 0160);
+85:       return;
+86:     }
+87: 
+88:   // Stick data into the RHCCTR registers, if bits 8,9 of channel 013 are set.
+89:   if (Channel == 013 && 0600 == (0600 & Value) && !CmOrLm)
+90:     {
+91:       State->Erasable[0][042] = LastRhcPitch;
+92:       State->Erasable[0][043] = LastRhcYaw;
+93:       State->Erasable[0][044] = LastRhcRoll;
+94:     }
+95: 
+96:   unsigned char Packet[4];
+97:   if (!FormIoPacket (Channel, Value, Packet))
+98:     ringbuffer_put (&ringbuffer_out, Packet);
+99: }
+124:       Value &= 077777; // Convert to AGC format (only keep upper 15 bits).
+125: 
+126:       if (uBit)
+127:         {
+128:           // This is not an actual input to the CPU. It only sets a bit mask
+129:           // for masking of future inputs.
+130:           ChannelMasks[Channel] = Value;
+131:           continue; // Proceed with the next packet in the ring buffer.
+132:         }
+133: 
+134:       if (Channel & 0x80)
+135:         {
+136:           // This is a counter increment. According to NullAPI.c we need to
+137:           // immediately return a value of 1.
+138:           UnprogrammedIncrement (State, Channel, Value);
+139:           return 1;
+140:         }
+141: 
+142:       // Mask out irrelevant bits, set current bits, and write to CPU.
+143:       Value &= ChannelMasks[Channel];
+144:       Value |= ReadIO (State, Channel) & ~ChannelMasks[Channel];
+145:       WriteIO (State, Channel, Value);
+146: 
+147:       // If this is a keystroke from the DSKY, generate an interrupt req.
+148:       if (Channel == 015)
+149:         State->InterruptRequests[5] = 1;
+150:       // If this is on fictitious input channel 0173, then the data
+151:       // should be placed in the INLINK counter register, and an
+152:       // UPRUPT interrupt request should be set.
+153:       else if (Channel == 0173)
+154:         {
+155:           State->Erasable[0][RegINLINK] = (Value & 077777);
+156:           State->InterruptRequests[7] = 1;
+157:         }
+158:       // Fictitious registers for rotational hand controller (RHC).
+159:       // Note that the RHC angles are not immediately used, but
+160:       // merely squirreled away for later.  They won't actually
+161:       // go into the counter registers until the RHC counters are
+162:       // enabled and the data requested (bits 8,9 of channel 13).
+163:       else if (Channel == 0166)
+164:         {
+165:           LastRhcPitch = Value;
+166:           ChannelOutput (State, Channel, Value);  // echo
+167:         }
+168:       else if (Channel == 0167)
+169:         {
+170:           LastRhcYaw = Value;
+171:           ChannelOutput (State, Channel, Value);  // echo
+172:         }
+173:       else if (Channel == 0170)
+174:         {
+175:           LastRhcRoll = Value;
+176:           ChannelOutput (State, Channel, Value);  // echo
+
+FILE yaAGC/agc_engine.c SHA256 9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef
+1630: BurstOutput (agc_t *State, int DriveBitMask, int CounterRegister, int Channel)
+1631: {
+1632:   static int CountCDUX = 0, CountCDUY = 0, CountCDUZ = 0; // In target CPU format.
+1633:   int DriveCount = 0, DriveBit, Direction = 0, Delta, DriveCountSaved;
+1634:   if (CounterRegister == RegCDUXCMD)
+1635:     DriveCountSaved = CountCDUX;
+1636:   else if (CounterRegister == RegCDUYCMD)
+1637:     DriveCountSaved = CountCDUY;
+1638:   else if (CounterRegister == RegCDUZCMD)
+1639:     DriveCountSaved = CountCDUZ;
+1640:   else
+1641:     return (0);
+1642:   // Driving this axis?
+1643:   DriveBit = (State->InputChannel[014] & DriveBitMask);
+1644:   // If so, we must retrieve the count from the counter register.
+1645:   if (DriveBit)
+1646:     {
+1647:       DriveCount = State->Erasable[0][CounterRegister];
+1648:       State->Erasable[0][CounterRegister] = 0;
+1649:     }
+1650:   // The count may be negative.  If so, normalize to be positive and set the
+1651:   // direction flag.
+1652:   Direction = (040000 & DriveCount);
+1653:   if (Direction)
+1654:     {
+1655:       DriveCount ^= 077777;
+1656:       DriveCountSaved -= DriveCount;
+1657:     }
+1658:   else
+1659:     DriveCountSaved += DriveCount;
+1660:   if (DriveCountSaved < 0)
+1661:     {
+1662:       DriveCountSaved = -DriveCountSaved;
+1663:       Direction = 040000;
+1664:     }
+1665:   else
+1666:     Direction = 0;
+1667:   // Determine how many pulses to output.  The max is 192 per burst.
+1668:   Delta = DriveCountSaved;
+1669:   if (Delta >= 192 / COARSE_SMOOTH)
+1670:     Delta = 192 / COARSE_SMOOTH;
+1671:   // If the count is non-zero, pulse it.
+1672:   if (Delta > 0)
+1673:     {
+1674:       ChannelOutput (State, Channel, Direction | Delta);
+1675:       DriveCountSaved -= Delta;
+1676:     }
+1677:   if (Direction)
+1678:     DriveCountSaved = -DriveCountSaved;
+1679:   if (CounterRegister == RegCDUXCMD)
+1680:     CountCDUX = DriveCountSaved;
+1681:   else if (CounterRegister == RegCDUYCMD)
+1682:     CountCDUY = DriveCountSaved;
+1683:   else if (CounterRegister == RegCDUZCMD)
+1684:     CountCDUZ = DriveCountSaved;
+1685:   return (DriveCountSaved);
+2412:   i = (State->InputChannel[014] & 070000);	// Check IMU CDU drive bits.
+2413:   if (ImuChannel14 == 0 && i != 0)	// If suddenly active, start drive.
+2414:     ImuCduCount = State->CycleCounter - IMUCDU_BURST_CYCLES;
+2415:   if (i != 0 && (State->CycleCounter - ImuCduCount) >= IMUCDU_BURST_CYCLES) // Time for next burst.
+2416:     {
+2417:       // Adjust the cycle counter.
+2418:       ImuCduCount += IMUCDU_BURST_CYCLES;
+2419:       // Determine how many pulses are wanted on each axis this burst.
+2420:       ImuChannel14 = BurstOutput (State, 040000, RegCDUXCMD, 0174);
+2421:       ImuChannel14 |= BurstOutput (State, 020000, RegCDUYCMD, 0175);
+2422:       ImuChannel14 |= BurstOutput (State, 010000, RegCDUZCMD, 0176);
+2423:     }

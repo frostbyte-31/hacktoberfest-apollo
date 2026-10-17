@@ -1,0 +1,48 @@
+{
+  "status": "VERIFIED",
+  "cycles": 4000000,
+  "input_count": 21,
+  "rcs_output_count": 942,
+  "nonzero_rcs_output_count": 0,
+  "startdap_visits": 0,
+  "shutdown_visits": 469,
+  "post_neutral_chekbits": {
+    "ev": "checkpoint",
+    "cycle": 2704239,
+    "bank": 14,
+    "z": 1024,
+    "a": 4095,
+    "chan30": 15871,
+    "chan31": 28671,
+    "imodes33": 15392,
+    "dapbools": 8910
+  },
+  "final": {
+    "ev": "sample",
+    "cycle": 4000000,
+    "modreg": 0,
+    "chan30": 15871,
+    "chan31": 28671,
+    "imodes30": 16137,
+    "imodes33": 15392,
+    "dapbools": 8910,
+    "rcsflags": 4100,
+    "mass": 1701,
+    "lemmass": 1701,
+    "rhc_yaw": 0,
+    "cdu": [
+      0,
+      0,
+      0
+    ],
+    "failreg": [
+      0,
+      0,
+      0
+    ]
+  },
+  "replay_equal": true,
+  "component_status": "VERIFIED component execution only; injected test jet flags are NOT AGC output",
+  "spacecraft_loop": "NOT RUN: original DAP remained in shutdown; IMODES33 bit 6 set",
+  "prior_files_preserved": 78
+}
