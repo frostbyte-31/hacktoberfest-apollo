@@ -1,0 +1,23 @@
+001080,001001:                                                                                          	# 01520         V37 REQUEST NOT PERMITTED AT THIS TIME          V37
+002760,000460: 26,2022                        NODOFLAG           =        044D                          	#       V37 NOT PERMITTED       V37 PERMITTED
+007022,000686: 06,2516           11302                           CCS      IMODES30                      	#
+007236,000900: 06,2650           10000        PIPFAIL            CCS      A                             	# SET BIT10 IN IMODES30 SO ALL ISS WARNING
+009240,000683:                                                                                          	# PROGRAM NAME          V37                     ASSEMBLY SUNDANCE
+009281,000724:                                                                                          	#               CONTROL IS DIRECTED TO V37 BY THE VERBFAN ROUTINE.
+009305,000748: 04,2040           54775        V37                TS       MMNUMBER                      	# SAVE MAJOR MODE
+009326,000769: 04,2061           40076                           CS       FLAGWRD2                      	# NO, IS NODO V37 FLAG SET
+009355,000798: 04,2107           40103        ISSERVON           CS       FLAGWRD7                      	# V37 FLAG SET - I.E. IS SERVICER GOING
+009358,000801: 04,2112           12134                           TCF      CANV37                        	# NO
+009381,000824: 04,2134           34755        CANV37             CAF      ZERO                          	#
+012381,001563:                                                                                          	#       GO TO V37 WITH ZERO TO CAUSE POO.
+012390,001572: 43,3212           10040                           CADR     V37                           	# GO TO POO
+019308,002812: 41,3452  04,2040               MODROUTB           =        V37                           	#
+026455,000049:                                                                                          	# EXIT VIA V37 CALL OR TO GOTOPOOH (V34E)
+028064,000054:                                                                                          	#       BE SELECTED BY THE ASTRONAUT BY DSKY ENTRY V37 E31.
+029375,000982: 35,3657           13651                           BZF      KILCLOCK                      	# FINALFLG IS SET - FLASH V37 - AWAIT NEW PGM
+043162,000088:                                                                                          	#       4.      NON-V37 SELECTABLE TYPE PROGRAMS (E.G. AGS INITIALIZATION (SUNDANCE, LUMINARY) AND P61-P62
+057210,000966: 37,3655           05504        P06                TC       UPFLAG                        	# SET NODOV37 BIT
+   682,F:   CADRTAB      01,2001  		   727,F:   CANTROO      04,2065  		   772,C:   CDUY         0000033  
+   683,F:   CAGESUB      06,2735  		   728,F:   CANV37       04,2134  		   773,C:   CDUYCMD      0000051  
+  2428,E:   IMODES30        1302  		  2473,F:   INCAZ        15,2310  		  2518,F:   INITVEL3     11,2105  
+  6453,E:   VYBEAMNB     E4,1636  		  6498,F:   V06N59       35,3726  		  6543,F:   V37          04,2040  
