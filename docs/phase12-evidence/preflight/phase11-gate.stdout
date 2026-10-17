@@ -1,0 +1,21 @@
+zero started
+zero exit 0
+positive started
+positive exit 0
+negative started
+negative exit 0
+disconnected started
+disconnected exit 0
+repeat started
+repeat exit 0
+analysis started
+analysis exit 0
+phase10-baseline started
+phase10-baseline exit 0
+phase10-analysis started
+phase10-analysis exit 0
+sensor-tests started
+sensor-tests exit 0
+native-tests started
+native-tests exit 0
+{"all_pass": true, "output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/phase12-gate", "test_results": {"sensor": {"passed": 13, "failed": 0, "errored": 0, "skipped": 0}, "native": {"passed": 16, "failed": 0, "errored": 0, "skipped": 0}}}

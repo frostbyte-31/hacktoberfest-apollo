@@ -1,0 +1,38 @@
+{
+  "classification": "FAILED",
+  "prior_files": {
+    "files_checked": 6340,
+    "changed_or_missing": []
+  },
+  "frontend": {
+    "files_checked": 5607,
+    "changed_or_missing": [],
+    "new_inventory_files": [],
+    "missing_inventory_files": [],
+    "branch_head_status_identical": false,
+    "branch": "codex/frontend-mission-control",
+    "head": "5a689c75d43613f29a49fa32d9bd786437825ee5"
+  },
+  "older_seals": {
+    "phase10": {
+      "files_checked": 739,
+      "changed_or_missing": [],
+      "manifest_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc"
+    },
+    "phase11": {
+      "files_checked": 509,
+      "changed_or_missing": [],
+      "manifest_sha256": "184c996c9930f54d5851ad1c7f794ea5245d252fb0b79e03b636ccda092f7c47"
+    }
+  },
+  "backend_phase11": {
+    "head": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+    "status": ""
+  },
+  "phase12": {
+    "branch": "codex/backend-phase12",
+    "head": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+    "tracked_diff": "",
+    "status": "?? docs/PHASE12_DESCENT_PROPULSION.md\n?? docs/phase12-evidence/\n"
+  }
+}

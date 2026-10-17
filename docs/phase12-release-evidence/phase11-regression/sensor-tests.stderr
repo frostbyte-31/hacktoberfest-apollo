@@ -1,0 +1,18 @@
+test_chunking_does_not_change_pulse_schedule (test_sensor.SensorTests) ... ok
+test_disconnection_drops_inputs_without_replaying_on_reconnect (test_sensor.SensorTests) ... ok
+test_fractional_pulses_accumulate_across_samples (test_sensor.SensorTests) ... ok
+test_frame_rotation_and_axis_sign (test_sensor.SensorTests) ... ok
+test_free_fall_acceleration_is_not_specific_force (test_sensor.SensorTests) ... ok
+test_multiple_axes_have_stable_order (test_sensor.SensorTests) ... ok
+test_negative_pulses_are_minc_not_mcdu (test_sensor.SensorTests) ... ok
+test_positive_pulses_and_exact_threshold_times (test_sensor.SensorTests) ... ok
+test_rejects_invalid_vectors_frames_and_time (test_sensor.SensorTests) ... ok
+test_repeated_run_serializes_identically (test_sensor.SensorTests) ... ok
+test_rounds_crossing_up_to_integer_cycle (test_sensor.SensorTests) ... ok
+test_signed_remainder_cancels_before_reversing (test_sensor.SensorTests) ... ok
+test_source_mappings_and_nominal_scale (test_sensor.SensorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.007s
+
+OK

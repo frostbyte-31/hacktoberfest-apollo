@@ -1,0 +1,22 @@
+[
+  {
+    "name": "milestone1",
+    "original_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261017T232759.107653Z",
+    "copied_to": ".build/phase12/release-final-regressions/make-check-suites/milestone1"
+  },
+  {
+    "name": "milestone2",
+    "original_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/tests/20261017T232804Z-ba57f290",
+    "copied_to": ".build/phase12/release-final-regressions/make-check-suites/milestone2"
+  },
+  {
+    "name": "milestone3",
+    "original_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone3/tests/20261017T232811Z-57f8378c",
+    "copied_to": ".build/phase12/release-final-regressions/make-check-suites/milestone3"
+  },
+  {
+    "name": "phase7",
+    "original_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase7/tests/20261017T232905Z-5b00baf8",
+    "copied_to": ".build/phase12/release-final-regressions/make-check-suites/phase7"
+  }
+]

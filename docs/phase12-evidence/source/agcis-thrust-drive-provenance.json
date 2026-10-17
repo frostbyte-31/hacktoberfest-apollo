@@ -1,0 +1,23 @@
+{
+  "classification": "VERIFIED primary hardware reference; no flight telemetry",
+  "url": "https://www.ibiblio.org/apollo/Documents/agcis_30_block_ii_agc.pdf",
+  "document": "AGC Interface Specification, Block II, FR-2-130, changed 25 February 1966",
+  "source_bytes": 24884662,
+  "source_sha256": "8b92d912788167698ecb05329138bdd98440435759b1daad635a49f4a2cd7233",
+  "source_pdf_page_index": 70,
+  "printed_page": "30-67",
+  "sections": [
+    "30-103",
+    "30-104"
+  ],
+  "retained_page": "agcis-thrust-drive-page.pdf",
+  "retained_page_sha256": "6c4b5565dbacf814eb688bf6608c18e2e9408a2908470379cb25d57d41cdac34",
+  "extract_tool": "pypdf 6.10.0",
+  "verified_findings": [
+    "THRSTD is generated while output channel 014 bit 4 is ONE",
+    "DINC reduces THRUST 0055 and emits signed output",
+    "3.2 kpps pulse rate",
+    "Genuine ZOUT at zero clears the proper channel 014 bit and stops drive"
+  ],
+  "scope": "This document establishes the throttle-drive hardware handshake. Luminary099 and its source channel descriptions remain the authority for actual Apollo 11 software ON/OFF mappings."
+}

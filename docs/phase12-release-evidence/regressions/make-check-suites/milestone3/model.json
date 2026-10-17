@@ -1,0 +1,93 @@
+{
+  "tests_run": 14,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_model.PairedComponentTests.test_both_signs_switch_at_exact_four_degree_threshold",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00021070900000000337
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_direction_still_comes_from_signed_gimbal_delta",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 9.375000000000355e-05
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_original_raw_output_matches_retained_milestone2_exactly",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00036070899999998685
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_pair_reconciliation_changes_only_1455_packet_modes",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.012068083000000007
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_quantization_wrap_and_inhibits_are_numerically_unchanged",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0031211250000000024
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_real_tcl_processes_completed_with_locked_runtime",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0005840000000000012
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_reconciler_rejects_faked_fast_mode_for_slow_motion",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.032827667000000005
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_reconciler_rejects_missing_pulse_and_changed_numerics",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.079574792
+    },
+    {
+      "id": "test_model.PairedComponentTests.test_unsupported_axes_rejected_before_any_gimbal_or_packet_change",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.000469416999999972
+    },
+    {
+      "id": "test_model.SourceAdapterTests.test_existing_destination_is_preserved",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0026758330000000163
+    },
+    {
+      "id": "test_model.SourceAdapterTests.test_modified_source_fails_before_creating_model",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0012528749999999866
+    },
+    {
+      "id": "test_model.SourceAdapterTests.test_only_selector_changes_in_original_body_plus_explicit_guard",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.004935208999999996
+    },
+    {
+      "id": "test_model.SourceAdapterTests.test_retained_and_symlink_destinations_are_rejected",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0010028749999999587
+    },
+    {
+      "id": "test_model.SourceAdapterTests.test_source_root_input_selects_only_locked_complete_module",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.005874500000000005
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}

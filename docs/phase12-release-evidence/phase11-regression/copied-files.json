@@ -1,0 +1,527 @@
+{
+  "classification": "Fresh release validation metadata and actual logs; existing retained native raw traces are byte-identical and remain in their original sealed locations.",
+  "files": [
+    {
+      "source": ".build/phase11/release-final-20261018/code-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/code-before.json",
+      "sha256": "290fa240e3598a26b2621ff120107e3c68f365a17c1ee64781ca5744d87ec5cb",
+      "bytes": 762
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/code-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/code-after.json",
+      "sha256": "1140d9b9199c972e0db40ceb985c11c50d7a3ae84052cf3c2a47956f33745a21",
+      "bytes": 53
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/commands.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/commands.json",
+      "sha256": "d6546f96455226e5818620bb2b84c00a5e4ec21ea5dce9a92ce579fb8a0b9824",
+      "bytes": 8989
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/completion.json",
+      "sha256": "0ae0326992693b366218dce06a46fd1c847df2568b7318e3dd2ca71f6aaa2390",
+      "bytes": 583
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/environment.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/environment.json",
+      "sha256": "4ebebeeae447154ff1df4940d122dac8203a142fb369cae4e18306a503b7e6f0",
+      "bytes": 1250
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/analysis.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/analysis.json",
+      "sha256": "242d8e2675006ec7383e82d04a2c9927b6a43f60bf75b1e120079966b6dea590",
+      "bytes": 552708
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-analysis.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-analysis.json",
+      "sha256": "c99e75b6422c16652e4f1726d0e192a7aaff862c75bb9d17035e806a252b1114",
+      "bytes": 26730
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-regression.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-regression.json",
+      "sha256": "a2787435475195882aa532a3546e57b7143c13d7245a387d03bd51379d941f2b",
+      "bytes": 213
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/release-trace-comparison.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/release-trace-comparison.json",
+      "sha256": "2e939a105a0ae3e56f465d35acd3cd2370a92a73c264bbdb925c24268e977be7",
+      "bytes": 1954
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/analysis.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/analysis.stdout",
+      "sha256": "33b319da527d9868d5caa59b2ebe732ac405ded5196f2a88748d3d8b5d9790bf",
+      "bytes": 1139
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/disconnected.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/disconnected.stdout",
+      "sha256": "930fb74ca59f24aa621a8b194c3d05353b37c8e31c4d378da71e21de5f7fa57b",
+      "bytes": 511
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/native-tests.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/native-tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/negative.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/negative.stdout",
+      "sha256": "6ba312418079e788a03c753184b5a0684fd5b89a085d4436769e072f0b33090f",
+      "bytes": 507
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-analysis.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-analysis.stdout",
+      "sha256": "19b24be153002e9d1d6243e84c0a5928f48b7d97181de01cef5a6f24eb01c703",
+      "bytes": 101
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline.stdout",
+      "sha256": "84c877a8e9bb0b207c4720be17b5c1e09fdc60ecfc47e2df7acf37c21106f320",
+      "bytes": 683
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/positive.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/positive.stdout",
+      "sha256": "1c13b2fee0eb2100182701b46951176af82773ff0d1686996ccd0a606256d2e8",
+      "bytes": 507
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/repeat.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/repeat.stdout",
+      "sha256": "1c13b2fee0eb2100182701b46951176af82773ff0d1686996ccd0a606256d2e8",
+      "bytes": 507
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/sensor-tests.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/sensor-tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/zero.stdout",
+      "saved": "docs/phase12-release-evidence/phase11-regression/zero.stdout",
+      "sha256": "33508909605f0ccdd0234f6c453e4e689a5fcaa4420a93ef6c79808ed42119e7",
+      "bytes": 519
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/analysis.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/analysis.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/disconnected.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/disconnected.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/native-tests.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/native-tests.stderr",
+      "sha256": "32717a91a98d600a28fb9a50aff804b067d2e77d1e96a53571c5b1bb33133085",
+      "bytes": 1481
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/negative.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/negative.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-analysis.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-analysis.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/positive.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/positive.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/repeat.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/repeat.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/sensor-tests.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/sensor-tests.stderr",
+      "sha256": "d6432cccd2ed3b176dc3543155e7aa3f16202961c9ee13ca5ecb16af8b42cbe7",
+      "bytes": 1105
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/zero.stderr",
+      "saved": "docs/phase12-release-evidence/phase11-regression/zero.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018-launch/command.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/launch/command.json",
+      "sha256": "3fd10c3547d31f7581a44cf8ae06dce12435941abe4d8a4b9dfdb3c7be0914e9",
+      "bytes": 625
+    },
+    {
+      "source": ".build/phase11/release-final-20261018-launch/stderr.log",
+      "saved": "docs/phase12-release-evidence/phase11-regression/launch/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase11/release-final-20261018-launch/stdout.log",
+      "saved": "docs/phase12-release-evidence/phase11-regression/launch/stdout.log",
+      "sha256": "e663d531c024fc351492721440849951e68ce19ed15af3fced64b0f65550dd8b",
+      "bytes": 670
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/trace-sha256.json",
+      "sha256": "91498c8c64f287c1bb617e31812f6e682eddaa24accfb874b0565c949d0fcca7",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/completion.json",
+      "sha256": "26148c63076b4186e18673ae3940ee71b765a68ea27eeee1ca1b9164bfd3fad8",
+      "bytes": 2249
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/execution.json",
+      "sha256": "ee98aec6f56693a565d45a5b1097c8d5c79b2c34d587393bcfb2946a28183fc1",
+      "bytes": 1189
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/configuration.json",
+      "sha256": "c0c6b2bdd8e88be1625179e8a668a7f5cc24a9abe9b4e335bf233fc241c7ddef",
+      "bytes": 20659
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/preservation-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/preservation-before.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/preservation-after.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/original-preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/original-preservation-after.json",
+      "sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "bytes": 70
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/observer-map.json",
+      "sha256": "e3a15b81cc9f3e7f95638fe2d3dddce643ec8c3325ba7f3c82da91c38315e406",
+      "bytes": 9440
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/setup-used.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/setup-used.json",
+      "sha256": "581792fa8e6fa048cbda8a18056c68d3fa965807d30c344bc8b22357dc228f29",
+      "bytes": 2148
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/zero/native/source-integrity/after-execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/zero/source-integrity-after.json",
+      "sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "bytes": 55
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/trace-sha256.json",
+      "sha256": "bef284dcda65fad090deaea4c005713b50077ed5f8bcc5d20f091a37d57b7473",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/completion.json",
+      "sha256": "c36430108e50ae75ad313b70077bd86cd2fc89518aa77caf57f309f37bc1ebeb",
+      "bytes": 2245
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/execution.json",
+      "sha256": "0c790718ef9fb0d9f37a7d68c76621c6258e114771c0632c6f64b5085c649f5c",
+      "bytes": 1247
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/configuration.json",
+      "sha256": "ba7d027e28848c0f48863f73af71010fd62fb80868811bd9482c7c846f232895",
+      "bytes": 20663
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/preservation-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/preservation-before.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/preservation-after.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/original-preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/original-preservation-after.json",
+      "sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "bytes": 70
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/observer-map.json",
+      "sha256": "e3a15b81cc9f3e7f95638fe2d3dddce643ec8c3325ba7f3c82da91c38315e406",
+      "bytes": 9440
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/setup-used.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/setup-used.json",
+      "sha256": "581792fa8e6fa048cbda8a18056c68d3fa965807d30c344bc8b22357dc228f29",
+      "bytes": 2148
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/positive/native/source-integrity/after-execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/positive/source-integrity-after.json",
+      "sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "bytes": 55
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/trace-sha256.json",
+      "sha256": "ec61540aab438dbb97806c9266062c52b024f8dc7cc08c2c569a9b449f8cdcd7",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/completion.json",
+      "sha256": "03b6a6d97b53d91678e7e13d254fa78b7eee927a20997f1334fe28dedd577ae1",
+      "bytes": 2253
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/execution.json",
+      "sha256": "0d609e7f1ecd8c946007ea0ee0e9a265753be43858658eb8c42e271a8ea53393",
+      "bytes": 1247
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/configuration.json",
+      "sha256": "b8c80e2895fec186c9a260381c48e48bf6b49ceafa68373edd1b611da89db358",
+      "bytes": 20663
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/preservation-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/preservation-before.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/preservation-after.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/original-preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/original-preservation-after.json",
+      "sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "bytes": 70
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/observer-map.json",
+      "sha256": "e3a15b81cc9f3e7f95638fe2d3dddce643ec8c3325ba7f3c82da91c38315e406",
+      "bytes": 9440
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/setup-used.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/setup-used.json",
+      "sha256": "581792fa8e6fa048cbda8a18056c68d3fa965807d30c344bc8b22357dc228f29",
+      "bytes": 2148
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/negative/native/source-integrity/after-execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/negative/source-integrity-after.json",
+      "sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "bytes": 55
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/trace-sha256.json",
+      "sha256": "8de4ddd7d472d115adf0de5b486cc3e8b72134760f0d260fb3da7ac24427c076",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/completion.json",
+      "sha256": "6020da29b09001dc6f8df09ecb08597527748b4159efaa27dd40844d92c0fec2",
+      "bytes": 2257
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/execution.json",
+      "sha256": "3fd25f22568aca6d406cbdc5827f5039b28e4c030318d71a0269d4ba5e3a5e06",
+      "bytes": 1255
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/configuration.json",
+      "sha256": "64cf6450ab62e530931e6ee9d0fac045ab496cb11feab0f4eee490ef9e881aa8",
+      "bytes": 20667
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/preservation-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/preservation-before.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/preservation-after.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/original-preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/original-preservation-after.json",
+      "sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "bytes": 70
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/observer-map.json",
+      "sha256": "e3a15b81cc9f3e7f95638fe2d3dddce643ec8c3325ba7f3c82da91c38315e406",
+      "bytes": 9440
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/setup-used.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/setup-used.json",
+      "sha256": "581792fa8e6fa048cbda8a18056c68d3fa965807d30c344bc8b22357dc228f29",
+      "bytes": 2148
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/disconnected/native/source-integrity/after-execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/disconnected/source-integrity-after.json",
+      "sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "bytes": 55
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/trace-sha256.json",
+      "sha256": "bef284dcda65fad090deaea4c005713b50077ed5f8bcc5d20f091a37d57b7473",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/completion.json",
+      "sha256": "c36430108e50ae75ad313b70077bd86cd2fc89518aa77caf57f309f37bc1ebeb",
+      "bytes": 2245
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/execution.json",
+      "sha256": "83bb1828a0445492ddc66eb4dd13700a8ad7729772f470ec2de9a6522e1e4ea1",
+      "bytes": 1245
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/configuration.json",
+      "sha256": "ba7d027e28848c0f48863f73af71010fd62fb80868811bd9482c7c846f232895",
+      "bytes": 20663
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/preservation-before.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/preservation-before.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/preservation-after.json",
+      "sha256": "f44deea812277e1f589e066b56ebc460ca609337a44bd6a143b69fa7e079d74c",
+      "bytes": 56
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/original-preservation-after.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/original-preservation-after.json",
+      "sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "bytes": 70
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/observer-map.json",
+      "sha256": "e3a15b81cc9f3e7f95638fe2d3dddce643ec8c3325ba7f3c82da91c38315e406",
+      "bytes": 9440
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/setup-used.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/setup-used.json",
+      "sha256": "581792fa8e6fa048cbda8a18056c68d3fa965807d30c344bc8b22357dc228f29",
+      "bytes": 2148
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/runs/repeat/native/source-integrity/after-execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/runs/repeat/source-integrity-after.json",
+      "sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "bytes": 55
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline/trace-sha256.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline/trace-sha256.json",
+      "sha256": "67654b44ea4002c6cd50a947004c8967cddafdab5c45461d9453ceadba43e7cf",
+      "bytes": 103
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline/completion.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline/completion.json",
+      "sha256": "d2cd56fd35dcf5411cda2262e19a7f71c4377ed3602502e432cf5f0d56dbaf10",
+      "bytes": 817
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline/execution.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline/execution.json",
+      "sha256": "4aaf7717b9ed2d3fff2daef50c19f459e4f891b6ec93e697af87994d69481c0e",
+      "bytes": 2195
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline/configuration.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline/configuration.json",
+      "sha256": "862caec1121eee7e828d29273098ee0e5e312db55ff0efed33635d341bca7849",
+      "bytes": 18900
+    },
+    {
+      "source": ".build/phase11/release-final-20261018/phase10-baseline/observer-map.json",
+      "saved": "docs/phase12-release-evidence/phase11-regression/phase10-baseline/observer-map.json",
+      "sha256": "cfccad8d5649ff412fad218003cb2bc3d452a220100872b2c519967cb842a406",
+      "bytes": 8920
+    }
+  ]
+}

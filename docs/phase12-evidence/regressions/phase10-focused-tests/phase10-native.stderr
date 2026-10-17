@@ -1,0 +1,19 @@
+test_actual_coefficients_are_nonzero_and_source_formula_agrees (test_mission.MissionEvidence) ... ok
+test_actual_position_and_guidance_transform_consistency (test_mission.MissionEvidence) ... ok
+test_all_prior_tracked_inputs_preserved (test_mission.MissionEvidence) ... ok
+test_corrupted_telemetry_does_not_validate (test_mission.MissionEvidence) ... ok
+test_each_actual_root_has_good_original_continuation (test_mission.MissionEvidence) ... ok
+test_exact_native_replay_and_causal_altitude_change (test_mission.MissionEvidence) ... ok
+test_lunar_state_is_coherent_circular_and_bound (test_mission.MissionEvidence) ... ok
+test_missing_site_reaches_genuine_failed_root_path (test_mission.MissionEvidence) ... ok
+test_original_ignition_time_is_future_and_stops_at_crew_review (test_mission.MissionEvidence) ... ok
+test_original_rope_is_unchanged (test_mission.MissionEvidence) ... ok
+test_p51_p27_and_r02_use_actual_original_paths (test_mission.MissionEvidence) ... ok
+test_phase9_remains_exact_reproducible_negative_control (test_mission.MissionEvidence) ... ok
+test_refsm_and_guidance_matrices_are_proper_rotations (test_mission.MissionEvidence) ... ok
+test_source_supported_mission_input_values_reach_permanent_state (test_mission.MissionEvidence) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.084s
+
+OK

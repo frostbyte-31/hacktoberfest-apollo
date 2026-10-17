@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "docs/phase12-evidence/run_engine.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+    "--plant-source",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+    "--tcl",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+    "--case",
+    "connected",
+    "--output",
+    ".build/phase12/verified/connected"
+  ],
+  "revision": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+  "utc": "2026-10-17T22:42:39.340626+00:00",
+  "driver_sha256": "6cc9ee8f63057b91271dbf6ca53c39dba32534a642cefd81af2f81591da46827",
+  "engine_sha256": "bc896c2e79f18061ec2d60a16d18f7c133d054d8c4a130451176ff3de2f3c6d8",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "case": "connected",
+  "physical_engine_connected": true,
+  "pipa_feedback_connected": true,
+  "scope": "SYNTHETIC fixed-attitude P63 engine experiment; original outputs, external legacy propulsion and optional PIPA; no landing"
+}

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/phase11-evidence/validate.py",
+    "--archive",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+    "--output",
+    ".build/phase11/release-final-20261018"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "environment_overrides": {
+    "SOURCE_DATE_EPOCH": "1792195200",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "started_utc": "2026-10-17T23:25:35.504848+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T23:27:02.673453+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED source checks",
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "files_checked": 22,
+  "channel005_masks_octal": {
+    "-U": "00110",
+    "-V": "00022",
+    "+U": "00204",
+    "+V": "00041"
+  },
+  "gimbal_order": "OIM=XYZ",
+  "dapbools_address_octal": "0111",
+  "primary_full_pdf_checked": false,
+  "coupled_execution": "NOT RUN by this source checker; inspect separate integration evidence"
+}

@@ -1,0 +1,22 @@
+{
+  "source_validation": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/portable-final",
+  "raw_captures": {
+    "sink": {
+      "sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "bytes": 95246632
+    },
+    "connected": {
+      "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "bytes": 194558720
+    },
+    "no-feedback": {
+      "sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "bytes": 104903145
+    },
+    "repeat": {
+      "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "bytes": 194558720
+    }
+  },
+  "scope": "New deterministic diagnostic evidence; no earlier evidence regenerated"
+}

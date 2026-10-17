@@ -1,0 +1,132 @@
+{
+  "classification": "COMPLETE AND VERIFIED \u2014 bounded SYNTHETIC propulsion/PIPA/navigation interface experiment",
+  "historically_calibrated_powered_descent": "UNRESOLVED; not demonstrated",
+  "complete_landing": "NOT RUN",
+  "baseline_revision": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+  "phase11_gate_level": 4,
+  "original_engine_on_cycle_mct": 25169081,
+  "original_engine_on_context_octal": {
+    "bank": "36",
+    "z": "2436",
+    "channel": "011",
+    "value": "10400"
+  },
+  "flatout_cycle_mct": 27387427,
+  "flatout_after_on_s": 25.9962421875,
+  "comparison_horizon_cycle_mct": 27875065,
+  "comparison_horizon_after_on_s": 31.71075,
+  "connected_minus_sink_REF": {
+    "position_m": [
+      189.92648573825136,
+      -0.0017671178675381463,
+      -0.010459347104188055
+    ],
+    "velocity_m_s": [
+      23.793461733676452,
+      -0.00022137799701382895,
+      -0.001345120881069306
+    ]
+  },
+  "horizon_connected_mass_kg": 14883.451030206932,
+  "horizon_fuel_consumed_kg": 116.54896979306795,
+  "final_connected_fuel_consumed_kg": 161.48606077703698,
+  "native_navigation_response": {
+    "sink": {
+      "PIPTIME_cs": 32705.0,
+      "matched_samples": 32,
+      "original_velocity_difference_stable_m_s": [
+        31.012916564941406,
+        0.0,
+        -0.001621246337890625
+      ],
+      "original_position_difference_stable_m": [
+        256.0,
+        0.0,
+        -0.0625
+      ],
+      "quantized_pulse_contribution_stable_m_s": [
+        31.010001472895965,
+        0.0,
+        0.0
+      ],
+      "original_gravity_contribution_difference_m_s": [
+        0.00324249267578125,
+        0.0,
+        -0.001621246337890625
+      ],
+      "independent_velocity_budget_error_m_s": [
+        -0.0003274006303399801,
+        0.0,
+        0.0
+      ],
+      "velocity_DP_tolerance_m_s": 0.0244140625,
+      "tolerance_reason": "Sixteen velocity DP LSB per paired original two-second navigation cycle; gravity contributions are separately observed original values, not fabricated sensor acceleration."
+    },
+    "no-feedback": {
+      "PIPTIME_cs": 32705.0,
+      "matched_samples": 32,
+      "original_velocity_difference_stable_m_s": [
+        31.012916564941406,
+        0.0,
+        -0.001621246337890625
+      ],
+      "original_position_difference_stable_m": [
+        256.0,
+        0.0,
+        -0.0625
+      ],
+      "quantized_pulse_contribution_stable_m_s": [
+        31.010001472895965,
+        0.0,
+        0.0
+      ],
+      "original_gravity_contribution_difference_m_s": [
+        0.00324249267578125,
+        0.0,
+        -0.001621246337890625
+      ],
+      "independent_velocity_budget_error_m_s": [
+        -0.0003274006303399801,
+        0.0,
+        0.0
+      ],
+      "velocity_DP_tolerance_m_s": 0.0244140625,
+      "tolerance_reason": "Sixteen velocity DP LSB per paired original two-second navigation cycle; gravity contributions are separately observed original values, not fabricated sensor acceleration."
+    }
+  },
+  "checks": {
+    "per_native_case": 33,
+    "causal_comparisons": 13,
+    "all_pass": true
+  },
+  "test_accounting": {
+    "regressions": 376,
+    "phase11_gate": 29,
+    "phase12_native": 16,
+    "phase12_model": 23,
+    "passed": 444,
+    "failed": 0,
+    "errored": 3,
+    "skipped": 0,
+    "errors": "Unchanged historical missing docs/phase3-evidence/build.log in Phase4/5/6 preservation tests",
+    "not_run": [
+      "Existing native HTTP watchdog-neutralization validator",
+      "Separate frontend feature-branch tests",
+      "Historical calibrated burn attitude/engine transients/full descent",
+      "P64/P66/terrain/touchdown/landing"
+    ]
+  },
+  "raw_trace_sha256": {
+    "sink": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+    "connected": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+    "no-feedback": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+    "repeat": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53"
+  },
+  "bounded_closed_loop": "VERIFIED physical specific force -> PIPA -> original navigation -> changed original throttle control; no full historical descent claim",
+  "references": [
+    "validation/analysis.json",
+    "validation/completion.json",
+    "preflight/phase11-gate.json",
+    "regressions/summary.json"
+  ]
+}

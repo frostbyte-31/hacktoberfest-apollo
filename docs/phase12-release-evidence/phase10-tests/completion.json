@@ -1,0 +1,109 @@
+{
+  "classification": "VERIFIED unchanged original Phase 10 focused test runner executed in its sealed staged baseline",
+  "suites": {
+    "phase8": {
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "phase9": {
+      "passed": 19,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "phase10-native": {
+      "passed": 14,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "phase10-math": {
+      "passed": 14,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "passed": 57,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0
+  },
+  "files_copied": [
+    {
+      "source": ".build/phase12/release-final-phase10-tests/commands.json",
+      "saved": "docs/phase12-release-evidence/phase10-tests/commands.json",
+      "sha256": "88af0dfb199115a4683ec486aa7b7626b5f06d1c19c150f01180c508b4cd2fe5",
+      "bytes": 2444
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase10-math.stderr",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase10-math.stderr",
+      "sha256": "4a9efe4deab15a3620757fcb74cd7d01bb4edd71a625f9f96e89cfe602892c62",
+      "bytes": 1239
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase10-math.stdout",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase10-math.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase10-native.stderr",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase10-native.stderr",
+      "sha256": "24a45e5ab3cbbdc8657b02e4da47e604504db04d013e74a0321672d1fdb51577",
+      "bytes": 1354
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase10-native.stdout",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase10-native.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase8.stderr",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase8.stderr",
+      "sha256": "aa84e01cce6e429147b6c43909b75785f18be4ddf349e138940fd11d83585b41",
+      "bytes": 974
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase8.stdout",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase8.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase9.stderr",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase9.stderr",
+      "sha256": "3bf09ecc4dbaeb9c3f96827de7d270161b15643df4438654f8f1eedebab1fc98",
+      "bytes": 2104
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests/phase9.stdout",
+      "saved": "docs/phase12-release-evidence/phase10-tests/phase9.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests-launch/command.json",
+      "saved": "docs/phase12-release-evidence/phase10-tests/launch/command.json",
+      "sha256": "d9f38ad0212938221471b42638e9256862548a1109ffe8492a809c78882c2660",
+      "bytes": 645
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests-launch/stderr.log",
+      "saved": "docs/phase12-release-evidence/phase10-tests/launch/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".build/phase12/release-final-phase10-tests-launch/stdout.log",
+      "saved": "docs/phase12-release-evidence/phase10-tests/launch/stdout.log",
+      "sha256": "d8f210dd54dbaa78cecb9241f27a50f7d224ddd4b21dc964de7f905a61217a0a",
+      "bytes": 66
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "full_staged_check": {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit": 2,
+    "affected_files": [
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/LICENSE.txt",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debug.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_disassembler.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_symtab.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c",
+      "docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/yaAGC.h"
+    ],
+    "findings": 240
+  },
+  "classification": "Original-source formatting retained unchanged in captured fresh Phase7 regression artifacts",
+  "reason": "Pinned source and captured overlays already contain whitespace. Cleaning these bytes would alter scientific provenance; no authored Phase12 source is implicated.",
+  "authored_phase12_check": {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      "docs/PHASE12_DESCENT_PROPULSION.md",
+      "docs/phase12-release-evidence/README.md",
+      "docs/phase12-evidence/propulsion.py",
+      "docs/phase12-evidence/retain.py",
+      "docs/phase12-evidence/run_engine.py",
+      "docs/phase12-evidence/legacy_engine.tcl",
+      "docs/phase12-evidence/README.md",
+      "docs/phase12-evidence/validate.py",
+      "docs/phase12-evidence/engine_bridge.c",
+      "docs/phase12-evidence/test_propulsion.py",
+      "docs/phase12-evidence/driver.py",
+      "docs/phase12-evidence/source-engine.md",
+      "docs/phase12-evidence/source-procedure.md",
+      "docs/phase12-evidence/test_native.py",
+      "docs/phase12-evidence/analyze.py"
+    ],
+    "exit": 0,
+    "files": 15
+  },
+  "original_implementation_and_historical_evidence_modified": false
+}

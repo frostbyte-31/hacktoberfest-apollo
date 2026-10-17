@@ -1,0 +1,140 @@
+[
+  {
+    "name": "make-check",
+    "argv": [
+      "make",
+      "check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:27:59.013864+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:30:11.618958+00:00"
+  },
+  {
+    "name": "live-evidence-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/live-control-evidence",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:27:59.013981+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:13.524197+00:00"
+  },
+  {
+    "name": "guidance-data-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "frontend/tests",
+      "-p",
+      "test_guidance_data.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:27:59.014140+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:17.432264+00:00"
+  },
+  {
+    "name": "demo-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/demo/tests",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:27:59.014486+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:07.009802+00:00"
+  },
+  {
+    "name": "guidance-node-tests",
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--test",
+      "frontend/tests/guidance.test.mjs"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:28:07.010620+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:07.523430+00:00"
+  },
+  {
+    "name": "demo-verify",
+    "argv": [
+      "make",
+      "demo-verify"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:28:07.523938+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:17.077982+00:00"
+  },
+  {
+    "name": "retained-native-package",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "docs/phase10_5-evidence/retain_native.py",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:28:13.524971+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:13.764122+00:00"
+  },
+  {
+    "name": "phase10_5-integrity",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "docs/phase10_5-evidence/check_integrity.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-17T23:28:13.764554+00:00",
+    "environment_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T23:28:14.651101+00:00"
+  }
+]

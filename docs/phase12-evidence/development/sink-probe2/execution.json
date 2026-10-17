@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "docs/phase12-evidence/run_engine.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+    "--output",
+    ".build/phase12/sink-probe2"
+  ],
+  "revision": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+  "utc": "2026-10-17T22:30:39.845610+00:00",
+  "driver_sha256": "bef7f1863703611128e51daba7d23e1a2e49e2aca40097797510e5c709adbcf6",
+  "engine_sha256": "9484a56b4b2ef6011941e8860da8b9c158fd5750d06a3c218ac3d9c7f52b15b7",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "scope": "SYNTHETIC stationary fixture; actual P63 commands into disconnected sink; no thrust model"
+}

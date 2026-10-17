@@ -1,0 +1,11 @@
+test_archive_does_not_overwrite_existing_files (test_demo.DemoGuards) ... ok
+test_archive_rejects_escaping_members (test_demo.DemoGuards) ... ok
+test_hash_guard_rejects_changed_bytes (test_demo.DemoGuards) ... ok
+test_manifest_guard_rejects_escape_and_symlink (test_demo.DemoGuards) ... ok
+test_native_staging_uses_original_revision_and_excludes_new_application (test_demo.DemoGuards) ... ok
+test_sealed_phase10_and_original_rope_match_actual_files (test_demo.DemoGuards) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.868s
+
+OK

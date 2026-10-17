@@ -1,0 +1,15 @@
+test_alarm_history_is_not_erased (test_feasibility.FeasibilityTests) ... ok
+test_all_prior_tracked_documentation_preserved (test_feasibility.FeasibilityTests) ... ok
+test_development_driver_mistakes_are_preserved (test_feasibility.FeasibilityTests) ... ok
+test_exact_replay_and_actual_execution_exit_codes (test_feasibility.FeasibilityTests) ... ok
+test_lossless_packaging_all_attempts (test_feasibility.FeasibilityTests) ... ok
+test_no_engine_on_output_after_request (test_feasibility.FeasibilityTests) ... ok
+test_only_added_stimuli_are_normal_v37e63e_keys (test_feasibility.FeasibilityTests) ... ok
+test_p63_selected_but_refsm_readiness_rejected (test_feasibility.FeasibilityTests) ... ok
+test_throttle_signal_is_the_observed_engine_off_reset (test_feasibility.FeasibilityTests) ... ok
+test_unmodified_phase5_baseline_reproduced (test_feasibility.FeasibilityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.641s
+
+OK

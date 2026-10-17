@@ -1,0 +1,476 @@
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:49: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:53: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:61: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:66: trailing whitespace.
++ label .imu.l1b -text "IMU   Angle         Velocity      FDAI    Angle   Omega     Attitude" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:67: trailing whitespace.
++ label .imu.l2b -text "Axes  \[Deg\]     \[m/s\]    \[ft/s\]           \[Deg\]   \[Deg/s\]   Error" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:231: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:251: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:262: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:266: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:274: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:279: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:283: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:287: trailing whitespace.
++ if {$FDAIZ_ANGLE < 0} {set fdaiz [expr $FDAIZ_ANGLE + 360.0]} else {set fdaiz $FDAIZ_ANGLE} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:304: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:335: trailing whitespace.
++ .imu.c2 coords $widgtM(PitchErrorNeedle) [expr $offsetx + 10] [expr $offsety + $error_y * $NEEDLE_SCALE] [expr $offsetx + 100] [expr $offsety + $error_y * $NEEDLE_SCALE] 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:374: trailing whitespace.
++   # ------------------- Draw Pitch Marks ---------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/baseline-corrected-imu.tcl:579: trailing whitespace.
++   
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:49: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:53: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:61: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:66: trailing whitespace.
++ label .imu.l1b -text "IMU   Angle         Velocity      FDAI    Angle   Omega     Attitude" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:67: trailing whitespace.
++ label .imu.l2b -text "Axes  \[Deg\]     \[m/s\]    \[ft/s\]           \[Deg\]   \[Deg/s\]   Error" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:231: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:251: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:262: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:266: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:274: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:279: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:283: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:287: trailing whitespace.
++ if {$FDAIZ_ANGLE < 0} {set fdaiz [expr $FDAIZ_ANGLE + 360.0]} else {set fdaiz $FDAIZ_ANGLE} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:304: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:335: trailing whitespace.
++ .imu.c2 coords $widgtM(PitchErrorNeedle) [expr $offsetx + 10] [expr $offsety + $error_y * $NEEDLE_SCALE] [expr $offsetx + 100] [expr $offsety + $error_y * $NEEDLE_SCALE] 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:374: trailing whitespace.
++   # ------------------- Draw Pitch Marks ---------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/integration/physics-overlay.tcl:579: trailing whitespace.
++   
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:49: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:53: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:61: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:66: trailing whitespace.
++ label .imu.l1b -text "IMU   Angle         Velocity      FDAI    Angle   Omega     Attitude" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:67: trailing whitespace.
++ label .imu.l2b -text "Axes  \[Deg\]     \[m/s\]    \[ft/s\]           \[Deg\]   \[Deg/s\]   Error" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:231: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:251: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:262: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:266: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:274: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:279: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:283: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:287: trailing whitespace.
++ if {$FDAIZ_ANGLE < 0} {set fdaiz [expr $FDAIZ_ANGLE + 360.0]} else {set fdaiz $FDAIZ_ANGLE} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:304: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:335: trailing whitespace.
++ .imu.c2 coords $widgtM(PitchErrorNeedle) [expr $offsetx + 10] [expr $offsety + $error_y * $NEEDLE_SCALE] [expr $offsetx + 100] [expr $offsety + $error_y * $NEEDLE_SCALE] 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:374: trailing whitespace.
++   # ------------------- Draw Pitch Marks ---------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/physics/derived-physics.tcl:579: trailing whitespace.
++   
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:29: trailing whitespace.
++# 03.01.2009 Ron Burkey	This version has been provisionally modified from v1.0 in order to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:30: trailing whitespace.
++#			correct the invocation order of startup functions in order to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:256: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:267: trailing whitespace.
++ frame .f7 -bg $colb; frame .f8 -bg $colb; frame .f81 -bg $colb; frame .f9 -bg $colb; 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:308: trailing whitespace.
++ pack .l5 .e5 -side left -in .f5 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:515: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:780: trailing whitespace.
++ global Q4U Q4D Q3U Q3D 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:796: trailing whitespace.
++   if {$octChannel == 177} {gyro_fine_align} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:931: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/lm_simulator.tcl:985: new blank line at EOF.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:49: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:53: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:61: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:66: trailing whitespace.
++ label .imu.l1b -text "IMU   Angle         Velocity      FDAI    Angle   Omega     Attitude" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:67: trailing whitespace.
++ label .imu.l2b -text "Axes  \[Deg\]     \[m/s\]    \[ft/s\]           \[Deg\]   \[Deg/s\]   Error" -font ${font11b} -bg $colb2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:231: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:251: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:262: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:266: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:274: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:279: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:283: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:287: trailing whitespace.
++ if {$FDAIZ_ANGLE < 0} {set fdaiz [expr $FDAIZ_ANGLE + 360.0]} else {set fdaiz $FDAIZ_ANGLE} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:304: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:335: trailing whitespace.
++ .imu.c2 coords $widgtM(PitchErrorNeedle) [expr $offsetx + 10] [expr $offsety + $error_y * $NEEDLE_SCALE] [expr $offsetx + 100] [expr $offsety + $error_y * $NEEDLE_SCALE] 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:374: trailing whitespace.
++   # ------------------- Draw Pitch Marks ---------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl:579: trailing whitespace.
++   
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl:93: trailing whitespace.
++ scale .att.p1_s1 -label "Thrust \[N\]" -from $Descent_Propulsion_Min_N -to $Descent_Propulsion_Max_N -length 220 -orient horizontal -bg $colb -activebackground $colb -highlightbackground $colb -font ${font11b} 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl:157: trailing whitespace.
++ global LM_Weight_Descent_KG LM_Weight_Ascent_KG Ascent_Propellant_Mass_KG 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/LICENSE.txt:5: trailing whitespace.
++General Public License (GPL) version 2 or later, although some 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/LICENSE.txt:18: new blank line at EOF.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debug.h:48: new blank line at EOF.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:4: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:22: trailing whitespace.
++  link the code of this program with the Orbiter SDK library (or with 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:23: trailing whitespace.
++  modified versions of the Orbiter SDK library that use the same license as 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:24: trailing whitespace.
++  the Orbiter SDK library), and distribute linked combinations including 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:25: trailing whitespace.
++  the two. You must obey the GNU General Public License in all respects for 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:26: trailing whitespace.
++  all of the code used other than the Orbiter SDK library. If you modify 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:27: trailing whitespace.
++  this file, you may extend this exception to your version of the file, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:28: trailing whitespace.
++  but you are not obligated to do so. If you do not wish to do so, delete 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:29: trailing whitespace.
++  this exception statement from your version. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_debugger.h:30: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_disassembler.h:3: space before tab in indent.
++  				2008 Onno Hommes
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:3: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:260: trailing whitespace.
++ *		                and Rupt Lock hardware alarms, alarm-generated 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:453: trailing whitespace.
++// If COARSE_SMOOTH is 1, then the timing of coarse-alignment (in terms of 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:455: trailing whitespace.
++// However, since the simulated IMU has no physical inertia, it adjusts 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:472: trailing whitespace.
++// Some helpful constants in parsing the "address" field from an instruction 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:483: trailing whitespace.
++// Some numerical constant, in AGC format. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:490: trailing whitespace.
++// uppermost 5 bits of the instruction) how many extra machine cycles are 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:493: trailing whitespace.
++// are taken into account.  There are two arrays -- one for normal 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:520: trailing whitespace.
++// A way, for debugging, to disable interrupts. The 0th entry disables 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:554: trailing whitespace.
++// at the same addresses. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:571: trailing whitespace.
++  // The value should be in AGC format. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:623: trailing whitespace.
++      // 2005-07-04 RSB.  The necessity for this was pointed out by Mark 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:679: trailing whitespace.
++// This function does all of the processing associated with converting a 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:682: trailing whitespace.
++// we take memory bank-selection into account.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:722: trailing whitespace.
++      // Account for the superbank bit. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:802: trailing whitespace.
++      // Account for the superbank bit. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:929: trailing whitespace.
++// Convert an AGC-formatted word to CPU-native format. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:954: trailing whitespace.
++// Double-length versions of the same. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1107: trailing whitespace.
++	  // 0100000, accounting for the parity) to Lsb.  An additional 1 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1120: trailing whitespace.
++  // we can simply juxtapose them, discarding the sign bit from the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1342: trailing whitespace.
++// AUG, and DIM instructins.  The docs aren't very forthcoming as to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1364: trailing whitespace.
++// presents a special problem.  The AGC expects these triggers to be 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1370: trailing whitespace.
++// orientation cannot be measured by the DAP.  Consequently, we have to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1373: trailing whitespace.
++// (Conversely, of course, the simulated IMU has to be able to supply the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1484: trailing whitespace.
++// each time around (in order to preserve proper cycle counts), so this function 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1566: trailing whitespace.
++// This function is used to update the counter registers on the basis of 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1626: trailing whitespace.
++// Function handles the coarse-alignment output pulses for one IMU CDU drive axis.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1688: trailing whitespace.
++static void 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1697: trailing whitespace.
++    State->DskyChannel163 |= DSKY_RESTART | DSKY_STBY; // 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1752: trailing whitespace.
++// during a divide -- but made a bit more readable / software-centric than the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1832: trailing whitespace.
++// Execute one machine-cycle of the simulation.  Use agc_engine_init prior to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1833: trailing whitespace.
++// the first call of agc_engine, to initialize State, and then call agc_engine 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1841: trailing whitespace.
++// 1 through 15, with 1 being the least-significant, and 15 the most 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1862: trailing whitespace.
++// The IMU CDU drive emits bursts every 600 ms.  Each cycle is 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1940: trailing whitespace.
++  // every once and a while---nominally, every 100 ms.  Actually 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1949: trailing whitespace.
++  // Get data from input channels.  Return immediately if a unprogrammed 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1959: trailing whitespace.
++  //----------------------------------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1972: trailing whitespace.
++  // an instruction until the last clock cycle for it is reached.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1973: trailing whitespace.
++  // (Except for a few weird cases dealt with by ExtraDelay as above.) 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1986: trailing whitespace.
++      // return.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:1995: trailing whitespace.
++   
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2001: trailing whitespace.
++  // ScalerCounter has already been updated the correct number of 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2322: trailing whitespace.
++  // Same principle as for the counter-timers (above), but for handling 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2332: trailing whitespace.
++      // We get to this point 3200 times per second.  We increment the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2344: trailing whitespace.
++  // If 1/4 second (nominal gyro pulse count of 800 decimal) or the gyro 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2393: trailing whitespace.
++  // ... and somewhat similar principles for the IMU CDU drive for 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2396: trailing whitespace.
++#if 0  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2429: trailing whitespace.
++  // Just grab the data from the counter and dump it out the appropriate 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2443: trailing whitespace.
++  //----------------------------------------------------------------------  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2456: trailing whitespace.
++  // After each instruction is executed, the AGC's Z register is updated to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2470: trailing whitespace.
++      // do if the result has overflow, I can't say.  I arbitrarily 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2490: trailing whitespace.
++     && !State->ExtraCode && !State->PendFlag && !Overflow 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2545: trailing whitespace.
++  // Add delay for multi-MCT instructions.  Works for all instructions 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2588: trailing whitespace.
++  // Parse the instruction.  Refer to p.34 of 1689.pdf for an easy 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2592: trailing whitespace.
++    case 000:			// TC.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2635: trailing whitespace.
++    case 010:			// CCS. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2637: trailing whitespace.
++      // CCS instruction (2 MCT).  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2657: trailing whitespace.
++      // so I'll just pretend that that can't happen.  Note, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2660: trailing whitespace.
++      // increment it by 2 less because NextZ has already been 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2690: trailing whitespace.
++      // DAS instruction (3 MCT).  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:2745: trailing whitespace.
++      // "LXCH K" instruction (2 MCT). 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.c:3519: new blank line at EOF.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.h:96: space before tab in indent.
++                		parity bit checking.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.h:98: space before tab in indent.
++                		is released before standby can be exited. Also
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine.h:110: space before tab in indent.
++                		TC Trap hardware bug.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:121: trailing whitespace.
++// Normally, on input the CoreDump filename is NULL, in which case all of the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:230: trailing whitespace.
++#if defined (WIN32) || defined (__APPLE__)  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:234: trailing whitespace.
++#endif  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:372: trailing whitespace.
++	      // I've seen no indication so far of a reset value for interrupt-enable. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:443: trailing whitespace.
++#if defined (WIN32) || defined (__APPLE__)  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:447: trailing whitespace.
++#endif  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_engine_init.c:479: trailing whitespace.
++  // now.  I've made no analysis to determine that all of these are 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:4: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:22: trailing whitespace.
++  link the code of this program with the Orbiter SDK library (or with 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:23: trailing whitespace.
++  modified versions of the Orbiter SDK library that use the same license as 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:24: trailing whitespace.
++  the Orbiter SDK library), and distribute linked combinations including 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:25: trailing whitespace.
++  the two. You must obey the GNU General Public License in all respects for 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:26: trailing whitespace.
++  all of the code used other than the Orbiter SDK library. If you modify 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:27: trailing whitespace.
++  this file, you may extend this exception to your version of the file, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:28: trailing whitespace.
++  but you are not obligated to do so. If you do not wish to do so, delete 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:29: trailing whitespace.
++  this exception statement from your version. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_simulator.h:30: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_symtab.h:223: trailing whitespace.
++// The function is actually in NormalizeSourcefile.c, but all of the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:3: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:21: trailing whitespace.
++  link the code of this program with the Orbiter SDK library (or with 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:22: trailing whitespace.
++  modified versions of the Orbiter SDK library that use the same license as 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:23: trailing whitespace.
++  the Orbiter SDK library), and distribute linked combinations including 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:24: trailing whitespace.
++  the two. You must obey the GNU General Public License in all respects for 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:25: trailing whitespace.
++  all of the code used other than the Orbiter SDK library. If you modify 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:26: trailing whitespace.
++  this file, you may extend this exception to your version of the file, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:27: trailing whitespace.
++  but you are not obligated to do so. If you do not wish to do so, delete 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:28: trailing whitespace.
++  this exception statement from your version. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:29: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:32: space before tab in indent.
++  		yaAGC-family functions.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:37: space before tab in indent.
++  		08/20/03 RSB.	Added uBit to ParseIoPacket.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:40: trailing whitespace.
++		01/31/05 RSB	Added the setsockopt call to 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:85: trailing whitespace.
++// Space for the packet must have been allocated by the calling program.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:86: trailing whitespace.
++// Refer to the Virtual AGC Technical Manual, "I/O Specifics" subheading of the 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:165: trailing whitespace.
++  //printf ("Type=%011o Data=%011o\n", *Type, *Data);  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:171: trailing whitespace.
++// Portable functions (*NIX and Win32) for working with sockets.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:175: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:176: trailing whitespace.
++  1. Servers:  Create a socket, suitable for clients to connect to, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:182: trailing whitespace.
++     
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:186: trailing whitespace.
++     
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:189: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:191: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:197: trailing whitespace.
++     
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:203: trailing whitespace.
++       {  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:225: trailing whitespace.
++      
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:227: trailing whitespace.
++  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:229: trailing whitespace.
++    
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:237: trailing whitespace.
++	...  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:241: trailing whitespace.
++	...  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:243: trailing whitespace.
++      
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:244: trailing whitespace.
++  These examples don't illustrate what to do in case of broken 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:246: trailing whitespace.
++      
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:330: trailing whitespace.
++    
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/agc_utilities.c:336: trailing whitespace.
++    
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:45: trailing whitespace.
++     literals. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:61: trailing whitespace.
++           before a close-group or an alternation operator.  
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:72: trailing whitespace.
++     some contexts; otherwise they are ordinary.  Specifically, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:94: trailing whitespace.
++     interval, depending on RE_NO_BK_BRACES. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:119: trailing whitespace.
++/* If this bit is set, then | is an alternation operator, and \| is literal. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:141: trailing whitespace.
++   don't delete them!)  */ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:208: trailing whitespace.
++#define RE_DUP_MAX ((1 << 15) - 1) 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:220: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:259: trailing whitespace.
++  REG_EPAREN,		/* Parenthesis imbalance.  */ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:290: trailing whitespace.
++  unsigned long used;	
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:334: trailing whitespace.
++           beginning of the string.  */ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/regex.h:446: trailing whitespace.
++extern int re_match_2 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:21: trailing whitespace.
++  link the code of this program with the Orbiter SDK library (or with 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:22: trailing whitespace.
++  modified versions of the Orbiter SDK library that use the same license as 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:23: trailing whitespace.
++  the Orbiter SDK library), and distribute linked combinations including 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:24: trailing whitespace.
++  the two. You must obey the GNU General Public License in all respects for 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:25: trailing whitespace.
++  all of the code used other than the Orbiter SDK library. If you modify 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:26: trailing whitespace.
++  this file, you may extend this exception to your version of the file, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:27: trailing whitespace.
++  but you are not obligated to do so. If you do not wish to do so, delete 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:28: trailing whitespace.
++  this exception statement from your version. 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:29: trailing whitespace.
++ 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:31: trailing whitespace.
++  Purpose:	A replacement for fopen which looks in the installation 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:32: space before tab in indent.
++  		directory if the file isn't in the current directory.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:37: space before tab in indent.
++  		05/14/04 RSB.	Added INSTALLDIR.
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:57: trailing whitespace.
++// This default probably looks right only for *nix, and not for Win32, 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:60: trailing whitespace.
++// environment), so there actually is a /usr/local/bin directory in 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/rfopen.c:70: trailing whitespace.
++char *InstallationPath = DefaultInstallationPath; 
+docs/phase12-release-evidence/regressions/phase7-fresh-native/source/yaAGC/yaAGC.h:36: space before tab in indent.
++  		08/20/03 RSB.	Added uBit to ParseIoPacket.

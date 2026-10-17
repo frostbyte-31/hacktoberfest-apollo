@@ -1,0 +1,6916 @@
+{
+  "case": "connected",
+  "all_pass": false,
+  "checks": {
+    "raw_capture_complete_monotonic_and_observer_map_matches": true,
+    "original_rope_no_flight_memory_writes": true,
+    "only_documented_hardware_input_channels": true,
+    "original_p51_reference_readiness_and_p63_review": true,
+    "original_dsky_v48_mass_load": true,
+    "original_crew_and_preignition_continuation": true,
+    "original_v99_crew_request_is_separate_from_engine_on": true,
+    "original_ignition_instruction_emits_engine_on": true,
+    "engine_off_reset_observed_before_ignition": true,
+    "original_p63_zoom_and_flatout_execute": true,
+    "genuine_dinc_drives_counter_outputs": true,
+    "flatout_emits_4096_genuine_positive_counter_pulses": true,
+    "source_pipa_addresses_and_sign_operations": true,
+    "bounded_sensor_coupling_and_real_packet_acceptance": true,
+    "physical_sensor_count_and_delivery_match": true,
+    "original_navigation_consumes_delivered_counts": false,
+    "original_munrvg_math_matches_independent_pulse_and_gravity_arithmetic": true,
+    "original_munrvg_period_remains_two_seconds": true,
+    "physical_engine_model_observations_present": true,
+    "physical_units_frame_gravity_integration_and_mass_flow": true,
+    "zero_force_before_authentic_ignition": true,
+    "disconnected_engine_or_connected_physical_motion": true,
+    "no_p64_p66_or_landing_claim": true,
+    "preservation-before_all_prior_files_unchanged": true,
+    "preservation-after_all_prior_files_unchanged": true,
+    "original_pinned_source_unchanged": true,
+    "original_phase10_baseline_guard_unchanged": true
+  },
+  "raw_sha256": "4f6260af614bfb29bd894ca21208383fbc29a75f60b1e3f86ac27e8768fa44c1",
+  "raw_bytes": 162479557,
+  "event_counts": {
+    "initial": 1,
+    "startup_plan": 1,
+    "output": 75874,
+    "transition": 22771,
+    "input": 23816,
+    "checkpoint": 527,
+    "startup_complete": 1,
+    "key_sequence": 143,
+    "wait": 146,
+    "observed": 146,
+    "synthetic_star_plan": 2,
+    "hardware_interrupt": 4,
+    "mark_pair_result": 2,
+    "star_separation_check": 1,
+    "alignment_result": 1,
+    "mission_initialization_start": 1,
+    "mission_block": 9,
+    "mission_block_stored": 9,
+    "mission_initialization_complete": 1,
+    "stage": 11,
+    "plant_initialization": 1,
+    "plant": 53947,
+    "engine_receiver": 3232,
+    "pipa_measurement": 2379,
+    "finish": 1
+  },
+  "checkpoint_counts": {
+    "CANTROO": 1,
+    "ENGINOF3": 4,
+    "P51": 1,
+    "P51B": 1,
+    "AOTMARK": 2,
+    "GETDAT": 4,
+    "CODE7": 4,
+    "GETMKS": 2,
+    "MARKRUPT": 4,
+    "MARKCHEX": 2,
+    "AVESTAR": 2,
+    "P51E": 1,
+    "POOH": 1,
+    "GOMOD": 1,
+    "V71UPDAT": 9,
+    "UPSTORE": 9,
+    "UPEND71": 9,
+    "P63LM": 1,
+    "R02BOTH": 1,
+    "P63_AFTER_R02": 1,
+    "CALCRGVG": 9,
+    "RGVGCALC": 12,
+    "TTF/8CL": 12,
+    "ROOTPSRS": 12,
+    "ROOTLOOP": 16,
+    "ROOTSTOR": 12,
+    "ROOTSTOR_RESULT": 12,
+    "QUADGUID": 12,
+    "CGCALC": 12,
+    "DDUMCALC": 3,
+    "IGNALGRT": 1,
+    "ASTNRETN": 1,
+    "ASTNRET": 1,
+    "R51P63": 1,
+    "R60LEM": 1,
+    "P63SPOT3": 2,
+    "P63SPOT4": 1,
+    "BURNBABY": 1,
+    "P40AUTO": 1,
+    "DVOVF": 39,
+    "BUFZERO": 31,
+    "MIDTOAV1": 1,
+    "PREREAD": 1,
+    "BIBIBIAS": 1,
+    "READACCS": 30,
+    "PIPASR": 30,
+    "PIPSDONE": 30,
+    "SERVICER": 30,
+    "MUNRVG": 30,
+    "MUNRETRN": 30,
+    "COPYCYC2": 30,
+    "COPYCYCL": 30,
+    "SERVEXIT": 15,
+    "IGNITION": 1,
+    "P63IGN": 1,
+    "P63ZOOM": 1,
+    "FLATOUT": 1,
+    "DOIT": 4,
+    "LUNLAND": 3,
+    "GDUMP1": 3,
+    "THROTTLE": 3
+  },
+  "first_engine_on": {
+    "cycle": 25169081,
+    "pre_bank": 30,
+    "pre_z": 1310,
+    "value": 4352
+  },
+  "first_flatout_cycle": 27387428,
+  "engine_command_transitions": [
+    [
+      109,
+      9,
+      0
+    ],
+    [
+      507,
+      9,
+      8192
+    ],
+    [
+      25169081,
+      9,
+      4096
+    ]
+  ],
+  "counter_clock": {
+    "DINC_events": 20613,
+    "counter_outputs": {
+      "15": 381,
+      "14": 4145,
+      "13": 16087
+    },
+    "maximum_delivery_delay_mct": 3,
+    "errors": [],
+    "positive_outputs_after_flatout": 16087,
+    "first_flatout_train_duration_s": 1.2796875
+  },
+  "physical": {
+    "initialization": {
+      "ev": "plant_initialization",
+      "cycle": 20479070,
+      "case": "connected",
+      "telemetry": {
+        "mass_before_kg": 15000.0,
+        "mass_kg": 15000.0,
+        "fuel_before_kg": 8196.0,
+        "fuel_kg": 8196.0,
+        "acceleration_body_x_m_s2": 0.0,
+        "mass_flow_kg_s": 0.0,
+        "engine_enabled": false,
+        "delta_v_body_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_body_to_ref": [
+          [
+            0.9999999999565912,
+            9.305770040845497e-06,
+            4.694881510119324e-07
+          ],
+          [
+            -9.305780287648903e-06,
+            0.9999999997184225,
+            2.183019896190919e-05
+          ],
+          [
+            -4.692850040682496e-07,
+            -2.1830203329915147e-05,
+            0.999999999761611
+          ]
+        ],
+        "delivered_thrust_n": 0.0,
+        "time_s": 119.99000000000001,
+        "physical_engine_connected": true,
+        "commanded_thrust_n": 0.0,
+        "requested_engine_enabled": false,
+        "position_before_ref_m": [
+          1624399.8531221873,
+          0.0,
+          -659279.0036512279
+        ],
+        "velocity_before_ref_m_s": [
+          628.9036048260381,
+          0.0,
+          1549.557876686892
+        ],
+        "position_ref_m": [
+          1624406.1420843122,
+          0.0,
+          -659263.5080425026
+        ],
+        "velocity_ref_m_s": [
+          628.8888231542522,
+          0.0,
+          1549.563875894808
+        ],
+        "quaternion_body_to_ref": [
+          0.9999999999295781,
+          -1.0915100573724746e-05,
+          2.3469328878657304e-07,
+          -4.652887582451265e-06
+        ],
+        "angular_velocity_body_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "specific_force_ref_m_s2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gravity_ref_m_s2": [
+          -1.4781643208038813,
+          -0.0,
+          0.5999278433689155
+        ],
+        "total_acceleration_ref_m_s2": [
+          -1.4781643208038813,
+          0.0,
+          0.5999278433689155
+        ],
+        "thrust_vector_ref_n": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_v_specific_ref_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "initialization_epoch_cs": 12000,
+      "current_clock_cs": 23999.0,
+      "refs_to_stable": [
+        [
+          1.0,
+          -9.298324584960938e-06,
+          -4.6193599700927734e-07
+        ],
+        [
+          9.313225746154785e-06,
+          1.0,
+          -2.180039882659912e-05
+        ],
+        [
+          4.76837158203125e-07,
+          2.1860003471374512e-05,
+          1.0
+        ]
+      ],
+      "initial_mass_kg": 15000.0,
+      "initial_fuel_kg": 8196.0,
+      "physical_provenance": {
+        "upstream_source_sha256": {
+          "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+          "Contributed/LM_Simulator/lm_simulator.tcl": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+        },
+        "phase7_orientation_sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a",
+        "adapter_sha256": "338a05982eac5d17d918684761f63d6d1ad898c8d647f7f8a2380d52b99e135c",
+        "tcl_executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+        "engine_response": "ASSUMED instantaneous upstream model",
+        "force_scale": "ASSUMED nominal guidance pulse/N applied to physical plant",
+        "exhaust_velocity_m_s": 3050.0,
+        "max_interval_s": 0.010001
+      },
+      "classification": "SYNTHETIC engine plant, fixed measured CDU fixture; no achieved burn maneuver claimed"
+    },
+    "final": {
+      "mass_before_kg": 14883.454127452782,
+      "mass_kg": 14883.451185547045,
+      "fuel_before_kg": 8079.454127449679,
+      "fuel_kg": 8079.451185543941,
+      "acceleration_body_x_m_s2": 3.0261792467195474,
+      "mass_flow_kg_s": 14.767213114754098,
+      "engine_enabled": true,
+      "delta_v_body_m_s": [
+        0.0006028716468074098,
+        0.0,
+        0.0
+      ],
+      "rotation_body_to_ref": [
+        [
+          0.9999999999565912,
+          9.305770040845497e-06,
+          4.694881510119324e-07
+        ],
+        [
+          -9.305780287648903e-06,
+          0.9999999997184225,
+          2.183019896190919e-05
+        ],
+        [
+          -4.692850040682496e-07,
+          -2.1830203329915147e-05,
+          0.999999999761611
+        ]
+      ],
+      "delivered_thrust_n": 45040.0,
+      "time_s": 206.6618164061765,
+      "physical_engine_connected": true,
+      "commanded_thrust_n": 45040.0,
+      "requested_engine_enabled": true,
+      "position_before_ref_m": [
+        1673491.9754119841,
+        -0.0017670722256886246,
+        -522861.28523748275
+      ],
+      "velocity_before_ref_m_s": [
+        522.5639451833131,
+        -0.00022137209001535415,
+        1596.205640024566
+      ],
+      "position_ref_m": [
+        1673492.0795165498,
+        -0.001767116327718478,
+        -522860.96724338096
+      ],
+      "velocity_ref_m_s": [
+        522.5642447713697,
+        -0.00022137769988619404,
+        1596.2057347813522
+      ],
+      "quaternion_body_to_ref": [
+        0.9999999999295781,
+        -1.0915100573724746e-05,
+        2.3469328878657304e-07,
+        -4.652887582451265e-06
+      ],
+      "angular_velocity_body_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "specific_force_ref_m_s2": [
+        3.0261792465881845,
+        -2.8160959181014967e-05,
+        -1.420140540108035e-06
+      ],
+      "gravity_ref_m_s2": [
+        -1.5223646470590348,
+        1.6074939854587735e-09,
+        0.4756434734414763
+      ],
+      "total_acceleration_ref_m_s2": [
+        1.5038145995291496,
+        -2.8159351687029507e-05,
+        0.4756420533009362
+      ],
+      "thrust_vector_ref_n": [
+        45039.99999804486,
+        -0.41913234415570655,
+        -0.021136596583233958
+      ],
+      "delta_v_specific_ref_m_s": [
+        0.0006028716467812398,
+        -5.6101910868428255e-09,
+        -2.829186232246476e-10
+      ]
+    },
+    "rows": 53947,
+    "max_interval_s": 0.0049921875,
+    "first_thrust_cycle": 25169431,
+    "physical_specific_impulse_REF_m_s": [
+      23.79079752533519,
+      -0.00022139193464832283,
+      -1.1164664513948538e-05
+    ],
+    "max_independent_validation_errors": {
+      "clock_s": 1.4097230327525523e-14,
+      "mass_flow_kg_s": 0.0,
+      "mass_step_kg": 0.0,
+      "fuel_step_kg": 0.0,
+      "force_over_mass_m_s2": 0.0,
+      "quaternion_norm": 0.0,
+      "thrust_frame_m_s2": 8.881784197001252e-16,
+      "gravity_m_s2": 0.0,
+      "specific_force_m_s2": 1.1102230246251565e-16,
+      "position_step_m": 0.0,
+      "velocity_step_m_s": 0.0,
+      "state_continuity_m": 0.0,
+      "sensor_transform_m_s2": 4.440892098500626e-16,
+      "quantization_residual_m_s": 3.469446951953614e-18
+    },
+    "validation_tolerances": {
+      "clock_s": 1e-10,
+      "mass_flow_kg_s": 1e-10,
+      "mass_step_kg": 1e-08,
+      "fuel_step_kg": 1e-08,
+      "force_over_mass_m_s2": 1e-10,
+      "quaternion_norm": 1e-10,
+      "thrust_frame_m_s2": 1e-10,
+      "gravity_m_s2": 1e-12,
+      "specific_force_m_s2": 1e-12,
+      "position_step_m": 1e-08,
+      "velocity_step_m_s": 1e-09,
+      "state_continuity_m": 1e-08,
+      "sensor_transform_m_s2": 1e-10,
+      "quantization_residual_m_s": 1e-12
+    }
+  },
+  "sensor": {
+    "generated_counts": [
+      2379,
+      0,
+      0
+    ],
+    "delivered_counts": [
+      2379,
+      0,
+      0
+    ],
+    "consumed_counts": [
+      1889,
+      0,
+      0
+    ],
+    "ending_counter_counts": [
+      489,
+      0,
+      0
+    ],
+    "counter_balance_error": [
+      1,
+      0,
+      0
+    ],
+    "counter_errors": [],
+    "maximum_counter_delivery_delay_mct": 2,
+    "maximum_coupling_delay_mct": 425,
+    "specific_impulse_stable_m_s": [
+      23.79079752739931,
+      1.7737678032553605e-07,
+      1.7483214097745725e-07
+    ],
+    "ending_quantization_remainder_m_s": [
+      0.000797527399111149,
+      1.7737678032553494e-07,
+      1.748321409774578e-07
+    ]
+  },
+  "navigation_samples": [
+    {
+      "cycle": 22806194,
+      "entry_cycle": 22797720,
+      "PIPTIME_cs": 26505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1639694.25,
+        26.75,
+        -620251.25
+      ],
+      "V_before_stable_m_s": [
+        591.6494846343994,
+        -0.04820823669433594,
+        1564.216947555542
+      ],
+      "R_computed_stable_m": [
+        1640874.5625,
+        26.625,
+        -617121.6875
+      ],
+      "V_computed_stable_m_s": [
+        588.6642456054688,
+        -0.04830360412597656,
+        1565.3429508209229
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4920711517333984,
+        -4.76837158203125e-05,
+        0.5644321441650391
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4931678771972656,
+        -4.76837158203125e-05,
+        0.5615711212158203
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.00232696533203125,
+        -0.0284881591796875,
+        -0.0002593994140625
+      ]
+    },
+    {
+      "cycle": 22977794,
+      "entry_cycle": 22969409,
+      "PIPTIME_cs": 26705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1640874.5625,
+        26.625,
+        -617121.6875
+      ],
+      "V_before_stable_m_s": [
+        588.6642456054688,
+        -0.04830360412597656,
+        1565.3429508209229
+      ],
+      "R_computed_stable_m": [
+        1642048.875,
+        26.5,
+        -613989.875
+      ],
+      "V_computed_stable_m_s": [
+        585.6768608093262,
+        -0.04839897155761719,
+        1566.4632320404053
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4931678771972656,
+        -4.76837158203125e-05,
+        0.5615711212158203
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4942169189453125,
+        -4.76837158203125e-05,
+        0.5587100982666016
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.02965545654296875,
+        -0.02829742431640625,
+        0.00345611572265625
+      ]
+    },
+    {
+      "cycle": 23148191,
+      "entry_cycle": 23139715,
+      "PIPTIME_cs": 26905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1642048.875,
+        26.5,
+        -613989.875
+      ],
+      "V_before_stable_m_s": [
+        585.6768608093262,
+        -0.04839897155761719,
+        1566.4632320404053
+      ],
+      "R_computed_stable_m": [
+        1643217.25,
+        26.375,
+        -610855.8125
+      ],
+      "V_computed_stable_m_s": [
+        582.6873779296875,
+        -0.04849433898925781,
+        1567.5777912139893
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4942169189453125,
+        -4.76837158203125e-05,
+        0.5587100982666016
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4952659606933594,
+        -4.76837158203125e-05,
+        0.5558490753173828
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.00971221923828125,
+        -0.028106689453125,
+        0.01861572265625
+      ]
+    },
+    {
+      "cycle": 23318815,
+      "entry_cycle": 23310248,
+      "PIPTIME_cs": 27105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1643217.25,
+        26.375,
+        -610855.8125
+      ],
+      "V_before_stable_m_s": [
+        582.6873779296875,
+        -0.04849433898925781,
+        1567.5777912139893
+      ],
+      "R_computed_stable_m": [
+        1644379.625,
+        26.25,
+        -607719.5625
+      ],
+      "V_computed_stable_m_s": [
+        579.6957492828369,
+        -0.04858970642089844,
+        1568.6866283416748
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4952659606933594,
+        -4.76837158203125e-05,
+        0.5558490753173828
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4963626861572266,
+        -4.76837158203125e-05,
+        0.5529880523681641
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.00922393798828125,
+        -0.02791595458984375,
+        -0.01728057861328125
+      ]
+    },
+    {
+      "cycle": 23489999,
+      "entry_cycle": 23481432,
+      "PIPTIME_cs": 27305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1644379.625,
+        26.25,
+        -607719.5625
+      ],
+      "V_before_stable_m_s": [
+        579.6957492828369,
+        -0.04858970642089844,
+        1568.6866283416748
+      ],
+      "R_computed_stable_m": [
+        1645536.0,
+        26.125,
+        -604581.0625
+      ],
+      "V_computed_stable_m_s": [
+        576.7019748687744,
+        -0.04863739013671875,
+        1569.7897911071777
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4963626861572266,
+        -4.76837158203125e-05,
+        0.5529880523681641
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4974117279052734,
+        0.0,
+        0.5501747131347656
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.023773193359375,
+        -0.0277252197265625,
+        0.0207672119140625
+      ]
+    },
+    {
+      "cycle": 23660488,
+      "entry_cycle": 23652017,
+      "PIPTIME_cs": 27505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1645536.0,
+        26.125,
+        -604581.0625
+      ],
+      "V_before_stable_m_s": [
+        576.7019748687744,
+        -0.04863739013671875,
+        1569.7897911071777
+      ],
+      "R_computed_stable_m": [
+        1646686.4375,
+        26.0,
+        -601440.375
+      ],
+      "V_computed_stable_m_s": [
+        573.7061023712158,
+        -0.04863739013671875,
+        1570.887279510498
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4974117279052734,
+        0.0,
+        0.5501747131347656
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4984607696533203,
+        0.0,
+        0.5473136901855469
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.02837371826171875,
+        -0.0277252197265625,
+        0.007568359375
+      ]
+    },
+    {
+      "cycle": 23831171,
+      "entry_cycle": 23822572,
+      "PIPTIME_cs": 27705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1646686.4375,
+        26.0,
+        -601440.375
+      ],
+      "V_before_stable_m_s": [
+        573.7061023712158,
+        -0.04863739013671875,
+        1570.887279510498
+      ],
+      "R_computed_stable_m": [
+        1647830.875,
+        25.875,
+        -598297.5
+      ],
+      "V_computed_stable_m_s": [
+        570.708179473877,
+        -0.04863739013671875,
+        1571.97904586792
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4984607696533203,
+        0.0,
+        0.5473136901855469
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.4994621276855469,
+        0.0,
+        0.5444526672363281
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.022216796875,
+        -0.0277252197265625,
+        0.0058135986328125
+      ]
+    },
+    {
+      "cycle": 24001659,
+      "entry_cycle": 23993373,
+      "PIPTIME_cs": 27905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1647830.875,
+        25.875,
+        -598297.5
+      ],
+      "V_before_stable_m_s": [
+        570.708179473877,
+        -0.04863739013671875,
+        1571.97904586792
+      ],
+      "R_computed_stable_m": [
+        1648969.3125,
+        25.75,
+        -595152.4375
+      ],
+      "V_computed_stable_m_s": [
+        567.7082061767578,
+        -0.04863739013671875,
+        1573.0650901794434
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.4994621276855469,
+        0.0,
+        0.5444526672363281
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5005111694335938,
+        0.0,
+        0.5415916442871094
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.0200653076171875,
+        -0.0277252197265625,
+        0.0155029296875
+      ]
+    },
+    {
+      "cycle": 24172906,
+      "entry_cycle": 24164526,
+      "PIPTIME_cs": 28105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1648969.3125,
+        25.75,
+        -595152.4375
+      ],
+      "V_before_stable_m_s": [
+        567.7082061767578,
+        -0.04863739013671875,
+        1573.0650901794434
+      ],
+      "R_computed_stable_m": [
+        1650101.75,
+        25.625,
+        -592005.25
+      ],
+      "V_computed_stable_m_s": [
+        564.7061347961426,
+        -0.04863739013671875,
+        1574.1454124450684
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5005111694335938,
+        0.0,
+        0.5415916442871094
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5015602111816406,
+        0.0,
+        0.5387306213378906
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.0221099853515625,
+        -0.0277252197265625,
+        -0.0258636474609375
+      ]
+    },
+    {
+      "cycle": 24343200,
+      "entry_cycle": 24334301,
+      "PIPTIME_cs": 28305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1650101.75,
+        25.625,
+        -592005.25
+      ],
+      "V_before_stable_m_s": [
+        564.7061347961426,
+        -0.04863739013671875,
+        1574.1454124450684
+      ],
+      "R_computed_stable_m": [
+        1651228.1875,
+        25.5,
+        -588855.875
+      ],
+      "V_computed_stable_m_s": [
+        561.7020130157471,
+        -0.04863739013671875,
+        1575.219964981079
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5015602111816406,
+        0.0,
+        0.5387306213378906
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5025615692138672,
+        0.0,
+        0.5358219146728516
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.028350830078125,
+        -0.0277252197265625,
+        0.0067138671875
+      ]
+    },
+    {
+      "cycle": 24513874,
+      "entry_cycle": 24505482,
+      "PIPTIME_cs": 28505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1651228.1875,
+        25.5,
+        -588855.875
+      ],
+      "V_before_stable_m_s": [
+        561.7020130157471,
+        -0.04863739013671875,
+        1575.219964981079
+      ],
+      "R_computed_stable_m": [
+        1652348.5625,
+        25.375,
+        -585704.375
+      ],
+      "V_computed_stable_m_s": [
+        558.6958408355713,
+        -0.04863739013671875,
+        1576.2887477874756
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5025615692138672,
+        0.0,
+        0.5358219146728516
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.503610610961914,
+        0.0,
+        0.5329608917236328
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.02390289306640625,
+        -0.0277252197265625,
+        -0.01157379150390625
+      ]
+    },
+    {
+      "cycle": 24684270,
+      "entry_cycle": 24675747,
+      "PIPTIME_cs": 28705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1652348.5625,
+        25.375,
+        -585704.375
+      ],
+      "V_before_stable_m_s": [
+        558.6958408355713,
+        -0.04863739013671875,
+        1576.2887477874756
+      ],
+      "R_computed_stable_m": [
+        1653462.9375,
+        25.25,
+        -582550.75
+      ],
+      "V_computed_stable_m_s": [
+        555.6876182556152,
+        -0.04863739013671875,
+        1577.3518085479736
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.503610610961914,
+        0.0,
+        0.5329608917236328
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5046119689941406,
+        0.0,
+        0.5300998687744141
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.00946044921875,
+        -0.0277252197265625,
+        -0.0184173583984375
+      ]
+    },
+    {
+      "cycle": 24856996,
+      "entry_cycle": 24846923,
+      "PIPTIME_cs": 28905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1653462.9375,
+        25.25,
+        -582550.75
+      ],
+      "V_before_stable_m_s": [
+        555.6876182556152,
+        -0.04863739013671875,
+        1577.3518085479736
+      ],
+      "R_computed_stable_m": [
+        1654571.3125,
+        25.125,
+        -579395.0
+      ],
+      "V_computed_stable_m_s": [
+        552.6773929595947,
+        -0.04863739013671875,
+        1578.4091472625732
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5046119689941406,
+        0.0,
+        0.5300998687744141
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5056133270263672,
+        0.0,
+        0.5272388458251953
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.0089874267578125,
+        -0.0277252197265625,
+        -0.01381683349609375
+      ]
+    },
+    {
+      "cycle": 25026001,
+      "entry_cycle": 25017454,
+      "PIPTIME_cs": 29105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        0,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1654571.3125,
+        25.125,
+        -579395.0
+      ],
+      "V_before_stable_m_s": [
+        552.6773929595947,
+        -0.04863739013671875,
+        1578.4091472625732
+      ],
+      "R_computed_stable_m": [
+        1655673.625,
+        25.0,
+        -576237.125
+      ],
+      "V_computed_stable_m_s": [
+        549.6651649475098,
+        -0.04863739013671875,
+        1579.4607639312744
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5056133270263672,
+        0.0,
+        0.5272388458251953
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5066146850585938,
+        0.0,
+        0.5243778228759766
+      ],
+      "velocity_arithmetic_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.03105926513671875,
+        -0.0277252197265625,
+        0.002227783203125
+      ]
+    },
+    {
+      "cycle": 25196883,
+      "entry_cycle": 25188319,
+      "PIPTIME_cs": 29305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        2,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.020000000949949026,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1655673.625,
+        25.0,
+        -576237.125
+      ],
+      "V_before_stable_m_s": [
+        549.6651649475098,
+        -0.04863739013671875,
+        1579.4607639312744
+      ],
+      "R_computed_stable_m": [
+        1656769.9375,
+        24.875,
+        -573077.125
+      ],
+      "V_computed_stable_m_s": [
+        546.6709613800049,
+        -0.04863739013671875,
+        1580.5066108703613
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5066146850585938,
+        0.0,
+        0.5243778228759766
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5076160430908203,
+        0.0,
+        0.5214691162109375
+      ],
+      "velocity_arithmetic_error_m_s": [
+        2.7159694582223892e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.024600525852292776,
+        -0.0277252197265625,
+        0.02971649169921875
+      ]
+    },
+    {
+      "cycle": 25367299,
+      "entry_cycle": 25358655,
+      "PIPTIME_cs": 29505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1656769.9375,
+        24.875,
+        -573077.125
+      ],
+      "V_before_stable_m_s": [
+        546.6709613800049,
+        -0.04863739013671875,
+        1580.5066108703613
+      ],
+      "R_computed_stable_m": [
+        1657860.875,
+        24.75,
+        -569915.0625
+      ],
+      "V_computed_stable_m_s": [
+        544.2646980285645,
+        -0.04863739013671875,
+        1581.546688079834
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5076160430908203,
+        0.0,
+        0.5214691162109375
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5086174011230469,
+        0.0,
+        0.5186080932617188
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.0008092971984297037,
+        -0.0277252197265625,
+        0.00634002685546875
+      ]
+    },
+    {
+      "cycle": 25538027,
+      "entry_cycle": 25529525,
+      "PIPTIME_cs": 29705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1657860.875,
+        24.75,
+        -569915.0625
+      ],
+      "V_before_stable_m_s": [
+        544.2646980285645,
+        -0.04863739013671875,
+        1581.546688079834
+      ],
+      "R_computed_stable_m": [
+        1658947.0,
+        24.625,
+        -566750.9375
+      ],
+      "V_computed_stable_m_s": [
+        541.8564796447754,
+        -0.04863739013671875,
+        1582.5810432434082
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5086174011230469,
+        0.0,
+        0.5186080932617188
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5095710754394531,
+        0.0,
+        0.5157470703125
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.0028387161437422037,
+        -0.0277252197265625,
+        -0.00559234619140625
+      ]
+    },
+    {
+      "cycle": 25708964,
+      "entry_cycle": 25700434,
+      "PIPTIME_cs": 29905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1658947.0,
+        24.625,
+        -566750.9375
+      ],
+      "V_before_stable_m_s": [
+        541.8564796447754,
+        -0.04863739013671875,
+        1582.5810432434082
+      ],
+      "R_computed_stable_m": [
+        1660028.3125,
+        24.5,
+        -563584.75
+      ],
+      "V_computed_stable_m_s": [
+        539.4463062286377,
+        -0.04863739013671875,
+        1583.6096286773682
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5095710754394531,
+        0.0,
+        0.5157470703125
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5105724334716797,
+        0.0,
+        0.5128383636474609
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.008682832354679704,
+        -0.0277252197265625,
+        -0.00608062744140625
+      ]
+    },
+    {
+      "cycle": 25879505,
+      "entry_cycle": 25870700,
+      "PIPTIME_cs": 30105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1660028.3125,
+        24.5,
+        -563584.75
+      ],
+      "V_before_stable_m_s": [
+        539.4463062286377,
+        -0.04863739013671875,
+        1583.6096286773682
+      ],
+      "R_computed_stable_m": [
+        1661104.8125,
+        24.375,
+        -560416.5
+      ],
+      "V_computed_stable_m_s": [
+        537.0341300964355,
+        -0.04863739013671875,
+        1584.6324443817139
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5105724334716797,
+        0.0,
+        0.5128383636474609
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5115737915039062,
+        0.0,
+        0.5099773406982422
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.018532380694523454,
+        -0.0277252197265625,
+        0.00506591796875
+      ]
+    },
+    {
+      "cycle": 26049911,
+      "entry_cycle": 26041473,
+      "PIPTIME_cs": 30305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        60,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6000000284984708,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1661104.8125,
+        24.375,
+        -560416.5
+      ],
+      "V_before_stable_m_s": [
+        537.0341300964355,
+        -0.04863739013671875,
+        1584.6324443817139
+      ],
+      "R_computed_stable_m": [
+        1662176.4375,
+        24.25,
+        -557246.1875
+      ],
+      "V_computed_stable_m_s": [
+        534.6100330352783,
+        -0.04863739013671875,
+        1585.6494903564453
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5115737915039062,
+        0.0,
+        0.5099773406982422
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5124797821044922,
+        0.0,
+        0.5070686340332031
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -4.3516047298908234e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.020112638361752033,
+        -0.0277252197265625,
+        0.02765655517578125
+      ]
+    },
+    {
+      "cycle": 26220573,
+      "entry_cycle": 26212212,
+      "PIPTIME_cs": 30505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1662176.4375,
+        24.25,
+        -557246.1875
+      ],
+      "V_before_stable_m_s": [
+        534.6100330352783,
+        -0.04863739013671875,
+        1585.6494903564453
+      ],
+      "R_computed_stable_m": [
+        1663243.25,
+        24.125,
+        -554073.875
+      ],
+      "V_computed_stable_m_s": [
+        532.1940422058105,
+        -0.04863739013671875,
+        1586.6607189178467
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5124797821044922,
+        0.0,
+        0.5070686340332031
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5134811401367188,
+        0.0,
+        0.5041599273681641
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.007393464678898454,
+        -0.0277252197265625,
+        -0.00061798095703125
+      ]
+    },
+    {
+      "cycle": 26391301,
+      "entry_cycle": 26382755,
+      "PIPTIME_cs": 30705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1663243.25,
+        24.125,
+        -554073.875
+      ],
+      "V_before_stable_m_s": [
+        532.1940422058105,
+        -0.04863739013671875,
+        1586.6607189178467
+      ],
+      "R_computed_stable_m": [
+        1664305.25,
+        24.0,
+        -550899.5625
+      ],
+      "V_computed_stable_m_s": [
+        529.77614402771,
+        -0.04863739013671875,
+        1587.6661777496338
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5134811401367188,
+        0.0,
+        0.5041599273681641
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5143871307373047,
+        0.0,
+        0.5012989044189453
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.028877839678898454,
+        -0.0277252197265625,
+        -0.0172576904296875
+      ]
+    },
+    {
+      "cycle": 26562107,
+      "entry_cycle": 26553550,
+      "PIPTIME_cs": 30905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1664305.25,
+        24.0,
+        -550899.5625
+      ],
+      "V_before_stable_m_s": [
+        529.77614402771,
+        -0.04863739013671875,
+        1587.6661777496338
+      ],
+      "R_computed_stable_m": [
+        1665362.375,
+        23.875,
+        -547723.25
+      ],
+      "V_computed_stable_m_s": [
+        527.3563861846924,
+        -0.04863739013671875,
+        1588.6658668518066
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5143871307373047,
+        0.0,
+        0.5012989044189453
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.515340805053711,
+        0.0,
+        0.49839019775390625
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.008513822918757796,
+        -0.0277252197265625,
+        -0.02245330810546875
+      ]
+    },
+    {
+      "cycle": 26732779,
+      "entry_cycle": 26724211,
+      "PIPTIME_cs": 31105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1665362.375,
+        23.875,
+        -547723.25
+      ],
+      "V_before_stable_m_s": [
+        527.3563861846924,
+        -0.04863739013671875,
+        1588.6658668518066
+      ],
+      "R_computed_stable_m": [
+        1666414.6875,
+        23.75,
+        -544544.9375
+      ],
+      "V_computed_stable_m_s": [
+        524.934720993042,
+        -0.04863739013671875,
+        1589.6597385406494
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.515340805053711,
+        0.0,
+        0.49839019775390625
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5162944793701172,
+        0.0,
+        0.4954814910888672
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.020409211749210954,
+        -0.0277252197265625,
+        -0.01601409912109375
+      ]
+    },
+    {
+      "cycle": 26903028,
+      "entry_cycle": 26894321,
+      "PIPTIME_cs": 31305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1666414.6875,
+        23.75,
+        -544544.9375
+      ],
+      "V_before_stable_m_s": [
+        524.934720993042,
+        -0.04863739013671875,
+        1589.6597385406494
+      ],
+      "R_computed_stable_m": [
+        1667462.125,
+        23.625,
+        -541364.625
+      ],
+      "V_computed_stable_m_s": [
+        522.5111961364746,
+        -0.04863739013671875,
+        1590.647792816162
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5162944793701172,
+        0.0,
+        0.4954814910888672
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5172004699707031,
+        0.0,
+        0.4925727844238281
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.009353056317195296,
+        -0.0277252197265625,
+        0.0020599365234375
+      ]
+    },
+    {
+      "cycle": 27073964,
+      "entry_cycle": 27065475,
+      "PIPTIME_cs": 31505.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1667462.125,
+        23.625,
+        -541364.625
+      ],
+      "V_before_stable_m_s": [
+        522.5111961364746,
+        -0.04863739013671875,
+        1590.647792816162
+      ],
+      "R_computed_stable_m": [
+        1668504.75,
+        23.5,
+        -538182.375
+      ],
+      "V_computed_stable_m_s": [
+        520.085859298706,
+        -0.04863739013671875,
+        1591.6300296783447
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5172004699707031,
+        0.0,
+        0.4925727844238281
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.518106460571289,
+        0.0,
+        0.48966407775878906
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.027008638018742204,
+        -0.0277252197265625,
+        -0.030731201171875
+      ]
+    },
+    {
+      "cycle": 27244585,
+      "entry_cycle": 27236224,
+      "PIPTIME_cs": 31705.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        61,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6100000289734453,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1668504.75,
+        23.5,
+        -538182.375
+      ],
+      "V_before_stable_m_s": [
+        520.085859298706,
+        -0.04863739013671875,
+        1591.6300296783447
+      ],
+      "R_computed_stable_m": [
+        1669542.5,
+        23.375,
+        -534998.125
+      ],
+      "V_computed_stable_m_s": [
+        517.6587104797363,
+        -0.04863739013671875,
+        1592.6064491271973
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.518106460571289,
+        0.0,
+        0.48966407775878906
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.519012451171875,
+        0.0,
+        0.48675537109375
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -2.9936200007796288e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.004494294757023454,
+        -0.0277252197265625,
+        0.01061248779296875
+      ]
+    },
+    {
+      "cycle": 27416414,
+      "entry_cycle": 27407495,
+      "PIPTIME_cs": 31905.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        62,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        0.6200000294484198,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1669542.5,
+        23.375,
+        -534998.125
+      ],
+      "V_before_stable_m_s": [
+        517.6587104797363,
+        -0.04863739013671875,
+        1592.6064491271973
+      ],
+      "R_computed_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_computed_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.519012451171875,
+        0.0,
+        0.48675537109375
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.519918441772461,
+        0.0,
+        0.48384666442871094
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -1.635635271668434e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.02439608657732606,
+        -0.0277252197265625,
+        0.00109100341796875
+      ]
+    },
+    {
+      "cycle": 27587528,
+      "entry_cycle": 27578112,
+      "PIPTIME_cs": 32105.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        491,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        4.910000233212486,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_before_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "R_computed_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_computed_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.519918441772461,
+        0.0,
+        0.48384666442871094
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5208244323730469,
+        0.0,
+        0.4809379577636719
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -8.015194907784462e-06,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        0.02531013055704534,
+        -0.0277252197265625,
+        0.003204345703125
+      ]
+    },
+    {
+      "cycle": 27757266,
+      "entry_cycle": 27748707,
+      "PIPTIME_cs": 32305.0,
+      "period_s": 2.0,
+      "consumed_counts": [
+        603,
+        0,
+        0
+      ],
+      "pulse_delta_v_stable_m_s": [
+        6.030000286409631,
+        0.0,
+        0.0
+      ],
+      "R_before_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_before_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "R_computed_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_computed_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "old_half_gravity_delta_v_m_s": [
+        -1.5208244323730469,
+        0.0,
+        0.4809379577636719
+      ],
+      "new_half_gravity_delta_v_m_s": [
+        -1.5216827392578125,
+        0.0,
+        0.4780292510986328
+      ],
+      "velocity_arithmetic_error_m_s": [
+        -1.2951204553246498e-05,
+        0.0,
+        0.0
+      ],
+      "position_arithmetic_error_m": [
+        -0.01887662918306887,
+        -0.0277252197265625,
+        0.0169525146484375
+      ]
+    }
+  ],
+  "guidance_samples": [
+    {
+      "cycle": 19555645,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        801.7515659332275,
+        -0.024509429931640625,
+        1467.598009109497
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        128,
+        2403,
+        32767,
+        22731,
+        234,
+        9357
+      ],
+      "TTF": [
+        24462,
+        32767
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        175,
+        13339,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19560385,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        801.7515659332275,
+        -0.024509429931640625,
+        1467.598009109497
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        128,
+        2403,
+        32767,
+        22731,
+        234,
+        9357
+      ],
+      "TTF": [
+        24462,
+        32767
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        175,
+        13339,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19560441,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        801.7515659332275,
+        -0.024509429931640625,
+        1467.598009109497
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        128,
+        2403,
+        32767,
+        22731,
+        234,
+        9357
+      ],
+      "TTF": [
+        20084,
+        5818
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        175,
+        13339,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19581833,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.501895904541,
+        -0.06299018859863281,
+        1458.7769985198975
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12889,
+        32767,
+        22630,
+        233,
+        2617
+      ],
+      "TTF": [
+        20084,
+        5818
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12380,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19582984,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.501895904541,
+        -0.06299018859863281,
+        1458.7769985198975
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12889,
+        32767,
+        22630,
+        233,
+        2617
+      ],
+      "TTF": [
+        20084,
+        5818
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12380,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19583040,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.501895904541,
+        -0.06299018859863281,
+        1458.7769985198975
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12889,
+        32767,
+        22630,
+        233,
+        2617
+      ],
+      "TTF": [
+        20057,
+        4742
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12380,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19606145,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.5211601257324,
+        -0.06232261657714844,
+        1458.772087097168
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12940,
+        32767,
+        22631,
+        233,
+        2604
+      ],
+      "TTF": [
+        20057,
+        4742
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12371,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19607200,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.5211601257324,
+        -0.06232261657714844,
+        1458.772087097168
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12940,
+        32767,
+        22631,
+        233,
+        2604
+      ],
+      "TTF": [
+        20057,
+        4742
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12371,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19607257,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1538481.375,
+        32.625,
+        -840475.3125
+      ],
+      "V_stable_m_s": [
+        799.5211601257324,
+        -0.06232261657714844,
+        1458.772087097168
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32573,
+        17569,
+        2,
+        13120,
+        31948,
+        22003
+      ],
+      "VGU": [
+        127,
+        12940,
+        32767,
+        22631,
+        233,
+        2604
+      ],
+      "TTF": [
+        20057,
+        4511
+      ],
+      "TABLTTF": [
+        306,
+        2939,
+        174,
+        12371,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        4
+      ]
+    },
+    {
+      "cycle": 19690514,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        410.030460357666,
+        -0.06928443908691406,
+        1611.8835926055908
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        29811,
+        1,
+        11322,
+        32345,
+        10322
+      ],
+      "VGU": [
+        65,
+        8785,
+        32767,
+        21581,
+        257,
+        10343
+      ],
+      "TTF": [
+        23345,
+        2463
+      ],
+      "TABLTTF": [
+        157,
+        29848,
+        193,
+        1791,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19692464,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        410.030460357666,
+        -0.06928443908691406,
+        1611.8835926055908
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        29811,
+        1,
+        11322,
+        32345,
+        10322
+      ],
+      "VGU": [
+        65,
+        8785,
+        32767,
+        21581,
+        257,
+        10343
+      ],
+      "TTF": [
+        23345,
+        2463
+      ],
+      "TABLTTF": [
+        157,
+        29848,
+        193,
+        1791,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19692520,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        410.030460357666,
+        -0.06928443908691406,
+        1611.8835926055908
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        29811,
+        1,
+        11322,
+        32345,
+        10322
+      ],
+      "VGU": [
+        65,
+        8785,
+        32767,
+        21581,
+        257,
+        10343
+      ],
+      "TTF": [
+        25411,
+        9034
+      ],
+      "TABLTTF": [
+        157,
+        29848,
+        193,
+        1791,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19722976,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.89089012145996,
+        -0.08330345153808594,
+        1611.9201183319092
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3576,
+        32346,
+        26417
+      ],
+      "VGU": [
+        65,
+        6748,
+        1,
+        30612,
+        257,
+        10854
+      ],
+      "TTF": [
+        25411,
+        9034
+      ],
+      "TABLTTF": [
+        156,
+        13572,
+        193,
+        2174,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19724065,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.89089012145996,
+        -0.08330345153808594,
+        1611.9201183319092
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3576,
+        32346,
+        26417
+      ],
+      "VGU": [
+        65,
+        6748,
+        1,
+        30612,
+        257,
+        10854
+      ],
+      "TTF": [
+        25411,
+        9034
+      ],
+      "TABLTTF": [
+        156,
+        13572,
+        193,
+        2174,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19724121,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.89089012145996,
+        -0.08330345153808594,
+        1611.9201183319092
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3576,
+        32346,
+        26417
+      ],
+      "VGU": [
+        65,
+        6748,
+        1,
+        30612,
+        257,
+        10854
+      ],
+      "TTF": [
+        25411,
+        12797
+      ],
+      "TABLTTF": [
+        156,
+        13572,
+        193,
+        2174,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19752645,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.891414642334,
+        -0.03209114074707031,
+        1611.9198322296143
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3650,
+        32346,
+        26415
+      ],
+      "VGU": [
+        65,
+        6749,
+        1,
+        30701,
+        257,
+        10853
+      ],
+      "TTF": [
+        25411,
+        12797
+      ],
+      "TABLTTF": [
+        156,
+        13573,
+        193,
+        2173,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19753768,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.891414642334,
+        -0.03209114074707031,
+        1611.9198322296143
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3650,
+        32346,
+        26415
+      ],
+      "VGU": [
+        65,
+        6749,
+        1,
+        30701,
+        257,
+        10853
+      ],
+      "TTF": [
+        25411,
+        12797
+      ],
+      "TABLTTF": [
+        156,
+        13573,
+        193,
+        2173,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19755705,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1698992.1875,
+        25.1875,
+        -432175.25
+      ],
+      "V_stable_m_s": [
+        409.891414642334,
+        -0.03209114074707031,
+        1611.9198322296143
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32729,
+        32535,
+        32766,
+        3650,
+        32346,
+        26415
+      ],
+      "VGU": [
+        65,
+        6749,
+        1,
+        30701,
+        257,
+        10853
+      ],
+      "TTF": [
+        25411,
+        12762
+      ],
+      "TABLTTF": [
+        156,
+        13573,
+        193,
+        2173,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        0
+      ]
+    },
+    {
+      "cycle": 19844562,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8163414001465,
+        -0.0339508056640625,
+        1613.2015705108643
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21237,
+        32766,
+        3670,
+        32351,
+        29407
+      ],
+      "VGU": [
+        64,
+        9842,
+        1,
+        30857,
+        257,
+        14204
+      ],
+      "TTF": [
+        25452,
+        12762
+      ],
+      "TABLTTF": [
+        154,
+        14499,
+        193,
+        4687,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19845648,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8163414001465,
+        -0.0339508056640625,
+        1613.2015705108643
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21237,
+        32766,
+        3670,
+        32351,
+        29407
+      ],
+      "VGU": [
+        64,
+        9842,
+        1,
+        30857,
+        257,
+        14204
+      ],
+      "TTF": [
+        25452,
+        12762
+      ],
+      "TABLTTF": [
+        154,
+        14499,
+        193,
+        4687,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19845704,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8163414001465,
+        -0.0339508056640625,
+        1613.2015705108643
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21237,
+        32766,
+        3670,
+        32351,
+        29407
+      ],
+      "VGU": [
+        64,
+        9842,
+        1,
+        30857,
+        257,
+        14204
+      ],
+      "TTF": [
+        25482,
+        10290
+      ],
+      "TABLTTF": [
+        154,
+        14499,
+        193,
+        4687,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19876537,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8009395599365,
+        -0.03418922424316406,
+        1613.2057666778564
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3330,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9815,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10290
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19877695,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8009395599365,
+        -0.03418922424316406,
+        1613.2057666778564
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3330,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9815,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10290
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19877751,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8009395599365,
+        -0.03418922424316406,
+        1613.2057666778564
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3330,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9815,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19906387,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8013687133789,
+        -0.03371238708496094,
+        1613.205623626709
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19907332,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8013687133789,
+        -0.03371238708496094,
+        1613.205623626709
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 19907388,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 12000.0,
+      "R_stable_m": [
+        1700336.1875,
+        25.125,
+        -426863.25
+      ],
+      "V_stable_m_s": [
+        404.8013687133789,
+        -0.03371238708496094,
+        1613.205623626709
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        32351,
+        29409
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        154,
+        14498,
+        193,
+        4691,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 22824119,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 26505.0,
+      "R_stable_m": [
+        1640874.5625,
+        26.625,
+        -617121.6875
+      ],
+      "V_stable_m_s": [
+        588.6642456054688,
+        -0.04830360412597656,
+        1565.3429508209229
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17837,
+        0,
+        32766,
+        0,
+        11777,
+        3750,
+        32767,
+        1602,
+        6825
+      ]
+    },
+    {
+      "cycle": 22995565,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 26705.0,
+      "R_stable_m": [
+        1642048.875,
+        26.5,
+        -613989.875
+      ],
+      "V_stable_m_s": [
+        585.6768608093262,
+        -0.04839897155761719,
+        1566.4632320404053
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17815,
+        0,
+        32766,
+        0,
+        11717,
+        3750,
+        32767,
+        1603,
+        9230
+      ]
+    },
+    {
+      "cycle": 23165969,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 26905.0,
+      "R_stable_m": [
+        1643217.25,
+        26.375,
+        -610855.8125
+      ],
+      "V_stable_m_s": [
+        582.6873779296875,
+        -0.04849433898925781,
+        1567.5777912139893
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17793,
+        0,
+        32766,
+        0,
+        11657,
+        3750,
+        32767,
+        1604,
+        11540
+      ]
+    },
+    {
+      "cycle": 23336521,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 27105.0,
+      "R_stable_m": [
+        1644379.625,
+        26.25,
+        -607719.5625
+      ],
+      "V_stable_m_s": [
+        579.6957492828369,
+        -0.04858970642089844,
+        1568.6866283416748
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17770,
+        0,
+        32766,
+        0,
+        11597,
+        3750,
+        32767,
+        1605,
+        13754
+      ]
+    },
+    {
+      "cycle": 23507617,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 27305.0,
+      "R_stable_m": [
+        1645536.0,
+        26.125,
+        -604581.0625
+      ],
+      "V_stable_m_s": [
+        576.7019748687744,
+        -0.04863739013671875,
+        1569.7897911071777
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17748,
+        0,
+        32767,
+        0,
+        11538,
+        3750,
+        32767,
+        1606,
+        15872
+      ]
+    },
+    {
+      "cycle": 23678523,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 27505.0,
+      "R_stable_m": [
+        1646686.4375,
+        26.0,
+        -601440.375
+      ],
+      "V_stable_m_s": [
+        573.7061023712158,
+        -0.04863739013671875,
+        1570.887279510498
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17726,
+        0,
+        32767,
+        0,
+        11478,
+        3750,
+        32767,
+        1608,
+        1511
+      ]
+    },
+    {
+      "cycle": 23848988,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 27705.0,
+      "R_stable_m": [
+        1647830.875,
+        25.875,
+        -598297.5
+      ],
+      "V_stable_m_s": [
+        570.708179473877,
+        -0.04863739013671875,
+        1571.97904586792
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17705,
+        0,
+        32767,
+        0,
+        11418,
+        3750,
+        32767,
+        1609,
+        3438
+      ]
+    },
+    {
+      "cycle": 24019310,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 27905.0,
+      "R_stable_m": [
+        1648969.3125,
+        25.75,
+        -595152.4375
+      ],
+      "V_stable_m_s": [
+        567.7082061767578,
+        -0.04863739013671875,
+        1573.0650901794434
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17683,
+        0,
+        32767,
+        0,
+        11358,
+        3750,
+        32767,
+        1610,
+        5269
+      ]
+    },
+    {
+      "cycle": 24190752,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 28105.0,
+      "R_stable_m": [
+        1650101.75,
+        25.625,
+        -592005.25
+      ],
+      "V_stable_m_s": [
+        564.7061347961426,
+        -0.04863739013671875,
+        1574.1454124450684
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17661,
+        0,
+        32767,
+        0,
+        11298,
+        3750,
+        32767,
+        1611,
+        7004
+      ]
+    },
+    {
+      "cycle": 24360885,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 28305.0,
+      "R_stable_m": [
+        1651228.1875,
+        25.5,
+        -588855.875
+      ],
+      "V_stable_m_s": [
+        561.7020130157471,
+        -0.04863739013671875,
+        1575.219964981079
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17640,
+        0,
+        32767,
+        0,
+        11237,
+        3750,
+        32767,
+        1612,
+        8643
+      ]
+    },
+    {
+      "cycle": 24532075,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 28505.0,
+      "R_stable_m": [
+        1652348.5625,
+        25.375,
+        -585704.375
+      ],
+      "V_stable_m_s": [
+        558.6958408355713,
+        -0.04863739013671875,
+        1576.2887477874756
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17618,
+        0,
+        32767,
+        0,
+        11177,
+        3750,
+        32767,
+        1613,
+        10185
+      ]
+    },
+    {
+      "cycle": 24702736,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 28705.0,
+      "R_stable_m": [
+        1653462.9375,
+        25.25,
+        -582550.75
+      ],
+      "V_stable_m_s": [
+        555.6876182556152,
+        -0.04863739013671875,
+        1577.3518085479736
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17597,
+        0,
+        32767,
+        0,
+        11117,
+        3750,
+        32767,
+        1614,
+        11631
+      ]
+    },
+    {
+      "cycle": 24878170,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 28905.0,
+      "R_stable_m": [
+        1654571.3125,
+        25.125,
+        -579395.0
+      ],
+      "V_stable_m_s": [
+        552.6773929595947,
+        -0.04863739013671875,
+        1578.4091472625732
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17576,
+        0,
+        32767,
+        0,
+        11057,
+        3750,
+        32767,
+        1615,
+        12981
+      ]
+    },
+    {
+      "cycle": 25043726,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 29105.0,
+      "R_stable_m": [
+        1655673.625,
+        25.0,
+        -576237.125
+      ],
+      "V_stable_m_s": [
+        549.6651649475098,
+        -0.04863739013671875,
+        1579.4607639312744
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 0,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17555,
+        0,
+        32767,
+        0,
+        10997,
+        3750,
+        32767,
+        1616,
+        14234
+      ]
+    },
+    {
+      "cycle": 25205931,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 29305.0,
+      "R_stable_m": [
+        1656769.9375,
+        24.875,
+        -573077.125
+      ],
+      "V_stable_m_s": [
+        546.6709613800049,
+        -0.04863739013671875,
+        1580.5066108703613
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 1,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17534,
+        0,
+        32767,
+        0,
+        10936,
+        3750,
+        32767,
+        1617,
+        15391
+      ]
+    },
+    {
+      "cycle": 25375877,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 29505.0,
+      "R_stable_m": [
+        1657860.875,
+        24.75,
+        -569915.0625
+      ],
+      "V_stable_m_s": [
+        544.2646980285645,
+        -0.04863739013671875,
+        1581.546688079834
+      ],
+      "STEERSW": false,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17513,
+        0,
+        32767,
+        0,
+        10876,
+        3750,
+        21517,
+        1619,
+        78
+      ]
+    },
+    {
+      "cycle": 25546593,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 29705.0,
+      "R_stable_m": [
+        1658947.0,
+        24.625,
+        -566750.9375
+      ],
+      "V_stable_m_s": [
+        541.8564796447754,
+        -0.04863739013671875,
+        1582.5810432434082
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17493,
+        0,
+        32767,
+        0,
+        10816,
+        3749,
+        26651,
+        1620,
+        1072
+      ]
+    },
+    {
+      "cycle": 25717793,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 29905.0,
+      "R_stable_m": [
+        1660028.3125,
+        24.5,
+        -563584.75
+      ],
+      "V_stable_m_s": [
+        539.4463062286377,
+        -0.04863739013671875,
+        1583.6096286773682
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17472,
+        0,
+        32767,
+        0,
+        10755,
+        3748,
+        31788,
+        1621,
+        1989
+      ]
+    },
+    {
+      "cycle": 25888178,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 30105.0,
+      "R_stable_m": [
+        1661104.8125,
+        24.375,
+        -560416.5
+      ],
+      "V_stable_m_s": [
+        537.0341300964355,
+        -0.04863739013671875,
+        1584.6324443817139
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17451,
+        0,
+        32767,
+        0,
+        10695,
+        3748,
+        20544,
+        1622,
+        2829
+      ]
+    },
+    {
+      "cycle": 26058717,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 30305.0,
+      "R_stable_m": [
+        1662176.4375,
+        24.25,
+        -557246.1875
+      ],
+      "V_stable_m_s": [
+        534.6100330352783,
+        -0.04863739013671875,
+        1585.6494903564453
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 59,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17432,
+        0,
+        32767,
+        0,
+        10634,
+        3747,
+        25684,
+        1623,
+        3591
+      ]
+    },
+    {
+      "cycle": 26229353,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 30505.0,
+      "R_stable_m": [
+        1663243.25,
+        24.125,
+        -554073.875
+      ],
+      "V_stable_m_s": [
+        532.1940422058105,
+        -0.04863739013671875,
+        1586.6607189178467
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17411,
+        0,
+        32767,
+        0,
+        10573,
+        3746,
+        30827,
+        1624,
+        4276
+      ]
+    },
+    {
+      "cycle": 26399928,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 30705.0,
+      "R_stable_m": [
+        1664305.25,
+        24.0,
+        -550899.5625
+      ],
+      "V_stable_m_s": [
+        529.77614402771,
+        -0.04863739013671875,
+        1587.6661777496338
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17392,
+        0,
+        32767,
+        0,
+        10513,
+        3746,
+        19589,
+        1625,
+        4884
+      ]
+    },
+    {
+      "cycle": 26570682,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 30905.0,
+      "R_stable_m": [
+        1665362.375,
+        23.875,
+        -547723.25
+      ],
+      "V_stable_m_s": [
+        527.3563861846924,
+        -0.04863739013671875,
+        1588.6658668518066
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17372,
+        0,
+        32767,
+        0,
+        10452,
+        3745,
+        24735,
+        1626,
+        5414
+      ]
+    },
+    {
+      "cycle": 26741661,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 31105.0,
+      "R_stable_m": [
+        1666414.6875,
+        23.75,
+        -544544.9375
+      ],
+      "V_stable_m_s": [
+        524.934720993042,
+        -0.04863739013671875,
+        1589.6597385406494
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17352,
+        0,
+        32767,
+        0,
+        10391,
+        3744,
+        29884,
+        1627,
+        5867
+      ]
+    },
+    {
+      "cycle": 26911719,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 31305.0,
+      "R_stable_m": [
+        1667462.125,
+        23.625,
+        -541364.625
+      ],
+      "V_stable_m_s": [
+        522.5111961364746,
+        -0.04863739013671875,
+        1590.647792816162
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17333,
+        0,
+        32767,
+        0,
+        10330,
+        3744,
+        18652,
+        1628,
+        6242
+      ]
+    },
+    {
+      "cycle": 27082516,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 31505.0,
+      "R_stable_m": [
+        1668504.75,
+        23.5,
+        -538182.375
+      ],
+      "V_stable_m_s": [
+        520.085859298706,
+        -0.04863739013671875,
+        1591.6300296783447
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17314,
+        0,
+        32767,
+        0,
+        10269,
+        3743,
+        23804,
+        1629,
+        6540
+      ]
+    },
+    {
+      "cycle": 27253422,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 31705.0,
+      "R_stable_m": [
+        1669542.5,
+        23.375,
+        -534998.125
+      ],
+      "V_stable_m_s": [
+        517.6587104797363,
+        -0.04863739013671875,
+        1592.6064491271973
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 60,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17295,
+        0,
+        32767,
+        0,
+        10208,
+        3742,
+        28959,
+        1630,
+        6760
+      ]
+    },
+    {
+      "cycle": 27425400,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 31905.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17276,
+        0,
+        32767,
+        0,
+        10147,
+        3742,
+        17733,
+        1631,
+        6902
+      ]
+    },
+    {
+      "cycle": 27430346,
+      "routine": "LUNLAND",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32731,
+        21215,
+        32766,
+        3332,
+        23,
+        31162
+      ],
+      "VGU": [
+        64,
+        9816,
+        1,
+        31062,
+        257,
+        14210
+      ],
+      "TTF": [
+        25482,
+        10748
+      ],
+      "TABLTTF": [
+        32766,
+        17276,
+        0,
+        32767,
+        0,
+        10147,
+        3742,
+        17733,
+        1631,
+        6902
+      ]
+    },
+    {
+      "cycle": 27443850,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24666,
+        14844
+      ],
+      "TABLTTF": [
+        193,
+        4606,
+        191,
+        31777,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 27447961,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24666,
+        14844
+      ],
+      "TABLTTF": [
+        193,
+        4606,
+        191,
+        31777,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 27448020,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24122,
+        12529
+      ],
+      "TABLTTF": [
+        193,
+        4606,
+        191,
+        31777,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 27465889,
+      "routine": "GDUMP1",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24122,
+        12529
+      ],
+      "TABLTTF": [
+        193,
+        4606,
+        191,
+        31777,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 27465890,
+      "routine": "THROTTLE",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1670575.375,
+        23.25,
+        -531811.9375
+      ],
+      "V_stable_m_s": [
+        515.2397632598877,
+        -0.04863739013671875,
+        1593.5770511627197
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 61,
+      "FC": [
+        0,
+        0
+      ],
+      "FP": [
+        0,
+        0
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24122,
+        12529
+      ],
+      "TABLTTF": [
+        193,
+        4606,
+        191,
+        31777,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        2
+      ]
+    },
+    {
+      "cycle": 27596724,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 32105.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24122,
+        12529
+      ],
+      "TABLTTF": [
+        32766,
+        17257,
+        0,
+        32767,
+        0,
+        10086,
+        3735,
+        31387,
+        1632,
+        7036
+      ]
+    },
+    {
+      "cycle": 27601713,
+      "routine": "LUNLAND",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32702,
+        20841,
+        32765,
+        13872,
+        32249,
+        23019
+      ],
+      "VGU": [
+        82,
+        4158,
+        1,
+        31196,
+        254,
+        12097
+      ],
+      "TTF": [
+        24122,
+        12529
+      ],
+      "TABLTTF": [
+        32766,
+        17257,
+        0,
+        32767,
+        0,
+        10086,
+        3735,
+        31387,
+        1632,
+        7036
+      ]
+    },
+    {
+      "cycle": 27617419,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24147,
+        12529
+      ],
+      "TABLTTF": [
+        192,
+        1909,
+        191,
+        979,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27618553,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24147,
+        12529
+      ],
+      "TABLTTF": [
+        192,
+        1909,
+        191,
+        979,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27618717,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24164,
+        1718
+      ],
+      "TABLTTF": [
+        192,
+        1909,
+        191,
+        979,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27636788,
+      "routine": "GDUMP1",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24164,
+        1718
+      ],
+      "TABLTTF": [
+        192,
+        1909,
+        191,
+        979,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27636789,
+      "routine": "THROTTLE",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1671607.75,
+        23.125,
+        -528623.8125
+      ],
+      "V_stable_m_s": [
+        517.1090126037598,
+        -0.04863739013671875,
+        1594.541835784912
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 491,
+      "FC": [
+        4662,
+        0
+      ],
+      "FP": [
+        364,
+        1972
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24164,
+        1718
+      ],
+      "TABLTTF": [
+        192,
+        1909,
+        191,
+        979,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27766517,
+      "routine": "COPYCYCL",
+      "PIPTIME_cs": 32305.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24164,
+        1718
+      ],
+      "TABLTTF": [
+        32766,
+        17239,
+        0,
+        32767,
+        0,
+        10025,
+        3728,
+        22820,
+        1633,
+        7247
+      ]
+    },
+    {
+      "cycle": 27771383,
+      "routine": "LUNLAND",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32703,
+        21499,
+        32766,
+        4114,
+        32252,
+        24749
+      ],
+      "VGU": [
+        82,
+        8796,
+        1,
+        28155,
+        254,
+        14722
+      ],
+      "TTF": [
+        24164,
+        1718
+      ],
+      "TABLTTF": [
+        32766,
+        17239,
+        0,
+        32767,
+        0,
+        10025,
+        3728,
+        22820,
+        1633,
+        7247
+      ]
+    },
+    {
+      "cycle": 27784140,
+      "routine": "ROOTPSRS",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32704,
+        21671,
+        32766,
+        4070,
+        32255,
+        26595
+      ],
+      "VGU": [
+        83,
+        259,
+        1,
+        28256,
+        255,
+        850
+      ],
+      "TTF": [
+        24189,
+        1718
+      ],
+      "TABLTTF": [
+        190,
+        15553,
+        191,
+        2863,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27785298,
+      "routine": "ROOTSTOR_RESULT",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32704,
+        21671,
+        32766,
+        4070,
+        32255,
+        26595
+      ],
+      "VGU": [
+        83,
+        259,
+        1,
+        28256,
+        255,
+        850
+      ],
+      "TTF": [
+        24189,
+        1718
+      ],
+      "TABLTTF": [
+        190,
+        15553,
+        191,
+        2863,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27785354,
+      "routine": "QUADGUID",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32704,
+        21671,
+        32766,
+        4070,
+        32255,
+        26595
+      ],
+      "VGU": [
+        83,
+        259,
+        1,
+        28256,
+        255,
+        850
+      ],
+      "TTF": [
+        24205,
+        7814
+      ],
+      "TABLTTF": [
+        190,
+        15553,
+        191,
+        2863,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27804538,
+      "routine": "GDUMP1",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32704,
+        21671,
+        32766,
+        4070,
+        32255,
+        26595
+      ],
+      "VGU": [
+        83,
+        259,
+        1,
+        28256,
+        255,
+        850
+      ],
+      "TTF": [
+        24205,
+        7814
+      ],
+      "TABLTTF": [
+        190,
+        15553,
+        191,
+        2863,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    },
+    {
+      "cycle": 27804539,
+      "routine": "THROTTLE",
+      "PIPTIME_cs": 32505.0,
+      "R_stable_m": [
+        1672644.9375,
+        23.0,
+        -525433.75
+      ],
+      "V_stable_m_s": [
+        520.096492767334,
+        -0.04863739013671875,
+        1595.5008029937744
+      ],
+      "STEERSW": true,
+      "ABDELV_counts": 603,
+      "FC": [
+        4694,
+        0
+      ],
+      "FP": [
+        5260,
+        1542
+      ],
+      "RGU": [
+        32704,
+        21671,
+        32766,
+        4070,
+        32255,
+        26595
+      ],
+      "VGU": [
+        83,
+        259,
+        1,
+        28256,
+        255,
+        850
+      ],
+      "TTF": [
+        24205,
+        7814
+      ],
+      "TABLTTF": [
+        190,
+        15553,
+        191,
+        2863,
+        32331,
+        25016,
+        32570,
+        29983,
+        128,
+        1
+      ]
+    }
+  ],
+  "native_math_max_errors": {
+    "velocity_m_s": 4.3516047298908234e-05,
+    "position_m": 0.03105926513671875
+  },
+  "original_KPIP2": {
+    "rope_address_octal": "33,2023",
+    "words_octal": [
+      "00150",
+      "33343"
+    ],
+    "fraction": 0.006400000303983688
+  },
+  "final_state": {
+    "modreg": 63,
+    "flagword3": 5120,
+    "refsmflg": true,
+    "imodes30": 15872,
+    "imodes33": 15360,
+    "failreg": [
+      848,
+      963,
+      0
+    ],
+    "refsmmat": [
+      8192,
+      32767,
+      32767,
+      31519,
+      32767,
+      32705,
+      0,
+      1250,
+      8192,
+      0,
+      32767,
+      29841,
+      0,
+      64,
+      0,
+      2934,
+      8192,
+      32767
+    ],
+    "cdu": [
+      0,
+      0,
+      0
+    ],
+    "markstat": 0,
+    "markcntr": 32767,
+    "aotcode": 450,
+    "az": 13733,
+    "el": 6291,
+    "starind": 1,
+    "display": {
+      "PROG": "63",
+      "VERB": "06",
+      "NOUN": "63",
+      "R1": "55057",
+      "R2": "00591",
+      "R3": "49678"
+    }
+  },
+  "final_observed_words": {
+    "TIME2": [
+      1,
+      16282
+    ],
+    "UPCOUNT": [
+      3
+    ],
+    "COMPNUMB": [
+      3
+    ],
+    "UPBUFF": [
+      3,
+      1810,
+      2600,
+      7225,
+      32729,
+      18840,
+      32341,
+      25860,
+      32135,
+      25326,
+      30108,
+      21378,
+      30205,
+      24575,
+      4,
+      16165,
+      0,
+      0,
+      32695,
+      20553
+    ],
+    "UPSVFLAG": [
+      0
+    ],
+    "FLAGWRD7": [
+      1076
+    ],
+    "RRECTLEM": [
+      187,
+      13154,
+      0,
+      0,
+      32665,
+      22983
+    ],
+    "VRECTLEM": [
+      4104,
+      15915,
+      0,
+      0,
+      7514,
+      1634
+    ],
+    "TETLEM": [
+      0,
+      12000
+    ],
+    "FIXLOC": [
+      72
+    ],
+    "R": [
+      1633,
+      7247,
+      32767,
+      368,
+      32253,
+      14436
+    ],
+    "V": [
+      665,
+      11854,
+      32767,
+      31747,
+      2042,
+      3949
+    ],
+    "LAND": [
+      1697,
+      5770,
+      32766,
+      17863,
+      32767,
+      20083
+    ],
+    "RBRFG": [
+      0,
+      838,
+      0,
+      0,
+      32764,
+      29842
+    ],
+    "VBRFG": [
+      32762,
+      30090,
+      0,
+      0,
+      32767,
+      31936
+    ],
+    "ABRFG": [
+      4,
+      16165,
+      0,
+      0,
+      32695,
+      20553
+    ],
+    "VBRFG*": [
+      32767,
+      30897
+    ],
+    "ABRFG*": [
+      32331,
+      25016
+    ],
+    "JBRFG*": [
+      32570,
+      29983
+    ],
+    "CG": [
+      8191,
+      16285,
+      32758,
+      29216,
+      32764,
+      20701,
+      9,
+      3846,
+      8191,
+      14539,
+      41,
+      15458,
+      3,
+      11292,
+      32726,
+      17243,
+      8191,
+      14610
+    ],
+    "WM": [
+      0,
+      2172,
+      32746,
+      27278,
+      53,
+      466
+    ],
+    "/LAND/": [
+      1697,
+      5791
+    ],
+    "TPIP": [
+      1,
+      16121
+    ],
+    "PIPTIME1": [
+      1,
+      16121
+    ],
+    "TIG": [
+      1,
+      13111
+    ],
+    "NIGNLOOP": [
+      37
+    ],
+    "ZOOMTIME": [
+      2600
+    ],
+    "TEPHEM": [
+      0,
+      0,
+      0
+    ],
+    "TIMSUBO": [
+      0,
+      0,
+      0
+    ],
+    "504LM": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "PIPAX": [
+      489
+    ],
+    "PIPAY": [
+      32767
+    ],
+    "PIPAZ": [
+      32767
+    ],
+    "DELV": [
+      603,
+      32767,
+      32767,
+      32767,
+      32767,
+      32767
+    ],
+    "PIPATMPX": [
+      0
+    ],
+    "PIPATMPY": [
+      0
+    ],
+    "PIPATMPZ": [
+      0
+    ],
+    "DELVREF": [
+      665,
+      11854,
+      32767,
+      31747,
+      2042,
+      3949
+    ],
+    "DELVCTL": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "DELVIMU": [
+      0,
+      5,
+      1,
+      16121,
+      83,
+      259
+    ],
+    "RN": [
+      51,
+      738,
+      32767,
+      32765,
+      32751,
+      32194
+    ],
+    "VN": [
+      665,
+      11868,
+      32767,
+      32377,
+      2042,
+      3944
+    ],
+    "RN1": [
+      1697,
+      5770,
+      32766,
+      17863,
+      32767,
+      20083
+    ],
+    "VN1": [
+      24189,
+      1718,
+      32767,
+      32377,
+      2042,
+      3944
+    ],
+    "PGUIDE": [
+      32767,
+      200
+    ],
+    "PIPTIME": [
+      1,
+      16121
+    ],
+    "GDT/2": [
+      32766,
+      17239,
+      0,
+      32767,
+      0,
+      10025
+    ],
+    "PIPASCF": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "PIPABIAS": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "AVEGEXIT": [
+      1330,
+      25655
+    ],
+    "FLAGWRD6": [
+      130
+    ],
+    "FLAGWRD2": [
+      1024
+    ],
+    "THRUST": [
+      1472
+    ],
+    "PIF": [
+      32767,
+      2268
+    ],
+    "PSEUDO55": [
+      4096
+    ],
+    "FC": [
+      4728,
+      0
+    ],
+    "FP": [
+      3586,
+      3560
+    ],
+    "FCOLD": [
+      3586
+    ],
+    "FWEIGHT": [
+      0,
+      0
+    ],
+    "/AFC/": [
+      104,
+      3176
+    ],
+    "ABDELV": [
+      603
+    ],
+    "MASS": [
+      3728,
+      22820
+    ],
+    "L*WCR*T": [
+      0
+    ],
+    "H*GHCR*T": [
+      32767
+    ],
+    "LOWCRIT": [
+      0
+    ],
+    "HIGHCRIT": [
+      0
+    ],
+    "LEMMASS": [
+      3728
+    ],
+    "DAPDATR1": [
+      8192
+    ],
+    "DAPBOOLS": [
+      4
+    ],
+    "FLGWRD10": [
+      0
+    ],
+    "TTHROT": [
+      16200
+    ],
+    "FLAGWRD0": [
+      2180
+    ],
+    "FLAGWRD1": [
+      16384
+    ],
+    "FLAGWRD4": [
+      0
+    ],
+    "FLAGWRD5": [
+      16448
+    ],
+    "FLAGWRD8": [
+      21504
+    ],
+    "R1S": [
+      128,
+      1,
+      15921,
+      368,
+      32253,
+      14436
+    ],
+    "V1S": [
+      665,
+      11854,
+      32767,
+      31747,
+      2042,
+      3949
+    ],
+    "DVTHRUSH": [
+      36
+    ],
+    "DVCNTR": [
+      1
+    ],
+    "OVFIND": [
+      0
+    ],
+    "GDT1/2": [
+      190,
+      15553,
+      191,
+      2863,
+      32331,
+      25016
+    ]
+  },
+  "classification": "Physical plant and sensor/native navigation are tested separately; closed-loop guidance requires causal comparisons."
+}

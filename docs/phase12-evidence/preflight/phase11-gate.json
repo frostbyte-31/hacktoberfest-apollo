@@ -1,0 +1,302 @@
+{
+  "classification": "VERIFIED",
+  "acceptance_gate_passed": true,
+  "highest_demonstrated_phase11_level": 4,
+  "scope": "Bounded original P47 navigation and stable-member X PIPA input after unchanged P51/P27/P63 V06N61. Level 5 subsequent landing guidance use NOT RUN.",
+  "source_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "archive_sha256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "unmodified_engine_source_sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+  "fresh_runs": {
+    "zero": {
+      "retained_raw_sha256": "1b98304dfbc1c7b7cb781e441366d56314563b0c36ed867252ee3486915fef0c",
+      "fresh_raw_sha256": "1b98304dfbc1c7b7cb781e441366d56314563b0c36ed867252ee3486915fef0c",
+      "byte_identical_to_retained": true,
+      "native_checks_all_pass": true,
+      "delivered_signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "original_consumed_signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "original_checkpoints": {
+        "READACCS": 10,
+        "PIPASR": 10,
+        "SERVICER": 10,
+        "CALCRVG": 10,
+        "COPYCYCL": 10,
+        "CALCN83": 10,
+        "SERVEXIT": 9
+      },
+      "source_integrity": {
+        "files_checked": 359,
+        "changed_or_missing": []
+      }
+    },
+    "positive": {
+      "retained_raw_sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+      "fresh_raw_sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+      "byte_identical_to_retained": true,
+      "native_checks_all_pass": true,
+      "delivered_signed_counts": [
+        600,
+        0,
+        0
+      ],
+      "original_consumed_signed_counts": [
+        600,
+        0,
+        0
+      ],
+      "original_checkpoints": {
+        "READACCS": 10,
+        "PIPASR": 10,
+        "SERVICER": 10,
+        "CALCRVG": 10,
+        "COPYCYCL": 10,
+        "CALCN83": 10,
+        "SERVEXIT": 10
+      },
+      "source_integrity": {
+        "files_checked": 359,
+        "changed_or_missing": []
+      }
+    },
+    "negative": {
+      "retained_raw_sha256": "5749961d94c9ed378008dbd926106826ed07e8ebb9f9015bb659b00529903c45",
+      "fresh_raw_sha256": "5749961d94c9ed378008dbd926106826ed07e8ebb9f9015bb659b00529903c45",
+      "byte_identical_to_retained": true,
+      "native_checks_all_pass": true,
+      "delivered_signed_counts": [
+        -600,
+        0,
+        0
+      ],
+      "original_consumed_signed_counts": [
+        -600,
+        0,
+        0
+      ],
+      "original_checkpoints": {
+        "READACCS": 10,
+        "PIPASR": 10,
+        "SERVICER": 10,
+        "CALCRVG": 10,
+        "COPYCYCL": 10,
+        "CALCN83": 10,
+        "SERVEXIT": 9
+      },
+      "source_integrity": {
+        "files_checked": 359,
+        "changed_or_missing": []
+      }
+    },
+    "disconnected": {
+      "retained_raw_sha256": "e62fe345246f01376f7190c167da70e9953aa22179107656a8cb87b6a52e6568",
+      "fresh_raw_sha256": "e62fe345246f01376f7190c167da70e9953aa22179107656a8cb87b6a52e6568",
+      "byte_identical_to_retained": true,
+      "native_checks_all_pass": true,
+      "delivered_signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "original_consumed_signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "original_checkpoints": {
+        "READACCS": 10,
+        "PIPASR": 10,
+        "SERVICER": 10,
+        "CALCRVG": 10,
+        "COPYCYCL": 10,
+        "CALCN83": 10,
+        "SERVEXIT": 9
+      },
+      "source_integrity": {
+        "files_checked": 359,
+        "changed_or_missing": []
+      }
+    },
+    "repeat": {
+      "retained_raw_sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+      "fresh_raw_sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+      "byte_identical_to_retained": true,
+      "native_checks_all_pass": true,
+      "delivered_signed_counts": [
+        600,
+        0,
+        0
+      ],
+      "original_consumed_signed_counts": [
+        600,
+        0,
+        0
+      ],
+      "original_checkpoints": {
+        "READACCS": 10,
+        "PIPASR": 10,
+        "SERVICER": 10,
+        "CALCRVG": 10,
+        "COPYCYCL": 10,
+        "CALCN83": 10,
+        "SERVEXIT": 10
+      },
+      "source_integrity": {
+        "files_checked": 359,
+        "changed_or_missing": []
+      }
+    }
+  },
+  "causal_checks": {
+    "positive_repeat_trace_byte_identical": true,
+    "positive_has_matched_original_piptime_samples": true,
+    "positive_original_velocity_matches_pipa_contribution": true,
+    "positive_original_position_response_is_causal": true,
+    "positive_original_accumulator_matches_quantized_force": true,
+    "negative_has_matched_original_piptime_samples": true,
+    "negative_original_velocity_matches_pipa_contribution": true,
+    "negative_original_position_response_is_causal": true,
+    "negative_original_accumulator_matches_quantized_force": true,
+    "disconnected_has_matched_original_piptime_samples": true,
+    "disconnected_original_velocity_matches_pipa_contribution": true,
+    "disconnected_original_position_response_is_causal": true,
+    "disconnected_original_accumulator_matches_quantized_force": true,
+    "zero_specific_force_emits_no_pulses": true,
+    "zero_specific_force_still_has_original_gravity_velocity_change": true,
+    "positive_negative_velocity_responses_have_opposite_signs": true,
+    "disconnected_matches_zero_navigation_words": true
+  },
+  "causal_diagnostics": {
+    "positive": {
+      "matched_PIPTIME_cs": 27529.0,
+      "matched_samples": 5,
+      "original_VN_difference_from_zero_m_s": [
+        6.000041961669922,
+        0.0,
+        0.0
+      ],
+      "original_RN_difference_from_zero_m": [
+        30.0,
+        0.0,
+        0.0
+      ],
+      "independent_expected_pipa_delta_v_REF_m_s": [
+        6.0,
+        -5.5789947509765625e-05,
+        -2.771615982055664e-06
+      ],
+      "velocity_error_m_s": [
+        4.1961669921875e-05,
+        5.5789947509765625e-05,
+        2.771615982055664e-06
+      ],
+      "tolerance_m_s": 0.0018874121091091733,
+      "gravity_variation_bound_m_s": 0.0009337377927029233,
+      "DP_rounding_allowance_m_s": 0.00095367431640625,
+      "tolerance_reason": "2*mu/r_min^3 times .5*|f|*t^2 displacement bound times bounded horizon, plus four velocity-DP LSB per original two-second sample; comparison uses actual integer pulse count, not unquantized force",
+      "independent_rope_scaled_accumulator_REF_m_s": [
+        6.000000284984708,
+        -5.578995015964594e-05,
+        -2.771616113700359e-06
+      ],
+      "accumulated_rounding_tolerance_m_s": 0.000476837158203125
+    },
+    "negative": {
+      "matched_PIPTIME_cs": 27529.0,
+      "matched_samples": 5,
+      "original_VN_difference_from_zero_m_s": [
+        -6.000041961669922,
+        0.0,
+        0.0
+      ],
+      "original_RN_difference_from_zero_m": [
+        -30.0,
+        0.0,
+        0.0
+      ],
+      "independent_expected_pipa_delta_v_REF_m_s": [
+        -6.0,
+        5.5789947509765625e-05,
+        2.771615982055664e-06
+      ],
+      "velocity_error_m_s": [
+        -4.1961669921875e-05,
+        -5.5789947509765625e-05,
+        -2.771615982055664e-06
+      ],
+      "tolerance_m_s": 0.0018874121091091733,
+      "gravity_variation_bound_m_s": 0.0009337377927029233,
+      "DP_rounding_allowance_m_s": 0.00095367431640625,
+      "tolerance_reason": "2*mu/r_min^3 times .5*|f|*t^2 displacement bound times bounded horizon, plus four velocity-DP LSB per original two-second sample; comparison uses actual integer pulse count, not unquantized force",
+      "independent_rope_scaled_accumulator_REF_m_s": [
+        -6.000000284984708,
+        5.578995015964594e-05,
+        2.771616113700359e-06
+      ],
+      "accumulated_rounding_tolerance_m_s": 0.000476837158203125
+    },
+    "disconnected": {
+      "matched_PIPTIME_cs": 27529.0,
+      "matched_samples": 5,
+      "original_VN_difference_from_zero_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_RN_difference_from_zero_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "independent_expected_pipa_delta_v_REF_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_error_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tolerance_m_s": 0.0018874121091091733,
+      "gravity_variation_bound_m_s": 0.0009337377927029233,
+      "DP_rounding_allowance_m_s": 0.00095367431640625,
+      "tolerance_reason": "2*mu/r_min^3 times .5*|f|*t^2 displacement bound times bounded horizon, plus four velocity-DP LSB per original two-second sample; comparison uses actual integer pulse count, not unquantized force",
+      "independent_rope_scaled_accumulator_REF_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accumulated_rounding_tolerance_m_s": 0.000476837158203125
+    }
+  },
+  "phase10_regression": {
+    "expected_raw_sha256": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2",
+    "actual_raw_sha256": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2",
+    "byte_identical": true
+  },
+  "test_results": {
+    "sensor": {
+      "passed": 13,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "native": {
+      "passed": 16,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "read_only_observability": "Original native routine checkpoints plus interpreted CALCRVG NEWOPS/LOC/BANKSET dispatch; snapshot reads only. Every sensor input is source-supported hardware counter packet, not navigation-memory assignment.",
+  "validation_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/phase12-gate",
+  "all_native_and_causal_checks_pass": true
+}

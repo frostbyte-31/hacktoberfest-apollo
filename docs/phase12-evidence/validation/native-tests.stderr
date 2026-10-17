@@ -1,0 +1,21 @@
+test_all_native_and_causal_assertions (test_native.NativePropulsionTests) ... ok
+test_all_prior_evidence_preserved (test_native.NativePropulsionTests) ... ok
+test_capture_checksums_instruction_observers_and_hardware_boundary (test_native.NativePropulsionTests) ... ok
+test_causal_original_guidance_and_throttle_response (test_native.NativePropulsionTests) ... ok
+test_causal_original_navigation_response (test_native.NativePropulsionTests) ... ok
+test_deterministic_native_repetition (test_native.NativePropulsionTests) ... ok
+test_engine_connection_causes_physical_motion (test_native.NativePropulsionTests) ... ok
+test_engine_enable_request_is_not_an_ignition_claim (test_native.NativePropulsionTests) ... ok
+test_engine_off_and_bounded_original_shutdown (test_native.NativePropulsionTests) ... ok
+test_original_alignment_p27_p63_and_crew_review (test_native.NativePropulsionTests) ... ok
+test_original_moon_navigation_matches_independent_arithmetic (test_native.NativePropulsionTests) ... ok
+test_original_reader_consumes_exact_physical_sensor_counts (test_native.NativePropulsionTests) ... ok
+test_original_rope_and_source_integrity (test_native.NativePropulsionTests) ... ok
+test_original_zoom_flatout_and_real_thrust_counter (test_native.NativePropulsionTests) ... ok
+test_physical_thrust_mass_flow_and_three_dimensional_translation (test_native.NativePropulsionTests) ... ok
+test_pipa_hardware_mapping_quantization_and_bounded_timing (test_native.NativePropulsionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 14.403s
+
+OK
