@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101411">
+  <meta name="theme-color" content="#101214">
   <meta name="description" content="Explore original Apollo Luminary 099 pre-ignition guidance calculations through verified execution recordings of three synthetic lunar-orbit scenarios.">
-  <title>Apollo 11 · Before the burn</title>
+  <title>Apollo 11 · Mission Control</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./guidance.css">
@@ -13,17 +13,18 @@
 <body class="guidance-lab">
   <a class="skip-link" href="#guidance-main">Skip to guidance replay</a>
   <header class="g-header">
-    <a href="./" class="g-wordmark" aria-label="Apollo 11 attitude lab">APOLLO<span>11</span><small>GUIDANCE LABORATORY</small></a>
-    <nav aria-label="Laboratories"><a href="./">Attitude control <span>↗</span></a><a href="#learn">Field notes</a><button id="provenance-open">Evidence <span>↗</span></button></nav>
+    <a href="./guidance.html" class="g-wordmark" aria-label="Apollo 11 mission control"><span class="g-mission-patch" aria-hidden="true">A</span> APOLLO<span>11</span><small>MISSION CONTROL</small></a>
+    <div class="g-header-status"><span class="g-dot green"></span> PRE-IGNITION <span class="g-header-divider">/</span><strong id="header-clock">—</strong><small>OBSERVED GET</small></div><nav aria-label="Mission navigation"><a href="./">Attitude lab <span>↗</span></a><a href="#learn">Field notes</a><button id="provenance-open">Evidence <span>↗</span></button></nav>
   </header>
   <main id="guidance-main" class="g-main">
     <div class="g-intro">
-      <div><div class="g-eyebrow">EXPERIMENT 10.5 <span>/</span> ORIGINAL SOFTWARE. NEW PERSPECTIVE.</div><h1>Before the <em>burn.</em></h1><p>How does a spacecraft know when to begin landing?<br>Explore the answer calculated by the original Apollo guidance computer.</p></div>
-      <div class="g-mode"><span class="g-dot"></span><div><strong>RECORDED AUTHENTIC<br>EXECUTION REPLAY</strong><span>Luminary 099 · synthetic mission inputs</span></div><span class="g-mode-icon" aria-hidden="true">↺</span></div>
+      <div><div class="g-eyebrow">LUNAR MODULE GUIDANCE <span>/</span> PHASE 10 EXPLORER</div><h1>Before the <em>burn.</em></h1><p>A landing begins with a calculation.<br><span class="g-intro-detail">Follow the original Apollo software to the moment before ignition.</span></p></div>
+      <div class="g-mode"><span class="g-dot"></span><div><strong>VERIFIED RECORDED<br>EXECUTION</strong><span>Luminary 099 · synthetic mission inputs</span></div><span class="g-mode-icon" aria-hidden="true">↺</span></div>
     </div>
 
     <section class="g-scenarios" aria-label="Select a verified scenario">
-      <div class="g-scenario-label"><span class="g-eyebrow">CHOOSE AN EXPERIMENT</span><span>One input changes the calculation.</span></div>
+      <div class="g-scenario-label"><span class="g-eyebrow">CHOOSE AN EXPERIMENT</span><span>Three retained runs. Three actual outcomes.</span></div>
+      <a class="g-compare-link" href="#compare">Compare results ↓</a>
       <div class="g-scenario-options" role="group" aria-label="Mission scenario">
         <button data-scenario="nominal" class="selected" aria-pressed="true" disabled><span class="g-scenario-letter">A</span><span><strong>15 km orbit</strong><small>Nominal synthetic state</small></span><span class="g-scenario-indicator">✓</span></button>
         <button data-scenario="altitude-16km" aria-pressed="false" disabled><span class="g-scenario-letter">B</span><span><strong>16 km orbit</strong><small>A higher starting point</small></span><span class="g-scenario-indicator">✓</span></button>
@@ -34,16 +35,22 @@
     <div class="g-loading" id="guidance-loading" role="status">Verifying recorded guidance data…</div>
     <div class="g-error" id="guidance-error" role="alert" hidden><strong>Guidance recording unavailable.</strong> <span id="guidance-error-detail"></span> <button id="guidance-retry">Retry</button></div>
 
+    <section class="g-transport" aria-label="Recorded guidance replay controls">
+      <div class="g-transport-top"><div class="g-transport-buttons"><button class="g-icon-button" id="guidance-restart" aria-label="Restart replay" title="Restart" disabled>↺</button><button class="g-play" id="guidance-play" disabled><span aria-hidden="true">▶</span><span>Start replay</span></button><button class="g-icon-button" id="guidance-previous" aria-label="Previous important event" title="Previous event" disabled>│‹</button><button class="g-icon-button" id="guidance-next" aria-label="Next important event" title="Next event" disabled>›│</button><select id="guidance-speed" aria-label="Replay speed" disabled><option value="1">1×</option><option value="2">2×</option><option value="4" selected>4×</option><option value="8">8×</option><option value="16">16×</option></select></div><button class="g-jump" id="guidance-jump" disabled>Go to P63</button><button class="g-jump" id="guidance-result" disabled>View recorded result →</button><div class="g-replay-clock"><strong id="replay-time">00:00.00</strong><span>/</span><span id="replay-duration">—</span><small>EXECUTION ELAPSED</small></div><span class="g-transport-state" id="guidance-play-state">RECORDED · PAUSED</span></div>
+      <div class="g-timeline-wrap"><div class="g-timeline-marks" id="guidance-timeline-marks" aria-hidden="true"></div><input type="range" id="guidance-scrubber" aria-describedby="replay-shortcuts" min="0" max="1" step="0.001" value="0" aria-label="Recorded execution elapsed time" disabled></div>
+      <p class="sr-only" id="replay-shortcuts">Keyboard outside controls: Space plays or pauses, left and right arrows step events, R restarts. Values hold recorded observations.</p><div class="g-timeline-labels"><span>ORIGINAL STARTUP</span><span>ALIGNMENT → MISSION INPUTS → GUIDANCE</span><span id="replay-end-label">BOUNDED HORIZON</span></div>
+    </section>
+
     <div class="g-console" id="guidance-console" aria-busy="true">
       <section class="g-panel g-orbit-panel" aria-labelledby="overview-title">
-        <div class="g-panel-heading"><h2 id="overview-title"><span class="g-cross">✛</span> The starting point</h2><span class="g-tag">SYNTHETIC INITIAL STATE</span></div>
+        <div class="g-panel-heading"><h2 id="overview-title"><span class="g-cross">✛</span> Mission geometry</h2><span class="g-tag">STATIC EDUCATIONAL ILLUSTRATION</span></div>
         <div class="g-orbit-view">
-          <div class="g-view-top"><span>MOON-CENTERED / BASIC REF X–Z</span><span>STATIC PROJECTION · TO SCALE</span></div>
+          <div class="g-view-top"><span>MOON-CENTERED / BASIC REF X–Z</span><span>REFERENCE GEOMETRY TO SCALE¹</span></div>
           <svg id="orbit-view" viewBox="0 0 800 400" role="img" aria-labelledby="orbit-description">
             <title id="orbit-description">Static two-dimensional projection of supplied three-dimensional lunar-orbit initial state. No spacecraft motion or powered-descent trajectory is shown.</title>
             <defs>
-              <radialGradient id="moon-shade" cx="34%" cy="27%" r="78%"><stop offset="0" stop-color="#56615a"/><stop offset=".53" stop-color="#353e36"/><stop offset="1" stop-color="#1a231d"/></radialGradient>
-              <pattern id="orbit-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#455746" stroke-width=".6" opacity=".28"/></pattern>
+              <radialGradient id="moon-shade" cx="34%" cy="27%" r="78%"><stop offset="0" stop-color="#727879"/><stop offset=".53" stop-color="#3d4348"/><stop offset="1" stop-color="#171c21"/></radialGradient>
+              <pattern id="orbit-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#56616a" stroke-width=".6" opacity=".28"/></pattern>
               <clipPath id="moon-disc"><circle cx="400" cy="206" r="151"/></clipPath>
               <marker id="velocity-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="none" stroke="#cbb17b" stroke-width="1.6"/></marker>
             </defs>
@@ -58,36 +65,43 @@
             <text x="574" y="60" class="g-svg-note" id="orbit-altitude">CIRCULAR INITIAL ORBIT · —</text><path d="M566 64 529 101" class="g-annotation-line"/>
             <g id="missing-site-note" hidden><text x="574" y="191" class="g-missing-label">NO SITE SUPPLIED</text><text x="574" y="208" class="g-svg-note">RLS remains zero</text></g>
           </svg>
-          <div class="g-view-bottom"><span><i class="g-key orbit"></i> Circular-orbit illustration</span><span><i class="g-key velocity"></i> Initial velocity direction</span><span class="g-not-motion">No simulated motion</span></div>
+          <div class="g-view-bottom"><span><i class="g-key orbit"></i> Circular-orbit illustration</span><span><i class="g-key velocity"></i> Initial velocity direction</span><span class="g-not-motion">¹ Vehicle symbol enlarged</span></div>
           <p class="g-projection-note" id="projection-epoch-note">Static illustration. Initialized spacecraft and planned landing-site epochs are shown separately.</p>
         </div>
+        <div class="g-state-vectors"><details><summary>Inspect the initialized 3D state <span>r · v ↗</span></summary><dl><dt>Position / m</dt><dd id="state-position">Unavailable</dd><dt>Velocity / m s⁻¹</dt><dd id="state-velocity">Unavailable</dd></dl><p>Moon-centered basic REF inertial · navigation epoch 120 s.<br>Initial inputs only; no continuously propagated flight state.</p></details></div>
         <div class="g-initial-readouts"><div><span>INITIAL ALTITUDE</span><strong id="initial-altitude">—<small>km</small></strong></div><div><span>INITIAL ORBITAL SPEED</span><strong id="initial-speed">—<small>m/s</small></strong></div><div><span>STATE EPOCH</span><strong id="initial-epoch">—<small>s</small></strong></div><button id="projection-explain" aria-label="About the orbital illustration">i</button></div>
       </section>
 
       <section class="g-panel g-computer-panel" aria-labelledby="computer-title">
-        <div class="g-panel-heading"><h2 id="computer-title"><span class="g-dot green"></span> Apollo guidance computer</h2><span class="g-tag">DSKY</span></div>
-        <div class="g-dsky"><div class="g-dsky-name"><strong>LUMINARY 099</strong><span>ORIGINAL FLIGHT SOFTWARE</span></div><div class="g-dsky-heading"><div><span>PROGRAM</span><strong id="dsky-program">??</strong></div><div><span>VERB</span><strong id="dsky-verb">??</strong></div><div><span>NOUN</span><strong id="dsky-noun">??</strong></div></div><div class="g-dsky-register"><span>R1</span><strong id="dsky-r1">— — — — —</strong></div><div class="g-dsky-register"><span>R2</span><strong id="dsky-r2">— — — — —</strong></div><div class="g-dsky-register"><span>R3</span><strong id="dsky-r3">— — — — —</strong></div><div class="g-dsky-foot"><span class="g-dot green"></span><span>Recorded output-channel digits</span><span>READ ONLY</span></div></div>
+        <div class="g-panel-heading"><h2 id="computer-title"><span class="g-dot green"></span> Guidance computer</h2><span class="g-tag">DSKY</span></div>
+        <div class="g-dsky" aria-label="Read-only Apollo-inspired DSKY">
+          <div class="g-dsky-name"><strong>DISPLAY &amp; KEYBOARD</strong><span>LM · LUMINARY 099</span></div>
+          <div class="g-dsky-instrument">
+            <div class="g-annunciators" aria-label="Indicator lamp states unavailable in this export">
+              <span>UPLINK<br>ACTY <i>?</i></span><span>TEMP <i>?</i></span><span>NO ATT <i>?</i></span><span>GIMBAL<br>LOCK <i>?</i></span><span>STBY <i>?</i></span><span>PROG <i>?</i></span><span>KEY REL <i>?</i></span><span>RESTART <i>?</i></span><span>OPR ERR <i>?</i></span><span>TRACKER <i>?</i></span><span class="g-lamp-blank" aria-hidden="true"></span><span>ALT <i>?</i></span><span class="g-lamp-blank" aria-hidden="true"></span><span>VEL <i>?</i></span>
+            </div>
+            <div class="g-dsky-display"><div class="g-dsky-program"><span class="g-comp-acty">COMP<br>ACTY <i>?</i></span><div><span>PROG</span><strong id="dsky-program">??</strong></div></div><div class="g-dsky-heading"><div><span>VERB</span><strong id="dsky-verb">??</strong></div><div><span>NOUN</span><strong id="dsky-noun">??</strong></div></div><div class="g-dsky-register"><span>R1</span><strong id="dsky-r1">?????</strong></div><div class="g-dsky-register"><span>R2</span><strong id="dsky-r2">?????</strong></div><div class="g-dsky-register"><span>R3</span><strong id="dsky-r3">?????</strong></div></div>
+          </div>
+          <div class="g-dsky-foot"><span>CHANNEL 010 · RECORDED DIGITS</span><strong>READ ONLY</strong></div>
+        </div>
+        <div class="g-dsky-explainer"><span>PROGRAM <b>What is running</b></span><span>VERB / NOUN <b>Action / information</b></span></div>
         <div class="g-stage"><span class="g-eyebrow">DEMONSTRATED PROGRAM STAGE</span><strong id="guidance-stage">Awaiting a recorded observation</strong><span id="guidance-stage-detail">Start the replay or select an event.</span></div>
         <div class="g-alarm" id="guidance-alarm" hidden><span>RECORDED ALARM</span><strong id="guidance-alarm-value">—</strong><p id="guidance-alarm-description"></p></div>
-        <p class="g-dsky-note">Digit fields reproduce recorded relay output; sign lamps are not decoded here. Signed time-to-go is shown separately below.</p>
+        <p class="g-dsky-note">? = lamp state unavailable. Indicator and sign lamps are not decoded. Relay output may lag program events; blanks stay blank. Live keypad input is unavailable.</p>
       </section>
 
       <section class="g-panel g-calculations" aria-labelledby="calculation-title">
-        <div class="g-panel-heading"><h2 id="calculation-title">What did the AGC calculate?</h2><span class="g-tag">OBSERVED VALUES · HELD BETWEEN SAMPLES</span></div>
+        <div class="g-panel-heading"><h2 id="calculation-title">Guidance observations</h2><span class="g-tag">SAMPLE &amp; HOLD</span></div>
         <div class="g-calculation-grid"><div><span class="g-value-label">AGC MISSION CLOCK</span><strong id="mission-clock">—</strong><small>Observed TIME2 at a retained checkpoint</small></div><div><span class="g-value-label">SIGNED TIME-TO-GO</span><strong id="guidance-ttf">—<small>s</small></strong><small>Original TTF convention; negative before target</small></div><div class="g-tig"><span class="g-value-label">CALCULATED IGNITION TIME</span><strong id="guidance-tig">—<small>s GET</small></strong><small>Absolute mission time, not a countdown</small></div><div><span class="g-value-label">IGNITION LEAD AT SOLUTION</span><strong id="guidance-lead">—<small>s</small></strong><small>TIG − clock at the same solution observation</small></div></div>
+        <div class="g-context-note"><span class="g-eyebrow">READING THE COMPUTER</span><p id="context-explanation">P63 calculates the timing needed to begin descent. This recording ends before ignition.</p><a href="#learn">Understand the calculation ↓</a></div>
         <div class="g-calculation-foot"><span><i class="g-dot green"></i><strong id="root-count">0</strong> observed ROOTPSRS results</span><span id="observation-note">No observation selected.</span></div>
       </section>
     </div>
 
-    <section class="g-transport" aria-label="Recorded guidance replay controls">
-      <div class="g-transport-top"><div class="g-transport-buttons"><button class="g-icon-button" id="guidance-restart" aria-label="Restart replay" title="Restart" disabled>↺</button><button class="g-play" id="guidance-play" disabled><span aria-hidden="true">▶</span><span>Start replay</span></button><button class="g-icon-button" id="guidance-previous" aria-label="Previous important event" title="Previous event" disabled>│‹</button><button class="g-icon-button" id="guidance-next" aria-label="Next important event" title="Next event" disabled>›│</button><select id="guidance-speed" aria-label="Replay speed" disabled><option value="1">1×</option><option value="2">2×</option><option value="4" selected>4×</option><option value="8">8×</option><option value="16">16×</option></select></div><button class="g-jump" id="guidance-jump" disabled>Explore guidance →</button><div class="g-replay-clock"><strong id="replay-time">00:00.00</strong><span>/</span><span id="replay-duration">—</span><small>EXECUTION ELAPSED</small></div><span class="g-transport-state" id="guidance-play-state">RECORDED · PAUSED</span></div>
-      <div class="g-timeline-wrap"><div class="g-timeline-marks" id="guidance-timeline-marks" aria-hidden="true"></div><input type="range" id="guidance-scrubber" min="0" max="1" step="0.001" value="0" aria-label="Recorded execution elapsed time" disabled></div>
-      <div class="g-timeline-labels"><span>ORIGINAL STARTUP</span><span>ALIGNMENT → MISSION INPUTS → GUIDANCE</span><span id="replay-end-label">BOUNDED HORIZON</span></div>
-    </section>
-
+    <section class="g-panel g-comparison" id="compare" aria-labelledby="compare-title"><div class="g-panel-heading"><h2 id="compare-title">One changed input. A different answer.</h2><span class="g-tag">RECORDED OUTCOMES</span></div><p class="g-section-copy">Compare the completed runs independently of the replay cursor. These are original AGC results for synthetic inputs.</p><div class="g-comparison-scroll"><table><caption class="sr-only">Verified scenario outcomes from retained Phase 10 executions</caption><thead><tr><th scope="col">SCENARIO</th><th scope="col">ROOT RESULTS</th><th scope="col">IGNITION TIME / s GET</th><th scope="col">RECORDED OUTCOME</th><th scope="col"><span class="sr-only">Explore</span></th></tr></thead><tbody id="scenario-comparison"><tr><td colspan="5">Waiting for verified data.</td></tr></tbody></table></div><p class="g-comparison-note">A/B: normal root returns. C: provisional root results before failure. Ignition time is a calculation; no engine firing was executed.</p></section>
     <div class="g-lower-grid">
       <section class="g-panel g-events-panel" aria-labelledby="events-title"><div class="g-panel-heading"><h2 id="events-title">Mission event log</h2><span class="g-tag" id="event-count">RETAINED EXECUTION</span></div><div class="g-event-heading"><span>ELAPSED</span><span>ORIGINAL SOFTWARE EVENT</span></div><ol id="guidance-events" class="g-events"><li class="g-empty-event">Waiting for verified data.</li></ol><p class="g-event-note">Select an event to jump to its recorded observation. Elapsed time is CPU-call time, not a continuously sampled AGC mission clock.</p></section>
-      <section class="g-panel g-learn-panel" id="learn" aria-labelledby="learn-title"><div class="g-panel-heading"><h2 id="learn-title">A little rocket science</h2><span class="g-tag">FIELD NOTES</span></div><div class="g-learn-intro"><span>01 — 08</span><h3>The numbers before<br>the engine.</h3><p>The computer needs a consistent picture of the mission before it can decide when a burn should begin.</p></div><div class="g-lessons">
+      <section class="g-panel g-learn-panel" id="learn" aria-labelledby="learn-title"><div class="g-panel-heading"><h2 id="learn-title">A little rocket science</h2><span class="g-tag">FIELD NOTES</span></div><div class="g-learn-intro"><span>ENGINEERING FIELD NOTES</span><h3>The numbers before<br>the engine.</h3><p>The computer needs a consistent picture of the mission before it can decide when a burn should begin.</p></div><div class="g-lessons">
         <details open><summary><span>01</span> Where are we, and how fast?</summary><p>A navigation state is two 3D vectors: position <b>r</b> in metres and velocity <b>v</b> in metres per second, measured in a named frame at a known time. A number without its frame or epoch is incomplete.</p></details>
         <details><summary><span>02</span> Why does orbital velocity matter?</summary><p>An orbit is continuous free fall. Speed and direction determine the path. For the synthetic circular starting state, <code>v = √(μ/r)</code>, where μ is the lunar gravity parameter and r is distance from the Moon’s centre. This checks the initial inputs; it does not fly the spacecraft.</p></details>
         <details><summary><span>03</span> Why calculate ignition time?</summary><p>The same burn started at different positions reaches different places. Original P63 works backward from landing geometry and targets to calculate an absolute mission time for ignition. This demonstration stops at crew review before any ignition.</p></details>
@@ -96,8 +110,12 @@
         <details><summary><span>06</span> What if a landing site is missing?</summary><p>A numerical routine cannot repair missing mission meaning. Scenario C omits RLS initialization. Follow the actual calculations to alarm 01406. The alarm is retained, not suppressed.</p></details>
         <details><summary><span>07</span> What changes at 16 kilometres?</summary><p>A higher circular initial state has a different radius and speed. Original navigation and guidance recompute the solution. Compare scenarios A and B at their final events to see actual recorded differences rather than a browser estimate.</p></details>
         <details><summary><span>08</span> Original software or modern simulation?</summary><p>The calculations and displayed events came from unchanged Luminary 099 running in the pinned AGC-compatible emulator. Mission inputs are synthetic. This page replays evidence and draws a static illustration; engine physics, powered descent and landing are not demonstrated.</p></details>
+        <details><summary><span>09</span> Why align before navigating?</summary><p>The computer needs to know how its inertial reference relates to space. Original P51 established reference-matrix readiness in this experiment using synthetic star sightings. That recorded readiness does not establish physical calibration of a real lunar module.</p></details>
+        <details><summary><span>10</span> How will thrust and feedback work?</summary><p>Thrust changes velocity through acceleration: <code>a = F / m</code>, where F is force in newtons and m is spacecraft mass in kilograms. A future external dynamics model must return validated sensor measurements to the AGC. The separate attitude lab already demonstrates bounded rotational feedback; translational burns are unavailable here.</p></details>
       </div></section>
     </div>
+    <section class="g-panel g-crew-panel" aria-labelledby="crew-title"><div class="g-panel-heading"><h2 id="crew-title">Three seats. One mission.</h2><span class="g-tag">FUTURE CREW OPERATIONS · UNAVAILABLE</span></div><p class="g-section-copy">A shared mission for three human or AI participants is planned. Crew selection, communications and AI operations are unavailable.</p><div id="crew-roster" class="g-crew-roster"></div></section>
+    <section class="g-capability-strip" aria-label="Mission capability status"><span class="g-eyebrow">MISSION CAPABILITIES</span><div id="mission-capabilities"></div></section>
     <footer class="g-footer"><div><span class="g-dot"></span><strong>Authentic calculation. Synthetic scenario.</strong><span>Pre-ignition review is the boundary of this demonstration.</span></div><button id="provenance-footer">Trace provenance ↗</button></footer>
   </main>
   <dialog id="guidance-dialog" aria-labelledby="guidance-dialog-title"><div class="dialog-heading"><span class="eyebrow">APOLLO 11 / PRE-IGNITION LAB</span><button id="guidance-dialog-close" class="icon-button" aria-label="Close details">×</button></div><h2 id="guidance-dialog-title"></h2><div id="guidance-dialog-body"></div></dialog>

@@ -1,5 +1,22 @@
 # Apollo 11 · Guidance Labs
 
+## Phase 10 mission control
+
+The frontend now extends the existing recorded guidance experience with a
+three-panel mission console, Apollo-inspired read-only DSKY, independent SVG
+geometry viewer, scenario outcome comparison, ten engineering field notes,
+capability status, and exactly three planned crew roles. All numerical results
+still come from the unchanged retained export; no new flight capability is claimed.
+
+See [frontend architecture and startup](../docs/FRONTEND_ARCHITECTURE.md),
+[actual/missing integration contracts](../docs/FRONTEND_INTEGRATION_CONTRACT.md),
+and [current test/screenshot evidence](../docs/frontend-phase10-evidence/README.md).
+
+```sh
+make frontend-check  # static artifact verification + ES-module syntax
+make test-frontend  # Python provenance and all Node presentation tests
+```
+
 ## Educational pre-ignition replay — Phase 10.5
 
 From the repository root, with Python 3.9 or newer:

@@ -59,3 +59,15 @@ demo-verify:
 # Rebuild/replay the unchanged frozen Phase 10 experiment in an isolated copy.
 demo-reproduce:
 	$(PYTHON) -B tools/demo/demo.py reproduce
+
+.PHONY: test-frontend frontend-check
+
+# Static application: verify exported evidence and check source syntax; no bundler.
+frontend-check:
+	$(PYTHON) -B frontend/tools/export_guidance.py --check
+	@for source in frontend/dist/*.mjs; do $(NODE) --check "$$source" || exit 1; done
+
+# Read-only export/provenance and presentation-contract regression tests.
+test-frontend:
+	$(PYTHON) -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
+	$(NODE) --test frontend/tests/*.test.mjs

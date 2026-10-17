@@ -1,0 +1,9 @@
+{
+  "baselineCommit": "5a689c7",
+  "branch": "UI/UX",
+  "protectedFilesChecked": 5504,
+  "scope": "All pre-existing tracked docs/, backend/, tools/ and AGENTS.md; original evidence and backend kept separate from frontend edits.",
+  "changedOrMissing": [],
+  "passed": true,
+  "guidanceExportSha256": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709"
+}

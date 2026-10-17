@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-18",
+  "timezone": "Asia/Tbilisi",
+  "branch": "UI/UX",
+  "baselineCommit": "5a689c7",
+  "environment": {
+    "os": "macOS 26.4.1 arm64",
+    "python": "3.11.8",
+    "node": "v24.10.0"
+  },
+  "groups": [
+    {
+      "command": "node --test frontend/tests/*.test.mjs",
+      "passed": 54,
+      "failed": 0,
+      "skipped": 0,
+      "output": "javascript-tests.txt"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s frontend/tests -p test_guidance_data.py -v",
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "make test-live",
+      "passed": 66,
+      "failed": 0,
+      "skipped": 0,
+      "groups": {
+        "backendPython": 32,
+        "replayPython": 12,
+        "nodeAlreadyCountedInJavaScriptGroup": 22
+      }
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tools/demo/tests -v",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "uniqueTestsPassed": 118,
+  "checks": [
+    {
+      "command": "make frontend-check",
+      "exitCode": 0,
+      "scope": "Unchanged export verification and all served mjs syntax"
+    },
+    {
+      "command": "python3 -B tools/demo/demo.py verify",
+      "exitCode": 0,
+      "sealedPhase10Files": 739
+    },
+    {
+      "command": "node_modules/.bin/tsc --noEmit --allowJs --checkJs --module nodenext --target es2022 --moduleResolution nodenext --skipLibCheck frontend/dist/mission-provider.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "browserEvidence": "browser-checks.json",
+  "build": "Static HTML/CSS/ES module artifact; no bundler or dependencies installed",
+  "notRun": [
+    "Full historical make check",
+    "Fresh native guidance execution",
+    "Ignition or powered descent",
+    "Physical mobile/cross-engine browser matrix",
+    "AR"
+  ]
+}

@@ -1,5 +1,13 @@
 # Apollo 11 — guidance and live attitude control
 
+The **Phase 10 mission-control frontend** explores three verified recorded
+synthetic pre-ignition experiments. Start with `make demo`, then open
+**http://127.0.0.1:4173/guidance.html**. It includes a trace-derived DSKY, static
+mission geometry, replay, scenario comparisons, engineering explanations and
+planned crew roles. See [startup and architecture](docs/FRONTEND_ARCHITECTURE.md),
+[integration contract](docs/FRONTEND_INTEGRATION_CONTRACT.md), and
+[frontend verification](docs/frontend-phase10-evidence/README.md).
+
 This repository runs original Luminary 099 through the pinned Virtual AGC engine.
 Phase 7 verifies bounded, simultaneous yaw/pitch spacecraft feedback, following
 independent single-axis demonstrations. A visual replay console presents the

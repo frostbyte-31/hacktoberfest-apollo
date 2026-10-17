@@ -1,0 +1,200 @@
+{
+  "browser": "Codex in-app browser",
+  "kind": "UI smoke tests; no native flight execution",
+  "finalAssertions": [
+    {
+      "test": "nominal TIG and DSKY",
+      "passed": true
+    },
+    {
+      "test": "variant TIG from independent run",
+      "passed": true
+    },
+    {
+      "test": "negative control has no replacement ignition/site",
+      "passed": true
+    },
+    {
+      "test": "replay leaves geometry fixed",
+      "passed": true
+    },
+    {
+      "test": "missing recording disables controls",
+      "passed": true
+    },
+    {
+      "test": "Retry recovers",
+      "passed": true
+    },
+    {
+      "test": "event step observes original startup alarm",
+      "passed": true
+    },
+    {
+      "test": "keyboard range reaches final recorded sample",
+      "passed": true
+    },
+    {
+      "test": "source fingerprint in dialog",
+      "passed": true
+    },
+    {
+      "test": "comparison switches to its source run",
+      "passed": true
+    },
+    {
+      "test": "play and pause",
+      "passed": true
+    },
+    {
+      "test": "360px overflow resolved",
+      "passed": true
+    },
+    {
+      "test": "390px no page overflow",
+      "passed": true
+    },
+    {
+      "test": "desktop dock remains visible",
+      "passed": true
+    },
+    {
+      "test": "exactly three planned crew seats",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "test": "playback advances recorded cursor and keeps geometry fixed",
+      "geometry": "translate(533.6585740669356,279.0180117255148)",
+      "state": "RECORDED · PAUSED",
+      "time": 227.622,
+      "geometryUnchanged": true
+    },
+    {
+      "test": "15 km actual final outcome",
+      "lead": "139.03s",
+      "noun": "61",
+      "program": "63",
+      "r2": "02 13",
+      "roots": "9",
+      "stage": "Pre-ignition crew review",
+      "tig": "360.29s GET",
+      "verb": "06"
+    },
+    {
+      "test": "16 km independently retained outcome",
+      "altitude": "16.00km",
+      "lead": "139.18s",
+      "r2": "02 14",
+      "roots": "9",
+      "tig": "360.44s GET"
+    },
+    {
+      "test": "missing site retains 01406 and no ignition/site",
+      "alarm": "01520 / 01406",
+      "roots": "3",
+      "siteHidden": true,
+      "stage": "Guidance stopped · missing input",
+      "tig": "—s GET"
+    },
+    {
+      "test": "mobile 390px layout",
+      "controlsEnabled": true,
+      "crewSeats": 3,
+      "scrollWidth": 483,
+      "width": 390
+    },
+    {
+      "test": "projection disclosure dialog",
+      "open": "",
+      "title": "A starting point, not a flight path."
+    },
+    {
+      "test": "HTTP 503 has no replacement telemetry and disables replay",
+      "busy": "false",
+      "error": "The verified guidance recording could not be loaded (503). Start the documented demo server and verify the replay export.",
+      "playDisabled": true,
+      "program": "??",
+      "resultDisabled": true,
+      "tig": "—s GET"
+    },
+    {
+      "test": "Retry recovers the unchanged original dataset",
+      "errorHidden": true,
+      "events": "39 RETAINED EVENTS",
+      "playEnabled": true
+    },
+    {
+      "test": "restart and step select original first event",
+      "current": "00:00.01Program alarm 01107Original software recorded this alarm during startup, before mission initialization; it is distinct from later guidance outcomes.",
+      "previousEnabled": true,
+      "time": "0.006"
+    },
+    {
+      "test": "keyboard scrubbing reaches actual horizon",
+      "time": "227.62208203125002",
+      "tig": "360.29s GET",
+      "cursor": "227.622"
+    },
+    {
+      "test": "evidence dialog includes trace fingerprint and primary references",
+      "open": "",
+      "hasTrace": true
+    },
+    {
+      "test": "desktop 1280px layout",
+      "columns": "270px 667.203px 242px",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "test": "comparison opens its own independently recorded final result",
+      "tig": "360.44s GET",
+      "selected": "true"
+    },
+    {
+      "test": "narrow mobile 360px layout",
+      "dskyWidth": 314,
+      "scrollWidth": 480,
+      "width": 360
+    },
+    {
+      "test": "explicit play enters playing state",
+      "state": "RECORDED · PLAYING"
+    },
+    {
+      "test": "pause stops playback",
+      "state": "RECORDED · PAUSED",
+      "time": "12.733"
+    },
+    {
+      "test": "narrow mobile overflow corrected after observed table-caption issue",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "test": "final desktop replay dock remains visible",
+      "dockBottom": 888,
+      "dockTop": 781.5,
+      "scrollWidth": 1280,
+      "viewportHeight": 900,
+      "width": 1280
+    },
+    {
+      "test": "final mobile 390px layout",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  ],
+  "resolvedFindings": [
+    "Initial 390px and 360px body overflow came from an absolutely positioned screen-reader table header. Giving its scroll container a containing block resolved overflow; both sizes were checked again."
+  ],
+  "consoleErrors": [],
+  "notRun": [
+    "Fresh native AGC flight experiment",
+    "Physical mobile device",
+    "Cross-engine Firefox/Chrome matrix",
+    "AR viewer"
+  ]
+}

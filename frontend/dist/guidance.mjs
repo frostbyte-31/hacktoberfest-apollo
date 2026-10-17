@@ -1,9 +1,14 @@
-import { validateGuidance, frameAt, boundedTime, nextEventTime, advanceReplay, seconds, clock, projectInitialState } from './guidance-state.mjs';
+import { boundedTime, nextEventTime, advanceReplay, seconds, clock } from './guidance-state.mjs';
 import { lastAt } from './replay.mjs';
+import { RecordedTraceProvider } from './mission-provider.mjs';
+import { renderSpacecraftView } from './spacecraft-view.mjs';
+import { renderDSKY } from './dsky-view.mjs';
+import { renderScenarioComparison, renderCrew, renderCapabilities } from './mission-panels.mjs';
 
 const $ = id => document.getElementById(id);
 const text = (id, value) => { $(id).textContent = value; };
 let data = null;
+let provider = null;
 let scenario = null;
 let time = 0;
 let playing = false;
@@ -57,53 +62,6 @@ function jump(target) {
   render();
 }
 
-function svgAttributes(id, values) {
-  for (const [name, value] of Object.entries(values)) $(id).setAttribute(name, String(value));
-}
-
-function drawInitialState() {
-  const initial = scenario.initialState;
-  const projection = projectInitialState(initial);
-  const x = p => 400 + p.x * 151;
-  const y = p => 206 + p.y * 151;
-  const p = projection.position;
-  svgAttributes('orbit-outline', { r: 151 * projection.orbitRadius });
-  $('craft-marker').hidden = false;
-  $('craft-marker').removeAttribute('hidden');
-  svgAttributes('craft-icon', { transform: `translate(${x(p)},${y(p)})` });
-  svgAttributes('craft-guide', { d: `M${x(p) - 10} ${y(p) + 7} L${x(p) - 43} ${y(p) + 40} H${x(p) - 150}` });
-  svgAttributes('craft-title', { x: x(p) - 150, y: y(p) + 54 });
-  svgAttributes('craft-subtitle', { x: x(p) - 150, y: y(p) + 69 });
-  text('craft-subtitle', `Navigation epoch ${seconds(initial.epochSeconds, { precision: 1 })} s · supplied state`);
-  if (projection.velocity) {
-    const v = projection.velocity;
-    svgAttributes('velocity-vector', { d: `M${x(p) + v.x * 13} ${y(p) + v.y * 13} L${x(p) + v.x * 65} ${y(p) + v.y * 65}` });
-  } else svgAttributes('velocity-vector', { d: '' });
-  if (projection.site) {
-    const site = projection.site;
-    $('site-marker').removeAttribute('hidden');
-    svgAttributes('site-ring', { cx: x(site), cy: y(site) });
-    svgAttributes('site-point', { cx: x(site), cy: y(site) });
-    svgAttributes('site-guide', { d: `M${x(site) + 7} ${y(site)} H${x(site) + 27} V${y(site) - 30} H${x(site) + 42}` });
-    svgAttributes('site-title', { x: x(site) + 46, y: y(site) - 32 });
-    svgAttributes('site-subtitle', { x: x(site) + 46, y: y(site) - 16 });
-    text('site-title', 'PLANNED LANDING SITE');
-    text('site-subtitle', `At TLAND ${seconds(initial.targetLandingTimeSeconds, { precision: 1 })} s`);
-    $('missing-site-note').setAttribute('hidden', '');
-  } else {
-    $('site-marker').setAttribute('hidden', '');
-    $('missing-site-note').removeAttribute('hidden');
-  }
-  text('moon-radius', `Reference radius · ${(initial.lunarRadiusM / 1000).toFixed(2)} km`);
-  text('orbit-altitude', `CIRCULAR INITIAL ORBIT · ${(initial.altitudeM / 1000).toFixed(2)} km`);
-  text('projection-epoch-note', projection.site
-    ? `Spacecraft at ${seconds(initial.epochSeconds, { precision: 0 })} s · planned site at TLAND ${seconds(initial.targetLandingTimeSeconds, { precision: 1 })} s. Separate epochs; static illustration.`
-    : `Spacecraft at ${seconds(initial.epochSeconds, { precision: 0 })} s · no landing site initialized. Static illustration; no motion is simulated.`);
-  setValue('initial-altitude', (initial.altitudeM / 1000).toFixed(2), 'km');
-  setValue('initial-speed', initial.speedMps.toFixed(2), 'm/s');
-  setValue('initial-epoch', seconds(initial.epochSeconds, { precision: 0 }), 's');
-}
-
 function buildEvents() {
   const list = $('guidance-events');
   const marks = $('guidance-timeline-marks');
@@ -150,7 +108,8 @@ function selectScenario(id) {
   $('guidance-scrubber').max = scenario.durationSeconds;
   text('replay-duration', clock(scenario.durationSeconds).slice(3));
   text('replay-end-label', scenario.result.reviewReached ? 'V06 N61 · CREW REVIEW' : '01406 · NUMERICAL FAILURE');
-  drawInitialState();
+  renderSpacecraftView(document, scenario.initialState);
+  for (const row of document.querySelectorAll('[data-comparison]')) row.dataset.selected = String(row.dataset.comparison === id);
   buildEvents();
   // Open at an actual P63 checkpoint. Restart retains access to the entire startup.
   time = scenario.events.find(event => event.id === 'p63')?.t ?? 0;
@@ -160,7 +119,8 @@ function selectScenario(id) {
 
 function render() {
   if (!scenario) return;
-  const frame = frameAt(scenario, time);
+  const snapshot = provider.getSnapshot(scenario.id, time);
+  const frame = snapshot.frame;
   const event = lastAt(scenario.events, time);
   text('replay-time', clock(time).slice(3));
   if (!playing) $('guidance-play').lastElementChild.textContent = time >= scenario.durationSeconds ? 'Replay again' : 'Start replay';
@@ -168,7 +128,8 @@ function render() {
   $('guidance-scrubber').style.setProperty('--g-progress', `${time / scenario.durationSeconds * 100}%`);
   if (frame && frame !== lastFrame) {
     lastFrame = frame;
-    for (const [key, id] of Object.entries({ PROG: 'dsky-program', VERB: 'dsky-verb', NOUN: 'dsky-noun', R1: 'dsky-r1', R2: 'dsky-r2', R3: 'dsky-r3' })) text(id, frame.dsky[key]);
+    renderDSKY(document, snapshot.dsky);
+    text('header-clock', clock(frame.observedClockSeconds));
     text('guidance-stage', frame.stage);
     text('mission-clock', clock(frame.observedClockSeconds));
     setValue('guidance-ttf', seconds(frame.signedTimeToGoSeconds, { signed: true }), 's');
@@ -182,11 +143,20 @@ function render() {
       text('guidance-alarm-description', frame.alarms.includes('01406')
         ? 'Original numerical guidance failed. The missing-site control retains its authentic alarm.'
         : frame.alarms.includes('01520')
-          ? '01520 is retained from the original startup sequence. This is alarm-register history, not a new guidance failure.'
+          ? '01520 is retained startup history, not a new guidance failure.'
           : 'Original software recorded this alarm during startup or at the displayed checkpoint; see the event log.');
     }
   }
   text('guidance-stage-detail', event?.description ?? 'Awaiting the first recorded event.');
+  text('context-explanation', frame.alarms.includes('01406')
+    ? 'Without a landing-site vector, guidance cannot finish its solution. Three provisional roots precede the authentic 01406 alarm.'
+    : frame.ignitionTimeSeconds !== null
+      ? 'The AGC has calculated an absolute ignition time. This is a plan for a burn; the recording ends before the engine fires.'
+      : frame.rootCount > 0
+        ? 'Each retained root is an original polynomial result used in guidance. Signed time-to-go follows the flight software’s convention.'
+        : event?.id === 'p63'
+          ? 'P63 is selected. Play the next few seconds to see original time-to-go calculations and the pre-ignition crew review.'
+          : 'Alignment establishes a reference; mission initialization supplies position, velocity and target. Guidance needs all three.');
   if (event?.id !== selectedEvent) {
     selectedEvent = event?.id ?? null;
     for (const button of document.querySelectorAll('[data-event]')) {
@@ -247,6 +217,16 @@ function openDetails(kind) {
       link.target = '_blank';
       link.rel = 'noopener';
       body.append(link);
+      addParagraph(body, 'The panel is Apollo-inspired. Digit fields come from the recording. Lamp and sign states are unavailable in this adapter. Physical DSKY arrangement references:');
+      for (const [label, href] of [
+        ['NASA: Crew station displays and controls', 'https://ntrs.nasa.gov/citations/19750012347'],
+        ['Virtual AGC: LM DSKY drawings and indicator layout', 'https://www.ibiblio.org/apollo/yaDSKY.html'],
+      ]) {
+        const paragraph = document.createElement('p');
+        const reference = document.createElement('a');
+        reference.href = href; reference.target = '_blank'; reference.rel = 'noopener'; reference.textContent = `${label} ↗`;
+        paragraph.append(reference); body.append(paragraph);
+      }
     }
   }
   $('guidance-dialog').showModal();
@@ -257,11 +237,17 @@ async function load() {
   $('guidance-error').hidden = true;
   $('guidance-console').setAttribute('aria-busy', 'true');
   try {
-    const response = await fetch('./data/guidance.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`Recording request returned HTTP ${response.status}.`);
-    data = validateGuidance(await response.json());
+    provider = await RecordedTraceProvider.load('./data/guidance.json');
+    data = provider.recording;
+    renderScenarioComparison(document, data.cases, id => {
+      selectScenario(id);
+      jump(scenario.durationSeconds);
+      $('guidance-console').scrollIntoView({ block: 'start', behavior: 'instant' });
+      announce(`${scenario.title}. Showing the actual final recorded outcome.`);
+    });
+    renderCapabilities(document, provider.getCapabilities());
     for (const button of document.querySelectorAll('[data-scenario]')) button.disabled = false;
-    for (const id of ['guidance-play', 'guidance-restart', 'guidance-previous', 'guidance-next', 'guidance-speed', 'guidance-scrubber', 'guidance-jump']) $(id).disabled = false;
+    for (const id of ['guidance-play', 'guidance-restart', 'guidance-previous', 'guidance-next', 'guidance-speed', 'guidance-scrubber', 'guidance-jump', 'guidance-result']) $(id).disabled = false;
     $('guidance-console').setAttribute('aria-busy', 'false');
     selectScenario('nominal');
   } catch (error) {
@@ -269,7 +255,10 @@ async function load() {
     text('guidance-error-detail', `${error.message} Start the documented demo server and verify the replay export.`);
     $('guidance-error').hidden = false;
     announce('Guidance recording unavailable. No replacement telemetry is displayed.');
-  } finally { $('guidance-loading').hidden = true; }
+  } finally {
+    $('guidance-loading').hidden = true;
+    $('guidance-console').setAttribute('aria-busy', 'false');
+  }
 }
 
 for (const button of document.querySelectorAll('[data-scenario]')) button.addEventListener('click', () => selectScenario(button.dataset.scenario));
@@ -285,10 +274,19 @@ $('guidance-previous').addEventListener('click', () => jump(nextEventTime(scenar
 $('guidance-next').addEventListener('click', () => jump(nextEventTime(scenario, time, 1)));
 $('guidance-jump').addEventListener('click', () => { jump(scenario.events.find(e => e.id === 'p63')?.t ?? 0); announce('Jumped to original P63 selection.'); });
 $('guidance-scrubber').addEventListener('input', event => jump(Number(event.target.value)));
+$('guidance-result').addEventListener('click', () => { jump(scenario.durationSeconds); announce('Showing the final recorded result.'); });
 $('guidance-retry').addEventListener('click', load);
 $('provenance-open').addEventListener('click', () => openDetails('provenance'));
 $('provenance-footer').addEventListener('click', () => openDetails('provenance'));
 $('projection-explain').addEventListener('click', () => openDetails('projection'));
 $('guidance-dialog-close').addEventListener('click', () => $('guidance-dialog').close());
+document.addEventListener('keydown', event => {
+  if (!scenario || $('guidance-dialog').open || event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, select, button, a, summary, textarea, [contenteditable]')) return;
+  if (event.code === 'Space' && !event.repeat) { event.preventDefault(); $('guidance-play').click(); }
+  if (event.code === 'ArrowRight') { event.preventDefault(); jump(nextEventTime(scenario, time, 1)); }
+  if (event.code === 'ArrowLeft') { event.preventDefault(); jump(nextEventTime(scenario, time, -1)); }
+  if (event.code === 'KeyR' && !event.repeat) { event.preventDefault(); jump(0); }
+});
+renderCrew(document);
 document.addEventListener('visibilitychange', () => { if (document.hidden) setPlaying(false); });
 load();
