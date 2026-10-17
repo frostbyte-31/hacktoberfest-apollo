@@ -1,0 +1,15 @@
+{
+  "changed": [],
+  "existingFilesPreserved": 2208,
+  "finishedUtc": "2026-10-17T16:46:10.700544+00:00",
+  "frontendExportByteIdentical": true,
+  "frontendTestsPassed": 26,
+  "historicalTests": {
+    "knownMissingLogErrors": 3,
+    "passed": 35
+  },
+  "limitations": "Historical errors remain errors. No live frontend AGC, new axis, descent or landing validated.",
+  "phase7AndMilestoneTestsPassed": 175,
+  "replaySha256": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+  "status": "VERIFIED"
+}

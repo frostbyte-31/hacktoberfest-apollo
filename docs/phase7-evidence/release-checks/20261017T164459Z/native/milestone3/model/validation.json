@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "paired_scenarios": 24,
+  "rows_per_model": 1014,
+  "changed_packet_modes": 1455,
+  "equal_numerical_states": true,
+  "equal_counts_and_directions": true,
+  "scope": "Prescribed yaw/X motion component diagnostic, not AGC-controlled vehicle",
+  "numerical_change": "abs(Omega_Yaw)<4 in X selector only",
+  "limits": "No queue pacing, another axis, Phase7, powered descent or landing tested here",
+  "cross_axis_rejections_before_mutation": 4,
+  "original_matches_retained_milestone2_bytes": true
+}

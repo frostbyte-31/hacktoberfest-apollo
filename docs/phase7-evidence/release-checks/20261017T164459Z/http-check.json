@@ -1,0 +1,9 @@
+{
+  "check": "curl --fail --silent --output <scratch>/http-replay.json --write-out HTTP_STATUS http://127.0.0.1:4173/data/replay.json",
+  "startUtc": "2026-10-17T16:46:18.944Z",
+  "endUtc": "2026-10-17T16:46:24.025Z",
+  "exit": 0,
+  "httpStatus": 200,
+  "servedDataSha256": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+  "byteIdenticalToFrontendExport": true
+}

@@ -1,0 +1,1510 @@
+{
+  "capturedUtc": "2026-10-17T16:50:42.650900+00:00",
+  "existingDocFilesPreserved": 2192,
+  "files": {
+    "docs/phase7-evidence/release-checks/20261017T164459Z/SUMMARY.md": {
+      "bytes": 3564,
+      "sha256": "be738e96e2fb9e890d02be551562aff0353f1fa392ae7e5e51a0f9fe96c96b1c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/preservation-before-frontend.json": {
+      "bytes": 333736,
+      "sha256": "8f666e3351627f2c7191727adba361b1089f68e879b7108eb4212eca88cc2f9b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/screenshots/desktop.jpg": {
+      "bytes": 94345,
+      "sha256": "8df76158ceb4a960c85d40133149ed5251b90cefa40764009c9ae87579d26040"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/screenshots/mobile.jpg": {
+      "bytes": 70612,
+      "sha256": "26bac9796d3238f11ba2f3e2c9a1151ae914e8bdf6dff18cf92afec8ec4c4039"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/browser.json": {
+      "bytes": 1183,
+      "sha256": "f9a48197b6b4019699f65ff2bc8a9ca081a891863754bc68846f5594f3165a47"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/commands.json": {
+      "bytes": 1386,
+      "sha256": "20a3e9568ff162070770d677bac2ee1cc85e673eb2b5cbf53e4bed47489950df"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/export.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/export.stdout": {
+      "bytes": 711,
+      "sha256": "8b4a43de6fc3e9501e8ee3d03c39380736b0030ec2e6154766104286f1fdd35e"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/inputs.json": {
+      "bytes": 1286,
+      "sha256": "625dd74aaa7d53807cda818091b0a5ffd391fab1f99e731dfb4b1f1c52d5026a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/phase7-regression.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/phase7-regression.stdout": {
+      "bytes": 2607,
+      "sha256": "99588909fcb910fc80b8d4d436b641c8c90f64efcfb8d54bc7b0a66880d97c67"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/presentation-tests.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/presentation-tests.stdout": {
+      "bytes": 1292,
+      "sha256": "0580cda26bee2ca0dab19bc47aa28fedb598eb59f52e8dd4d807c9cbcc3586e6"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/python-tests.stderr": {
+      "bytes": 1157,
+      "sha256": "3af68042467302300100e0065b756426fbf8ef071273fd21a5dcaa0f3171250b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/python-tests.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/browser-original/verification/summary.json": {
+      "bytes": 503,
+      "sha256": "2f5c4a72feffd3ae97b7faf9934f9df6b6d46af0451a9c5e703e05c778f1d068"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/commands.json": {
+      "bytes": 2934,
+      "sha256": "f84a08ac58e5e883955abf65dfc406b8fda9add068285f42f25902bc130eea90"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/completion.json": {
+      "bytes": 517,
+      "sha256": "4e45e00de32a8cf3e51da26286994006e09680658183c6c812b707932ac52332"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/environment.json": {
+      "bytes": 369,
+      "sha256": "4a5647f25e499ce04a6cc8eb111f920f5d20f04e014bfcb7bc774d6c25fd2827"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-app-syntax.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-app-syntax.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-export.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-export.stdout": {
+      "bytes": 736,
+      "sha256": "421850cd6b4e55fb81f21c7af06a7512e531af0cb7eaea2555bd64d937276012"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-node.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-node.stdout": {
+      "bytes": 1295,
+      "sha256": "93ef2869791530dd370db00f41096d43119746f4acab117b59747b642c2beecb"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-python.stderr": {
+      "bytes": 1157,
+      "sha256": "976944ebb2d8beb598eeb579427e2e2e7bacc10e5176c6b4ea09895e72079d9c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-python.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-renderer-syntax.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/frontend-renderer-syntax.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/input-files.json": {
+      "bytes": 330346,
+      "sha256": "1fdd806416d845c241aeaf5912f9cb72518580ae1f79c9e8c342e097d17329fa"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/make-check.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/make-check.stdout": {
+      "bytes": 16628,
+      "sha256": "a72ee00a14cfa30eaa209c33844b6e9773e8f3266d10aec5f7ce19d39decc2d1"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/node-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/node-version.stdout": {
+      "bytes": 9,
+      "sha256": "b7677d3ec37ee1897ba07dc2cfe8292fe421c9ac93396cca5bbece486d1a2a41"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/verify.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/checks/verify.stdout": {
+      "bytes": 94237,
+      "sha256": "74b9b8a8bacf547017f37b3fcb034aff1e8bd2a6e80c95d28932923532025079"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/final_checks.py": {
+      "bytes": 2826,
+      "sha256": "7df3d23514cf3e1393dc602100fc61548122490fef59d4122e952a8b1471d9f2"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/http-check.json": {
+      "bytes": 384,
+      "sha256": "946ef7ef56f996b9df30ef98adbb66710f44d667f08e5be316a1544b6183ff05"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu.stdout": {
+      "bytes": 3434,
+      "sha256": "1131d11b19db0d49032cd92501dd6617883bfcd8819cdcc58e183491f0f0a5bd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/alternating_supported-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/alternating_supported-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/alternating_supported.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/alternating_supported.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/build.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/build.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/commands.json": {
+      "bytes": 15107,
+      "sha256": "357de7b9073915c2b025912e1d58501ffcab2664ede838bda8741bed2ca2a001"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/compiler-version.stdout": {
+      "bytes": 201,
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/fifo_capacity_control-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/fifo_capacity_control-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/fifo_capacity_control.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/fifo_capacity_control.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/inputs.json": {
+      "bytes": 2723,
+      "sha256": "d761ec887c846308c3f995ee4c8cb7d70107d02435bc73a572be5a2c9d03db8c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/mixed-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/mixed-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/mixed.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/mixed.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_fast-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_fast-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_fast.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_fast.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_slow-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_slow-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_slow.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/negative_slow.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_fast-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_fast-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_fast.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_fast.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_slow-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_slow-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_slow.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/positive_slow.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/python-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/python-version.stdout": {
+      "bytes": 13,
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/ringbuffer_capacity_control-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/ringbuffer_capacity_control-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/ringbuffer_capacity_control.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/ringbuffer_capacity_control.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/signed_wrap-replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/signed_wrap-replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/signed_wrap.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/signed_wrap.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/cdu/summary.json": {
+      "bytes": 11265,
+      "sha256": "3828bee40554a757563435bd04cced5bb027613d56be5dca085a457a29242eb0"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/commands.json": {
+      "bytes": 2280,
+      "sha256": "8f13225311e3dec723323ac3f4ed6d158f42d552b8c5fa55473e8f8c55aea13d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/completion.json": {
+      "bytes": 306,
+      "sha256": "0bfb5ca0965b6fc9a8e8755b0038f1e5c69e360d78cd9b58fcb347f5f1319607"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/environment.json": {
+      "bytes": 2910,
+      "sha256": "86136de979883016bce3ee2a3d31da33528433146474635f9bd4a5a32eaafb07"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/inputs_source_hashes.json": {
+      "bytes": 2882,
+      "sha256": "5da2851577a56fd8f9d232330c93f97296c5ce05f88665a61e5835727251de0f"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant.stdout": {
+      "bytes": 59,
+      "sha256": "15c4a58610c263f152882d935e880a6e439c35099916990dbba4fc356f24afe4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/commands.json": {
+      "bytes": 665,
+      "sha256": "7133fbb467c526a8214bece60f2625ef7b9ebdab27aed7109ff08831449aa594"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/environment.json": {
+      "bytes": 2670,
+      "sha256": "7b815e592714f7004727680b09f483e06fdfb8da86fd6eab41c2175992f2a0fd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/probe-inputs.txt": {
+      "bytes": 1295,
+      "sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/probe.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/probe.stdout": {
+      "bytes": 126227,
+      "sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/scenarios.json": {
+      "bytes": 4442,
+      "sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/source-audit.json": {
+      "bytes": 20681,
+      "sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/summary.json": {
+      "bytes": 9821,
+      "sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/plant/validation.json": {
+      "bytes": 613,
+      "sha256": "e2a12b1a548da97aceaf383875aea3e85e5fd7a9d74d344389ef256543d0d3b0"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/preservation-after.json": {
+      "bytes": 266,
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/preservation-before.json": {
+      "bytes": 266,
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup.stdout": {
+      "bytes": 108,
+      "sha256": "51c71e96c709d01c796ae714078cc3a76f2530daf50741b50121a019958fc713"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/binary_hashes.json": {
+      "bytes": 90,
+      "sha256": "be17f8a10c43fdc3ae82b93124337076289ceedc87f2c4aff32d500dd8941a93"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/build.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/build.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/commands.json": {
+      "bytes": 5937,
+      "sha256": "581d47183905235d522d88bd8e0f4ad6cbcfb24d05d542ffa64103e154a23ca4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/compiler-version.stdout": {
+      "bytes": 201,
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/completion.json": {
+      "bytes": 186,
+      "sha256": "a3f17d18fef65610aafd94200829dc2806585e720aee3e312112e0c09f3134ee"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/delayed.inputs.txt": {
+      "bytes": 186,
+      "sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/delayed.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/delayed.stdout": {
+      "bytes": 254304,
+      "sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/imu_off.inputs.txt": {
+      "bytes": 186,
+      "sha256": "323482762555ca6d4724b3bc52e175cff3ca4bb8603a99f7e7aafa27560b0d97"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/imu_off.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/imu_off.stdout": {
+      "bytes": 247558,
+      "sha256": "eab2852b9ad4c9fec9d6959ded7c0b44c24188603350e2f5a4901d7875b7e287"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/initial_conditions.json": {
+      "bytes": 884,
+      "sha256": "563d81a6baca55a8cde45f0e0445d98e4bb31cea10a92f6493b582b8b72dd2f9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/inputs_source_hashes.json": {
+      "bytes": 6455,
+      "sha256": "bc0ffeee829adf1e541b6ba9fc9dd35191464f47ddc64cb730422944f21ea392"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/legacy.inputs.txt": {
+      "bytes": 186,
+      "sha256": "9692fbb5d50a1f063b95744ba25e6a730f3e88684ea112288339c77feb2e82cf"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/legacy.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/legacy.stdout": {
+      "bytes": 248558,
+      "sha256": "882f5e0ed95565ab4ad77511cb78c8b69953a2429c40d1f301abb2c79b6da3dd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/repeat.inputs.txt": {
+      "bytes": 186,
+      "sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/repeat.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/repeat.stdout": {
+      "bytes": 254304,
+      "sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/resolved_addresses.json": {
+      "bytes": 1570,
+      "sha256": "26a10951092cdfcc7a37d8a4214e38ec63c7c8919dbe8bcc3f46e0a0c5deae39"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/summary.json": {
+      "bytes": 7363,
+      "sha256": "279eca3aec605a2544c1a0db03553f15a24b2d9633f3c8ac33db048c4ba0aded"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_after_ready.inputs.txt": {
+      "bytes": 186,
+      "sha256": "21269e22891907c7d8595726d4483ce14c93551b126ad16cb4b1bd97ff82be56"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_after_ready.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_after_ready.stdout": {
+      "bytes": 254094,
+      "sha256": "a56855dcffd766e8fddadfacb8076d414cfd2f122fa1e08b52076a3788d7f99d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_before_ready.inputs.txt": {
+      "bytes": 186,
+      "sha256": "14d58fa21095bc6c886febfa36903b71b63aa00dbd1241e9fa3588934de506a5"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_before_ready.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/v37_before_ready.stdout": {
+      "bytes": 248479,
+      "sha256": "3ec8c4e6db3d5d250fb946de27fe12808d1f97f5fa2b04ecc5ca9f84ae19f672"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/validation.json": {
+      "bytes": 808,
+      "sha256": "813fc6ba7926cffbfb2ca79ece0f867676eb75660bba5821a34dc087bf5c8583"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/without_v36.inputs.txt": {
+      "bytes": 136,
+      "sha256": "a23004cc127d03da8ad8a815ac94e14048bb1e92c505c9c2d6600434c09cf367"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/without_v36.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone2/startup/without_v36.stdout": {
+      "bytes": 251367,
+      "sha256": "34a9cefa241221d918726b4ab2ec3d632890a2508dea27d8b2d68281e3ec94d2"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/commands.json": {
+      "bytes": 1940,
+      "sha256": "802740170b94584fd1875b586e556ddb0e3b480e5dda844ed5b361da62b9a7ac"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/completion.json": {
+      "bytes": 331,
+      "sha256": "1dcf069ca4e8c93e6e7e08019dac555a2820fae27e4a2ced77ebf7ab3a49f587"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/environment.json": {
+      "bytes": 2916,
+      "sha256": "4a992b416cb6df46a502593d54851281ee1f9273bc44ab3b635b53f1b5ba213d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback.stdout": {
+      "bytes": 2791,
+      "sha256": "bc66126c128732075fed18fc1f544baad84ce49730e4cd13793f8f66f8d0bd5d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/build.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/build.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/commands.json": {
+      "bytes": 7984,
+      "sha256": "d4b3bcd509565c178a09666480fa29e0dbbb433ab6c298426765a922dc44571d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/compiler-version.stdout": {
+      "bytes": 201,
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_drain.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_drain.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_drain.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_feedback_off.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_feedback_off.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_feedback_off.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_imu.tcl": {
+      "bytes": 32810,
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_negative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_negative.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_negative.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_repeat.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_repeat.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_repeat.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/corrected_server.tcl": {
+      "bytes": 1224,
+      "sha256": "e38f109fd616823260fdaeaa7a035c3b40bc2efd13d0d05c6e79d464655cd2e1"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/executed-retained-plant_server.tcl": {
+      "bytes": 1088,
+      "sha256": "9e14770f744d3d2b7ffa09cb5f05a489de19b812526463a939df4b69f714622b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/executed-run_validation.py": {
+      "bytes": 35063,
+      "sha256": "a5fcde720c17b19d240d2ca71a7dcb2f0d2721751da51931c5dc758490a4c74a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/executed-test_feedback.py": {
+      "bytes": 9535,
+      "sha256": "34006da23c557d8c582553ef8b96d85c2a98f62bfaf3b43c4896f916e4d52a08"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/inputs_source_hashes.json": {
+      "bytes": 3273,
+      "sha256": "b8080bcaee6e56e81362f66d547dba869200c0cc2a87436cc01d398e0f2574d4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/original_negative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/original_negative.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/original_negative.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/python-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/python-version.stdout": {
+      "bytes": 13,
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/runtime-validation.json": {
+      "bytes": 2369,
+      "sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/selector-audit.json": {
+      "bytes": 2953,
+      "sha256": "6541963aa9f5b2951536ac3cf7f2a09b4a68bcde20fb7f7b68b23718ac9a0ad2"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/feedback/summary.json": {
+      "bytes": 390517,
+      "sha256": "8f0e5e07f182a1c79b4fbef768ac90d67a495741524dd07353db8a985e2fd317"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/inputs_source_hashes.json": {
+      "bytes": 2035,
+      "sha256": "891898313d8638c0596bacfb1261f5dae1a3884fa91f33db38ccf394bad502bd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model.stdout": {
+      "bytes": 71,
+      "sha256": "4bc5b36ee1eba7dff30325c87b7bc98b99e1db48cd104f737ba54a9fc6b6aa62"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/AGC_IMU.corrected-yaw.tcl": {
+      "bytes": 32810,
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/axis-guard.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/axis-guard.stdout": {
+      "bytes": 224,
+      "sha256": "e3b670f4babf415a2116504c538d8cbce6303283ad4dd013ef5e6aa87d383c7a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/commands.json": {
+      "bytes": 2410,
+      "sha256": "c759b52781d1e5573477a2475b01858cfff64e91c52dd9444076845e4b42cc83"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/complete.diff": {
+      "bytes": 1117,
+      "sha256": "b9f80fb2160ba0f2e6e115349b4315e4bbce826f63ea7941f8429da622cd5ff1"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/corrected.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/corrected.stdout": {
+      "bytes": 133502,
+      "sha256": "82071754760b5e62234b1e3ceb5af5914023daeb2e9f9a7e87f06dca84938b66"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/corrected.summary.json": {
+      "bytes": 9841,
+      "sha256": "1a8f0f9fba419b2eb62f00ea19aadfa6a9f2f1cf216eb74835c3a9bb1a80f8bb"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/environment.json": {
+      "bytes": 2702,
+      "sha256": "7e11592053cb2a68c3cb8a2b51bf36b8b79b3ceca71da42b992921dcfd2d891e"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/guard-probe.tcl": {
+      "bytes": 1040,
+      "sha256": "c6a55da3e5484d4b0e2418f637b8cee405499e467aeadef240f0c2e7aaf0d864"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/inputs_source_hashes.json": {
+      "bytes": 1471,
+      "sha256": "9df55d68d558b28882d72338633eee0cd1c0277c5359deceff5b7b1c63bec578"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/original.stdout": {
+      "bytes": 126227,
+      "sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/original.summary.json": {
+      "bytes": 9821,
+      "sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/probe-adapter.diff": {
+      "bytes": 471,
+      "sha256": "27944f89463ff3a762c08f5ae57aa642f33a636a662c88f294e728b9dbaae9fa"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/probe-inputs.txt": {
+      "bytes": 1295,
+      "sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/probe-with-module-argument.tcl": {
+      "bytes": 1519,
+      "sha256": "95653fbd2a6e2f6cb27c15f0123402f11b96cc20632302287fa132f79073cdb5"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/scenarios.json": {
+      "bytes": 4442,
+      "sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/selector-audit.json": {
+      "bytes": 2958,
+      "sha256": "ffcc34b6714d01492bae637bbeaf8b58bb0b9fae8069d7aa0f5564d892bd1397"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/selector.diff": {
+      "bytes": 480,
+      "sha256": "6c681750dcfec600e1520c664d80ac11c8f4af70f6b9355393dfebbbe1085a92"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/source-audit.json": {
+      "bytes": 20681,
+      "sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/model/validation.json": {
+      "bytes": 525,
+      "sha256": "97930104f978ec5970217a791b0d7b59cb8ca19da7b41ffaf2d9d186ad0b76bd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/milestone3/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/SUMMARY.md": {
+      "bytes": 2405,
+      "sha256": "5376611419d78911d6bdff828a16199f6b753ebf5964340a5efbeced5d6b74ba"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/binary_hashes.json": {
+      "bytes": 174,
+      "sha256": "b230dace7756848d9828fe2be7d48043d20b5aaa0b026d117df260393a85d766"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/build.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/build.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/closed.jsonl.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/closed.launch.json": {
+      "bytes": 960,
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/closed.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/closed.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/closed.summary.json": {
+      "bytes": 2825,
+      "sha256": "990a931344f57db6bb0bf01aad31637a23b51ff9464e9c82ecfd46bedd42cfe4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/commands.json": {
+      "bytes": 6567,
+      "sha256": "cf9d34f2d40b6c5521f80ca6ed92e1fae638a0062a686e275a28d19e56587908"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/compiler-version.stdout": {
+      "bytes": 201,
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/completion.json": {
+      "bytes": 268,
+      "sha256": "87d7276528c7d3cecf9d51e07d5dd31d79cdebc5b7d339408d7afd5de39b7a3a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/environment.json": {
+      "bytes": 3199,
+      "sha256": "b6d6dbc637982fdadb71432258c09137b1f7062720aa55dedecdf376066a0a89"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/feedback_off.jsonl.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/feedback_off.launch.json": {
+      "bytes": 960,
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/feedback_off.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/feedback_off.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/feedback_off.summary.json": {
+      "bytes": 2337,
+      "sha256": "3485ef121d74b98f335eaef68553ad73f75435fb95643c4bf3327c3921b835f8"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/initial_conditions.json": {
+      "bytes": 707,
+      "sha256": "ecee4cd4a9f94681dd15fb1b57966ec8e276d389e7c5994bfba502ac08ebbef4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/inputs_source_hashes.json": {
+      "bytes": 7279,
+      "sha256": "2d2e9e6fc125807ad11f44a3872d29e3d20dee3423691ff1f3be5fbac01482fc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/integrity.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/integrity.stdout": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/preservation-after.json": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/preservation-after.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/preservation-after.stdout": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/repeat.jsonl.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/repeat.launch.json": {
+      "bytes": 960,
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/repeat.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/repeat.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/repeat.summary.json": {
+      "bytes": 2825,
+      "sha256": "4dc9a76daf9ecb593538298f180c8bd463cebb11bc9aa41cacb52aa62366f255"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/retained-integrity.json": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/retained-trace-comparison.json": {
+      "bytes": 906,
+      "sha256": "dab79ead9307481c6e9fd8571e633a94429c2e43fe7c00dbc774b322ac96c806"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase6-reproduction/validation.json": {
+      "bytes": 322,
+      "sha256": "9e24aefccfaa14b6e65267c7121b91381a540e9b97781f261bec1a262cda7203"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/commands.json": {
+      "bytes": 2351,
+      "sha256": "af217669a001cf396578d0e5456a26900f72a12f477f02950678b94c5b07e061"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/completion.json": {
+      "bytes": 187,
+      "sha256": "29922567cfb82126cb09a56dffccf2a4ef45ff7fe3bae9442bbd9ab943f1b16c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/environment.json": {
+      "bytes": 2933,
+      "sha256": "2051ea836e30a662742fb8048e8b3e31932dcd04025fa0c59c8dc3f6df930c11"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/inputs_source_hashes.json": {
+      "bytes": 3023,
+      "sha256": "1a3566d22d2d9e130fc95cdf9b0ada87a6a4145696ed8f05601cd0687451c852"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration.stdout": {
+      "bytes": 782,
+      "sha256": "4f850b6807d6b135c4ea39159f2725283ab78698b99f2fd0ac9438f6e7e14c18"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/baseline-comparison.json": {
+      "bytes": 205,
+      "sha256": "027dbf8607ff343dbba545b66c5c1ad705924c199f9ef90dace7a3aeac26eca7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/baseline-corrected-imu.tcl": {
+      "bytes": 32810,
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/baseline-selector-audit.json": {
+      "bytes": 2957,
+      "sha256": "3246aa0d885f8c635f8652944b1989df9929e34b2354799ce4631123582b9183"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/baseline-server.tcl": {
+      "bytes": 1232,
+      "sha256": "cbf41ab7c050fad072f870ca0197a23b017e35e34e8cc55a56c4fb061e9e2d3a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/build.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/build.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_off.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_off.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_off.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/combined_replay.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/commands.json": {
+      "bytes": 12516,
+      "sha256": "5c1ffa5cc1a5b0c0522875216bc7c1132281caed668e719b08bf9677f89146d6"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/compiler-version.stdout": {
+      "bytes": 201,
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/executed-apply_physics.py": {
+      "bytes": 4195,
+      "sha256": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/executed-inspect_axes.c": {
+      "bytes": 2846,
+      "sha256": "811653730f357cb086aa4c87d5d8ff3f462199b362fbf0249002546b8af3dded"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/executed-orientation.tcl": {
+      "bytes": 8835,
+      "sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/executed-run_validation.py": {
+      "bytes": 51732,
+      "sha256": "f630b5068e0c0fe7a0c82676cc3b710b7b865a8610b51be6664f74a535c24a36"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/executed-test_integration.py": {
+      "bytes": 12543,
+      "sha256": "5bd33cc22345b3ea380ef60acb3c7d353aa1beead358c21b49b5f8e23659dc13"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/inputs_source_hashes.json": {
+      "bytes": 3027,
+      "sha256": "8e8813c92bd6335ebcb31cfeae8543c54b4fc3cbde756169dd91556a7b982858"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/model-inputs.json": {
+      "bytes": 505,
+      "sha256": "ea84121fc1b488be335b37a88de2631f2fdf37f1a38fc81f1d3b53dc185f9b1b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/native-probe.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/native-probe.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/physics-audit.json": {
+      "bytes": 3134,
+      "sha256": "49b69c2d24909d98c5a6eed26748f73a613c533353d4fb2256fdf474f5cfde64"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/physics-overlay.tcl": {
+      "bytes": 41356,
+      "sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_off.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_off.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_off.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_replay.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/pitch_replay.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/python-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/python-version.stdout": {
+      "bytes": 13,
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/runtime-validation.json": {
+      "bytes": 2369,
+      "sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/server.tcl": {
+      "bytes": 1074,
+      "sha256": "8bda1e22cf7700f188ca2991773b6e5ce45fbe0a7e90f16233a408aa6c8a9ec2"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/summary.json": {
+      "bytes": 1255651,
+      "sha256": "12903a0c27dec74a20dc36bb81967dd63bcc19f4af78f2af62025595f01127b8"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw-baseline.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw-baseline.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw-compatibility.json": {
+      "bytes": 334,
+      "sha256": "983d9350580510fdf64727023f46a3211aeae56a02d869c6b768eb73f6695c20"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/integration/yaw_baseline.tcl.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics.stdout": {
+      "bytes": 51,
+      "sha256": "a7ccc4afcbb76c6d98faae5ad0281280e8c8ba3bcb0fb2f09dcbea04d7a509ef"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/commands.json": {
+      "bytes": 1242,
+      "sha256": "3ade14871266209b0e12154b0657d5f397679a491a5943fdcfde5fe17592abd4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/derived-physics.tcl": {
+      "bytes": 41356,
+      "sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/environment.json": {
+      "bytes": 2543,
+      "sha256": "ddb2da6f3f675f5663508e2cdba4ee7bfd1f932f6b5dea845f1c6adfebcde9a2"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/executed-apply_physics.py": {
+      "bytes": 4195,
+      "sha256": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/executed-orientation.tcl": {
+      "bytes": 8835,
+      "sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/executed-probe.tcl": {
+      "bytes": 4180,
+      "sha256": "c76f7d9aa1a7b667778e6bcfafc8c447069302d3363e70fe6b8613f9a620b683"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/executed-run_validation.py": {
+      "bytes": 11747,
+      "sha256": "efdd9221c6d6b96ce2748ce921f04c11816c37d241763110830c5ef68e35f15e"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/imu-selectors.diff": {
+      "bytes": 1329,
+      "sha256": "e231420a3174dac5805d753f44f8070b1870c2ced68f3cca92cab361239d0bb6"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/inputs_source_hashes.json": {
+      "bytes": 873,
+      "sha256": "d81581588fdf7305d02a681d17c07c77d6b3a230d442920ae84c4169c6d68768"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/legacy-inputs.txt": {
+      "bytes": 1400,
+      "sha256": "4bbe3f3c34ff99cbbd8a5765bd33df00e9e6d6081fe332f55286b4b3b97f5258"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/legacy-yaw.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/legacy-yaw.stdout": {
+      "bytes": 7647,
+      "sha256": "ca3198d501d9f9d9b3369fd5161e7ecece192e8eff75bd9a3c143115cdbb0de7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/physics.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/physics.stdout": {
+      "bytes": 23589,
+      "sha256": "7d58ee70007ec1929f02486555562ece6f5ed57d5765f96aa629a88cae2ed516"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/source-audit.json": {
+      "bytes": 3130,
+      "sha256": "ee5b0d3e4c3aed4af8b4a48ef527fd8f50a41261125959689d57cbb4890521a4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/physics/validation.json": {
+      "bytes": 9772,
+      "sha256": "8719c76603ee1c69906c9dbf246cb314aa77b400125740e27332fdb54791a0fc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/source-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/native/phase7/source-proof.stdout": {
+      "bytes": 430,
+      "sha256": "bc6768de4f3b843e81d769c952cecad99678c81114c929ce07a319d15ce81734"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/package_release.py": {
+      "bytes": 4493,
+      "sha256": "a00a09229da91fd0affb9c2b10dd69b41d15cf335f32d9ae96e0c17296a24912"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/retention.json": {
+      "bytes": 153547,
+      "sha256": "e8e78b5f15bb27c06cbd4552a8f129ef7389f9202a8cec177e8617c8f30858a3"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/integrity-after.json": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/integrity-before.json": {
+      "bytes": 94185,
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/milestone1.json": {
+      "bytes": 12625,
+      "sha256": "bdf02bd182317e2d0737e2616d46292505f11feb19ddaff5e61953f4babe2e93"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/milestone1.stderr": {
+      "bytes": 5351,
+      "sha256": "75eedd00def8bb00485733c28dbf531587133670ecc64e09db027bac2b5cd43c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/milestone1.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase2.json": {
+      "bytes": 776,
+      "sha256": "902c79149cf9adf4d68a5ed0df89cc79823421b01c7f70ef3dd00fa066e05b73"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase2.stderr": {
+      "bytes": 265,
+      "sha256": "04f462371df100705d5112545611ba9c4b3186617d1d9daf96508d8ebcc49dad"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase2.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase3.json": {
+      "bytes": 1637,
+      "sha256": "60481b72b4fb7f7b52cf8de3b79a85a180f6bc6a6f189730275166d29533f933"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase3.stderr": {
+      "bytes": 513,
+      "sha256": "367de8a6c2380ecacc5257d559419ecbacbbfd314d7e2665ab0735c27d32fa65"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase3.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase4.json": {
+      "bytes": 3525,
+      "sha256": "ecfb182b58fbf30778708c22a461efd47aa622d87a17fb5583e47631765d3dd8"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase4.stderr": {
+      "bytes": 1817,
+      "sha256": "60613c7b5e8079c8c798706bd7e53e391d56587c6c1c9d7ab33d187a5fd048f0"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase4.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase5.json": {
+      "bytes": 4746,
+      "sha256": "91b446700ff81c32a31238e8a6e8a749925afa5f1b699f8092eb008aa427edb5"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase5.stderr": {
+      "bytes": 2255,
+      "sha256": "fc40a0aff18037d10212c701bc7d07d761c9f26a980c9b2f93aeba2eec03150a"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase5.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase6.json": {
+      "bytes": 4665,
+      "sha256": "8a47edc0aadf543cfe4293ca4ba0f95c56ad3744db9c24273b79503f7e0836f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase6.stderr": {
+      "bytes": 2306,
+      "sha256": "26ac951a9d1fedac31fd04aa790ac05173ab467bba936f2f569fb27c320f49f0"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/phase6.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone1/results.json": {
+      "bytes": 40346,
+      "sha256": "d0dba0173f68837684ff0a3261f4cfb0f6934e9b282e64635b018aefd92d6c25"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/cdu.json": {
+      "bytes": 3740,
+      "sha256": "e6948f0e4d38d59164f683006570f3fd3d07fb911333eba63229bf7cbb74baa7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/cdu.stderr": {
+      "bytes": 1667,
+      "sha256": "f0f4e915a637b7b37678a9f222b9e04c350f98610dc34bf5f5481f999e648d5d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/cdu.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/commands.json": {
+      "bytes": 2668,
+      "sha256": "fc2b0996ccabf1a5f75e91298ad823fd93ad876ca5a932c6f8251e1544c4ee14"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/common.json": {
+      "bytes": 558,
+      "sha256": "6f95885455009dd776cf025b3a885b0b1c8d7d298fa7e79e6a780b18915b142d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/common.stderr": {
+      "bytes": 279,
+      "sha256": "42a891996a9a76acec4a2b1e5a25295b8c1c460cb338d1c99ed9c0a2ffcfd59f"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/common.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/plant.json": {
+      "bytes": 3548,
+      "sha256": "ee915ee36af9d67aa60bce98ad1b0fc87a6709f3eaac6c59273f278b181e542f"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/plant.stderr": {
+      "bytes": 1466,
+      "sha256": "1fa6228115fffad9385ce80711211a1aabdc4744e8ec56a375bb9c5e41396fe6"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/plant.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/preservation-after.json": {
+      "bytes": 266,
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/preservation-before.json": {
+      "bytes": 266,
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/results.json": {
+      "bytes": 12109,
+      "sha256": "d077501f832e3061a7a5c9ab35edab323e67e79599bf350641a9641c28209d8c"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/startup.json": {
+      "bytes": 2836,
+      "sha256": "0b045c5c1b779bf1a2c9c953db74e2e8d8515d50ab4ca393a2709d729896efdd"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/startup.stderr": {
+      "bytes": 1143,
+      "sha256": "ce7856a30eb35cd08d6f021d616ca36fed4477bec1af75a14ba4018336d3e9c1"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone2/startup.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/commands.json": {
+      "bytes": 1341,
+      "sha256": "fb7b9ce438a441d4119d2276bd7e260de02c4df2b9225e11fc51d8218bee2210"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/feedback.json": {
+      "bytes": 4659,
+      "sha256": "6f08c5153d077e57bed39a97f44ebf192d29d133ab7e0cda2b606ac5bd7da429"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/feedback.stderr": {
+      "bytes": 2109,
+      "sha256": "4bfc7071d860095615fcea94dda785f02a86ad91d8bf4b9d162964e8c21f2ef1"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/feedback.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/model.json": {
+      "bytes": 3256,
+      "sha256": "89a2c0cb4bf01481e7dd38342b964ee3c2b5a4d50bc680ca0935e43ed329d056"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/model.stderr": {
+      "bytes": 1446,
+      "sha256": "8005daf3ae263b8a1d849fa37b96da2a21bc60195e18ef10b011a7a670966273"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/model.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/milestone3/results.json": {
+      "bytes": 8941,
+      "sha256": "b5eaff6128f4d8399cea9344f179a502cd8618394e6fbca102e82979ed55338d"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/commands.json": {
+      "bytes": 1327,
+      "sha256": "3386d35d05ea4efcc6c778c69b5d20aee59b771c0829fbbe304e1fdc8c64c93b"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/integration.json": {
+      "bytes": 5530,
+      "sha256": "189383cb62026b50cc01642bb2d4275426b117de5ae0333ce056bf6eb88021a7"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/integration.stderr": {
+      "bytes": 2586,
+      "sha256": "993784799433db17470b2a738b32a28f86bcc4752bbe5b771206b35ba7d59de6"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/integration.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/physics.json": {
+      "bytes": 3700,
+      "sha256": "52ba4104acfcc82af15871d1de493578b3c40b8e88b5e4e776c44c0f4bbeb667"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/physics.stderr": {
+      "bytes": 1623,
+      "sha256": "87ef543963504c86fb341b81c387ee5809abadd14724bbe47bb7ff733e9a51df"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/physics.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/preservation-after.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/preservation-before.json": {
+      "bytes": 267,
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    "docs/phase7-evidence/release-checks/20261017T164459Z/tests/phase7/results.json": {
+      "bytes": 10381,
+      "sha256": "56014a0ad94a82a6f763d34d679f5976cfd93837076c9cea034a2190fb6bebd7"
+    }
+  },
+  "intentionalPostCheckDocumentationChanges": [
+    "README.md"
+  ],
+  "scope": "New release-check artifacts; original Phase7 package manifest remains unchanged"
+}

@@ -1,0 +1,21 @@
+test_adapter_protects_retained_paths_and_symlinks (test_physics.FreshPhysicsTests) ... ok
+test_adapter_rejects_changed_source_and_existing_destinations (test_physics.FreshPhysicsTests) ... ok
+test_assumed_inertias_and_source_jet_torque_are_positive_physical (test_physics.FreshPhysicsTests) ... ok
+test_bounds_and_nonconvergence_fail_explicitly (test_physics.FreshPhysicsTests) ... ok
+test_constant_principal_torque_uses_declared_semiimplicit_step (test_physics.FreshPhysicsTests) ... ok
+test_coordinate_roundtrip_and_rotation_matrix (test_physics.FreshPhysicsTests) ... ok
+test_fresh_actual_execution_and_complete_markers (test_physics.FreshPhysicsTests) ... ok
+test_inertial_momentum_direction_converges_at_first_order (test_physics.FreshPhysicsTests) ... ok
+test_original_gimbal_jacobian_matches_body_rate_quaternion (test_physics.FreshPhysicsTests) ... ok
+test_parser_rejects_incomplete_or_wrong_convention_trace (test_physics.FreshPhysicsTests) ... ok
+test_principal_physical_motion_emits_correct_signed_cdu_axis (test_physics.FreshPhysicsTests) ... ok
+test_source_locked_selectors_and_exact_decode (test_physics.FreshPhysicsTests) ... ok
+test_translation_logs_suppression_and_never_produces_pipa (test_physics.FreshPhysicsTests) ... ok
+test_two_torques_include_induced_third_axis_motion (test_physics.FreshPhysicsTests) ... ok
+test_unequal_inertia_torque_free_energy_and_momentum_norm (test_physics.FreshPhysicsTests) ... ok
+test_yaw_remains_within_legacy_predeclared_tolerance (test_physics.FreshPhysicsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.754s
+
+OK

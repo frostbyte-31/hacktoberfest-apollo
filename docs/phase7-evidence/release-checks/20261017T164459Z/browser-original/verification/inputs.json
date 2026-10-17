@@ -1,0 +1,17 @@
+{
+  "capturedUtc": "2026-10-17T16:39:24.926045+00:00",
+  "sha256": {
+    "frontend/README.md": "30a55a1c294c5b3fac854b85e9d33a70b3251e7b693cb9e4e3501f8a0479c4e4",
+    "frontend/dist/app.js": "bd0d3c1a26138eb33d96022a019f73486f81d8a36bc4c44735fd1ba6d00db86c",
+    "frontend/dist/data/replay.json": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+    "frontend/dist/favicon.svg": "1d76cf7cab439b68ed21d0dbf8caf698930ed8f773b90ece17da59334ec18390",
+    "frontend/dist/index.html": "a6ad0ef866c1549328fe9f9ec2a1eaf8fbf1cdc6dee895e68799fa3cf3abfecb",
+    "frontend/dist/replay.mjs": "5f22429eabb9a2f14bfd247cfe16917ab083dba3c3e94f3fe0d475efae2f6217",
+    "frontend/dist/spacecraft.mjs": "2a79c5aeded8c14a5242b0c31af7535ef6fc0393f30eebce6fe3697bb07634f1",
+    "frontend/dist/styles.css": "24b68aaf4df7d2bb590e543e491ea717ae808f7a0bdd60f41e7b9799cb854caf",
+    "frontend/serve.py": "468d1dc729c0f2471f3d6d763fdd27c55c6f1c861c8c4875f479752d543c2de0",
+    "frontend/tests/replay.test.mjs": "7c66811d46fc923be3b334f15b9f3f601ddde96b9db9a73a232e5cc97c5532c9",
+    "frontend/tests/test_replay.py": "e41d08178283683d71f70528a0857043c90a59a739941a22d2135c5f9d073be2",
+    "frontend/tools/export_replay.py": "06ee6fdb3799de605cd780dd64032952936f248b0903d9bb0151f20142c2c432"
+  }
+}

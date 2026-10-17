@@ -1,0 +1,56 @@
+[
+  {
+    "label": "export",
+    "argv": [
+      "python3",
+      "-B",
+      "frontend/tools/export_replay.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "startUtc": "2026-10-17T16:36:40.306461+00:00",
+    "endUtc": "2026-10-17T16:36:41.155302+00:00",
+    "exit": 0
+  },
+  {
+    "label": "python-tests",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "frontend/tests",
+      "-p",
+      "test_replay.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "startUtc": "2026-10-17T16:36:41.155427+00:00",
+    "endUtc": "2026-10-17T16:36:44.788364+00:00",
+    "exit": 0
+  },
+  {
+    "label": "presentation-tests",
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--test",
+      "frontend/tests/replay.test.mjs"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "startUtc": "2026-10-17T16:36:44.788517+00:00",
+    "endUtc": "2026-10-17T16:36:44.970586+00:00",
+    "exit": 0
+  },
+  {
+    "label": "phase7-regression",
+    "argv": [
+      "make",
+      "test-phase7"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "startUtc": "2026-10-17T16:36:44.970712+00:00",
+    "endUtc": "2026-10-17T16:36:51.958376+00:00",
+    "exit": 0
+  }
+]

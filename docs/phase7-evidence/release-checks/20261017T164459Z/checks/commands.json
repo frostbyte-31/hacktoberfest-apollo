@@ -1,0 +1,104 @@
+[
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:44:59.850023+00:00",
+    "exit": 0,
+    "label": "node-version",
+    "startUtc": "2026-10-17T16:44:59.807614+00:00"
+  },
+  {
+    "argv": [
+      "make",
+      "verify"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:44:59.922093+00:00",
+    "exit": 0,
+    "label": "verify",
+    "startUtc": "2026-10-17T16:44:59.850144+00:00"
+  },
+  {
+    "argv": [
+      "make",
+      "check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:05.944897+00:00",
+    "exit": 0,
+    "label": "make-check",
+    "startUtc": "2026-10-17T16:44:59.922240+00:00"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "frontend/tools/export_replay.py",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/release/20261017T164459Z/replay-regenerated.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:06.787964+00:00",
+    "exit": 0,
+    "label": "frontend-export",
+    "startUtc": "2026-10-17T16:46:05.945327+00:00"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "frontend/tests",
+      "-p",
+      "test_replay.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:10.340400+00:00",
+    "exit": 0,
+    "label": "frontend-python",
+    "startUtc": "2026-10-17T16:46:06.788136+00:00"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--test",
+      "frontend/tests/replay.test.mjs"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:10.512652+00:00",
+    "exit": 0,
+    "label": "frontend-node",
+    "startUtc": "2026-10-17T16:46:10.340579+00:00"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--check",
+      "frontend/dist/app.js"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:10.533348+00:00",
+    "exit": 0,
+    "label": "frontend-app-syntax",
+    "startUtc": "2026-10-17T16:46:10.512979+00:00"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--check",
+      "frontend/dist/spacecraft.mjs"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "endUtc": "2026-10-17T16:46:10.552592+00:00",
+    "exit": 0,
+    "label": "frontend-renderer-syntax",
+    "startUtc": "2026-10-17T16:46:10.533525+00:00"
+  }
+]

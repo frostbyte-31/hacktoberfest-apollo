@@ -1,0 +1,19 @@
+{
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+  "destination": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_imu.tcl",
+  "original_sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+  "selector_only_sha256": "3c714a71129faa2510d04f116d6348cc0b7728f85a526562a111956f35fa1d71",
+  "bounded_module_sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08",
+  "axis_guard_sha256": "b8aa7f4ed467eab1df3250a22b7ab308d6ddf33ac9610607bed8781c134dcf16",
+  "selector_changed_line": 527,
+  "original_selector": "if {$Omega_Yaw < 4} {",
+  "corrected_selector": "if {abs($Omega_Yaw) < 4} {",
+  "selector_replacements": 1,
+  "numerical_change": "Use abs(Omega_Yaw) for the existing <4 degree/second rate-mode boundary",
+  "boundary_change": "Public modify_gimbal_angle rejects nonzero dy/dz before invoking the upstream body",
+  "selector_diff": "--- pinned/AGC_IMU.tcl\n+++ selector-corrected/AGC_IMU.tcl\n@@ -524,7 +524,7 @@\n      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]\n      set ang_delta [expr $ang_delta - $ANGLE_INCR]\n      # ---- LM X-Axis/YAW-Axis ----\n-     if {$Omega_Yaw < 4} {\n+     if {abs($Omega_Yaw) < 4} {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 32} else {write_socket \"PCDU\" 32}\n      } else {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 32} else {write_socket \"PCDU_FAST\" 32}\n",
+  "complete_diff": "--- pinned/AGC_IMU.tcl\n+++ bounded-corrected/AGC_IMU.tcl\n@@ -524,7 +524,7 @@\n      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]\n      set ang_delta [expr $ang_delta - $ANGLE_INCR]\n      # ---- LM X-Axis/YAW-Axis ----\n-     if {$Omega_Yaw < 4} {\n+     if {abs($Omega_Yaw) < 4} {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 32} else {write_socket \"PCDU\" 32}\n      } else {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 32} else {write_socket \"PCDU_FAST\" 32}\n@@ -706,3 +706,15 @@\n  set gimbalLock 0\n  if {[winfo exists .imu] == 1} {move_fdai_marker}\n }\n+\n+# Milestone 3 boundary: only yaw / X-gimbal motion is validated.\n+# The original procedure body above differs only in the X rate selector.\n+namespace eval ::milestone3_yaw {}\n+rename modify_gimbal_angle ::milestone3_yaw::upstream_modify_gimbal_angle\n+proc modify_gimbal_angle {dx dy dz} {\n+    if {$dy != 0 || $dz != 0} {\n+        return -code error -errorcode {APOLLO MILESTONE3 UNSUPPORTED_AXIS} \\\n+            {Milestone 3 supports yaw / X-gimbal increments only}\n+    }\n+    ::milestone3_yaw::upstream_modify_gimbal_angle $dx $dy $dz\n+}\n",
+  "upstream_source_modified": false,
+  "scope": "Modern external model only; yaw / X-gimbal; no AGC, emulator or other-axis numerical change"
+}

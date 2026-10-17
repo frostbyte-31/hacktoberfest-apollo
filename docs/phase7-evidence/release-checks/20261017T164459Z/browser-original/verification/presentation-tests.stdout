@@ -1,0 +1,22 @@
+✔ exported real data satisfies the presentation contract (2.104125ms)
+✔ seeking holds the last real sample and never selects future telemetry (0.0685ms)
+✔ RCS words follow interleaved actual event edges without looking ahead (0.305ms)
+✔ source-derived jet names and bit positions remain distinct from axes (0.311958ms)
+✔ scalar-first active body-to-stable quaternion has the right handed sign (0.063375ms)
+✔ render rotation preserves vector lengths for actual compound attitude (0.036875ms)
+✔ SLERP follows the short quaternion arc and normalizes presentation (0.088083ms)
+✔ rendering freezes at the actual horizon without extrapolating residual rate (0.069458ms)
+✔ interpolated drawing does not mutate held actual samples (0.80275ms)
+✔ gimbal wrapping and octal register presentation preserve values (0.145292ms)
+✔ physical freeze is distinct from the one-count settlement tail (0.047416ms)
+✔ original readiness requires actual P00 and both original inhibition gates (0.095333ms)
+✔ malformed quaternion and command chronology fail rather than fabricate (12.661167ms)
+✔ non-numeric times and out-of-range authentic words are rejected (13.917208ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.893334

@@ -1,0 +1,31 @@
+{
+  "capturedUtc": "2026-10-17T16:39:24.926045+00:00",
+  "method": "Interactive browser checks through supported CUA API; screenshots in ../screenshots/",
+  "checks": {
+    "desktop_replay_loads": true,
+    "playback_advances_and_pauses": true,
+    "connected_disconnected_actual_data_switch": true,
+    "feedback_comparison": true,
+    "independent_pitch_cutoff": true,
+    "yaw_missing_controls_disabled": true,
+    "startup_modreg_sentinel_unknown": true,
+    "startup_inhibition_not_ready": true,
+    "no_data_unknown_at_zero": true,
+    "chart_window_toggle": true,
+    "axis_display_toggle": true,
+    "speed_selection": true,
+    "mobile_evidence_dialog": true,
+    "experiment_download": true,
+    "mobile_390_no_horizontal_overflow": true,
+    "desktop_946_no_horizontal_overflow": true,
+    "console_errors_or_warnings": 0
+  },
+  "downloadObserved": {
+    "case": "combined",
+    "frames": 376,
+    "rawSha256": "d218b35ee07bcca0f09eea1ca76d509c85fe9a6fdd9595a64e543ea6b490cf07",
+    "frozenCduY": 1476,
+    "settledCduY": 1477
+  },
+  "notes": "Checks demonstrate presentation of retained records, not a new live AGC/vehicle experiment. Browser viewport override reset."
+}

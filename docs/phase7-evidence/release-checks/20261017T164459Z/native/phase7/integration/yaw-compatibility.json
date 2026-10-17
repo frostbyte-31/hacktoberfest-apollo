@@ -1,0 +1,10 @@
+{
+  "timed_jets_exact": true,
+  "actual_cdu_applications_exact": true,
+  "physical_interval_boundaries_exact": true,
+  "max_rate_error_deg_s": 1.7479073743942308e-14,
+  "max_wrapped_gimbal_error_deg": 1.4154011296341196e-11,
+  "predeclared_rate_tolerance_deg_s": 1e-09,
+  "predeclared_gimbal_tolerance_deg": 1e-08,
+  "passed": true
+}

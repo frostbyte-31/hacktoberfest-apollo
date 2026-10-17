@@ -1,0 +1,32 @@
+{
+  "output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/frontend/dist/data/replay.json",
+  "bytes": 1497165,
+  "sha256": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+  "cases": {
+    "yaw": {
+      "frames": 470,
+      "rcsPackets": 1234,
+      "sensorsApplied": 1582
+    },
+    "pitch": {
+      "frames": 470,
+      "rcsPackets": 1234,
+      "sensorsApplied": 1707
+    },
+    "pitch_off": {
+      "frames": 470,
+      "rcsPackets": 1234,
+      "sensorsApplied": 0
+    },
+    "combined": {
+      "frames": 376,
+      "rcsPackets": 954,
+      "sensorsApplied": 2960
+    },
+    "combined_off": {
+      "frames": 376,
+      "rcsPackets": 954,
+      "sensorsApplied": 0
+    }
+  }
+}

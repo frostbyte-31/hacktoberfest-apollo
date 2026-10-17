@@ -1,0 +1,3189 @@
+{
+  "copiedFiles": [
+    {
+      "bytes": 2934,
+      "generatedPath": ".build/release/20261017T164459Z/commands.json",
+      "retainedPath": "checks/commands.json",
+      "sha256": "f84a08ac58e5e883955abf65dfc406b8fda9add068285f42f25902bc130eea90"
+    },
+    {
+      "bytes": 517,
+      "generatedPath": ".build/release/20261017T164459Z/completion.json",
+      "retainedPath": "checks/completion.json",
+      "sha256": "4e45e00de32a8cf3e51da26286994006e09680658183c6c812b707932ac52332"
+    },
+    {
+      "bytes": 369,
+      "generatedPath": ".build/release/20261017T164459Z/environment.json",
+      "retainedPath": "checks/environment.json",
+      "sha256": "4a5647f25e499ce04a6cc8eb111f920f5d20f04e014bfcb7bc774d6c25fd2827"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-app-syntax.stderr",
+      "retainedPath": "checks/frontend-app-syntax.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-app-syntax.stdout",
+      "retainedPath": "checks/frontend-app-syntax.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-export.stderr",
+      "retainedPath": "checks/frontend-export.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 736,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-export.stdout",
+      "retainedPath": "checks/frontend-export.stdout",
+      "sha256": "421850cd6b4e55fb81f21c7af06a7512e531af0cb7eaea2555bd64d937276012"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-node.stderr",
+      "retainedPath": "checks/frontend-node.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1295,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-node.stdout",
+      "retainedPath": "checks/frontend-node.stdout",
+      "sha256": "93ef2869791530dd370db00f41096d43119746f4acab117b59747b642c2beecb"
+    },
+    {
+      "bytes": 1157,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-python.stderr",
+      "retainedPath": "checks/frontend-python.stderr",
+      "sha256": "976944ebb2d8beb598eeb579427e2e2e7bacc10e5176c6b4ea09895e72079d9c"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-python.stdout",
+      "retainedPath": "checks/frontend-python.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-renderer-syntax.stderr",
+      "retainedPath": "checks/frontend-renderer-syntax.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/frontend-renderer-syntax.stdout",
+      "retainedPath": "checks/frontend-renderer-syntax.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 330346,
+      "generatedPath": ".build/release/20261017T164459Z/input-files.json",
+      "retainedPath": "checks/input-files.json",
+      "sha256": "1fdd806416d845c241aeaf5912f9cb72518580ae1f79c9e8c342e097d17329fa"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/make-check.stderr",
+      "retainedPath": "checks/make-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 16628,
+      "generatedPath": ".build/release/20261017T164459Z/make-check.stdout",
+      "retainedPath": "checks/make-check.stdout",
+      "sha256": "a72ee00a14cfa30eaa209c33844b6e9773e8f3266d10aec5f7ce19d39decc2d1"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/node-version.stderr",
+      "retainedPath": "checks/node-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9,
+      "generatedPath": ".build/release/20261017T164459Z/node-version.stdout",
+      "retainedPath": "checks/node-version.stdout",
+      "sha256": "b7677d3ec37ee1897ba07dc2cfe8292fe421c9ac93396cca5bbece486d1a2a41"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/release/20261017T164459Z/verify.stderr",
+      "retainedPath": "checks/verify.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 94237,
+      "generatedPath": ".build/release/20261017T164459Z/verify.stdout",
+      "retainedPath": "checks/verify.stdout",
+      "sha256": "74b9b8a8bacf547017f37b3fcb034aff1e8bd2a6e80c95d28932923532025079"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/integrity-after.json",
+      "retainedPath": "tests/milestone1/integrity-after.json",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/integrity-before.json",
+      "retainedPath": "tests/milestone1/integrity-before.json",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 12625,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/milestone1.json",
+      "retainedPath": "tests/milestone1/milestone1.json",
+      "sha256": "bdf02bd182317e2d0737e2616d46292505f11feb19ddaff5e61953f4babe2e93"
+    },
+    {
+      "bytes": 5351,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/milestone1.stderr",
+      "retainedPath": "tests/milestone1/milestone1.stderr",
+      "sha256": "75eedd00def8bb00485733c28dbf531587133670ecc64e09db027bac2b5cd43c"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/milestone1.stdout",
+      "retainedPath": "tests/milestone1/milestone1.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 776,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase2.json",
+      "retainedPath": "tests/milestone1/phase2.json",
+      "sha256": "902c79149cf9adf4d68a5ed0df89cc79823421b01c7f70ef3dd00fa066e05b73"
+    },
+    {
+      "bytes": 265,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase2.stderr",
+      "retainedPath": "tests/milestone1/phase2.stderr",
+      "sha256": "04f462371df100705d5112545611ba9c4b3186617d1d9daf96508d8ebcc49dad"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase2.stdout",
+      "retainedPath": "tests/milestone1/phase2.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1637,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase3.json",
+      "retainedPath": "tests/milestone1/phase3.json",
+      "sha256": "60481b72b4fb7f7b52cf8de3b79a85a180f6bc6a6f189730275166d29533f933"
+    },
+    {
+      "bytes": 513,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase3.stderr",
+      "retainedPath": "tests/milestone1/phase3.stderr",
+      "sha256": "367de8a6c2380ecacc5257d559419ecbacbbfd314d7e2665ab0735c27d32fa65"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase3.stdout",
+      "retainedPath": "tests/milestone1/phase3.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3525,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase4.json",
+      "retainedPath": "tests/milestone1/phase4.json",
+      "sha256": "ecfb182b58fbf30778708c22a461efd47aa622d87a17fb5583e47631765d3dd8"
+    },
+    {
+      "bytes": 1817,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase4.stderr",
+      "retainedPath": "tests/milestone1/phase4.stderr",
+      "sha256": "60613c7b5e8079c8c798706bd7e53e391d56587c6c1c9d7ab33d187a5fd048f0"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase4.stdout",
+      "retainedPath": "tests/milestone1/phase4.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4746,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase5.json",
+      "retainedPath": "tests/milestone1/phase5.json",
+      "sha256": "91b446700ff81c32a31238e8a6e8a749925afa5f1b699f8092eb008aa427edb5"
+    },
+    {
+      "bytes": 2255,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase5.stderr",
+      "retainedPath": "tests/milestone1/phase5.stderr",
+      "sha256": "fc40a0aff18037d10212c701bc7d07d761c9f26a980c9b2f93aeba2eec03150a"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase5.stdout",
+      "retainedPath": "tests/milestone1/phase5.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4665,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase6.json",
+      "retainedPath": "tests/milestone1/phase6.json",
+      "sha256": "8a47edc0aadf543cfe4293ca4ba0f95c56ad3744db9c24273b79503f7e0836f4"
+    },
+    {
+      "bytes": 2306,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase6.stderr",
+      "retainedPath": "tests/milestone1/phase6.stderr",
+      "sha256": "26ac951a9d1fedac31fd04aa790ac05173ab467bba936f2f569fb27c320f49f0"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/phase6.stdout",
+      "retainedPath": "tests/milestone1/phase6.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 40346,
+      "generatedPath": ".build/reproducibility/tests/tests-20261017T164459.977867Z/results.json",
+      "retainedPath": "tests/milestone1/results.json",
+      "sha256": "d0dba0173f68837684ff0a3261f4cfb0f6934e9b282e64635b018aefd92d6c25"
+    },
+    {
+      "bytes": 3740,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/cdu.json",
+      "retainedPath": "tests/milestone2/cdu.json",
+      "sha256": "e6948f0e4d38d59164f683006570f3fd3d07fb911333eba63229bf7cbb74baa7"
+    },
+    {
+      "bytes": 1667,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/cdu.stderr",
+      "retainedPath": "tests/milestone2/cdu.stderr",
+      "sha256": "f0f4e915a637b7b37678a9f222b9e04c350f98610dc34bf5f5481f999e648d5d"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/cdu.stdout",
+      "retainedPath": "tests/milestone2/cdu.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2668,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/commands.json",
+      "retainedPath": "tests/milestone2/commands.json",
+      "sha256": "fc2b0996ccabf1a5f75e91298ad823fd93ad876ca5a932c6f8251e1544c4ee14"
+    },
+    {
+      "bytes": 558,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/common.json",
+      "retainedPath": "tests/milestone2/common.json",
+      "sha256": "6f95885455009dd776cf025b3a885b0b1c8d7d298fa7e79e6a780b18915b142d"
+    },
+    {
+      "bytes": 279,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/common.stderr",
+      "retainedPath": "tests/milestone2/common.stderr",
+      "sha256": "42a891996a9a76acec4a2b1e5a25295b8c1c460cb338d1c99ed9c0a2ffcfd59f"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/common.stdout",
+      "retainedPath": "tests/milestone2/common.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3548,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/plant.json",
+      "retainedPath": "tests/milestone2/plant.json",
+      "sha256": "ee915ee36af9d67aa60bce98ad1b0fc87a6709f3eaac6c59273f278b181e542f"
+    },
+    {
+      "bytes": 1466,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/plant.stderr",
+      "retainedPath": "tests/milestone2/plant.stderr",
+      "sha256": "1fa6228115fffad9385ce80711211a1aabdc4744e8ec56a375bb9c5e41396fe6"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/plant.stdout",
+      "retainedPath": "tests/milestone2/plant.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 266,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/preservation-after.json",
+      "retainedPath": "tests/milestone2/preservation-after.json",
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    {
+      "bytes": 266,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/preservation-before.json",
+      "retainedPath": "tests/milestone2/preservation-before.json",
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    {
+      "bytes": 12109,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/results.json",
+      "retainedPath": "tests/milestone2/results.json",
+      "sha256": "d077501f832e3061a7a5c9ab35edab323e67e79599bf350641a9641c28209d8c"
+    },
+    {
+      "bytes": 2836,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/startup.json",
+      "retainedPath": "tests/milestone2/startup.json",
+      "sha256": "0b045c5c1b779bf1a2c9c953db74e2e8d8515d50ab4ca393a2709d729896efdd"
+    },
+    {
+      "bytes": 1143,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/startup.stderr",
+      "retainedPath": "tests/milestone2/startup.stderr",
+      "sha256": "ce7856a30eb35cd08d6f021d616ca36fed4477bec1af75a14ba4018336d3e9c1"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/tests/20261017T164501Z-0792c837/startup.stdout",
+      "retainedPath": "tests/milestone2/startup.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1341,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/commands.json",
+      "retainedPath": "tests/milestone3/commands.json",
+      "sha256": "fb7b9ce438a441d4119d2276bd7e260de02c4df2b9225e11fc51d8218bee2210"
+    },
+    {
+      "bytes": 4659,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/feedback.json",
+      "retainedPath": "tests/milestone3/feedback.json",
+      "sha256": "6f08c5153d077e57bed39a97f44ebf192d29d133ab7e0cda2b606ac5bd7da429"
+    },
+    {
+      "bytes": 2109,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/feedback.stderr",
+      "retainedPath": "tests/milestone3/feedback.stderr",
+      "sha256": "4bfc7071d860095615fcea94dda785f02a86ad91d8bf4b9d162964e8c21f2ef1"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/feedback.stdout",
+      "retainedPath": "tests/milestone3/feedback.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3256,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/model.json",
+      "retainedPath": "tests/milestone3/model.json",
+      "sha256": "89a2c0cb4bf01481e7dd38342b964ee3c2b5a4d50bc680ca0935e43ed329d056"
+    },
+    {
+      "bytes": 1446,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/model.stderr",
+      "retainedPath": "tests/milestone3/model.stderr",
+      "sha256": "8005daf3ae263b8a1d849fa37b96da2a21bc60195e18ef10b011a7a670966273"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/model.stdout",
+      "retainedPath": "tests/milestone3/model.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/preservation-after.json",
+      "retainedPath": "tests/milestone3/preservation-after.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/preservation-before.json",
+      "retainedPath": "tests/milestone3/preservation-before.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 8941,
+      "generatedPath": ".build/milestone3/tests/20261017T164504Z-55144cef/results.json",
+      "retainedPath": "tests/milestone3/results.json",
+      "sha256": "b5eaff6128f4d8399cea9344f179a502cd8618394e6fbca102e82979ed55338d"
+    },
+    {
+      "bytes": 1327,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/commands.json",
+      "retainedPath": "tests/phase7/commands.json",
+      "sha256": "3386d35d05ea4efcc6c778c69b5d20aee59b771c0829fbbe304e1fdc8c64c93b"
+    },
+    {
+      "bytes": 5530,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/integration.json",
+      "retainedPath": "tests/phase7/integration.json",
+      "sha256": "189383cb62026b50cc01642bb2d4275426b117de5ae0333ce056bf6eb88021a7"
+    },
+    {
+      "bytes": 2586,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/integration.stderr",
+      "retainedPath": "tests/phase7/integration.stderr",
+      "sha256": "993784799433db17470b2a738b32a28f86bcc4752bbe5b771206b35ba7d59de6"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/integration.stdout",
+      "retainedPath": "tests/phase7/integration.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3700,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/physics.json",
+      "retainedPath": "tests/phase7/physics.json",
+      "sha256": "52ba4104acfcc82af15871d1de493578b3c40b8e88b5e4e776c44c0f4bbeb667"
+    },
+    {
+      "bytes": 1623,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/physics.stderr",
+      "retainedPath": "tests/phase7/physics.stderr",
+      "sha256": "87ef543963504c86fb341b81c387ee5809abadd14724bbe47bb7ff733e9a51df"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/physics.stdout",
+      "retainedPath": "tests/phase7/physics.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/preservation-after.json",
+      "retainedPath": "tests/phase7/preservation-after.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/preservation-before.json",
+      "retainedPath": "tests/phase7/preservation-before.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 10381,
+      "generatedPath": ".build/phase7/tests/20261017T164531Z-fe528a23/results.json",
+      "retainedPath": "tests/phase7/results.json",
+      "sha256": "56014a0ad94a82a6f763d34d679f5976cfd93837076c9cea034a2190fb6bebd7"
+    },
+    {
+      "bytes": 2405,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/SUMMARY.md",
+      "retainedPath": "native/phase6-reproduction/SUMMARY.md",
+      "sha256": "5376611419d78911d6bdff828a16199f6b753ebf5964340a5efbeced5d6b74ba"
+    },
+    {
+      "bytes": 174,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/binary_hashes.json",
+      "retainedPath": "native/phase6-reproduction/binary_hashes.json",
+      "sha256": "b230dace7756848d9828fe2be7d48043d20b5aaa0b026d117df260393a85d766"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/build.stderr",
+      "retainedPath": "native/phase6-reproduction/build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/build.stdout",
+      "retainedPath": "native/phase6-reproduction/build.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.jsonl.tcl.stderr",
+      "retainedPath": "native/phase6-reproduction/closed.jsonl.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 960,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.launch.json",
+      "retainedPath": "native/phase6-reproduction/closed.launch.json",
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.stderr",
+      "retainedPath": "native/phase6-reproduction/closed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.stdout",
+      "retainedPath": "native/phase6-reproduction/closed.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2825,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.summary.json",
+      "retainedPath": "native/phase6-reproduction/closed.summary.json",
+      "sha256": "990a931344f57db6bb0bf01aad31637a23b51ff9464e9c82ecfd46bedd42cfe4"
+    },
+    {
+      "bytes": 6567,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/commands.json",
+      "retainedPath": "native/phase6-reproduction/commands.json",
+      "sha256": "cf9d34f2d40b6c5521f80ca6ed92e1fae638a0062a686e275a28d19e56587908"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/compiler-version.stderr",
+      "retainedPath": "native/phase6-reproduction/compiler-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/compiler-version.stdout",
+      "retainedPath": "native/phase6-reproduction/compiler-version.stdout",
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    {
+      "bytes": 268,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/completion.json",
+      "retainedPath": "native/phase6-reproduction/completion.json",
+      "sha256": "87d7276528c7d3cecf9d51e07d5dd31d79cdebc5b7d339408d7afd5de39b7a3a"
+    },
+    {
+      "bytes": 3199,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/environment.json",
+      "retainedPath": "native/phase6-reproduction/environment.json",
+      "sha256": "b6d6dbc637982fdadb71432258c09137b1f7062720aa55dedecdf376066a0a89"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.jsonl.tcl.stderr",
+      "retainedPath": "native/phase6-reproduction/feedback_off.jsonl.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 960,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.launch.json",
+      "retainedPath": "native/phase6-reproduction/feedback_off.launch.json",
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.stderr",
+      "retainedPath": "native/phase6-reproduction/feedback_off.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.stdout",
+      "retainedPath": "native/phase6-reproduction/feedback_off.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2337,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.summary.json",
+      "retainedPath": "native/phase6-reproduction/feedback_off.summary.json",
+      "sha256": "3485ef121d74b98f335eaef68553ad73f75435fb95643c4bf3327c3921b835f8"
+    },
+    {
+      "bytes": 707,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/initial_conditions.json",
+      "retainedPath": "native/phase6-reproduction/initial_conditions.json",
+      "sha256": "ecee4cd4a9f94681dd15fb1b57966ec8e276d389e7c5994bfba502ac08ebbef4"
+    },
+    {
+      "bytes": 7279,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/inputs_source_hashes.json",
+      "retainedPath": "native/phase6-reproduction/inputs_source_hashes.json",
+      "sha256": "2d2e9e6fc125807ad11f44a3872d29e3d20dee3423691ff1f3be5fbac01482fc"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/integrity.stderr",
+      "retainedPath": "native/phase6-reproduction/integrity.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/integrity.stdout",
+      "retainedPath": "native/phase6-reproduction/integrity.stdout",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/preservation-after.json",
+      "retainedPath": "native/phase6-reproduction/preservation-after.json",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/preservation-after.stderr",
+      "retainedPath": "native/phase6-reproduction/preservation-after.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/preservation-after.stdout",
+      "retainedPath": "native/phase6-reproduction/preservation-after.stdout",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.jsonl.tcl.stderr",
+      "retainedPath": "native/phase6-reproduction/repeat.jsonl.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 960,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.launch.json",
+      "retainedPath": "native/phase6-reproduction/repeat.launch.json",
+      "sha256": "5c46f0f7dfba4096437b63a57efe61acffe3a8a943f421d340d5f8544ca7beb4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.stderr",
+      "retainedPath": "native/phase6-reproduction/repeat.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.stdout",
+      "retainedPath": "native/phase6-reproduction/repeat.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2825,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.summary.json",
+      "retainedPath": "native/phase6-reproduction/repeat.summary.json",
+      "sha256": "4dc9a76daf9ecb593538298f180c8bd463cebb11bc9aa41cacb52aa62366f255"
+    },
+    {
+      "bytes": 94185,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/retained-integrity.json",
+      "retainedPath": "native/phase6-reproduction/retained-integrity.json",
+      "sha256": "5af4b945795477bd0c988ed0c58bf66b4ba123f0599399302e4a2ed3495dbcf9"
+    },
+    {
+      "bytes": 906,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/retained-trace-comparison.json",
+      "retainedPath": "native/phase6-reproduction/retained-trace-comparison.json",
+      "sha256": "dab79ead9307481c6e9fd8571e633a94429c2e43fe7c00dbc774b322ac96c806"
+    },
+    {
+      "bytes": 322,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/validation.json",
+      "retainedPath": "native/phase6-reproduction/validation.json",
+      "sha256": "9e24aefccfaa14b6e65267c7121b91381a540e9b97781f261bec1a262cda7203"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/alternating_supported-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/alternating_supported-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported.stderr",
+      "retainedPath": "native/milestone2/cdu/alternating_supported.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported.stdout",
+      "retainedPath": "native/milestone2/cdu/alternating_supported.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/build.stderr",
+      "retainedPath": "native/milestone2/cdu/build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/build.stdout",
+      "retainedPath": "native/milestone2/cdu/build.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 15107,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/commands.json",
+      "retainedPath": "native/milestone2/cdu/commands.json",
+      "sha256": "357de7b9073915c2b025912e1d58501ffcab2664ede838bda8741bed2ca2a001"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/compiler-version.stderr",
+      "retainedPath": "native/milestone2/cdu/compiler-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/compiler-version.stdout",
+      "retainedPath": "native/milestone2/cdu/compiler-version.stdout",
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control.stderr",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control.stdout",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2723,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/inputs.json",
+      "retainedPath": "native/milestone2/cdu/inputs.json",
+      "sha256": "d761ec887c846308c3f995ee4c8cb7d70107d02435bc73a572be5a2c9d03db8c"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/mixed-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/mixed-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed.stderr",
+      "retainedPath": "native/milestone2/cdu/mixed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed.stdout",
+      "retainedPath": "native/milestone2/cdu/mixed.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/negative_fast-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/negative_fast-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast.stderr",
+      "retainedPath": "native/milestone2/cdu/negative_fast.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast.stdout",
+      "retainedPath": "native/milestone2/cdu/negative_fast.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/negative_slow-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/negative_slow-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow.stderr",
+      "retainedPath": "native/milestone2/cdu/negative_slow.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow.stdout",
+      "retainedPath": "native/milestone2/cdu/negative_slow.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/positive_fast-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/positive_fast-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast.stderr",
+      "retainedPath": "native/milestone2/cdu/positive_fast.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast.stdout",
+      "retainedPath": "native/milestone2/cdu/positive_fast.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/positive_slow-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/positive_slow-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow.stderr",
+      "retainedPath": "native/milestone2/cdu/positive_slow.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow.stdout",
+      "retainedPath": "native/milestone2/cdu/positive_slow.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/python-version.stderr",
+      "retainedPath": "native/milestone2/cdu/python-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 13,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/python-version.stdout",
+      "retainedPath": "native/milestone2/cdu/python-version.stdout",
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control.stderr",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control.stdout",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap-replay.stderr",
+      "retainedPath": "native/milestone2/cdu/signed_wrap-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap-replay.stdout",
+      "retainedPath": "native/milestone2/cdu/signed_wrap-replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap.stderr",
+      "retainedPath": "native/milestone2/cdu/signed_wrap.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap.stdout",
+      "retainedPath": "native/milestone2/cdu/signed_wrap.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11265,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/summary.json",
+      "retainedPath": "native/milestone2/cdu/summary.json",
+      "sha256": "3828bee40554a757563435bd04cced5bb027613d56be5dca085a457a29242eb0"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu.stderr",
+      "retainedPath": "native/milestone2/cdu.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3434,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu.stdout",
+      "retainedPath": "native/milestone2/cdu.stdout",
+      "sha256": "1131d11b19db0d49032cd92501dd6617883bfcd8819cdcc58e183491f0f0a5bd"
+    },
+    {
+      "bytes": 2280,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/commands.json",
+      "retainedPath": "native/milestone2/commands.json",
+      "sha256": "8f13225311e3dec723323ac3f4ed6d158f42d552b8c5fa55473e8f8c55aea13d"
+    },
+    {
+      "bytes": 306,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/completion.json",
+      "retainedPath": "native/milestone2/completion.json",
+      "sha256": "0bfb5ca0965b6fc9a8e8755b0038f1e5c69e360d78cd9b58fcb347f5f1319607"
+    },
+    {
+      "bytes": 2910,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/environment.json",
+      "retainedPath": "native/milestone2/environment.json",
+      "sha256": "86136de979883016bce3ee2a3d31da33528433146474635f9bd4a5a32eaafb07"
+    },
+    {
+      "bytes": 2882,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/inputs_source_hashes.json",
+      "retainedPath": "native/milestone2/inputs_source_hashes.json",
+      "sha256": "5da2851577a56fd8f9d232330c93f97296c5ce05f88665a61e5835727251de0f"
+    },
+    {
+      "bytes": 665,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/commands.json",
+      "retainedPath": "native/milestone2/plant/commands.json",
+      "sha256": "7133fbb467c526a8214bece60f2625ef7b9ebdab27aed7109ff08831449aa594"
+    },
+    {
+      "bytes": 2670,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/environment.json",
+      "retainedPath": "native/milestone2/plant/environment.json",
+      "sha256": "7b815e592714f7004727680b09f483e06fdfb8da86fd6eab41c2175992f2a0fd"
+    },
+    {
+      "bytes": 1295,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/probe-inputs.txt",
+      "retainedPath": "native/milestone2/plant/probe-inputs.txt",
+      "sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/probe.stderr",
+      "retainedPath": "native/milestone2/plant/probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 126227,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/probe.stdout",
+      "retainedPath": "native/milestone2/plant/probe.stdout",
+      "sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd"
+    },
+    {
+      "bytes": 4442,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/scenarios.json",
+      "retainedPath": "native/milestone2/plant/scenarios.json",
+      "sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b"
+    },
+    {
+      "bytes": 20681,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/source-audit.json",
+      "retainedPath": "native/milestone2/plant/source-audit.json",
+      "sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a"
+    },
+    {
+      "bytes": 9821,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/summary.json",
+      "retainedPath": "native/milestone2/plant/summary.json",
+      "sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3"
+    },
+    {
+      "bytes": 613,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/validation.json",
+      "retainedPath": "native/milestone2/plant/validation.json",
+      "sha256": "e2a12b1a548da97aceaf383875aea3e85e5fd7a9d74d344389ef256543d0d3b0"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant.stderr",
+      "retainedPath": "native/milestone2/plant.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 59,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant.stdout",
+      "retainedPath": "native/milestone2/plant.stdout",
+      "sha256": "15c4a58610c263f152882d935e880a6e439c35099916990dbba4fc356f24afe4"
+    },
+    {
+      "bytes": 266,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/preservation-after.json",
+      "retainedPath": "native/milestone2/preservation-after.json",
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    {
+      "bytes": 266,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/preservation-before.json",
+      "retainedPath": "native/milestone2/preservation-before.json",
+      "sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    {
+      "bytes": 90,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/binary_hashes.json",
+      "retainedPath": "native/milestone2/startup/binary_hashes.json",
+      "sha256": "be17f8a10c43fdc3ae82b93124337076289ceedc87f2c4aff32d500dd8941a93"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/build.stderr",
+      "retainedPath": "native/milestone2/startup/build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/build.stdout",
+      "retainedPath": "native/milestone2/startup/build.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5937,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/commands.json",
+      "retainedPath": "native/milestone2/startup/commands.json",
+      "sha256": "581d47183905235d522d88bd8e0f4ad6cbcfb24d05d542ffa64103e154a23ca4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/compiler-version.stderr",
+      "retainedPath": "native/milestone2/startup/compiler-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/compiler-version.stdout",
+      "retainedPath": "native/milestone2/startup/compiler-version.stdout",
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/completion.json",
+      "retainedPath": "native/milestone2/startup/completion.json",
+      "sha256": "a3f17d18fef65610aafd94200829dc2806585e720aee3e312112e0c09f3134ee"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/delayed.inputs.txt",
+      "retainedPath": "native/milestone2/startup/delayed.inputs.txt",
+      "sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/delayed.stderr",
+      "retainedPath": "native/milestone2/startup/delayed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 254304,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/delayed.stdout",
+      "retainedPath": "native/milestone2/startup/delayed.stdout",
+      "sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/imu_off.inputs.txt",
+      "retainedPath": "native/milestone2/startup/imu_off.inputs.txt",
+      "sha256": "323482762555ca6d4724b3bc52e175cff3ca4bb8603a99f7e7aafa27560b0d97"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/imu_off.stderr",
+      "retainedPath": "native/milestone2/startup/imu_off.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 247558,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/imu_off.stdout",
+      "retainedPath": "native/milestone2/startup/imu_off.stdout",
+      "sha256": "eab2852b9ad4c9fec9d6959ded7c0b44c24188603350e2f5a4901d7875b7e287"
+    },
+    {
+      "bytes": 884,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/initial_conditions.json",
+      "retainedPath": "native/milestone2/startup/initial_conditions.json",
+      "sha256": "563d81a6baca55a8cde45f0e0445d98e4bb31cea10a92f6493b582b8b72dd2f9"
+    },
+    {
+      "bytes": 6455,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/inputs_source_hashes.json",
+      "retainedPath": "native/milestone2/startup/inputs_source_hashes.json",
+      "sha256": "bc0ffeee829adf1e541b6ba9fc9dd35191464f47ddc64cb730422944f21ea392"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/legacy.inputs.txt",
+      "retainedPath": "native/milestone2/startup/legacy.inputs.txt",
+      "sha256": "9692fbb5d50a1f063b95744ba25e6a730f3e88684ea112288339c77feb2e82cf"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/legacy.stderr",
+      "retainedPath": "native/milestone2/startup/legacy.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 248558,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/legacy.stdout",
+      "retainedPath": "native/milestone2/startup/legacy.stdout",
+      "sha256": "882f5e0ed95565ab4ad77511cb78c8b69953a2429c40d1f301abb2c79b6da3dd"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/repeat.inputs.txt",
+      "retainedPath": "native/milestone2/startup/repeat.inputs.txt",
+      "sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/repeat.stderr",
+      "retainedPath": "native/milestone2/startup/repeat.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 254304,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/repeat.stdout",
+      "retainedPath": "native/milestone2/startup/repeat.stdout",
+      "sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    {
+      "bytes": 1570,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/resolved_addresses.json",
+      "retainedPath": "native/milestone2/startup/resolved_addresses.json",
+      "sha256": "26a10951092cdfcc7a37d8a4214e38ec63c7c8919dbe8bcc3f46e0a0c5deae39"
+    },
+    {
+      "bytes": 7363,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/summary.json",
+      "retainedPath": "native/milestone2/startup/summary.json",
+      "sha256": "279eca3aec605a2544c1a0db03553f15a24b2d9633f3c8ac33db048c4ba0aded"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_after_ready.inputs.txt",
+      "retainedPath": "native/milestone2/startup/v37_after_ready.inputs.txt",
+      "sha256": "21269e22891907c7d8595726d4483ce14c93551b126ad16cb4b1bd97ff82be56"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_after_ready.stderr",
+      "retainedPath": "native/milestone2/startup/v37_after_ready.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 254094,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_after_ready.stdout",
+      "retainedPath": "native/milestone2/startup/v37_after_ready.stdout",
+      "sha256": "a56855dcffd766e8fddadfacb8076d414cfd2f122fa1e08b52076a3788d7f99d"
+    },
+    {
+      "bytes": 186,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_before_ready.inputs.txt",
+      "retainedPath": "native/milestone2/startup/v37_before_ready.inputs.txt",
+      "sha256": "14d58fa21095bc6c886febfa36903b71b63aa00dbd1241e9fa3588934de506a5"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_before_ready.stderr",
+      "retainedPath": "native/milestone2/startup/v37_before_ready.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 248479,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/v37_before_ready.stdout",
+      "retainedPath": "native/milestone2/startup/v37_before_ready.stdout",
+      "sha256": "3ec8c4e6db3d5d250fb946de27fe12808d1f97f5fa2b04ecc5ca9f84ae19f672"
+    },
+    {
+      "bytes": 808,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/validation.json",
+      "retainedPath": "native/milestone2/startup/validation.json",
+      "sha256": "813fc6ba7926cffbfb2ca79ece0f867676eb75660bba5821a34dc087bf5c8583"
+    },
+    {
+      "bytes": 136,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/without_v36.inputs.txt",
+      "retainedPath": "native/milestone2/startup/without_v36.inputs.txt",
+      "sha256": "a23004cc127d03da8ad8a815ac94e14048bb1e92c505c9c2d6600434c09cf367"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/without_v36.stderr",
+      "retainedPath": "native/milestone2/startup/without_v36.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 251367,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/without_v36.stdout",
+      "retainedPath": "native/milestone2/startup/without_v36.stdout",
+      "sha256": "34a9cefa241221d918726b4ab2ec3d632890a2508dea27d8b2d68281e3ec94d2"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup.stderr",
+      "retainedPath": "native/milestone2/startup.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 108,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup.stdout",
+      "retainedPath": "native/milestone2/startup.stdout",
+      "sha256": "51c71e96c709d01c796ae714078cc3a76f2530daf50741b50121a019958fc713"
+    },
+    {
+      "bytes": 1940,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/commands.json",
+      "retainedPath": "native/milestone3/commands.json",
+      "sha256": "802740170b94584fd1875b586e556ddb0e3b480e5dda844ed5b361da62b9a7ac"
+    },
+    {
+      "bytes": 331,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/completion.json",
+      "retainedPath": "native/milestone3/completion.json",
+      "sha256": "1dcf069ca4e8c93e6e7e08019dac555a2820fae27e4a2ced77ebf7ab3a49f587"
+    },
+    {
+      "bytes": 2916,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/environment.json",
+      "retainedPath": "native/milestone3/environment.json",
+      "sha256": "4a992b416cb6df46a502593d54851281ee1f9273bc44ab3b635b53f1b5ba213d"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/build.stderr",
+      "retainedPath": "native/milestone3/feedback/build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/build.stdout",
+      "retainedPath": "native/milestone3/feedback/build.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7984,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/commands.json",
+      "retainedPath": "native/milestone3/feedback/commands.json",
+      "sha256": "d4b3bcd509565c178a09666480fa29e0dbbb433ab6c298426765a922dc44571d"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/compiler-version.stderr",
+      "retainedPath": "native/milestone3/feedback/compiler-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/compiler-version.stdout",
+      "retainedPath": "native/milestone3/feedback/compiler-version.stdout",
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_drain.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_drain.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_drain.stdout",
+      "retainedPath": "native/milestone3/feedback/corrected_drain.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_drain.tcl.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_drain.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_feedback_off.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_feedback_off.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_feedback_off.stdout",
+      "retainedPath": "native/milestone3/feedback/corrected_feedback_off.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_feedback_off.tcl.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_feedback_off.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 32810,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_imu.tcl",
+      "retainedPath": "native/milestone3/feedback/corrected_imu.tcl",
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_negative.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_negative.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_negative.stdout",
+      "retainedPath": "native/milestone3/feedback/corrected_negative.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_negative.tcl.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_negative.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_repeat.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_repeat.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_repeat.stdout",
+      "retainedPath": "native/milestone3/feedback/corrected_repeat.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_repeat.tcl.stderr",
+      "retainedPath": "native/milestone3/feedback/corrected_repeat.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1224,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_server.tcl",
+      "retainedPath": "native/milestone3/feedback/corrected_server.tcl",
+      "sha256": "e38f109fd616823260fdaeaa7a035c3b40bc2efd13d0d05c6e79d464655cd2e1"
+    },
+    {
+      "bytes": 1088,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/executed-retained-plant_server.tcl",
+      "retainedPath": "native/milestone3/feedback/executed-retained-plant_server.tcl",
+      "sha256": "9e14770f744d3d2b7ffa09cb5f05a489de19b812526463a939df4b69f714622b"
+    },
+    {
+      "bytes": 35063,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/executed-run_validation.py",
+      "retainedPath": "native/milestone3/feedback/executed-run_validation.py",
+      "sha256": "a5fcde720c17b19d240d2ca71a7dcb2f0d2721751da51931c5dc758490a4c74a"
+    },
+    {
+      "bytes": 9535,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/executed-test_feedback.py",
+      "retainedPath": "native/milestone3/feedback/executed-test_feedback.py",
+      "sha256": "34006da23c557d8c582553ef8b96d85c2a98f62bfaf3b43c4896f916e4d52a08"
+    },
+    {
+      "bytes": 3273,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/inputs_source_hashes.json",
+      "retainedPath": "native/milestone3/feedback/inputs_source_hashes.json",
+      "sha256": "b8080bcaee6e56e81362f66d547dba869200c0cc2a87436cc01d398e0f2574d4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/original_negative.stderr",
+      "retainedPath": "native/milestone3/feedback/original_negative.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/original_negative.stdout",
+      "retainedPath": "native/milestone3/feedback/original_negative.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/original_negative.tcl.stderr",
+      "retainedPath": "native/milestone3/feedback/original_negative.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/preservation-after.json",
+      "retainedPath": "native/milestone3/feedback/preservation-after.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/preservation-before.json",
+      "retainedPath": "native/milestone3/feedback/preservation-before.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/python-version.stderr",
+      "retainedPath": "native/milestone3/feedback/python-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 13,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/python-version.stdout",
+      "retainedPath": "native/milestone3/feedback/python-version.stdout",
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    {
+      "bytes": 2369,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/runtime-validation.json",
+      "retainedPath": "native/milestone3/feedback/runtime-validation.json",
+      "sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14"
+    },
+    {
+      "bytes": 2953,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/selector-audit.json",
+      "retainedPath": "native/milestone3/feedback/selector-audit.json",
+      "sha256": "6541963aa9f5b2951536ac3cf7f2a09b4a68bcde20fb7f7b68b23718ac9a0ad2"
+    },
+    {
+      "bytes": 390517,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/summary.json",
+      "retainedPath": "native/milestone3/feedback/summary.json",
+      "sha256": "8f0e5e07f182a1c79b4fbef768ac90d67a495741524dd07353db8a985e2fd317"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback.stderr",
+      "retainedPath": "native/milestone3/feedback.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2791,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback.stdout",
+      "retainedPath": "native/milestone3/feedback.stdout",
+      "sha256": "bc66126c128732075fed18fc1f544baad84ce49730e4cd13793f8f66f8d0bd5d"
+    },
+    {
+      "bytes": 2035,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/inputs_source_hashes.json",
+      "retainedPath": "native/milestone3/inputs_source_hashes.json",
+      "sha256": "891898313d8638c0596bacfb1261f5dae1a3884fa91f33db38ccf394bad502bd"
+    },
+    {
+      "bytes": 32810,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/AGC_IMU.corrected-yaw.tcl",
+      "retainedPath": "native/milestone3/model/AGC_IMU.corrected-yaw.tcl",
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/axis-guard.stderr",
+      "retainedPath": "native/milestone3/model/axis-guard.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 224,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/axis-guard.stdout",
+      "retainedPath": "native/milestone3/model/axis-guard.stdout",
+      "sha256": "e3b670f4babf415a2116504c538d8cbce6303283ad4dd013ef5e6aa87d383c7a"
+    },
+    {
+      "bytes": 2410,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/commands.json",
+      "retainedPath": "native/milestone3/model/commands.json",
+      "sha256": "c759b52781d1e5573477a2475b01858cfff64e91c52dd9444076845e4b42cc83"
+    },
+    {
+      "bytes": 1117,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/complete.diff",
+      "retainedPath": "native/milestone3/model/complete.diff",
+      "sha256": "b9f80fb2160ba0f2e6e115349b4315e4bbce826f63ea7941f8429da622cd5ff1"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/corrected.stderr",
+      "retainedPath": "native/milestone3/model/corrected.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 133502,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/corrected.stdout",
+      "retainedPath": "native/milestone3/model/corrected.stdout",
+      "sha256": "82071754760b5e62234b1e3ceb5af5914023daeb2e9f9a7e87f06dca84938b66"
+    },
+    {
+      "bytes": 9841,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/corrected.summary.json",
+      "retainedPath": "native/milestone3/model/corrected.summary.json",
+      "sha256": "1a8f0f9fba419b2eb62f00ea19aadfa6a9f2f1cf216eb74835c3a9bb1a80f8bb"
+    },
+    {
+      "bytes": 2702,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/environment.json",
+      "retainedPath": "native/milestone3/model/environment.json",
+      "sha256": "7e11592053cb2a68c3cb8a2b51bf36b8b79b3ceca71da42b992921dcfd2d891e"
+    },
+    {
+      "bytes": 1040,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/guard-probe.tcl",
+      "retainedPath": "native/milestone3/model/guard-probe.tcl",
+      "sha256": "c6a55da3e5484d4b0e2418f637b8cee405499e467aeadef240f0c2e7aaf0d864"
+    },
+    {
+      "bytes": 1471,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/inputs_source_hashes.json",
+      "retainedPath": "native/milestone3/model/inputs_source_hashes.json",
+      "sha256": "9df55d68d558b28882d72338633eee0cd1c0277c5359deceff5b7b1c63bec578"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/original.stderr",
+      "retainedPath": "native/milestone3/model/original.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 126227,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/original.stdout",
+      "retainedPath": "native/milestone3/model/original.stdout",
+      "sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd"
+    },
+    {
+      "bytes": 9821,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/original.summary.json",
+      "retainedPath": "native/milestone3/model/original.summary.json",
+      "sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3"
+    },
+    {
+      "bytes": 471,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/probe-adapter.diff",
+      "retainedPath": "native/milestone3/model/probe-adapter.diff",
+      "sha256": "27944f89463ff3a762c08f5ae57aa642f33a636a662c88f294e728b9dbaae9fa"
+    },
+    {
+      "bytes": 1295,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/probe-inputs.txt",
+      "retainedPath": "native/milestone3/model/probe-inputs.txt",
+      "sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7"
+    },
+    {
+      "bytes": 1519,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/probe-with-module-argument.tcl",
+      "retainedPath": "native/milestone3/model/probe-with-module-argument.tcl",
+      "sha256": "95653fbd2a6e2f6cb27c15f0123402f11b96cc20632302287fa132f79073cdb5"
+    },
+    {
+      "bytes": 4442,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/scenarios.json",
+      "retainedPath": "native/milestone3/model/scenarios.json",
+      "sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b"
+    },
+    {
+      "bytes": 2958,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/selector-audit.json",
+      "retainedPath": "native/milestone3/model/selector-audit.json",
+      "sha256": "ffcc34b6714d01492bae637bbeaf8b58bb0b9fae8069d7aa0f5564d892bd1397"
+    },
+    {
+      "bytes": 480,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/selector.diff",
+      "retainedPath": "native/milestone3/model/selector.diff",
+      "sha256": "6c681750dcfec600e1520c664d80ac11c8f4af70f6b9355393dfebbbe1085a92"
+    },
+    {
+      "bytes": 20681,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/source-audit.json",
+      "retainedPath": "native/milestone3/model/source-audit.json",
+      "sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a"
+    },
+    {
+      "bytes": 525,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/validation.json",
+      "retainedPath": "native/milestone3/model/validation.json",
+      "sha256": "97930104f978ec5970217a791b0d7b59cb8ca19da7b41ffaf2d9d186ad0b76bd"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model.stderr",
+      "retainedPath": "native/milestone3/model.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 71,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model.stdout",
+      "retainedPath": "native/milestone3/model.stdout",
+      "sha256": "4bc5b36ee1eba7dff30325c87b7bc98b99e1db48cd104f737ba54a9fc6b6aa62"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/preservation-after.json",
+      "retainedPath": "native/milestone3/preservation-after.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/preservation-before.json",
+      "retainedPath": "native/milestone3/preservation-before.json",
+      "sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    {
+      "bytes": 2351,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/commands.json",
+      "retainedPath": "native/phase7/commands.json",
+      "sha256": "af217669a001cf396578d0e5456a26900f72a12f477f02950678b94c5b07e061"
+    },
+    {
+      "bytes": 187,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/completion.json",
+      "retainedPath": "native/phase7/completion.json",
+      "sha256": "29922567cfb82126cb09a56dffccf2a4ef45ff7fe3bae9442bbd9ab943f1b16c"
+    },
+    {
+      "bytes": 2933,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/environment.json",
+      "retainedPath": "native/phase7/environment.json",
+      "sha256": "2051ea836e30a662742fb8048e8b3e31932dcd04025fa0c59c8dc3f6df930c11"
+    },
+    {
+      "bytes": 3023,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/inputs_source_hashes.json",
+      "retainedPath": "native/phase7/inputs_source_hashes.json",
+      "sha256": "1a3566d22d2d9e130fc95cdf9b0ada87a6a4145696ed8f05601cd0687451c852"
+    },
+    {
+      "bytes": 205,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/baseline-comparison.json",
+      "retainedPath": "native/phase7/integration/baseline-comparison.json",
+      "sha256": "027dbf8607ff343dbba545b66c5c1ad705924c199f9ef90dace7a3aeac26eca7"
+    },
+    {
+      "bytes": 32810,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/baseline-corrected-imu.tcl",
+      "retainedPath": "native/phase7/integration/baseline-corrected-imu.tcl",
+      "sha256": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08"
+    },
+    {
+      "bytes": 2957,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/baseline-selector-audit.json",
+      "retainedPath": "native/phase7/integration/baseline-selector-audit.json",
+      "sha256": "3246aa0d885f8c635f8652944b1989df9929e34b2354799ce4631123582b9183"
+    },
+    {
+      "bytes": 1232,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/baseline-server.tcl",
+      "retainedPath": "native/phase7/integration/baseline-server.tcl",
+      "sha256": "cbf41ab7c050fad072f870ca0197a23b017e35e34e8cc55a56c4fb061e9e2d3a"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/build.stderr",
+      "retainedPath": "native/phase7/integration/build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/build.stdout",
+      "retainedPath": "native/phase7/integration/build.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined.stderr",
+      "retainedPath": "native/phase7/integration/combined.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined.stdout",
+      "retainedPath": "native/phase7/integration/combined.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined.tcl.stderr",
+      "retainedPath": "native/phase7/integration/combined.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_off.stderr",
+      "retainedPath": "native/phase7/integration/combined_off.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_off.stdout",
+      "retainedPath": "native/phase7/integration/combined_off.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_off.tcl.stderr",
+      "retainedPath": "native/phase7/integration/combined_off.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_replay.stderr",
+      "retainedPath": "native/phase7/integration/combined_replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_replay.stdout",
+      "retainedPath": "native/phase7/integration/combined_replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_replay.tcl.stderr",
+      "retainedPath": "native/phase7/integration/combined_replay.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 12516,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/commands.json",
+      "retainedPath": "native/phase7/integration/commands.json",
+      "sha256": "5c1ffa5cc1a5b0c0522875216bc7c1132281caed668e719b08bf9677f89146d6"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/compiler-version.stderr",
+      "retainedPath": "native/phase7/integration/compiler-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/compiler-version.stdout",
+      "retainedPath": "native/phase7/integration/compiler-version.stdout",
+      "sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    {
+      "bytes": 4195,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/executed-apply_physics.py",
+      "retainedPath": "native/phase7/integration/executed-apply_physics.py",
+      "sha256": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062"
+    },
+    {
+      "bytes": 2846,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/executed-inspect_axes.c",
+      "retainedPath": "native/phase7/integration/executed-inspect_axes.c",
+      "sha256": "811653730f357cb086aa4c87d5d8ff3f462199b362fbf0249002546b8af3dded"
+    },
+    {
+      "bytes": 8835,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/executed-orientation.tcl",
+      "retainedPath": "native/phase7/integration/executed-orientation.tcl",
+      "sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a"
+    },
+    {
+      "bytes": 51732,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/executed-run_validation.py",
+      "retainedPath": "native/phase7/integration/executed-run_validation.py",
+      "sha256": "f630b5068e0c0fe7a0c82676cc3b710b7b865a8610b51be6664f74a535c24a36"
+    },
+    {
+      "bytes": 12543,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/executed-test_integration.py",
+      "retainedPath": "native/phase7/integration/executed-test_integration.py",
+      "sha256": "5bd33cc22345b3ea380ef60acb3c7d353aa1beead358c21b49b5f8e23659dc13"
+    },
+    {
+      "bytes": 3027,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/inputs_source_hashes.json",
+      "retainedPath": "native/phase7/integration/inputs_source_hashes.json",
+      "sha256": "8e8813c92bd6335ebcb31cfeae8543c54b4fc3cbde756169dd91556a7b982858"
+    },
+    {
+      "bytes": 505,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/model-inputs.json",
+      "retainedPath": "native/phase7/integration/model-inputs.json",
+      "sha256": "ea84121fc1b488be335b37a88de2631f2fdf37f1a38fc81f1d3b53dc185f9b1b"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/native-probe.stderr",
+      "retainedPath": "native/phase7/integration/native-probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/native-probe.stdout",
+      "retainedPath": "native/phase7/integration/native-probe.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3134,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/physics-audit.json",
+      "retainedPath": "native/phase7/integration/physics-audit.json",
+      "sha256": "49b69c2d24909d98c5a6eed26748f73a613c533353d4fb2256fdf474f5cfde64"
+    },
+    {
+      "bytes": 41356,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/physics-overlay.tcl",
+      "retainedPath": "native/phase7/integration/physics-overlay.tcl",
+      "sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch.stderr",
+      "retainedPath": "native/phase7/integration/pitch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch.stdout",
+      "retainedPath": "native/phase7/integration/pitch.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch.tcl.stderr",
+      "retainedPath": "native/phase7/integration/pitch.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_off.stderr",
+      "retainedPath": "native/phase7/integration/pitch_off.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_off.stdout",
+      "retainedPath": "native/phase7/integration/pitch_off.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_off.tcl.stderr",
+      "retainedPath": "native/phase7/integration/pitch_off.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_replay.stderr",
+      "retainedPath": "native/phase7/integration/pitch_replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_replay.stdout",
+      "retainedPath": "native/phase7/integration/pitch_replay.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_replay.tcl.stderr",
+      "retainedPath": "native/phase7/integration/pitch_replay.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/preservation-after.json",
+      "retainedPath": "native/phase7/integration/preservation-after.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/preservation-before.json",
+      "retainedPath": "native/phase7/integration/preservation-before.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/python-version.stderr",
+      "retainedPath": "native/phase7/integration/python-version.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 13,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/python-version.stdout",
+      "retainedPath": "native/phase7/integration/python-version.stdout",
+      "sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    {
+      "bytes": 2369,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/runtime-validation.json",
+      "retainedPath": "native/phase7/integration/runtime-validation.json",
+      "sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14"
+    },
+    {
+      "bytes": 1074,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/server.tcl",
+      "retainedPath": "native/phase7/integration/server.tcl",
+      "sha256": "8bda1e22cf7700f188ca2991773b6e5ce45fbe0a7e90f16233a408aa6c8a9ec2"
+    },
+    {
+      "bytes": 1255651,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/summary.json",
+      "retainedPath": "native/phase7/integration/summary.json",
+      "sha256": "12903a0c27dec74a20dc36bb81967dd63bcc19f4af78f2af62025595f01127b8"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw-baseline.stderr",
+      "retainedPath": "native/phase7/integration/yaw-baseline.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw-baseline.stdout",
+      "retainedPath": "native/phase7/integration/yaw-baseline.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 334,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw-compatibility.json",
+      "retainedPath": "native/phase7/integration/yaw-compatibility.json",
+      "sha256": "983d9350580510fdf64727023f46a3211aeae56a02d869c6b768eb73f6695c20"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw.stderr",
+      "retainedPath": "native/phase7/integration/yaw.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw.stdout",
+      "retainedPath": "native/phase7/integration/yaw.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw.tcl.stderr",
+      "retainedPath": "native/phase7/integration/yaw.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw_baseline.tcl.stderr",
+      "retainedPath": "native/phase7/integration/yaw_baseline.tcl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration.stderr",
+      "retainedPath": "native/phase7/integration.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 782,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration.stdout",
+      "retainedPath": "native/phase7/integration.stdout",
+      "sha256": "4f850b6807d6b135c4ea39159f2725283ab78698b99f2fd0ac9438f6e7e14c18"
+    },
+    {
+      "bytes": 1242,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/commands.json",
+      "retainedPath": "native/phase7/physics/commands.json",
+      "sha256": "3ade14871266209b0e12154b0657d5f397679a491a5943fdcfde5fe17592abd4"
+    },
+    {
+      "bytes": 41356,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/derived-physics.tcl",
+      "retainedPath": "native/phase7/physics/derived-physics.tcl",
+      "sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075"
+    },
+    {
+      "bytes": 2543,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/environment.json",
+      "retainedPath": "native/phase7/physics/environment.json",
+      "sha256": "ddb2da6f3f675f5663508e2cdba4ee7bfd1f932f6b5dea845f1c6adfebcde9a2"
+    },
+    {
+      "bytes": 4195,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/executed-apply_physics.py",
+      "retainedPath": "native/phase7/physics/executed-apply_physics.py",
+      "sha256": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062"
+    },
+    {
+      "bytes": 8835,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/executed-orientation.tcl",
+      "retainedPath": "native/phase7/physics/executed-orientation.tcl",
+      "sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a"
+    },
+    {
+      "bytes": 4180,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/executed-probe.tcl",
+      "retainedPath": "native/phase7/physics/executed-probe.tcl",
+      "sha256": "c76f7d9aa1a7b667778e6bcfafc8c447069302d3363e70fe6b8613f9a620b683"
+    },
+    {
+      "bytes": 11747,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/executed-run_validation.py",
+      "retainedPath": "native/phase7/physics/executed-run_validation.py",
+      "sha256": "efdd9221c6d6b96ce2748ce921f04c11816c37d241763110830c5ef68e35f15e"
+    },
+    {
+      "bytes": 1329,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/imu-selectors.diff",
+      "retainedPath": "native/phase7/physics/imu-selectors.diff",
+      "sha256": "e231420a3174dac5805d753f44f8070b1870c2ced68f3cca92cab361239d0bb6"
+    },
+    {
+      "bytes": 873,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/inputs_source_hashes.json",
+      "retainedPath": "native/phase7/physics/inputs_source_hashes.json",
+      "sha256": "d81581588fdf7305d02a681d17c07c77d6b3a230d442920ae84c4169c6d68768"
+    },
+    {
+      "bytes": 1400,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/legacy-inputs.txt",
+      "retainedPath": "native/phase7/physics/legacy-inputs.txt",
+      "sha256": "4bbe3f3c34ff99cbbd8a5765bd33df00e9e6d6081fe332f55286b4b3b97f5258"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/legacy-yaw.stderr",
+      "retainedPath": "native/phase7/physics/legacy-yaw.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7647,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/legacy-yaw.stdout",
+      "retainedPath": "native/phase7/physics/legacy-yaw.stdout",
+      "sha256": "ca3198d501d9f9d9b3369fd5161e7ecece192e8eff75bd9a3c143115cdbb0de7"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/physics.stderr",
+      "retainedPath": "native/phase7/physics/physics.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 23589,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/physics.stdout",
+      "retainedPath": "native/phase7/physics/physics.stdout",
+      "sha256": "7d58ee70007ec1929f02486555562ece6f5ed57d5765f96aa629a88cae2ed516"
+    },
+    {
+      "bytes": 3130,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/source-audit.json",
+      "retainedPath": "native/phase7/physics/source-audit.json",
+      "sha256": "ee5b0d3e4c3aed4af8b4a48ef527fd8f50a41261125959689d57cbb4890521a4"
+    },
+    {
+      "bytes": 9772,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics/validation.json",
+      "retainedPath": "native/phase7/physics/validation.json",
+      "sha256": "8719c76603ee1c69906c9dbf246cb314aa77b400125740e27332fdb54791a0fc"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics.stderr",
+      "retainedPath": "native/phase7/physics.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 51,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/physics.stdout",
+      "retainedPath": "native/phase7/physics.stdout",
+      "sha256": "a7ccc4afcbb76c6d98faae5ad0281280e8c8ba3bcb0fb2f09dcbea04d7a509ef"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/preservation-after.json",
+      "retainedPath": "native/phase7/preservation-after.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 267,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/preservation-before.json",
+      "retainedPath": "native/phase7/preservation-before.json",
+      "sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source-proof.stderr",
+      "retainedPath": "native/phase7/source-proof.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 430,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source-proof.stdout",
+      "retainedPath": "native/phase7/source-proof.stdout",
+      "sha256": "bc6768de4f3b843e81d769c952cecad99678c81114c929ce07a319d15ce81734"
+    },
+    {
+      "bytes": 1183,
+      "generatedPath": ".build/frontend/verification/browser.json",
+      "retainedPath": "browser-original/verification/browser.json",
+      "sha256": "f9a48197b6b4019699f65ff2bc8a9ca081a891863754bc68846f5594f3165a47"
+    },
+    {
+      "bytes": 1386,
+      "generatedPath": ".build/frontend/verification/commands.json",
+      "retainedPath": "browser-original/verification/commands.json",
+      "sha256": "20a3e9568ff162070770d677bac2ee1cc85e673eb2b5cbf53e4bed47489950df"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/frontend/verification/export.stderr",
+      "retainedPath": "browser-original/verification/export.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 711,
+      "generatedPath": ".build/frontend/verification/export.stdout",
+      "retainedPath": "browser-original/verification/export.stdout",
+      "sha256": "8b4a43de6fc3e9501e8ee3d03c39380736b0030ec2e6154766104286f1fdd35e"
+    },
+    {
+      "bytes": 1286,
+      "generatedPath": ".build/frontend/verification/inputs.json",
+      "retainedPath": "browser-original/verification/inputs.json",
+      "sha256": "625dd74aaa7d53807cda818091b0a5ffd391fab1f99e731dfb4b1f1c52d5026a"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/frontend/verification/phase7-regression.stderr",
+      "retainedPath": "browser-original/verification/phase7-regression.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2607,
+      "generatedPath": ".build/frontend/verification/phase7-regression.stdout",
+      "retainedPath": "browser-original/verification/phase7-regression.stdout",
+      "sha256": "99588909fcb910fc80b8d4d436b641c8c90f64efcfb8d54bc7b0a66880d97c67"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/frontend/verification/presentation-tests.stderr",
+      "retainedPath": "browser-original/verification/presentation-tests.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1292,
+      "generatedPath": ".build/frontend/verification/presentation-tests.stdout",
+      "retainedPath": "browser-original/verification/presentation-tests.stdout",
+      "sha256": "0580cda26bee2ca0dab19bc47aa28fedb598eb59f52e8dd4d807c9cbcc3586e6"
+    },
+    {
+      "bytes": 1157,
+      "generatedPath": ".build/frontend/verification/python-tests.stderr",
+      "retainedPath": "browser-original/verification/python-tests.stderr",
+      "sha256": "3af68042467302300100e0065b756426fbf8ef071273fd21a5dcaa0f3171250b"
+    },
+    {
+      "bytes": 0,
+      "generatedPath": ".build/frontend/verification/python-tests.stdout",
+      "retainedPath": "browser-original/verification/python-tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 503,
+      "generatedPath": ".build/frontend/verification/summary.json",
+      "retainedPath": "browser-original/verification/summary.json",
+      "sha256": "2f5c4a72feffd3ae97b7faf9934f9df6b6d46af0451a9c5e703e05c778f1d068"
+    },
+    {
+      "bytes": 94345,
+      "generatedPath": ".build/frontend/screenshots/desktop.jpg",
+      "retainedPath": "browser-original/screenshots/desktop.jpg",
+      "sha256": "8df76158ceb4a960c85d40133149ed5251b90cefa40764009c9ae87579d26040"
+    },
+    {
+      "bytes": 70612,
+      "generatedPath": ".build/frontend/screenshots/mobile.jpg",
+      "retainedPath": "browser-original/screenshots/mobile.jpg",
+      "sha256": "26bac9796d3238f11ba2f3e2c9a1151ae914e8bdf6dff18cf92afec8ec4c4039"
+    }
+  ],
+  "duplicateFrontendData": [
+    {
+      "bytes": 1497165,
+      "existingRetainedReference": "frontend/dist/data/replay.json",
+      "generatedPath": ".build/release/20261017T164459Z/http-replay.json",
+      "retainedPath": "checks/http-replay.json",
+      "sha256": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e"
+    },
+    {
+      "bytes": 1497165,
+      "existingRetainedReference": "frontend/dist/data/replay.json",
+      "generatedPath": ".build/release/20261017T164459Z/replay-regenerated.json",
+      "retainedPath": "checks/replay-regenerated.json",
+      "sha256": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e"
+    }
+  ],
+  "generatedDirectories": {
+    "browser-original/screenshots": ".build/frontend/screenshots",
+    "browser-original/verification": ".build/frontend/verification",
+    "checks": ".build/release/20261017T164459Z",
+    "native/milestone2": ".build/milestone2/runs/20261017T164513Z-49738120",
+    "native/milestone3": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f",
+    "native/phase6-reproduction": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91",
+    "native/phase7": ".build/phase7/runs/20261017T164537Z-5214f47d",
+    "tests/milestone1": ".build/reproducibility/tests/tests-20261017T164459.977867Z",
+    "tests/milestone2": ".build/milestone2/tests/20261017T164501Z-0792c837",
+    "tests/milestone3": ".build/milestone3/tests/20261017T164504Z-55144cef",
+    "tests/phase7": ".build/phase7/tests/20261017T164531Z-fe528a23"
+  },
+  "identicalTraceReferences": [
+    {
+      "bytes": 2590454,
+      "existingRetainedReference": "docs/phase6-evidence/demo-run/closed.categorized.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.categorized.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/closed.categorized.jsonl",
+      "sha256": "8c4c45481a3fc8a9cc4c00dba9e1f166dbf4289bc2662e40315ab36542ae6fe2"
+    },
+    {
+      "bytes": 1005697,
+      "existingRetainedReference": "docs/phase5-evidence/loop-runs/closed.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/closed.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/closed.jsonl",
+      "sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99"
+    },
+    {
+      "bytes": 7097829,
+      "existingRetainedReference": "docs/phase6-evidence/demo-run/feedback_off.categorized.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.categorized.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/feedback_off.categorized.jsonl",
+      "sha256": "86fd6ef4883714577728c6c20d4711970f0eb6b45247c7342a31b20786ffe00f"
+    },
+    {
+      "bytes": 2694258,
+      "existingRetainedReference": "docs/phase5-evidence/loop-runs/feedback_off.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/feedback_off.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/feedback_off.jsonl",
+      "sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096"
+    },
+    {
+      "bytes": 2590454,
+      "existingRetainedReference": "docs/phase6-evidence/demo-run/repeat.categorized.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.categorized.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/repeat.categorized.jsonl",
+      "sha256": "545a5f007b01e02efe091bbab3482ae6e9496ff57034c5156cfd646baa8be69e"
+    },
+    {
+      "bytes": 1005697,
+      "existingRetainedReference": "docs/phase5-evidence/loop-runs/closed.jsonl",
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/repeat.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/phase6-reproduction/repeat.jsonl",
+      "sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99"
+    },
+    {
+      "bytes": 59220,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/alternating_supported-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/alternating_supported-replay.jsonl",
+      "sha256": "dcd8853cf825576282feb06c206cf309ad41868f3bc7ac44183678ff952f2224"
+    },
+    {
+      "bytes": 59220,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/alternating_supported-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/alternating_supported.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/alternating_supported.jsonl",
+      "sha256": "dcd8853cf825576282feb06c206cf309ad41868f3bc7ac44183678ff952f2224"
+    },
+    {
+      "bytes": 117746,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/fifo_capacity_control-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control-replay.jsonl",
+      "sha256": "7600228f0db1439e622ebd6bba8c017f725848c9fb1be782d43164cd2d01b24b"
+    },
+    {
+      "bytes": 117746,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/fifo_capacity_control-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/fifo_capacity_control.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/fifo_capacity_control.jsonl",
+      "sha256": "7600228f0db1439e622ebd6bba8c017f725848c9fb1be782d43164cd2d01b24b"
+    },
+    {
+      "bytes": 21050,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/mixed-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/mixed-replay.jsonl",
+      "sha256": "cb6569800cc28ca6a5381c9190367f71025c3d3ce787e60e50d66c338203138b"
+    },
+    {
+      "bytes": 21050,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/mixed-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/mixed.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/mixed.jsonl",
+      "sha256": "cb6569800cc28ca6a5381c9190367f71025c3d3ce787e60e50d66c338203138b"
+    },
+    {
+      "bytes": 23179,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/negative_fast-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/negative_fast-replay.jsonl",
+      "sha256": "441c477cc0d9b935a4feb0a51e44ba9e4fe811f33ab1e73b5813062633686495"
+    },
+    {
+      "bytes": 23179,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/negative_fast-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_fast.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/negative_fast.jsonl",
+      "sha256": "441c477cc0d9b935a4feb0a51e44ba9e4fe811f33ab1e73b5813062633686495"
+    },
+    {
+      "bytes": 12069,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/negative_slow-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/negative_slow-replay.jsonl",
+      "sha256": "d22f94679f0f5466b1a2ef0958a9d2e1a2c1ff5387700e80ec1568b097bdfd34"
+    },
+    {
+      "bytes": 12069,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/negative_slow-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/negative_slow.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/negative_slow.jsonl",
+      "sha256": "d22f94679f0f5466b1a2ef0958a9d2e1a2c1ff5387700e80ec1568b097bdfd34"
+    },
+    {
+      "bytes": 23008,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/positive_fast-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/positive_fast-replay.jsonl",
+      "sha256": "1cc0b7fd7b97320c45bb794d2e808af7b13d546f1e4c092bf6d5203be39ad1df"
+    },
+    {
+      "bytes": 23008,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/positive_fast-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_fast.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/positive_fast.jsonl",
+      "sha256": "1cc0b7fd7b97320c45bb794d2e808af7b13d546f1e4c092bf6d5203be39ad1df"
+    },
+    {
+      "bytes": 11970,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/positive_slow-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/positive_slow-replay.jsonl",
+      "sha256": "5b52d26efb7195efb7b950c6dafb0cb5746630730970bf9fa5cafa438da4f9b7"
+    },
+    {
+      "bytes": 11970,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/positive_slow-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/positive_slow.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/positive_slow.jsonl",
+      "sha256": "5b52d26efb7195efb7b950c6dafb0cb5746630730970bf9fa5cafa438da4f9b7"
+    },
+    {
+      "bytes": 942119,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/ringbuffer_capacity_control-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control-replay.jsonl",
+      "sha256": "61e1f29a3ba54206d81801be04d1f074fda87972ef9e391e71635e57c8e77924"
+    },
+    {
+      "bytes": 942119,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/ringbuffer_capacity_control-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/ringbuffer_capacity_control.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/ringbuffer_capacity_control.jsonl",
+      "sha256": "61e1f29a3ba54206d81801be04d1f074fda87972ef9e391e71635e57c8e77924"
+    },
+    {
+      "bytes": 3357,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/signed_wrap-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap-replay.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/signed_wrap-replay.jsonl",
+      "sha256": "a6150604a88681e26fcc05e9c9fd8abdb221d2cc7d293c156f09112c9d5cbbd4"
+    },
+    {
+      "bytes": 3357,
+      "existingRetainedReference": "docs/milestone2-evidence/runs/2026-10-17-verified-check/validation/cdu/signed_wrap-replay.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/signed_wrap.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/cdu/signed_wrap.jsonl",
+      "sha256": "a6150604a88681e26fcc05e9c9fd8abdb221d2cc7d293c156f09112c9d5cbbd4"
+    },
+    {
+      "bytes": 447004,
+      "existingRetainedReference": "docs/milestone2-evidence/plant/results/raw-trace.jsonl",
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/plant/raw-trace.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone2/plant/raw-trace.jsonl",
+      "sha256": "fc8f3782e1c5a12964cf5d0855ec0084fdadef7a433ef9b40e775667d68e0049"
+    },
+    {
+      "bytes": 1645731,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/corrected_drain.jsonl.gz",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_drain.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/milestone3/feedback/corrected_drain.jsonl",
+      "sha256": "6da940f501889432e208bd9b7b1ba1dfc450cac9799bfa7f9f5427d82b7c9d2e"
+    },
+    {
+      "bytes": 4303987,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/corrected_feedback_off.jsonl.gz",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_feedback_off.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/milestone3/feedback/corrected_feedback_off.jsonl",
+      "sha256": "37d137e29afed6cc17ce97cd3210d13d9915639a08ffd1923b5312cc75bd1dd4"
+    },
+    {
+      "bytes": 3519162,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/corrected_negative.jsonl.gz",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_negative.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/milestone3/feedback/corrected_negative.jsonl",
+      "sha256": "e3fb1eac5bc1d4ed295e8cd84212fe969a56541161f176471d573c235760d835"
+    },
+    {
+      "bytes": 3519162,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/corrected_negative.jsonl.gz",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/corrected_repeat.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/milestone3/feedback/corrected_repeat.jsonl",
+      "sha256": "e3fb1eac5bc1d4ed295e8cd84212fe969a56541161f176471d573c235760d835"
+    },
+    {
+      "bytes": 3342742,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/original_negative.jsonl.gz",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/original_negative.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/milestone3/feedback/original_negative.jsonl",
+      "sha256": "70bb6a8844f9e88935696b26d5e06f75edcc516cf01979b202e92b9aea424f82"
+    },
+    {
+      "bytes": 455734,
+      "existingRetainedReference": "docs/milestone3-evidence/model/results/corrected.jsonl",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/corrected.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone3/model/corrected.jsonl",
+      "sha256": "2b7ad07eb5a21d2901ac54d25015c725877c841664cf89430669add5a42889db"
+    },
+    {
+      "bytes": 447004,
+      "existingRetainedReference": "docs/milestone2-evidence/plant/results/raw-trace.jsonl",
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/model/original.jsonl",
+      "referenceEncoding": "identity",
+      "retainedPath": "native/milestone3/model/original.jsonl",
+      "sha256": "fc8f3782e1c5a12964cf5d0855ec0084fdadef7a433ef9b40e775667d68e0049"
+    },
+    {
+      "bytes": 11729309,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/combined.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/combined.jsonl",
+      "sha256": "d218b35ee07bcca0f09eea1ca76d509c85fe9a6fdd9595a64e543ea6b490cf07"
+    },
+    {
+      "bytes": 8302960,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/combined_off.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_off.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/combined_off.jsonl",
+      "sha256": "26a0e146c6baeb96ebe6609c2fd20d1806a6796e4b43bc6481fdb5383fa4173e"
+    },
+    {
+      "bytes": 11729309,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/combined.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/combined_replay.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/combined_replay.jsonl",
+      "sha256": "d218b35ee07bcca0f09eea1ca76d509c85fe9a6fdd9595a64e543ea6b490cf07"
+    },
+    {
+      "bytes": 5136,
+      "existingRetainedReference": "docs/phase7-evidence/integration/runs/integration-attempt-01/native-probe.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/native-probe.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/native-probe.jsonl",
+      "sha256": "64b69fb09d2c48f8bc53515a54ff81bec8007785357dd3e569d913f6e03f9fcf"
+    },
+    {
+      "bytes": 11010875,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/pitch.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/pitch.jsonl",
+      "sha256": "6e5899d5381daa0f858cb9f71a72a0b6507f13f869ac66819f91ab884f26e6e9"
+    },
+    {
+      "bytes": 10293255,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/pitch_off.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_off.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/pitch_off.jsonl",
+      "sha256": "d8dd6be0f216588e3cb95ed742f9c6c28f15f89196cef5314f52fd996ec85b50"
+    },
+    {
+      "bytes": 11010875,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/pitch.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/pitch_replay.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/pitch_replay.jsonl",
+      "sha256": "6e5899d5381daa0f858cb9f71a72a0b6507f13f869ac66819f91ab884f26e6e9"
+    },
+    {
+      "bytes": 10350703,
+      "existingRetainedReference": "docs/phase7-evidence/runs/2026-10-17-verified-check/validation/integration/yaw.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/yaw.jsonl",
+      "sha256": "e09d0d8da7534314b3c7cef940d3821deaaf18a1e70b81896ff41eac1911e30a"
+    },
+    {
+      "bytes": 3519162,
+      "existingRetainedReference": "docs/milestone3-evidence/feedback/runs/attempt-03/corrected_negative.jsonl.gz",
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/yaw_baseline.jsonl",
+      "referenceEncoding": "gzip",
+      "retainedPath": "native/phase7/integration/yaw_baseline.jsonl",
+      "sha256": "e3fb1eac5bc1d4ed295e8cd84212fe969a56541161f176471d573c235760d835"
+    }
+  ],
+  "losslessTraceCompression": [],
+  "omittedRebuildableFiles": [
+    {
+      "bytes": 73704,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/engine.so",
+      "retainedPath": "native/phase6-reproduction/engine.so",
+      "sha256": "e1840dc4b39d6e87f1b4bdc20daf55c43726fa185388d4f7c74434232ff165b8"
+    },
+    {
+      "bytes": 18009,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/COPYING",
+      "retainedPath": "native/phase6-reproduction/source/COPYING",
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994"
+    },
+    {
+      "bytes": 43029,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "retainedPath": "native/phase6-reproduction/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+    },
+    {
+      "bytes": 32273,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "retainedPath": "native/phase6-reproduction/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e"
+    },
+    {
+      "bytes": 15399,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "retainedPath": "native/phase6-reproduction/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60"
+    },
+    {
+      "bytes": 704,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/LICENSE.txt",
+      "retainedPath": "native/phase6-reproduction/source/LICENSE.txt",
+      "sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+    },
+    {
+      "bytes": 2557,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_cli.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_cli.h",
+      "sha256": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170"
+    },
+    {
+      "bytes": 1579,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_debug.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_debug.h",
+      "sha256": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1"
+    },
+    {
+      "bytes": 3626,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_debugger.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_debugger.h",
+      "sha256": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de"
+    },
+    {
+      "bytes": 1788,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_disassembler.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_disassembler.h",
+      "sha256": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997"
+    },
+    {
+      "bytes": 120098,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_engine.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_engine.c",
+      "sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef"
+    },
+    {
+      "bytes": 23265,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_engine.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_engine.h",
+      "sha256": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2"
+    },
+    {
+      "bytes": 15422,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_engine_init.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_engine_init.c",
+      "sha256": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1"
+    },
+    {
+      "bytes": 1521,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_gdbmi.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_gdbmi.h",
+      "sha256": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6"
+    },
+    {
+      "bytes": 110,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_help.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_help.h",
+      "sha256": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5"
+    },
+    {
+      "bytes": 2929,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_simulator.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_simulator.h",
+      "sha256": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9"
+    },
+    {
+      "bytes": 11354,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_symtab.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_symtab.h",
+      "sha256": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93"
+    },
+    {
+      "bytes": 12806,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/agc_utilities.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/agc_utilities.c",
+      "sha256": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102"
+    },
+    {
+      "bytes": 18702,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/regex.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/regex.h",
+      "sha256": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7"
+    },
+    {
+      "bytes": 3482,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/rfopen.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/rfopen.c",
+      "sha256": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+    },
+    {
+      "bytes": 2176,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/ringbuffer.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/ringbuffer.c",
+      "sha256": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268"
+    },
+    {
+      "bytes": 1476,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/ringbuffer.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/ringbuffer.h",
+      "sha256": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459"
+    },
+    {
+      "bytes": 6578,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/ringbuffer_api.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/ringbuffer_api.c",
+      "sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530"
+    },
+    {
+      "bytes": 5292,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/wasm.c",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/wasm.c",
+      "sha256": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83"
+    },
+    {
+      "bytes": 4055,
+      "generatedPath": ".build/reproducibility/runs/20261017T164507Z-cd2e4c91/source/yaAGC/yaAGC.h",
+      "retainedPath": "native/phase6-reproduction/source/yaAGC/yaAGC.h",
+      "sha256": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed"
+    },
+    {
+      "bytes": 73800,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/cdu/engine.so",
+      "retainedPath": "native/milestone2/cdu/engine.so",
+      "sha256": "bed76612c9865a8bc3dd2cdcd6dc2bf40b4214dcd12aa050cc6f6ddc5587ffc6"
+    },
+    {
+      "bytes": 18009,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/COPYING",
+      "retainedPath": "native/milestone2/source/COPYING",
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994"
+    },
+    {
+      "bytes": 43029,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "retainedPath": "native/milestone2/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+    },
+    {
+      "bytes": 32273,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "retainedPath": "native/milestone2/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e"
+    },
+    {
+      "bytes": 15399,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "retainedPath": "native/milestone2/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60"
+    },
+    {
+      "bytes": 704,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/LICENSE.txt",
+      "retainedPath": "native/milestone2/source/LICENSE.txt",
+      "sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+    },
+    {
+      "bytes": 2557,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_cli.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_cli.h",
+      "sha256": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170"
+    },
+    {
+      "bytes": 1579,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_debug.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_debug.h",
+      "sha256": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1"
+    },
+    {
+      "bytes": 3626,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_debugger.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_debugger.h",
+      "sha256": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de"
+    },
+    {
+      "bytes": 1788,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_disassembler.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_disassembler.h",
+      "sha256": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997"
+    },
+    {
+      "bytes": 120098,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_engine.c",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_engine.c",
+      "sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef"
+    },
+    {
+      "bytes": 23265,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_engine.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_engine.h",
+      "sha256": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2"
+    },
+    {
+      "bytes": 15422,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_engine_init.c",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_engine_init.c",
+      "sha256": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1"
+    },
+    {
+      "bytes": 1521,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_gdbmi.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_gdbmi.h",
+      "sha256": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6"
+    },
+    {
+      "bytes": 110,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_help.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_help.h",
+      "sha256": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5"
+    },
+    {
+      "bytes": 2929,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_simulator.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_simulator.h",
+      "sha256": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9"
+    },
+    {
+      "bytes": 11354,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_symtab.h",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_symtab.h",
+      "sha256": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93"
+    },
+    {
+      "bytes": 12806,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/agc_utilities.c",
+      "retainedPath": "native/milestone2/source/yaAGC/agc_utilities.c",
+      "sha256": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102"
+    },
+    {
+      "bytes": 18702,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/regex.h",
+      "retainedPath": "native/milestone2/source/yaAGC/regex.h",
+      "sha256": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7"
+    },
+    {
+      "bytes": 3482,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/rfopen.c",
+      "retainedPath": "native/milestone2/source/yaAGC/rfopen.c",
+      "sha256": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+    },
+    {
+      "bytes": 2176,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/ringbuffer.c",
+      "retainedPath": "native/milestone2/source/yaAGC/ringbuffer.c",
+      "sha256": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268"
+    },
+    {
+      "bytes": 1476,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/ringbuffer.h",
+      "retainedPath": "native/milestone2/source/yaAGC/ringbuffer.h",
+      "sha256": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459"
+    },
+    {
+      "bytes": 6578,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/ringbuffer_api.c",
+      "retainedPath": "native/milestone2/source/yaAGC/ringbuffer_api.c",
+      "sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530"
+    },
+    {
+      "bytes": 5292,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/wasm.c",
+      "retainedPath": "native/milestone2/source/yaAGC/wasm.c",
+      "sha256": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83"
+    },
+    {
+      "bytes": 4055,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/source/yaAGC/yaAGC.h",
+      "retainedPath": "native/milestone2/source/yaAGC/yaAGC.h",
+      "sha256": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed"
+    },
+    {
+      "bytes": 73568,
+      "generatedPath": ".build/milestone2/runs/20261017T164513Z-49738120/startup/startup_probe",
+      "retainedPath": "native/milestone2/startup/startup_probe",
+      "sha256": "cd7f2b9f2392c92ed67329961b5796bcc1970812ee0aa9a4a1c9ddc859b9d0d7"
+    },
+    {
+      "bytes": 74136,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/feedback/engine.so",
+      "retainedPath": "native/milestone3/feedback/engine.so",
+      "sha256": "0985ceb298ba0be12815e3650648f3585443e175a4d9334528cbe6a0fd165e56"
+    },
+    {
+      "bytes": 18009,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/COPYING",
+      "retainedPath": "native/milestone3/source/COPYING",
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994"
+    },
+    {
+      "bytes": 43029,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "retainedPath": "native/milestone3/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+    },
+    {
+      "bytes": 32273,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "retainedPath": "native/milestone3/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e"
+    },
+    {
+      "bytes": 15399,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "retainedPath": "native/milestone3/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60"
+    },
+    {
+      "bytes": 704,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/LICENSE.txt",
+      "retainedPath": "native/milestone3/source/LICENSE.txt",
+      "sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+    },
+    {
+      "bytes": 2557,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_cli.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_cli.h",
+      "sha256": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170"
+    },
+    {
+      "bytes": 1579,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_debug.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_debug.h",
+      "sha256": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1"
+    },
+    {
+      "bytes": 3626,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_debugger.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_debugger.h",
+      "sha256": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de"
+    },
+    {
+      "bytes": 1788,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_disassembler.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_disassembler.h",
+      "sha256": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997"
+    },
+    {
+      "bytes": 120098,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_engine.c",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_engine.c",
+      "sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef"
+    },
+    {
+      "bytes": 23265,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_engine.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_engine.h",
+      "sha256": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2"
+    },
+    {
+      "bytes": 15422,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_engine_init.c",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_engine_init.c",
+      "sha256": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1"
+    },
+    {
+      "bytes": 1521,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_gdbmi.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_gdbmi.h",
+      "sha256": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6"
+    },
+    {
+      "bytes": 110,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_help.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_help.h",
+      "sha256": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5"
+    },
+    {
+      "bytes": 2929,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_simulator.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_simulator.h",
+      "sha256": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9"
+    },
+    {
+      "bytes": 11354,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_symtab.h",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_symtab.h",
+      "sha256": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93"
+    },
+    {
+      "bytes": 12806,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/agc_utilities.c",
+      "retainedPath": "native/milestone3/source/yaAGC/agc_utilities.c",
+      "sha256": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102"
+    },
+    {
+      "bytes": 18702,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/regex.h",
+      "retainedPath": "native/milestone3/source/yaAGC/regex.h",
+      "sha256": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7"
+    },
+    {
+      "bytes": 3482,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/rfopen.c",
+      "retainedPath": "native/milestone3/source/yaAGC/rfopen.c",
+      "sha256": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+    },
+    {
+      "bytes": 2176,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/ringbuffer.c",
+      "retainedPath": "native/milestone3/source/yaAGC/ringbuffer.c",
+      "sha256": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268"
+    },
+    {
+      "bytes": 1476,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/ringbuffer.h",
+      "retainedPath": "native/milestone3/source/yaAGC/ringbuffer.h",
+      "sha256": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459"
+    },
+    {
+      "bytes": 6578,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/ringbuffer_api.c",
+      "retainedPath": "native/milestone3/source/yaAGC/ringbuffer_api.c",
+      "sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530"
+    },
+    {
+      "bytes": 5292,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/wasm.c",
+      "retainedPath": "native/milestone3/source/yaAGC/wasm.c",
+      "sha256": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83"
+    },
+    {
+      "bytes": 4055,
+      "generatedPath": ".build/milestone3/runs/20261017T164517Z-2e9f6a8f/source/yaAGC/yaAGC.h",
+      "retainedPath": "native/milestone3/source/yaAGC/yaAGC.h",
+      "sha256": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed"
+    },
+    {
+      "bytes": 74504,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/integration/engine.so",
+      "retainedPath": "native/phase7/integration/engine.so",
+      "sha256": "79a167da8f1fa6416437a553391fb7ae3939b3a794c7df432cfa0a58d54a1737"
+    },
+    {
+      "bytes": 18009,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/COPYING",
+      "retainedPath": "native/phase7/source/COPYING",
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994"
+    },
+    {
+      "bytes": 43029,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "retainedPath": "native/phase7/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+    },
+    {
+      "bytes": 32273,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "retainedPath": "native/phase7/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e"
+    },
+    {
+      "bytes": 15399,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "retainedPath": "native/phase7/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60"
+    },
+    {
+      "bytes": 704,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/LICENSE.txt",
+      "retainedPath": "native/phase7/source/LICENSE.txt",
+      "sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+    },
+    {
+      "bytes": 2557,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_cli.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_cli.h",
+      "sha256": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170"
+    },
+    {
+      "bytes": 1579,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_debug.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_debug.h",
+      "sha256": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1"
+    },
+    {
+      "bytes": 3626,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_debugger.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_debugger.h",
+      "sha256": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de"
+    },
+    {
+      "bytes": 1788,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_disassembler.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_disassembler.h",
+      "sha256": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997"
+    },
+    {
+      "bytes": 120098,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_engine.c",
+      "retainedPath": "native/phase7/source/yaAGC/agc_engine.c",
+      "sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef"
+    },
+    {
+      "bytes": 23265,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_engine.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_engine.h",
+      "sha256": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2"
+    },
+    {
+      "bytes": 15422,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_engine_init.c",
+      "retainedPath": "native/phase7/source/yaAGC/agc_engine_init.c",
+      "sha256": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1"
+    },
+    {
+      "bytes": 1521,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_gdbmi.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_gdbmi.h",
+      "sha256": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6"
+    },
+    {
+      "bytes": 110,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_help.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_help.h",
+      "sha256": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5"
+    },
+    {
+      "bytes": 2929,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_simulator.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_simulator.h",
+      "sha256": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9"
+    },
+    {
+      "bytes": 11354,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_symtab.h",
+      "retainedPath": "native/phase7/source/yaAGC/agc_symtab.h",
+      "sha256": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93"
+    },
+    {
+      "bytes": 12806,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/agc_utilities.c",
+      "retainedPath": "native/phase7/source/yaAGC/agc_utilities.c",
+      "sha256": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102"
+    },
+    {
+      "bytes": 18702,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/regex.h",
+      "retainedPath": "native/phase7/source/yaAGC/regex.h",
+      "sha256": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7"
+    },
+    {
+      "bytes": 3482,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/rfopen.c",
+      "retainedPath": "native/phase7/source/yaAGC/rfopen.c",
+      "sha256": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+    },
+    {
+      "bytes": 2176,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/ringbuffer.c",
+      "retainedPath": "native/phase7/source/yaAGC/ringbuffer.c",
+      "sha256": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268"
+    },
+    {
+      "bytes": 1476,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/ringbuffer.h",
+      "retainedPath": "native/phase7/source/yaAGC/ringbuffer.h",
+      "sha256": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459"
+    },
+    {
+      "bytes": 6578,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/ringbuffer_api.c",
+      "retainedPath": "native/phase7/source/yaAGC/ringbuffer_api.c",
+      "sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530"
+    },
+    {
+      "bytes": 5292,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/wasm.c",
+      "retainedPath": "native/phase7/source/yaAGC/wasm.c",
+      "sha256": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83"
+    },
+    {
+      "bytes": 4055,
+      "generatedPath": ".build/phase7/runs/20261017T164537Z-5214f47d/source/yaAGC/yaAGC.h",
+      "retainedPath": "native/phase7/source/yaAGC/yaAGC.h",
+      "sha256": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed"
+    }
+  ],
+  "packagedUtc": "2026-10-17T16:49:33.625488+00:00",
+  "phase7PackageEntriesVerifiedInGit": 678,
+  "phase7SnapshotCommit": "903660d2de58431a6f485001226231ee981b0854"
+}

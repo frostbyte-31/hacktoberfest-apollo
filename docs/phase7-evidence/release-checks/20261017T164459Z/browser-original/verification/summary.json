@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED",
+  "capturedUtc": "2026-10-17T16:39:24.926045+00:00",
+  "frontendPythonTests": 12,
+  "frontendJavaScriptTests": 14,
+  "phase7RegressionTests": 39,
+  "failures": 0,
+  "errors": 0,
+  "priorFilesUnchanged": 2196,
+  "rootAndEvidenceFilesModifiedByFrontendTask": [],
+  "published": false,
+  "committed": false,
+  "pushed": false,
+  "preview": "http://127.0.0.1:4173/",
+  "scope": "Recorded Phase7 attitude replay; no live guidance, spacecraft simulation, descent or landing added"
+}

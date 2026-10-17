@@ -1,12 +1,33 @@
-# Apollo AGC feedback investigation
+# Apollo 11 — guidance, attitude control and visual replay
 
-This repository runs retained Luminary 099 through the pinned Virtual AGC engine
-and validates a bounded, single-axis spacecraft feedback demonstration. It is
-research infrastructure for a lunar landing simulator. Powered descent, landing,
-multi-axis control, multiplayer and AI crew are **not demonstrated**.
+This repository runs original Luminary 099 through the pinned Virtual AGC engine.
+Phase 7 verifies bounded, simultaneous yaw/pitch spacecraft feedback, following
+independent single-axis demonstrations. A visual replay console presents the
+captured experiments. Full independent three-axis control, sustained attitude
+stability, powered descent, landing, multiplayer and AI crew remain unverified.
 
-The authentic flight computation, modern emulator and synthetic LM-7 dynamics
-remain separate. There is no npm application to build.
+The authentic flight computation, modern emulator, synthetic LM-7 dynamics and
+read-only frontend remain separate. No npm installation is needed for the demo.
+
+## Open the visual demo
+
+```sh
+python3 -B frontend/serve.py
+```
+
+Open **http://127.0.0.1:4173/**. The console shows a rotating illustrative lunar
+module, actual recorded RCS commands, sensor readouts and angular-rate histories.
+Switch yaw/pitch experiments, compare connected/disconnected feedback, scrub the
+timeline and download a provenance record. It replays verified recordings; it
+does not run a live AGC or simulate a landing. No external assets or services are
+required. See [frontend instructions and data boundaries](frontend/README.md).
+
+Frontend data and presentation checks:
+
+```sh
+python3 -B -m unittest discover -s frontend/tests -p test_replay.py -v
+node --test frontend/tests/replay.test.mjs  # Node 20+; no dependencies
+```
 
 ## Check the evidence and tests
 
@@ -77,7 +98,7 @@ dependency launch records and validation results. A successful run must pass the
 existing causal checks, preserve retained evidence and match **all three original
 raw traces byte for byte**. Existing output directories are never overwritten.
 
-The model remains synthetic yaw/X-CDU only, with semi-implicit integration,
+This retained Phase 6 reproduction remains synthetic yaw/X-CDU only, with semi-implicit integration,
 about 10 ms maximum coupling latency and undrained counter queues. Operate-only
 readiness does not establish complete IMU alignment or clean mission startup.
 
@@ -144,7 +165,8 @@ The Phase 7 fixture retains original Luminary, the emulator, jet decoding and
 model response coefficients. A source-locked external overlay adds quaternion
 orientation and rigid-body angular-momentum coupling. Body yaw/pitch commands
 and all three derived IMU gimbal measurements remain distinct. The authoritative
-rotational state is independent of display coordinates; no frontend is included.
+rotational state is independent of display coordinates. The separate visual
+demo consumes retained traces without changing the validation fixture.
 
 [Phase 7 capability, actual results and limitations](docs/PHASE7_MULTIAXIS_VALIDATION.md)
 distinguish independent-axis tests, simultaneous control, modern physics unit
@@ -162,6 +184,8 @@ checks and historical hardware assumptions. Earlier evidence remains intact.
   external model correction, pacing and finite queue settlement.
 - [Phase 7 validation report](docs/PHASE7_MULTIAXIS_VALIDATION.md) records the
   multi-axis source mappings, attitude model and actual native experiments.
+- [Phase 7 and frontend release checks](docs/phase7-evidence/release-checks/20261017T164459Z/SUMMARY.md)
+  preserve the final test results, unchanged trace references and browser proof.
 - [Historical gap inventory](docs/milestone1-evidence/missing-historical.json)
   retains the 29 absent paths, original expected hashes and manifest references.
   Recovered logs are accepted only at their original hash. Fresh logs belong in
@@ -176,4 +200,6 @@ the full assembler and Luminary flight sources needed to reassemble the rope.
 Existing phase evidence and tracked historical Python caches are preserved.
 New bytecode and generated build outputs are ignored. Emulator/harness GPL and
 source-license files remain in the corresponding-source archives; the Tcl release
-contains its own license. No Phase 7 work is included.
+contains its own license. That minimal archive predates Phase 7; the new external
+attitude fixture and its evidence are maintained separately in
+`docs/phase7-evidence/`.
