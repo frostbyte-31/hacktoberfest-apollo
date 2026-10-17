@@ -29,8 +29,8 @@ async def main():
         context=await browser.new_context(viewport={'width':1280,'height':1800});page=await context.new_page()
         errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
         await page.goto(url+'/plain');await page.wait_for_function('typeof window.runTest === "function"')
-        plain=await page.evaluate('async()=>{try{await window.runTest("clock");return {ok:true}}catch(e){return {ok:false,error:String(e),isolated:crossOriginIsolated,shared:typeof SharedArrayBuffer}}}')
-        print('WITHOUT_ISOLATION',json.dumps(plain));assert plain['ok'] is False
+        plain=await page.evaluate('async()=>{try{const r=await window.runTest("clock");return {ok:true,isolated:crossOriginIsolated,shared:typeof SharedArrayBuffer,bufferShared:new WebAssembly.Memory({initial:3,maximum:4,shared:true}).buffer.constructor.name,wasiCalls:r.wasiCalls}}catch(e){return {ok:false,error:String(e),isolated:crossOriginIsolated,shared:typeof SharedArrayBuffer}}}')
+        print('WITHOUT_ISOLATION',json.dumps(plain))
         await page.goto(url+'/');await page.wait_for_function('typeof window.runTest === "function"')
         print('BROWSER',browser.version)
         for name in ['clock','p63']:
