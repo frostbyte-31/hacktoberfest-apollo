@@ -1,0 +1,1 @@
+{"all_pass": true, "comparisons": {"phase9_negative_baseline_reproduced_without_changes": true, "full_repeat_native_trace_byte_identical": true, "coherent_altitude_change_changes_original_coefficients_and_root": true, "missing_landing_site_changes_actual_root_behavior": true}, "failed_checks": {"run": [], "repeat": [], "altitude_variant": [], "missing_site_control": []}}

@@ -1,0 +1,26 @@
+[
+  {
+    "argv": [
+      "cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase5-evidence",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/altitude-16km",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase9-evidence/hardware_bridge.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/agc_engine.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/altitude-16km/engine.so"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "exit": 0
+  }
+]

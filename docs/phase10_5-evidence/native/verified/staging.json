@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "canonical_raw_trace_sha256": {
+      "altitude-16km": "34540f19cf0b19284d2d15add4043da854a528625e31a84af30aee4660259eb4",
+      "final": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2",
+      "missing-site": "432f74373968b1040c35b5dd3e7e1365c8aa13561e75d07b1d4e0ced02355bc9",
+      "repeat": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2"
+    },
+    "mode": "RECORDED AUTHENTIC EXECUTION REPLAY",
+    "phase10_manifest_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc",
+    "phase10_sealed_files": 739,
+    "powered_descent": "NOT RUN",
+    "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+    "synthetic_scenario": true,
+    "verified": true
+  },
+  "baseline": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline",
+  "baseline_revision": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "copied_phase10_files_checked": 740,
+  "current_application_copied": false,
+  "original_tracked_files_checked": 4098,
+  "preservation_guards_modified": false,
+  "verified": true
+}

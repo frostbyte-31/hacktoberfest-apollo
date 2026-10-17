@@ -1,0 +1,140 @@
+{
+  "url": "http://127.0.0.1:4180/guidance.html",
+  "method": "Actual CUA browser interactions and read-only DOM observations; UI smoke checks, not proof of AGC execution.",
+  "checks": [
+    {
+      "step": "desktop nominal end",
+      "craftTransform": "translate(533.6585740669356,279.0180117255148)",
+      "scrubber": "227.622",
+      "siteHidden": false,
+      "values": {
+        "dsky-noun": "61",
+        "dsky-program": "63",
+        "dsky-r1": "09 43",
+        "dsky-r2": "02 13",
+        "dsky-r3": "00009",
+        "dsky-verb": "06",
+        "guidance-alarm-value": "01520",
+        "guidance-lead": "139.03s",
+        "guidance-play-state": "RECORDED · PAUSED",
+        "guidance-stage": "Pre-ignition crew review",
+        "guidance-tig": "360.29s GET",
+        "guidance-ttf": "-582.79s",
+        "initial-altitude": "15.00km",
+        "initial-speed": "1672.32m/s",
+        "mission-clock": "00:03:41.26",
+        "projection-epoch-note": "Spacecraft at 120 s · planned site at TLAND 784.4 s. Separate epochs; static illustration.",
+        "root-count": "9"
+      },
+      "viewport": {
+        "height": 827,
+        "scrollWidth": 946,
+        "width": 946
+      }
+    },
+    {
+      "test": "desktop-16km-end",
+      "values": {
+        "guidance-alarm-value": "01520",
+        "guidance-stage": "Pre-ignition crew review",
+        "guidance-tig": "360.44s GET",
+        "initial-altitude": "16.00km",
+        "initial-speed": "1671.84m/s",
+        "root-count": "9"
+      }
+    },
+    {
+      "test": "desktop-missing-site-end",
+      "values": {
+        "guidance-alarm-description": "Original numerical guidance failed. The missing-site control retains its authentic alarm.",
+        "guidance-alarm-value": "01520 / 01406",
+        "guidance-stage": "Guidance stopped · missing input",
+        "guidance-tig": "—s GET",
+        "root-count": "3",
+        "scrollWidth": 1280,
+        "siteHidden": true,
+        "width": 1280
+      }
+    },
+    {
+      "test": "play",
+      "values": {
+        "craft": "translate(533.6585740669356,279.0180117255148)",
+        "state": "RECORDED · PLAYING",
+        "time": "00:01.60"
+      }
+    },
+    {
+      "test": "pause",
+      "values": {
+        "craft": "translate(533.6585740669356,279.0180117255148)",
+        "state": "RECORDED · PAUSED",
+        "time": "00:01.87"
+      }
+    },
+    {
+      "test": "restart",
+      "values": {
+        "scrubber": "0",
+        "time": "00:00.00"
+      }
+    },
+    {
+      "test": "next",
+      "values": {
+        "scrubber": "0.006",
+        "time": "00:00.01"
+      }
+    },
+    {
+      "test": "previous",
+      "values": {
+        "scrubber": "0",
+        "time": "00:00.00"
+      }
+    },
+    {
+      "test": "scrub-end-and-speed",
+      "values": {
+        "speed": "8",
+        "tig": "360.29s GET",
+        "time": "03:47.62"
+      }
+    },
+    {
+      "test": "evidence-dialog",
+      "values": {
+        "open": true,
+        "text": "RECORDED AUTHENTIC EXECUTION REPLAY. Playback controls explore existing traces and do not send commands to a live AGC.SYNTHETIC lunar mission inputs with published preflight target padloads; not the historical Apollo 11 trajectory.ScenarioSynthetic 15 km orbitOriginal softwareLuminary 099, unchanged ropeEmulator revisionf577e3fd917866c59334e6cdd32504f09df76f60Rope SHA-2561f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40eRaw tracedocs/phase10-evidence/runs/final-validation/final/trace.jsonl.gzTrace SHA-2566fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2Evidence reportdocs/PHASE10_MISSION_INITIALIZATION.mdPre-ignition numerical guidance only. Physical alignment calibration, engine ignition, thrust response, powered descent and landing are NOT RUN.The original regression suite still identifies three missing historical evidence errors. They are not passing tests and are not needed to manufacture this recording. The Phase 10.5 report documents the recovery investigation.Open the evidence-derived replay dataset ↗"
+      }
+    },
+    {
+      "test": "mobile-390",
+      "values": {
+        "scenario": "A15 km orbitNominal synthetic state✓",
+        "scrollWidth": 390,
+        "tig": "360.29s GET",
+        "width": 390
+      }
+    },
+    {
+      "test": "mobile-missing-site",
+      "values": {
+        "alarm": "01520 / 01406",
+        "scrollWidth": 390,
+        "siteHidden": true,
+        "width": 390
+      }
+    },
+    {
+      "test": "mobile-projection-dialog",
+      "values": {
+        "dialogWidth": 356,
+        "open": true,
+        "scrollWidth": 390,
+        "text": "Static X–Z projection: spacecraft at initialized epoch 120 s; planned site at nominal TLAND 784.4 s. These markers are not simultaneous observations. Orbit outline is an independent circular-state illustration; no spacecraft trajectory is replayed or propagated.The circle uses the magnitude of the supplied three-dimensional position and the documented lunar reference radius. The arrow shows the initial velocity projected into X–Z. Lunar-surface texture and the vehicle symbol are illustrative. No position changes when the replay runs.Moon-centered basic-REF inertial circular orbitClock zero at synthetic nominal lunar orientation epoch, TEPHEM=0Zero libration, not historical Apollo 11 geometryFixed stable member uses actual near-identity Phase 9 matrixLanding direction is basic REF +X at nominal landing timeState initialized at epoch, no modern propagation or guidance",
+        "width": 390
+      }
+    }
+  ]
+}

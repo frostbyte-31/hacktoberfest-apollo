@@ -1,0 +1,98 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "frontend/tests",
+        "-p",
+        "test_guidance_data.py",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:12.757031+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:28.101714+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/demo/tests",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:28.102478+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:34.787686+00:00"
+    },
+    {
+      "argv": [
+        "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "frontend/tests/guidance.test.mjs"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:34.788201+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:35.163854+00:00"
+    },
+    {
+      "argv": [
+        "make",
+        "demo-verify"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:35.164279+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:42.920376+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase10_5-evidence/check_integrity.py"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:42.921064+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:43.682675+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase10_5-evidence/retain_native.py",
+        "--check",
+        "--output",
+        "docs/phase10_5-evidence/regressions"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:43.683041+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:43.744087+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase10_5-evidence/retain_native.py",
+        "--check",
+        "--output",
+        "docs/phase10_5-evidence/new-tests"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:36:43.744785+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T20:36:43.855503+00:00"
+    }
+  ]
+}

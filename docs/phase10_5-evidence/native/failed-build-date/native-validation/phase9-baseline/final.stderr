@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/run_alignment.py", line 342, in <module>
+    main()
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/run_alignment.py", line 306, in main
+    source, symbols, source_hashes = verified_setup(args.setup.resolve(), output)
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/run_alignment.py", line 66, in verified_setup
+    raise ValueError('Listing-derived observer symbols changed')
+ValueError: Listing-derived observer symbols changed

@@ -1,0 +1,18 @@
+{
+  "scope": "Package files excluding this checksum inventory",
+  "sha256": {
+    "01.stderr": "e273d6103c7a0f5e7c094b7ebd86f2f861bce410ae6c44dedbe094b6c3c0ba08",
+    "01.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "02.stderr": "87a2153bfedba0ca3fb18c1a664713cb84d05f180e6c5a640bfc23089085c49d",
+    "02.stdout": "ea5cb9c8a71f0ca3eb408613d7130374f7b85557a01aba3515ac669596587493",
+    "03.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "03.stdout": "410f092307e03a2574df22b5add2262a9a1bdfa3905ea1efa5da5034eeff8474",
+    "04.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "04.stdout": "1d4b551290be600c2853baf07aa3ee189936f4805615818be97cebf20edd4309",
+    "05.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "05.stdout": "10cb19cefdc3f9fe509ab93a7144cc9baeafb7884315b32b1ec91980c6df19fb",
+    "manifest.json": "aab65e2a48dd8d711baac07c44cb1c385fb8a517e66b38c31fd82804d497b46b",
+    "record.json": "f5ca4b6e1efc8d26bf4b829ace7c4b4cd1d0ccb7fc13de4bcd0fecb870e8a471",
+    "summary.json": "41c383c43a001d5372e7ab3a87283593dee13fad214121f926a5306bc36c0995"
+  }
+}

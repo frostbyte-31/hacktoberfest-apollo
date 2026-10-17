@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "archive",
+    "--format=tar",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline.git.tar",
+    "6859637ae8dcb1041db3944489d0f909ed58429f"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "ended_utc": "2026-10-17T20:36:13.748991+00:00",
+  "exit": 0,
+  "started_utc": "2026-10-17T20:36:13.206810+00:00"
+}

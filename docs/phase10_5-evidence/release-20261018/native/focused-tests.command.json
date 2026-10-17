@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/run_tests.py",
+    "--runs",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/focused-tests"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+  "ended_utc": "2026-10-17T20:37:13.950511+00:00",
+  "exit": 0,
+  "started_utc": "2026-10-17T20:37:09.186858+00:00"
+}

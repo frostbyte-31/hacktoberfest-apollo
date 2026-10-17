@@ -1,0 +1,22 @@
+✔ retained three-scenario guidance recording has required display and source data (6.799959ms)
+✔ a replay labelled live cannot be accepted as a recorded experiment (21.651625ms)
+✔ missing trace fingerprint or display field is rejected instead of substituted (36.503167ms)
+✔ malformed observed quantities and reversed chronology are rejected (37.446625ms)
+✔ frame lookup holds actual observations between samples without interpolation (0.239084ms)
+✔ replay bounds keep observations within the retained execution horizon (0.134084ms)
+✔ event stepping selects real distinct event times and stops at bounds (0.216667ms)
+✔ paced replay stops at horizon and rejects a negative elapsed interval (0.196916ms)
+✔ nominal and altered-state outcomes come from their own recorded scenarios (0.155959ms)
+✔ missing-site control never supplies a fabricated ignition result or site (0.283334ms)
+✔ signed time-to-go is preserved independently from absolute TIG and solution lead (0.217875ms)
+✔ clock and quantity formatters preserve unavailable values and signed zeros (0.144333ms)
+✔ static projection uses X–Z of supplied 3D state and actual lunar radius (0.12625ms)
+✔ landing marker uses documented future-epoch site rather than initial spacecraft position (0.159458ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.801708

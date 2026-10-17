@@ -1,0 +1,350 @@
+{
+  "all_tests_passed": true,
+  "classifications": {
+    "passed": 55
+  },
+  "discovery": {
+    "directory": "docs/milestone1-evidence/tests",
+    "pattern": "test_*.py"
+  },
+  "expected_test_count": null,
+  "outcomes": {
+    "passed": 55
+  },
+  "policy_satisfied": true,
+  "suite": "milestone1",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004737207999999993,
+      "id": "test_evidence.EvidenceIntegrityTests.test_baseline_paths_cannot_escape_repository",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005274332999999992,
+      "id": "test_evidence.EvidenceIntegrityTests.test_changed_retained_file_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.09755825000000001,
+      "id": "test_evidence.EvidenceIntegrityTests.test_cli_exit_codes_and_report_output",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.05101095900000002,
+      "id": "test_evidence.EvidenceIntegrityTests.test_cli_refuses_to_overwrite_retained_evidence",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00586866700000005,
+      "id": "test_evidence.EvidenceIntegrityTests.test_complete_recovery_is_reported_separately",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005542791999999963,
+      "id": "test_evidence.EvidenceIntegrityTests.test_conflicting_original_hashes_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0036658329999999517,
+      "id": "test_evidence.EvidenceIntegrityTests.test_duplicate_json_key_is_a_machine_readable_failure",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.01107966699999996,
+      "id": "test_evidence.EvidenceIntegrityTests.test_each_historical_record_requires_its_exact_original_hash",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004649000000000014,
+      "id": "test_evidence.EvidenceIntegrityTests.test_inventory_cannot_add_or_drop_exceptions",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0053217079999999806,
+      "id": "test_evidence.EvidenceIntegrityTests.test_known_gaps_remain_explicit_and_do_not_count_as_matches",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004028333999999967,
+      "id": "test_evidence.EvidenceIntegrityTests.test_malformed_metadata_is_a_machine_readable_failure",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.003952208000000013,
+      "id": "test_evidence.EvidenceIntegrityTests.test_missing_inventory_is_a_machine_readable_failure",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004823000000000022,
+      "id": "test_evidence.EvidenceIntegrityTests.test_new_missing_retained_file_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005379624999999999,
+      "id": "test_evidence.EvidenceIntegrityTests.test_new_unlisted_evidence_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005039707999999976,
+      "id": "test_evidence.EvidenceIntegrityTests.test_original_manifest_is_verified_directly",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.006716582999999998,
+      "id": "test_evidence.EvidenceIntegrityTests.test_symlink_substitution_is_fatal_even_for_identical_bytes",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00422529100000002,
+      "id": "test_evidence.EvidenceIntegrityTests.test_unpinned_inventory_change_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.07182512499999999,
+      "id": "test_evidence.RetainedRepositoryTests.test_original_snapshot_and_29_gaps_are_intact",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0017507499999999676,
+      "id": "test_reproduce.DependencyAdapterTests.test_direct_adapter_cannot_write_retained_evidence",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00014999999999998348,
+      "id": "test_reproduce.DependencyAdapterTests.test_only_exact_retained_launch_is_translated",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0011411669999999985,
+      "id": "test_reproduce.SourceAndOutputTests.test_build_symlink_cannot_authorize_writes_into_old_evidence",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.002768541999999985,
+      "id": "test_reproduce.SourceAndOutputTests.test_changed_or_unsafe_archive_rejected_before_extraction",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0009354589999999718,
+      "id": "test_reproduce.SourceAndOutputTests.test_duplicate_archive_members_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.10363008299999998,
+      "id": "test_reproduce.SourceAndOutputTests.test_failed_and_timed_out_commands_leave_execution_records",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.001548541999999986,
+      "id": "test_reproduce.SourceAndOutputTests.test_prior_evidence_and_existing_outputs_are_read_only",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.012931791999999942,
+      "id": "test_reproduce.SourceAndOutputTests.test_retained_bundle_extracts_with_exact_member_hashes",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005076124999999987,
+      "id": "test_runtime.RuntimeChecks.test_added_runtime_file_is_rejected_before_execution",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.001181708000000059,
+      "id": "test_runtime.RuntimeChecks.test_archive_links_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.001296415999999967,
+      "id": "test_runtime.RuntimeChecks.test_archive_members_are_all_checked_before_extraction",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0034132090000000836,
+      "id": "test_runtime.RuntimeChecks.test_archive_mismatch_is_rejected_before_execution",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0019000000000000128,
+      "id": "test_runtime.RuntimeChecks.test_cache_cannot_write_retained_evidence_even_through_build_symlink",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004144291999999994,
+      "id": "test_runtime.RuntimeChecks.test_changed_library_is_rejected_before_execution",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0038495419999999836,
+      "id": "test_runtime.RuntimeChecks.test_changed_source_is_rejected_before_execution",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0021735419999999728,
+      "id": "test_runtime.RuntimeChecks.test_corrupt_offline_archive_is_not_extracted",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0034892499999999993,
+      "id": "test_runtime.RuntimeChecks.test_lock_mismatch_is_rejected_before_execution",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004257165999999923,
+      "id": "test_runtime.RuntimeChecks.test_matching_files_reach_smoke_test",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0006597080000000366,
+      "id": "test_runtime.RuntimeChecks.test_real_build_cache_is_allowed",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0003365410000000235,
+      "id": "test_runtime.RuntimeChecks.test_zero_exit_without_smoke_marker_fails",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.000735166999999981,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_bytes_filename_cannot_match_known_gap",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008572499999999206,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_different_missing_path_in_preservation_check_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.003924665999999966,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_exact_known_gap_retains_error_and_explicit_classification",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0007298340000000403,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_filename_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008712920000000235,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_tests_and_setup_errors_are_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008686669999999896,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_other_errno_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0009872920000000285,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_other_exception_types_are_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0015902500000000153,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_previously_missing_path_now_present_cannot_be_exempted",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.000945957999999969,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_same_missing_path_in_unrelated_test_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008103750000000298,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_suite_policy_rejects_every_unverified_outcome",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008687920000000071,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_uninventoried_missing_log_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0014770830000000457,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_function_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0014436669999999818,
+      "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_source_frame_is_fatal",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0013658749999999609,
+      "id": "test_test_runner.OutputProtectionTests.test_build_milestone_records_and_external_scratch_are_allowed",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.002909374999999992,
+      "id": "test_test_runner.OutputProtectionTests.test_retained_phase_and_audit_outputs_rejected_before_any_write",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0014297500000000074,
+      "id": "test_test_runner.OutputProtectionTests.test_symlink_alias_to_retained_evidence_is_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0019959999999999978,
+      "id": "test_test_runner.OutputProtectionTests.test_unrelated_repository_outputs_and_existing_directories_are_rejected",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 55,
+  "unittest_successful": true
+}

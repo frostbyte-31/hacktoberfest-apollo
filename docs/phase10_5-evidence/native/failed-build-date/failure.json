@@ -1,0 +1,4 @@
+{
+  "error": "RuntimeError('Failed native-validation; diagnostics: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final')",
+  "evidence": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final"
+}

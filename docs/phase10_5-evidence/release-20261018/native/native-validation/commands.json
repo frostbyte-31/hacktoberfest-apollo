@@ -1,0 +1,140 @@
+[
+  {
+    "name": "phase9-baseline",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase9-evidence/validate.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/phase9-baseline"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:36:26.078434+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:36:42.443379+00:00"
+  },
+  {
+    "name": "final",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/final"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:36:42.444411+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:36:48.561559+00:00"
+  },
+  {
+    "name": "repeat",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/repeat"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:36:48.562232+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:36:54.430206+00:00"
+  },
+  {
+    "name": "altitude-16km",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/configs/mission-16km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/altitude-16km"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:36:54.431101+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:37:00.292162+00:00"
+  },
+  {
+    "name": "missing-site",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/configs/missing-site.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/missing-site"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:37:00.293264+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:37:06.474081+00:00"
+  },
+  {
+    "name": "analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/analyze.py",
+      "--runs",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation",
+      "--baseline-analysis",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/phase9-baseline/analysis.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:37:06.474959+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:37:08.248180+00:00"
+  },
+  {
+    "name": "final-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/final",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/final-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:37:08.248889+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:37:08.457880+00:00"
+  },
+  {
+    "name": "altitude-16km-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/altitude-16km",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/native-validation/altitude-16km-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline",
+    "started_utc": "2026-10-17T20:37:08.458427+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T20:37:08.664258+00:00"
+  }
+]

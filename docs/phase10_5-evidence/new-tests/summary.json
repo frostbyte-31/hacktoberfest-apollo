@@ -1,0 +1,19 @@
+{
+  "all_commands_exit_zero": true,
+  "classification": "VERIFIED new MVP tests and integrity commands",
+  "commands": 5,
+  "errors": 0,
+  "failed_assertions": 0,
+  "interpretation": "The final two commands are integrity verifications, not additional unit-test counts. UI tests do not prove original AGC execution.",
+  "passed": 34,
+  "skipped": 0,
+  "test_groups": {
+    "guidance_data_python": 14,
+    "guidance_replay_node": 14,
+    "portable_runner_python": 6
+  },
+  "verification_commands": [
+    "make demo-verify",
+    "python3 -B docs/phase10_5-evidence/retain_native.py --check"
+  ]
+}

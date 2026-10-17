@@ -1,0 +1,13 @@
+{
+  "all_pass": true,
+  "prior": {
+    "ok": true,
+    "files_checked": 4098,
+    "changed_or_missing": []
+  },
+  "new_files_checked": 739,
+  "new_mismatches": [],
+  "retained_files_checked": 650,
+  "retention_mismatches": [],
+  "manifest_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc"
+}

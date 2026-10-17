@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "checked_files": 4809,
+  "changed_prior_files": [],
+  "baseline_files": 4838,
+  "authorized_application_edits": [
+    "Makefile",
+    "frontend/README.md",
+    "frontend/dist/index.html",
+    "frontend/serve.py"
+  ],
+  "original_phase10_manifest_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc",
+  "utc": "2026-10-17T20:29:07.309195+00:00"
+}

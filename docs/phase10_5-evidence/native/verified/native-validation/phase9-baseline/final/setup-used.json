@@ -1,0 +1,17 @@
+{
+  "archive": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+  "archiveSHA256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+  "assembly": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233",
+  "licensing": "Original Luminary source is public domain; Virtual AGC tools carry GPL notices. See source/COPYING, LICENSE.txt and individual source headers.",
+  "listing": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233/Luminary099/MAIN.agc.lst",
+  "provenance": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/setups/20261017T201207Z-6b72296d",
+  "rope": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233/Luminary099/MAIN.agc.bin",
+  "ropeSHA256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "setupFile": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/setups/20261017T201207Z-6b72296d/setup.json",
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/source",
+  "sourceFileCount": 359,
+  "sourceRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "symbols": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233/symbols.json",
+  "symtab": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233/Luminary099/MAIN.agc.symtab",
+  "verified": true
+}

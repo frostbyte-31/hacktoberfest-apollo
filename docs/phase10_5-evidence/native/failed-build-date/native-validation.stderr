@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase10-evidence/validate.py", line 71, in <module>
+    main()
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase10-evidence/validate.py", line 48, in main
+    run('phase9-baseline', [sys.executable, '-B', str(ROOT/'docs/phase9-evidence/validate.py'),
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase10-evidence/validate.py", line 45, in run
+    raise ValueError('Failed '+name+'; preserve complete outputs')
+ValueError: Failed phase9-baseline; preserve complete outputs

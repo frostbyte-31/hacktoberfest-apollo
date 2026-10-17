@@ -1,4 +1,48 @@
-# Apollo 11 · Attitude Lab
+# Apollo 11 · Guidance Labs
+
+## Educational pre-ignition replay — Phase 10.5
+
+From the repository root, with Python 3.9 or newer:
+
+```sh
+make demo
+# Or without make:
+python3 -B tools/demo/demo.py launch
+```
+
+Open **http://127.0.0.1:4173/guidance.html**. Use `make demo PORT=4180` if
+4173 is already occupied. No Node, compiler, network service or dependency
+installation is needed for this recorded demonstration. The launcher verifies
+the sealed original-software artifacts and produces the browser data from
+retained traces before starting the existing loopback server in replay-only
+mode. It does not start an AGC process or enable live pilot inputs.
+
+Explore the verified synthetic 15 km and 16 km cases and the missing-site
+control. Replay, pause, restart, scrub or step through actual events. The DSKY
+and numerical readouts hold real observations; they do not interpolate AGC
+values. The orbit view is a **static projection of initialized 3D inputs**,
+with the site shown at its nominal landing epoch. It does not animate a
+descent or propagate spacecraft motion. Signed time-to-go, absolute ignition
+epoch and the held ignition lead at the solution observation are labeled separately.
+
+The screen is **RECORDED AUTHENTIC EXECUTION REPLAY**. Original Luminary
+performed the calculations; the orbit, epoch and optical fixture are
+synthetic. Engine ignition, powered descent and landing remain unproven.
+
+```sh
+make demo-verify       # offline artifact/data checks
+make demo-reproduce    # separate fresh authentic native experiment
+```
+
+Fresh native reproduction needs Git history containing the original baseline,
+a C compiler and make. Its first run obtains and verifies pinned source, or
+accepts `--archive` through `python3 -B tools/demo/demo.py reproduce`. It runs
+the unchanged Phase 10 harness in an isolated verified baseline, preserving
+its original application-source hash checks while allowing this new UI.
+Read [the Phase 10.5 report](../docs/PHASE10_5_MVP.md) for exact commands,
+provenance, tests and the unresolved historical log gaps.
+
+## Existing attitude lab and live control
 
 A repository-local console for verified Phase 7 recordings and fresh native Luminary 099 attitude sessions. Both modes show actual AGC RCS outputs alongside the external simulated vehicle response and returned sensor measurements. Live mode sends bounded, authentic rotational hand-controller inputs. No landing is simulated.
 
@@ -78,4 +122,4 @@ make test-phase7
 
 The tests check real source checksums and endpoints, exact RCS event sequences, deterministic export, honest missing fields and the sensor tail, right-handed quaternion rendering, non-extrapolation after cutoff, interpolation without mutating samples, wrapping, source jet bits, readiness gates and malformed-data rejection. Browser checks additionally cover desktop/phone layouts, real control interactions, original startup state and the evidence dialog/download.
 
-The previous [Phase 7 report](../docs/PHASE7_MULTIAXIS_VALIDATION.md) remains the scientific record for its captured experiments. The new [live-control evidence](../docs/live-control-evidence/README.md) records fresh input-driven executions. Full independent three-axis control, sustained stability, mission initialization and powered descent remain unverified.
+The previous [Phase 7 report](../docs/PHASE7_MULTIAXIS_VALIDATION.md) remains the scientific record for its captured experiments. The new [live-control evidence](../docs/live-control-evidence/README.md) records fresh input-driven executions. Full independent three-axis control and sustained stability remain unverified. This attitude fixture does not establish mission initialization or powered descent. The separate Phase 10 experiment establishes bounded synthetic pre-ignition numerical guidance, exposed by the Phase 10.5 replay above.

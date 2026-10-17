@@ -1,0 +1,47 @@
+{
+  "classification": "Preserved captured-evidence whitespace; no application/harness code whitespace errors",
+  "full_staged_whitespace_exit": 2,
+  "diagnostics": [
+    {
+      "path": "docs/phase10-evidence/research/luminary_1b_updates.ocr.txt",
+      "kind": "trailing whitespace.",
+      "count": 342
+    },
+    {
+      "path": "docs/phase10-evidence/source/angle050-scheduling-source.txt",
+      "kind": "trailing whitespace.",
+      "count": 8
+    },
+    {
+      "path": "docs/phase10-evidence/source/dependency-excerpts.txt",
+      "kind": "trailing whitespace.",
+      "count": 219
+    },
+    {
+      "path": "docs/phase10-evidence/source/engine-observer-semantics.txt",
+      "kind": "trailing whitespace.",
+      "count": 17
+    }
+  ],
+  "code_check": {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      "*.py",
+      "*.c",
+      "*.mjs",
+      "*.html",
+      "*.css",
+      "*.md",
+      "Makefile"
+    ],
+    "exit": 0
+  },
+  "staged_phase10_files": 740,
+  "staged_raw_bytes_match_working_files": true,
+  "evidence_modified_to_silence_formatting": false,
+  "scope": "Precommit staging checks, separate supplemental seal; earlier release seal remains unchanged"
+}

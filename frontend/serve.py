@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Loopback frontend and bounded live AGC inputs; no descent interface."""
 import argparse
+import errno
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -135,9 +136,15 @@ def main():
     parser.add_argument('--port', type=int, default=4173)
     parser.add_argument('--replay-only', action='store_true')
     args = parser.parse_args()
-    server = make_server(args.port, replay_only=args.replay_only)
-    print('Apollo 11 Attitude Lab', flush=True)
+    try:
+        server = make_server(args.port, replay_only=args.replay_only)
+    except OSError as error:
+        if error.errno == errno.EADDRINUSE:
+            parser.error('Port {} is in use. Choose another port, for example --port 4180.'.format(args.port))
+        raise
+    print('Apollo 11 Guidance Labs', flush=True)
     print('Local: http://127.0.0.1:{}/'.format(server.server_port), flush=True)
+    print('Pre-ignition recorded replay: http://127.0.0.1:{}/guidance.html'.format(server.server_port), flush=True)
     print('Live control: {}'.format('disabled' if args.replay_only else 'available; native startup begins on request'), flush=True)
     try:
         server.serve_forever()

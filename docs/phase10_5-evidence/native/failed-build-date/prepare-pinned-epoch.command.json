@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/prepare.py",
+    "--cache",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/.build/phase10_5/dependencies",
+    "--archive",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline",
+  "ended_utc": "2026-10-17T20:11:41.631037+00:00",
+  "environment_overrides": {
+    "SOURCE_DATE_EPOCH": "1792195200"
+  },
+  "exit": 0,
+  "started_utc": "2026-10-17T20:11:36.400090+00:00"
+}

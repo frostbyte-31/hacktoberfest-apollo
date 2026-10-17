@@ -1,0 +1,12 @@
+{
+  "branch": "main",
+  "head": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "status": " M Makefile\n M frontend/README.md\n M frontend/dist/index.html\n M frontend/serve.py\n?? docs/PHASE10_5_MVP.md\n?? docs/PHASE10_MISSION_INITIALIZATION.md\n?? docs/phase10-evidence/\n?? docs/phase10_5-evidence/\n?? frontend/dist/data/guidance.json\n?? frontend/dist/guidance-state.mjs\n?? frontend/dist/guidance.css\n?? frontend/dist/guidance.html\n?? frontend/dist/guidance.mjs\n?? frontend/tests/guidance.test.mjs\n?? frontend/tests/test_guidance_data.py\n?? frontend/tools/export_guidance.py\n?? tools/demo/\n",
+  "committed": false,
+  "pushed": false,
+  "pre_existing_user_work": [
+    "docs/PHASE10_MISSION_INITIALIZATION.md",
+    "docs/phase10-evidence/"
+  ],
+  "scope": "Phase 10.5 complete; Phase 11 NOT RUN"
+}

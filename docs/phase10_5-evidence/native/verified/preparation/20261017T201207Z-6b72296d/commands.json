@@ -1,0 +1,16 @@
+[
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/docs/phase9-evidence/rebuild_source.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/source",
+      "--out",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/.build/phase10_5/dependencies/assembly-508469d1b2a24a20bc7401544ced6233",
+      "--reference",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline/docs/phase1-evidence/artifacts/MAIN.agc.bin"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/verified/baseline",
+    "exit": 0
+  }
+]

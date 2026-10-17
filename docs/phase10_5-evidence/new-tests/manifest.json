@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-10-17T20:27:47.219873+00:00",
+  "files": [
+    {
+      "encoding": "identity",
+      "raw_bytes": 1585,
+      "raw_sha256": "e273d6103c7a0f5e7c094b7ebd86f2f861bce410ae6c44dedbe094b6c3c0ba08",
+      "retained_bytes": 1585,
+      "retained_path": "01.stderr",
+      "retained_sha256": "e273d6103c7a0f5e7c094b7ebd86f2f861bce410ae6c44dedbe094b6c3c0ba08",
+      "source_path": ".build/phase10_5/new-tests/01.stderr"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_bytes": 0,
+      "retained_path": "01.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": ".build/phase10_5/new-tests/01.stdout"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 577,
+      "raw_sha256": "87a2153bfedba0ca3fb18c1a664713cb84d05f180e6c5a640bfc23089085c49d",
+      "retained_bytes": 577,
+      "retained_path": "02.stderr",
+      "retained_sha256": "87a2153bfedba0ca3fb18c1a664713cb84d05f180e6c5a640bfc23089085c49d",
+      "source_path": ".build/phase10_5/new-tests/02.stderr"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 20,
+      "raw_sha256": "ea5cb9c8a71f0ca3eb408613d7130374f7b85557a01aba3515ac669596587493",
+      "retained_bytes": 20,
+      "retained_path": "02.stdout",
+      "retained_sha256": "ea5cb9c8a71f0ca3eb408613d7130374f7b85557a01aba3515ac669596587493",
+      "source_path": ".build/phase10_5/new-tests/02.stdout"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_bytes": 0,
+      "retained_path": "03.stderr",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": ".build/phase10_5/new-tests/03.stderr"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 1401,
+      "raw_sha256": "410f092307e03a2574df22b5add2262a9a1bdfa3905ea1efa5da5034eeff8474",
+      "retained_bytes": 1401,
+      "retained_path": "03.stdout",
+      "retained_sha256": "410f092307e03a2574df22b5add2262a9a1bdfa3905ea1efa5da5034eeff8474",
+      "source_path": ".build/phase10_5/new-tests/03.stdout"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_bytes": 0,
+      "retained_path": "04.stderr",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": ".build/phase10_5/new-tests/04.stderr"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 947,
+      "raw_sha256": "1d4b551290be600c2853baf07aa3ee189936f4805615818be97cebf20edd4309",
+      "retained_bytes": 947,
+      "retained_path": "04.stdout",
+      "retained_sha256": "1d4b551290be600c2853baf07aa3ee189936f4805615818be97cebf20edd4309",
+      "source_path": ".build/phase10_5/new-tests/04.stdout"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_bytes": 0,
+      "retained_path": "05.stderr",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": ".build/phase10_5/new-tests/05.stderr"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 102,
+      "raw_sha256": "10cb19cefdc3f9fe509ab93a7144cc9baeafb7884315b32b1ec91980c6df19fb",
+      "retained_bytes": 102,
+      "retained_path": "05.stdout",
+      "retained_sha256": "10cb19cefdc3f9fe509ab93a7144cc9baeafb7884315b32b1ec91980c6df19fb",
+      "source_path": ".build/phase10_5/new-tests/05.stdout"
+    },
+    {
+      "encoding": "identity",
+      "raw_bytes": 1821,
+      "raw_sha256": "f5ca4b6e1efc8d26bf4b829ace7c4b4cd1d0ccb7fc13de4bcd0fecb870e8a471",
+      "retained_bytes": 1821,
+      "retained_path": "record.json",
+      "retained_sha256": "f5ca4b6e1efc8d26bf4b829ace7c4b4cd1d0ccb7fc13de4bcd0fecb870e8a471",
+      "source_path": ".build/phase10_5/new-tests/record.json"
+    }
+  ],
+  "path_policy": "Repository-relative origins and package-relative references. Raw observed host paths remain unchanged inside actual logs.",
+  "scope": "Actual Phase 10.5 test captures; byte-identical retained logs; no prior evidence modified"
+}

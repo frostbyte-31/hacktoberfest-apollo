@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "observed_utc": "2026-10-17T20:12:02.955088+00:00",
+  "cause": "Original yaYUL compile-date banner uses __DATE__; later day changed listing hash and its observer metadata hash, not symbols or rope.",
+  "unpinned_listing_sha256": "62786cd3137ba2b98a3ec7463a7ec5f773dd991b75f337d32408ab0702282f21",
+  "pinned_listing_sha256": "d5547c4db630c444004be99556a34e612954eed0b3f27bac4bbe318ad8fbc108",
+  "unpinned_symbols_sha256": "d61a4665a428122759695be133539932ac97002bdc8f83081c934143ca0188a5",
+  "pinned_symbols_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+  "all_7104_symbol_records_equal": true,
+  "listing_all_lines_after_banner_equal": true,
+  "banner_before": "Apollo Guidance Computer (AGC) assembler, version 1.0, built Oct 18 2026, target AGC4",
+  "banner_after": "Apollo Guidance Computer (AGC) assembler, version 1.0, built Oct 17 2026, target AGC4",
+  "rope_byte_identical": true,
+  "environment": {
+    "SOURCE_DATE_EPOCH": "1792195200"
+  },
+  "original_source_or_guards_modified": false,
+  "diagnostic_commands": "prepare.command.json and prepare-pinned-epoch.command.json"
+}

@@ -1,0 +1,165 @@
+{
+  "utc": "2026-10-17T20:07:19.106895+00:00",
+  "classification": "UNRESOLVED historical provenance; no exact local copies found",
+  "inventory_path": "docs/milestone1-evidence/missing-historical.json",
+  "inventory_sha256": "8dd7633cdcdf87886fe216126295ae2a20f366872160ea815a3fd8a8935bc9a6",
+  "missing_inventory_count": 29,
+  "currently_missing": [
+    "docs/phase1-evidence/00_environment.log",
+    "docs/phase1-evidence/01_build_yaYUL.log",
+    "docs/phase1-evidence/02_build_oct2bin.log",
+    "docs/phase1-evidence/03_build_yaAGC.log",
+    "docs/phase1-evidence/04_yaAGC_help.log",
+    "docs/phase1-evidence/05_assemble_Luminary099.log",
+    "docs/phase1-evidence/06_oct2bin.log",
+    "docs/phase1-evidence/08_binary_compare.log",
+    "docs/phase1-evidence/10_M1_stepi_trace.log",
+    "docs/phase1-evidence/11_M1_source_step_trace.log",
+    "docs/phase1-evidence/20_M2_yaAGC_stdout.log",
+    "docs/phase1-evidence/30_wasm_build.log",
+    "docs/phase1-evidence/31_wasm_run.log",
+    "docs/phase1-evidence/32_native_vs_wasm_compare.log",
+    "docs/phase2-evidence/40_native_build.log",
+    "docs/phase2-evidence/43_clock_run.log",
+    "docs/phase2-evidence/43_p63_run.log",
+    "docs/phase2-evidence/44_browser_initial_assertion_failure.log",
+    "docs/phase2-evidence/44_browser_run.log",
+    "docs/phase2-evidence/46_browser_compare.log",
+    "docs/phase2-evidence/48_tests.log",
+    "docs/phase3-evidence/build.log",
+    "docs/phase3-evidence/restore.log",
+    "docs/phase3-evidence/symbol_build.log",
+    "docs/phase3-evidence/tests.log",
+    "docs/phase4-evidence/tests.log",
+    "docs/phase5-evidence/tests.log",
+    "docs/phase6-evidence/tests-initial-failure.log",
+    "docs/phase6-evidence/tests.log"
+  ],
+  "original_three_errors": [
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.0077024160000000175,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase4-evidence/test_control_path.py\", line 10, in test_prior_evidence_preserved\n    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.007097624999999996,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/test_readiness.py\", line 17, in test_prior_evidence_unchanged\n    for p, h in hashes.items(): self.assertEqual(hashlib.sha256((ROOT / p).read_bytes()).hexdigest(), h, p)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.007574915999999987,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    }
+  ],
+  "path_history_commits": [],
+  "git_blobs_checked": 1822,
+  "git_blob_bytes_checked": 96080663,
+  "workspace_log_candidates_checked": 4661,
+  "workspace_log_bytes_checked": 880382862,
+  "retained_source_archives": [
+    {
+      "path": "docs/phase6-evidence/corresponding-source.tar.gz",
+      "sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+      "regular_members_checked": 24
+    },
+    {
+      "path": "docs/phase2-evidence/artifacts/yaAGC-corresponding-source.tar.gz",
+      "sha256": "49592b731cd8e3bd599d5ea1b2c65f8c1b79035e78c28338ecbac82fd8e943a2",
+      "regular_members_checked": 14
+    },
+    {
+      "path": "docs/phase9-evidence/setup/integrity-experiments/wrong.tar.gz",
+      "sha256": "7bbc0a99092b687013b2a029828f6b423f56af2725e437f356fce4b19c15ba83",
+      "regular_members_checked": 0,
+      "archive_error": "ReadError('not a gzip file')"
+    }
+  ],
+  "archive_regular_members_checked": 38,
+  "exact_matches": [],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "log",
+        "--all",
+        "--format=%H",
+        "--",
+        "docs/phase1-evidence/00_environment.log",
+        "docs/phase1-evidence/01_build_yaYUL.log",
+        "docs/phase1-evidence/02_build_oct2bin.log",
+        "docs/phase1-evidence/03_build_yaAGC.log",
+        "docs/phase1-evidence/04_yaAGC_help.log",
+        "docs/phase1-evidence/05_assemble_Luminary099.log",
+        "docs/phase1-evidence/06_oct2bin.log",
+        "docs/phase1-evidence/08_binary_compare.log",
+        "docs/phase1-evidence/10_M1_stepi_trace.log",
+        "docs/phase1-evidence/11_M1_source_step_trace.log",
+        "docs/phase1-evidence/20_M2_yaAGC_stdout.log",
+        "docs/phase1-evidence/30_wasm_build.log",
+        "docs/phase1-evidence/31_wasm_run.log",
+        "docs/phase1-evidence/32_native_vs_wasm_compare.log",
+        "docs/phase2-evidence/40_native_build.log",
+        "docs/phase2-evidence/43_clock_run.log",
+        "docs/phase2-evidence/43_p63_run.log",
+        "docs/phase2-evidence/44_browser_initial_assertion_failure.log",
+        "docs/phase2-evidence/44_browser_run.log",
+        "docs/phase2-evidence/46_browser_compare.log",
+        "docs/phase2-evidence/48_tests.log",
+        "docs/phase3-evidence/build.log",
+        "docs/phase3-evidence/restore.log",
+        "docs/phase3-evidence/symbol_build.log",
+        "docs/phase3-evidence/tests.log",
+        "docs/phase4-evidence/tests.log",
+        "docs/phase5-evidence/tests.log",
+        "docs/phase6-evidence/tests-initial-failure.log",
+        "docs/phase6-evidence/tests.log"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "fsck",
+        "--full",
+        "--no-reflogs",
+        "--unreachable"
+      ],
+      "exit": 0,
+      "stdout_sha256": "9f1db7e04c3cd464dce65ac977b99b111b35e9bc604a737c6ec92fb149a20d1a",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "--batch-all-objects",
+        "--batch-check=%(objectname) %(objecttype) %(objectsize)"
+      ],
+      "exit": 0,
+      "stdout_sha256": "ca467a63978870e08db5f48dbd890f272c6506b806b0dd30777aa8fda87d806b",
+      "stderr": ""
+    }
+  ],
+  "interpretation": "Search covers available local Git objects and docs/.build log-like files. It does not prove absence from an external owner backup. New compiler logs cannot be relabeled historical logs. No missing file, placeholder, original test or old inventory was changed."
+}

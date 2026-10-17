@@ -1,0 +1,87 @@
+{
+  "tests_run": 13,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_startup.StartupTests.test_addresses_agree_with_rope_and_erasable_source",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.006580875
+    },
+    {
+      "id": "test_startup.StartupTests.test_after_ready_control_accepts_p00",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.645799999999922e-05
+    },
+    {
+      "id": "test_startup.StartupTests.test_cold_boot_takes_zero_pair_failure_path",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 5.420899999999951e-05
+    },
+    {
+      "id": "test_startup.StartupTests.test_command_records_are_completed_and_timestamped",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00022408400000001327
+    },
+    {
+      "id": "test_startup.StartupTests.test_exact_replay_and_raw_hashes",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0017304579999999903
+    },
+    {
+      "id": "test_startup.StartupTests.test_imu_off_p00_is_not_dap_readiness",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.266599999999676e-05
+    },
+    {
+      "id": "test_startup.StartupTests.test_late_v37_enters_p00_with_no_recorded_alarms",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.6165999999986385e-05
+    },
+    {
+      "id": "test_startup.StartupTests.test_legacy_and_premature_keys_hit_original_rejection",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00041929100000001607
+    },
+    {
+      "id": "test_startup.StartupTests.test_no_counter_or_vehicle_stimulus",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0031743330000000014
+    },
+    {
+      "id": "test_startup.StartupTests.test_no_v36_does_not_clear_expected_cold_alarm",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0002486250000000023
+    },
+    {
+      "id": "test_startup.StartupTests.test_original_fresh_start_clears_alarm_and_stays_clear",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00031812500000000243
+    },
+    {
+      "id": "test_startup.StartupTests.test_original_sources_have_pinned_provenance",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0003767919999999869
+    },
+    {
+      "id": "test_startup.StartupTests.test_ready_observed_before_first_delayed_v37_key",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0001374579999999792
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}

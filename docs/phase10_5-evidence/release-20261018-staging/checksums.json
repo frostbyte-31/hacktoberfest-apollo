@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "code-check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code-check.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "phase10.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "phase10.stdout": "90c636d616ac1f576035b2530b36803c5780ffd96a327a9efa67dc8d42da23de",
+    "summary.json": "558e9bd0e3101b73a7c625ce21729c45f450de0941a98c83c9af3ff95464de55"
+  }
+}

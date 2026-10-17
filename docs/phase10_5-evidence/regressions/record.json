@@ -1,0 +1,90 @@
+{
+  "argv": [
+    "docs/live-control-evidence/run_final_checks.py",
+    "--node",
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--output",
+    ".build/phase10_5/regressions"
+  ],
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "node": "v24.19.0",
+  "base_revision": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "source_sha256": {
+    "Makefile": "6615e9bde2bf7523968546de50dbfb3b8883017b12ea3fc02b7b9d72fdcc9ed1",
+    "README.md": "20787cce32f6b57ae1c06eb29918e240fd08e52c589cc0e1e77fb18170ec7e57",
+    "backend/__init__.py": "16891c1417a38ca9411e892d34719e2ff29e4dc4348a9ad76e659562fd3f48c5",
+    "backend/control_service.py": "c524ef2624b673e966ae6fc067e088ae88bbc4c05dc881c3a6c5b110aaf07f68",
+    "backend/native_session.py": "154a8706c7922f194e75e514055a19913cb468040f4c12bac212133d8c25506c",
+    "backend/tests/test_http.py": "47ac7b501036b769fb06c9156985087a6b6707418de0f953b1acb940e0c72179",
+    "backend/tests/test_native.py": "f69773a465269d64e194592079a0c9803bc42391e175c876c97cc948c7e9e842",
+    "backend/tests/test_service.py": "f81701d867faa9626e037a9f15a0cf9e5c8c52442c45acd960ee8748bd4ad47a",
+    "docs/live-control-evidence/run_final_checks.py": "8d7e0b5d83f30ae9d5d34d91d6f7625e0639116283490ab3b8278f4ce2d4bc14",
+    "frontend/README.md": "a5a7651d044fce3e93c0c42d68f148f05eb7ba737197542ad8ca89bdca64ef3f",
+    "frontend/dist/app.js": "0e1c8480657c82d37f684cd1065dd9ff65731a5327fd5229c55884399f6d49fd",
+    "frontend/dist/data/guidance.json": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709",
+    "frontend/dist/data/replay.json": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+    "frontend/dist/favicon.svg": "1d76cf7cab439b68ed21d0dbf8caf698930ed8f773b90ece17da59334ec18390",
+    "frontend/dist/guidance-state.mjs": "8195bb69d827262a6dae379fbc5d56ff14b2a61b1b038a52347e8013fa9626fd",
+    "frontend/dist/guidance.css": "154c495ce725c73c894efbc0061513e05386ad181b95c1371f043096536c3b2d",
+    "frontend/dist/guidance.html": "b0afa056e2de28009b3defeef11c7349c49dbff4c59009a8b17a516f4b6621d1",
+    "frontend/dist/guidance.mjs": "ff9cd399dea86b00ed8286e2915ce47e1d358a05c34390cb2ff65a1866332bea",
+    "frontend/dist/index.html": "46a5fde985f6847752e0c9abb77058ca47136e8dea8d7e5ac179977f66ad9988",
+    "frontend/dist/live.mjs": "093fcaf8344d79b319a1d700e7de555829aed73100e1198e1aaa1a9cc6e71324",
+    "frontend/dist/replay.mjs": "5f22429eabb9a2f14bfd247cfe16917ab083dba3c3e94f3fe0d475efae2f6217",
+    "frontend/dist/spacecraft.mjs": "2a79c5aeded8c14a5242b0c31af7535ef6fc0393f30eebce6fe3697bb07634f1",
+    "frontend/dist/styles.css": "3e80272e71d788d028fbcab9bc02fdfe1d6d258fcd6786c290c88ceb77a95dde",
+    "frontend/serve.py": "c1cf04692d133f56cc41dcc9886da5445cf8834e053bec4f0749fadc63f8a590",
+    "frontend/tests/guidance.test.mjs": "dea7c8e668e102ad3353f0c395ea60a5462068dc603a42b7dad563f1a2d2d0c2",
+    "frontend/tests/live.test.mjs": "28c26cb3a98a0cb8956fabbe4aa487fbc142d24b3c5e42467bf4786707e6be1f",
+    "frontend/tests/replay.test.mjs": "7c66811d46fc923be3b334f15b9f3f601ddde96b9db9a73a232e5cc97c5532c9",
+    "frontend/tests/test_guidance_data.py": "bbfd7e1e122ec61d3532e7ed113195bd7fae63d062629fb3471c8fc9b0c64bd0",
+    "frontend/tests/test_replay.py": "e41d08178283683d71f70528a0857043c90a59a739941a22d2135c5f9d073be2",
+    "frontend/tools/export_guidance.py": "cfd92235e060e47dda78a4680642c51cb7e9c13ae8209a8e543ec6236a4d0baf",
+    "frontend/tools/export_replay.py": "06ee6fdb3799de605cd780dd64032952936f248b0903d9bb0151f20142c2c432"
+  },
+  "commands": [
+    {
+      "command": [
+        "make",
+        "check"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:23:15.111873+00:00",
+      "returncode": 0,
+      "ended_utc": "2026-10-17T20:25:19.103240+00:00"
+    },
+    {
+      "command": [
+        "make",
+        "test-live",
+        "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:25:19.104471+00:00",
+      "returncode": 0,
+      "ended_utc": "2026-10-17T20:25:26.945122+00:00"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/live-control-evidence",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T20:25:26.945959+00:00",
+      "returncode": 0,
+      "ended_utc": "2026-10-17T20:25:36.791210+00:00"
+    }
+  ],
+  "passed": true,
+  "changed_during_checks": [],
+  "interpretation": "make check preserves three classified historical missing-log errors; inspect its per-suite results. Exit zero is not a claim that those tests passed."
+}

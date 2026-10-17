@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedPath": "frontend/dist/data/guidance.json",
+  "generator": "python3 -B frontend/tools/export_guidance.py",
+  "verify": "python3 -B frontend/tools/export_guidance.py --check",
+  "mode": "RECORDED AUTHENTIC EXECUTION REPLAY",
+  "sourceRoot": "docs/phase10-evidence/runs/final-validation",
+  "cases": {
+    "nominal": "final",
+    "altitude-16km": "altitude-16km",
+    "missing-site": "missing-site"
+  },
+  "integrity": "Pinned Phase 10 seal verifies every listed immutable Phase 10 file; original rope and decoder hashes are checked. Compressed/raw trace fingerprints, original observer checkpoint addresses, execution dependencies and read-only Phase 10 analyzer assertions must all agree before export.",
+  "clock": {
+    "cycle": "Original native driver CPU-call index, not host wall clock",
+    "t": "cycle * 12 / 1024000 seconds, for replay positioning only",
+    "observedClockSeconds": "Original TIME2/TIME1 snapshot DP B28 centiseconds divided by 100; held at recorded observation",
+    "epochSeconds": "Initialized navigation state epoch, distinct from observed clock and replay position"
+  },
+  "frame": {
+    "dsky": "Original channel 010 digit fields PROG/VERB/NOUN/R1/R2/R3 reconstructed with retained Phase 1 decoder; sign lamps not decoded",
+    "signedTimeToGoSeconds": "Observed MPAC at original ROOTSTOR_RESULT (ROOTSTOR+4), DP fraction * 2^17 / 100; the later normal return and TTF store are separately verified by the subsequent QUADGUID continuation",
+    "ignitionTimeSeconds": "Original TIG DP B28 centiseconds at original IGNALGRT only; absolute synthetic mission time",
+    "ignitionLeadSeconds": "(TIG minus TIME2/TIME1) at the same IGNALGRT observation, held solution lead rather than ticking countdown",
+    "rootCount": "Count of observed original ROOTSTOR_RESULT solutions; each later normal return and TTF store is separately verified at QUADGUID. Missing-site has three provisional solutions before genuine 01406 failure",
+    "alarms": "Nonzero original FAILREG words, displayed as five octal digits",
+    "stage": "Educational annotation of actual recorded events, not a new AGC mode",
+    "observationSources": "Per-field source cycle and one-based decompressed raw JSONL line, plus original symbol/routine or packet details",
+    "source": "Actual recorded row that caused this held presentation state to be emitted"
+  },
+  "sampling": "Frames occur only at actual recorded observations or events. All fields hold the latest observation with its source pointer. No interpolation, fabricated events or inferred trajectory.",
+  "initialState": {
+    "positionM": "Actual P27-stored RRECTLEM decoded at B27, Moon-centered basic REF inertial metres",
+    "velocityMps": "Actual P27-stored VRECTLEM decoded at B5 metres/centisecond and multiplied by 100",
+    "landingSiteMoonFixedM": "Actual RLS mission input at B27 metres; null if omitted",
+    "landingSiteBasicRefAtTlandM": "Independent static M transpose * RLS using the documented nominal Moon matrix at TLAND, null if omitted",
+    "epochDistinction": "Spacecraft is shown at initial state epoch 120 s; planned site direction is at nominal TLAND 784.4 s, not a simultaneous observation",
+    "scope": "Static X-Z illustration of documented 3D inputs; no frontend authoritative physics, propagation or landing animation"
+  },
+  "limitations": [
+    "Synthetic geometry and published preflight targets do not reproduce the historical Apollo 11 trajectory.",
+    "Numerically valid P51 matrix and original REFSMFLG do not establish physical alignment calibration.",
+    "No engine ignition, thrust plant, powered descent or landing is demonstrated.",
+    "Playback controls do not command a live AGC or accept arbitrary new mission parameters."
+  ]
+}

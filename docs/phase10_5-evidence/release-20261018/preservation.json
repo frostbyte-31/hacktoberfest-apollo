@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/phase10_5-evidence/check_integrity.py"
+  ],
+  "exit": 0,
+  "prior_seals_modified": false,
+  "result": {
+    "mvp_files": 413,
+    "prior_evidence_files": 4809,
+    "problems": [],
+    "scope": "Evidence/package integrity; not an AGC execution or UI test",
+    "verified": true
+  }
+}

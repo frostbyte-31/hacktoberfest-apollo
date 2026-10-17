@@ -1,5 +1,6 @@
 PYTHON ?= python3
 NODE ?= node
+PORT ?= 4173
 export PYTHONDONTWRITEBYTECODE := 1
 
 .PHONY: verify test runtime reproduce validate-milestone2 validate-milestone3 test-phase7 validate-phase7 test-live validate-live check
@@ -45,3 +46,16 @@ check: test
 	$(MAKE) validate-milestone3
 	$(MAKE) test-phase7
 	$(MAKE) validate-phase7
+
+.PHONY: demo demo-verify demo-reproduce
+
+# Recorded original guidance; Python only, no native toolchain required.
+demo:
+	$(PYTHON) -B tools/demo/demo.py launch --port $(PORT)
+
+demo-verify:
+	$(PYTHON) -B tools/demo/demo.py verify
+
+# Rebuild/replay the unchanged frozen Phase 10 experiment in an isolated copy.
+demo-reproduce:
+	$(PYTHON) -B tools/demo/demo.py reproduce

@@ -1,0 +1,7 @@
+{
+  "classification": "VERIFIED P51 alignment sets original REFSMFLG; P63 passes R02 then aborts01406; no powered descent",
+  "prior_files_preserved": 3393,
+  "exact_replay": true,
+  "source_files_unchanged": true,
+  "completed_utc": "2026-10-17T20:12:28.185045+00:00"
+}

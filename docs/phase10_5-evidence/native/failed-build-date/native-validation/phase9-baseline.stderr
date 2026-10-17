@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/validate.py", line 70, in <module>
+    main()
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/validate.py", line 53, in main
+    run(case, argv)
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/reproduction/final/baseline/docs/phase9-evidence/validate.py", line 45, in run
+    raise ValueError('Actual '+label+' failed; preserve this output directory')
+ValueError: Actual final failed; preserve this output directory

@@ -1,0 +1,43 @@
+{
+  "all_commands_exit_zero": true,
+  "app_and_live": {
+    "backend_python": 32,
+    "errors": 0,
+    "failed_assertions": 0,
+    "live_evidence_python": 9,
+    "passed": 75,
+    "replay_live_node": 22,
+    "replay_python": 12,
+    "skipped": 0
+  },
+  "classification": "VERIFIED with three retained historical missing-evidence errors",
+  "commands": 3,
+  "interpretation": "Exit zero from the documented historical-gap policy does not turn the original three errors into passing tests.",
+  "make_check": {
+    "errors": 3,
+    "failed_assertions": 0,
+    "later_suites_passed": {
+      "milestone2": 47,
+      "milestone3": 34,
+      "phase7": 39
+    },
+    "legacy_early_phases": {
+      "known_historical_errors": 3,
+      "outcomes": {
+        "error": 3,
+        "passed": 35
+      },
+      "tests_run": 38
+    },
+    "milestone1": {
+      "known_historical_errors": 0,
+      "outcomes": {
+        "passed": 55
+      },
+      "tests_run": 55
+    },
+    "passed": 210,
+    "skipped": 0
+  },
+  "source_unchanged_during_checks": true
+}

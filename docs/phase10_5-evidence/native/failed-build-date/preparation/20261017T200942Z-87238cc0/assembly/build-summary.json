@@ -1,0 +1,16 @@
+{
+  "timeUTC": "2026-10-17T20:09:48.315595+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "ropeSHA256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "referenceSHA256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "byteIdentical": true,
+  "originalSourceUnchanged": true,
+  "copiedSourceUnchanged": true,
+  "sourceFileCount": 136,
+  "symbolCount": 7104,
+  "files": {
+    "yaYUL/yaYUL": "9bb69ce0f9696913e00789c2e01d55571d2a0ccb1c67603c1dee0dcc84ea5f19",
+    "Luminary099/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+    "Luminary099/MAIN.agc.symtab": "7372ced19638c43afae759a42c4f2fabb5763b68d9c6832d4cea8b884ab365d5"
+  }
+}

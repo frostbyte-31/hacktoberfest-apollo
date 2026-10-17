@@ -1,0 +1,42 @@
+{
+  "baseline_revision": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "build_date_remedy": "SOURCE_DATE_EPOCH=1792195200 gives unchanged yaYUL its retained compile-date banner. Original listing/symbol checks remain exact.",
+  "canonical_raw_traces_match": {
+    "altitude-16km": true,
+    "final": true,
+    "missing-site": true,
+    "repeat": true
+  },
+  "classification": "VERIFIED fresh original native execution; UI uses recorded authentic replay",
+  "focused_tests": {
+    "phase10-math": {
+      "failures": 0,
+      "passed": true,
+      "tests": 14
+    },
+    "phase10-native": {
+      "failures": 0,
+      "passed": true,
+      "tests": 14
+    },
+    "phase8": {
+      "failures": 0,
+      "passed": true,
+      "tests": 10
+    },
+    "phase9": {
+      "failures": 0,
+      "passed": true,
+      "tests": 19
+    }
+  },
+  "focused_tests_total": 57,
+  "historical_missing_errors_remain": 3,
+  "path_policy": "Manifest references are portable. Actual captured command/log bytes preserve observed host paths; they are evidence, not configuration.",
+  "powered_descent": "NOT RUN",
+  "reproduce": [
+    "python3 -B tools/demo/demo.py reproduce",
+    "python3 -B tools/demo/demo.py reproduce --archive /path/to/pinned-upstream.tar.gz"
+  ],
+  "upstream_source_and_build_tree": "Not copied. Original pinned source archive and each source hash, compiler commands, and artifact checksums remain recorded."
+}

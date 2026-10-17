@@ -1,0 +1,19 @@
+test_causal_scenarios_retain_real_difference_and_negative_failure (test_guidance_data.GuidanceDataTests) ... ok
+test_compressed_and_raw_trace_hashes_match_source (test_guidance_data.GuidanceDataTests) ... ok
+test_each_display_is_held_from_an_actual_channel_010_packet (test_guidance_data.GuidanceDataTests) ... ok
+test_events_point_to_real_recorded_rows_and_source_routines (test_guidance_data.GuidanceDataTests) ... ok
+test_frames_have_actual_ordered_cycles_and_recorded_endpoints (test_guidance_data.GuidanceDataTests) ... ok
+test_generated_data_is_current_and_byte_deterministic (test_guidance_data.GuidanceDataTests) ... ok
+test_ignition_solution_available_only_after_original_completion (test_guidance_data.GuidanceDataTests) ... ok
+test_integrity_checker_rejects_changed_bytes (test_guidance_data.GuidanceDataTests) ... ok
+test_no_trajectory_or_interpolated_motion_exists_in_frames (test_guidance_data.GuidanceDataTests) ... ok
+test_observed_clocks_are_decoded_only_from_native_snapshots (test_guidance_data.GuidanceDataTests) ... ok
+test_only_three_verified_cases_and_recorded_mode_are_exposed (test_guidance_data.GuidanceDataTests) ... ok
+test_signed_root_outputs_keep_original_words_and_are_not_ignition_countdowns (test_guidance_data.GuidanceDataTests) ... ok
+test_static_three_dimensional_inputs_match_original_p27_stores (test_guidance_data.GuidanceDataTests) ... ok
+test_synthetic_scope_and_unimplemented_physics_are_explicit (test_guidance_data.GuidanceDataTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 14.966s
+
+OK
