@@ -114,6 +114,7 @@ def main():
         ('v50n25-proceed', ('flash', 50, 25), [('pro',)]),
     ] + [('s1-' + n, p, a) for n, p, a in sighting('00701', az1, el1)] \
       + [('s2-' + n, p, a) for n, p, a in sighting('00717', az2, el2)] + [
+        ('r54-accept', ('flash', 6, 5), [('pro',)]),  # V06N05 mark-difference display after star 2
         ('p51-done', ('p00',), []),  # P51 sets REFSMMAT and exits via GOTOPOOH (P51-P53.agc P51G)
         ('p63-attempt', ('always',), [('keys', 'V37E63E')]),
     ]
