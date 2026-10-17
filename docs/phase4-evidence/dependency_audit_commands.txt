@@ -1,0 +1,13 @@
+COMMAND: ["rg", "-n", "Transform_NB_SM|Moment_of_Inertia_Factor", "/tmp/apollo/va/Contributed/LM_Simulator"]
+EXIT: 0
+/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Attitude.tcl:166: Transform_NB_SM "ROLL" -$Delta_Theta_Roll
+/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Attitude.tcl:167: Transform_NB_SM "PITCH" -$Delta_Theta_Pitch
+/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Attitude.tcl:168: Transform_NB_SM "YAW" -$Delta_Theta_Yaw
+/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Attitude.tcl:266: global Omega_Roll Omega_Pitch Omega_Yaw Moment_of_Inertia_Factor Delta_Time
+/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Attitude.tcl:271: set Moment_of_Inertia [expr $Moment_of_Inertia_Factor * $LM_Weight_KG]
+
+COMMAND: ["rg", "-n", "AGC_Simulation_Monitor_Control|source \\$source5", "/tmp/apollo/va/Contributed/LM_Simulator/lm_simulator.tcl"]
+EXIT: 0
+114:set source5                       "${modulpath}AGC_Simulation_Monitor_Control.tcl"
+966:source $source5
+
