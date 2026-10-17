@@ -1,0 +1,112 @@
+[
+  {
+    "argv": [
+      "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+      "--version"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:53.798713+00:00",
+    "end_utc": "2026-10-17T12:54:53.806274+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "gcc",
+      "--version"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:53.806413+00:00",
+    "end_utc": "2026-10-17T12:54:53.813931+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "nix",
+      "--version"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:53.814002+00:00",
+    "end_utc": "2026-10-17T12:54:53.845818+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "nix",
+      "shell",
+      "nixpkgs#tcl",
+      "-c",
+      "tclsh",
+      "/tmp/apollo/phase6-bundle-reproduce/tcl_version.tcl"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:53.845975+00:00",
+    "end_utc": "2026-10-17T12:54:53.909927+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "gcc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/tmp/apollo/phase6-source/yaAGC",
+      "/dev-server/docs/phase5-evidence/plant_bridge.c",
+      "/tmp/apollo/phase6-source/yaAGC/wasm.c",
+      "/tmp/apollo/phase6-source/yaAGC/agc_engine.c",
+      "/tmp/apollo/phase6-source/yaAGC/agc_engine_init.c",
+      "/tmp/apollo/phase6-source/yaAGC/agc_utilities.c",
+      "/tmp/apollo/phase6-source/yaAGC/ringbuffer_api.c",
+      "/tmp/apollo/phase6-source/yaAGC/ringbuffer.c",
+      "/tmp/apollo/phase6-source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/tmp/apollo/phase6-bundle-reproduce/engine.so"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:53.910114+00:00",
+    "end_utc": "2026-10-17T12:54:54.926946+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/phase6-source",
+      "/tmp/apollo/phase6-bundle-reproduce/engine.so",
+      "/tmp/apollo/phase6-bundle-reproduce/closed.jsonl",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:54.927363+00:00",
+    "end_utc": "2026-10-17T12:54:58.498277+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/phase6-source",
+      "/tmp/apollo/phase6-bundle-reproduce/engine.so",
+      "/tmp/apollo/phase6-bundle-reproduce/feedback_off.jsonl",
+      "feedback_off"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:54:58.498555+00:00",
+    "end_utc": "2026-10-17T12:55:02.370064+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/phase6-source",
+      "/tmp/apollo/phase6-bundle-reproduce/engine.so",
+      "/tmp/apollo/phase6-bundle-reproduce/repeat.jsonl",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "start_utc": "2026-10-17T12:55:02.370358+00:00",
+    "end_utc": "2026-10-17T12:55:05.941668+00:00",
+    "exit": 0
+  }
+]
