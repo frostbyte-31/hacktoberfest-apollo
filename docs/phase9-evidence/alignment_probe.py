@@ -52,10 +52,11 @@ P5 = ROOT / 'docs/phase5-evidence'
 ADDR = {'MODREG': 0o1011, 'FLAGWRD3': 0o77, 'IMODES30': 0o1302, 'IMODES33': 0o1303,
         'THRUST': 0o55, 'FAILREG0': 0o375, 'FAILREG1': 0o376, 'FAILREG2': 0o377,
         'VERBREG': 0o1001, 'NOUNREG': 0o1002, 'AOTCODE': 0o735,
-        'AZ': 0o1347, 'EL': 0o1350, 'MARKSTAT': 0o1312}
+        'AZ': 0o1347, 'EL': 0o1350, 'MARKSTAT': 0o1312,
+        'MARKCNTR': 0o3545, 'STARIND': 0o2642}
 REFSMMAT = 0o1733  # bank 3, 18 words (9 DP elements), ERASABLE_ASSIGNMENTS.agc:972
 START = 3000000
-END = 12000000
+END = 24000000
 KEYGAP = 21333          # same key spacing as Phases 5/8
 STALL_LIMIT = 3000000   # calls a step may wait for its precondition
 SETTLE = 200000         # calls to wait after a flash appears before acting
@@ -106,14 +107,14 @@ def main():
                 ('load-el', ('flash', 6, 87), [('load', '22', '87', deg_str(el))]),
                 ('pro-azel', ('flash', 6, 87), [('pro',)]),
                 ('marks', ('flash', 54, 71), [('marks',)]),
-                ('pro-marks', ('flash', 54, 71), [('pro',)])]
+                ('pro-marks', ('flash', 54, 71), [('pro',)]),
+                ('reject-accept', ('maybe-flash', 5, 71, 1500000), [('pro',)])]
     steps = [
         ('enter-p51', ('always',), [('keys', 'V37E51E')]),
         ('v50n25-proceed', ('flash', 50, 25), [('pro',)]),
     ] + [('s1-' + n, p, a) for n, p, a in sighting('00701', az1, el1)] \
       + [('s2-' + n, p, a) for n, p, a in sighting('00717', az2, el2)] + [
-        ('r54-accept', ('flash', 6, 5), [('pro',)]),
-        ('back-in-p00', ('p00',), []),
+        ('p51-done', ('p00',), []),  # P51 sets REFSMMAT and exits via GOTOPOOH (P51-P53.agc P51G)
         ('p63-attempt', ('always',), [('keys', 'V37E63E')]),
     ]
 
@@ -196,6 +197,8 @@ def main():
                 ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
             elif pre[0] == 'p00':
                 ok = (s['MODREG'] == 0o77777)
+            elif pre[0] == 'maybe-flash':
+                ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
             if started:
                 if action_q:
                     if ok:
@@ -223,6 +226,10 @@ def main():
                 if step_since is None:
                     step_since = tick
                     emit({'ev': 'await', 'cycle': tick, 'name': name, 'pre': list(pre)})
+                elif pre[0] == 'maybe-flash' and tick - step_since > pre[3]:
+                    emit({'ev': 'skip', 'cycle': tick, 'name': name, 'pre': list(pre)})
+                    step_i += 1
+                    step_since = ok_since = None; started = False
                 elif tick - step_since > STALL_LIMIT:
                     emit({'ev': 'stall', 'cycle': tick, 'name': name, 'pre': list(pre),
                           'verb': s['VERBREG'], 'noun': s['NOUNREG']})
