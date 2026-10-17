@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- The TanStack web app at the repo root is a recorded-evidence replay viewer only; it reads `src/data/replay.json` generated read-only from phase evidence by `tools/replay/extract_replay.py`, so the UI can never alter or fabricate AGC results.
