@@ -1,0 +1,66 @@
+[
+  {
+    "command": [
+      "gcc",
+      "--version"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "gcc",
+      "-O2",
+      "-I/tmp/apollo/va/yaAGC",
+      "/dev-server/docs/phase5-evidence/readiness_probe.c",
+      "/tmp/apollo/va/yaAGC/wasm.c",
+      "/tmp/apollo/va/yaAGC/agc_engine.c",
+      "/tmp/apollo/va/yaAGC/agc_engine_init.c",
+      "/tmp/apollo/va/yaAGC/agc_utilities.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer_api.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer.c",
+      "/tmp/apollo/va/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/tmp/apollo/phase5-run01/readiness_probe"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/tmp/apollo/phase5-run01/readiness_probe",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase5-evidence/baseline_inputs.txt"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/tmp/apollo/phase5-run01/readiness_probe",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase5-evidence/operate_inputs.txt"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/tmp/apollo/phase5-run01/readiness_probe",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase5-evidence/operate_inputs.txt"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/tmp/apollo/phase5-run01/readiness_probe",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase5-evidence/off_inputs.txt"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  }
+]

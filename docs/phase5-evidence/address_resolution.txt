@@ -1,0 +1,207 @@
+004283,000721:                                                                                          	# RETAIN THE ORDER OF IMODES30 AND IMODES33 FOR DOWNLINK PURPOSES.
+004284,000722:    1302                        IMODES30           ERASE                                  	# B(1)
+004285,000723:    1303                        IMODES33           ERASE                                  	#
+005445,001883:                                                                                          	# THE FOLLOWING LM DAP ERASABLES ARE ZEROED IN THE STARTDAP SECTION OF THE DAPIDLER PROGRAM AND THE COASTASC
+006492,000156:                                                                                          	#       IF PREV ON AND NOW OFF  - UPDATE IMODES33
+006493,000157:                                                                                          	#       IF PREV OFF AND NOW ON  - UPDATE IMODES33 AND PROCESS VIA PINBALL
+006497,000161: 06,2075           31303        PROCEEDE           CA       IMODES33                      	# MONITIOR FOR PROCEED BUTTON
+006504,000168: 06,2103           23303                           LXCH     IMODES33                      	#
+006507,000171: 06,2106           55303                           TS       IMODES33                      	# UPDATE IMODES33
+006597,000261:                                                                                          	#       IMU OPERATE               9     IMUOP
+006599,000263:                                                                                          	# THE LAST SAMPLED STATE OF THESE BITS IS LEFT IN IMODES30.  ALSO, EACH SUBROUTINE CALLED FINDS THE NEW
+006606,000270:                                                                                          	# SUBROUTINES CALLED:  TLIM, ITURNON, SETISSW, IMUCAGE, IMUOP.
+006609,000273:                                                                                          	#       FRESH START OR RESTART WITH NO GROUPS ACTIVE:  C(IMODES30) = OCT 37411.
+006610,000274:                                                                                          	#       RESTART WITH ACTIVE GROUPS:     C(IMODES30) = (B(IMODES30)AND(OCT 00035)) PLUS OCT 37400.
+006617,000281:                                                                                          	# OUTPUT:  UPDATED IMODES30 WITH CHANGES PROCESSED BY APPROPRIATE SUBROUTINE.
+006619,000283: 06,2172           31302        IMUMON             CA       IMODES30                      	# SEE IF THERE HAS BEEN A CHANGE IN THE
+006627,000291: 06,2201           23302                           LXCH     IMODES30                      	# UPDATE IMODES30.
+006630,000294: 06,2204           55302                           TS       IMODES30                      	#
+006648,000312: 06,2222           71302                           MASK     IMODES30                      	#
+006674,000338:                                                                                          	# IMODES30 BIT 7 IS SET = 1 BY THE FIRST BIT (CHANNEL 30 BIT 14 OR 9) WHICH ARRIVES.  FOLLOWING THIS. TNONTEST IS
+006676,000340:                                                                                          	# PROCEEDS, SETTING BITS 8 AND 7 = 0.  AT PROCTNON, IF ISS TURN-ON REQUEST IS PRESENT, THE ISS IS CAGED (ZERO +
+006678,000342:                                                                                          	# OF IMODES30 IS TESTED.  IF IT IS = 1, ISS TURN-ON WAS NOT PRESENT FOR THE ENTIRE 90 SECONDS.  IN THAT CASE, IF
+006684,000348:                                                                                          	# AT PROCTNON, IF ONLY ISS OPERATE IS PRESENT (OPONLY), THE CDU'S ARE ZEROED UNLESS THE PLATFORM IS IN COARSE
+006689,000353:                                                                                          	# JOBS OR TASKS INITIATED:  1) ENDTNON, 90 SECONDS AFTER CAGING STARTED.  2) ISSUP, 4 SECONDS AFTER CAGING DONE.
+006690,000354:                                                                                          	#       3) PFAILOK, 10.24 SECONDS AFTER INITIALIZATION COMPLETED.  4) UNZ2, 320 MILLISECONDS AFTER ZEROING
+006693,000357:                                                                                          	# SUBROUTINES CALLED: CAGESUB, CAGESUB2, ZEROICDU, ENDIMU, IMUBAD, NOATTOFF, SETISSW, VARDELAY.
+006705,000369: 06,2227           41302        TNONTEST           CS       IMODES30                      	# AFTER PROCESSING ALL CHANGES, SEE IF IT
+006712,000376: 06,2234           71302                           MASK     IMODES30                      	#
+006714,000378: 06,2236           12242                           TCF      PROCTNON                      	# REACT AFTER SECOND SAMPLE.
+006717,000381: 06,2240           27302                           ADS      IMODES30                      	# TIME.
+006722,000386: 06,2242           42777        PROCTNON           CS       BITS7&8                       	#
+006723,000387: 06,2243           71302                           MASK     IMODES30                      	#
+006724,000388: 06,2244           55302                           TS       IMODES30                      	#
+006727,000391: 06,2247           12347                           TCF      OPONLY                        	# OPERATE ON ONLY.
+006729,000393: 06,2250           41302                           CS       IMODES30                      	# IF TURN-ON REQUEST, WE SHOULD HAVE IMU
+006749,000413: 06,2267           71302                           MASK     IMODES30                      	#
+006750,000414: 06,2270           57302                           XCH      IMODES30                      	#
+006757,000421: 06,2275           71302                           MASK     IMODES30                      	# PRESENT, RE-ENTER 90 SEC DELAY IN WL.
+006775,000439: 06,2313           05457        UNZ2               TC       ZEROICDU                      	#
+006784,000448: 06,2321           42774        ISSUP              CS       OCT54                         	# REMOVE CAGING, IMU FAIL INHIBIT, AND
+006785,000449: 06,2322           71302                           MASK     IMODES30                      	# ICDUFAIL INHIBIT FLAGS.
+006786,000450: 06,2323           55302                           TS       IMODES30                      	#
+006789,000453: 06,2325           71303                           MASK     IMODES33                      	#
+006790,000454: 06,2326           55303                           TS       IMODES33                      	#
+006814,000478: 06,2347           34750        OPONLY             CAF      BIT4                          	# IF OPERATE ON ONLY, AND WE ARE IN COARSE
+006825,000489: 06,2360           02746                           TC       CAGESUB2                      	# SET TURNON FLAGS.
+006827,000491: 06,2361           04674        ISSZERO            TC       IBNKCALL                      	# TURN OFF NO ATT LAMP
+006838,000502: 06,2371           02313 14106                     2CADR    UNZ2                          	#
+006863,000527:                                                                                          	# ERASABLE INITIALIZATION:  C(IMODES33) = OCT 16000 ON A FRESH START OR RESTART, THEREFORE, THESE ALARMS WILL
+006870,000534:                                                                                          	# OUTPUT:  UPDATED BITS 13, 12 AND 11 OF IMODES33 WITH CHANGES PROCESSED.
+006872,000536: 06,2374           31303        C33TEST            CA       IMODES33                      	# SEE IF RELEVANT CHAN33 BITS HAVE
+006884,000548: 06,2407           23303                           LXCH     IMODES33                      	#
+006887,000551: 06,2412           55303                           TS       IMODES33                      	# UPDATED IMODES33.
+006904,000568: 06,2427           71303                           MASK     IMODES33                      	#
+006928,000592:                                                                                          	#               1) FRESH START OR RESTART WITH NO GROUPS ACTIVE:  C(CDUZ) = 0, IMODES30 BIT 6 = 0, IMODES33 BIT 1 =  0.
+006979,000643: 06,2475           71302                           MASK     IMODES30                      	#
+007022,000686: 06,2516           11302                           CCS      IMODES30                      	#
+007044,000708:                                                                                          	# IF NOT, IT CHECKS WHETHER THE TURN-ON REQUEST CHANGE IS TO ON OR OFF.  IF ON, IT SETS BIT7 OF IMODES30 TO 1 SO
+007047,000711:                                                                                          	# OF IMODES30 IS SET TO 1 AND THE PROGRAM EXITS.
+007049,000713:                                                                                          	# THE SETTING OF BIT 2 OF IMODES30 (ISS DELAY SEQUENCE FAIL) INHIBITS THIS ROUTINE AND IMUOP FROM
+007059,000723:                                                                                          	# ERASABLE INITIALIZATION:  FRESH START AND RESTART SET BIT 15 OF CHANNEL 12 AND BITS 2 AND 7 OF IMODES30 TO 0,
+007060,000724:                                                                                          	# AND BIT 14 OF IMODES30 TO 1.
+007066,000730:                                                                                          	# OUTPUT:  BIT 7 OF IMODES30 TO START ISS INITIALIZATION, OR BIT 2 OF IMODES30 AND PROGRAM ALARM 00207 TO INDICATE
+007070,000734: 06,2534           71302                           MASK     IMODES30                      	# PREMATURELY, DO NOT PROCESS ANY CHANGES
+007075,000739: 06,2540           71302                           MASK     IMODES30                      	#
+007077,000741: 06,2542           12556                           BZF      ITURNON2                      	# IF JUST ON.
+007087,000751: 06,2552           27302                           ADS      IMODES30                      	# PRESENT FOR FULL DURATION.
+007093,000757: 06,2556           41302        ITURNON2           CS       IMODES30                      	# SET BIT7 TO INDICATE WAIT OF 1 SAMPLE
+007095,000759: 06,2560           27302                           ADS      IMODES30                      	#
+007117,000781:                                                                                          	# ERASABLE INITIALIZATION:  FRESH START AND RESTART SET BIT 11 OF IMODES30 TO 1.
+007126,000790: 06,2566           12361                           TCF      ISSZERO                       	#
+007163,000827:                                                                                          	# PROGRAM NAME:  IMUOP.
+007166,000830:                                                                                          	# IF THE INBIT CHANGES TO 0, INDICATING ISS ON, IMUOP GENERALLY SETS BIT 7 OF IMODES30 TO 1 TO REQUEST ISS
+007167,000831:                                                                                          	# INITIALIZATION VIA TNONTEST.  AN EXCEPTION IS DURING A FAILED ISS DELAY DURING WHICH BIT 2 OF IMODES30 IS SET
+007177,000841:                                                                                          	# ERASABLE INITIALIZATION:  ON FRESH START AND RESTART, BIT 9 OF IMODES30 IS SET TO 1 EXCEPT WHEN THE GIMBAL LOCK
+007184,000848:                                                                                          	# OUTPUT:  ISS INITIALIZATION REQUEST (IMODES30 BIT 7) OR PROGRAM ALARM 00214.
+007186,000850: 06,2622           00006        IMUOP              EXTEND                                 	#
+007187,000851: 06,2623           12643                           BZF      IMUOP2                        	#
+007189,000853: 06,2624           41303                           CS       IMODES33                      	# DISABLE DAP
+007191,000855: 06,2626           27303                           ADS      IMODES33                      	#
+007208,000872: 06,2643           34752        IMUOP2             CAF      BIT2                          	# SEE IF FAILED ISS TURN-ON SEQ IN PROG.
+007209,000873: 06,2644           71302                           MASK     IMODES30                      	#
+007212,000876: 06,2647           12556                           TCF      ITURNON2                      	# SECONDS EXPIRES.
+007218,000882:                                                                                          	# IMODES30 TO AGREE.  IT CALLS SETISSW IN CASE A PIPA FAIL NECESSITATES AN ISS WARNING.  IF NOT, I.E., IMODES30
+007227,000891:                                                                                          	# ERASABLE INITIALIZATION:  SEE IMUMON FOR INITIALIZATION OF IMODES30.  THE RELAVANT BITS ARE 5, 7, 8, 9, AND 10.
+007236,000900: 06,2650           10000        PIPFAIL            CCS      A                             	# SET BIT10 IN IMODES30 SO ALL ISS WARNING
+007238,000902: 06,2652           57302                           XCH      IMODES30                      	#
+007240,000904: 06,2654           27302                           ADS      IMODES30                      	#
+007244,000908: 06,2656           41302                           CS       IMODES30                      	# IF PIP FAIL DOESNT LIGHT ISS WARNING, DO
+007249,000913: 06,2662           31302                           CA       IMODES30                      	#
+007273,000937:                                                                                          	# ERASABLE INITIALIZATION:  FRESH START OR RESTART, BITS 12 AND 11 OF IMODES33 ARE SET TO 1.
+007298,000962:                                                                                          	# 0 FOR OFF) DEPENDING ON THE STATUS OF IMODES30 BITS 13 (IMU FAIL) AND 4 (INHIBIT IMU FAIL), 12 (ICDU FAIL) AND
+007305,000969:                                                                                          	# AND IT IS CALLED BY IMUZERO3 AND ISSUP AFTER THE FAIL INHIBITS HAVE BEEN REMOVED.
+007313,000977:                                                                                          	#       1) IMODES30 - SEE IMUMON.
+007314,000978:                                                                                          	#       2) IMODES33 BIT 1 = 0 (LAMP TEST NOT IN PROGRESS).
+007332,000996: 06,2704           71302                           MASK     IMODES30                      	# BITS 13, 12, AND 10 OF IMODES30 AND THE
+007335,000999: 06,2707           31302                           CA       IMODES30                      	#
+007344,001008: 06,2717           71303                           MASK     IMODES33                      	# IN PROGRESS.
+007373,001037: 06,2746           41302        CAGESUB2           CS       IMODES30                      	# SET FLAGS TO INDICATE CAGING OR TURN-ON
+007375,001039: 06,2750           27302                           ADS      IMODES30                      	#
+007377,001041: 06,2751           41303                           CS       IMODES33                      	# DISABLE DAP AUTO AND HOLD MODES
+007379,001043: 06,2753           27303                           ADS      IMODES33                      	#
+007394,001058: 06,2762           12622                           TCF      IMUOP                         	#
+007401,001065: 06,2766           41303        LAMPTEST           CS       IMODES33                      	# BIT 1 OF IMODES33 = 1 IF LAMP TEST IN
+007992,000112: 05,2121           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008073,000193: 05,2220           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008128,000248: 05,2265           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008186,000306: 05,2333           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008246,000366: 05,2401           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008297,000417: 05,2435           01302                           1DNADR   IMODES30                      	# IMODES30,IMODES33
+008678,000121: 05,2546           55302                           TS       IMODES30                      	#
+008711,000154: 05,2603           55303                           TS       IMODES33                      	#       OFF UNTIL ICDU ZERO IS FINISHED.
+008824,000267: 05,2741           71302                           MASK     IMODES30                      	# HARDWARE RESTART. RESET ALL FAILURE
+008826,000269: 05,2743           55302                           TS       IMODES30                      	#
+009135,000578: 05,3336           71303                           MASK     IMODES33                      	# LEAVE BIT 6 UNCHANGED
+009137,000580: 05,3340           55303                           TS       IMODES33                      	#
+009309,000752: 04,2043           31302                           CA       IMODES30                      	# IS IMU BEINB INITIALIZED
+020134,003638: 41,3614           44753                           CS       BIT1                          	# SET BIT 1 OF IMODES33 SO IMUMON WONT
+020135,003639: 41,3615           71303                           MASK     IMODES33                      	# TURN OUT ANY LAMPS.
+020137,003641: 41,3617           55303                           TS       IMODES33                      	#
+020203,003707: 41,3704           71303                           MASK     IMODES33                      	# LIGHTS COMPLETE.
+020205,003709: 41,3706           55303                           TS       IMODES33                      	#
+020208,003712: 41,3710           71302                           MASK     IMODES30                      	#
+020210,003714: 41,3712           55302                           TS       IMODES30                      	#
+020253,003757: 40,3616           71303                           MASK     IMODES33                      	# ALARM SO THAT IF THE FAILURE STILL
+020255,003759: 40,3620           55303                           TS       IMODES33                      	#
+020257,003761: 40,3622           71302                           MASK     IMODES30                      	#
+020259,003763: 40,3624           55302                           TS       IMODES30                      	#
+022755,001542:                                                                                          	#       INITIALLY THE LAMP TEST FLAG (IMODES33 BIT 1) IS CHECKED.
+022778,001565:                                                                                          	# ERASABLE INITIALIZATION REQUIRED:  IMODES33, RADMODES, DSPTAB +11D
+022789,001576:    4565           71303                           MASK     IMODES33                      	#
+026340,005127: 25,3610           71303                           MASK     IMODES33                      	#
+026349,005136: 25,3617           71303                           MASK     IMODES33                      	#
+036212,000056: 21,2021           41303        R10,R11A           CS       IMODES33                      	# IF LAMP TEST, DO NOT CHANGE LR LITES.
+039282,000048: 21,2163           31303                           CA       IMODES33                      	# BIT 7 = 0 (DO ALTRATE), =1 (DO ALT.)
+039287,000053: 21,2170           41303                           CS       IMODES33                      	#
+039289,000055: 21,2172           27303                           ADS      IMODES33                      	# ALTERNATE ALTITUDE RATE WITH ALTITUDE.
+039331,000097: 21,2242           71303                           MASK     IMODES33                      	#
+039332,000098: 21,2243           55303                           TS       IMODES33                      	# ALTERNATE ALTITUDE RATE WITH ALTITUDE.
+039398,000164: 21,2343           71303                           MASK     IMODES33                      	# TO DISPLAY ALTRATE FIRST AND ALT. SECOND
+039399,000165: 21,2344           55303                           TS       IMODES33                      	#
+039420,000186: 21,2370           41303                           CS       IMODES33                      	#
+039422,000188: 21,2372           27303                           ADS      IMODES33                      	# SET INERTIAL DATA FLAG.
+039751,000517: 21,3060           71303                           MASK     IMODES33                      	# CHECK IF INERTIAL DATA JUST DISPLAYED.
+039759,000525: 21,3070           71303                           MASK     IMODES33                      	#
+039760,000526: 21,3071           55303                           TS       IMODES33                      	#
+042838,002316:                                                                                          	# CHECK IMODES30 TO VARIFY IMU IS ON
+042840,002318: 15,3652           41302        IMUCHK             CS       IMODES30                      	#
+056326,000082: 07,2725           41303                           CS       IMODES33                      	# DISABLE DAP AUTO AND HOLD MODES
+056328,000084: 07,2727           27303                           ADS      IMODES33                      	#
+056330,000086: 07,2730           41302                           CS       IMODES30                      	# INHIBIT ICDUFAIL AND IMUFAIL (IN CASE WE
+056332,000088: 07,2732           27302                           ADS      IMODES30                      	#
+056350,000106: 07,2747           41302                           CS       IMODES30                      	# SEE IF IMU OPERATING AND ALARM IF NOT.
+056373,000129: 07,2770           71302                           MASK     IMODES30                      	#
+056374,000130: 07,2771           55302                           TS       IMODES30                      	#
+056377,000133: 07,2773           71303                           MASK     IMODES33                      	#       BIT5 FOR GROUND
+056378,000134: 07,2774           55303                           TS       IMODES33                      	#
+056540,000296: 07,3167           41303                           CS       IMODES33                      	# DISABLE DAP AUTO AND HOLD MODES
+056542,000298: 07,3171           27303                           ADS      IMODES33                      	#
+056544,000300: 07,3172           41302                           CS       IMODES30                      	# DISABLE IMUFAIL
+056546,000302: 07,3174           27302                           ADS      IMODES30                      	#
+056575,000331: 07,3216           71303                           MASK     IMODES33                      	#
+056576,000332: 07,3217           55303                           TS       IMODES33                      	#
+056605,000361: 07,3243           41302                           CS       IMODES30                      	# RESET IMUFAIL.
+056607,000363: 07,3245           27302                           ADS      IMODES30                      	#
+056609,000365: 07,3247           71302        PFAILOK2           MASK     IMODES30                      	#
+056610,000366: 07,3250           55302                           TS       IMODES30                      	#
+056618,000374: 07,3256           41302                           CS       IMODES30                      	# RESET IMU AND PIPA FAIL BITS.
+056620,000376: 07,3260           27302                           ADS      IMODES30                      	#
+056622,000378: 07,3261           41303                           CS       IMODES33                      	#
+056624,000380: 07,3263           27303                           ADS      IMODES33                      	#
+056648,000404: 07,3303           71302                           MASK     IMODES30                      	# PIPFREE), LIGHT ISS WARNING.
+056649,000405: 07,3304           55302                           TS       IMODES30                      	#
+056657,000413: 07,3311           41302                           CS       IMODES30                      	# ISS WARNING.
+056659,000415: 07,3313           27302                           ADS      IMODES30                      	#
+056948,000704: 07,3642           71302                           MASK     IMODES30                      	# SWITCH IF IMU HAS BEEN CAGED.
+056953,000709: 07,3646           41302        CAGETSTQ           CS       IMODES30                      	# SKIP IF IMU NOT BEING CAGED.
+056959,000715: 07,3653           41302        CAGETSTJ           CS       IMODES30                      	# IF DURING MODE SWITCH INITIALIZATION
+057166,000922: 04,3260           31302                           CA       IMODES30                      	#
+060619,000046: 16,2000           00006        CHEKBITS           EXTEND                                 	#
+060626,000053: 16,2006           41303                           CS       IMODES33                      	#
+060629,000056: 16,2011           12206                           TCF      JUMPDSP                       	#
+060633,000060: 16,2015           12163                           TCF      SHUTDOWN                      	#
+060653,000080: 16,2032           12041                           TCF      CHECKUP                       	# THE LAST FRESH START OR RESTART.
+060661,000088: 16,2041           02000        CHECKUP            TC       CHEKBITS                      	# CHECK TO SEE IF LM DAP IS TO GO ON AND
+060669,000096: 16,2046           04674        STARTDAP           TC       IBNKCALL                      	# ZERO ATTITUDE ERROR AND DESIRED RATES.
+060755,000182: 16,2163           00006        SHUTDOWN           EXTEND                                 	#
+060779,000206: 16,2206           00006        JUMPDSP            EXTEND                                 	# TRANSFER TO BANK 20
+060852,000279: 20,2253           22061                           QXCH     ITEMP1                        	# SAVE Q FOR CHEKBITS RETURN.
+060903,000330: 20,2320           22061                           QXCH     ITEMP1                        	# RESTORE Q FOR CHEKBITS RETURN.
+061124,000065: 16,2223           02000                           TC       CHEKBITS                      	# RETURN IS TO I+1 IF DAP SHOULD STAY ON.
+   685,F:   CAGESUB2     06,2746  		   730,F:   CCALL           6626  		   775,C:   CDUZ         0000034  
+   817,F:   CHECKUP      16,2041  		   862,F:   CLEANDSP     10,2456  		   907,F:   COARS2       07,3040  
+   820,F:   CHEKBITS     16,2000  		   865,F:   CLEARMRK        5474  		   910,F:   COASTSET     36,3606  
+  2428,E:   IMODES30        1302  		  2473,F:   INCAZ        15,2310  		  2518,F:   INITVEL3     11,2105  
+  2429,E:   IMODES33        1303  		  2474,E:   INCORPEX     E7,1674  		  2519,F:   INITVEL4     11,2137  
+  2451,F:   IMUOP        06,2622  		  2496,F:   INERCONA     20,3041  		  2541,F:   INTFLBIT        4736  
+  2452,F:   IMUOP2       06,2643  		  2497,F:   INERCONB     20,3057  		  2542,F:   INTGRATE     11,3333  
+  2552,F:   INTOTHIS     13,2300  		  2597,F:   ISSZERO      06,2361  		  2641,E:   JAPFG*       E5,1464  
+  2573,E:   INTWAK1Q        1167  		  2618,F:   ITR14           6237  		  2662,F:   JUMPDSP      16,2206  
+  2592,F:   ISLIST+0        4224  		  2637,F:   ITURNON2     06,2556  		  2680,E:   KDPNDX       E6,1702  
+  2594,F:   ISSUP        06,2321  		  2638,F:   JACCUV       20,2642  		  2682,F:   KEEPPRIO     10,2544  
+  3803,E:   OLDPIPAY     E7,1764  		  3848,F:   OPONLY       06,2347  		  3893,E:   OUTHERE         0161  
+  4166,F:   PRIODBIT        4736  		  4211,F:   PROCTNON     06,2242  		  4256,F:   PUTXYZ       41,2632  
+  5268,F:   SETGMEX      13,2556  		  5313,F:   SETXTACT     43,2105  		  5358,F:   SHUTDOWN     16,2163  
+  5413,F:   SLOPEHI      00,2314  		  5458,F:   SPECSTS      37,2572  		  5503,F:   STARTDAP     16,2046  
+  6074,E:   UDB3            0140  		  6119,F:   UNZ2         06,2313  		  6164,F:   UPPSV4       24,2351  

@@ -1,0 +1,18 @@
+{
+  "/tmp/apollo/va/yaAGC/wasm.c": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+  "/tmp/apollo/va/yaAGC/agc_engine.c": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+  "/tmp/apollo/va/yaAGC/agc_engine_init.c": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+  "/tmp/apollo/va/yaAGC/agc_utilities.c": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+  "/tmp/apollo/va/yaAGC/ringbuffer_api.c": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+  "/tmp/apollo/va/yaAGC/ringbuffer.c": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+  "/tmp/apollo/va/yaAGC/rfopen.c": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29",
+  "/dev-server/docs/phase5-evidence/plant_bridge.c": "62ee2ee10c28739696afaec500675c8ebddfd537bff908d8842a3f272bb79569",
+  "/dev-server/docs/phase5-evidence/plant_server.tcl": "9e14770f744d3d2b7ffa09cb5f05a489de19b812526463a939df4b69f714622b",
+  "/dev-server/docs/phase5-evidence/run_loop.py": "e14d68afc08e383125bd3478095fc42ad83082b3d261e79d7d1eba47ff071f6d",
+  "/dev-server/docs/phase5-evidence/run_loop_validation.py": "963bcde105c41a1a81a04529c82e7c16113bb7292376b032aa488f2a6aaeca41",
+  "/dev-server/docs/phase5-evidence/operate_inputs.txt": "8cf0d52fc54afe45f0903d2632f959f6973def7f790f14ec29d13b14b87f72f4",
+  "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "/tmp/apollo/va/Contributed/LM_Simulator/lm_simulator.tcl": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5",
+  "/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_IMU.tcl": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+  "/tmp/apollo/va/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60"
+}

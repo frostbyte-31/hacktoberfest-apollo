@@ -1,0 +1,84 @@
+[
+  {
+    "command": [
+      "gcc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/tmp/apollo/va/yaAGC",
+      "/dev-server/docs/phase5-evidence/plant_bridge.c",
+      "/tmp/apollo/va/yaAGC/wasm.c",
+      "/tmp/apollo/va/yaAGC/agc_engine.c",
+      "/tmp/apollo/va/yaAGC/agc_engine_init.c",
+      "/tmp/apollo/va/yaAGC/agc_utilities.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer_api.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer.c",
+      "/tmp/apollo/va/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/tmp/apollo/phase5-loop02/engine.so"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "python3",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/va",
+      "/tmp/apollo/phase5-loop02/engine.so",
+      "/tmp/apollo/phase5-loop02/closed.jsonl",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "python3",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/va",
+      "/tmp/apollo/phase5-loop02/engine.so",
+      "/tmp/apollo/phase5-loop02/feedback_off.jsonl",
+      "feedback_off"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "python3",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/va",
+      "/tmp/apollo/phase5-loop02/engine.so",
+      "/tmp/apollo/phase5-loop02/blocked.jsonl",
+      "blocked"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "python3",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/va",
+      "/tmp/apollo/phase5-loop02/engine.so",
+      "/tmp/apollo/phase5-loop02/negative.jsonl",
+      "negative"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "python3",
+      "/dev-server/docs/phase5-evidence/run_loop.py",
+      "/tmp/apollo/va",
+      "/tmp/apollo/phase5-loop02/engine.so",
+      "/tmp/apollo/phase5-loop02/repeat.jsonl",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "/dev-server/docs/phase5-evidence/readiness_probe.c": "df781cbce0a427b67e502b6659a31021d84269127c30643b8b482d7932966248",
+  "/dev-server/docs/phase5-evidence/run_validation.py": "4aca3915bfbf88197c43bc447db97fd8ee13abd05d9df6df9f8739d6b4de20b1",
+  "/dev-server/docs/phase5-evidence/baseline_inputs.txt": "ec8fd83336595a417edeb67d0ea7695dc4f5a80f8aafaee83c6400ab9582c0b6",
+  "/dev-server/docs/phase5-evidence/operate_inputs.txt": "8cf0d52fc54afe45f0903d2632f959f6973def7f790f14ec29d13b14b87f72f4",
+  "/dev-server/docs/phase5-evidence/off_inputs.txt": "19b59dacd570640083e8cb19df0cdaeed18b09309d4744dff8e3c5fec8692e52",
+  "/tmp/apollo/va/yaAGC/wasm.c": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+  "/tmp/apollo/va/yaAGC/agc_engine.c": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+  "/tmp/apollo/va/yaAGC/agc_engine_init.c": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+  "/tmp/apollo/va/yaAGC/agc_utilities.c": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+  "/tmp/apollo/va/yaAGC/ringbuffer_api.c": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+  "/tmp/apollo/va/yaAGC/ringbuffer.c": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+  "/tmp/apollo/va/yaAGC/rfopen.c": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+}
