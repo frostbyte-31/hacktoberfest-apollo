@@ -1175,6 +1175,12 @@
 {"ev":"output","cycle":635195,"ch":10,"val":0}
 {"ev":"output","cycle":635755,"ch":28,"val":0}
 {"ev":"output","cycle":635760,"ch":29,"val":0}
+{"ev":"checkpoint","cycle":635782,"z":1534,"bank":26,"flagword3":1024,"imodes30":0,"modreg":63}
+{"ev":"checkpoint","cycle":635950,"z":1708,"bank":4,"flagword3":1024,"imodes30":0,"modreg":63}
+{"ev":"checkpoint","cycle":635951,"z":1708,"bank":4,"flagword3":1024,"imodes30":0,"modreg":63}
+{"ev":"checkpoint","cycle":635958,"z":1713,"bank":4,"flagword3":1024,"imodes30":0,"modreg":63}
+{"ev":"checkpoint","cycle":635959,"z":1713,"bank":4,"flagword3":1024,"imodes30":0,"modreg":63}
+{"ev":"checkpoint","cycle":636002,"z":1719,"bank":4,"flagword3":1024,"imodes30":0,"modreg":63}
 {"ev":"output","cycle":636366,"ch":9,"val":8194}
 {"ev":"output","cycle":636869,"ch":8,"val":2048}
 {"ev":"output","cycle":637517,"ch":28,"val":0}
