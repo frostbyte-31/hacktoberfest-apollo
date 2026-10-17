@@ -34,3 +34,6 @@ dist-ssr
 .build/
 __pycache__/
 *.py[cod]
+
+# Phase evidence logs must be committed (overrides global *.log ignore)
+!docs/**/*.log

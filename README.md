@@ -42,3 +42,4 @@ This is a small browser console that replays **recorded** evidence from Phases 7
   - **RECORDED:** values copied from the logs.
   - **MOCK VISUAL:** the illustration of the LM and surface; the LM's tilt follows the recorded pitch gimbal.
   - **NOT MODELLED:** altitude, velocities and fuel, which have no data in this project.
+- **Rule:** the web app is only a viewer. It must read just `src/data/replay.json`, never run the emulator or write to `docs/`.
