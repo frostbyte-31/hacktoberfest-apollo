@@ -1,0 +1,30 @@
+test_actual_sensor_acceptance_and_counter_application_distinct (test_demonstration.DemonstrationTests) ... ok
+test_changed_measurements_change_original_commands (test_demonstration.DemonstrationTests) ... ok
+test_compiler_and_runs_exit_zero (test_demonstration.DemonstrationTests) ... ok
+test_delivery_timestamp_preserved_separately (test_demonstration.DemonstrationTests) ... ok
+test_fresh_replay_exact (test_demonstration.DemonstrationTests) ... ok
+test_inspection_is_deterministic (test_demonstration.DemonstrationTests) ... ok
+test_nonfinite_state_rejected (test_demonstration.DemonstrationTests) ... ok
+test_original_jets_follow_controller_input (test_demonstration.DemonstrationTests) ... ok
+test_prior_evidence_preserved (test_demonstration.DemonstrationTests) ... ERROR
+test_sensor_disconnect_removes_readback_not_motion (test_demonstration.DemonstrationTests) ... ok
+test_truncated_trace_rejected (test_demonstration.DemonstrationTests) ... ok
+
+======================================================================
+ERROR: test_prior_evidence_preserved (test_demonstration.DemonstrationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/test_demonstration.py", line 27, in test_prior_evidence_preserved
+    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1249, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.330s
+
+FAILED (errors=1)

@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED",
+  "runs": 3,
+  "replay": "byte-identical",
+  "retained_raw_trace_agreement": true,
+  "integration": "unchanged Phase5 runner/model; explicit Tcl dependency adapter",
+  "limits": "Synthetic yaw only; not Phase7, powered descent, or landing"
+}

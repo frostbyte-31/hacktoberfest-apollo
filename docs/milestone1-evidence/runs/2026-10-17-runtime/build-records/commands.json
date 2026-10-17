@@ -1,0 +1,55 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T13:39:09.754470+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:39:09.886140+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T13:39:09.886543+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:39:11.376245+00:00"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/unix/configure",
+      "--prefix=/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+      "--disable-shared",
+      "--enable-threads",
+      "--disable-symbols"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112",
+    "start_utc": "2026-10-17T13:39:11.376763+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:39:28.124369+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "-j2"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112",
+    "start_utc": "2026-10-17T13:39:28.124905+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:40:30.794276+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "install"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112",
+    "start_utc": "2026-10-17T13:40:30.795084+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:40:46.104039+00:00"
+  }
+]

@@ -1,0 +1,44 @@
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORChan.c:1188:51: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 1188 |         ForwardOpToHandlerThread(rcPtr, ForwardedClose, &p);
+      |                                                          ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORChan.c:1156:55: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 1156 |             ForwardOpToHandlerThread(rcPtr, ForwardedClose, &p);
+      |                                                              ^
+2 warnings generated.
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:975:49: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+  975 |         ForwardOpToOwnerThread(rtPtr, ForwardedClose, &p);
+      |                                                        ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:918:53: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+  918 |             ForwardOpToOwnerThread(rtPtr, ForwardedClose, &p);
+      |                                                            ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:3232:49: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 3232 |         ForwardOpToOwnerThread(rtPtr, ForwardedDrain, &p);
+      |                                                        ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:3282:49: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 3282 |         ForwardOpToOwnerThread(rtPtr, ForwardedFlush, &p);
+      |                                                        ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:3337:49: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 3337 |         ForwardOpToOwnerThread(rtPtr, ForwardedClear, &p);
+      |                                                        ^
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/generic/tclIORTrans.c:3369:49: warning: variable 'p' is uninitialized when passed as a const pointer argument here [-Wuninitialized-const-pointer]
+ 3369 |         ForwardOpToOwnerThread(rtPtr, ForwardedLimit, &p);
+      |                                                        ^
+6 warnings generated.
+/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/pkgs/itcl4.3.2/configure: line 9486: -I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16/pkgs/itcl4.3.2: No such file or directory
+configure: WARNING: Found Makefile - using build library specs for tdbc
+configure: WARNING: Looking for "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112/pkgs/tdbc1.1.10/Makefile"
+configure: WARNING: Found Makefile - using build include spec and lib specs for tdbc
+configure: WARNING: Found Makefile - using build library specs for tdbc
+configure: WARNING: Looking for "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112/pkgs/tdbc1.1.10/Makefile"
+configure: WARNING: Found Makefile - using build include spec and lib specs for tdbc
+configure: WARNING: Found Makefile - using build library specs for tdbc
+configure: WARNING: Looking for "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112/pkgs/tdbc1.1.10/Makefile"
+configure: WARNING: Found Makefile - using build include spec and lib specs for tdbc
+configure: WARNING: unrecognized options: --with-tclinclude, --disable-shared, --enable-shared
+configure: WARNING: Found Makefile - using build library specs for tdbc
+configure: WARNING: Looking for "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build/20261017T133908Z-e486b112/pkgs/tdbc1.1.10/Makefile"
+configure: WARNING: Found Makefile - using build include spec and lib specs for tdbc
+configure: WARNING: unrecognized options: --with-tclinclude, --disable-shared, --enable-shared
+ld: warning: ignoring duplicate libraries: '-ltdbcstub1.1.10'
+ld: warning: ignoring duplicate libraries: '-ltdbcstub1.1.10'
+ld: warning: ignoring duplicate libraries: '-ltdbcstub1.1.10'

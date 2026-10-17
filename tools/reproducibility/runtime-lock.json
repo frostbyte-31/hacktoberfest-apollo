@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tcl": {
+    "version": "8.6.16",
+    "url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+    "sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+    "archive": "tcl8.6.16-src.tar.gz",
+    "source_directory": "tcl8.6.16",
+    "executable": "bin/tclsh8.6",
+    "configure_arguments": ["--disable-shared", "--enable-threads", "--disable-symbols"],
+    "cflags": "-O2",
+    "release_metadata": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.16/tcl8.6.16-src.tar.gz/download",
+    "release_announcement": "https://sourceforge.net/p/tcl/mailman/message/58851460/"
+  },
+  "scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}

@@ -1,0 +1,448 @@
+{
+  "audit_inventory": {
+    "path": "docs/audit-evidence/2026-10-17/integrity.json",
+    "sha256": "8f20ac3bfc2c4e522b569c172f29569942b1c4fda2cf901d9ec7ae4e0351a832"
+  },
+  "entries": [
+    {
+      "expected_sha256": "bc19600af056d7b9d40b8294bb3db8734ca99b97aeb7ca5285f328305a437516",
+      "manifest_references": [
+        {
+          "expected_sha256": "bc19600af056d7b9d40b8294bb3db8734ca99b97aeb7ca5285f328305a437516",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/00_environment.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/00_environment.log"
+    },
+    {
+      "expected_sha256": "e05840dfb0b1e68034c8c563844ee26f9d14452e21c04f21a7868463cf11a218",
+      "manifest_references": [
+        {
+          "expected_sha256": "e05840dfb0b1e68034c8c563844ee26f9d14452e21c04f21a7868463cf11a218",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/01_build_yaYUL.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/01_build_yaYUL.log"
+    },
+    {
+      "expected_sha256": "18b047900597072a32847baedb79c7ffcbf42b5b60f098cf634e18c5f6bc256a",
+      "manifest_references": [
+        {
+          "expected_sha256": "18b047900597072a32847baedb79c7ffcbf42b5b60f098cf634e18c5f6bc256a",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/02_build_oct2bin.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/02_build_oct2bin.log"
+    },
+    {
+      "expected_sha256": "dac52a199a8a2b20a5d76b13d8b1d401687271cfe4f2ba4552de665f3fab0659",
+      "manifest_references": [
+        {
+          "expected_sha256": "dac52a199a8a2b20a5d76b13d8b1d401687271cfe4f2ba4552de665f3fab0659",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/03_build_yaAGC.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/03_build_yaAGC.log"
+    },
+    {
+      "expected_sha256": "b57a2efee444201aca170fc3471e075da232f4819844fa64296da83f384d07bf",
+      "manifest_references": [
+        {
+          "expected_sha256": "b57a2efee444201aca170fc3471e075da232f4819844fa64296da83f384d07bf",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/04_yaAGC_help.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/04_yaAGC_help.log"
+    },
+    {
+      "expected_sha256": "370f57ed59c5db7df373b5f158ea2f4f2c06162d32bf43f63c31a8e9f766f3c4",
+      "manifest_references": [
+        {
+          "expected_sha256": "370f57ed59c5db7df373b5f158ea2f4f2c06162d32bf43f63c31a8e9f766f3c4",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/05_assemble_Luminary099.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/05_assemble_Luminary099.log"
+    },
+    {
+      "expected_sha256": "271612a3b96cc8b04aba57ceac0227fd26c11e382bd321b08ef8f3452a3a1109",
+      "manifest_references": [
+        {
+          "expected_sha256": "271612a3b96cc8b04aba57ceac0227fd26c11e382bd321b08ef8f3452a3a1109",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/06_oct2bin.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/06_oct2bin.log"
+    },
+    {
+      "expected_sha256": "7ae490c6f27f60973fedb7c15a58cf24d47236ed9edc733564e3d5349f9bf824",
+      "manifest_references": [
+        {
+          "expected_sha256": "7ae490c6f27f60973fedb7c15a58cf24d47236ed9edc733564e3d5349f9bf824",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/08_binary_compare.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/08_binary_compare.log"
+    },
+    {
+      "expected_sha256": "f5b47d95d4ab575b8fc032924d48a4ae3c8a73750352cb26a0e87012a7b91423",
+      "manifest_references": [
+        {
+          "expected_sha256": "f5b47d95d4ab575b8fc032924d48a4ae3c8a73750352cb26a0e87012a7b91423",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/10_M1_stepi_trace.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/10_M1_stepi_trace.log"
+    },
+    {
+      "expected_sha256": "86723fab6c97437d78ba023244b11ed0541ffe018435f8d898ca51be7a0cfd0a",
+      "manifest_references": [
+        {
+          "expected_sha256": "86723fab6c97437d78ba023244b11ed0541ffe018435f8d898ca51be7a0cfd0a",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/11_M1_source_step_trace.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/11_M1_source_step_trace.log"
+    },
+    {
+      "expected_sha256": "71f1e6676955691d6c938e7eed7f8c719df8bfe116aea996ebc07314497ce6e9",
+      "manifest_references": [
+        {
+          "expected_sha256": "71f1e6676955691d6c938e7eed7f8c719df8bfe116aea996ebc07314497ce6e9",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/20_M2_yaAGC_stdout.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/20_M2_yaAGC_stdout.log"
+    },
+    {
+      "expected_sha256": "f2a9301234c9b6a8ebd8344a7e7b4b4150937baeae98a3f7da91b9e6b01847dc",
+      "manifest_references": [
+        {
+          "expected_sha256": "f2a9301234c9b6a8ebd8344a7e7b4b4150937baeae98a3f7da91b9e6b01847dc",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/30_wasm_build.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/30_wasm_build.log"
+    },
+    {
+      "expected_sha256": "32d476a344c6dfa7276ac4d7c449e447585ef94d51e87b7844c88c42bf3c384a",
+      "manifest_references": [
+        {
+          "expected_sha256": "32d476a344c6dfa7276ac4d7c449e447585ef94d51e87b7844c88c42bf3c384a",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/31_wasm_run.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/31_wasm_run.log"
+    },
+    {
+      "expected_sha256": "6dd806a72c55fa0fa02289a1bd6e12cd1e7c5242300aae5e56dee11362a9ca62",
+      "manifest_references": [
+        {
+          "expected_sha256": "6dd806a72c55fa0fa02289a1bd6e12cd1e7c5242300aae5e56dee11362a9ca62",
+          "path": "docs/phase2-evidence/51_phase1_hashes.txt",
+          "recorded_path": "docs/phase1-evidence/32_native_vs_wasm_compare.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase1-evidence/32_native_vs_wasm_compare.log"
+    },
+    {
+      "expected_sha256": "438d2cc0a8958ae3454a0b3d01d94c875d7ccb1936fc0b6713d292bdc846ebb1",
+      "manifest_references": [
+        {
+          "expected_sha256": "438d2cc0a8958ae3454a0b3d01d94c875d7ccb1936fc0b6713d292bdc846ebb1",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "40_native_build.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/40_native_build.log"
+    },
+    {
+      "expected_sha256": "9693f7971dc41819c40c6871856614c9beccf42b76428392d4bf6035fcf3eb05",
+      "manifest_references": [
+        {
+          "expected_sha256": "9693f7971dc41819c40c6871856614c9beccf42b76428392d4bf6035fcf3eb05",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "43_clock_run.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/43_clock_run.log"
+    },
+    {
+      "expected_sha256": "b8a1605c72d401a17f1ae097b0947bac9e1af9afc929b2481ac6ca32b020d52e",
+      "manifest_references": [
+        {
+          "expected_sha256": "b8a1605c72d401a17f1ae097b0947bac9e1af9afc929b2481ac6ca32b020d52e",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "43_p63_run.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/43_p63_run.log"
+    },
+    {
+      "expected_sha256": "e6f728db999b51f44100479603a017009665eff7787ebfe9b5f4a9f3cee5ae2e",
+      "manifest_references": [
+        {
+          "expected_sha256": "e6f728db999b51f44100479603a017009665eff7787ebfe9b5f4a9f3cee5ae2e",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "44_browser_initial_assertion_failure.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/44_browser_initial_assertion_failure.log"
+    },
+    {
+      "expected_sha256": "37ffb13edbb405d192a7a665ea94666c141ca79cf3f4a85da125aea79f57e678",
+      "manifest_references": [
+        {
+          "expected_sha256": "37ffb13edbb405d192a7a665ea94666c141ca79cf3f4a85da125aea79f57e678",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "44_browser_run.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/44_browser_run.log"
+    },
+    {
+      "expected_sha256": "ca6835dd7e115b48abc81d9f44e47014fa27029f8d9991ac9f33d6b9fe3b4468",
+      "manifest_references": [
+        {
+          "expected_sha256": "ca6835dd7e115b48abc81d9f44e47014fa27029f8d9991ac9f33d6b9fe3b4468",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "46_browser_compare.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/46_browser_compare.log"
+    },
+    {
+      "expected_sha256": "3043aa677ebd95509edf34ef4186366350bcba2642c8b3511c1fcf272f4ab3a7",
+      "manifest_references": [
+        {
+          "expected_sha256": "3043aa677ebd95509edf34ef4186366350bcba2642c8b3511c1fcf272f4ab3a7",
+          "path": "docs/phase2-evidence/49_sha256.txt",
+          "recorded_path": "48_tests.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase2-evidence/48_tests.log"
+    },
+    {
+      "expected_sha256": "4ef41d6392efc8442462e3c3902740e4c50dfe303a81f14e193df7f3a23d1382",
+      "manifest_references": [
+        {
+          "expected_sha256": "4ef41d6392efc8442462e3c3902740e4c50dfe303a81f14e193df7f3a23d1382",
+          "path": "docs/phase3-evidence/sha256.json",
+          "recorded_path": "docs/phase3-evidence/build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "4ef41d6392efc8442462e3c3902740e4c50dfe303a81f14e193df7f3a23d1382",
+          "path": "docs/phase4-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "4ef41d6392efc8442462e3c3902740e4c50dfe303a81f14e193df7f3a23d1382",
+          "path": "docs/phase5-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "4ef41d6392efc8442462e3c3902740e4c50dfe303a81f14e193df7f3a23d1382",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/build.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase3-evidence/build.log"
+    },
+    {
+      "expected_sha256": "119b664feb83a01e51042b963193951565279775bd2477a9e40d6ee875796a1c",
+      "manifest_references": [
+        {
+          "expected_sha256": "119b664feb83a01e51042b963193951565279775bd2477a9e40d6ee875796a1c",
+          "path": "docs/phase3-evidence/sha256.json",
+          "recorded_path": "docs/phase3-evidence/restore.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "119b664feb83a01e51042b963193951565279775bd2477a9e40d6ee875796a1c",
+          "path": "docs/phase4-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/restore.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "119b664feb83a01e51042b963193951565279775bd2477a9e40d6ee875796a1c",
+          "path": "docs/phase5-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/restore.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "119b664feb83a01e51042b963193951565279775bd2477a9e40d6ee875796a1c",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/restore.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase3-evidence/restore.log"
+    },
+    {
+      "expected_sha256": "9562565e143f26797d4e181a2992cb5161cb2375727a942609b546ad1d9cc4e6",
+      "manifest_references": [
+        {
+          "expected_sha256": "9562565e143f26797d4e181a2992cb5161cb2375727a942609b546ad1d9cc4e6",
+          "path": "docs/phase3-evidence/sha256.json",
+          "recorded_path": "docs/phase3-evidence/symbol_build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "9562565e143f26797d4e181a2992cb5161cb2375727a942609b546ad1d9cc4e6",
+          "path": "docs/phase4-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/symbol_build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "9562565e143f26797d4e181a2992cb5161cb2375727a942609b546ad1d9cc4e6",
+          "path": "docs/phase5-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/symbol_build.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "9562565e143f26797d4e181a2992cb5161cb2375727a942609b546ad1d9cc4e6",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/symbol_build.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase3-evidence/symbol_build.log"
+    },
+    {
+      "expected_sha256": "509413bfc2cb3097012ddb1cde21ed18c91b549076b58d7bcd15d80cbf2fc435",
+      "manifest_references": [
+        {
+          "expected_sha256": "509413bfc2cb3097012ddb1cde21ed18c91b549076b58d7bcd15d80cbf2fc435",
+          "path": "docs/phase3-evidence/sha256.json",
+          "recorded_path": "docs/phase3-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "509413bfc2cb3097012ddb1cde21ed18c91b549076b58d7bcd15d80cbf2fc435",
+          "path": "docs/phase4-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "509413bfc2cb3097012ddb1cde21ed18c91b549076b58d7bcd15d80cbf2fc435",
+          "path": "docs/phase5-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "509413bfc2cb3097012ddb1cde21ed18c91b549076b58d7bcd15d80cbf2fc435",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase3-evidence/tests.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase3-evidence/tests.log"
+    },
+    {
+      "expected_sha256": "638b011bd6d72db918108ccf100e11ba4ce7a65e259505b8c9268f91e7c2eb1c",
+      "manifest_references": [
+        {
+          "expected_sha256": "638b011bd6d72db918108ccf100e11ba4ce7a65e259505b8c9268f91e7c2eb1c",
+          "path": "docs/phase4-evidence/sha256.json",
+          "recorded_path": "docs/phase4-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "638b011bd6d72db918108ccf100e11ba4ce7a65e259505b8c9268f91e7c2eb1c",
+          "path": "docs/phase5-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase4-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "638b011bd6d72db918108ccf100e11ba4ce7a65e259505b8c9268f91e7c2eb1c",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase4-evidence/tests.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase4-evidence/tests.log"
+    },
+    {
+      "expected_sha256": "f3a7080eeae9babf994c3d2ef6154db9edde2a3ac67f4e4656a4e2ddad3a3452",
+      "manifest_references": [
+        {
+          "expected_sha256": "f3a7080eeae9babf994c3d2ef6154db9edde2a3ac67f4e4656a4e2ddad3a3452",
+          "path": "docs/phase5-evidence/sha256.json",
+          "recorded_path": "docs/phase5-evidence/tests.log",
+          "scope": "repository"
+        },
+        {
+          "expected_sha256": "f3a7080eeae9babf994c3d2ef6154db9edde2a3ac67f4e4656a4e2ddad3a3452",
+          "path": "docs/phase6-evidence/prior_hashes.json",
+          "recorded_path": "docs/phase5-evidence/tests.log",
+          "scope": "repository"
+        }
+      ],
+      "path": "docs/phase5-evidence/tests.log"
+    },
+    {
+      "expected_sha256": "dc1359aaee8cf11f0b92f117bc955cb8e2a0d6ab9cc4eca186a6adba42786a89",
+      "manifest_references": [
+        {
+          "expected_sha256": "dc1359aaee8cf11f0b92f117bc955cb8e2a0d6ab9cc4eca186a6adba42786a89",
+          "path": "docs/phase6-evidence/sha256.json",
+          "recorded_path": "tests-initial-failure.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase6-evidence/tests-initial-failure.log"
+    },
+    {
+      "expected_sha256": "c6838efad021f6ea8ed16d5f9d89b657b2c91f1d9e9ff81b42442ea07adc2359",
+      "manifest_references": [
+        {
+          "expected_sha256": "c6838efad021f6ea8ed16d5f9d89b657b2c91f1d9e9ff81b42442ea07adc2359",
+          "path": "docs/phase6-evidence/sha256.json",
+          "recorded_path": "tests.log",
+          "scope": "phase-local"
+        }
+      ],
+      "path": "docs/phase6-evidence/tests.log"
+    }
+  ],
+  "purpose": "Explicit inventory of historical records already absent at the audit commit; no record has been reconstructed. Expected hashes and references are copied from the pinned audit and checked against original manifests.",
+  "schema_version": 1
+}

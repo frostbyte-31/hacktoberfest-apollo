@@ -44,7 +44,15 @@
 - [x] Verified fresh replay, feedback disconnect, exact Phase 5 agreement and minimal-source reproduction; 11 tests pass
 - [x] Delivered docs/PHASE6_DEMONSTRATION.md and docs/phase6-evidence/; stopped without application development
 
-## Minimum next validation (not authorized follow-on work)
+## Milestone 1 packaging (after the repository audit)
+- [x] Preserve the 307 retained files and inventory 29 missing historical logs with original hashes; no reconstructed historical evidence
+- [x] Add a separate dated baseline and strict test runner; preserve the original 35 passes / 3 errors explicitly
+- [x] Pin Tcl 8.6.16 source/options, build locally and record host toolchain; replace only the legacy Nix dependency launch through an explicit adapter
+- [x] Rebuild the unchanged engine/model fixture on macOS arm64; verify connected, disconnected and replay raw traces exactly match Phase 6
+- [x] Run 55 new packaging/runtime/launcher tests successfully; Linux and upstream Tcl suite remain NOT RUN
+- [x] Document actual build commands and retain dated milestone evidence in docs/milestone1-evidence/
+
+## Minimum next validation (requires separate approval; Phase 7 not started)
 - Clean revision-specific startup schedule: wait for initialization before V37, isolate cold-start01107, and validate symmetric signed CDU timing before stronger control claims.
 
 ## Unresolved descent prerequisites

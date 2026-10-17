@@ -1,0 +1,32 @@
+{
+  "all_tests_passed": true,
+  "classifications": {
+    "passed": 2
+  },
+  "discovery": {
+    "directory": "docs/phase2-evidence",
+    "pattern": "test_validation.py"
+  },
+  "expected_test_count": 2,
+  "outcomes": {
+    "passed": 2
+  },
+  "policy_satisfied": true,
+  "suite": "phase2",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0011660000000000004,
+      "id": "test_validation.ValidationTests.test_identical_initial_conditions_and_outputs",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.008932874999999993,
+      "id": "test_validation.ValidationTests.test_p63_readiness_failure_not_descent",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 2,
+  "unittest_successful": true
+}

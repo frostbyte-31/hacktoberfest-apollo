@@ -1,0 +1,37 @@
+{
+  "generated_in": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified",
+  "retained_utc": "2026-10-17T13:46:43.120612+00:00",
+  "traces": {
+    "closed.categorized.jsonl": {
+      "sha256": "8c4c45481a3fc8a9cc4c00dba9e1f166dbf4289bc2662e40315ab36542ae6fe2",
+      "bytes": 2590454,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/closed.categorized.jsonl"
+    },
+    "closed.jsonl": {
+      "sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "bytes": 1005697,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/closed.jsonl"
+    },
+    "feedback_off.categorized.jsonl": {
+      "sha256": "86fd6ef4883714577728c6c20d4711970f0eb6b45247c7342a31b20786ffe00f",
+      "bytes": 7097829,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/feedback_off.categorized.jsonl"
+    },
+    "feedback_off.jsonl": {
+      "sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+      "bytes": 2694258,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/feedback_off.jsonl"
+    },
+    "repeat.categorized.jsonl": {
+      "sha256": "545a5f007b01e02efe091bbab3482ae6e9496ff57034c5156cfd646baa8be69e",
+      "bytes": 2590454,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/repeat.categorized.jsonl"
+    },
+    "repeat.jsonl": {
+      "sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "bytes": 1005697,
+      "byte_identical_retained_reference": "docs/phase6-evidence/demo-run/repeat.jsonl"
+    }
+  },
+  "policy": "Exact duplicate raw/categorized captures remain in ignored scratch; original retained files supply identical bytes. Build binaries and extracted sources excluded."
+}
