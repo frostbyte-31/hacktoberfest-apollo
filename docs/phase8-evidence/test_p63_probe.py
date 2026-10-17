@@ -15,9 +15,11 @@ class P63Probe(unittest.TestCase):
         self.assertEqual([S[-1]['FAILREG0'], S[-1]['FAILREG1']], [0o1520, 0o220])
     def test_refsmflg_absent(self):
         self.assertEqual(S[-1]['FLAGWRD3'] & 0o10000, 0)
-    def test_thrust_counter_untouched(self):
-        self.assertTrue(all(s['THRUST'] == 0o67777 for s in S))
-    def test_no_thrust_drive_after_selection(self):
-        self.assertFalse(any(r['ev'] == 'output' and r['channel'] == 0o14 and r['value'] & 0o10 and r['cycle'] > 3000000 for r in R))
+    def test_thrust_counter_written_once_at_v37(self):
+        changes = [(s['cycle'], s['THRUST']) for a, s in zip(S, S[1:]) if a['THRUST'] != s['THRUST']]
+        self.assertEqual(changes, [(491517, 0o77777), (3130557, 0o67777)])
+    def test_channel014_bit4_drive_at_v37(self):
+        drives = [(r['cycle'], r['value']) for r in R if r['ev'] == 'output' and r['channel'] == 0o14 and r['value'] & 0o10]
+        self.assertEqual(drives, [(495, 0o10), (3129803, 0o70010)])
 
 if __name__ == '__main__': unittest.main()

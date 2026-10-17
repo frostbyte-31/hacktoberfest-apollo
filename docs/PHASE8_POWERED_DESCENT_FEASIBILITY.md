@@ -3,7 +3,7 @@
 **Outcome: B (blocked).** Authentic AGC-controlled powered descent cannot be shown with the current fixture.
 
 - **VERIFIED:** with the IMU genuinely usable, Luminary 099 accepts **V37E63E** (MODREG = 63). R02 then raises **00220** because REFSMMAT is not valid. The AGC goes no further into landing guidance.
-- No throttle command was generated. The THRUST counter was never touched, and nothing in the simulator consumes a throttle command.
+- During V37 handling the AGC itself wrote the THRUST counter (067777) and pulsed channel 014 bit4 (word 070010). Nothing in the simulator consumes that throttle output, and no descent guidance ran.
 
 Powered descent is **NOT RUN**.
 
@@ -44,15 +44,17 @@ Results (VERIFIED, `runs/p63.jsonl`; a fresh replay was byte-identical):
 - At call 3133969, MODREG goes 077777 → **077** (P63 selected).
 - At call 3135675, FAILREG = **01520, 00220, 0**. 01520 is the known Phase 5 alarm; **00220 is the R02 alarm for REFSMMAT not valid.**
 - FLAGWRD3 = 02000 (REFSMFLG bit13 clear). IMODES30 = 037001, IMODES33 = 036000.
-- THRUST counter = 067777 throughout. It is never written, and no channel 014 bit4 appears after selection.
-- Channel 014 shows 070000 drives (CDU/gyro-related bits). No engine-on command was identified on channel 011, which carried only DSKY/status-type words (020000/020002/020040/020042).
-- `test_p63_probe.py`: **7/7 tests passed.**
+- THRUST counter (055) changes exactly twice: 0 → 077777 at call 491517 (startup), then → **067777 at call 3130557**, during V37E63E processing and before the R02 alarm.
+- Channel 014 bit4 (THRUST drive) occurs exactly twice: word 00010 at call 495 (startup), then **word 070010 at call 3129803**, alongside the V37 processing.
+- **ASSUMED / not decoded:** that this is a throttle reset made during program change. The writing routine was not traced; that source is not retained in the evidence. It is an authentic AGC throttle-interface output, but not descent guidance.
+- No engine-on command was identified on channel 011, which carried only DSKY/status-type words (020000/020002/020040/020042).
+- `test_p63_probe.py`: **7/7 tests passed** (`runs/tests.log`). An initial run failed 2/7: my first assumption was that THRUST and channel 014 bit4 were untouched, and the trace contradicted it. The tests and this report were corrected to match the recorded trace.
 
 Interpretation: a usable IMU is necessary but not sufficient. Even with real readiness, the original software refuses descent because the platform has no valid alignment matrix. The blocker is now one precise step later than in Phase 2, where the IMU itself was not operating.
 
 ## 4. Minimum physics and interfaces still required (ASSUMED requirements, from source)
 1. **Valid alignment.** Either run the authentic alignment programs (P51/P52) against a synthetic star/platform model, or load a source-justified REFSMMAT plus state vector through an existing uplink/erasable-load mechanism, with its provenance documented.
-2. **Throttle plant.** Read the THRUST counter pulses and channel 014 bit4 as the AGC emits them, and convert them to thrust in the plant.
+2. **Throttle plant.** Trace the routine that wrote THRUST at V37 (observed above), then read the THRUST counter pulses and channel 014 bit4 as the AGC emits them, and convert them to thrust in the plant.
 3. **Translational dynamics.** Point-mass motion with lunar gravity, descent thrust along body X, and mass/fuel use. Return PIPA counts to counters 037–041. RCS, CDU and attitude are reused from Phases 5–7.
 4. **Landing radar.** Model altitude and velocity from the plant state, answering the channel-013 radar selection with RNRAD counter pulses. Radar is not needed before about the P63 midpoint; a bounded experiment can stop before radar acceptance.
 5. **Clean initialization.** Isolate 01520 and the earlier 01107 alarm.
