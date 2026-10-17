@@ -1,0 +1,12 @@
+{
+  "schedule": "4000000\n100000 25 28671\n100001 24 15615\n426665 13 17\n447998 13 3\n469331 13 6\n490664 13 28\n1000000 13 17\n1021333 13 3\n1042666 13 7\n1063999 13 28\n1085332 13 16\n1106665 13 16\n1127998 13 28\n1600000 13 17\n1621333 13 7\n1642666 13 7\n1663999 13 28\n2500000 25 12283\n2500001 119 20\n2700000 119 0\n2700001 25 28671\n",
+  "reset": "Fresh cpu_reset and fresh Tcl plant per run; no restored memory",
+  "model": "Unchanged active upstream LM-7 defaults, stationary zero gimbals",
+  "correction": "Channel030 IMU OPERATE active-low; software clears readiness itself",
+  "modes": [
+    "closed",
+    "feedback_off",
+    "closed replay"
+  ],
+  "ram_writes": 0
+}
