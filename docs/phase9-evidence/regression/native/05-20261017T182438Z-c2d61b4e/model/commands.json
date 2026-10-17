@@ -1,0 +1,58 @@
+[
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/plant/probe.tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/source"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "original",
+    "start_utc": "2026-10-17T18:24:39.085146+00:00",
+    "end_utc": "2026-10-17T18:24:39.349102+00:00",
+    "exit": 0,
+    "stdin": "probe-inputs.txt",
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/model/probe-with-module-argument.tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/model/AGC_IMU.corrected-yaw.tcl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "corrected",
+    "start_utc": "2026-10-17T18:24:39.349382+00:00",
+    "end_utc": "2026-10-17T18:24:39.603220+00:00",
+    "exit": 0,
+    "stdin": "probe-inputs.txt",
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/model/guard-probe.tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T182438Z-c2d61b4e/model/AGC_IMU.corrected-yaw.tcl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "axis-guard",
+    "start_utc": "2026-10-17T18:24:39.623162+00:00",
+    "end_utc": "2026-10-17T18:24:39.638526+00:00",
+    "exit": 0,
+    "stdin": null,
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  }
+]

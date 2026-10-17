@@ -1,0 +1,7 @@
+{
+  "ropeByteIdentical": true,
+  "listingByteIdentical": true,
+  "parsedSymbolsIdentical": true,
+  "symtabByteIdentical": false,
+  "note": "Native executable includes compiler debug paths and binary symtab includes absolute working directory. Neither is required to be byte-identical across output directories; rope and actual listing/parsed symbols compared separately."
+}

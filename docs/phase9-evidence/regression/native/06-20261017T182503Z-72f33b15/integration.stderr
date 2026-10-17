@@ -1,0 +1,28 @@
+test_actual_error_needles_are_not_coarse_platform_motion (test_integration.CapturedMultiAxisControl) ... ok
+test_all_captured_cases_reconcile_actual_native_boundaries (test_integration.CapturedMultiAxisControl) ... ok
+test_all_derived_gimbal_paths_retained_without_claiming_third_axis_control (test_integration.CapturedMultiAxisControl) ... ok
+test_combined_horizon_declared_before_execution_and_guard_active (test_integration.CapturedMultiAxisControl) ... ok
+test_disconnected_controls_change_actual_timed_commands_keep_zero_cdus (test_integration.CapturedMultiAxisControl) ... ok
+test_final_actual_cdu_angles_match_quaternion_derived_gimbals_within_quantum (test_integration.CapturedMultiAxisControl) ... ok
+test_independent_pitch_uses_original_qr_jets_and_actual_cdus (test_integration.CapturedMultiAxisControl) ... ok
+test_original_yaw_and_new_quaternion_yaw_preserve_baseline (test_integration.CapturedMultiAxisControl) ... ok
+test_pc_bank_flags_and_real_inertia_telemetry_exist (test_integration.CapturedMultiAxisControl) ... ok
+test_pitch_and_simultaneous_replays_are_exact (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_active_unsupported_alignment_without_discarding_raw_packet (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_false_summary_and_settlement (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_missing_observed_application_despite_summary (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_sensor_data_mislabeled_as_authentic_output (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_swapped_final_orientation_interface (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_swapped_native_packet_axis (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_unsupported_sensor_path_and_nonunit_orientation (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_wrong_actual_counter_delta (test_integration.CapturedMultiAxisControl) ... ok
+test_reject_wrong_actual_fifo_head (test_integration.CapturedMultiAxisControl) ... ok
+test_same_call_analog_vector_schedule_is_source_justified (test_integration.CapturedMultiAxisControl) ... ok
+test_simultaneous_actual_pq_torque_rates_and_orientation_overlap (test_integration.CapturedMultiAxisControl) ... ok
+test_actual_native_bytes_preserve_mixed_normal_and_three_counter_order (test_integration.NativeWireAndFifos) ... ok
+test_actual_three_fifo_heads_modular_counts_and_quiet_settlement (test_integration.NativeWireAndFifos) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 7.971s
+
+OK

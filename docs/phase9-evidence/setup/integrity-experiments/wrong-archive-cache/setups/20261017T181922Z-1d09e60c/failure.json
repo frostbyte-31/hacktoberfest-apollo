@@ -1,0 +1,5 @@
+{
+  "errorType": "ValueError",
+  "evidence": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-integrity-test/wrong-archive-cache/setups/20261017T181922Z-1d09e60c",
+  "message": "Pinned archive checksum mismatch; no extraction attempted"
+}

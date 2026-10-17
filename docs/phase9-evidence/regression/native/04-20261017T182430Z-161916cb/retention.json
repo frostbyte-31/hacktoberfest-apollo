@@ -1,0 +1,1016 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb",
+  "files": {
+    "cdu/alternating_supported-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported-replay.jsonl",
+      "raw_sha256": "dcd8853cf825576282feb06c206cf309ad41868f3bc7ac44183678ff952f2224",
+      "raw_bytes": 59220,
+      "compressed": true,
+      "stored_sha256": "e5b9dab3944167a6d192afc2f48f827141d64000712d5418ed50d06bc91e6b61"
+    },
+    "cdu/alternating_supported-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/alternating_supported-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/alternating_supported.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported.jsonl",
+      "raw_sha256": "dcd8853cf825576282feb06c206cf309ad41868f3bc7ac44183678ff952f2224",
+      "raw_bytes": 59220,
+      "compressed": true,
+      "stored_sha256": "e5b9dab3944167a6d192afc2f48f827141d64000712d5418ed50d06bc91e6b61"
+    },
+    "cdu/alternating_supported.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/alternating_supported.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/build.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/build.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/build.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/build.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/commands.json",
+      "raw_sha256": "f4973241c8854cbfa498cce4336c8d361b6e2e529bb3a48e59f50162c40094fa",
+      "raw_bytes": 15107,
+      "compressed": false,
+      "stored_sha256": "f4973241c8854cbfa498cce4336c8d361b6e2e529bb3a48e59f50162c40094fa"
+    },
+    "cdu/compiler-version.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/compiler-version.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/compiler-version.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/compiler-version.stdout",
+      "raw_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483",
+      "raw_bytes": 201,
+      "compressed": false,
+      "stored_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "cdu/fifo_capacity_control-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control-replay.jsonl",
+      "raw_sha256": "7600228f0db1439e622ebd6bba8c017f725848c9fb1be782d43164cd2d01b24b",
+      "raw_bytes": 117746,
+      "compressed": true,
+      "stored_sha256": "cc114f161e96432a68c04e6ec58f8cae56b989d969c261eb9d21febe82d6eb85"
+    },
+    "cdu/fifo_capacity_control-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/fifo_capacity_control-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/fifo_capacity_control.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control.jsonl",
+      "raw_sha256": "7600228f0db1439e622ebd6bba8c017f725848c9fb1be782d43164cd2d01b24b",
+      "raw_bytes": 117746,
+      "compressed": true,
+      "stored_sha256": "cc114f161e96432a68c04e6ec58f8cae56b989d969c261eb9d21febe82d6eb85"
+    },
+    "cdu/fifo_capacity_control.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/fifo_capacity_control.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/inputs.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/inputs.json",
+      "raw_sha256": "d761ec887c846308c3f995ee4c8cb7d70107d02435bc73a572be5a2c9d03db8c",
+      "raw_bytes": 2723,
+      "compressed": false,
+      "stored_sha256": "d761ec887c846308c3f995ee4c8cb7d70107d02435bc73a572be5a2c9d03db8c"
+    },
+    "cdu/mixed-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed-replay.jsonl",
+      "raw_sha256": "cb6569800cc28ca6a5381c9190367f71025c3d3ce787e60e50d66c338203138b",
+      "raw_bytes": 21050,
+      "compressed": true,
+      "stored_sha256": "2f4942386607436c770091178f49b0d4307d41ffff700868b7d0603c2a65ae79"
+    },
+    "cdu/mixed-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/mixed-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/mixed.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed.jsonl",
+      "raw_sha256": "cb6569800cc28ca6a5381c9190367f71025c3d3ce787e60e50d66c338203138b",
+      "raw_bytes": 21050,
+      "compressed": true,
+      "stored_sha256": "2f4942386607436c770091178f49b0d4307d41ffff700868b7d0603c2a65ae79"
+    },
+    "cdu/mixed.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/mixed.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_fast-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast-replay.jsonl",
+      "raw_sha256": "441c477cc0d9b935a4feb0a51e44ba9e4fe811f33ab1e73b5813062633686495",
+      "raw_bytes": 23179,
+      "compressed": true,
+      "stored_sha256": "b0f8511513d0af0e7eae7c5eaf16c228fb97a5796465b302af255d81eb0e0228"
+    },
+    "cdu/negative_fast-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_fast-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_fast.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast.jsonl",
+      "raw_sha256": "441c477cc0d9b935a4feb0a51e44ba9e4fe811f33ab1e73b5813062633686495",
+      "raw_bytes": 23179,
+      "compressed": true,
+      "stored_sha256": "b0f8511513d0af0e7eae7c5eaf16c228fb97a5796465b302af255d81eb0e0228"
+    },
+    "cdu/negative_fast.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_fast.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_slow-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow-replay.jsonl",
+      "raw_sha256": "d22f94679f0f5466b1a2ef0958a9d2e1a2c1ff5387700e80ec1568b097bdfd34",
+      "raw_bytes": 12069,
+      "compressed": true,
+      "stored_sha256": "a5b1e648de12d7425926735e726c360edbe6fc832aa151c8b3912f47f6e2015d"
+    },
+    "cdu/negative_slow-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_slow-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_slow.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow.jsonl",
+      "raw_sha256": "d22f94679f0f5466b1a2ef0958a9d2e1a2c1ff5387700e80ec1568b097bdfd34",
+      "raw_bytes": 12069,
+      "compressed": true,
+      "stored_sha256": "a5b1e648de12d7425926735e726c360edbe6fc832aa151c8b3912f47f6e2015d"
+    },
+    "cdu/negative_slow.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/negative_slow.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_fast-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast-replay.jsonl",
+      "raw_sha256": "1cc0b7fd7b97320c45bb794d2e808af7b13d546f1e4c092bf6d5203be39ad1df",
+      "raw_bytes": 23008,
+      "compressed": true,
+      "stored_sha256": "a943d80f893ee677ab2c111eb4460f8b9c6e2137a3553edfc09ef90af8c8122b"
+    },
+    "cdu/positive_fast-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_fast-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_fast.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast.jsonl",
+      "raw_sha256": "1cc0b7fd7b97320c45bb794d2e808af7b13d546f1e4c092bf6d5203be39ad1df",
+      "raw_bytes": 23008,
+      "compressed": true,
+      "stored_sha256": "a943d80f893ee677ab2c111eb4460f8b9c6e2137a3553edfc09ef90af8c8122b"
+    },
+    "cdu/positive_fast.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_fast.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_slow-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow-replay.jsonl",
+      "raw_sha256": "5b52d26efb7195efb7b950c6dafb0cb5746630730970bf9fa5cafa438da4f9b7",
+      "raw_bytes": 11970,
+      "compressed": true,
+      "stored_sha256": "3df8700ee6a0366041f8e1ef05973072c8e1edb92796271f799a4d6a848a3db2"
+    },
+    "cdu/positive_slow-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_slow-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_slow.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow.jsonl",
+      "raw_sha256": "5b52d26efb7195efb7b950c6dafb0cb5746630730970bf9fa5cafa438da4f9b7",
+      "raw_bytes": 11970,
+      "compressed": true,
+      "stored_sha256": "3df8700ee6a0366041f8e1ef05973072c8e1edb92796271f799a4d6a848a3db2"
+    },
+    "cdu/positive_slow.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/positive_slow.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/python-version.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/python-version.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/python-version.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/python-version.stdout",
+      "raw_sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632",
+      "raw_bytes": 13,
+      "compressed": false,
+      "stored_sha256": "fd0fd4290ad100adc37e4a82e45f821faeacbecae70f4d3eba08e85be138c632"
+    },
+    "cdu/ringbuffer_capacity_control-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control-replay.jsonl",
+      "raw_sha256": "61e1f29a3ba54206d81801be04d1f074fda87972ef9e391e71635e57c8e77924",
+      "raw_bytes": 942119,
+      "compressed": true,
+      "stored_sha256": "55c7f9f1dc08328a119d61a687bd1e6eeaa4fc917c7b9c7a934be10f820784b5"
+    },
+    "cdu/ringbuffer_capacity_control-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/ringbuffer_capacity_control-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/ringbuffer_capacity_control.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control.jsonl",
+      "raw_sha256": "61e1f29a3ba54206d81801be04d1f074fda87972ef9e391e71635e57c8e77924",
+      "raw_bytes": 942119,
+      "compressed": true,
+      "stored_sha256": "55c7f9f1dc08328a119d61a687bd1e6eeaa4fc917c7b9c7a934be10f820784b5"
+    },
+    "cdu/ringbuffer_capacity_control.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/ringbuffer_capacity_control.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/signed_wrap-replay.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap-replay.jsonl",
+      "raw_sha256": "a6150604a88681e26fcc05e9c9fd8abdb221d2cc7d293c156f09112c9d5cbbd4",
+      "raw_bytes": 3357,
+      "compressed": true,
+      "stored_sha256": "61dd74b4c44d1dcf33affac58539f932405b3bd9e7a0b890dbdf642cebce1771"
+    },
+    "cdu/signed_wrap-replay.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap-replay.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/signed_wrap-replay.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap-replay.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/signed_wrap.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap.jsonl",
+      "raw_sha256": "a6150604a88681e26fcc05e9c9fd8abdb221d2cc7d293c156f09112c9d5cbbd4",
+      "raw_bytes": 3357,
+      "compressed": true,
+      "stored_sha256": "61dd74b4c44d1dcf33affac58539f932405b3bd9e7a0b890dbdf642cebce1771"
+    },
+    "cdu/signed_wrap.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/signed_wrap.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu/summary.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/summary.json",
+      "raw_sha256": "23501ff9cdb09fae6b7a3fab7a7cedb7aec482679ff1b0efb9a30a57bdd6708f",
+      "raw_bytes": 11265,
+      "compressed": false,
+      "stored_sha256": "23501ff9cdb09fae6b7a3fab7a7cedb7aec482679ff1b0efb9a30a57bdd6708f"
+    },
+    "cdu.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cdu.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu.stdout",
+      "raw_sha256": "1131d11b19db0d49032cd92501dd6617883bfcd8819cdcc58e183491f0f0a5bd",
+      "raw_bytes": 3434,
+      "compressed": false,
+      "stored_sha256": "1131d11b19db0d49032cd92501dd6617883bfcd8819cdcc58e183491f0f0a5bd"
+    },
+    "commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/commands.json",
+      "raw_sha256": "768ee2224abaca760ecab30d8a41956151859e08151dcd755c40dcbfa6f8fc69",
+      "raw_bytes": 2280,
+      "compressed": false,
+      "stored_sha256": "768ee2224abaca760ecab30d8a41956151859e08151dcd755c40dcbfa6f8fc69"
+    },
+    "completion.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/completion.json",
+      "raw_sha256": "0bfb5ca0965b6fc9a8e8755b0038f1e5c69e360d78cd9b58fcb347f5f1319607",
+      "raw_bytes": 306,
+      "compressed": false,
+      "stored_sha256": "0bfb5ca0965b6fc9a8e8755b0038f1e5c69e360d78cd9b58fcb347f5f1319607"
+    },
+    "environment.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/environment.json",
+      "raw_sha256": "86136de979883016bce3ee2a3d31da33528433146474635f9bd4a5a32eaafb07",
+      "raw_bytes": 2910,
+      "compressed": false,
+      "stored_sha256": "86136de979883016bce3ee2a3d31da33528433146474635f9bd4a5a32eaafb07"
+    },
+    "inputs_source_hashes.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/inputs_source_hashes.json",
+      "raw_sha256": "5da2851577a56fd8f9d232330c93f97296c5ce05f88665a61e5835727251de0f",
+      "raw_bytes": 2882,
+      "compressed": false,
+      "stored_sha256": "5da2851577a56fd8f9d232330c93f97296c5ce05f88665a61e5835727251de0f"
+    },
+    "plant/commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/commands.json",
+      "raw_sha256": "f8e28384627667f3b0f1be57dd102c08132794d3420a92db1d03d016abcd1ad3",
+      "raw_bytes": 665,
+      "compressed": false,
+      "stored_sha256": "f8e28384627667f3b0f1be57dd102c08132794d3420a92db1d03d016abcd1ad3"
+    },
+    "plant/environment.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/environment.json",
+      "raw_sha256": "7b815e592714f7004727680b09f483e06fdfb8da86fd6eab41c2175992f2a0fd",
+      "raw_bytes": 2670,
+      "compressed": false,
+      "stored_sha256": "7b815e592714f7004727680b09f483e06fdfb8da86fd6eab41c2175992f2a0fd"
+    },
+    "plant/probe-inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/probe-inputs.txt",
+      "raw_sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7",
+      "raw_bytes": 1295,
+      "compressed": false,
+      "stored_sha256": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7"
+    },
+    "plant/probe.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/probe.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "plant/probe.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/probe.stdout",
+      "raw_sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd",
+      "raw_bytes": 126227,
+      "compressed": false,
+      "stored_sha256": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd"
+    },
+    "plant/raw-trace.jsonl.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/raw-trace.jsonl",
+      "raw_sha256": "fc8f3782e1c5a12964cf5d0855ec0084fdadef7a433ef9b40e775667d68e0049",
+      "raw_bytes": 447004,
+      "compressed": true,
+      "stored_sha256": "8191dfd1b644ff85ddda4b6d98cf1daa213900814f99b4c85af91959734b90a1"
+    },
+    "plant/scenarios.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/scenarios.json",
+      "raw_sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b",
+      "raw_bytes": 4442,
+      "compressed": false,
+      "stored_sha256": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b"
+    },
+    "plant/source-audit.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/source-audit.json",
+      "raw_sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a",
+      "raw_bytes": 20681,
+      "compressed": false,
+      "stored_sha256": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a"
+    },
+    "plant/summary.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/summary.json",
+      "raw_sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3",
+      "raw_bytes": 9821,
+      "compressed": false,
+      "stored_sha256": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3"
+    },
+    "plant/validation.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant/validation.json",
+      "raw_sha256": "e2a12b1a548da97aceaf383875aea3e85e5fd7a9d74d344389ef256543d0d3b0",
+      "raw_bytes": 613,
+      "compressed": false,
+      "stored_sha256": "e2a12b1a548da97aceaf383875aea3e85e5fd7a9d74d344389ef256543d0d3b0"
+    },
+    "plant.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "plant.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/plant.stdout",
+      "raw_sha256": "15c4a58610c263f152882d935e880a6e439c35099916990dbba4fc356f24afe4",
+      "raw_bytes": 59,
+      "compressed": false,
+      "stored_sha256": "15c4a58610c263f152882d935e880a6e439c35099916990dbba4fc356f24afe4"
+    },
+    "preservation-after.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/preservation-after.json",
+      "raw_sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b",
+      "raw_bytes": 266,
+      "compressed": false,
+      "stored_sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "preservation-before.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/preservation-before.json",
+      "raw_sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b",
+      "raw_bytes": 266,
+      "compressed": false,
+      "stored_sha256": "2a18360846ea835384e0ab1809077480a9f47e11e33b88b1e120bb3853c3725b"
+    },
+    "startup/binary_hashes.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/binary_hashes.json",
+      "raw_sha256": "be17f8a10c43fdc3ae82b93124337076289ceedc87f2c4aff32d500dd8941a93",
+      "raw_bytes": 90,
+      "compressed": false,
+      "stored_sha256": "be17f8a10c43fdc3ae82b93124337076289ceedc87f2c4aff32d500dd8941a93"
+    },
+    "startup/build.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/build.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/build.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/build.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/commands.json",
+      "raw_sha256": "8566a37d1dc620f7e503965bd335f5fcb0687c7e687112f14b04500fa2dd5a63",
+      "raw_bytes": 5937,
+      "compressed": false,
+      "stored_sha256": "8566a37d1dc620f7e503965bd335f5fcb0687c7e687112f14b04500fa2dd5a63"
+    },
+    "startup/compiler-version.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/compiler-version.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/compiler-version.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/compiler-version.stdout",
+      "raw_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483",
+      "raw_bytes": 201,
+      "compressed": false,
+      "stored_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "startup/completion.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/completion.json",
+      "raw_sha256": "a3f17d18fef65610aafd94200829dc2806585e720aee3e312112e0c09f3134ee",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "a3f17d18fef65610aafd94200829dc2806585e720aee3e312112e0c09f3134ee"
+    },
+    "startup/delayed.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/delayed.inputs.txt",
+      "raw_sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    "startup/delayed.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/delayed.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/delayed.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/delayed.stdout",
+      "raw_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641",
+      "raw_bytes": 254304,
+      "compressed": false,
+      "stored_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    "startup/imu_off.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/imu_off.inputs.txt",
+      "raw_sha256": "323482762555ca6d4724b3bc52e175cff3ca4bb8603a99f7e7aafa27560b0d97",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "323482762555ca6d4724b3bc52e175cff3ca4bb8603a99f7e7aafa27560b0d97"
+    },
+    "startup/imu_off.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/imu_off.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/imu_off.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/imu_off.stdout",
+      "raw_sha256": "eab2852b9ad4c9fec9d6959ded7c0b44c24188603350e2f5a4901d7875b7e287",
+      "raw_bytes": 247558,
+      "compressed": false,
+      "stored_sha256": "eab2852b9ad4c9fec9d6959ded7c0b44c24188603350e2f5a4901d7875b7e287"
+    },
+    "startup/initial_conditions.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/initial_conditions.json",
+      "raw_sha256": "563d81a6baca55a8cde45f0e0445d98e4bb31cea10a92f6493b582b8b72dd2f9",
+      "raw_bytes": 884,
+      "compressed": false,
+      "stored_sha256": "563d81a6baca55a8cde45f0e0445d98e4bb31cea10a92f6493b582b8b72dd2f9"
+    },
+    "startup/inputs_source_hashes.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/inputs_source_hashes.json",
+      "raw_sha256": "dc0e9cbc489596fd6887129ba139f866597a9f14d98712a8c3fe044cbd8c1ac8",
+      "raw_bytes": 6455,
+      "compressed": false,
+      "stored_sha256": "dc0e9cbc489596fd6887129ba139f866597a9f14d98712a8c3fe044cbd8c1ac8"
+    },
+    "startup/legacy.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/legacy.inputs.txt",
+      "raw_sha256": "9692fbb5d50a1f063b95744ba25e6a730f3e88684ea112288339c77feb2e82cf",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "9692fbb5d50a1f063b95744ba25e6a730f3e88684ea112288339c77feb2e82cf"
+    },
+    "startup/legacy.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/legacy.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/legacy.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/legacy.stdout",
+      "raw_sha256": "882f5e0ed95565ab4ad77511cb78c8b69953a2429c40d1f301abb2c79b6da3dd",
+      "raw_bytes": 248558,
+      "compressed": false,
+      "stored_sha256": "882f5e0ed95565ab4ad77511cb78c8b69953a2429c40d1f301abb2c79b6da3dd"
+    },
+    "startup/repeat.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/repeat.inputs.txt",
+      "raw_sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "dc68afc4f2e16f87a8b8587f0e3e21a039dece386c37acd34c7a71cdd0a532a9"
+    },
+    "startup/repeat.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/repeat.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/repeat.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/repeat.stdout",
+      "raw_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641",
+      "raw_bytes": 254304,
+      "compressed": false,
+      "stored_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641"
+    },
+    "startup/resolved_addresses.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/resolved_addresses.json",
+      "raw_sha256": "26a10951092cdfcc7a37d8a4214e38ec63c7c8919dbe8bcc3f46e0a0c5deae39",
+      "raw_bytes": 1570,
+      "compressed": false,
+      "stored_sha256": "26a10951092cdfcc7a37d8a4214e38ec63c7c8919dbe8bcc3f46e0a0c5deae39"
+    },
+    "startup/summary.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/summary.json",
+      "raw_sha256": "279eca3aec605a2544c1a0db03553f15a24b2d9633f3c8ac33db048c4ba0aded",
+      "raw_bytes": 7363,
+      "compressed": false,
+      "stored_sha256": "279eca3aec605a2544c1a0db03553f15a24b2d9633f3c8ac33db048c4ba0aded"
+    },
+    "startup/v37_after_ready.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_after_ready.inputs.txt",
+      "raw_sha256": "21269e22891907c7d8595726d4483ce14c93551b126ad16cb4b1bd97ff82be56",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "21269e22891907c7d8595726d4483ce14c93551b126ad16cb4b1bd97ff82be56"
+    },
+    "startup/v37_after_ready.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_after_ready.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/v37_after_ready.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_after_ready.stdout",
+      "raw_sha256": "a56855dcffd766e8fddadfacb8076d414cfd2f122fa1e08b52076a3788d7f99d",
+      "raw_bytes": 254094,
+      "compressed": false,
+      "stored_sha256": "a56855dcffd766e8fddadfacb8076d414cfd2f122fa1e08b52076a3788d7f99d"
+    },
+    "startup/v37_before_ready.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_before_ready.inputs.txt",
+      "raw_sha256": "14d58fa21095bc6c886febfa36903b71b63aa00dbd1241e9fa3588934de506a5",
+      "raw_bytes": 186,
+      "compressed": false,
+      "stored_sha256": "14d58fa21095bc6c886febfa36903b71b63aa00dbd1241e9fa3588934de506a5"
+    },
+    "startup/v37_before_ready.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_before_ready.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/v37_before_ready.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/v37_before_ready.stdout",
+      "raw_sha256": "3ec8c4e6db3d5d250fb946de27fe12808d1f97f5fa2b04ecc5ca9f84ae19f672",
+      "raw_bytes": 248479,
+      "compressed": false,
+      "stored_sha256": "3ec8c4e6db3d5d250fb946de27fe12808d1f97f5fa2b04ecc5ca9f84ae19f672"
+    },
+    "startup/validation.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/validation.json",
+      "raw_sha256": "813fc6ba7926cffbfb2ca79ece0f867676eb75660bba5821a34dc087bf5c8583",
+      "raw_bytes": 808,
+      "compressed": false,
+      "stored_sha256": "813fc6ba7926cffbfb2ca79ece0f867676eb75660bba5821a34dc087bf5c8583"
+    },
+    "startup/without_v36.inputs.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/without_v36.inputs.txt",
+      "raw_sha256": "a23004cc127d03da8ad8a815ac94e14048bb1e92c505c9c2d6600434c09cf367",
+      "raw_bytes": 136,
+      "compressed": false,
+      "stored_sha256": "a23004cc127d03da8ad8a815ac94e14048bb1e92c505c9c2d6600434c09cf367"
+    },
+    "startup/without_v36.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/without_v36.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup/without_v36.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/without_v36.stdout",
+      "raw_sha256": "34a9cefa241221d918726b4ab2ec3d632890a2508dea27d8b2d68281e3ec94d2",
+      "raw_bytes": 251367,
+      "compressed": false,
+      "stored_sha256": "34a9cefa241221d918726b4ab2ec3d632890a2508dea27d8b2d68281e3ec94d2"
+    },
+    "startup.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "startup.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup.stdout",
+      "raw_sha256": "80d70a9b5c85cdeca51ad8b45df4404ac32073b4f54bd2653fb26b5126f23d99",
+      "raw_bytes": 108,
+      "compressed": false,
+      "stored_sha256": "80d70a9b5c85cdeca51ad8b45df4404ac32073b4f54bd2653fb26b5126f23d99"
+    }
+  },
+  "omitted_rebuildable": [
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "raw_sha256": "72b957461309fc8a3de781942b3e79d8895f8a65957e07dcddb97855d6866bbc",
+      "raw_bytes": 73800,
+      "path": "cdu/engine.so",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/COPYING",
+      "raw_sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994",
+      "raw_bytes": 18009,
+      "path": "source/COPYING",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "raw_sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5",
+      "raw_bytes": 43029,
+      "path": "source/Contributed/LM_Simulator/lm_simulator.tcl",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "raw_sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+      "raw_bytes": 32273,
+      "path": "source/Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "raw_sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+      "raw_bytes": 15399,
+      "path": "source/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/LICENSE.txt",
+      "raw_sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799",
+      "raw_bytes": 704,
+      "path": "source/LICENSE.txt",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_cli.h",
+      "raw_sha256": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170",
+      "raw_bytes": 2557,
+      "path": "source/yaAGC/agc_cli.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_debug.h",
+      "raw_sha256": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1",
+      "raw_bytes": 1579,
+      "path": "source/yaAGC/agc_debug.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_debugger.h",
+      "raw_sha256": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de",
+      "raw_bytes": 3626,
+      "path": "source/yaAGC/agc_debugger.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_disassembler.h",
+      "raw_sha256": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997",
+      "raw_bytes": 1788,
+      "path": "source/yaAGC/agc_disassembler.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_engine.c",
+      "raw_sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+      "raw_bytes": 120098,
+      "path": "source/yaAGC/agc_engine.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_engine.h",
+      "raw_sha256": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2",
+      "raw_bytes": 23265,
+      "path": "source/yaAGC/agc_engine.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_engine_init.c",
+      "raw_sha256": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+      "raw_bytes": 15422,
+      "path": "source/yaAGC/agc_engine_init.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_gdbmi.h",
+      "raw_sha256": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6",
+      "raw_bytes": 1521,
+      "path": "source/yaAGC/agc_gdbmi.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_help.h",
+      "raw_sha256": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5",
+      "raw_bytes": 110,
+      "path": "source/yaAGC/agc_help.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_simulator.h",
+      "raw_sha256": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9",
+      "raw_bytes": 2929,
+      "path": "source/yaAGC/agc_simulator.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_symtab.h",
+      "raw_sha256": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93",
+      "raw_bytes": 11354,
+      "path": "source/yaAGC/agc_symtab.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_utilities.c",
+      "raw_sha256": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+      "raw_bytes": 12806,
+      "path": "source/yaAGC/agc_utilities.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/regex.h",
+      "raw_sha256": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7",
+      "raw_bytes": 18702,
+      "path": "source/yaAGC/regex.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/rfopen.c",
+      "raw_sha256": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29",
+      "raw_bytes": 3482,
+      "path": "source/yaAGC/rfopen.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/ringbuffer.c",
+      "raw_sha256": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+      "raw_bytes": 2176,
+      "path": "source/yaAGC/ringbuffer.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/ringbuffer.h",
+      "raw_sha256": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459",
+      "raw_bytes": 1476,
+      "path": "source/yaAGC/ringbuffer.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/ringbuffer_api.c",
+      "raw_sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+      "raw_bytes": 6578,
+      "path": "source/yaAGC/ringbuffer_api.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/wasm.c",
+      "raw_sha256": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+      "raw_bytes": 5292,
+      "path": "source/yaAGC/wasm.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/yaAGC.h",
+      "raw_sha256": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed",
+      "raw_bytes": 4055,
+      "path": "source/yaAGC/yaAGC.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/startup/startup_probe",
+      "raw_sha256": "cd7f2b9f2392c92ed67329961b5796bcc1970812ee0aa9a4a1c9ddc859b9d0d7",
+      "raw_bytes": 73568,
+      "path": "startup/startup_probe",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    }
+  ],
+  "note": "Actual bytes only. JSONL lossless gzip decompresses byte-for-byte; failed attempts remain failures."
+}

@@ -1,0 +1,279 @@
+{
+  "repository": "https://github.com/virtualagc/virtualagc",
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "git_tree_truncated": false,
+  "retrieval": "19 files fetched from pinned raw.githubusercontent.com URLs; 8 copied from the root-verified pinned tar archive extraction. Every retained source file was verified against both pinned Git tree blobs and the archive extraction.",
+  "files": {
+    "AOTMARK.agc": {
+      "repository_path": "Luminary099/AOTMARK.agc",
+      "bytes": 17714,
+      "sha256": "40811740880eb027df49c356d734e4d1c9b56340b38661aa67c22294b4c7292f",
+      "git_blob_sha1": "62cd312bc3f5df0320cbb5c3d8fbe39c2f2baca4",
+      "tree_blob_sha1": "62cd312bc3f5df0320cbb5c3d8fbe39c2f2baca4",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/AOTMARK.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "CONTROLLED_CONSTANTS.agc": {
+      "repository_path": "Luminary099/CONTROLLED_CONSTANTS.agc",
+      "bytes": 15220,
+      "sha256": "8ff78c818b3f92e061af1543eb84deaf1b16e96187d2236e3438671bffaa79ae",
+      "git_blob_sha1": "c6a825c4d1a8bec46406b1921e12aefb6b7cab73",
+      "tree_blob_sha1": "c6a825c4d1a8bec46406b1921e12aefb6b7cab73",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/CONTROLLED_CONSTANTS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "DISPLAY_INTERFACE_ROUTINES.agc": {
+      "repository_path": "Luminary099/DISPLAY_INTERFACE_ROUTINES.agc",
+      "bytes": 40385,
+      "sha256": "82c417fd8fcf7900d5fb806c3b812fb41fee4eac91ebb25bc29381a8b66caa71",
+      "git_blob_sha1": "573e4dcb4bae5bc53dba83812c015b1106cdde01",
+      "tree_blob_sha1": "573e4dcb4bae5bc53dba83812c015b1106cdde01",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/DISPLAY_INTERFACE_ROUTINES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "ERASABLE_ASSIGNMENTS.agc": {
+      "repository_path": "Luminary099/ERASABLE_ASSIGNMENTS.agc",
+      "bytes": 78861,
+      "sha256": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+      "git_blob_sha1": "1a0b13751c0e3c89b5b7556f643a3d809708f9b2",
+      "tree_blob_sha1": "1a0b13751c0e3c89b5b7556f643a3d809708f9b2",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/ERASABLE_ASSIGNMENTS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "EXTENDED_VERBS.agc": {
+      "repository_path": "Luminary099/EXTENDED_VERBS.agc",
+      "bytes": 38168,
+      "sha256": "fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29",
+      "git_blob_sha1": "d2af8319eadc59f79b764aed5d4385a84075fa8c",
+      "tree_blob_sha1": "d2af8319eadc59f79b764aed5d4385a84075fa8c",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/EXTENDED_VERBS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "FLAGWORD_ASSIGNMENTS.agc": {
+      "repository_path": "Luminary099/FLAGWORD_ASSIGNMENTS.agc",
+      "bytes": 36522,
+      "sha256": "a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d",
+      "git_blob_sha1": "a2601c527681069f5fdbd1562a4b61ced4b889ff",
+      "tree_blob_sha1": "a2601c527681069f5fdbd1562a4b61ced4b889ff",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FLAGWORD_ASSIGNMENTS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "FRESH_START_AND_RESTART.agc": {
+      "repository_path": "Luminary099/FRESH_START_AND_RESTART.agc",
+      "bytes": 28616,
+      "sha256": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+      "git_blob_sha1": "f789842378a312b07fb1338756859a779862a8e7",
+      "tree_blob_sha1": "f789842378a312b07fb1338756859a779862a8e7",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FRESH_START_AND_RESTART.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "IMU_MODE_SWITCHING_ROUTINES.agc": {
+      "repository_path": "Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc",
+      "bytes": 23875,
+      "sha256": "49bf6c8ecb8f185e19547fe4405d1270e70c15503c28f065199a2a6645e2e31e",
+      "git_blob_sha1": "5396dcafb68c2e9148b05fe0303bcc6ff5d34782",
+      "tree_blob_sha1": "5396dcafb68c2e9148b05fe0303bcc6ff5d34782",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "INFLIGHT_ALIGNMENT_ROUTINES.agc": {
+      "repository_path": "Luminary099/INFLIGHT_ALIGNMENT_ROUTINES.agc",
+      "bytes": 7200,
+      "sha256": "106a4be57849c74eb0b66eae868a777b549e404afa707b40e1b4fe712a1a3ecc",
+      "git_blob_sha1": "edcd818903630f3953d269919ded2cffd180c512",
+      "tree_blob_sha1": "edcd818903630f3953d269919ded2cffd180c512",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INFLIGHT_ALIGNMENT_ROUTINES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc": {
+      "repository_path": "Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc",
+      "bytes": 9540,
+      "sha256": "e4a61b24b071c4d2287e663dfaa3299a2fd3de100589c6e7e4d0d9e881238d7f",
+      "git_blob_sha1": "5925f8209b7e759f8288289489e059a2741eb177",
+      "tree_blob_sha1": "5925f8209b7e759f8288289489e059a2741eb177",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "KEYRUPT,_UPRUPT.agc": {
+      "repository_path": "Luminary099/KEYRUPT,_UPRUPT.agc",
+      "bytes": 4028,
+      "sha256": "24fc9d024a57af0f3ff48f4aedc7e205a7dd7c2f1aec5e9b5ba84bb079ee2061",
+      "git_blob_sha1": "b96b9fef480b90e78e429033e35326b15b3c8ee0",
+      "tree_blob_sha1": "b96b9fef480b90e78e429033e35326b15b3c8ee0",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/KEYRUPT,_UPRUPT.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "LEM_GEOMETRY.agc": {
+      "repository_path": "Luminary099/LEM_GEOMETRY.agc",
+      "bytes": 5365,
+      "sha256": "b180242b9f5bf08e43cfc00b252f6dfd567ed84df77ab72fbc67fdcb28a01710",
+      "git_blob_sha1": "a00ea217c169c6eacfd0c852c53c079b60660962",
+      "tree_blob_sha1": "a00ea217c169c6eacfd0c852c53c079b60660962",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LEM_GEOMETRY.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc": {
+      "repository_path": "Luminary099/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc",
+      "bytes": 6480,
+      "sha256": "e105e4535f3a6aa6bf3dcf5724eee09671048c287c19ccd71c1af4ff0d0439a6",
+      "git_blob_sha1": "98c50b33866f6811f0a592f9dba4c12dbe3400c8",
+      "tree_blob_sha1": "98c50b33866f6811f0a592f9dba4c12dbe3400c8",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "P51-P53.agc": {
+      "repository_path": "Luminary099/P51-P53.agc",
+      "bytes": 44016,
+      "sha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+      "git_blob_sha1": "29a8ed904e9f47f7aac7eca3708439077ff8a6b8",
+      "tree_blob_sha1": "29a8ed904e9f47f7aac7eca3708439077ff8a6b8",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P51-P53.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "PINBALL_GAME__BUTTONS_AND_LIGHTS.agc": {
+      "repository_path": "Luminary099/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc",
+      "bytes": 103132,
+      "sha256": "2c7bf99f8ed6c82767ed8c03401877a44c0cd6455cba52e23c78a5a5bf7ece0c",
+      "git_blob_sha1": "8e9574af4a66625dcdeb11e79d252965b6d4cac0",
+      "tree_blob_sha1": "8e9574af4a66625dcdeb11e79d252965b6d4cac0",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "PINBALL_NOUN_TABLES.agc": {
+      "repository_path": "Luminary099/PINBALL_NOUN_TABLES.agc",
+      "bytes": 28690,
+      "sha256": "ea1b2177cec8005268928ec4aa0c1a0cf7c3ad5f1bee336ccd1a15935aefbcc4",
+      "git_blob_sha1": "9b1763c72faa64dcb4a2b53401c2491bfc0e2d73",
+      "tree_blob_sha1": "9b1763c72faa64dcb4a2b53401c2491bfc0e2d73",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/PINBALL_NOUN_TABLES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "PLANETARY_INERTIAL_ORIENTATION.agc": {
+      "repository_path": "Luminary099/PLANETARY_INERTIAL_ORIENTATION.agc",
+      "bytes": 9401,
+      "sha256": "abf5d8fb4792eb1bb6e91f99d7eaa87a75913b5033a3e6211e245f778ec9da51",
+      "git_blob_sha1": "1b1b1be0f13504e780a17101c0ca07bacabcc0cd",
+      "tree_blob_sha1": "1b1b1be0f13504e780a17101c0ca07bacabcc0cd",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/PLANETARY_INERTIAL_ORIENTATION.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "RTB_OP_CODES.agc": {
+      "repository_path": "Luminary099/RTB_OP_CODES.agc",
+      "bytes": 5753,
+      "sha256": "5f4c1425c78c2df5a0c614317416062c3a7cdff38096d917be098c90ea07bd3f",
+      "git_blob_sha1": "1ec89ecb6838fb715d4b60c8b8aa47acac838a20",
+      "tree_blob_sha1": "1ec89ecb6838fb715d4b60c8b8aa47acac838a20",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/RTB_OP_CODES.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "THE_LUNAR_LANDING.agc": {
+      "repository_path": "Luminary099/THE_LUNAR_LANDING.agc",
+      "bytes": 7765,
+      "sha256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+      "git_blob_sha1": "64582b78792cd6c2d67d35da5a11bb80886a6409",
+      "tree_blob_sha1": "64582b78792cd6c2d67d35da5a11bb80886a6409",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/THE_LUNAR_LANDING.agc",
+      "retrieved_via": "pinned raw GitHub URL",
+      "matches_verified_archive_extraction": true
+    },
+    "INTERRUPT_LEAD_INS.agc": {
+      "repository_path": "Luminary099/INTERRUPT_LEAD_INS.agc",
+      "bytes": 2532,
+      "sha256": "f140fbb095c34d8dcd92314ec28b93c6a46bef498f98f8fa4ee5e7e17114eb39",
+      "git_blob_sha1": "45f5d5aa55ec98ef2722fd86d7930293e4f7604a",
+      "tree_blob_sha1": "45f5d5aa55ec98ef2722fd86d7930293e4f7604a",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INTERRUPT_LEAD_INS.agc",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "POWERED_FLIGHT_SUBROUTINES.agc": {
+      "repository_path": "Luminary099/POWERED_FLIGHT_SUBROUTINES.agc",
+      "bytes": 11431,
+      "sha256": "f2a53b90d43af7c6a5d243bd699c599b9705f3c22bdc3c2f7515a6603a21308b",
+      "git_blob_sha1": "f0cf786e1c3340b20b40f13710823a66ecc7f28c",
+      "tree_blob_sha1": "f0cf786e1c3340b20b40f13710823a66ecc7f28c",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/POWERED_FLIGHT_SUBROUTINES.agc",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "SocketAPI.c": {
+      "repository_path": "yaAGC/SocketAPI.c",
+      "bytes": 16698,
+      "sha256": "3996697e26e9b27678232182f1c742870d80aac4b760e42fc8310ffc6aa43f38",
+      "git_blob_sha1": "8920edd05f84dd3cc4d764d2686a3cee9f0fbe9c",
+      "tree_blob_sha1": "8920edd05f84dd3cc4d764d2686a3cee9f0fbe9c",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/yaAGC/SocketAPI.c",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "agc_engine.c": {
+      "repository_path": "yaAGC/agc_engine.c",
+      "bytes": 120098,
+      "sha256": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+      "git_blob_sha1": "3a47efdd58643a30e99636c86b384c0d0a1a26e9",
+      "tree_blob_sha1": "3a47efdd58643a30e99636c86b384c0d0a1a26e9",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/yaAGC/agc_engine.c",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "ringbuffer_api.c": {
+      "repository_path": "yaAGC/ringbuffer_api.c",
+      "bytes": 6578,
+      "sha256": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+      "git_blob_sha1": "bd47811d4e51e4a5d8b68fc956a3f29223284231",
+      "tree_blob_sha1": "bd47811d4e51e4a5d8b68fc956a3f29223284231",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/yaAGC/ringbuffer_api.c",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "LUNAR_LANDING_GUIDANCE_EQUATIONS.agc": {
+      "repository_path": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+      "bytes": 34369,
+      "sha256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+      "git_blob_sha1": "62c1b164c000f495c2172eedfbaf2605f349fb6b",
+      "tree_blob_sha1": "62c1b164c000f495c2172eedfbaf2605f349fb6b",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "ASSEMBLY_AND_OPERATION_INFORMATION.agc": {
+      "repository_path": "Luminary099/ASSEMBLY_AND_OPERATION_INFORMATION.agc",
+      "bytes": 32395,
+      "sha256": "909fbe940f6d128b17cf60359486f0a941cc7a2997f4707e0dde14ee351be2f9",
+      "git_blob_sha1": "2dd194f0dccb4799f93b9ee7d41be8047d51d3b9",
+      "tree_blob_sha1": "2dd194f0dccb4799f93b9ee7d41be8047d51d3b9",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/ASSEMBLY_AND_OPERATION_INFORMATION.agc",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    },
+    "INTERPRETER.agc": {
+      "repository_path": "Luminary099/INTERPRETER.agc",
+      "bytes": 79475,
+      "sha256": "1bb93c5fff9ddfd0848249498c37126cbe3451541edd68d956962300cf02f8a1",
+      "git_blob_sha1": "7fa60e552b489e0a57eeb0ea5eebdc6cb3a55010",
+      "tree_blob_sha1": "7fa60e552b489e0a57eeb0ea5eebdc6cb3a55010",
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INTERPRETER.agc",
+      "retrieved_via": "copied verified archive extraction",
+      "matches_verified_archive_extraction": true
+    }
+  },
+  "verified_archive_sha256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267"
+}

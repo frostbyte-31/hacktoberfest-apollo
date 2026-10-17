@@ -1,0 +1,77 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986",
+  "files": {
+    "commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/commands.json",
+      "raw_sha256": "ebbb1351b993fb5823f4b1574da12409115aed75cd6a6f95eab6062ce45b0945",
+      "raw_bytes": 1341,
+      "compressed": false,
+      "stored_sha256": "ebbb1351b993fb5823f4b1574da12409115aed75cd6a6f95eab6062ce45b0945"
+    },
+    "feedback.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/feedback.json",
+      "raw_sha256": "155ed6c0aa427e98235f27ec46a3aecf263c8c77d834f88a726630b84ccb91a3",
+      "raw_bytes": 4659,
+      "compressed": false,
+      "stored_sha256": "155ed6c0aa427e98235f27ec46a3aecf263c8c77d834f88a726630b84ccb91a3"
+    },
+    "feedback.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/feedback.stderr",
+      "raw_sha256": "1e5b3a5635f49334622dd3a89c421cf9f9bad41d89f5bf8fa36585eacdb713b4",
+      "raw_bytes": 2109,
+      "compressed": false,
+      "stored_sha256": "1e5b3a5635f49334622dd3a89c421cf9f9bad41d89f5bf8fa36585eacdb713b4"
+    },
+    "feedback.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/feedback.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "model.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/model.json",
+      "raw_sha256": "15157815f2512b37206b272b8f2154a4fc75387f6ef6bb49811c3c9d717812a4",
+      "raw_bytes": 3250,
+      "compressed": false,
+      "stored_sha256": "15157815f2512b37206b272b8f2154a4fc75387f6ef6bb49811c3c9d717812a4"
+    },
+    "model.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/model.stderr",
+      "raw_sha256": "8b691f84129643472864286ec62af1f4deda0a121daeb9fbf6cc6769c17098ef",
+      "raw_bytes": 1446,
+      "compressed": false,
+      "stored_sha256": "8b691f84129643472864286ec62af1f4deda0a121daeb9fbf6cc6769c17098ef"
+    },
+    "model.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/model.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "preservation-after.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/preservation-after.json",
+      "raw_sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4",
+      "raw_bytes": 267,
+      "compressed": false,
+      "stored_sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "preservation-before.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/preservation-before.json",
+      "raw_sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4",
+      "raw_bytes": 267,
+      "compressed": false,
+      "stored_sha256": "6e22c0daabce76a03c444fd232070e2edb80ef7f9162889af1a6b5a2356be1f4"
+    },
+    "results.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T182412Z-a27ca986/results.json",
+      "raw_sha256": "a7dce52b73009b10991766d9000fdd778d5a1cb731c036c0185cc376ac370a15",
+      "raw_bytes": 8935,
+      "compressed": false,
+      "stored_sha256": "a7dce52b73009b10991766d9000fdd778d5a1cb731c036c0185cc376ac370a15"
+    }
+  },
+  "omitted_rebuildable": [],
+  "note": "Actual bytes only. JSONL lossless gzip decompresses byte-for-byte; failed attempts remain failures."
+}

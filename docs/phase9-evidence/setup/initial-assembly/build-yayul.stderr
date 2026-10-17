@@ -1,0 +1,11 @@
+yaYUL.c:353:63: error: expected ')'
+  353 |   printf("Apollo Guidance Computer (AGC) assembler, version " NVER
+      |                                                               ^
+<command line>:1:14: note: expanded from macro 'NVER'
+    1 | #define NVER 1.0
+      |              ^
+yaYUL.c:353:9: note: to match this '('
+  353 |   printf("Apollo Guidance Computer (AGC) assembler, version " NVER
+      |         ^
+1 error generated.
+make: *** [yaYUL.o] Error 1

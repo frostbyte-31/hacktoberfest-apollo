@@ -1,0 +1,242 @@
+{
+  "classification": "VERIFIED read-only extraction from actual attempt04; arithmetic mechanism is separately source-derived",
+  "trace_sha256": "75f0a26b5339f4bc7d317fd08bb41022e59202a856f156958e9a6ffe11db08b4",
+  "observer_map_sha256": "96e7d370cb69226a21a97b41745b5b5bb9f6bc8fb67ff3dc00655ecb2b8f2fb6",
+  "flag_first_set": {
+    "cycle": 4759831,
+    "pre_bank": 1,
+    "pre_z": 1388,
+    "new_FLAGWRD3": 5120,
+    "source_interpreter_state": {
+      "LOC": 1906,
+      "BANKSET": 12293,
+      "INTBIT15": 0,
+      "POLISH": 818,
+      "SWBIT": 4096,
+      "SWWORD": 3
+    }
+  },
+  "root_entry": {
+    "cycle": 4959517,
+    "MODE": 0,
+    "TABLTTF_10words": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      128,
+      0
+    ],
+    "TTF_8": [
+      32767,
+      32767
+    ],
+    "DXCRIT": [
+      32767,
+      32767
+    ],
+    "WCHPHASE": 32766,
+    "mission_inputs": {
+      "RLS": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "TLAND": [
+        0,
+        0
+      ],
+      "RN": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "VN": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "RGU": [
+        32767,
+        32767,
+        32767,
+        32767,
+        32767,
+        32767
+      ],
+      "VGU": [
+        0,
+        0,
+        32767,
+        32767,
+        0,
+        0
+      ]
+    }
+  },
+  "root_loop": [
+    {
+      "cycle": 4959816,
+      "MODE": 0,
+      "MPAC": [
+        0,
+        0
+      ],
+      "ROOTPS": [
+        32767,
+        32767
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4960421,
+      "MODE": 1,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16384
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4961123,
+      "MODE": 2,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16385
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4961728,
+      "MODE": 3,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16386
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4962330,
+      "MODE": 4,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16387
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4963038,
+      "MODE": 5,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16388
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4963642,
+      "MODE": 6,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16389
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4964316,
+      "MODE": 7,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16390
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    },
+    {
+      "cycle": 4965006,
+      "MODE": 8,
+      "MPAC": [
+        16383,
+        16383
+      ],
+      "ROOTPS": [
+        16384,
+        16391
+      ],
+      "DXCRIT": [
+        32767,
+        32767
+      ]
+    }
+  ],
+  "badroot": {
+    "cycle": 4967600,
+    "MODE": 8,
+    "WCHPHASE": 32766
+  },
+  "alarm_entry_cycle": 4967606
+}

@@ -1,0 +1,32 @@
+{
+  "invalidArchive": {
+    "argv": [
+      "python3",
+      "docs/phase9-evidence/prepare.py",
+      "--cache",
+      ".build/phase9/setup-integrity-test/wrong-archive-cache",
+      "--archive",
+      ".build/phase9/setup-integrity-test/wrong.tar.gz"
+    ],
+    "exit": 1,
+    "expected": "Pinned archive checksum mismatch before extraction",
+    "actualMessageFound": true,
+    "sourceNotExtracted": true
+  },
+  "modifiedSource": {
+    "argv": [
+      "python3",
+      "docs/phase9-evidence/prepare.py",
+      "--cache",
+      ".build/phase9/setup-integrity-test/changed-source-cache",
+      "--archive",
+      ".build/phase89/virtualagc-f577e3fd.tar.gz"
+    ],
+    "exit": 1,
+    "expected": "Cached source mismatch without repair",
+    "actualMessageFound": true,
+    "extraInputUnchanged": true,
+    "noAssemblyBuilt": true
+  },
+  "passed": true
+}

@@ -1,0 +1,8 @@
+{
+  "classification": "VERIFIED",
+  "comparison": "Actual normal input and AGC output packet words and CPU-call timestamps before and after extended read-only instrumentation",
+  "prototype_source": ".build/phase9/attempt02/trace.jsonl",
+  "final_source": "runs/final/trace.jsonl.gz",
+  "prototype_projection_sha256": "7d639e3b1fa0cf839a84d720393aa798c972841bdf66aed907708bf51f79883a",
+  "final_projection_sha256": "7d639e3b1fa0cf839a84d720393aa798c972841bdf66aed907708bf51f79883a"
+}

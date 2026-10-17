@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-be0f4bf77de8480aadcbd3f5e665b42f",
+    "exit": 0,
+    "stdout": "compiler-version.stdout",
+    "stderr": "compiler-version.stderr"
+  },
+  {
+    "argv": [
+      "make",
+      "NATIVE=1",
+      "cc=cc",
+      "NVER=\\\"1.0\\\""
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-be0f4bf77de8480aadcbd3f5e665b42f/yaYUL",
+    "exit": 0,
+    "stdout": "build-yayul.stdout",
+    "stderr": "build-yayul.stderr"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-be0f4bf77de8480aadcbd3f5e665b42f/yaYUL/yaYUL",
+      "MAIN.agc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-be0f4bf77de8480aadcbd3f5e665b42f/Luminary099",
+    "exit": 0,
+    "stdout": "assemble.stdout",
+    "stderr": "assemble.stderr"
+  }
+]

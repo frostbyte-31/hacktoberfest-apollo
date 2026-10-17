@@ -1,0 +1,855 @@
+{
+  "classification": "VERIFIED source mapping; synthetic_geometry is ASSUMED experiment fixture until runtime validation",
+  "source_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "numeric_convention": "JSON integers decimal; explicit octal strings have _octal suffix; flight source line references exact retained files",
+  "dsky": {
+    "channel": 13,
+    "channel_octal": "015",
+    "interrupt": 5,
+    "keycodes": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "0": 16,
+      "V": 17,
+      "RSET": 18,
+      "KEY_RELEASE": 25,
+      "+": 26,
+      "-": 27,
+      "E": 28,
+      "CLEAR": 30,
+      "N": 31
+    },
+    "source": "PINBALL_GAME__BUTTONS_AND_LIGHTS.agc:383\u2013396; KEYRUPT,_UPRUPT.agc:42\u201365; ringbuffer_api.c:145\u2013149",
+    "proceed": {
+      "dsky_sequence": "V33E",
+      "physical_channel": 26,
+      "physical_channel_octal": "032",
+      "physical_bit_one_based": 14,
+      "physical_asserted_value_bit": 0,
+      "source": "PINBALL_GAME__BUTTONS_AND_LIGHTS.agc:1033; INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc:148\u2013149,204"
+    }
+  },
+  "mark": {
+    "channel": 14,
+    "channel_octal": "016",
+    "interrupt": 6,
+    "x_value": 4,
+    "y_value": 8,
+    "reject_value": 16,
+    "release_value": 0,
+    "assertion": "active high; original MARKRUPT samples channel and actual CDU counters/time",
+    "source": "INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc:137\u2013149; INTERRUPT_LEAD_INS.agc:65\u201368; AOTMARK.agc:425\u2013501",
+    "ringbuffer_limitation": "Pinned ringbuffer_api.c:145\u2013180 does not assert IRQ6 for channel016; SocketAPI.c:239\u2013273 also omits it. A new external hardware-event bridge must deliver IRQ6 explicitly after normal packet receipt, without writing any erasable or changing engine semantics.",
+    "release_irq": false
+  },
+  "p51_flow": [
+    {
+      "wait_display": {
+        "verb": 50,
+        "noun": 25,
+        "register1_octal": "00015"
+      },
+      "action": "V33E",
+      "source": "P51-P53.agc:1019\u20131055"
+    },
+    {
+      "wait_display": {
+        "verb": 1,
+        "noun": 71
+      },
+      "action": "V21N71E{AOTCODE:five octal digits}E then V33E",
+      "noun_component": 1,
+      "aotcode": {
+        "star_bits_one_based": [
+          1,
+          6
+        ],
+        "detent_bits_one_based": [
+          7,
+          9
+        ],
+        "detent7": "COAS backup sighting"
+      },
+      "source": "AOTMARK.agc:108\u2013151; PINBALL_NOUN_TABLES.agc:491,758\u2013760"
+    },
+    {
+      "wait_display": {
+        "verb": 6,
+        "noun": 87
+      },
+      "action": "V24N87E; wait V21N87 with R1 blank; send signed five decimal AZ digits and E; wait V22N87 with R2 blank; send signed five decimal EL digits and E; then V33E",
+      "units": "XXX.XX degrees CDU; exactly five digits per decimal component",
+      "source": "AOTMARK.agc:133\u2013151; PINBALL_NOUN_TABLES.agc:56,520,806\u2013809; PINBALL_GAME__BUTTONS_AND_LIGHTS.agc:1203\u20131204; PINBALL_GAME__BUTTONS_AND_LIGHTS.agc:1108\u20131120,1816\u20131824,1889\u20131890",
+      "component_prompts": [
+        {
+          "verb": 21,
+          "noun": 87,
+          "component": 1,
+          "field": "AZ",
+          "expected_register_before_entry": "R1 blank"
+        },
+        {
+          "verb": 22,
+          "noun": 87,
+          "component": 2,
+          "field": "EL",
+          "expected_register_before_entry": "R2 blank"
+        }
+      ]
+    },
+    {
+      "wait_display": {
+        "verb": 54,
+        "noun": 71
+      },
+      "action": "X mark event, release; wait V53N71, then Y mark event, release; wait V54N71 with completed pair; then V33E",
+      "source": "AOTMARK.agc:323\u2013367,425\u2013501,563\u2013641"
+    },
+    {
+      "action": "Repeat both star load and mark stages with second catalog star; original P51 sets STARIND itself",
+      "source": "P51-P53.agc:1066\u20131105"
+    },
+    {
+      "wait_display": {
+        "verb": 6,
+        "noun": 5
+      },
+      "action": "Record actual angular discrepancy; V33E accepts; ENTER recycles",
+      "source": "P51-P53.agc:826\u2013895"
+    },
+    {
+      "wait": "Original P51G AXISGEN/MATMOVE/SET REFSMFLG and P00 return",
+      "action": "Observe actual REFSMMAT/FLAGWRD3 read-only, then V37E63E",
+      "source": "P51-P53.agc:1110\u20131120; THE_LUNAR_LANDING.agc:47\u201351"
+    }
+  ],
+  "readiness": {
+    "refsm_flag_interpreter_id_decimal": 47,
+    "refsm_storage": "FLAGWRD3 = STATE + 3",
+    "refsm_bit_one_based": 13,
+    "refsm_mask_decimal": 4096,
+    "refsm_mask_octal": "10000",
+    "refsmmat_words": 18,
+    "imodes30_operate_bit_one_based": 9,
+    "r02_invalid_operating_alarm_octal": "00220",
+    "r02_invalid_nonoperating_alarm_octal": "00210",
+    "p51_requires": "IMUCHK operating IMU, no prior validREFSMMAT requirement",
+    "p52_requires": "R02BOTH valid REFSMMAT before options",
+    "p63_requires": "R02BOTH valid REFSMMAT before mission guidance initialization",
+    "source": "FLAGWORD_ASSIGNMENTS.agc:466\u2013476; ERASABLE_ASSIGNMENTS.agc:970\u2013972; IMU_MODE_SWITCHING_ROUTINES.agc:917\u2013936; P51-P53.agc:135\u2013136,1019\u20131020,2318\u20132331"
+  },
+  "synthetic_geometry": {
+    "classification": "ASSUMED stationary identity platform / zero CDU experiment fixture, not historical measurements",
+    "formula_nav_base_unit_vector": "(sin(el), cos(el)*sin(az), cos(el)*cos(az))",
+    "geometry_source": "AOTMARK.agc:249\u2013304; CONTROLLED_CONSTANTS.agc:501\u2013507",
+    "observations": [
+      {
+        "catalog_star_decimal": 1,
+        "catalog_reference_unit_vector": [
+          0.8748658918,
+          0.0260879174,
+          0.483662167
+        ],
+        "aotcode_octal": "00701",
+        "azimuth_degrees_unquantized": 3.0874453968896405,
+        "elevation_degrees_unquantized": 61.02910794021667,
+        "azimuth_dsky": "+00309",
+        "elevation_dsky": "+06103"
+      },
+      {
+        "catalog_star_decimal": 2,
+        "catalog_reference_unit_vector": [
+          0.93426404,
+          0.1735073142,
+          -0.3115219339
+        ],
+        "aotcode_octal": "00702",
+        "azimuth_degrees_unquantized": 150.88365342212384,
+        "elevation_degrees_unquantized": 69.10956895119361,
+        "azimuth_dsky": "+15088",
+        "elevation_dsky": "+06911"
+      }
+    ],
+    "catalog_pair_separation_degrees": 47.839415123696334
+  },
+  "post_gate_dependencies": {
+    "source": "THE_LUNAR_LANDING.agc:84\u2013207",
+    "operations": [
+      "RP-TO-R(RLS,TLAND)",
+      "GUIDINIT",
+      "LEMPREC",
+      "ignition-guess iteration"
+    ],
+    "warning": "Next actual blocker must be observed, not inferred as execution success from source."
+  },
+  "assembled_listing_observers": {
+    "derived_from": "Luminary099/MAIN.agc.lst",
+    "listing_sha256": "d5547c4db630c444004be99556a34e612954eed0b3f27bac4bbe318ad8fbc108",
+    "note": "Read-only observers only. Addresses decimal in JSON numeric fields; addressOctal is the original listing spelling. REFSMFLG is interpreter flag identifier, REFSMBIT aliases a fixed constant address, not the mask literal.",
+    "symbols": {
+      "P51": {
+        "addressOctal": "14,3427",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4402,
+        "kind": "F",
+        "listingLine": 65568,
+        "offset": 791,
+        "sRegister": 1815
+      },
+      "P51B": {
+        "addressOctal": "14,3461",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4403,
+        "kind": "F",
+        "listingLine": 65569,
+        "offset": 817,
+        "sRegister": 1841
+      },
+      "P51C": {
+        "addressOctal": "14,3472",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4404,
+        "kind": "F",
+        "listingLine": 65570,
+        "offset": 826,
+        "sRegister": 1850
+      },
+      "P51D": {
+        "addressOctal": "14,3510",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4405,
+        "kind": "F",
+        "listingLine": 65571,
+        "offset": 840,
+        "sRegister": 1864
+      },
+      "P51E": {
+        "addressOctal": "14,3530",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4406,
+        "kind": "F",
+        "listingLine": 65572,
+        "offset": 856,
+        "sRegister": 1880
+      },
+      "P51G": {
+        "addressOctal": "14,3552",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 4407,
+        "kind": "F",
+        "listingLine": 65573,
+        "offset": 874,
+        "sRegister": 1898
+      },
+      "PROG52": {
+        "addressOctal": "15,2050",
+        "bank": 13,
+        "fixedBank": 13,
+        "index": 4220,
+        "kind": "F",
+        "listingLine": 65520,
+        "offset": 40,
+        "sRegister": 1064
+      },
+      "R02BOTH": {
+        "addressOctal": "04,3254",
+        "bank": 4,
+        "fixedBank": 4,
+        "index": 4973,
+        "kind": "F",
+        "listingLine": 65786,
+        "offset": 684,
+        "sRegister": 1708
+      },
+      "R02ZERO": {
+        "addressOctal": "04,3270",
+        "bank": 4,
+        "fixedBank": 4,
+        "index": 4974,
+        "kind": "F",
+        "listingLine": 65787,
+        "offset": 696,
+        "sRegister": 1720
+      },
+      "P63LM": {
+        "addressOctal": "32,2776",
+        "bank": 26,
+        "fixedBank": 26,
+        "index": 4435,
+        "kind": "F",
+        "listingLine": 65602,
+        "offset": 510,
+        "sRegister": 1534
+      },
+      "REFSMMAT": {
+        "addressOctal": "E3,1733",
+        "bank": 3,
+        "index": 4657,
+        "kind": "E",
+        "linearErasable": 987,
+        "listingLine": 65647,
+        "sRegister": 987
+      },
+      "FLAGWRD3": {
+        "addressOctal": "0077",
+        "index": 2004,
+        "kind": "E",
+        "listingLine": 64762,
+        "value": 63
+      },
+      "MARKSTAT": {
+        "addressOctal": "1312",
+        "index": 3136,
+        "kind": "E",
+        "listingLine": 65145,
+        "value": 714
+      },
+      "MARKCNTR": {
+        "addressOctal": "E7,1550",
+        "bank": 7,
+        "index": 3121,
+        "kind": "E",
+        "linearErasable": 1896,
+        "listingLine": 65175,
+        "sRegister": 872
+      },
+      "XYMARK": {
+        "addressOctal": "E7,1551",
+        "bank": 7,
+        "index": 6740,
+        "kind": "E",
+        "linearErasable": 1897,
+        "listingLine": 66402,
+        "sRegister": 873
+      },
+      "AOTCODE": {
+        "addressOctal": "0735",
+        "index": 353,
+        "kind": "E",
+        "listingLine": 64219,
+        "value": 477
+      },
+      "AZ": {
+        "addressOctal": "1347",
+        "index": 491,
+        "kind": "E",
+        "listingLine": 64223,
+        "value": 743
+      },
+      "EL": {
+        "addressOctal": "1350",
+        "index": 1687,
+        "kind": "E",
+        "listingLine": 64667,
+        "value": 744
+      },
+      "STARIND": {
+        "addressOctal": "E5,1757",
+        "bank": 5,
+        "index": 5498,
+        "kind": "E",
+        "linearErasable": 1519,
+        "listingLine": 65955,
+        "sRegister": 1007
+      },
+      "AOTMARK": {
+        "addressOctal": "07,2000",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 355,
+        "kind": "F",
+        "listingLine": 64176,
+        "offset": 0,
+        "sRegister": 1024
+      },
+      "MARKRUPT": {
+        "addressOctal": "07,2332",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 3135,
+        "kind": "F",
+        "listingLine": 65144,
+        "offset": 218,
+        "sRegister": 1242
+      },
+      "GETDAT": {
+        "addressOctal": "07,2063",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 2137,
+        "kind": "F",
+        "listingLine": 64807,
+        "offset": 51,
+        "sRegister": 1075
+      },
+      "DODAT": {
+        "addressOctal": "07,2074",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 1390,
+        "kind": "F",
+        "listingLine": 64547,
+        "offset": 60,
+        "sRegister": 1084
+      },
+      "CODE7": {
+        "addressOctal": "07,2107",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 917,
+        "kind": "F",
+        "listingLine": 64384,
+        "offset": 71,
+        "sRegister": 1095
+      },
+      "GETMKS": {
+        "addressOctal": "07,2202",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 2145,
+        "kind": "F",
+        "listingLine": 64815,
+        "offset": 130,
+        "sRegister": 1154
+      },
+      "MARKCHEX": {
+        "addressOctal": "07,2216",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 3120,
+        "kind": "F",
+        "listingLine": 65174,
+        "offset": 142,
+        "sRegister": 1166
+      },
+      "XMKRUPT": {
+        "addressOctal": "07,2416",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 6713,
+        "kind": "F",
+        "listingLine": 66374,
+        "offset": 270,
+        "sRegister": 1294
+      },
+      "YMKRUPT": {
+        "addressOctal": "07,2422",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 6756,
+        "kind": "F",
+        "listingLine": 66419,
+        "offset": 274,
+        "sRegister": 1298
+      },
+      "VACSTOR": {
+        "addressOctal": "07,2526",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 6226,
+        "kind": "F",
+        "listingLine": 66242,
+        "offset": 342,
+        "sRegister": 1366
+      },
+      "REMARK": {
+        "addressOctal": "07,2577",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 4678,
+        "kind": "F",
+        "listingLine": 65668,
+        "offset": 383,
+        "sRegister": 1407
+      },
+      "MKRELEAS": {
+        "addressOctal": "07,2047",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 3251,
+        "kind": "F",
+        "listingLine": 65216,
+        "offset": 39,
+        "sRegister": 1063
+      },
+      "NORMTEM1": {
+        "addressOctal": "1045",
+        "index": 3557,
+        "kind": "E",
+        "listingLine": 65300,
+        "value": 549
+      },
+      "CHKSDATA": {
+        "addressOctal": "14,3256",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 843,
+        "kind": "F",
+        "listingLine": 64400,
+        "offset": 686,
+        "sRegister": 1710
+      },
+      "CHKSDA": {
+        "addressOctal": "14,3323",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 842,
+        "kind": "F",
+        "listingLine": 64399,
+        "offset": 723,
+        "sRegister": 1747
+      },
+      "AXISGEN": {
+        "addressOctal": "23,3441",
+        "bank": 19,
+        "fixedBank": 19,
+        "index": 485,
+        "kind": "F",
+        "listingLine": 64262,
+        "offset": 801,
+        "sRegister": 1825
+      },
+      "MATMOVE": {
+        "addressOctal": "14,3377",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 3152,
+        "kind": "F",
+        "listingLine": 65161,
+        "offset": 767,
+        "sRegister": 1791
+      },
+      "IMUCHK": {
+        "addressOctal": "15,3652",
+        "bank": 13,
+        "fixedBank": 13,
+        "index": 2438,
+        "kind": "F",
+        "listingLine": 64933,
+        "offset": 938,
+        "sRegister": 1962
+      },
+      "NCOARSE": {
+        "addressOctal": "14,3602",
+        "bank": 12,
+        "fixedBank": 12,
+        "index": 3385,
+        "kind": "F",
+        "listingLine": 65262,
+        "offset": 898,
+        "sRegister": 1922
+      },
+      "ENDMARK": {
+        "addressOctal": "5472",
+        "index": 1745,
+        "kind": "F",
+        "listingLine": 64681,
+        "value": 2874
+      },
+      "AOTSTALL": {
+        "addressOctal": "07,3712",
+        "bank": 7,
+        "fixedBank": 7,
+        "index": 358,
+        "kind": "F",
+        "listingLine": 64179,
+        "offset": 970,
+        "sRegister": 1994
+      },
+      "IGNALG": {
+        "addressOctal": "32,3031",
+        "bank": 26,
+        "fixedBank": 26,
+        "index": 2413,
+        "kind": "F",
+        "listingLine": 64907,
+        "offset": 537,
+        "sRegister": 1561
+      },
+      "DDUMCALC": {
+        "addressOctal": "32,3102",
+        "bank": 26,
+        "fixedBank": 26,
+        "index": 1149,
+        "kind": "F",
+        "listingLine": 64484,
+        "offset": 578,
+        "sRegister": 1602
+      },
+      "IGNALOOP": {
+        "addressOctal": "32,3070",
+        "bank": 26,
+        "fixedBank": 26,
+        "index": 2415,
+        "kind": "F",
+        "listingLine": 64909,
+        "offset": 568,
+        "sRegister": 1592
+      },
+      "RLS": {
+        "addressOctal": "E4,1422",
+        "bank": 4,
+        "index": 4765,
+        "kind": "E",
+        "linearErasable": 1042,
+        "listingLine": 65711,
+        "sRegister": 786
+      },
+      "TLAND": {
+        "addressOctal": "E5,1400",
+        "bank": 5,
+        "index": 5907,
+        "kind": "E",
+        "linearErasable": 1280,
+        "listingLine": 66098,
+        "sRegister": 768
+      },
+      "MODREG": {
+        "addressOctal": "1011",
+        "index": 3283,
+        "kind": "E",
+        "listingLine": 65203,
+        "value": 521
+      },
+      "IMODES30": {
+        "addressOctal": "1302",
+        "index": 2428,
+        "kind": "E",
+        "listingLine": 64923,
+        "value": 706
+      },
+      "IMODES33": {
+        "addressOctal": "1303",
+        "index": 2429,
+        "kind": "E",
+        "listingLine": 64924,
+        "value": 707
+      },
+      "SWSTORE": {
+        "addressOctal": "01,2553",
+        "bank": 1,
+        "fixedBank": 1,
+        "index": 5620,
+        "kind": "F",
+        "listingLine": 65988,
+        "offset": 363,
+        "sRegister": 1387
+      },
+      "SWITCHES": {
+        "addressOctal": "01,2516",
+        "bank": 1,
+        "fixedBank": 1,
+        "index": 5617,
+        "kind": "F",
+        "listingLine": 65985,
+        "offset": 334,
+        "sRegister": 1358
+      },
+      "DDV/BDDV": {
+        "addressOctal": "00,2353",
+        "bank": 0,
+        "fixedBank": 0,
+        "index": 1153,
+        "kind": "F",
+        "listingLine": 64488,
+        "offset": 235,
+        "sRegister": 1259
+      },
+      "BUFZERO": {
+        "addressOctal": "00,2363",
+        "bank": 0,
+        "fixedBank": 0,
+        "index": 655,
+        "kind": "F",
+        "listingLine": 64299,
+        "offset": 243,
+        "sRegister": 1267
+      },
+      "DVOVF": {
+        "addressOctal": "00,2405",
+        "bank": 0,
+        "fixedBank": 0,
+        "index": 1612,
+        "kind": "F",
+        "listingLine": 64636,
+        "offset": 261,
+        "sRegister": 1285
+      },
+      "MODE": {
+        "addressOctal": "0163",
+        "index": 3270,
+        "kind": "E",
+        "listingLine": 65190,
+        "value": 115
+      },
+      "LOC": {
+        "addressOctal": "0164",
+        "index": 2904,
+        "kind": "E",
+        "listingLine": 65090,
+        "value": 116
+      },
+      "BANKSET": {
+        "addressOctal": "0165",
+        "index": 517,
+        "kind": "E",
+        "listingLine": 64250,
+        "value": 117
+      },
+      "INTBIT15": {
+        "addressOctal": "0115",
+        "index": 2533,
+        "kind": "E",
+        "listingLine": 64938,
+        "value": 77
+      },
+      "POLISH": {
+        "addressOctal": "0117",
+        "index": 4082,
+        "kind": "E",
+        "listingLine": 65471,
+        "value": 79
+      },
+      "SWBIT": {
+        "addressOctal": "0131",
+        "index": 5611,
+        "kind": "E",
+        "listingLine": 65979,
+        "value": 89
+      },
+      "SWWORD": {
+        "addressOctal": "0130",
+        "index": 5621,
+        "kind": "E",
+        "listingLine": 65989,
+        "value": 88
+      },
+      "ROOTPSRS": {
+        "addressOctal": "31,3553",
+        "bank": 25,
+        "fixedBank": 25,
+        "index": 4807,
+        "kind": "F",
+        "listingLine": 65708,
+        "offset": 875,
+        "sRegister": 1899
+      },
+      "ROOTLOOP": {
+        "addressOctal": "31,3624",
+        "bank": 25,
+        "fixedBank": 25,
+        "index": 4803,
+        "kind": "F",
+        "listingLine": 65704,
+        "offset": 916,
+        "sRegister": 1940
+      },
+      "BADROOT": {
+        "addressOctal": "31,3656",
+        "bank": 25,
+        "fixedBank": 25,
+        "index": 506,
+        "kind": "F",
+        "listingLine": 64239,
+        "offset": 942,
+        "sRegister": 1966
+      },
+      "1406POO": {
+        "addressOctal": "31,3733",
+        "bank": 25,
+        "fixedBank": 25,
+        "index": 6924,
+        "kind": "F",
+        "listingLine": 66456,
+        "offset": 987,
+        "sRegister": 2011
+      },
+      "TABLTTF": {
+        "addressOctal": "E7,1562",
+        "bank": 7,
+        "index": 5678,
+        "kind": "E",
+        "linearErasable": 1906,
+        "listingLine": 66048,
+        "sRegister": 882
+      },
+      "TABLTTFL": {
+        "addressOctal": "31,3746",
+        "bank": 25,
+        "fixedBank": 25,
+        "index": 5679,
+        "kind": "F",
+        "listingLine": 66049,
+        "offset": 998,
+        "sRegister": 2022
+      },
+      "TTF/8": {
+        "addressOctal": "E7,1642",
+        "bank": 7,
+        "index": 6021,
+        "kind": "E",
+        "linearErasable": 1954,
+        "listingLine": 66123,
+        "sRegister": 930
+      },
+      "DXCRIT": {
+        "addressOctal": "0124",
+        "index": 1621,
+        "kind": "E",
+        "listingLine": 64645,
+        "value": 84
+      },
+      "RETROOT": {
+        "addressOctal": "0132",
+        "index": 4734,
+        "kind": "E",
+        "listingLine": 65725,
+        "value": 90
+      },
+      "WCHPHASE": {
+        "addressOctal": "1351",
+        "index": 6629,
+        "kind": "E",
+        "listingLine": 66379,
+        "value": 745
+      }
+    }
+  },
+  "driver_bugs": [
+    {
+      "attempt": "initial alignment attempt01",
+      "classification": "driver expectation error, not authentic AGC failure",
+      "requested": "V24N87E",
+      "wrong_wait": "display V24N87",
+      "actual": "display V21N87, R1 blank",
+      "correction": "Observe original component load prompts V21N87 then V22N87",
+      "source": "PINBALL_GAME__BUTTONS_AND_LIGHTS.agc:1816\u20131824,1889\u20131890"
+    }
+  ],
+  "root_table_layout": {
+    "source": "LUNAR_LANDING_GUIDANCE_EQUATIONS.agc:496\u2013528,1255\u20131263,1296\u20131302,1457",
+    "base": "TABLTTF E7,1562",
+    "dp_coefficients_offset_decimal": {
+      "A0": 0,
+      "A1": 2,
+      "A2": 4,
+      "A3": 6
+    },
+    "precision_offset_decimal": 8,
+    "precision_source_spelling": "TABLTTF +10 (octal addend)",
+    "root_pointer": "TABLTTFL ADRES TABLTTF +3; INDEX pointer CA5 reaches TABLTTF+8"
+  }
+}

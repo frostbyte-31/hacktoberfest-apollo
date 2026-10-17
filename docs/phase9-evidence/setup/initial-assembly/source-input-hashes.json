@@ -1,0 +1,682 @@
+{
+  "Luminary099/AGC_BLOCK_TWO_SELF-CHECK.agc": {
+    "copiedSHA256": "50ca9c6124a95fc11ec867e6ef264827f3511b34c94f1bb89b12a36123b3d0da",
+    "sha256": "50ca9c6124a95fc11ec867e6ef264827f3511b34c94f1bb89b12a36123b3d0da",
+    "unchanged": true
+  },
+  "Luminary099/AGS_INITIALIZATION.agc": {
+    "copiedSHA256": "1d0d6328926060cf987aecff729662ab601870d7bea79cb2591c5bdf9efae364",
+    "sha256": "1d0d6328926060cf987aecff729662ab601870d7bea79cb2591c5bdf9efae364",
+    "unchanged": true
+  },
+  "Luminary099/ALARM_AND_ABORT.agc": {
+    "copiedSHA256": "41272439278b8fe64b86a10db1ef69a04e1ed78744a55cad97bafbc888008889",
+    "sha256": "41272439278b8fe64b86a10db1ef69a04e1ed78744a55cad97bafbc888008889",
+    "unchanged": true
+  },
+  "Luminary099/AOSTASK_AND_AOSJOB.agc": {
+    "copiedSHA256": "b7e919edc3bba89ebd6b1dea685e175db04224c173dc5d2a179722ec7f3e52eb",
+    "sha256": "b7e919edc3bba89ebd6b1dea685e175db04224c173dc5d2a179722ec7f3e52eb",
+    "unchanged": true
+  },
+  "Luminary099/AOTMARK.agc": {
+    "copiedSHA256": "40811740880eb027df49c356d734e4d1c9b56340b38661aa67c22294b4c7292f",
+    "sha256": "40811740880eb027df49c356d734e4d1c9b56340b38661aa67c22294b4c7292f",
+    "unchanged": true
+  },
+  "Luminary099/AP11ROPE.binsource": {
+    "copiedSHA256": "8028acd932b1a46f2b4446d04815a96b332469a31dc593864304df3dec3c4294",
+    "sha256": "8028acd932b1a46f2b4446d04815a96b332469a31dc593864304df3dec3c4294",
+    "unchanged": true
+  },
+  "Luminary099/ASCENT_GUIDANCE.agc": {
+    "copiedSHA256": "b4cec1ff3cd697ada6f557a04fdfb3cf29cf9864be8c3768436ddf01abfcd835",
+    "sha256": "b4cec1ff3cd697ada6f557a04fdfb3cf29cf9864be8c3768436ddf01abfcd835",
+    "unchanged": true
+  },
+  "Luminary099/ASSEMBLY_AND_OPERATION_INFORMATION.agc": {
+    "copiedSHA256": "909fbe940f6d128b17cf60359486f0a941cc7a2997f4707e0dde14ee351be2f9",
+    "sha256": "909fbe940f6d128b17cf60359486f0a941cc7a2997f4707e0dde14ee351be2f9",
+    "unchanged": true
+  },
+  "Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc": {
+    "copiedSHA256": "99103e0e77fec10c17c6932ae890b5b033b435d047b18d3f17a1f30a0a187fae",
+    "sha256": "99103e0e77fec10c17c6932ae890b5b033b435d047b18d3f17a1f30a0a187fae",
+    "unchanged": true
+  },
+  "Luminary099/Apollo32.png": {
+    "copiedSHA256": "54347de260dd2b72b76584323802cbd500e4a010ad11079af4c48e12e12ce3d1",
+    "sha256": "54347de260dd2b72b76584323802cbd500e4a010ad11079af4c48e12e12ce3d1",
+    "unchanged": true
+  },
+  "Luminary099/BURN,_BABY,_BURN_--_MASTER_IGNITION_ROUTINE.agc": {
+    "copiedSHA256": "8be1bf0b0346dc3ac8efd2bccb113d6cbd46dd9c22f716266cbaf4e3c1ce94d4",
+    "sha256": "8be1bf0b0346dc3ac8efd2bccb113d6cbd46dd9c22f716266cbaf4e3c1ce94d4",
+    "unchanged": true
+  },
+  "Luminary099/CMakeLists.txt": {
+    "copiedSHA256": "aef053dc06d163432fb6ba6123e7f7e11f39761e9ba58b3de1ce8e82345b90ff",
+    "sha256": "aef053dc06d163432fb6ba6123e7f7e11f39761e9ba58b3de1ce8e82345b90ff",
+    "unchanged": true
+  },
+  "Luminary099/CONIC_SUBROUTINES.agc": {
+    "copiedSHA256": "60d5201e28bd826c7d9cfd32e72f2c018de8ee7d54956a4b181fae35a4450353",
+    "sha256": "60d5201e28bd826c7d9cfd32e72f2c018de8ee7d54956a4b181fae35a4450353",
+    "unchanged": true
+  },
+  "Luminary099/CONTRACT_AND_APPROVALS.agc": {
+    "copiedSHA256": "a83d7736ca026e5018cb5811b8372c1919364fda2548e8de0048183b515d916a",
+    "sha256": "a83d7736ca026e5018cb5811b8372c1919364fda2548e8de0048183b515d916a",
+    "unchanged": true
+  },
+  "Luminary099/CONTROLLED_CONSTANTS.agc": {
+    "copiedSHA256": "8ff78c818b3f92e061af1543eb84deaf1b16e96187d2236e3438671bffaa79ae",
+    "sha256": "8ff78c818b3f92e061af1543eb84deaf1b16e96187d2236e3438671bffaa79ae",
+    "unchanged": true
+  },
+  "Luminary099/DAPIDLER_PROGRAM.agc": {
+    "copiedSHA256": "903ef74e8062d3957e96dc3222df29b5940696a238dc858c7192748190f698ab",
+    "sha256": "903ef74e8062d3957e96dc3222df29b5940696a238dc858c7192748190f698ab",
+    "unchanged": true
+  },
+  "Luminary099/DAP_INTERFACE_SUBROUTINES.agc": {
+    "copiedSHA256": "864030dba1a3fe59ded1148b7d35368c5fbcf6dc4b90d01ccfb0c3022bdeba47",
+    "sha256": "864030dba1a3fe59ded1148b7d35368c5fbcf6dc4b90d01ccfb0c3022bdeba47",
+    "unchanged": true
+  },
+  "Luminary099/DISPLAY_INTERFACE_ROUTINES.agc": {
+    "copiedSHA256": "82c417fd8fcf7900d5fb806c3b812fb41fee4eac91ebb25bc29381a8b66caa71",
+    "sha256": "82c417fd8fcf7900d5fb806c3b812fb41fee4eac91ebb25bc29381a8b66caa71",
+    "unchanged": true
+  },
+  "Luminary099/DOWN-TELEMETRY_PROGRAM.agc": {
+    "copiedSHA256": "904a322365f0d76f6577b076d57de49f333a57b96d450338e1cdcd808fbc797e",
+    "sha256": "904a322365f0d76f6577b076d57de49f333a57b96d450338e1cdcd808fbc797e",
+    "unchanged": true
+  },
+  "Luminary099/DOWNLINK_LISTS.agc": {
+    "copiedSHA256": "2c4ad2152c462f70eb16e211000820838b5d0b9b09d279fecffa7a0f40acf8c8",
+    "sha256": "2c4ad2152c462f70eb16e211000820838b5d0b9b09d279fecffa7a0f40acf8c8",
+    "unchanged": true
+  },
+  "Luminary099/Default.style": {
+    "copiedSHA256": "d53664e2d89e0ab9592141679b38943d58ea037264aca67b46b6cd247172beb3",
+    "sha256": "d53664e2d89e0ab9592141679b38943d58ea037264aca67b46b6cd247172beb3",
+    "unchanged": true
+  },
+  "Luminary099/ERASABLE_ASSIGNMENTS.agc": {
+    "copiedSHA256": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+    "sha256": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+    "unchanged": true
+  },
+  "Luminary099/EXECUTIVE.agc": {
+    "copiedSHA256": "63e8c8f75cfa87dc74d08ef7a227bb55eaa07e6ad035c4978b69244a26906d2c",
+    "sha256": "63e8c8f75cfa87dc74d08ef7a227bb55eaa07e6ad035c4978b69244a26906d2c",
+    "unchanged": true
+  },
+  "Luminary099/EXTENDED_VERBS.agc": {
+    "copiedSHA256": "fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29",
+    "sha256": "fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29",
+    "unchanged": true
+  },
+  "Luminary099/FINDCDUW_-_GUIDAP_INTERFACE.agc": {
+    "copiedSHA256": "c2cecfc789a34a23f75d6728e1a875a28f845f2f4ca9d8095048ea6fcc0615ab",
+    "sha256": "c2cecfc789a34a23f75d6728e1a875a28f845f2f4ca9d8095048ea6fcc0615ab",
+    "unchanged": true
+  },
+  "Luminary099/FIXED-FIXED_CONSTANT_POOL.agc": {
+    "copiedSHA256": "7b4920c5c4f564a9f2dfffc7f86cd25d1c71474940f87434553b0f192e2ec169",
+    "sha256": "7b4920c5c4f564a9f2dfffc7f86cd25d1c71474940f87434553b0f192e2ec169",
+    "unchanged": true
+  },
+  "Luminary099/FLAGWORD_ASSIGNMENTS.agc": {
+    "copiedSHA256": "a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d",
+    "sha256": "a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d",
+    "unchanged": true
+  },
+  "Luminary099/FRESH_START_AND_RESTART.agc": {
+    "copiedSHA256": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+    "sha256": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+    "unchanged": true
+  },
+  "Luminary099/GIMBAL_LOCK_AVOIDANCE.agc": {
+    "copiedSHA256": "f75426ebb7df0071250449c5d28c4a9edef6a2c9ba4e2994819a883485f69d16",
+    "sha256": "f75426ebb7df0071250449c5d28c4a9edef6a2c9ba4e2994819a883485f69d16",
+    "unchanged": true
+  },
+  "Luminary099/GROUND_TRACKING_DETERMINATION_PROGRAM_-_P21.agc": {
+    "copiedSHA256": "b387746778d807b143b88fc738ddc28100c5efec15d83d8dc905fa7f752c0657",
+    "sha256": "b387746778d807b143b88fc738ddc28100c5efec15d83d8dc905fa7f752c0657",
+    "unchanged": true
+  },
+  "Luminary099/HeaderTemplate.agc": {
+    "copiedSHA256": "c77127220a415cc797390474e8e40cad9a519fcb6dce6aeed3d72e7ab3d3152e",
+    "sha256": "c77127220a415cc797390474e8e40cad9a519fcb6dce6aeed3d72e7ab3d3152e",
+    "unchanged": true
+  },
+  "Luminary099/IMU_COMPENSATION_PACKAGE.agc": {
+    "copiedSHA256": "fc43ab512b9adce00b9dea4e25fd401c4581de4e6685f8558333c56a8751c444",
+    "sha256": "fc43ab512b9adce00b9dea4e25fd401c4581de4e6685f8558333c56a8751c444",
+    "unchanged": true
+  },
+  "Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc": {
+    "copiedSHA256": "49bf6c8ecb8f185e19547fe4405d1270e70c15503c28f065199a2a6645e2e31e",
+    "sha256": "49bf6c8ecb8f185e19547fe4405d1270e70c15503c28f065199a2a6645e2e31e",
+    "unchanged": true
+  },
+  "Luminary099/IMU_PERFORMANCE_TESTS_2.agc": {
+    "copiedSHA256": "c88468022725b38b1f2204fcb93ed56b89595814ed74b39cf4960a63a56d7449",
+    "sha256": "c88468022725b38b1f2204fcb93ed56b89595814ed74b39cf4960a63a56d7449",
+    "unchanged": true
+  },
+  "Luminary099/IMU_PERFORMANCE_TESTS_4.agc": {
+    "copiedSHA256": "93b33dae6256052286d6ab0a8f61e60147c3adde63ad5185eb38237c44ec12ac",
+    "sha256": "93b33dae6256052286d6ab0a8f61e60147c3adde63ad5185eb38237c44ec12ac",
+    "unchanged": true
+  },
+  "Luminary099/INFLIGHT_ALIGNMENT_ROUTINES.agc": {
+    "copiedSHA256": "106a4be57849c74eb0b66eae868a777b549e404afa707b40e1b4fe712a1a3ecc",
+    "sha256": "106a4be57849c74eb0b66eae868a777b549e404afa707b40e1b4fe712a1a3ecc",
+    "unchanged": true
+  },
+  "Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc": {
+    "copiedSHA256": "e4a61b24b071c4d2287e663dfaa3299a2fd3de100589c6e7e4d0d9e881238d7f",
+    "sha256": "e4a61b24b071c4d2287e663dfaa3299a2fd3de100589c6e7e4d0d9e881238d7f",
+    "unchanged": true
+  },
+  "Luminary099/INTEGRATION_INITIALIZATION.agc": {
+    "copiedSHA256": "35197ba93b209defdcfb21f3deb65d9215097e7778b437d5264d05bf0e6bdf1e",
+    "sha256": "35197ba93b209defdcfb21f3deb65d9215097e7778b437d5264d05bf0e6bdf1e",
+    "unchanged": true
+  },
+  "Luminary099/INTER-BANK_COMMUNICATION.agc": {
+    "copiedSHA256": "a194c6bee7099cf9d028035d4b08748fd4960ca77575170d8d53af115c4b1778",
+    "sha256": "a194c6bee7099cf9d028035d4b08748fd4960ca77575170d8d53af115c4b1778",
+    "unchanged": true
+  },
+  "Luminary099/INTERPRETER.agc": {
+    "copiedSHA256": "1bb93c5fff9ddfd0848249498c37126cbe3451541edd68d956962300cf02f8a1",
+    "sha256": "1bb93c5fff9ddfd0848249498c37126cbe3451541edd68d956962300cf02f8a1",
+    "unchanged": true
+  },
+  "Luminary099/INTERPRETIVE_CONSTANTS.agc": {
+    "copiedSHA256": "05649b0e709c70160768f7f1c85d0ffc75915faa8505ce799f5d77932e1c3619",
+    "sha256": "05649b0e709c70160768f7f1c85d0ffc75915faa8505ce799f5d77932e1c3619",
+    "unchanged": true
+  },
+  "Luminary099/INTERRUPT_LEAD_INS.agc": {
+    "copiedSHA256": "f140fbb095c34d8dcd92314ec28b93c6a46bef498f98f8fa4ee5e7e17114eb39",
+    "sha256": "f140fbb095c34d8dcd92314ec28b93c6a46bef498f98f8fa4ee5e7e17114eb39",
+    "unchanged": true
+  },
+  "Luminary099/KALCMANU_STEERING.agc": {
+    "copiedSHA256": "8861cfa01e80fd0e8028ad5bddc540e0a40371d4bfd6e9a14596fd7c5f925448",
+    "sha256": "8861cfa01e80fd0e8028ad5bddc540e0a40371d4bfd6e9a14596fd7c5f925448",
+    "unchanged": true
+  },
+  "Luminary099/KALMAN_FILTER.agc": {
+    "copiedSHA256": "54ef64e486c666abc9bf3e703d3b26522ab8665bcfcbbc2cd5e113ca21976be6",
+    "sha256": "54ef64e486c666abc9bf3e703d3b26522ab8665bcfcbbc2cd5e113ca21976be6",
+    "unchanged": true
+  },
+  "Luminary099/KEYRUPT,_UPRUPT.agc": {
+    "copiedSHA256": "24fc9d024a57af0f3ff48f4aedc7e205a7dd7c2f1aec5e9b5ba84bb079ee2061",
+    "sha256": "24fc9d024a57af0f3ff48f4aedc7e205a7dd7c2f1aec5e9b5ba84bb079ee2061",
+    "unchanged": true
+  },
+  "Luminary099/LAMBERT_AIMPOINT_GUIDANCE.agc": {
+    "copiedSHA256": "c7897dc957da892d6058d41866c282b06695d54c41a6ea2daa783613dca8999e",
+    "sha256": "c7897dc957da892d6058d41866c282b06695d54c41a6ea2daa783613dca8999e",
+    "unchanged": true
+  },
+  "Luminary099/LANDING_ANALOG_DISPLAYS.agc": {
+    "copiedSHA256": "c4559310c3e02a4eb0dbdbd8ec08420d2acab6e1d3723d3a1a807d7c035da5b2",
+    "sha256": "c4559310c3e02a4eb0dbdbd8ec08420d2acab6e1d3723d3a1a807d7c035da5b2",
+    "unchanged": true
+  },
+  "Luminary099/LATITUDE_LONGITUDE_SUBROUTINES.agc": {
+    "copiedSHA256": "39f3955e3911c483ded7e5e010c2664edebf529bd3a439b90785792a18281d95",
+    "sha256": "39f3955e3911c483ded7e5e010c2664edebf529bd3a439b90785792a18281d95",
+    "unchanged": true
+  },
+  "Luminary099/LEM_GEOMETRY.agc": {
+    "copiedSHA256": "b180242b9f5bf08e43cfc00b252f6dfd567ed84df77ab72fbc67fdcb28a01710",
+    "sha256": "b180242b9f5bf08e43cfc00b252f6dfd567ed84df77ab72fbc67fdcb28a01710",
+    "unchanged": true
+  },
+  "Luminary099/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc": {
+    "copiedSHA256": "e105e4535f3a6aa6bf3dcf5724eee09671048c287c19ccd71c1af4ff0d0439a6",
+    "sha256": "e105e4535f3a6aa6bf3dcf5724eee09671048c287c19ccd71c1af4ff0d0439a6",
+    "unchanged": true
+  },
+  "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc": {
+    "copiedSHA256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+    "sha256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+    "unchanged": true
+  },
+  "Luminary099/Luminary099.binsource": {
+    "copiedSHA256": "edad1f7d07f2ac9b35ac47a96b223cbbe96535c0ea1daf323e2e830a924abe93",
+    "sha256": "edad1f7d07f2ac9b35ac47a96b223cbbe96535c0ea1daf323e2e830a924abe93",
+    "unchanged": true
+  },
+  "Luminary099/MAIN.agc": {
+    "copiedSHA256": "0cfd3412dec956c3ffc0b2a93bdb36a20e7eb88382ab191da883021e2d7adddf",
+    "sha256": "0cfd3412dec956c3ffc0b2a93bdb36a20e7eb88382ab191da883021e2d7adddf",
+    "unchanged": true
+  },
+  "Luminary099/MEASUREMENT_INCORPORATION.agc": {
+    "copiedSHA256": "4347529781c8248f3631080b67083f43ff78ccb2442ec3db9e23508938c2e87b",
+    "sha256": "4347529781c8248f3631080b67083f43ff78ccb2442ec3db9e23508938c2e87b",
+    "unchanged": true
+  },
+  "Luminary099/Main.annotation": {
+    "copiedSHA256": "110aac7ed16307a9773f6d80700e3864cabd7f37a899c8cef41b2bec7e74cc9c",
+    "sha256": "110aac7ed16307a9773f6d80700e3864cabd7f37a899c8cef41b2bec7e74cc9c",
+    "unchanged": true
+  },
+  "Luminary099/Makefile": {
+    "copiedSHA256": "76b95f92578b5b83331219aeff92a93e4627f35ddde79f60b89bc56d99f3d88d",
+    "sha256": "76b95f92578b5b83331219aeff92a93e4627f35ddde79f60b89bc56d99f3d88d",
+    "unchanged": true
+  },
+  "Luminary099/ORBITAL_INTEGRATION.agc": {
+    "copiedSHA256": "07baa240eb0c915423f59b97c1f6fe66e6b406faaa2dc254f9a62bb83cfc7282",
+    "sha256": "07baa240eb0c915423f59b97c1f6fe66e6b406faaa2dc254f9a62bb83cfc7282",
+    "unchanged": true
+  },
+  "Luminary099/P-AXIS_RCS_AUTOPILOT.agc": {
+    "copiedSHA256": "9da0c4520bdce3c77003a6c9378af94531459d83123526bce128ffd29331a49b",
+    "sha256": "9da0c4520bdce3c77003a6c9378af94531459d83123526bce128ffd29331a49b",
+    "unchanged": true
+  },
+  "Luminary099/P12.agc": {
+    "copiedSHA256": "4380d7f3940bd55eb0e2438f45e1e125e8a5da650855c12b5a11587605e9dc03",
+    "sha256": "4380d7f3940bd55eb0e2438f45e1e125e8a5da650855c12b5a11587605e9dc03",
+    "unchanged": true
+  },
+  "Luminary099/P20-P25.agc": {
+    "copiedSHA256": "ce962e50196333b8d053b649e71363cf42359b3cbce3b4f9b12d1632a762f41b",
+    "sha256": "ce962e50196333b8d053b649e71363cf42359b3cbce3b4f9b12d1632a762f41b",
+    "unchanged": true
+  },
+  "Luminary099/P30,P37.agc": {
+    "copiedSHA256": "e9ba05c0825f74c0bdd47b9310c2aa69c43ac6e7b3b890158dd2a473be9dc19d",
+    "sha256": "e9ba05c0825f74c0bdd47b9310c2aa69c43ac6e7b3b890158dd2a473be9dc19d",
+    "unchanged": true
+  },
+  "Luminary099/P32-P35,_P72-P75.agc": {
+    "copiedSHA256": "0633f9c6903384558817a0a9b49a0929d039b3567d90a580fa4132c65ed0af4a",
+    "sha256": "0633f9c6903384558817a0a9b49a0929d039b3567d90a580fa4132c65ed0af4a",
+    "unchanged": true
+  },
+  "Luminary099/P34-P35,_P74-P75.agc": {
+    "copiedSHA256": "fd9dcb8ceea8a1dc4ee56c7539daf33ecda4fd317fed3965ed9135271bdac263",
+    "sha256": "fd9dcb8ceea8a1dc4ee56c7539daf33ecda4fd317fed3965ed9135271bdac263",
+    "unchanged": true
+  },
+  "Luminary099/P40-P47.agc": {
+    "copiedSHA256": "1522e7cdc1a33328b49f57d4768a820f3f940bbefbb97152051342c1464d651c",
+    "sha256": "1522e7cdc1a33328b49f57d4768a820f3f940bbefbb97152051342c1464d651c",
+    "unchanged": true
+  },
+  "Luminary099/P51-P53.agc": {
+    "copiedSHA256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+    "sha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+    "unchanged": true
+  },
+  "Luminary099/P70-P71.agc": {
+    "copiedSHA256": "ba79a964966e460fcc29f5fd29a85053854ec0fca3a05a156a969a9466642fee",
+    "sha256": "ba79a964966e460fcc29f5fd29a85053854ec0fca3a05a156a969a9466642fee",
+    "unchanged": true
+  },
+  "Luminary099/P76.agc": {
+    "copiedSHA256": "25872e1b4d768879da2e6e21e74c9fa9521783bc66493aa4f08f9446c9460a43",
+    "sha256": "25872e1b4d768879da2e6e21e74c9fa9521783bc66493aa4f08f9446c9460a43",
+    "unchanged": true
+  },
+  "Luminary099/PHASE_TABLE_MAINTENANCE.agc": {
+    "copiedSHA256": "71a513e6180c524fc87b57dc8f8567f5c1091374c01911fc81c37dce66479784",
+    "sha256": "71a513e6180c524fc87b57dc8f8567f5c1091374c01911fc81c37dce66479784",
+    "unchanged": true
+  },
+  "Luminary099/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc": {
+    "copiedSHA256": "2c7bf99f8ed6c82767ed8c03401877a44c0cd6455cba52e23c78a5a5bf7ece0c",
+    "sha256": "2c7bf99f8ed6c82767ed8c03401877a44c0cd6455cba52e23c78a5a5bf7ece0c",
+    "unchanged": true
+  },
+  "Luminary099/PINBALL_NOUN_TABLES.agc": {
+    "copiedSHA256": "ea1b2177cec8005268928ec4aa0c1a0cf7c3ad5f1bee336ccd1a15935aefbcc4",
+    "sha256": "ea1b2177cec8005268928ec4aa0c1a0cf7c3ad5f1bee336ccd1a15935aefbcc4",
+    "unchanged": true
+  },
+  "Luminary099/PLANETARY_INERTIAL_ORIENTATION.agc": {
+    "copiedSHA256": "abf5d8fb4792eb1bb6e91f99d7eaa87a75913b5033a3e6211e245f778ec9da51",
+    "sha256": "abf5d8fb4792eb1bb6e91f99d7eaa87a75913b5033a3e6211e245f778ec9da51",
+    "unchanged": true
+  },
+  "Luminary099/POWERED_FLIGHT_SUBROUTINES.agc": {
+    "copiedSHA256": "f2a53b90d43af7c6a5d243bd699c599b9705f3c22bdc3c2f7515a6603a21308b",
+    "sha256": "f2a53b90d43af7c6a5d243bd699c599b9705f3c22bdc3c2f7515a6603a21308b",
+    "unchanged": true
+  },
+  "Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc": {
+    "copiedSHA256": "8cf1ac005f95c67c4c1da5cbd9efafa955f231f266a6eb8ca75ffb85aa841629",
+    "sha256": "8cf1ac005f95c67c4c1da5cbd9efafa955f231f266a6eb8ca75ffb85aa841629",
+    "unchanged": true
+  },
+  "Luminary099/R30.agc": {
+    "copiedSHA256": "2fb0a15b51ad6f1780c16bfec10f6b6b729218549be5cfe3b12eac9d8fa7692d",
+    "sha256": "2fb0a15b51ad6f1780c16bfec10f6b6b729218549be5cfe3b12eac9d8fa7692d",
+    "unchanged": true
+  },
+  "Luminary099/R31.agc": {
+    "copiedSHA256": "0b014a88b3a87edc702b62f74f17fffe35435f3f0344d015d3d6323200e6cf9d",
+    "sha256": "0b014a88b3a87edc702b62f74f17fffe35435f3f0344d015d3d6323200e6cf9d",
+    "unchanged": true
+  },
+  "Luminary099/R60,R62.agc": {
+    "copiedSHA256": "beff6629b32c4c925d04093d76b7fbf5d7347c86f5ce76298e2931b3cb0ff401",
+    "sha256": "beff6629b32c4c925d04093d76b7fbf5d7347c86f5ce76298e2931b3cb0ff401",
+    "unchanged": true
+  },
+  "Luminary099/R63.agc": {
+    "copiedSHA256": "e188679761c3c847d0a45cbe7bd944b101a0c4a8a6b1d9f239e58932761686c3",
+    "sha256": "e188679761c3c847d0a45cbe7bd944b101a0c4a8a6b1d9f239e58932761686c3",
+    "unchanged": true
+  },
+  "Luminary099/RADAR_LEADIN_ROUTINES.agc": {
+    "copiedSHA256": "6483373c0475075b0ffae2beb0037528aca74ddaba6f96a314cc865a9fb2ed9e",
+    "sha256": "6483373c0475075b0ffae2beb0037528aca74ddaba6f96a314cc865a9fb2ed9e",
+    "unchanged": true
+  },
+  "Luminary099/RCS_FAILURE_MONITOR.agc": {
+    "copiedSHA256": "0ab66d0f16df97a0821202888b718ee5bf312a6d4e59e81f3adf1c4da4a513e3",
+    "sha256": "0ab66d0f16df97a0821202888b718ee5bf312a6d4e59e81f3adf1c4da4a513e3",
+    "unchanged": true
+  },
+  "Luminary099/RESTARTS_ROUTINE.agc": {
+    "copiedSHA256": "6e13e2a3df36f872ff39cdccfed9baee98f094192a3a0c1d8a9e967f57b48f31",
+    "sha256": "6e13e2a3df36f872ff39cdccfed9baee98f094192a3a0c1d8a9e967f57b48f31",
+    "unchanged": true
+  },
+  "Luminary099/RESTART_TABLES.agc": {
+    "copiedSHA256": "806547e6d7394b83e26749b18cc6ed5365ea15610545a3d71ebd0457cc773adc",
+    "sha256": "806547e6d7394b83e26749b18cc6ed5365ea15610545a3d71ebd0457cc773adc",
+    "unchanged": true
+  },
+  "Luminary099/RTB_OP_CODES.agc": {
+    "copiedSHA256": "5f4c1425c78c2df5a0c614317416062c3a7cdff38096d917be098c90ea07bd3f",
+    "sha256": "5f4c1425c78c2df5a0c614317416062c3a7cdff38096d917be098c90ea07bd3f",
+    "unchanged": true
+  },
+  "Luminary099/S-BAND_ANTENNA_FOR_LM.agc": {
+    "copiedSHA256": "053396ee2acf2d93cccf7273d581ed2dcfcbe56ef1759a9deac74e67c2a1b39d",
+    "sha256": "053396ee2acf2d93cccf7273d581ed2dcfcbe56ef1759a9deac74e67c2a1b39d",
+    "unchanged": true
+  },
+  "Luminary099/SERVICER.agc": {
+    "copiedSHA256": "d975bffb0b203ec5660933a9c3d1e86fbd4fc40c0f6192bb9e32c77d8fcdb7b1",
+    "sha256": "d975bffb0b203ec5660933a9c3d1e86fbd4fc40c0f6192bb9e32c77d8fcdb7b1",
+    "unchanged": true
+  },
+  "Luminary099/SERVICE_ROUTINES.agc": {
+    "copiedSHA256": "bee98cb60d862bd95f25879da6a5e7f52f207ea0308dd7b636cc78551ac1ef86",
+    "sha256": "bee98cb60d862bd95f25879da6a5e7f52f207ea0308dd7b636cc78551ac1ef86",
+    "unchanged": true
+  },
+  "Luminary099/SINGLE_PRECISION_SUBROUTINES.agc": {
+    "copiedSHA256": "d03db9896e37bec395902a906bcb8dd814002459bb8339b61cd4736dbf024e25",
+    "sha256": "d03db9896e37bec395902a906bcb8dd814002459bb8339b61cd4736dbf024e25",
+    "unchanged": true
+  },
+  "Luminary099/SPS_BACK-UP_RCS_CONTROL.agc": {
+    "copiedSHA256": "3035e9b5ac437610f1ce9897f763364a536d3494872c15d721748e3fc9adac71",
+    "sha256": "3035e9b5ac437610f1ce9897f763364a536d3494872c15d721748e3fc9adac71",
+    "unchanged": true
+  },
+  "Luminary099/STABLE_ORBIT_-_P38-P39.agc": {
+    "copiedSHA256": "8f9ed6854d08a67b60e9845b5a78ef924e4bf4d1b1e9dc0360580d0ce200e45f",
+    "sha256": "8f9ed6854d08a67b60e9845b5a78ef924e4bf4d1b1e9dc0360580d0ce200e45f",
+    "unchanged": true
+  },
+  "Luminary099/SYSTEM_TEST_STANDARD_LEAD_INS.agc": {
+    "copiedSHA256": "788547bcf19353881550063256465dc78ba11f18f49a34800c773091f4134b13",
+    "sha256": "788547bcf19353881550063256465dc78ba11f18f49a34800c773091f4134b13",
+    "unchanged": true
+  },
+  "Luminary099/T4RUPT_PROGRAM.agc": {
+    "copiedSHA256": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07",
+    "sha256": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07",
+    "unchanged": true
+  },
+  "Luminary099/T6-RUPT_PROGRAMS.agc": {
+    "copiedSHA256": "d2138901dcee1d6ef96a96deecbdb14584d76274c08cef43d69ff2b0fdb1d103",
+    "sha256": "d2138901dcee1d6ef96a96deecbdb14584d76274c08cef43d69ff2b0fdb1d103",
+    "unchanged": true
+  },
+  "Luminary099/TAGS_FOR_RELATIVE_SETLOC_AND_BLANK_BANK_CARDS.agc": {
+    "copiedSHA256": "5311c2e716680eebdc0f989d843bf84e9b6da888223a5d00e67083283309d96c",
+    "sha256": "5311c2e716680eebdc0f989d843bf84e9b6da888223a5d00e67083283309d96c",
+    "unchanged": true
+  },
+  "Luminary099/THE_LUNAR_LANDING.agc": {
+    "copiedSHA256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+    "sha256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+    "unchanged": true
+  },
+  "Luminary099/THROTTLE_CONTROL_ROUTINES.agc": {
+    "copiedSHA256": "e151a7441109b6963c96954cff9a29dec42f2a97afc4e5ce04f23ce437efe8f2",
+    "sha256": "e151a7441109b6963c96954cff9a29dec42f2a97afc4e5ce04f23ce437efe8f2",
+    "unchanged": true
+  },
+  "Luminary099/TIME_OF_FREE_FALL.agc": {
+    "copiedSHA256": "8f06cde5ad51d4582adf59fb4ee92de43f044b9c5d55f587d583e1323b2b885f",
+    "sha256": "8f06cde5ad51d4582adf59fb4ee92de43f044b9c5d55f587d583e1323b2b885f",
+    "unchanged": true
+  },
+  "Luminary099/TJET_LAW.agc": {
+    "copiedSHA256": "cc879a9a524f206ef54d52411273bb6b51c1084ab9365855890a69360b69f3c3",
+    "sha256": "cc879a9a524f206ef54d52411273bb6b51c1084ab9365855890a69360b69f3c3",
+    "unchanged": true
+  },
+  "Luminary099/TRIM_GIMBAL_CONTROL_SYSTEM.agc": {
+    "copiedSHA256": "62c312bb8ecbd50ca0c883ae4748f8c6b05144cedd860f7af514c514245c1242",
+    "sha256": "62c312bb8ecbd50ca0c883ae4748f8c6b05144cedd860f7af514c514245c1242",
+    "unchanged": true
+  },
+  "Luminary099/UPDATE_PROGRAM.agc": {
+    "copiedSHA256": "b38bebf20bcdce89b3a26ae66d4df6f97ae8dbab0a47aa41c9717408deddd78b",
+    "sha256": "b38bebf20bcdce89b3a26ae66d4df6f97ae8dbab0a47aa41c9717408deddd78b",
+    "unchanged": true
+  },
+  "Luminary099/WAITLIST.agc": {
+    "copiedSHA256": "5c1c42cf5394194adab51a3a8ff253af00599817bc423b31dfbd0f0066a23b87",
+    "sha256": "5c1c42cf5394194adab51a3a8ff253af00599817bc423b31dfbd0f0066a23b87",
+    "unchanged": true
+  },
+  "yaYUL/CMakeLists.txt": {
+    "copiedSHA256": "392574e1885ea36dbf7af2a5bb0d68364f71e9b404e97db1f661418a5de545fc",
+    "sha256": "392574e1885ea36dbf7af2a5bb0d68364f71e9b404e97db1f661418a5de545fc",
+    "unchanged": true
+  },
+  "yaYUL/GetOctOrDec.c": {
+    "copiedSHA256": "7989fd8c2ecac1e0f57a8e6352796d178f99b489260a7a9f770078e927061e66",
+    "sha256": "7989fd8c2ecac1e0f57a8e6352796d178f99b489260a7a9f770078e927061e66",
+    "unchanged": true
+  },
+  "yaYUL/IncPc.c": {
+    "copiedSHA256": "194f2f7724c59f472ee0554804929128d1fe52b0d16c8a2cf6146cf48f450bb9",
+    "sha256": "194f2f7724c59f472ee0554804929128d1fe52b0d16c8a2cf6146cf48f450bb9",
+    "unchanged": true
+  },
+  "yaYUL/Makefile": {
+    "copiedSHA256": "0c7f3363ae2b3a2b8e4b386b684f7b2efe2d60f7cbaa85ef5e5e088c2fa44400",
+    "sha256": "0c7f3363ae2b3a2b8e4b386b684f7b2efe2d60f7cbaa85ef5e5e088c2fa44400",
+    "unchanged": true
+  },
+  "yaYUL/Parse2CADR.c": {
+    "copiedSHA256": "7bb06616ff8589b4bbe0f16c3cbda4fc66a969118dd8e66b189c61d1dd68a2d3",
+    "sha256": "7bb06616ff8589b4bbe0f16c3cbda4fc66a969118dd8e66b189c61d1dd68a2d3",
+    "unchanged": true
+  },
+  "yaYUL/Parse2DEC.c": {
+    "copiedSHA256": "ef5f09736c683fa2197c76ac886486333f2321f03f85bbb02f61602113d7f5e0",
+    "sha256": "ef5f09736c683fa2197c76ac886486333f2321f03f85bbb02f61602113d7f5e0",
+    "unchanged": true
+  },
+  "yaYUL/Parse2FCADR.c": {
+    "copiedSHA256": "4ddb19fe23d8580438e0cc76d541bf95cf095d025f85332a916663b678342790",
+    "sha256": "4ddb19fe23d8580438e0cc76d541bf95cf095d025f85332a916663b678342790",
+    "unchanged": true
+  },
+  "yaYUL/ParseBANK.c": {
+    "copiedSHA256": "8a02a10690f6f782f276326c24875677b905d9c5962eb672a0cd01b10f4be4f6",
+    "sha256": "8a02a10690f6f782f276326c24875677b905d9c5962eb672a0cd01b10f4be4f6",
+    "unchanged": true
+  },
+  "yaYUL/ParseBBCON.c": {
+    "copiedSHA256": "0db406606bd186a49b6c4c0f1ae6091b9e449a7047e9fe5078cf63b660cdf849",
+    "sha256": "0db406606bd186a49b6c4c0f1ae6091b9e449a7047e9fe5078cf63b660cdf849",
+    "unchanged": true
+  },
+  "yaYUL/ParseBLOCK.c": {
+    "copiedSHA256": "e8630abb5bdda76aad4d127af1b54ff7bf4868ee4bb4c00ecc4c4aa2084a31d8",
+    "sha256": "e8630abb5bdda76aad4d127af1b54ff7bf4868ee4bb4c00ecc4c4aa2084a31d8",
+    "unchanged": true
+  },
+  "yaYUL/ParseCADR.c": {
+    "copiedSHA256": "cb9ec3071a135018589d8321483d06779310611ba722226351d164e4c7b45a50",
+    "sha256": "cb9ec3071a135018589d8321483d06779310611ba722226351d164e4c7b45a50",
+    "unchanged": true
+  },
+  "yaYUL/ParseCHECKequals.c": {
+    "copiedSHA256": "8a8d5833f10e8bc7de0e7f31b2335e82cb0d55dab822c46ae710d3b4121f6c7d",
+    "sha256": "8a8d5833f10e8bc7de0e7f31b2335e82cb0d55dab822c46ae710d3b4121f6c7d",
+    "unchanged": true
+  },
+  "yaYUL/ParseEBANKEquals.c": {
+    "copiedSHA256": "4f28d449410c8f2927abfae6aa06ea1cdcffafd1b62bf04d6232898d2ec6519a",
+    "sha256": "4f28d449410c8f2927abfae6aa06ea1cdcffafd1b62bf04d6232898d2ec6519a",
+    "unchanged": true
+  },
+  "yaYUL/ParseECADR.c": {
+    "copiedSHA256": "c8dbc687229f1d9a4504f095eecf7020b3f1511986bae258dce0e7127c2da802",
+    "sha256": "c8dbc687229f1d9a4504f095eecf7020b3f1511986bae258dce0e7127c2da802",
+    "unchanged": true
+  },
+  "yaYUL/ParseEQUALS.c": {
+    "copiedSHA256": "f51f50575642c2289cc6fdbc4f3299679e30830d8b320f99c03193be3eed286c",
+    "sha256": "f51f50575642c2289cc6fdbc4f3299679e30830d8b320f99c03193be3eed286c",
+    "unchanged": true
+  },
+  "yaYUL/ParseERASE.c": {
+    "copiedSHA256": "4c2bd2773ead71dfc5b6354a643c3bf83d3c9b90768c89b21c2f90b93d9326d1",
+    "sha256": "4c2bd2773ead71dfc5b6354a643c3bf83d3c9b90768c89b21c2f90b93d9326d1",
+    "unchanged": true
+  },
+  "yaYUL/ParseEqMinus.c": {
+    "copiedSHA256": "4fc6bf81e478156c303f25eea07f266c92b49b2bca1bdd77e247d9fa8585fb43",
+    "sha256": "4fc6bf81e478156c303f25eea07f266c92b49b2bca1bdd77e247d9fa8585fb43",
+    "unchanged": true
+  },
+  "yaYUL/ParseEqualsECADR.c": {
+    "copiedSHA256": "2ea16c5b84a84681ab8700ea3f99e098d0c3ec9dc91a65206e2edd7596fdc6b7",
+    "sha256": "2ea16c5b84a84681ab8700ea3f99e098d0c3ec9dc91a65206e2edd7596fdc6b7",
+    "unchanged": true
+  },
+  "yaYUL/ParseGENADR.c": {
+    "copiedSHA256": "0dc5c3d3fdfeb72a802e647d05f0701fa505b5e85b40329a8b53eafdb7357933",
+    "sha256": "0dc5c3d3fdfeb72a802e647d05f0701fa505b5e85b40329a8b53eafdb7357933",
+    "unchanged": true
+  },
+  "yaYUL/ParseGeneral.c": {
+    "copiedSHA256": "ede774ea52aeb14f371697bcfe1316ec53c047c2775b1e631da316cb004559ba",
+    "sha256": "ede774ea52aeb14f371697bcfe1316ec53c047c2775b1e631da316cb004559ba",
+    "unchanged": true
+  },
+  "yaYUL/ParseINDEX.c": {
+    "copiedSHA256": "f48eee5bb25bef93028db4345ff85c2bf6fc117e1bb8e389fad28215e4a893f8",
+    "sha256": "f48eee5bb25bef93028db4345ff85c2bf6fc117e1bb8e389fad28215e4a893f8",
+    "unchanged": true
+  },
+  "yaYUL/ParseInterpretiveOperand.c": {
+    "copiedSHA256": "7a258c55949ca9afda6fd4d21196191889f7ce050211e13cc7e8a6fedf8b1b43",
+    "sha256": "7a258c55949ca9afda6fd4d21196191889f7ce050211e13cc7e8a6fedf8b1b43",
+    "unchanged": true
+  },
+  "yaYUL/ParseOCT.c": {
+    "copiedSHA256": "651da140de6534b1bbe75b6604f9cd9398e2b9c39457447e0369d73832b3eda0",
+    "sha256": "651da140de6534b1bbe75b6604f9cd9398e2b9c39457447e0369d73832b3eda0",
+    "unchanged": true
+  },
+  "yaYUL/ParseSBANKEquals.c": {
+    "copiedSHA256": "5a66ba638709d90adfc9962e9258eb6fa4ea33a3b62a08bfa5800601fc828016",
+    "sha256": "5a66ba638709d90adfc9962e9258eb6fa4ea33a3b62a08bfa5800601fc828016",
+    "unchanged": true
+  },
+  "yaYUL/ParseSETLOC.c": {
+    "copiedSHA256": "0480e82ae4720bc5e8663ea17e4e126fdefe9346f02473de662845b62d62e686",
+    "sha256": "0480e82ae4720bc5e8663ea17e4e126fdefe9346f02473de662845b62d62e686",
+    "unchanged": true
+  },
+  "yaYUL/ParseST.c": {
+    "copiedSHA256": "875367e6c6cf5177678795f7a1eccdd9e08c7924d5814d772f0f56d2a2217a62",
+    "sha256": "875367e6c6cf5177678795f7a1eccdd9e08c7924d5814d772f0f56d2a2217a62",
+    "unchanged": true
+  },
+  "yaYUL/ParseXCADR.c": {
+    "copiedSHA256": "b5318768e6f557a7134a5a6c9e32e7c55677bad5843bc4dfca1705ca76659bbd",
+    "sha256": "b5318768e6f557a7134a5a6c9e32e7c55677bad5843bc4dfca1705ca76659bbd",
+    "unchanged": true
+  },
+  "yaYUL/Pass.c": {
+    "copiedSHA256": "782fdef308a9a1382a8ba9d265535c5d619b001cf49951cb75f885e21416fbfd",
+    "sha256": "782fdef308a9a1382a8ba9d265535c5d619b001cf49951cb75f885e21416fbfd",
+    "unchanged": true
+  },
+  "yaYUL/PseudoToSegmented.c": {
+    "copiedSHA256": "6ddf4a0c34715bf8cad30150ea5b2d344da915ac1ee93f9470f1857c8b78374f",
+    "sha256": "6ddf4a0c34715bf8cad30150ea5b2d344da915ac1ee93f9470f1857c8b78374f",
+    "unchanged": true
+  },
+  "yaYUL/SymbolPass.c": {
+    "copiedSHA256": "38ea77a82ae111c2053d8ee5a0698654ae1ba6acae816cc2aaa815e2560c0a65",
+    "sha256": "38ea77a82ae111c2053d8ee5a0698654ae1ba6acae816cc2aaa815e2560c0a65",
+    "unchanged": true
+  },
+  "yaYUL/SymbolTable.c": {
+    "copiedSHA256": "fecac9d16d1692246032fdd4960991aa0cd016900bbe6316a9e9fa09082bb7b6",
+    "sha256": "fecac9d16d1692246032fdd4960991aa0cd016900bbe6316a9e9fa09082bb7b6",
+    "unchanged": true
+  },
+  "yaYUL/Utilities.c": {
+    "copiedSHA256": "40257dd1b5401b716b4b38de55cc3ed8d0f0719c43da5d69b182d93dbbda36a8",
+    "sha256": "40257dd1b5401b716b4b38de55cc3ed8d0f0719c43da5d69b182d93dbbda36a8",
+    "unchanged": true
+  },
+  "yaYUL/strcmpEBCDIC.c": {
+    "copiedSHA256": "fa93fd02a84684005db5068e5cae9818e7ca26205f1745f84f81db6376e59ab8",
+    "sha256": "fa93fd02a84684005db5068e5cae9818e7ca26205f1745f84f81db6376e59ab8",
+    "unchanged": true
+  },
+  "yaYUL/test.agc": {
+    "copiedSHA256": "c71dbc0228be9277b1bccc5802e43a47ddd4c4fca44c2a4c29d67ff5f0e17821",
+    "sha256": "c71dbc0228be9277b1bccc5802e43a47ddd4c4fca44c2a4c29d67ff5f0e17821",
+    "unchanged": true
+  },
+  "yaYUL/yaYUL.c": {
+    "copiedSHA256": "82e9ddb76e22fcfd48c4f22245e7b2d7299f10b4293f62e9fbb16c36d2cda6b2",
+    "sha256": "82e9ddb76e22fcfd48c4f22245e7b2d7299f10b4293f62e9fbb16c36d2cda6b2",
+    "unchanged": true
+  },
+  "yaYUL/yaYUL.h": {
+    "copiedSHA256": "0b384ffec2f7f69d1420145729d3c24c57bc5e665f233897b26bc0a2a78b8e45",
+    "sha256": "0b384ffec2f7f69d1420145729d3c24c57bc5e665f233897b26bc0a2a78b8e45",
+    "unchanged": true
+  },
+  "yaYUL/yul2agc.c": {
+    "copiedSHA256": "c27fb4c3078687c0be6091e1f6244f6cdab9035626e26119ca4c388337b021af",
+    "sha256": "c27fb4c3078687c0be6091e1f6244f6cdab9035626e26119ca4c388337b021af",
+    "unchanged": true
+  }
+}

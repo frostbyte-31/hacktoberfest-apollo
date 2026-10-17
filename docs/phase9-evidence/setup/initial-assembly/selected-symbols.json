@@ -1,0 +1,182 @@
+{
+  "P51": {
+    "index": 4402,
+    "kind": "F",
+    "addressOctal": "14,3427",
+    "listingLine": 65568,
+    "bank": 12,
+    "sRegister": 1815,
+    "fixedBank": 12,
+    "offset": 791
+  },
+  "P51G": {
+    "index": 4407,
+    "kind": "F",
+    "addressOctal": "14,3552",
+    "listingLine": 65573,
+    "bank": 12,
+    "sRegister": 1898,
+    "fixedBank": 12,
+    "offset": 874
+  },
+  "P52A": {
+    "index": 4408,
+    "kind": "F",
+    "addressOctal": "15,2060",
+    "listingLine": 65574,
+    "bank": 13,
+    "sRegister": 1072,
+    "fixedBank": 13,
+    "offset": 48
+  },
+  "P52B": {
+    "index": 4409,
+    "kind": "F",
+    "addressOctal": "15,2062",
+    "listingLine": 65575,
+    "bank": 13,
+    "sRegister": 1074,
+    "fixedBank": 13,
+    "offset": 50
+  },
+  "R02BOTH": {
+    "index": 4973,
+    "kind": "F",
+    "addressOctal": "04,3254",
+    "listingLine": 65786,
+    "bank": 4,
+    "sRegister": 1708,
+    "fixedBank": 4,
+    "offset": 684
+  },
+  "P63LM": {
+    "index": 4435,
+    "kind": "F",
+    "addressOctal": "32,2776",
+    "listingLine": 65602,
+    "bank": 26,
+    "sRegister": 1534,
+    "fixedBank": 26,
+    "offset": 510
+  },
+  "REFSMMAT": {
+    "index": 4657,
+    "kind": "E",
+    "addressOctal": "E3,1733",
+    "listingLine": 65647,
+    "bank": 3,
+    "sRegister": 987,
+    "linearErasable": 987
+  },
+  "REFSMFLG": {
+    "index": 4656,
+    "kind": "C",
+    "addressOctal": "0000057",
+    "listingLine": 65691,
+    "value": 47
+  },
+  "REFSMBIT": {
+    "index": 4655,
+    "kind": "F",
+    "addressOctal": "4737",
+    "listingLine": 65690,
+    "value": 2527
+  },
+  "FLAGWRD3": {
+    "index": 2004,
+    "kind": "E",
+    "addressOctal": "0077",
+    "listingLine": 64762,
+    "value": 63
+  },
+  "AOTMARK": {
+    "index": 355,
+    "kind": "F",
+    "addressOctal": "07,2000",
+    "listingLine": 64176,
+    "bank": 7,
+    "sRegister": 1024,
+    "fixedBank": 7,
+    "offset": 0
+  },
+  "MARKRUPT": {
+    "index": 3135,
+    "kind": "F",
+    "addressOctal": "07,2332",
+    "listingLine": 65144,
+    "bank": 7,
+    "sRegister": 1242,
+    "fixedBank": 7,
+    "offset": 218
+  },
+  "THRUST": {
+    "index": 5851,
+    "kind": "C",
+    "addressOctal": "0000055",
+    "listingLine": 66087,
+    "value": 45
+  },
+  "DOIT": {
+    "index": 1404,
+    "kind": "F",
+    "addressOctal": "31,2312",
+    "listingLine": 64561,
+    "bank": 25,
+    "sRegister": 1226,
+    "fixedBank": 25,
+    "offset": 202
+  },
+  "THROTTLE": {
+    "index": 5849,
+    "kind": "F",
+    "addressOctal": "31,2216",
+    "listingLine": 66085,
+    "bank": 25,
+    "sRegister": 1166,
+    "fixedBank": 25,
+    "offset": 142
+  },
+  "PSEUDO55": {
+    "index": 4229,
+    "kind": "E",
+    "addressOctal": "E7,1614",
+    "listingLine": 65529,
+    "bank": 7,
+    "sRegister": 908,
+    "linearErasable": 1932
+  },
+  "IMUCHK": {
+    "index": 2438,
+    "kind": "F",
+    "addressOctal": "15,3652",
+    "listingLine": 64933,
+    "bank": 13,
+    "sRegister": 1962,
+    "fixedBank": 13,
+    "offset": 938
+  },
+  "GOTOPOOH": {
+    "index": 2265,
+    "kind": "F",
+    "addressOctal": "6001",
+    "listingLine": 64846,
+    "value": 3073
+  },
+  "VARALARM": {
+    "index": 6253,
+    "kind": "F",
+    "addressOctal": "5744",
+    "listingLine": 66224,
+    "value": 3044
+  },
+  "P63ADRES": {
+    "index": 4431,
+    "kind": "F",
+    "addressOctal": "32,3253",
+    "listingLine": 65597,
+    "bank": 26,
+    "sRegister": 1707,
+    "fixedBank": 26,
+    "offset": 683
+  }
+}

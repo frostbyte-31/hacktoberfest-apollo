@@ -1,0 +1,12 @@
+{
+  "prior": {
+    "checked": 3268,
+    "mismatches": [],
+    "all_pass": true
+  },
+  "phase8": {
+    "checked": 98,
+    "mismatches": [],
+    "all_pass": true
+  }
+}

@@ -1,0 +1,19 @@
+test_both_signs_switch_at_exact_four_degree_threshold (test_model.PairedComponentTests) ... ok
+test_direction_still_comes_from_signed_gimbal_delta (test_model.PairedComponentTests) ... ok
+test_original_raw_output_matches_retained_milestone2_exactly (test_model.PairedComponentTests) ... ok
+test_pair_reconciliation_changes_only_1455_packet_modes (test_model.PairedComponentTests) ... ok
+test_quantization_wrap_and_inhibits_are_numerically_unchanged (test_model.PairedComponentTests) ... ok
+test_real_tcl_processes_completed_with_locked_runtime (test_model.PairedComponentTests) ... ok
+test_reconciler_rejects_faked_fast_mode_for_slow_motion (test_model.PairedComponentTests) ... ok
+test_reconciler_rejects_missing_pulse_and_changed_numerics (test_model.PairedComponentTests) ... ok
+test_unsupported_axes_rejected_before_any_gimbal_or_packet_change (test_model.PairedComponentTests) ... ok
+test_existing_destination_is_preserved (test_model.SourceAdapterTests) ... ok
+test_modified_source_fails_before_creating_model (test_model.SourceAdapterTests) ... ok
+test_only_selector_changes_in_original_body_plus_explicit_guard (test_model.SourceAdapterTests) ... ok
+test_retained_and_symlink_destinations_are_rejected (test_model.SourceAdapterTests) ... ok
+test_source_root_input_selects_only_locked_complete_module (test_model.SourceAdapterTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.112s
+
+OK

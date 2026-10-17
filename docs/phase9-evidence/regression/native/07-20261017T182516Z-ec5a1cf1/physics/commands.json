@@ -1,0 +1,27 @@
+[
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/physics/probe.tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/physics/derived-physics.tcl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:25:17.241464+00:00",
+    "end_utc": "2026-10-17T18:25:17.856498+00:00",
+    "exit": 0,
+    "stdin": null
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/plant_server.tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/source"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:25:17.856780+00:00",
+    "end_utc": "2026-10-17T18:25:17.920237+00:00",
+    "exit": 0,
+    "stdin": "legacy-inputs.txt"
+  }
+]

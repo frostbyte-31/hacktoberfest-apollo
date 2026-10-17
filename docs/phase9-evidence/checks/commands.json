@@ -1,0 +1,64 @@
+[
+  {
+    "name": "phase8-integrity",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "docs/phase8-evidence/verify_integrity.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "APOLLO_PHASE9_VALIDATION_CONFIG": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01-test-config.json",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T18:25:35.880971+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T18:25:36.449381+00:00"
+  },
+  {
+    "name": "phase8-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase8-evidence",
+      "-p",
+      "test_feasibility.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "APOLLO_PHASE9_VALIDATION_CONFIG": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01-test-config.json",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T18:25:36.449584+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T18:25:36.795790+00:00"
+  },
+  {
+    "name": "phase9-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase9-evidence",
+      "-p",
+      "test_alignment.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "APOLLO_PHASE9_VALIDATION_CONFIG": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01-test-config.json",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T18:25:36.796011+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T18:25:37.562532+00:00"
+  }
+]

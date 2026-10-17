@@ -1,0 +1,1296 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910",
+  "files": {
+    "Luminary099/AP11ROPE.binsource": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/AP11ROPE.binsource",
+      "raw_sha256": "8028acd932b1a46f2b4446d04815a96b332469a31dc593864304df3dec3c4294",
+      "raw_bytes": 265022,
+      "compressed": false,
+      "stored_sha256": "8028acd932b1a46f2b4446d04815a96b332469a31dc593864304df3dec3c4294"
+    },
+    "Luminary099/Apollo32.png": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Apollo32.png",
+      "raw_sha256": "54347de260dd2b72b76584323802cbd500e4a010ad11079af4c48e12e12ce3d1",
+      "raw_bytes": 2613,
+      "compressed": false,
+      "stored_sha256": "54347de260dd2b72b76584323802cbd500e4a010ad11079af4c48e12e12ce3d1"
+    },
+    "Luminary099/CMakeLists.txt": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/CMakeLists.txt",
+      "raw_sha256": "aef053dc06d163432fb6ba6123e7f7e11f39761e9ba58b3de1ce8e82345b90ff",
+      "raw_bytes": 71,
+      "compressed": false,
+      "stored_sha256": "aef053dc06d163432fb6ba6123e7f7e11f39761e9ba58b3de1ce8e82345b90ff"
+    },
+    "Luminary099/Default.style": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Default.style",
+      "raw_sha256": "d53664e2d89e0ab9592141679b38943d58ea037264aca67b46b6cd247172beb3",
+      "raw_bytes": 432,
+      "compressed": false,
+      "stored_sha256": "d53664e2d89e0ab9592141679b38943d58ea037264aca67b46b6cd247172beb3"
+    },
+    "Luminary099/Luminary099.binsource": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Luminary099.binsource",
+      "raw_sha256": "edad1f7d07f2ac9b35ac47a96b223cbbe96535c0ea1daf323e2e830a924abe93",
+      "raw_bytes": 232076,
+      "compressed": false,
+      "stored_sha256": "edad1f7d07f2ac9b35ac47a96b223cbbe96535c0ea1daf323e2e830a924abe93"
+    },
+    "Luminary099/MAIN.agc.lst.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/MAIN.agc.lst",
+      "raw_sha256": "d5547c4db630c444004be99556a34e612954eed0b3f27bac4bbe318ad8fbc108",
+      "raw_bytes": 7384423,
+      "compressed": true,
+      "stored_sha256": "2ddf3731093b06a93dc3428704bae338f0e0790b9214e8238406f7febb0724e0"
+    },
+    "Luminary099/Main.annotation": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Main.annotation",
+      "raw_sha256": "110aac7ed16307a9773f6d80700e3864cabd7f37a899c8cef41b2bec7e74cc9c",
+      "raw_bytes": 1291,
+      "compressed": false,
+      "stored_sha256": "110aac7ed16307a9773f6d80700e3864cabd7f37a899c8cef41b2bec7e74cc9c"
+    },
+    "Luminary099/Makefile": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Makefile",
+      "raw_sha256": "76b95f92578b5b83331219aeff92a93e4627f35ddde79f60b89bc56d99f3d88d",
+      "raw_bytes": 877,
+      "compressed": false,
+      "stored_sha256": "76b95f92578b5b83331219aeff92a93e4627f35ddde79f60b89bc56d99f3d88d"
+    },
+    "assemble.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/assemble.stderr",
+      "raw_sha256": "3072afc57a4c2e10e0d2738288b3389002c434ac67c5f33617342e42bbe0e566",
+      "raw_bytes": 66,
+      "compressed": false,
+      "stored_sha256": "3072afc57a4c2e10e0d2738288b3389002c434ac67c5f33617342e42bbe0e566"
+    },
+    "assemble.stdout.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/assemble.stdout",
+      "raw_sha256": "d5547c4db630c444004be99556a34e612954eed0b3f27bac4bbe318ad8fbc108",
+      "raw_bytes": 7384423,
+      "compressed": true,
+      "stored_sha256": "2ddf3731093b06a93dc3428704bae338f0e0790b9214e8238406f7febb0724e0"
+    },
+    "build-summary.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/build-summary.json",
+      "raw_sha256": "79683fcf9f52e5d43f126c7915882849ea4e9e4ceea3f7e218bfa79aebbb93e9",
+      "raw_bytes": 720,
+      "compressed": false,
+      "stored_sha256": "79683fcf9f52e5d43f126c7915882849ea4e9e4ceea3f7e218bfa79aebbb93e9"
+    },
+    "build-yayul.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/build-yayul.stderr",
+      "raw_sha256": "8a623488e688719f1a8bbf41f3040eccbd3e0386e11aa3e1db713fabbe041527",
+      "raw_bytes": 126,
+      "compressed": false,
+      "stored_sha256": "8a623488e688719f1a8bbf41f3040eccbd3e0386e11aa3e1db713fabbe041527"
+    },
+    "build-yayul.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/build-yayul.stdout",
+      "raw_sha256": "4122f7ab8d43834f13303ce037dd9231fdf7512ad06f98d9de8e1db05e0b289a",
+      "raw_bytes": 3437,
+      "compressed": false,
+      "stored_sha256": "4122f7ab8d43834f13303ce037dd9231fdf7512ad06f98d9de8e1db05e0b289a"
+    },
+    "commands.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/commands.json",
+      "raw_sha256": "5a97ee518ce96e4a71b0814d2c88588d9650431ecb74b7da47157bc5e9755efe",
+      "raw_bytes": 1027,
+      "compressed": false,
+      "stored_sha256": "5a97ee518ce96e4a71b0814d2c88588d9650431ecb74b7da47157bc5e9755efe"
+    },
+    "compiler-version.stderr": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/compiler-version.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "compressed": false,
+      "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compiler-version.stdout": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/compiler-version.stdout",
+      "raw_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483",
+      "raw_bytes": 201,
+      "compressed": false,
+      "stored_sha256": "d23e1e266991777af51323c8a611147c28082ac12f936caa38bc345779f78483"
+    },
+    "source-after.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/source-after.json",
+      "raw_sha256": "b9380c77570a58b5093306ca3b86d3b8053b9e5e1d17565ec7b83307d788bdeb",
+      "raw_bytes": 14181,
+      "compressed": false,
+      "stored_sha256": "b9380c77570a58b5093306ca3b86d3b8053b9e5e1d17565ec7b83307d788bdeb"
+    },
+    "source-before.json": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/source-before.json",
+      "raw_sha256": "b9380c77570a58b5093306ca3b86d3b8053b9e5e1d17565ec7b83307d788bdeb",
+      "raw_bytes": 14181,
+      "compressed": false,
+      "stored_sha256": "b9380c77570a58b5093306ca3b86d3b8053b9e5e1d17565ec7b83307d788bdeb"
+    },
+    "symbols.json.gz": {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/symbols.json",
+      "raw_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+      "raw_bytes": 1356547,
+      "compressed": true,
+      "stored_sha256": "5692cef8e0017ac10c870c57c2e7bb41da31c06082044f2be9381949cc473873"
+    }
+  },
+  "omitted_rebuildable": [
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/AGC_BLOCK_TWO_SELF-CHECK.agc",
+      "raw_sha256": "50ca9c6124a95fc11ec867e6ef264827f3511b34c94f1bb89b12a36123b3d0da",
+      "raw_bytes": 13884,
+      "path": "Luminary099/AGC_BLOCK_TWO_SELF-CHECK.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/AGS_INITIALIZATION.agc",
+      "raw_sha256": "1d0d6328926060cf987aecff729662ab601870d7bea79cb2591c5bdf9efae364",
+      "raw_bytes": 6419,
+      "path": "Luminary099/AGS_INITIALIZATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ALARM_AND_ABORT.agc",
+      "raw_sha256": "41272439278b8fe64b86a10db1ef69a04e1ed78744a55cad97bafbc888008889",
+      "raw_bytes": 5317,
+      "path": "Luminary099/ALARM_AND_ABORT.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/AOSTASK_AND_AOSJOB.agc",
+      "raw_sha256": "b7e919edc3bba89ebd6b1dea685e175db04224c173dc5d2a179722ec7f3e52eb",
+      "raw_bytes": 29038,
+      "path": "Luminary099/AOSTASK_AND_AOSJOB.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/AOTMARK.agc",
+      "raw_sha256": "40811740880eb027df49c356d734e4d1c9b56340b38661aa67c22294b4c7292f",
+      "raw_bytes": 17714,
+      "path": "Luminary099/AOTMARK.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ASCENT_GUIDANCE.agc",
+      "raw_sha256": "b4cec1ff3cd697ada6f557a04fdfb3cf29cf9864be8c3768436ddf01abfcd835",
+      "raw_bytes": 11637,
+      "path": "Luminary099/ASCENT_GUIDANCE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ASSEMBLY_AND_OPERATION_INFORMATION.agc",
+      "raw_sha256": "909fbe940f6d128b17cf60359486f0a941cc7a2997f4707e0dde14ee351be2f9",
+      "raw_bytes": 32395,
+      "path": "Luminary099/ASSEMBLY_AND_OPERATION_INFORMATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc",
+      "raw_sha256": "99103e0e77fec10c17c6932ae890b5b033b435d047b18d3f17a1f30a0a187fae",
+      "raw_bytes": 27642,
+      "path": "Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/BURN,_BABY,_BURN_--_MASTER_IGNITION_ROUTINE.agc",
+      "raw_sha256": "8be1bf0b0346dc3ac8efd2bccb113d6cbd46dd9c22f716266cbaf4e3c1ce94d4",
+      "raw_bytes": 22819,
+      "path": "Luminary099/BURN,_BABY,_BURN_--_MASTER_IGNITION_ROUTINE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/CONIC_SUBROUTINES.agc",
+      "raw_sha256": "60d5201e28bd826c7d9cfd32e72f2c018de8ee7d54956a4b181fae35a4450353",
+      "raw_bytes": 48478,
+      "path": "Luminary099/CONIC_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/CONTRACT_AND_APPROVALS.agc",
+      "raw_sha256": "a83d7736ca026e5018cb5811b8372c1919364fda2548e8de0048183b515d916a",
+      "raw_bytes": 1866,
+      "path": "Luminary099/CONTRACT_AND_APPROVALS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/CONTROLLED_CONSTANTS.agc",
+      "raw_sha256": "8ff78c818b3f92e061af1543eb84deaf1b16e96187d2236e3438671bffaa79ae",
+      "raw_bytes": 15220,
+      "path": "Luminary099/CONTROLLED_CONSTANTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/DAPIDLER_PROGRAM.agc",
+      "raw_sha256": "903ef74e8062d3957e96dc3222df29b5940696a238dc858c7192748190f698ab",
+      "raw_bytes": 13257,
+      "path": "Luminary099/DAPIDLER_PROGRAM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/DAP_INTERFACE_SUBROUTINES.agc",
+      "raw_sha256": "864030dba1a3fe59ded1148b7d35368c5fbcf6dc4b90d01ccfb0c3022bdeba47",
+      "raw_bytes": 5089,
+      "path": "Luminary099/DAP_INTERFACE_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/DISPLAY_INTERFACE_ROUTINES.agc",
+      "raw_sha256": "82c417fd8fcf7900d5fb806c3b812fb41fee4eac91ebb25bc29381a8b66caa71",
+      "raw_bytes": 40385,
+      "path": "Luminary099/DISPLAY_INTERFACE_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/DOWN-TELEMETRY_PROGRAM.agc",
+      "raw_sha256": "904a322365f0d76f6577b076d57de49f333a57b96d450338e1cdcd808fbc797e",
+      "raw_bytes": 18277,
+      "path": "Luminary099/DOWN-TELEMETRY_PROGRAM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/DOWNLINK_LISTS.agc",
+      "raw_sha256": "2c4ad2152c462f70eb16e211000820838b5d0b9b09d279fecffa7a0f40acf8c8",
+      "raw_bytes": 15111,
+      "path": "Luminary099/DOWNLINK_LISTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ERASABLE_ASSIGNMENTS.agc",
+      "raw_sha256": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+      "raw_bytes": 78861,
+      "path": "Luminary099/ERASABLE_ASSIGNMENTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/EXECUTIVE.agc",
+      "raw_sha256": "63e8c8f75cfa87dc74d08ef7a227bb55eaa07e6ad035c4978b69244a26906d2c",
+      "raw_bytes": 11983,
+      "path": "Luminary099/EXECUTIVE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/EXTENDED_VERBS.agc",
+      "raw_sha256": "fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29",
+      "raw_bytes": 38168,
+      "path": "Luminary099/EXTENDED_VERBS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/FINDCDUW_-_GUIDAP_INTERFACE.agc",
+      "raw_sha256": "c2cecfc789a34a23f75d6728e1a875a28f845f2f4ca9d8095048ea6fcc0615ab",
+      "raw_bytes": 18759,
+      "path": "Luminary099/FINDCDUW_-_GUIDAP_INTERFACE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/FIXED-FIXED_CONSTANT_POOL.agc",
+      "raw_sha256": "7b4920c5c4f564a9f2dfffc7f86cd25d1c71474940f87434553b0f192e2ec169",
+      "raw_bytes": 6759,
+      "path": "Luminary099/FIXED-FIXED_CONSTANT_POOL.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/FLAGWORD_ASSIGNMENTS.agc",
+      "raw_sha256": "a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d",
+      "raw_bytes": 36522,
+      "path": "Luminary099/FLAGWORD_ASSIGNMENTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/FRESH_START_AND_RESTART.agc",
+      "raw_sha256": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+      "raw_bytes": 28616,
+      "path": "Luminary099/FRESH_START_AND_RESTART.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/GIMBAL_LOCK_AVOIDANCE.agc",
+      "raw_sha256": "f75426ebb7df0071250449c5d28c4a9edef6a2c9ba4e2994819a883485f69d16",
+      "raw_bytes": 2539,
+      "path": "Luminary099/GIMBAL_LOCK_AVOIDANCE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/GROUND_TRACKING_DETERMINATION_PROGRAM_-_P21.agc",
+      "raw_sha256": "b387746778d807b143b88fc738ddc28100c5efec15d83d8dc905fa7f752c0657",
+      "raw_bytes": 5128,
+      "path": "Luminary099/GROUND_TRACKING_DETERMINATION_PROGRAM_-_P21.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/HeaderTemplate.agc",
+      "raw_sha256": "c77127220a415cc797390474e8e40cad9a519fcb6dce6aeed3d72e7ab3d3152e",
+      "raw_bytes": 1254,
+      "path": "Luminary099/HeaderTemplate.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/IMU_COMPENSATION_PACKAGE.agc",
+      "raw_sha256": "fc43ab512b9adce00b9dea4e25fd401c4581de4e6685f8558333c56a8751c444",
+      "raw_bytes": 10642,
+      "path": "Luminary099/IMU_COMPENSATION_PACKAGE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc",
+      "raw_sha256": "49bf6c8ecb8f185e19547fe4405d1270e70c15503c28f065199a2a6645e2e31e",
+      "raw_bytes": 23875,
+      "path": "Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/IMU_PERFORMANCE_TESTS_2.agc",
+      "raw_sha256": "c88468022725b38b1f2204fcb93ed56b89595814ed74b39cf4960a63a56d7449",
+      "raw_bytes": 7195,
+      "path": "Luminary099/IMU_PERFORMANCE_TESTS_2.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/IMU_PERFORMANCE_TESTS_4.agc",
+      "raw_sha256": "93b33dae6256052286d6ab0a8f61e60147c3adde63ad5185eb38237c44ec12ac",
+      "raw_bytes": 6514,
+      "path": "Luminary099/IMU_PERFORMANCE_TESTS_4.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INFLIGHT_ALIGNMENT_ROUTINES.agc",
+      "raw_sha256": "106a4be57849c74eb0b66eae868a777b549e404afa707b40e1b4fe712a1a3ecc",
+      "raw_bytes": 7200,
+      "path": "Luminary099/INFLIGHT_ALIGNMENT_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc",
+      "raw_sha256": "e4a61b24b071c4d2287e663dfaa3299a2fd3de100589c6e7e4d0d9e881238d7f",
+      "raw_bytes": 9540,
+      "path": "Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INTEGRATION_INITIALIZATION.agc",
+      "raw_sha256": "35197ba93b209defdcfb21f3deb65d9215097e7778b437d5264d05bf0e6bdf1e",
+      "raw_bytes": 25658,
+      "path": "Luminary099/INTEGRATION_INITIALIZATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INTER-BANK_COMMUNICATION.agc",
+      "raw_sha256": "a194c6bee7099cf9d028035d4b08748fd4960ca77575170d8d53af115c4b1778",
+      "raw_bytes": 6089,
+      "path": "Luminary099/INTER-BANK_COMMUNICATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INTERPRETER.agc",
+      "raw_sha256": "1bb93c5fff9ddfd0848249498c37126cbe3451541edd68d956962300cf02f8a1",
+      "raw_bytes": 79475,
+      "path": "Luminary099/INTERPRETER.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INTERPRETIVE_CONSTANTS.agc",
+      "raw_sha256": "05649b0e709c70160768f7f1c85d0ffc75915faa8505ce799f5d77932e1c3619",
+      "raw_bytes": 2065,
+      "path": "Luminary099/INTERPRETIVE_CONSTANTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/INTERRUPT_LEAD_INS.agc",
+      "raw_sha256": "f140fbb095c34d8dcd92314ec28b93c6a46bef498f98f8fa4ee5e7e17114eb39",
+      "raw_bytes": 2532,
+      "path": "Luminary099/INTERRUPT_LEAD_INS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/KALCMANU_STEERING.agc",
+      "raw_sha256": "8861cfa01e80fd0e8028ad5bddc540e0a40371d4bfd6e9a14596fd7c5f925448",
+      "raw_bytes": 5193,
+      "path": "Luminary099/KALCMANU_STEERING.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/KALMAN_FILTER.agc",
+      "raw_sha256": "54ef64e486c666abc9bf3e703d3b26522ab8665bcfcbbc2cd5e113ca21976be6",
+      "raw_bytes": 2417,
+      "path": "Luminary099/KALMAN_FILTER.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/KEYRUPT,_UPRUPT.agc",
+      "raw_sha256": "24fc9d024a57af0f3ff48f4aedc7e205a7dd7c2f1aec5e9b5ba84bb079ee2061",
+      "raw_bytes": 4028,
+      "path": "Luminary099/KEYRUPT,_UPRUPT.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LAMBERT_AIMPOINT_GUIDANCE.agc",
+      "raw_sha256": "c7897dc957da892d6058d41866c282b06695d54c41a6ea2daa783613dca8999e",
+      "raw_bytes": 4392,
+      "path": "Luminary099/LAMBERT_AIMPOINT_GUIDANCE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LANDING_ANALOG_DISPLAYS.agc",
+      "raw_sha256": "c4559310c3e02a4eb0dbdbd8ec08420d2acab6e1d3723d3a1a807d7c035da5b2",
+      "raw_bytes": 11906,
+      "path": "Luminary099/LANDING_ANALOG_DISPLAYS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LATITUDE_LONGITUDE_SUBROUTINES.agc",
+      "raw_sha256": "39f3955e3911c483ded7e5e010c2664edebf529bd3a439b90785792a18281d95",
+      "raw_bytes": 7324,
+      "path": "Luminary099/LATITUDE_LONGITUDE_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LEM_GEOMETRY.agc",
+      "raw_sha256": "b180242b9f5bf08e43cfc00b252f6dfd567ed84df77ab72fbc67fdcb28a01710",
+      "raw_bytes": 5365,
+      "path": "Luminary099/LEM_GEOMETRY.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc",
+      "raw_sha256": "e105e4535f3a6aa6bf3dcf5724eee09671048c287c19ccd71c1af4ff0d0439a6",
+      "raw_bytes": 6480,
+      "path": "Luminary099/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+      "raw_sha256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+      "raw_bytes": 34369,
+      "path": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/MAIN.agc",
+      "raw_sha256": "0cfd3412dec956c3ffc0b2a93bdb36a20e7eb88382ab191da883021e2d7adddf",
+      "raw_bytes": 8904,
+      "path": "Luminary099/MAIN.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/MAIN.agc.bin",
+      "raw_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+      "raw_bytes": 73728,
+      "path": "Luminary099/MAIN.agc.bin",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/MAIN.agc.symtab",
+      "raw_sha256": "99c01f85769445f9f6bc357be7a95b494243163bbe439615b40fa487b0932080",
+      "raw_bytes": 11823184,
+      "path": "Luminary099/MAIN.agc.symtab",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/MEASUREMENT_INCORPORATION.agc",
+      "raw_sha256": "4347529781c8248f3631080b67083f43ff78ccb2442ec3db9e23508938c2e87b",
+      "raw_bytes": 8810,
+      "path": "Luminary099/MEASUREMENT_INCORPORATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/ORBITAL_INTEGRATION.agc",
+      "raw_sha256": "07baa240eb0c915423f59b97c1f6fe66e6b406faaa2dc254f9a62bb83cfc7282",
+      "raw_bytes": 16430,
+      "path": "Luminary099/ORBITAL_INTEGRATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P-AXIS_RCS_AUTOPILOT.agc",
+      "raw_sha256": "9da0c4520bdce3c77003a6c9378af94531459d83123526bce128ffd29331a49b",
+      "raw_bytes": 21495,
+      "path": "Luminary099/P-AXIS_RCS_AUTOPILOT.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P12.agc",
+      "raw_sha256": "4380d7f3940bd55eb0e2438f45e1e125e8a5da650855c12b5a11587605e9dc03",
+      "raw_bytes": 4785,
+      "path": "Luminary099/P12.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P20-P25.agc",
+      "raw_sha256": "ce962e50196333b8d053b649e71363cf42359b3cbce3b4f9b12d1632a762f41b",
+      "raw_bytes": 123039,
+      "path": "Luminary099/P20-P25.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P30,P37.agc",
+      "raw_sha256": "e9ba05c0825f74c0bdd47b9310c2aa69c43ac6e7b3b890158dd2a473be9dc19d",
+      "raw_bytes": 5219,
+      "path": "Luminary099/P30,P37.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P32-P35,_P72-P75.agc",
+      "raw_sha256": "0633f9c6903384558817a0a9b49a0929d039b3567d90a580fa4132c65ed0af4a",
+      "raw_bytes": 26007,
+      "path": "Luminary099/P32-P35,_P72-P75.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P34-P35,_P74-P75.agc",
+      "raw_sha256": "fd9dcb8ceea8a1dc4ee56c7539daf33ecda4fd317fed3965ed9135271bdac263",
+      "raw_bytes": 35270,
+      "path": "Luminary099/P34-P35,_P74-P75.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P40-P47.agc",
+      "raw_sha256": "1522e7cdc1a33328b49f57d4768a820f3f940bbefbb97152051342c1464d651c",
+      "raw_bytes": 31676,
+      "path": "Luminary099/P40-P47.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P51-P53.agc",
+      "raw_sha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+      "raw_bytes": 44016,
+      "path": "Luminary099/P51-P53.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P70-P71.agc",
+      "raw_sha256": "ba79a964966e460fcc29f5fd29a85053854ec0fca3a05a156a969a9466642fee",
+      "raw_bytes": 8189,
+      "path": "Luminary099/P70-P71.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/P76.agc",
+      "raw_sha256": "25872e1b4d768879da2e6e21e74c9fa9521783bc66493aa4f08f9446c9460a43",
+      "raw_bytes": 4589,
+      "path": "Luminary099/P76.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/PHASE_TABLE_MAINTENANCE.agc",
+      "raw_sha256": "71a513e6180c524fc87b57dc8f8567f5c1091374c01911fc81c37dce66479784",
+      "raw_bytes": 12723,
+      "path": "Luminary099/PHASE_TABLE_MAINTENANCE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc",
+      "raw_sha256": "2c7bf99f8ed6c82767ed8c03401877a44c0cd6455cba52e23c78a5a5bf7ece0c",
+      "raw_bytes": 103132,
+      "path": "Luminary099/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/PINBALL_NOUN_TABLES.agc",
+      "raw_sha256": "ea1b2177cec8005268928ec4aa0c1a0cf7c3ad5f1bee336ccd1a15935aefbcc4",
+      "raw_bytes": 28690,
+      "path": "Luminary099/PINBALL_NOUN_TABLES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/PLANETARY_INERTIAL_ORIENTATION.agc",
+      "raw_sha256": "abf5d8fb4792eb1bb6e91f99d7eaa87a75913b5033a3e6211e245f778ec9da51",
+      "raw_bytes": 9401,
+      "path": "Luminary099/PLANETARY_INERTIAL_ORIENTATION.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/POWERED_FLIGHT_SUBROUTINES.agc",
+      "raw_sha256": "f2a53b90d43af7c6a5d243bd699c599b9705f3c22bdc3c2f7515a6603a21308b",
+      "raw_bytes": 11431,
+      "path": "Luminary099/POWERED_FLIGHT_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc",
+      "raw_sha256": "8cf1ac005f95c67c4c1da5cbd9efafa955f231f266a6eb8ca75ffb85aa841629",
+      "raw_bytes": 17716,
+      "path": "Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/R30.agc",
+      "raw_sha256": "2fb0a15b51ad6f1780c16bfec10f6b6b729218549be5cfe3b12eac9d8fa7692d",
+      "raw_bytes": 15115,
+      "path": "Luminary099/R30.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/R31.agc",
+      "raw_sha256": "0b014a88b3a87edc702b62f74f17fffe35435f3f0344d015d3d6323200e6cf9d",
+      "raw_bytes": 5263,
+      "path": "Luminary099/R31.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/R60,R62.agc",
+      "raw_sha256": "beff6629b32c4c925d04093d76b7fbf5d7347c86f5ce76298e2931b3cb0ff401",
+      "raw_bytes": 15636,
+      "path": "Luminary099/R60,R62.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/R63.agc",
+      "raw_sha256": "e188679761c3c847d0a45cbe7bd944b101a0c4a8a6b1d9f239e58932761686c3",
+      "raw_bytes": 5227,
+      "path": "Luminary099/R63.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/RADAR_LEADIN_ROUTINES.agc",
+      "raw_sha256": "6483373c0475075b0ffae2beb0037528aca74ddaba6f96a314cc865a9fb2ed9e",
+      "raw_bytes": 2739,
+      "path": "Luminary099/RADAR_LEADIN_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/RCS_FAILURE_MONITOR.agc",
+      "raw_sha256": "0ab66d0f16df97a0821202888b718ee5bf312a6d4e59e81f3adf1c4da4a513e3",
+      "raw_bytes": 6160,
+      "path": "Luminary099/RCS_FAILURE_MONITOR.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/RESTARTS_ROUTINE.agc",
+      "raw_sha256": "6e13e2a3df36f872ff39cdccfed9baee98f094192a3a0c1d8a9e967f57b48f31",
+      "raw_bytes": 8028,
+      "path": "Luminary099/RESTARTS_ROUTINE.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/RESTART_TABLES.agc",
+      "raw_sha256": "806547e6d7394b83e26749b18cc6ed5365ea15610545a3d71ebd0457cc773adc",
+      "raw_bytes": 7630,
+      "path": "Luminary099/RESTART_TABLES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/RTB_OP_CODES.agc",
+      "raw_sha256": "5f4c1425c78c2df5a0c614317416062c3a7cdff38096d917be098c90ea07bd3f",
+      "raw_bytes": 5753,
+      "path": "Luminary099/RTB_OP_CODES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/S-BAND_ANTENNA_FOR_LM.agc",
+      "raw_sha256": "053396ee2acf2d93cccf7273d581ed2dcfcbe56ef1759a9deac74e67c2a1b39d",
+      "raw_bytes": 4809,
+      "path": "Luminary099/S-BAND_ANTENNA_FOR_LM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/SERVICER.agc",
+      "raw_sha256": "d975bffb0b203ec5660933a9c3d1e86fbd4fc40c0f6192bb9e32c77d8fcdb7b1",
+      "raw_bytes": 35517,
+      "path": "Luminary099/SERVICER.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/SERVICE_ROUTINES.agc",
+      "raw_sha256": "bee98cb60d862bd95f25879da6a5e7f52f207ea0308dd7b636cc78551ac1ef86",
+      "raw_bytes": 5641,
+      "path": "Luminary099/SERVICE_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/SINGLE_PRECISION_SUBROUTINES.agc",
+      "raw_sha256": "d03db9896e37bec395902a906bcb8dd814002459bb8339b61cd4736dbf024e25",
+      "raw_bytes": 1894,
+      "path": "Luminary099/SINGLE_PRECISION_SUBROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/SPS_BACK-UP_RCS_CONTROL.agc",
+      "raw_sha256": "3035e9b5ac437610f1ce9897f763364a536d3494872c15d721748e3fc9adac71",
+      "raw_bytes": 6097,
+      "path": "Luminary099/SPS_BACK-UP_RCS_CONTROL.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/STABLE_ORBIT_-_P38-P39.agc",
+      "raw_sha256": "8f9ed6854d08a67b60e9845b5a78ef924e4bf4d1b1e9dc0360580d0ce200e45f",
+      "raw_bytes": 9925,
+      "path": "Luminary099/STABLE_ORBIT_-_P38-P39.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/SYSTEM_TEST_STANDARD_LEAD_INS.agc",
+      "raw_sha256": "788547bcf19353881550063256465dc78ba11f18f49a34800c773091f4134b13",
+      "raw_bytes": 3902,
+      "path": "Luminary099/SYSTEM_TEST_STANDARD_LEAD_INS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/T4RUPT_PROGRAM.agc",
+      "raw_sha256": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07",
+      "raw_bytes": 38034,
+      "path": "Luminary099/T4RUPT_PROGRAM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/T6-RUPT_PROGRAMS.agc",
+      "raw_sha256": "d2138901dcee1d6ef96a96deecbdb14584d76274c08cef43d69ff2b0fdb1d103",
+      "raw_bytes": 4761,
+      "path": "Luminary099/T6-RUPT_PROGRAMS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/TAGS_FOR_RELATIVE_SETLOC_AND_BLANK_BANK_CARDS.agc",
+      "raw_sha256": "5311c2e716680eebdc0f989d843bf84e9b6da888223a5d00e67083283309d96c",
+      "raw_bytes": 5802,
+      "path": "Luminary099/TAGS_FOR_RELATIVE_SETLOC_AND_BLANK_BANK_CARDS.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/THE_LUNAR_LANDING.agc",
+      "raw_sha256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+      "raw_bytes": 7765,
+      "path": "Luminary099/THE_LUNAR_LANDING.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/THROTTLE_CONTROL_ROUTINES.agc",
+      "raw_sha256": "e151a7441109b6963c96954cff9a29dec42f2a97afc4e5ce04f23ce437efe8f2",
+      "raw_bytes": 6296,
+      "path": "Luminary099/THROTTLE_CONTROL_ROUTINES.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/TIME_OF_FREE_FALL.agc",
+      "raw_sha256": "8f06cde5ad51d4582adf59fb4ee92de43f044b9c5d55f587d583e1323b2b885f",
+      "raw_bytes": 29646,
+      "path": "Luminary099/TIME_OF_FREE_FALL.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/TJET_LAW.agc",
+      "raw_sha256": "cc879a9a524f206ef54d52411273bb6b51c1084ab9365855890a69360b69f3c3",
+      "raw_bytes": 17616,
+      "path": "Luminary099/TJET_LAW.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/TRIM_GIMBAL_CONTROL_SYSTEM.agc",
+      "raw_sha256": "62c312bb8ecbd50ca0c883ae4748f8c6b05144cedd860f7af514c514245c1242",
+      "raw_bytes": 17849,
+      "path": "Luminary099/TRIM_GIMBAL_CONTROL_SYSTEM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/UPDATE_PROGRAM.agc",
+      "raw_sha256": "b38bebf20bcdce89b3a26ae66d4df6f97ae8dbab0a47aa41c9717408deddd78b",
+      "raw_bytes": 18447,
+      "path": "Luminary099/UPDATE_PROGRAM.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/Luminary099/WAITLIST.agc",
+      "raw_sha256": "5c1c42cf5394194adab51a3a8ff253af00599817bc423b31dfbd0f0066a23b87",
+      "raw_bytes": 15346,
+      "path": "Luminary099/WAITLIST.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/CMakeLists.txt",
+      "raw_sha256": "392574e1885ea36dbf7af2a5bb0d68364f71e9b404e97db1f661418a5de545fc",
+      "raw_bytes": 712,
+      "path": "yaYUL/CMakeLists.txt",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/GetOctOrDec.c",
+      "raw_sha256": "7989fd8c2ecac1e0f57a8e6352796d178f99b489260a7a9f770078e927061e66",
+      "raw_bytes": 2343,
+      "path": "yaYUL/GetOctOrDec.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/GetOctOrDec.o",
+      "raw_sha256": "4ed958c30cfa9829b37ddedf217d23f8f50a557241cdf670130479d36daeacd9",
+      "raw_bytes": 3512,
+      "path": "yaYUL/GetOctOrDec.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/IncPc.c",
+      "raw_sha256": "194f2f7724c59f472ee0554804929128d1fe52b0d16c8a2cf6146cf48f450bb9",
+      "raw_bytes": 6440,
+      "path": "yaYUL/IncPc.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/IncPc.o",
+      "raw_sha256": "285edad7aec16923eb538ca98da41e77fa6abb4f5694b495e213368aaaa8b99e",
+      "raw_bytes": 5536,
+      "path": "yaYUL/IncPc.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Makefile",
+      "raw_sha256": "0c7f3363ae2b3a2b8e4b386b684f7b2efe2d60f7cbaa85ef5e5e088c2fa44400",
+      "raw_bytes": 2520,
+      "path": "yaYUL/Makefile",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2CADR.c",
+      "raw_sha256": "7bb06616ff8589b4bbe0f16c3cbda4fc66a969118dd8e66b189c61d1dd68a2d3",
+      "raw_bytes": 5202,
+      "path": "yaYUL/Parse2CADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2CADR.o",
+      "raw_sha256": "ed7b66a205de925c2102c868a8caa156eb0870fccc0ae627710cdc8dbbc20620",
+      "raw_bytes": 6728,
+      "path": "yaYUL/Parse2CADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2DEC.c",
+      "raw_sha256": "ef5f09736c683fa2197c76ac886486333f2321f03f85bbb02f61602113d7f5e0",
+      "raw_bytes": 15129,
+      "path": "yaYUL/Parse2DEC.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2DEC.o",
+      "raw_sha256": "fd0d6e14e1de94c3c8cc6460fbac42988ad7824162f64ae0c97346c345898c28",
+      "raw_bytes": 13576,
+      "path": "yaYUL/Parse2DEC.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2FCADR.c",
+      "raw_sha256": "4ddb19fe23d8580438e0cc76d541bf95cf095d025f85332a916663b678342790",
+      "raw_bytes": 3745,
+      "path": "yaYUL/Parse2FCADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Parse2FCADR.o",
+      "raw_sha256": "7df37fc35341370fa08fc0af8a874cd9dc208459ed240d3955f8eaba41ca7db0",
+      "raw_bytes": 6456,
+      "path": "yaYUL/Parse2FCADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBANK.c",
+      "raw_sha256": "8a02a10690f6f782f276326c24875677b905d9c5962eb672a0cd01b10f4be4f6",
+      "raw_bytes": 10956,
+      "path": "yaYUL/ParseBANK.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBANK.o",
+      "raw_sha256": "ea7bc58f3a9fb864d5a14eac07733f2ea4dc46bfee0c40d4ccf89fa2c02a1cc1",
+      "raw_bytes": 13992,
+      "path": "yaYUL/ParseBANK.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBBCON.c",
+      "raw_sha256": "0db406606bd186a49b6c4c0f1ae6091b9e449a7047e9fe5078cf63b660cdf849",
+      "raw_bytes": 7402,
+      "path": "yaYUL/ParseBBCON.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBBCON.o",
+      "raw_sha256": "9b636498e14e7c051a370692745a5a8f59eea5166e5f9c63e30c91ae5514f49e",
+      "raw_bytes": 8440,
+      "path": "yaYUL/ParseBBCON.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBLOCK.c",
+      "raw_sha256": "e8630abb5bdda76aad4d127af1b54ff7bf4868ee4bb4c00ecc4c4aa2084a31d8",
+      "raw_bytes": 3297,
+      "path": "yaYUL/ParseBLOCK.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseBLOCK.o",
+      "raw_sha256": "637c3581744edf7549d1ec6f5e5b5da08dd58d4d6efbbcf97d1cfd118d77c96e",
+      "raw_bytes": 6224,
+      "path": "yaYUL/ParseBLOCK.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseCADR.c",
+      "raw_sha256": "cb9ec3071a135018589d8321483d06779310611ba722226351d164e4c7b45a50",
+      "raw_bytes": 5634,
+      "path": "yaYUL/ParseCADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseCADR.o",
+      "raw_sha256": "0d49f4e57887b8c62da8e98b75d2017ca379403e61e146f8950d0a3e0aa78ef3",
+      "raw_bytes": 8384,
+      "path": "yaYUL/ParseCADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseCHECKequals.c",
+      "raw_sha256": "8a8d5833f10e8bc7de0e7f31b2335e82cb0d55dab822c46ae710d3b4121f6c7d",
+      "raw_bytes": 3968,
+      "path": "yaYUL/ParseCHECKequals.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseCHECKequals.o",
+      "raw_sha256": "271f5be4318f920568b26c4e59dd3134c87f04fd99335bce6e99a67ceee91241",
+      "raw_bytes": 7216,
+      "path": "yaYUL/ParseCHECKequals.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEBANKEquals.c",
+      "raw_sha256": "4f28d449410c8f2927abfae6aa06ea1cdcffafd1b62bf04d6232898d2ec6519a",
+      "raw_bytes": 3840,
+      "path": "yaYUL/ParseEBANKEquals.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEBANKEquals.o",
+      "raw_sha256": "62e93bdc7c9735fb0123bb77182395c03a8a9d5e1285d54395ed83409c78270b",
+      "raw_bytes": 6712,
+      "path": "yaYUL/ParseEBANKEquals.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseECADR.c",
+      "raw_sha256": "c8dbc687229f1d9a4504f095eecf7020b3f1511986bae258dce0e7127c2da802",
+      "raw_bytes": 4000,
+      "path": "yaYUL/ParseECADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseECADR.o",
+      "raw_sha256": "a941310ad69a6eb437916cb28bdf7d120216e3b86d0e658b6a7407172f58a8d8",
+      "raw_bytes": 6872,
+      "path": "yaYUL/ParseECADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEQUALS.c",
+      "raw_sha256": "f51f50575642c2289cc6fdbc4f3299679e30830d8b320f99c03193be3eed286c",
+      "raw_bytes": 9110,
+      "path": "yaYUL/ParseEQUALS.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEQUALS.o",
+      "raw_sha256": "699600d2cfc7b62a57de9b1eb6eb0b8b7647da92072e2a6291c3627f3e5528a1",
+      "raw_bytes": 9464,
+      "path": "yaYUL/ParseEQUALS.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseERASE.c",
+      "raw_sha256": "4c2bd2773ead71dfc5b6354a643c3bf83d3c9b90768c89b21c2f90b93d9326d1",
+      "raw_bytes": 6644,
+      "path": "yaYUL/ParseERASE.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseERASE.o",
+      "raw_sha256": "0a9cab0573478b36ef49cfc959da99aa06213ab02af8cf120b086516ebbcee64",
+      "raw_bytes": 6408,
+      "path": "yaYUL/ParseERASE.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEqMinus.c",
+      "raw_sha256": "4fc6bf81e478156c303f25eea07f266c92b49b2bca1bdd77e247d9fa8585fb43",
+      "raw_bytes": 3234,
+      "path": "yaYUL/ParseEqMinus.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEqMinus.o",
+      "raw_sha256": "3b91b115cd5d1c212dd3015f4dee2ebf36599c53510b6a13ee714742c320fd12",
+      "raw_bytes": 5504,
+      "path": "yaYUL/ParseEqMinus.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEqualsECADR.c",
+      "raw_sha256": "2ea16c5b84a84681ab8700ea3f99e098d0c3ec9dc91a65206e2edd7596fdc6b7",
+      "raw_bytes": 1324,
+      "path": "yaYUL/ParseEqualsECADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseEqualsECADR.o",
+      "raw_sha256": "9d1cf3c9c325ca4922cd183cc246a911d8bb48f9c52d8795e50bf4dc6cd3a297",
+      "raw_bytes": 3904,
+      "path": "yaYUL/ParseEqualsECADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseGENADR.c",
+      "raw_sha256": "0dc5c3d3fdfeb72a802e647d05f0701fa505b5e85b40329a8b53eafdb7357933",
+      "raw_bytes": 5046,
+      "path": "yaYUL/ParseGENADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseGENADR.o",
+      "raw_sha256": "72bee6daa0c4108060fe85d87d05cdbff94115cda531cc6b7d0748f3621920b5",
+      "raw_bytes": 8120,
+      "path": "yaYUL/ParseGENADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseGeneral.c",
+      "raw_sha256": "ede774ea52aeb14f371697bcfe1316ec53c047c2775b1e631da316cb004559ba",
+      "raw_bytes": 16061,
+      "path": "yaYUL/ParseGeneral.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseGeneral.o",
+      "raw_sha256": "bcbece176e63e8d1d1d50128ff9541fc3e83ce398ef26e194aa490f942cd49bb",
+      "raw_bytes": 20040,
+      "path": "yaYUL/ParseGeneral.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseINDEX.c",
+      "raw_sha256": "f48eee5bb25bef93028db4345ff85c2bf6fc117e1bb8e389fad28215e4a893f8",
+      "raw_bytes": 3293,
+      "path": "yaYUL/ParseINDEX.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseINDEX.o",
+      "raw_sha256": "706ccd83c6f1ab3b6bd1b7f6c23ed5b679a45f7d09b062e10d63911670a43405",
+      "raw_bytes": 6432,
+      "path": "yaYUL/ParseINDEX.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseInterpretiveOperand.c",
+      "raw_sha256": "7a258c55949ca9afda6fd4d21196191889f7ce050211e13cc7e8a6fedf8b1b43",
+      "raw_bytes": 7589,
+      "path": "yaYUL/ParseInterpretiveOperand.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseInterpretiveOperand.o",
+      "raw_sha256": "e837e0a7c12d83e429629d6181f4ea270cb1b32c19f4376d88ede7a2d47abfe7",
+      "raw_bytes": 11880,
+      "path": "yaYUL/ParseInterpretiveOperand.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseOCT.c",
+      "raw_sha256": "651da140de6534b1bbe75b6604f9cd9398e2b9c39457447e0369d73832b3eda0",
+      "raw_bytes": 4223,
+      "path": "yaYUL/ParseOCT.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseOCT.o",
+      "raw_sha256": "08b7c79440a1148c4ff581f170d64a717f314fbf58f88cf98bfc08bb03bc1678",
+      "raw_bytes": 7096,
+      "path": "yaYUL/ParseOCT.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseSBANKEquals.c",
+      "raw_sha256": "5a66ba638709d90adfc9962e9258eb6fa4ea33a3b62a08bfa5800601fc828016",
+      "raw_bytes": 4735,
+      "path": "yaYUL/ParseSBANKEquals.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseSBANKEquals.o",
+      "raw_sha256": "3787b8d1caf367bea2cc0662179858e74d19c4974c32dc59dde439fce1bb59b7",
+      "raw_bytes": 7048,
+      "path": "yaYUL/ParseSBANKEquals.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseSETLOC.c",
+      "raw_sha256": "0480e82ae4720bc5e8663ea17e4e126fdefe9346f02473de662845b62d62e686",
+      "raw_bytes": 4663,
+      "path": "yaYUL/ParseSETLOC.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseSETLOC.o",
+      "raw_sha256": "4a4b5822dc6e4b249a1e1f37611afa12ccfada15cb16e80c2734baeaca3e1781",
+      "raw_bytes": 6560,
+      "path": "yaYUL/ParseSETLOC.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseST.c",
+      "raw_sha256": "875367e6c6cf5177678795f7a1eccdd9e08c7924d5814d772f0f56d2a2217a62",
+      "raw_bytes": 9917,
+      "path": "yaYUL/ParseST.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseST.o",
+      "raw_sha256": "bbc399fe57eb7ab8bb0795581245dcb71ccd26be2b66bb490181528f7935f650",
+      "raw_bytes": 11824,
+      "path": "yaYUL/ParseST.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseXCADR.c",
+      "raw_sha256": "b5318768e6f557a7134a5a6c9e32e7c55677bad5843bc4dfca1705ca76659bbd",
+      "raw_bytes": 3952,
+      "path": "yaYUL/ParseXCADR.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/ParseXCADR.o",
+      "raw_sha256": "c7e350a56259db8f11ef33c49e8451fb3a0510a03033e81867baf9630014cb5f",
+      "raw_bytes": 7264,
+      "path": "yaYUL/ParseXCADR.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Pass.c",
+      "raw_sha256": "782fdef308a9a1382a8ba9d265535c5d619b001cf49951cb75f885e21416fbfd",
+      "raw_bytes": 109252,
+      "path": "yaYUL/Pass.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Pass.o",
+      "raw_sha256": "d506ae0bf79e598879ea4874e9b5de0aa560bfb185b0047911e4c8eea7f38435",
+      "raw_bytes": 103040,
+      "path": "yaYUL/Pass.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/PseudoToSegmented.c",
+      "raw_sha256": "6ddf4a0c34715bf8cad30150ea5b2d344da915ac1ee93f9470f1857c8b78374f",
+      "raw_bytes": 5048,
+      "path": "yaYUL/PseudoToSegmented.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/PseudoToSegmented.o",
+      "raw_sha256": "2d592796096cdf8a8428f6f9b6efcaf9528be55467adc8a6d21e6b1013f928af",
+      "raw_bytes": 7424,
+      "path": "yaYUL/PseudoToSegmented.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/SymbolPass.c",
+      "raw_sha256": "38ea77a82ae111c2053d8ee5a0698654ae1ba6acae816cc2aaa815e2560c0a65",
+      "raw_bytes": 6988,
+      "path": "yaYUL/SymbolPass.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/SymbolPass.o",
+      "raw_sha256": "d151dcb54795002be7d0eedf174f6426dfd4e919590141661edc852dd54bf941",
+      "raw_bytes": 10576,
+      "path": "yaYUL/SymbolPass.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/SymbolTable.c",
+      "raw_sha256": "fecac9d16d1692246032fdd4960991aa0cd016900bbe6316a9e9fa09082bb7b6",
+      "raw_bytes": 47149,
+      "path": "yaYUL/SymbolTable.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/SymbolTable.o",
+      "raw_sha256": "628a8a5516744ed0a7efcd47a921c2499fb0ae56a5bde907695c6f331eb2b828",
+      "raw_bytes": 45208,
+      "path": "yaYUL/SymbolTable.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Utilities.c",
+      "raw_sha256": "40257dd1b5401b716b4b38de55cc3ed8d0f0719c43da5d69b182d93dbbda36a8",
+      "raw_bytes": 4430,
+      "path": "yaYUL/Utilities.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/Utilities.o",
+      "raw_sha256": "1682549fb14d98bbea092976b114307f30f417c6026964cc73878c86c2ec45b0",
+      "raw_bytes": 9136,
+      "path": "yaYUL/Utilities.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/strcmpEBCDIC.c",
+      "raw_sha256": "fa93fd02a84684005db5068e5cae9818e7ca26205f1745f84f81db6376e59ab8",
+      "raw_bytes": 7987,
+      "path": "yaYUL/strcmpEBCDIC.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/strcmpEBCDIC.o",
+      "raw_sha256": "88fe6660a758a38f46152e8d4053641eaec04d2211d44bc1740fff8278a9f2f4",
+      "raw_bytes": 5392,
+      "path": "yaYUL/strcmpEBCDIC.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/test.agc",
+      "raw_sha256": "c71dbc0228be9277b1bccc5802e43a47ddd4c4fca44c2a4c29d67ff5f0e17821",
+      "raw_bytes": 611,
+      "path": "yaYUL/test.agc",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yaYUL",
+      "raw_sha256": "abf2e23161965c2bbff721137da77191ff76d01d80f7de1ad266102ee88ccc64",
+      "raw_bytes": 217432,
+      "path": "yaYUL/yaYUL",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yaYUL.c",
+      "raw_sha256": "82e9ddb76e22fcfd48c4f22245e7b2d7299f10b4293f62e9fbb16c36d2cda6b2",
+      "raw_bytes": 32007,
+      "path": "yaYUL/yaYUL.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yaYUL.h",
+      "raw_sha256": "0b384ffec2f7f69d1420145729d3c24c57bc5e665f233897b26bc0a2a78b8e45",
+      "raw_bytes": 24845,
+      "path": "yaYUL/yaYUL.h",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yaYUL.o",
+      "raw_sha256": "bd59e92ea053917f5b86e4b8ab428f614b647be0958850e0f293cdeb26c246af",
+      "raw_bytes": 40536,
+      "path": "yaYUL/yaYUL.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yul2agc.c",
+      "raw_sha256": "c27fb4c3078687c0be6091e1f6244f6cdab9035626e26119ca4c388337b021af",
+      "raw_bytes": 4021,
+      "path": "yaYUL/yul2agc.c",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    },
+    {
+      "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/assembly-77742cdf916841e29275f47e6b53a910/yaYUL/yul2agc.o",
+      "raw_sha256": "c6cdfa999da8e9f0cc7f94ccdbda4ac6c5e301700182907784a5bdc53d93e375",
+      "raw_bytes": 4392,
+      "path": "yaYUL/yul2agc.o",
+      "reason": "Rebuilt host binary/generated symbol-table path data or original source extraction; exact pinned archive/source hashes and commands retained."
+    }
+  ],
+  "note": "Actual bytes only. JSONL lossless gzip decompresses byte-for-byte; failed attempts remain failures."
+}

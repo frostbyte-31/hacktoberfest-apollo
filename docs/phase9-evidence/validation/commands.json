@@ -1,0 +1,71 @@
+[
+  {
+    "label": "final",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/run_alignment.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/final"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T18:23:18.603097+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T18:23:23.146927+00:00"
+  },
+  {
+    "label": "repeat",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/run_alignment.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/repeat"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T18:23:23.148119+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T18:23:26.875551+00:00"
+  },
+  {
+    "label": "mark-irq-off",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/run_alignment.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/mark-irq-off",
+      "--no-mark-irq"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T18:23:26.876549+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T18:23:30.823426+00:00"
+  },
+  {
+    "label": "analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/analyze.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/final",
+      "--repeat",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/repeat",
+      "--negative",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/mark-irq-off",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/final-batch01/analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T18:23:30.824311+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T18:23:31.189799+00:00"
+  }
+]

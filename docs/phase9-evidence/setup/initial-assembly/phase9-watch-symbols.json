@@ -1,0 +1,324 @@
+{
+  "routines": {
+    "P51": {
+      "addressOctal": "14,3427",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 4402,
+      "kind": "F",
+      "listingLine": 65568,
+      "offset": 791,
+      "sRegister": 1815
+    },
+    "P51B": {
+      "addressOctal": "14,3461",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 4403,
+      "kind": "F",
+      "listingLine": 65569,
+      "offset": 817,
+      "sRegister": 1841
+    },
+    "P51C": {
+      "addressOctal": "14,3472",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 4404,
+      "kind": "F",
+      "listingLine": 65570,
+      "offset": 826,
+      "sRegister": 1850
+    },
+    "P51G": {
+      "addressOctal": "14,3552",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 4407,
+      "kind": "F",
+      "listingLine": 65573,
+      "offset": 874,
+      "sRegister": 1898
+    },
+    "AOTMARK": {
+      "addressOctal": "07,2000",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 355,
+      "kind": "F",
+      "listingLine": 64176,
+      "offset": 0,
+      "sRegister": 1024
+    },
+    "MARKRUPT": {
+      "addressOctal": "07,2332",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 3135,
+      "kind": "F",
+      "listingLine": 65144,
+      "offset": 218,
+      "sRegister": 1242
+    },
+    "GETDAT": {
+      "addressOctal": "07,2063",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 2137,
+      "kind": "F",
+      "listingLine": 64807,
+      "offset": 51,
+      "sRegister": 1075
+    },
+    "CODE7": {
+      "addressOctal": "07,2107",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 917,
+      "kind": "F",
+      "listingLine": 64384,
+      "offset": 71,
+      "sRegister": 1095
+    },
+    "GETMKS": {
+      "addressOctal": "07,2202",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 2145,
+      "kind": "F",
+      "listingLine": 64815,
+      "offset": 130,
+      "sRegister": 1154
+    },
+    "MARKCHEX": {
+      "addressOctal": "07,2216",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 3120,
+      "kind": "F",
+      "listingLine": 65174,
+      "offset": 142,
+      "sRegister": 1166
+    },
+    "AVESTAR": {
+      "addressOctal": "07,2241",
+      "bank": 7,
+      "fixedBank": 7,
+      "index": 470,
+      "kind": "F",
+      "listingLine": 64247,
+      "offset": 161,
+      "sRegister": 1185
+    },
+    "CHKSDATA": {
+      "addressOctal": "14,3256",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 843,
+      "kind": "F",
+      "listingLine": 64400,
+      "offset": 686,
+      "sRegister": 1710
+    },
+    "AXISGEN": {
+      "addressOctal": "23,3441",
+      "bank": 19,
+      "fixedBank": 19,
+      "index": 485,
+      "kind": "F",
+      "listingLine": 64262,
+      "offset": 801,
+      "sRegister": 1825
+    },
+    "MATMOVE": {
+      "addressOctal": "14,3377",
+      "bank": 12,
+      "fixedBank": 12,
+      "index": 3152,
+      "kind": "F",
+      "listingLine": 65161,
+      "offset": 767,
+      "sRegister": 1791
+    },
+    "R02BOTH": {
+      "addressOctal": "04,3254",
+      "bank": 4,
+      "fixedBank": 4,
+      "index": 4973,
+      "kind": "F",
+      "listingLine": 65786,
+      "offset": 684,
+      "sRegister": 1708
+    },
+    "P63LM": {
+      "addressOctal": "32,2776",
+      "bank": 26,
+      "fixedBank": 26,
+      "index": 4435,
+      "kind": "F",
+      "listingLine": 65602,
+      "offset": 510,
+      "sRegister": 1534
+    },
+    "IGNALG": {
+      "addressOctal": "32,3031",
+      "bank": 26,
+      "fixedBank": 26,
+      "index": 2413,
+      "kind": "F",
+      "listingLine": 64907,
+      "offset": 537,
+      "sRegister": 1561
+    },
+    "GUIDINIT": {
+      "addressOctal": "23,2432",
+      "bank": 19,
+      "fixedBank": 19,
+      "index": 2301,
+      "kind": "F",
+      "listingLine": 64883,
+      "offset": 282,
+      "sRegister": 1306
+    },
+    "LEMPREC": {
+      "addressOctal": "13,3057",
+      "bank": 11,
+      "fixedBank": 11,
+      "index": 2811,
+      "kind": "F",
+      "listingLine": 65041,
+      "offset": 559,
+      "sRegister": 1583
+    },
+    "VARALARM": {
+      "addressOctal": "5744",
+      "index": 6253,
+      "kind": "F",
+      "listingLine": 66224,
+      "value": 3044
+    }
+  },
+  "erasables": {
+    "FLAGWRD3": {
+      "addressOctal": "0077",
+      "index": 2004,
+      "kind": "E",
+      "listingLine": 64762,
+      "value": 63
+    },
+    "REFSMMAT": {
+      "addressOctal": "E3,1733",
+      "bank": 3,
+      "index": 4657,
+      "kind": "E",
+      "linearErasable": 987,
+      "listingLine": 65647,
+      "sRegister": 987
+    },
+    "MODREG": {
+      "addressOctal": "1011",
+      "index": 3283,
+      "kind": "E",
+      "listingLine": 65203,
+      "value": 521
+    },
+    "MARKSTAT": {
+      "addressOctal": "1312",
+      "index": 3136,
+      "kind": "E",
+      "listingLine": 65145,
+      "value": 714
+    },
+    "MARKCNTR": {
+      "addressOctal": "E7,1550",
+      "bank": 7,
+      "index": 3121,
+      "kind": "E",
+      "linearErasable": 1896,
+      "listingLine": 65175,
+      "sRegister": 872
+    },
+    "AOTCODE": {
+      "addressOctal": "0735",
+      "index": 353,
+      "kind": "E",
+      "listingLine": 64219,
+      "value": 477
+    },
+    "AZ": {
+      "addressOctal": "1347",
+      "index": 491,
+      "kind": "E",
+      "listingLine": 64223,
+      "value": 743
+    },
+    "EL": {
+      "addressOctal": "1350",
+      "index": 1687,
+      "kind": "E",
+      "listingLine": 64667,
+      "value": 744
+    },
+    "STARIND": {
+      "addressOctal": "E5,1757",
+      "bank": 5,
+      "index": 5498,
+      "kind": "E",
+      "linearErasable": 1519,
+      "listingLine": 65955,
+      "sRegister": 1007
+    },
+    "FAILREG": {
+      "addressOctal": "0375",
+      "index": 1908,
+      "kind": "E",
+      "listingLine": 64756,
+      "value": 253
+    },
+    "MARKDOWN": null,
+    "MARKTIME": null,
+    "MKDEX": {
+      "addressOctal": "E7,1552",
+      "bank": 7,
+      "index": 3247,
+      "kind": "E",
+      "linearErasable": 1898,
+      "listingLine": 65212,
+      "sRegister": 874
+    },
+    "MARKDWN1": null,
+    "MARKDWN2": null,
+    "MARKBUF1": null,
+    "MARKBUF2": null,
+    "WHICH": {
+      "addressOctal": "E7,1455",
+      "bank": 7,
+      "index": 6644,
+      "kind": "E",
+      "linearErasable": 1837,
+      "listingLine": 66349,
+      "sRegister": 813
+    },
+    "IMODES30": {
+      "addressOctal": "1302",
+      "index": 2428,
+      "kind": "E",
+      "listingLine": 64923,
+      "value": 706
+    },
+    "IMODES33": {
+      "addressOctal": "1303",
+      "index": 2429,
+      "kind": "E",
+      "listingLine": 64924,
+      "value": 707
+    },
+    "DSPTAB": {
+      "addressOctal": "1023",
+      "index": 1566,
+      "kind": "E",
+      "listingLine": 64589,
+      "value": 531
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/assembly-reproduction",
+    "exit": 0,
+    "stdout": "compiler-version.stdout",
+    "stderr": "compiler-version.stderr"
+  },
+  {
+    "argv": [
+      "make",
+      "NATIVE=1",
+      "cc=cc",
+      "NVER=\\\"1.0\\\""
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/assembly-reproduction/yaYUL",
+    "exit": 0,
+    "stdout": "build-yayul.stdout",
+    "stderr": "build-yayul.stderr"
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/assembly-reproduction/yaYUL/yaYUL",
+      "MAIN.agc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/assembly-reproduction/Luminary099",
+    "exit": 0,
+    "stdout": "assemble.stdout",
+    "stderr": "assemble.stderr"
+  }
+]

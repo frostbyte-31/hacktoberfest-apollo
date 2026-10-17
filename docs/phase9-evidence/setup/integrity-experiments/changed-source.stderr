@@ -1,0 +1,9 @@
+Setup failed; retained diagnostics: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-integrity-test/changed-source-cache/setups/20261017T181923Z-c47d0b2c
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/prepare.py", line 201, in <module>
+    main()
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/prepare.py", line 161, in main
+    source, input_hashes = verify_or_extract(archive, cache, run)
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/prepare.py", line 138, in verify_or_extract
+    raise ValueError("Cached source differs from pinned archive; files left untouched")
+ValueError: Cached source differs from pinned archive; files left untouched

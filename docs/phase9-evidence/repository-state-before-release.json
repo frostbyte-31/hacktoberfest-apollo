@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-10-17T18:31:15.298927+00:00",
+  "context": "State after validation, before release commits. Per-file hashes identify the tested uncommitted Phase8/9 implementation.",
+  "branch": "main",
+  "execution_base_revision": "d8969a456cf59ae6873aea42bc2e480e84adae3a",
+  "working_tree_at_capture": [
+    " M roadmap.md",
+    "?? docs/PHASE8_POWERED_DESCENT_FEASIBILITY.md",
+    "?? docs/phase8-evidence/",
+    "?? docs/phase9-evidence/"
+  ],
+  "remote": "git@github.com:frostbyte-31/hacktoberfest-apollo.git",
+  "prior_integrity": {
+    "ok": true,
+    "files_checked": 3393,
+    "changed_or_missing": []
+  },
+  "tests": {
+    "passed": 314,
+    "historical_missing_log_errors": 3,
+    "unexpected_failures": 0,
+    "phase8": 10,
+    "phase9": 19,
+    "existing_passes": 285
+  },
+  "note": "Historical errors remain errors; fresh logs are new results under this phase, never reconstructed historical logs."
+}

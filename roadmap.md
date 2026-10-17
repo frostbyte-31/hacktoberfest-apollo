@@ -85,5 +85,31 @@
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.
 - Cold-reset 01107 is explained for the zeroed-memory fixture. A clean post-V36 P00 interval still does not provide calibrated alignment, mission padload or descent readiness.
 
-## Not authorized
-- Frontend, multiplayer, AI crew, complete lunar physics engine, full application development
+## Live attitude console (verified bounded local sessions)
+- [x] Connect source-mapped yaw/pitch RHC inputs to fresh original Luminary executions, with original readiness, bounded leases, genuine RCS/vehicle/CDU feedback and recorded gateway/native traces
+- [x] Verify signed controls, combined input, exact native replay, HTTP boundaries and desktop/phone presentation; preserve recorded replay as a separate mode
+- See docs/LIVE_ATTITUDE_CONTROL.md and docs/live-control-evidence/. This remains the synthetic Phase 7 attitude fixture, not a mission initialization or landing application.
+
+## Phase 8: P63 selection from the unchanged Phase 5 startup (verified feasibility)
+- [x] Reproduce the literal legacy Phase 5 input schedule and original probe bytes, including its early rejected P00 request and retained 01520
+- [x] Add only V37E63E; observe original P63 dispatch, clear REFSMFLG, R02 rejection and 00220, with exact fresh replay
+- [x] Trace the pre-entry THRUST counter/channel014 change to V37's original engine-off/autothrottle reset, without claiming thrust or guidance
+- [x] Preserve all prior evidence, failed observer attempts and ten passing focused tests in docs/phase8-evidence/
+- See docs/PHASE8_POWERED_DESCENT_FEASIBILITY.md. Phase 8 does not depend on Phase 9 alignment and does not demonstrate powered descent.
+
+## Phase 9: original P51 alignment and subsequent P63 readiness (verified synthetic fixture)
+- [x] Re-fetch and verify the pinned archive, rebuild unchanged Luminary byte-for-byte, and resolve observers from the actual listing
+- [x] Drive authentic P51 DSKY prompts and two COAS-mode star pairs using explicitly synthetic stationary geometry and normal key/mark inputs
+- [x] Supply the documented mark interrupt through an external hardware-event bridge; show that normal channel016 packets without this interrupt cannot complete a pair
+- [x] Observe original matrix stores and interpreter SET REFSMFLG, then normal V37E63E passing R02; repeat the complete native trace byte-for-byte
+- [x] Identify the next actual blocker: zero mission vectors produce a degenerate time-to-go cubic; observed zero-divisor saturation and ROOTPSRS limit route to abortive 01406
+- [x] Preserve all Phase 1–8 evidence and run 19 focused tests plus relevant regressions; historical missing-log errors remain disclosed
+- See docs/PHASE9_IMU_ALIGNMENT.md and docs/phase9-evidence/. Software validity in this synthetic fixture is not calibrated physical alignment or a valid descent mission state.
+
+## Next prerequisites — not implemented here
+1. Establish source-justified, internally consistent mission geometry, state vectors, epochs and guidance padload; inspect the degenerate cubic before another descent-entry attempt. Do not force flags or coefficients to clear 01406.
+2. Validate the throttle counter/pulse hardware contract, then a separate engine/thrust plant and specific-force/PIPA transport. The Phase 8 reset signal alone is insufficient.
+3. Validate the radar measurement provider/status/interrupt contract after navigation frames and translational state exist.
+
+## Outside the completed Phase 8–9 scope
+- Powered descent, ignition/engine response, P64/P66, landing radar, touchdown, new frontend features, multiplayer, AI crew and a complete lunar physics application

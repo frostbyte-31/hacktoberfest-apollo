@@ -1,0 +1,333 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:33.603850+00:00",
+    "end_utc": "2026-10-17T18:24:33.745129+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:33.746950+00:00",
+    "end_utc": "2026-10-17T18:24:33.789687+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/inspect_bridge.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:33.790442+00:00",
+    "end_utc": "2026-10-17T18:24:34.332997+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "positive_slow",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:34.333499+00:00",
+    "end_utc": "2026-10-17T18:24:34.834599+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "positive_slow",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_slow-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:34.835252+00:00",
+    "end_utc": "2026-10-17T18:24:34.967418+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "negative_slow",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:34.968866+00:00",
+    "end_utc": "2026-10-17T18:24:35.046968+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "negative_slow",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_slow-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.047745+00:00",
+    "end_utc": "2026-10-17T18:24:35.175479+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "positive_fast",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.176594+00:00",
+    "end_utc": "2026-10-17T18:24:35.252237+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "positive_fast",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/positive_fast-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.252821+00:00",
+    "end_utc": "2026-10-17T18:24:35.330461+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "negative_fast",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.331966+00:00",
+    "end_utc": "2026-10-17T18:24:35.407797+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "negative_fast",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/negative_fast-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.408575+00:00",
+    "end_utc": "2026-10-17T18:24:35.483962+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "mixed",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.485489+00:00",
+    "end_utc": "2026-10-17T18:24:35.563226+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "mixed",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/mixed-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.563916+00:00",
+    "end_utc": "2026-10-17T18:24:35.641395+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "alternating_supported",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.642690+00:00",
+    "end_utc": "2026-10-17T18:24:35.775591+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "alternating_supported",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/alternating_supported-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.776577+00:00",
+    "end_utc": "2026-10-17T18:24:35.909494+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "signed_wrap",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.911766+00:00",
+    "end_utc": "2026-10-17T18:24:35.989928+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "signed_wrap",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/signed_wrap-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:35.990749+00:00",
+    "end_utc": "2026-10-17T18:24:36.062268+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "fifo_capacity_control",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:36.063634+00:00",
+    "end_utc": "2026-10-17T18:24:36.248464+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "fifo_capacity_control",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/fifo_capacity_control-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:36.249323+00:00",
+    "end_utc": "2026-10-17T18:24:36.437840+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "ringbuffer_capacity_control",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:36.441072+00:00",
+    "end_utc": "2026-10-17T18:24:36.570480+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu/run_validation.py",
+      "--case",
+      "ringbuffer_capacity_control",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T182430Z-161916cb/cdu/ringbuffer_capacity_control-replay.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:24:36.571312+00:00",
+    "end_utc": "2026-10-17T18:24:36.704438+00:00",
+    "exit": 0
+  }
+]

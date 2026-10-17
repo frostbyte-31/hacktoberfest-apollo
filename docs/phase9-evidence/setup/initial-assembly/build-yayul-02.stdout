@@ -1,0 +1,3 @@
+cc  -g -O0 -DNVER=\"1.0\" -DINSTALLDIR=/usr/local -Wall -c -o yaYUL.o yaYUL.c
+cc  -g -O0 -DNVER=\"1.0\" -DINSTALLDIR=/usr/local -Wall -c -o yul2agc.o yul2agc.c
+cc  -o yaYUL GetOctOrDec.o IncPc.o Parse2CADR.o Parse2DEC.o Parse2FCADR.o ParseBANK.o ParseBBCON.o ParseBLOCK.o ParseCADR.o ParseCHECKequals.o ParseEBANKEquals.o ParseECADR.o ParseEQUALS.o ParseERASE.o ParseEqMinus.o ParseEqualsECADR.o ParseGENADR.o ParseGeneral.o ParseINDEX.o ParseInterpretiveOperand.o ParseOCT.o ParseSBANKEquals.o ParseSETLOC.o ParseST.o ParseXCADR.o Pass.o PseudoToSegmented.o SymbolPass.o SymbolTable.o Utilities.o strcmpEBCDIC.o yaYUL.o yul2agc.o -lm

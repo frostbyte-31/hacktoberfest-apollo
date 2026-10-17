@@ -1,0 +1,25 @@
+test_component_yaw_sign_and_sensor (test_control_path.ControlEvidence) ... ok
+test_phase3_not_a_thruster_experiment (test_control_path.ControlEvidence) ... ok
+test_prior_evidence_preserved (test_control_path.ControlEvidence) ... ERROR
+test_probe_inputs_received (test_control_path.ControlEvidence) ... ok
+test_replay (test_control_path.ControlEvidence) ... ok
+test_source_readiness_blocks_actuation (test_control_path.ControlEvidence) ... ok
+
+======================================================================
+ERROR: test_prior_evidence_preserved (test_control_path.ControlEvidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase4-evidence/test_control_path.py", line 10, in test_prior_evidence_preserved
+    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1249, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.224s
+
+FAILED (errors=1)

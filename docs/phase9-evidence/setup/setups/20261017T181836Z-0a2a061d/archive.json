@@ -1,0 +1,10 @@
+{
+  "actualSHA256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+  "archive": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+  "bytes": 56641597,
+  "expectedSHA256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "suppliedOffline": true,
+  "url": "https://codeload.github.com/virtualagc/virtualagc/tar.gz/f577e3fd917866c59334e6cdd32504f09df76f60",
+  "verified": true
+}

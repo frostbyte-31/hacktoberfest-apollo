@@ -1,0 +1,56 @@
+[
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/source/verify_sources.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:25:16.768264+00:00",
+    "end_utc": "2026-10-17T18:25:16.843268+00:00",
+    "exit": 0,
+    "timeout_seconds": 60
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/physics/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/physics",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--runtime-manifest",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime-manifest.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:25:16.843808+00:00",
+    "end_utc": "2026-10-17T18:25:17.954243+00:00",
+    "exit": 0,
+    "timeout_seconds": 600
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T182516Z-ec5a1cf1/integration",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--runtime-manifest",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime-manifest.json",
+      "--cc",
+      "/usr/bin/cc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T18:25:17.955051+00:00",
+    "end_utc": "2026-10-17T18:26:10.440521+00:00",
+    "exit": 0,
+    "timeout_seconds": 600
+  }
+]
