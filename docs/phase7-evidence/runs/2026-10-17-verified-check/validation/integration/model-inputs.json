@@ -1,0 +1,7 @@
+{
+  "physics_adapter_sha256": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062",
+  "physics_overlay_source_sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a",
+  "derived_overlay_sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075",
+  "server_sha256": "8bda1e22cf7700f188ca2991773b6e5ce45fbe0a7e90f16233a408aa6c8a9ec2",
+  "source_notes": "Retained decoder/initialization plus source-locked phase7 rotational overlay; no AGC/emulator edit"
+}

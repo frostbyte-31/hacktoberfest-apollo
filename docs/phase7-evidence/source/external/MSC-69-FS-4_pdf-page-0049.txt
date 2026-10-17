@@ -1,0 +1,4 @@
+Channels.FlagwordsandOtherDiscreteInformationRegisters
+Channelsl-4>7,10,34.and35arediscussedinthelistofMajorVariablesChannel5Bits15-9havenosignificance;bits8-1aresettocommandRCSjetfiringsandreset.toterminatethefiring.BitCodeJetNumberSystemRotationTranslationEffectEffect8 ID 14 B +U +X7 lU 13 A -U -X6 2D 10 A +V +x5 2D 9 B -V -X4 3D 6 B -U +x3 3U 5 A +u -X2 4D 2 A -V +x1 4U 1 B +v -XChannel_6Bits15-9havenosignificance;bits8-1aresettocommandRCSjetfiringsandresettoterminatethefiring•
+BitCodeJetNumberSystemRotationTranslationEffectEffect8 IS 16 B -P +Y7 4S 4 A +P -Y6 33 8 A -P -Y5 2S 12 B +P +Y4 2F 11 A -P +Z3 IF 15 A +P -Z2 4F 3 B -P -Z1 3F 7 B +P +ZChannel11Bits15,12,11,and8arespare.
+

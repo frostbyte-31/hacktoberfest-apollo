@@ -1,0 +1,92 @@
+{
+  "executed_input_hashes_verified": 18,
+  "final_retention_groups_verified": {
+    "copied_files": 335,
+    "identical_trace_references": 33,
+    "lossless_trace_compression": 8
+  },
+  "finished_utc": "2026-10-17T15:39:36.653708+00:00",
+  "git_diff_check_exit": 0,
+  "gzip_jsonl_files_parsed": 21,
+  "json_files_parsed_before_this_record": 220,
+  "no_symlinks_or_compiled_libraries_or_oversized_files": true,
+  "prior_preservation": {
+    "files_checked": 1520,
+    "manifest_sha256": "301b40f42e6d5d91dc9c5980a645c010dda3946bd82ac2a804098609610ff27a",
+    "mismatches": [],
+    "missing": [],
+    "ok": true,
+    "source_revision": "c10810700d875099d226384a37487376d0cf9460",
+    "unlisted": [],
+    "unsafe": []
+  },
+  "report_entrypoint_links_verified": [
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/preflight/commands.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/validation/environment.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/source/mappings.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/source/README.md"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/physics/apply_physics.py"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/physics/orientation.tcl"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/validation/integration/summary.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/validation/integration/"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/retention.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/commands.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/make-check.stdout"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/prior_hashes.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/runs/2026-10-17-verified-check/retention.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/repository-state.json"
+    },
+    {
+      "document": "docs/PHASE7_MULTIAXIS_VALIDATION.md",
+      "target": "phase7-evidence/package-manifest.json"
+    },
+    {
+      "document": "docs/phase7-evidence/README.md",
+      "target": "../PHASE7_MULTIAXIS_VALIDATION.md"
+    }
+  ],
+  "scope": "Packaging integrity; does not replace actual test and native execution records",
+  "started_utc": "2026-10-17T15:39:32.830748+00:00",
+  "status": "VERIFIED"
+}

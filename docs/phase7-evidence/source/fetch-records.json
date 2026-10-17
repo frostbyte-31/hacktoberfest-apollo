@@ -1,0 +1,234 @@
+{
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "commands": [
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/MAIN.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/MAIN.agc"
+      ],
+      "start_utc": "2026-10-17 15:04:34 UTC",
+      "end_utc": "2026-10-17 15:04:34 UTC",
+      "chunk_id": "579e55",
+      "wall_time_seconds": 0.364649042,
+      "exit_code": 0,
+      "original_token_count": 80,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  8904  100  8904    0     0  18426      0 --:--:-- --:--:-- --:--:-- 18434\n"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc"
+      ],
+      "start_utc": "2026-10-17 15:04:34 UTC",
+      "end_utc": "2026-10-17 15:04:34 UTC",
+      "chunk_id": "105357",
+      "wall_time_seconds": 0.368498542,
+      "exit_code": 0,
+      "original_token_count": 80,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  9540  100  9540    0     0  19581      0 --:--:-- --:--:-- --:--:-- 19629\n"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl"
+      ],
+      "start_utc": "2026-10-17 15:04:34 UTC",
+      "end_utc": "2026-10-17 15:04:34 UTC",
+      "chunk_id": "71ab2c",
+      "wall_time_seconds": 0.392838291,
+      "exit_code": 0,
+      "original_token_count": 80,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100 20188  100 20188    0     0  39341      0 --:--:-- --:--:-- --:--:-- 39429\n"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P-AXIS_RCS_AUTOPILOT.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/P-AXIS_RCS_AUTOPILOT.agc"
+      ],
+      "start_utc": "2026-10-17 15:05:05 UTC",
+      "chunk_id": "73feb6",
+      "wall_time_seconds": 0.585935041,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r 48 21495   48 10356    0     0  19961      0  0:00:01 --:--:--  0:00:01 19953\r100 21495  100 21495    0     0  30700      0 --:--:-- --:--:-- --:--:-- 30663\n",
+      "end_utc": "2026-10-17 15:05:05 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc"
+      ],
+      "start_utc": "2026-10-17 15:05:05 UTC",
+      "chunk_id": "3b6161",
+      "wall_time_seconds": 0.586775792,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r 30 17716   30  5455    0     0  10516      0  0:00:01 --:--:--  0:00:01 10510\r100 17716  100 17716    0     0  25304      0 --:--:-- --:--:-- --:--:-- 25272\n",
+      "end_utc": "2026-10-17 15:05:05 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/DAP_INTERFACE_SUBROUTINES.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/DAP_INTERFACE_SUBROUTINES.agc"
+      ],
+      "start_utc": "2026-10-17 15:05:05 UTC",
+      "chunk_id": "acd72a",
+      "wall_time_seconds": 0.584346833,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  5089  100  5089    0     0   7252      0 --:--:-- --:--:-- --:--:--  7249\r100  5089  100  5089    0     0   7251      0 --:--:-- --:--:-- --:--:--  7249\n",
+      "end_utc": "2026-10-17 15:05:05 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/DAPIDLER_PROGRAM.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/DAPIDLER_PROGRAM.agc"
+      ],
+      "start_utc": "2026-10-17 15:05:05 UTC",
+      "chunk_id": "c8bb3a",
+      "wall_time_seconds": 0.583101042,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r 57 13257   57  7622    0     0  14698      0 --:--:-- --:--:-- --:--:-- 14685\r100 13257  100 13257    0     0  18937      0 --:--:-- --:--:-- --:--:-- 18938\n",
+      "end_utc": "2026-10-17 15:05:05 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LEM_GEOMETRY.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/LEM_GEOMETRY.agc"
+      ],
+      "start_utc": "2026-10-17 15:05:05 UTC",
+      "chunk_id": "4ab181",
+      "wall_time_seconds": 0.584124125,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  5365  100  5365    0     0   7616      0 --:--:-- --:--:-- --:--:--  7609\r100  5365  100  5365    0     0   7615      0 --:--:-- --:--:-- --:--:--  7609\n",
+      "end_utc": "2026-10-17 15:05:05 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://www.ibiblio.org/apollo/assembly_language_manual.html",
+        "--output",
+        "docs/phase7-evidence/source/external/assembly_language_manual.html"
+      ],
+      "start_utc": "2026-10-17 15:06:44 UTC",
+      "chunk_id": "17c9d0",
+      "wall_time_seconds": 1.5716727499999998,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  2  548k    2 14034    0     0  15040      0  0:00:37 --:--:--  0:00:37 15025\r100  548k  100  548k    0     0   325k      0  0:00:01  0:00:01 --:--:--  325k\n",
+      "end_utc": "2026-10-17 15:06:46 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://www.ibiblio.org/apollo/io_channels.html",
+        "--output",
+        "docs/phase7-evidence/source/external/io_channels.html"
+      ],
+      "start_utc": "2026-10-17 15:06:44 UTC",
+      "chunk_id": "864c65",
+      "wall_time_seconds": 0.81681825,
+      "exit_code": 22,
+      "original_token_count": 92,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0 32970    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n",
+      "end_utc": "2026-10-17 15:06:45 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://www.ibiblio.org/apollo/Documents/j2-80-MSC-69-FS-4_text.pdf",
+        "--output",
+        "/private/tmp/apollo-phase7-MSC-69-FS-4-20261017T1509.pdf"
+      ],
+      "start_utc": "2026-10-17 15:08:05 UTC",
+      "chunk_id": "566aaa",
+      "wall_time_seconds": 10.002230667,
+      "session_id": 99325,
+      "original_token_count": 257,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  2 21.8M    2  535k    0     0   313k      0  0:01:11  0:00:01  0:01:10  313k\r 10 21.8M   10 2352k    0     0   834k      0  0:00:26  0:00:02  0:00:24  834k\r 24 21.8M   24 5507k    0     0  1530k      0  0:00:14  0:00:03  0:00:11 1530k\r 38 21.8M   38 8551k    0     0  1848k      0  0:00:12  0:00:04  0:00:08 1847k\r 52 21.8M   52 11.3M    0     0  1955k      0  0:00:11  0:00:05  0:00:06 2174k\r 61 21.8M   61 13.3M    0     0  2041k      0  0:00:10  0:00:06  0:00:04 2632k\r 66 21.8M   66 14.4M    0     0  1920k      0  0:00:11  0:00:07  0:00:04 2542k\r 72 21.8M   72 15.8M    0     0  1880k      0  0:00:11  0:00:08  0:00:03 2130k\r 79 21.8M   79 17.3M    0     0  1852k      0  0:00:12  0:00:09  0:00:03 1855k",
+      "first_yield_utc": "2026-10-17 15:08:15 UTC",
+      "completion_observed_utc": "2026-10-17 15:08:28 UTC",
+      "exit_code": 0,
+      "completion_note": "curl completion resumed via write_stdin, exit 0; initial end marker was only first yield"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://www.ibiblio.org/apollo/Documents/dd_memo_254.pdf",
+        "--output",
+        "/private/tmp/apollo-phase7-dd-memo-254-20261017T1509.pdf"
+      ],
+      "start_utc": "2026-10-17 15:08:05 UTC",
+      "chunk_id": "a23b80",
+      "wall_time_seconds": 1.988612458,
+      "exit_code": 0,
+      "original_token_count": 119,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0 2019k    0 14065    0     0  18292      0  0:01:53 --:--:--  0:01:53 18289\r 33 2019k   33  676k    0     0   423k      0  0:00:04  0:00:01  0:00:03  423k\r100 2019k  100 2019k    0     0   960k      0  0:00:02  0:00:02 --:--:--  960k\n",
+      "end_utc": "2026-10-17 15:08:07 UTC"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FLAGWORD_ASSIGNMENTS.agc",
+        "--output",
+        "docs/phase7-evidence/source/upstream/Luminary099/FLAGWORD_ASSIGNMENTS.agc"
+      ],
+      "start_utc": "2026-10-17 15:09:24 UTC",
+      "chunk_id": "a2db6f",
+      "wall_time_seconds": 0.364961333,
+      "exit_code": 0,
+      "original_token_count": 99,
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100 36522  100 36522    0     0  75611      0 --:--:-- --:--:-- --:--:-- 75614\n",
+      "end_utc": "2026-10-17 15:09:25 UTC"
+    }
+  ],
+  "inspection_notes": [
+    "The first PDF parse began before curl completed and failed with Invalid object in /Pages; no retained extract was created from the incomplete file. Parsing was repeated successfully after curl completed.",
+    "The first page-image lookup happened while pdftoppm was still running and failed to locate the image. The renderer later completed with exit 0 and the finished page was visually inspected.",
+    "One guessed io_channels.html URL returned 404; it is unused. The actual manual is assembly_language_manual.html#io_channels."
+  ]
+}

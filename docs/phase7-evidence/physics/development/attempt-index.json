@@ -1,0 +1,95 @@
+{
+  "scope": "Actual component-development attempts, kept separate from the successful final provider capture; no native AGC executions claimed by these mechanics tests.",
+  "attempts": [
+    {
+      "name": "attempt-1",
+      "action": "apply_physics source-locked generation plus interactive locked-Tcl phase7_step .01 0 85 0 smoke",
+      "generation_exit": 0,
+      "tcl_exit": 0,
+      "completion_marker_observed": "COMPONENT_OK",
+      "retained": "Generated overlay and audit. Interactive stdin/stdout were visible in the tool transcript but were not redirected; no replacement raw log was invented."
+    },
+    {
+      "name": "attempt-2",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase7-evidence/physics/run_validation.py",
+        "--source",
+        ".build/milestone3/pinned-source",
+        "--tcl",
+        ".build/reproducibility/runtime/bin/tclsh8.6",
+        "--output",
+        ".build/phase7-physics/attempt-2"
+      ],
+      "exit": 1,
+      "cause": "Actual negative-control input30rad/s on all axes converged within20 iterations, so Tcl rejected the fixture expectation. The run remains FAILED; numerical algorithms were not altered.",
+      "negative_control_actual_omega_rad_s": [
+        30,
+        30,
+        30
+      ]
+    },
+    {
+      "name": "convergence-search",
+      "exit": 0,
+      "purpose": "Bounded solver characterization at35,40,50,60,80,100rad/s; every input explicitly exhausted20 iterations. Complete script, stdout, stderr and command retained."
+    },
+    {
+      "name": "attempt-3",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase7-evidence/physics/run_validation.py",
+        "--source",
+        ".build/milestone3/pinned-source",
+        "--tcl",
+        ".build/reproducibility/runtime/bin/tclsh8.6",
+        "--output",
+        ".build/phase7-physics/attempt-3"
+      ],
+      "exit": 0,
+      "result": "All then-current12checks passed after negative-control input changed to35rad/s; old source/module not modified."
+    },
+    {
+      "name": "tests-first",
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/phase7-evidence/physics",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit": 0,
+      "tests_run": 15,
+      "capture": "Actual tool-output summary only; not redirected. Later final16test run is retained in full."
+    },
+    {
+      "name": "results",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/phase7-evidence/physics/run_validation.py",
+        "--source",
+        ".build/milestone3/pinned-source",
+        "--tcl",
+        ".build/reproducibility/runtime/bin/tclsh8.6",
+        "--output",
+        ".build/phase7-physics/attempt-4"
+      ],
+      "exit": 0,
+      "result": "Final13checks pass; adds explicit principal signed sensor-axis assertions and before-execution source snapshots."
+    },
+    {
+      "name": "tests-final",
+      "exit": 0,
+      "tests_run": 16,
+      "capture": "Complete actual unittest stdout/stderr and command retained in development/tests-final."
+    }
+  ]
+}

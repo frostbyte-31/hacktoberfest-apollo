@@ -1,0 +1,11 @@
+--- pinned/AGC_IMU.tcl
++++ selector-corrected/AGC_IMU.tcl
+@@ -524,7 +524,7 @@
+      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]
+      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+      # ---- LM X-Axis/YAW-Axis ----
+-     if {$Omega_Yaw < 4} {
++     if {abs($Omega_Yaw) < 4} {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 32} else {write_socket "PCDU" 32}
+      } else {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 32} else {write_socket "PCDU_FAST" 32}

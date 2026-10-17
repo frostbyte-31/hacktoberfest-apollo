@@ -1,7 +1,7 @@
 PYTHON ?= python3
 export PYTHONDONTWRITEBYTECODE := 1
 
-.PHONY: verify test runtime reproduce validate-milestone2 validate-milestone3 check
+.PHONY: verify test runtime reproduce validate-milestone2 validate-milestone3 test-phase7 validate-phase7 check
 
 verify:
 	$(PYTHON) docs/milestone1-evidence/evidence.py verify
@@ -23,7 +23,15 @@ validate-milestone2: runtime
 validate-milestone3: runtime
 	$(PYTHON) docs/milestone3-evidence/validate.py
 
+test-phase7: runtime
+	$(PYTHON) docs/phase7-evidence/run_tests.py
+
+validate-phase7: runtime
+	$(PYTHON) docs/phase7-evidence/validate.py
+
 check: test
 	$(MAKE) reproduce
 	$(MAKE) validate-milestone2
 	$(MAKE) validate-milestone3
+	$(MAKE) test-phase7
+	$(MAKE) validate-phase7

@@ -1,0 +1,29 @@
+--- pinned/AGC_IMU.tcl
++++ phase7/AGC_IMU.tcl
+@@ -524,7 +524,7 @@
+      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]
+      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+      # ---- LM X-Axis/YAW-Axis ----
+-     if {$Omega_Yaw < 4} {
++     if {abs($Omega_Yaw) < 4} {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 32} else {write_socket "PCDU" 32}
+      } else {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 32} else {write_socket "PCDU_FAST" 32}
+@@ -555,7 +555,7 @@
+      set PIMUY [expr $PIMUY + $ANGLE_INCR_SIGN]
+      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+      # ---- LM Y-Axis/PITCH-Axis ----
+-     if {$Omega_Pitch < 4.0} {
++     if {abs($Omega_Pitch) < 4.0} {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 33} else {write_socket "PCDU" 33}
+      } else {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 33} else {write_socket "PCDU_FAST" 33}
+@@ -589,7 +589,7 @@
+      set PIMUZ [expr $PIMUZ + $ANGLE_INCR_SIGN]
+      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+      # ---- LM Z-Axis/ROLL-Axis ----
+-     if {$Omega_Roll < 4.0} {
++     if {abs($Omega_Roll) < 4.0} {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 34} else {write_socket "PCDU" 34}
+      } else {
+        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 34} else {write_socket "PCDU_FAST" 34}

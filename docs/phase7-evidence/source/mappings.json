@@ -1,0 +1,236 @@
+{
+  "status": "VERIFIED source mapping; coupled execution separate",
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "channels": {
+    "005": [
+      {
+        "bit": 1,
+        "mask": 1,
+        "model_name": "Q4U",
+        "jet_number": 1,
+        "system": "B",
+        "gsop_code": "4U",
+        "rotation": "+V"
+      },
+      {
+        "bit": 2,
+        "mask": 2,
+        "model_name": "Q4D",
+        "jet_number": 2,
+        "system": "A",
+        "gsop_code": "4D",
+        "rotation": "-V"
+      },
+      {
+        "bit": 3,
+        "mask": 4,
+        "model_name": "Q3U",
+        "jet_number": 5,
+        "system": "A",
+        "gsop_code": "3U",
+        "rotation": "+U"
+      },
+      {
+        "bit": 4,
+        "mask": 8,
+        "model_name": "Q3D",
+        "jet_number": 6,
+        "system": "B",
+        "gsop_code": "3D",
+        "rotation": "-U"
+      },
+      {
+        "bit": 5,
+        "mask": 16,
+        "model_name": "Q2U",
+        "jet_number": 9,
+        "system": "B",
+        "gsop_code": "2U",
+        "rotation": "-V"
+      },
+      {
+        "bit": 6,
+        "mask": 32,
+        "model_name": "Q2D",
+        "jet_number": 10,
+        "system": "A",
+        "gsop_code": "2D",
+        "rotation": "+V"
+      },
+      {
+        "bit": 7,
+        "mask": 64,
+        "model_name": "Q1U",
+        "jet_number": 13,
+        "system": "A",
+        "gsop_code": "1U",
+        "rotation": "-U"
+      },
+      {
+        "bit": 8,
+        "mask": 128,
+        "model_name": "Q1D",
+        "jet_number": 14,
+        "system": "B",
+        "gsop_code": "1D",
+        "rotation": "+U"
+      }
+    ],
+    "006": [
+      {
+        "bit": 1,
+        "mask": 1,
+        "model_name": "Q3A",
+        "jet_number": 7,
+        "system": "B",
+        "gsop_code": "3F",
+        "rotation": "+P"
+      },
+      {
+        "bit": 2,
+        "mask": 2,
+        "model_name": "Q4F",
+        "jet_number": 3,
+        "system": "B",
+        "gsop_code": "4F",
+        "rotation": "-P"
+      },
+      {
+        "bit": 3,
+        "mask": 4,
+        "model_name": "Q1F",
+        "jet_number": 15,
+        "system": "A",
+        "gsop_code": "1F",
+        "rotation": "+P"
+      },
+      {
+        "bit": 4,
+        "mask": 8,
+        "model_name": "Q2A",
+        "jet_number": 11,
+        "system": "A",
+        "gsop_code": "2F",
+        "rotation": "-P"
+      },
+      {
+        "bit": 5,
+        "mask": 16,
+        "model_name": "Q2L",
+        "jet_number": 12,
+        "system": "B",
+        "gsop_code": "2S",
+        "rotation": "+P"
+      },
+      {
+        "bit": 6,
+        "mask": 32,
+        "model_name": "Q3R",
+        "jet_number": 8,
+        "system": "A",
+        "gsop_code": "3S",
+        "rotation": "-P"
+      },
+      {
+        "bit": 7,
+        "mask": 64,
+        "model_name": "Q4R",
+        "jet_number": 4,
+        "system": "A",
+        "gsop_code": "4S",
+        "rotation": "+P"
+      },
+      {
+        "bit": 8,
+        "mask": 128,
+        "model_name": "Q1L",
+        "jet_number": 16,
+        "system": "B",
+        "gsop_code": "1S",
+        "rotation": "-P"
+      }
+    ]
+  },
+  "sources": {
+    "p_autopilot": "upstream/Luminary099/P-AXIS_RCS_AUTOPILOT.agc:100-105,1002-1015",
+    "qr_autopilot": "upstream/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc:779-783,833-841",
+    "primary_corroboration": "external/MSC-69-FS-4_pdf-page-0049.png",
+    "modern_bit_order": "Contributed/LM_Simulator/lm_simulator.tcl:814-818 in retained corresponding-source bundle; same decoder in docs/phase5-evidence/plant_server.tcl"
+  },
+  "pilot_axes": {
+    "P": "model Omega_Yaw",
+    "Q": "model Omega_Pitch",
+    "R": "model Omega_Roll"
+  },
+  "gimbals": {
+    "outer": {
+      "counter_octal": "032",
+      "model": "IMUX_ANGLE"
+    },
+    "inner": {
+      "counter_octal": "033",
+      "model": "IMUY_ANGLE"
+    },
+    "middle": {
+      "counter_octal": "034",
+      "model": "IMUZ_ANGLE"
+    }
+  },
+  "rhc": {
+    "yaw": {
+      "axis": "P",
+      "port_octal": "0167",
+      "port_decimal": 119,
+      "counter_octal": "0043",
+      "direction_bit_plus": 3,
+      "direction_bit_minus": 4
+    },
+    "pitch": {
+      "axis": "Q",
+      "port_octal": "0166",
+      "port_decimal": 118,
+      "counter_octal": "0042",
+      "direction_bit_plus": 1,
+      "direction_bit_minus": 2
+    },
+    "roll": {
+      "axis": "R",
+      "port_octal": "0170",
+      "port_decimal": 120,
+      "counter_octal": "0044",
+      "direction_bit_plus": 5,
+      "direction_bit_minus": 6
+    }
+  },
+  "rhc_direction_bits": "Active low; original channel descriptions specify minimum impulse; rate mode uses analog count ports plus shared out-of-detent bit15",
+  "words": {
+    "neutral": 28671,
+    "pitch_plus": 12286,
+    "pitch_minus": 12285,
+    "yaw_minus": 12279,
+    "yaw_minus_pitch_plus": 12278,
+    "yaw_minus_pitch_minus": 12277
+  },
+  "signed_20": {
+    "plus": 20,
+    "minus_ones_complement": 32747
+  },
+  "readiness": {
+    "state_address_octal": "0074",
+    "dapbools_address_octal": "0111",
+    "ACCSOKAY_mask": 4,
+    "PULSES_mask_octal": "040000",
+    "note": "Read-only observations; original common STARTDAP initializes Q/R as well as P"
+  },
+  "rotation_convention": {
+    "stable_to_body": "Rx(-O) Rz(-M) Ry(-I)",
+    "body_to_stable": "Ry(I) Rz(M) Rx(O)",
+    "gimbal_order": "O=CDUX;I=CDUY;M=CDUZ"
+  },
+  "limitations": [
+    "No physical lever arm or moment of inertia is proven by these tables",
+    "U/V are coupled non-orthogonal control axes",
+    "Combined P/Q motion can produce all three gimbal changes and physical R response",
+    "Later Luminary1B primary document corroborates numerical jet masks; pinned099 source remains authoritative"
+  ]
+}

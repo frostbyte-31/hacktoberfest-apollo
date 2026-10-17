@@ -1,0 +1,770 @@
+{
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "expected_hashes": "docs/phase6-evidence/corresponding-source-hashes.json",
+  "excerpts": [
+    {
+      "source": "Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5",
+      "start_line": 124,
+      "end_line": 147,
+      "lines": [
+        {
+          "line": 124,
+          "text": "# ---- IN ----"
+        },
+        {
+          "line": 125,
+          "text": "set unpSeq(PINC)                  000000000000000"
+        },
+        {
+          "line": 126,
+          "text": "set unpSeq(MINC)                  000000000000010"
+        },
+        {
+          "line": 127,
+          "text": "set unpSeq(DINC)                  000000000000100"
+        },
+        {
+          "line": 128,
+          "text": "# ---- 400cps ----"
+        },
+        {
+          "line": 129,
+          "text": "set unpSeq(PCDU)                  000000000000001"
+        },
+        {
+          "line": 130,
+          "text": "set unpSeq(MCDU)                  000000000000011"
+        },
+        {
+          "line": 131,
+          "text": "# ---- 6400cps ----"
+        },
+        {
+          "line": 132,
+          "text": "set unpSeq(PCDU_FAST)             000000000010001"
+        },
+        {
+          "line": 133,
+          "text": "set unpSeq(MCDU_FAST)             000000000010011"
+        },
+        {
+          "line": 134,
+          "text": ""
+        },
+        {
+          "line": 135,
+          "text": "# ---- OUT ----"
+        },
+        {
+          "line": 136,
+          "text": "set unpSeq(000000000001101)       POUT"
+        },
+        {
+          "line": 137,
+          "text": "set unpSeq(000000000001110)       MOUT"
+        },
+        {
+          "line": 138,
+          "text": "set unpSeq(000000000001111)       ZOUT"
+        },
+        {
+          "line": 139,
+          "text": ""
+        },
+        {
+          "line": 140,
+          "text": "# ---------------- IMU Simulation Initialization ---------------------"
+        },
+        {
+          "line": 141,
+          "text": "# ---- 39.55078125'' of arc ----"
+        },
+        {
+          "line": 142,
+          "text": "set ANGLE_INCR                    [expr 360.0 / 32768.0]"
+        },
+        {
+          "line": 143,
+          "text": "set CA_ANGLE                      0.043948"
+        },
+        {
+          "line": 144,
+          "text": "set FA_ANGLE                      [expr 0.617981/3600.0]"
+        },
+        {
+          "line": 145,
+          "text": "set PIPA_INCR                     0.0585"
+        },
+        {
+          "line": 146,
+          "text": "set NEEDLE_SCALE                  [expr 42.1875/384.0]"
+        },
+        {
+          "line": 147,
+          "text": "set IMUX_ANGLE                    0"
+        }
+      ]
+    },
+    {
+      "source": "Contributed/LM_Simulator/lm_simulator.tcl",
+      "sha256": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5",
+      "start_line": 710,
+      "end_line": 755,
+      "lines": [
+        {
+          "line": 710,
+          "text": " set i               5"
+        },
+        {
+          "line": 711,
+          "text": " set bytesReceivedCount 0"
+        },
+        {
+          "line": 712,
+          "text": " set FDAI_Update_Rate [expr 1.0 / $FDAI_Update_Rate]"
+        },
+        {
+          "line": 713,
+          "text": ""
+        },
+        {
+          "line": 714,
+          "text": " # ---- Main Loop ----"
+        },
+        {
+          "line": 715,
+          "text": " while {1} {"
+        },
+        {
+          "line": 716,
+          "text": "   # ---- Read Data from the Socket ----"
+        },
+        {
+          "line": 717,
+          "text": "   set res [read $sockChan 1]"
+        },
+        {
+          "line": 718,
+          "text": "   if {$res == \"\"} {"
+        },
+        {
+          "line": 719,
+          "text": "     # ---- Dynamic CPU Load Control and Dynamic Simulation ----"
+        },
+        {
+          "line": 720,
+          "text": "     set t [expr abs([clock clicks -milliseconds])]"
+        },
+        {
+          "line": 721,
+          "text": "     set Delta_Time_int [expr abs($Simulation_Timer_Init - $t)]"
+        },
+        {
+          "line": 722,
+          "text": "     set Delta_Time [expr $Delta_Time_int / 1000.0]"
+        },
+        {
+          "line": 723,
+          "text": "     set Delta_Time2 [expr $Delta_Time2 + $Delta_Time]"
+        },
+        {
+          "line": 724,
+          "text": "     set Simulation_Timer [expr $Simulation_Timer + $Delta_Time]"
+        },
+        {
+          "line": 725,
+          "text": "     set Simulation_Timer_Init $t"
+        },
+        {
+          "line": 726,
+          "text": "     if {$JET_FLAG == 1} {update_RCS; set zeit 5} else {set zeit 10}"
+        },
+        {
+          "line": 727,
+          "text": "     # ---- Update Dynamic Model - Every 25ms ----"
+        },
+        {
+          "line": 728,
+          "text": "     if {$Delta_Time2 > 0.025} {"
+        },
+        {
+          "line": 729,
+          "text": "       dynamic_simulation"
+        },
+        {
+          "line": 730,
+          "text": "       set Delta_Time3 [expr $Delta_Time3 + $Delta_Time2]"
+        },
+        {
+          "line": 731,
+          "text": "       set Delta_Time4 [expr $Delta_Time4 + $Delta_Time2]"
+        },
+        {
+          "line": 732,
+          "text": "       set Delta_Time5 [expr $Delta_Time5 + $Delta_Time2]"
+        },
+        {
+          "line": 733,
+          "text": "       set Delta_Time2 0"
+        },
+        {
+          "line": 734,
+          "text": "       # ---- DSKY Flash Signal every 300ms ----"
+        },
+        {
+          "line": 735,
+          "text": "       if {$Delta_Time3 > 0.3} {"
+        },
+        {
+          "line": 736,
+          "text": "         if {$flash_flag == 0} {set flash_flag 1} else {set flash_flag 0}"
+        },
+        {
+          "line": 737,
+          "text": "         set Delta_Time3 0"
+        },
+        {
+          "line": 738,
+          "text": "       }"
+        },
+        {
+          "line": 739,
+          "text": "       # ---- Update FDAI every 100ms ----"
+        },
+        {
+          "line": 740,
+          "text": "       if {$Delta_Time4 > $FDAI_Update_Rate} {"
+        },
+        {
+          "line": 741,
+          "text": "         move_fdai_marker"
+        },
+        {
+          "line": 742,
+          "text": "         set Delta_Time4 0"
+        },
+        {
+          "line": 743,
+          "text": "       }"
+        },
+        {
+          "line": 744,
+          "text": "       # ---- Byte Received Counter ----"
+        },
+        {
+          "line": 745,
+          "text": "       if {$Delta_Time5 > 1.0} {"
+        },
+        {
+          "line": 746,
+          "text": "         set Delta_Time5 0"
+        },
+        {
+          "line": 747,
+          "text": "         set bytesReceived $bytesReceivedCount"
+        },
+        {
+          "line": 748,
+          "text": "         set bytesSent $bytesSentCount"
+        },
+        {
+          "line": 749,
+          "text": "         set bytesReceivedCount 0"
+        },
+        {
+          "line": 750,
+          "text": "         set bytesSentCount 0"
+        },
+        {
+          "line": 751,
+          "text": "       }"
+        },
+        {
+          "line": 752,
+          "text": "     }"
+        },
+        {
+          "line": 753,
+          "text": "     # ---- Wait Cycle ----"
+        },
+        {
+          "line": 754,
+          "text": "     after $zeit {set zeit 0}; tkwait variable zeit"
+        },
+        {
+          "line": 755,
+          "text": "   } else {"
+        }
+      ]
+    },
+    {
+      "source": "Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+      "start_line": 496,
+      "end_line": 541,
+      "lines": [
+        {
+          "line": 496,
+          "text": ""
+        },
+        {
+          "line": 497,
+          "text": "# *************************************************************************************************"
+        },
+        {
+          "line": 498,
+          "text": "# **** Function: Modify a specific IMU Delta Gimbal-Angle par1=X; par2=Y; par3=Z               ****"
+        },
+        {
+          "line": 499,
+          "text": "# *************************************************************************************************"
+        },
+        {
+          "line": 500,
+          "text": "proc modify_gimbal_angle {dx dy dz} {"
+        },
+        {
+          "line": 501,
+          "text": " global IMUX_ANGLE IMUY_ANGLE IMUZ_ANGLE ANGLE_INCR"
+        },
+        {
+          "line": 502,
+          "text": " global PIMUX PIMUY PIMUZ bo gimbalLock"
+        },
+        {
+          "line": 503,
+          "text": " global Omega_Roll Omega_Pitch Omega_Yaw DEG_TO_RAD RAD_TO_DEG PI 2PI"
+        },
+        {
+          "line": 504,
+          "text": ""
+        },
+        {
+          "line": 505,
+          "text": " if {$gimbalLock == 1 || $bo(12,5) == 1} {return}"
+        },
+        {
+          "line": 506,
+          "text": " set ang_delta 0"
+        },
+        {
+          "line": 507,
+          "text": ""
+        },
+        {
+          "line": 508,
+          "text": " # ---- Modify X-Axis ----"
+        },
+        {
+          "line": 509,
+          "text": " if {$dx != 0} {"
+        },
+        {
+          "line": 510,
+          "text": "   # ---- Calculate New X-Angle ----"
+        },
+        {
+          "line": 511,
+          "text": "   set IMUX_ANGLE [expr $IMUX_ANGLE + $dx]"
+        },
+        {
+          "line": 512,
+          "text": "   if {$IMUX_ANGLE < 0}   {set IMUX_ANGLE [expr $IMUX_ANGLE + 360]}"
+        },
+        {
+          "line": 513,
+          "text": "   if {$IMUX_ANGLE >= 360} {set IMUX_ANGLE [expr $IMUX_ANGLE - 360]}"
+        },
+        {
+          "line": 514,
+          "text": ""
+        },
+        {
+          "line": 515,
+          "text": "   # ---- Calculate Delta between X-Angle and already feeded IMU X-Angle ----"
+        },
+        {
+          "line": 516,
+          "text": "   set dx [expr  $IMUX_ANGLE - $PIMUX]"
+        },
+        {
+          "line": 517,
+          "text": "   if {$dx < -180}   {set dx [expr $dx + 360]}"
+        },
+        {
+          "line": 518,
+          "text": "   if {$dx > 180} {set dx [expr $dx - 360]}"
+        },
+        {
+          "line": 519,
+          "text": ""
+        },
+        {
+          "line": 520,
+          "text": "   # ---- Feed yaAGC with the new Angular Delta ----"
+        },
+        {
+          "line": 521,
+          "text": "   if {$dx >= 0} {set ANGLE_INCR_SIGN $ANGLE_INCR} else {set ANGLE_INCR_SIGN -$ANGLE_INCR}"
+        },
+        {
+          "line": 522,
+          "text": "   set ang_delta [expr abs($dx)]"
+        },
+        {
+          "line": 523,
+          "text": "   while {$ang_delta > $ANGLE_INCR} {"
+        },
+        {
+          "line": 524,
+          "text": "     set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]"
+        },
+        {
+          "line": 525,
+          "text": "     set ang_delta [expr $ang_delta - $ANGLE_INCR]"
+        },
+        {
+          "line": 526,
+          "text": "     # ---- LM X-Axis/YAW-Axis ----"
+        },
+        {
+          "line": 527,
+          "text": "     if {$Omega_Yaw < 4} {"
+        },
+        {
+          "line": 528,
+          "text": "       if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 32} else {write_socket \"PCDU\" 32}"
+        },
+        {
+          "line": 529,
+          "text": "     } else {"
+        },
+        {
+          "line": 530,
+          "text": "       if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 32} else {write_socket \"PCDU_FAST\" 32}"
+        },
+        {
+          "line": 531,
+          "text": "     }"
+        },
+        {
+          "line": 532,
+          "text": "   }"
+        },
+        {
+          "line": 533,
+          "text": ""
+        },
+        {
+          "line": 534,
+          "text": "   # ---- Check for Angular Boundaries ----"
+        },
+        {
+          "line": 535,
+          "text": "   if {$PIMUX < 0}    {set PIMUX [expr $PIMUX + 360]}"
+        },
+        {
+          "line": 536,
+          "text": "   if {$PIMUX >= 360} {set PIMUX [expr $PIMUX - 360]}"
+        },
+        {
+          "line": 537,
+          "text": " }"
+        },
+        {
+          "line": 538,
+          "text": ""
+        },
+        {
+          "line": 539,
+          "text": " # ---- Modify Y-Axis ----"
+        },
+        {
+          "line": 540,
+          "text": " if {$dy != 0} {"
+        },
+        {
+          "line": 541,
+          "text": "   # ---- Calculate new IMU Y-Angel ----"
+        }
+      ]
+    },
+    {
+      "source": "Contributed/LM_Simulator/modules/AGC_IMU.tcl",
+      "sha256": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+      "start_line": 652,
+      "end_line": 692,
+      "lines": [
+        {
+          "line": 652,
+          "text": "   if {$counts > 0} {incr PIPAZ_COUNT 1; write_socket \"PINC\" 41}"
+        },
+        {
+          "line": 653,
+          "text": " }"
+        },
+        {
+          "line": 654,
+          "text": "}"
+        },
+        {
+          "line": 655,
+          "text": ""
+        },
+        {
+          "line": 656,
+          "text": ""
+        },
+        {
+          "line": 657,
+          "text": "# *************************************************************************************************"
+        },
+        {
+          "line": 658,
+          "text": "# **** Function: Transform angular deltas in Body Axes into Stable Member angular deltas       ****"
+        },
+        {
+          "line": 659,
+          "text": "# *************************************************************************************************"
+        },
+        {
+          "line": 660,
+          "text": "proc Transform_BodyAxes_StableMember {dp dq dr} {"
+        },
+        {
+          "line": 661,
+          "text": " global IMUX_ANGLE IMUY_ANGLE IMUZ_ANGLE RAD_TO_DEG DEG_TO_RAD PI 2PI"
+        },
+        {
+          "line": 662,
+          "text": ""
+        },
+        {
+          "line": 663,
+          "text": " set dp [expr $dp * $DEG_TO_RAD]"
+        },
+        {
+          "line": 664,
+          "text": " set dq [expr $dq * $DEG_TO_RAD]"
+        },
+        {
+          "line": 665,
+          "text": " set dr [expr $dr * $DEG_TO_RAD]"
+        },
+        {
+          "line": 666,
+          "text": ""
+        },
+        {
+          "line": 667,
+          "text": " set IMUX_ANGLE_b [expr $IMUX_ANGLE * $DEG_TO_RAD]"
+        },
+        {
+          "line": 668,
+          "text": " set IMUY_ANGLE_b [expr $IMUY_ANGLE * $DEG_TO_RAD]"
+        },
+        {
+          "line": 669,
+          "text": " set IMUZ_ANGLE_b [expr $IMUZ_ANGLE * $DEG_TO_RAD]"
+        },
+        {
+          "line": 670,
+          "text": ""
+        },
+        {
+          "line": 671,
+          "text": " set MPI [expr sin($IMUZ_ANGLE_b)]"
+        },
+        {
+          "line": 672,
+          "text": " set MQI [expr cos($IMUZ_ANGLE_b) * cos($IMUX_ANGLE_b)]"
+        },
+        {
+          "line": 673,
+          "text": " set MQM [expr sin($IMUX_ANGLE_b)]"
+        },
+        {
+          "line": 674,
+          "text": " set MRI [expr -cos($IMUZ_ANGLE_b) * sin($IMUX_ANGLE_b)]"
+        },
+        {
+          "line": 675,
+          "text": " set MRM [expr cos($IMUX_ANGLE_b)]"
+        },
+        {
+          "line": 676,
+          "text": " set nenner [expr $MRM * $MQI - $MRI * $MQM]"
+        },
+        {
+          "line": 677,
+          "text": ""
+        },
+        {
+          "line": 678,
+          "text": " # ---- Calculate Angular Change ----"
+        },
+        {
+          "line": 679,
+          "text": " set do_b [expr $dp - ($dq * $MRM * $MPI - $dr * $MQM * $MPI) / $nenner]"
+        },
+        {
+          "line": 680,
+          "text": " set di_b [expr ($dq * $MRM - $dr * $MQM) / $nenner]"
+        },
+        {
+          "line": 681,
+          "text": " set dm_b [expr ($dr * $MQI - $dq * $MRI) / $nenner]"
+        },
+        {
+          "line": 682,
+          "text": ""
+        },
+        {
+          "line": 683,
+          "text": " # ---- Check for Angular Boundaries ----"
+        },
+        {
+          "line": 684,
+          "text": " if {$do_b < -$2PI}   {set do_b [expr $do_b + $2PI]}"
+        },
+        {
+          "line": 685,
+          "text": " if {$do_b >= $2PI} {set do_b [expr $do_b - $2PI]}"
+        },
+        {
+          "line": 686,
+          "text": " if {$di_b < -$2PI}   {set di_b [expr $di_b + $2PI]}"
+        },
+        {
+          "line": 687,
+          "text": " if {$di_b >= $2PI} {set di_b [expr $di_b - $2PI]}"
+        },
+        {
+          "line": 688,
+          "text": " if {$dm_b < -$2PI}   {set dm_b [expr $dm_b + $2PI]}"
+        },
+        {
+          "line": 689,
+          "text": " if {$dm_b >= $2PI} {set dm_b [expr $dm_b - $2PI]}"
+        },
+        {
+          "line": 690,
+          "text": ""
+        },
+        {
+          "line": 691,
+          "text": " # ---- Rad to Deg and call of Gimbal Angle Modification ----"
+        },
+        {
+          "line": 692,
+          "text": " modify_gimbal_angle [expr $do_b * $RAD_TO_DEG] [expr $di_b * $RAD_TO_DEG] [expr $dm_b * $RAD_TO_DEG]"
+        }
+      ]
+    },
+    {
+      "source": "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+      "start_line": 208,
+      "end_line": 215,
+      "lines": [
+        {
+          "line": 208,
+          "text": " set m [expr $LM_Weight_KG / 65535.0]"
+        },
+        {
+          "line": 209,
+          "text": " set Alpha_Yaw [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,YAW) + $a($LM_CONFIG,YAW)/($m + $c($LM_CONFIG,YAW)))]"
+        },
+        {
+          "line": 210,
+          "text": " set Alpha_Pitch [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,PITCH) + $a($LM_CONFIG,PITCH)/($m + $c($LM_CONFIG,PITCH)))]"
+        },
+        {
+          "line": 211,
+          "text": " set Alpha_Roll [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,ROLL) + $a($LM_CONFIG,ROLL)/($m + $c($LM_CONFIG,ROLL)))]"
+        },
+        {
+          "line": 212,
+          "text": ""
+        },
+        {
+          "line": 213,
+          "text": " # ---- Feed Angular Changes (Delta Time * Omega) into the IMU ----"
+        },
+        {
+          "line": 214,
+          "text": " Transform_BodyAxes_StableMember [expr $Omega_Yaw * $Delta_Time2] [expr $Omega_Pitch * $Delta_Time2] [expr $Omega_Roll * $Delta_Time2]"
+        },
+        {
+          "line": 215,
+          "text": "}"
+        }
+      ]
+    },
+    {
+      "source": "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl",
+      "sha256": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+      "start_line": 290,
+      "end_line": 303,
+      "lines": [
+        {
+          "line": 290,
+          "text": ""
+        },
+        {
+          "line": 291,
+          "text": " # ---- Calculate Delta Omega, Omega and LM weight change ----"
+        },
+        {
+          "line": 292,
+          "text": " if {$RCS_Propellant_Mass_KG > 0} {"
+        },
+        {
+          "line": 293,
+          "text": "   set Delta_Omega_Yaw [expr $Alpha_Yaw * $Delta_Time * $np]"
+        },
+        {
+          "line": 294,
+          "text": "   set Delta_Omega_Pitch [expr $Alpha_Pitch * $Delta_Time * ($nu - $nv)]"
+        },
+        {
+          "line": 295,
+          "text": "   set Delta_Omega_Roll [expr $Alpha_Roll * $Delta_Time * ($nu + $nv)]"
+        },
+        {
+          "line": 296,
+          "text": ""
+        },
+        {
+          "line": 297,
+          "text": "   set Omega_Yaw [expr $Omega_Yaw + $Delta_Omega_Yaw]"
+        },
+        {
+          "line": 298,
+          "text": "   set Omega_Pitch [expr $Omega_Pitch + $Delta_Omega_Pitch]"
+        },
+        {
+          "line": 299,
+          "text": "   set Omega_Roll [expr $Omega_Roll + $Delta_Omega_Roll]"
+        },
+        {
+          "line": 300,
+          "text": ""
+        },
+        {
+          "line": 301,
+          "text": "   set RCS_Fuel_Flow [expr (abs($nv1) + abs($nv2) + abs($nu1) + abs($nu2) + abs($np1) + abs($np2)) * $RCS_Thrust_N / $RCS_Specific_Impulse_MS * $Delta_Time]"
+        },
+        {
+          "line": 302,
+          "text": "   set LM_Weight_Ascent_KG [expr $LM_Weight_Ascent_KG - $RCS_Fuel_Flow]"
+        },
+        {
+          "line": 303,
+          "text": "   set RCS_Propellant_Mass_KG [expr $RCS_Propellant_Mass_KG - $RCS_Fuel_Flow]"
+        }
+      ]
+    }
+  ]
+}

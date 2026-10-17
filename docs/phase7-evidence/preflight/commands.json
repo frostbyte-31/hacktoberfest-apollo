@@ -1,0 +1,36 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "docs/milestone1-evidence/run_tests.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T15:03:54.128252+00:00",
+    "end_utc": "2026-10-17T15:03:57.126909+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  },
+  {
+    "argv": [
+      "make",
+      "reproduce"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T15:03:57.127454+00:00",
+    "end_utc": "2026-10-17T15:04:11.440908+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  },
+  {
+    "argv": [
+      "make",
+      "validate-milestone3"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T15:04:11.441559+00:00",
+    "end_utc": "2026-10-17T15:04:42.366445+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  }
+]

@@ -125,9 +125,30 @@ work. Queue settlement does not establish vehicle stability or mission readiness
 `make check` includes these fresh experiments after the earlier reproduction and
 Milestone 2 probes.
 
-[Milestone 3 findings and evidence](docs/MILESTONE3_SIGNED_FEEDBACK.md) record the
-measured outcomes and limits. This remains a synthetic single-axis fixture;
-Phase 7 and powered descent have not started.
+[Milestone 3 findings and evidence](docs/MILESTONE3_SIGNED_FEEDBACK.md) record its
+single-axis outcomes and limits. Phase 7 extends that fixture separately below;
+powered descent remains unproven.
+
+## Phase 7: authentic multi-axis attitude validation
+
+```sh
+make test-phase7       # fresh locked-Tcl physics tests and integration checks
+make validate-phase7   # source checks and fresh native attitude experiments
+```
+
+Both targets use the existing source-locked runtime bootstrap. Only its first
+download requires network access. `make check` includes these targets after all
+earlier tests and reproductions.
+
+The Phase 7 fixture retains original Luminary, the emulator, jet decoding and
+model response coefficients. A source-locked external overlay adds quaternion
+orientation and rigid-body angular-momentum coupling. Body yaw/pitch commands
+and all three derived IMU gimbal measurements remain distinct. The authoritative
+rotational state is independent of display coordinates; no frontend is included.
+
+[Phase 7 capability, actual results and limitations](docs/PHASE7_MULTIAXIS_VALIDATION.md)
+distinguish independent-axis tests, simultaneous control, modern physics unit
+checks and historical hardware assumptions. Earlier evidence remains intact.
 
 ## Evidence and provenance
 
@@ -139,6 +160,8 @@ Phase 7 and powered descent have not started.
   the clean post-V36 interval, signed transport timing, capacity and model limits.
 - [Milestone 3 feedback report](docs/MILESTONE3_SIGNED_FEEDBACK.md) records the
   external model correction, pacing and finite queue settlement.
+- [Phase 7 validation report](docs/PHASE7_MULTIAXIS_VALIDATION.md) records the
+  multi-axis source mappings, attitude model and actual native experiments.
 - [Historical gap inventory](docs/milestone1-evidence/missing-historical.json)
   retains the 29 absent paths, original expected hashes and manifest references.
   Recovered logs are accepted only at their original hash. Fresh logs belong in

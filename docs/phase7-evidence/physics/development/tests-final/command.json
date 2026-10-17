@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/phase7-evidence/physics",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "start_utc": "2026-10-17T15:19:02.046560+00:00",
+  "end_utc": "2026-10-17T15:19:03.863521+00:00",
+  "exit": 0
+}

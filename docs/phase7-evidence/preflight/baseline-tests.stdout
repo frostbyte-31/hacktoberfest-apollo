@@ -1,0 +1,19 @@
+{
+  "status": "verified_with_historical_gaps",
+  "legacy": {
+    "tests_run": 38,
+    "outcomes": {
+      "passed": 35,
+      "error": 3
+    },
+    "known_historical_errors": 3
+  },
+  "milestone1": {
+    "tests_run": 55,
+    "outcomes": {
+      "passed": 55
+    },
+    "known_historical_errors": 0
+  },
+  "results": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/tests/tests-20261017T150354.218225Z/results.json"
+}

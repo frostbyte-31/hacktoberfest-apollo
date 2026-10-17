@@ -1,0 +1,54 @@
+{
+  "status": "VERIFIED",
+  "baseline_revision": "c10810700d875099d226384a37487376d0cf9460",
+  "legacy_tests": {
+    "known_historical_errors": 3,
+    "outcomes": {
+      "error": 3,
+      "passed": 35
+    },
+    "tests_run": 38
+  },
+  "milestone1_tests": {
+    "known_historical_errors": 0,
+    "outcomes": {
+      "passed": 55
+    },
+    "tests_run": 55
+  },
+  "phase6_raw_trace_agreement": {
+    "closed": {
+      "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "retained_reference": "docs/phase6-evidence/demo-run/closed.jsonl",
+      "byte_identical": true
+    },
+    "feedback_off": {
+      "fresh_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+      "retained_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+      "retained_reference": "docs/phase6-evidence/demo-run/feedback_off.jsonl",
+      "byte_identical": true
+    },
+    "repeat": {
+      "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+      "retained_reference": "docs/phase6-evidence/demo-run/repeat.jsonl",
+      "byte_identical": true
+    }
+  },
+  "paced_baseline_checks": {
+    "exact_corrected_replay": true,
+    "natural_negative_high_rate_observed": true,
+    "original_selector_slow_at_negative_high_rate": true,
+    "original_no_negative_fast": true,
+    "feedback_changes_timed_rcs": true,
+    "feedback_changes_held_rhc_commands": true,
+    "full_positive_jet_word_only_connected": true,
+    "short_stop_exercises_nonempty_diagnostic_drain": true,
+    "disconnected_no_delivery": true,
+    "disconnected_counter_zero": true,
+    "all_connected_settled_without_loss": true
+  },
+  "integrity_bypasses": false,
+  "dependency_remedy": "Existing source-locked Tcl bootstrap/adapter ran successfully; no Nix installation or integrity bypass required in Phase7."
+}

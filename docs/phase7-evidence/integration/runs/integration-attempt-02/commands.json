@@ -1,0 +1,254 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "--version"
+    ],
+    "start_utc": "2026-10-17T15:18:37.767819+00:00",
+    "exit": 0,
+    "pid": 97158,
+    "end_utc": "2026-10-17T15:18:37.899562+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "--version"
+    ],
+    "start_utc": "2026-10-17T15:18:37.899986+00:00",
+    "exit": 0,
+    "pid": 97159,
+    "end_utc": "2026-10-17T15:18:37.920469+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/inspect_axes.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/plant_bridge.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so"
+    ],
+    "start_utc": "2026-10-17T15:18:37.921103+00:00",
+    "exit": 0,
+    "pid": 97160,
+    "end_utc": "2026-10-17T15:18:38.700086+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--native-probe",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/native-probe.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:18:38.700782+00:00",
+    "exit": 0,
+    "pid": 97190,
+    "end_utc": "2026-10-17T15:18:39.428388+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone3-evidence/feedback/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "corrected_negative",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/baseline-server.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/yaw_baseline.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:18:40.192404+00:00",
+    "exit": 0,
+    "pid": 97206,
+    "end_utc": "2026-10-17T15:18:44.765661+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "yaw",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/yaw.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:18:44.934723+00:00",
+    "exit": 0,
+    "pid": 97236,
+    "end_utc": "2026-10-17T15:18:51.287384+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "pitch",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/pitch.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:18:51.805819+00:00",
+    "exit": 0,
+    "pid": 97246,
+    "end_utc": "2026-10-17T15:18:59.177360+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "pitch_off",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/pitch_off.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:18:59.829265+00:00",
+    "exit": 0,
+    "pid": 97290,
+    "end_utc": "2026-10-17T15:19:03.936597+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "pitch_replay",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/pitch_replay.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:19:04.621820+00:00",
+    "exit": 0,
+    "pid": 97303,
+    "end_utc": "2026-10-17T15:19:11.817408+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "combined",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/combined.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:19:12.503545+00:00",
+    "exit": 0,
+    "pid": 97305,
+    "end_utc": "2026-10-17T15:19:21.910471+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "combined_off",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/combined_off.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:19:23.947325+00:00",
+    "exit": 0,
+    "pid": 97309,
+    "end_utc": "2026-10-17T15:19:27.371006+00:00"
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--case",
+      "combined_replay",
+      "--library",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/engine.so",
+      "--server",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/server.tcl",
+      "--overlay",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/physics-overlay.tcl",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/integration-attempt-02/combined_replay.jsonl"
+    ],
+    "start_utc": "2026-10-17T15:19:27.765079+00:00",
+    "exit": 0,
+    "pid": 97316,
+    "end_utc": "2026-10-17T15:19:33.908121+00:00"
+  }
+]

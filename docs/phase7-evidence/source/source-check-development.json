@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-17T15:15:23.757557+00:00",
+  "first_command": [
+    "python3",
+    "docs/phase7-evidence/source/verify_sources.py",
+    "--primary-pdf",
+    "/private/tmp/apollo-phase7-MSC-69-FS-4-20261017T1509.pdf"
+  ],
+  "first_exit": 1,
+  "error": "ValueError substring not found: strict tab literal did not match original JETSALL whitespace",
+  "executed_checker_sha256": "33eb83ddba6e570fb9f2014acc21aab1c96e7f2a2b51ac6cd6c96d56d2cec418",
+  "scope": "New read-only source checker only; no CPU, flight or model changes"
+}

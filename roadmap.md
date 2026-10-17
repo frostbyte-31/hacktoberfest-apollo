@@ -69,8 +69,15 @@
 - [x] Preserve all prior evidence and keep the emulator, Luminary and original source archive unchanged
 - See docs/MILESTONE3_SIGNED_FEEDBACK.md for actual check results and the separate transport-tail experiment
 
-## Remaining single-axis uncertainty (requires separate approval; Phase 7 not started)
-- Finite pulse delivery and empty queues do not establish sustained attitude hold or vehicle stability. Define bounded rate/hold acceptance criteria and sensitivity to coupling/pacing before stronger control claims.
+## Phase 7: bounded simultaneous yaw/pitch feedback (verified capability C)
+- [x] Reproduce the unchanged single-axis baseline and preserve all 1,520 earlier retained files
+- [x] Verify original Luminary jet, RHC and gimbal mappings against pinned sources and primary documentation
+- [x] Extend the retained external model with bounded rigid-body coupling, quaternion attitude and all three derived CDU measurements
+- [x] Demonstrate independent pitch, then simultaneous yaw/pitch through actual Luminary RCS packets, connected/disconnected controls and exact replays
+- [x] Reconcile real native packet consumption, all three sensor FIFOs, signed applications and settled quaternion-to-counter angles
+- [x] Execute 39 Phase 7 tests, all 136 prior milestone tests and fresh validation; retain the three original missing-log errors explicitly
+- See docs/PHASE7_MULTIAXIS_VALIDATION.md and docs/phase7-evidence/ for actual commands, measured limits and preserved attempts
+- Full independent three-axis control, calibrated spacecraft/IMU fidelity and sustained attitude stability remain NOT RUN. Empty queues establish transport settlement, not vehicle equilibrium.
 - Mission initialization, calibrated IMU alignment and source-justified propulsion/radar interfaces remain prerequisites for a credible descent experiment.
 
 ## Unresolved descent prerequisites

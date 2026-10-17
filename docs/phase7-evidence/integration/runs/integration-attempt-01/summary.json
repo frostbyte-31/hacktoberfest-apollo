@@ -1,0 +1,13 @@
+{
+  "capability": "A",
+  "status": "BLOCKED",
+  "levels": {
+    "A": true,
+    "B": false,
+    "C": false,
+    "D": false
+  },
+  "scope": "Bounded native body yaw/pitch experiments; incidental3Dphysics/sensors do not establish full three-axis control",
+  "cases": {},
+  "failure": "'axis'"
+}

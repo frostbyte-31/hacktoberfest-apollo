@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "docs/phase7-evidence/source/verify_sources.py",
+    "--primary-pdf",
+    "/private/tmp/apollo-phase7-MSC-69-FS-4-20261017T1509.pdf"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "start_utc": "2026-10-17T15:16:45.976958+00:00",
+  "end_utc": "2026-10-17T15:16:46.061634+00:00",
+  "exit": 0,
+  "checker_sha256": "df4146b0a1612dd0b9cb0ec0cf2a826d2891e71609b67aefb3185921d44a3a1b"
+}

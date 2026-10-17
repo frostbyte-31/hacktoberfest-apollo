@@ -1,0 +1,26 @@
+{
+  "capability": "C",
+  "status": "COMPLETE",
+  "levels": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": false
+  },
+  "scope": "Bounded native body yaw/pitch experiments; incidental3Dphysics/sensors do not establish full three-axis control",
+  "independent_pitch_checks": {
+    "actual_QR_output": true,
+    "actual_Y_counter_feedback": true,
+    "physical_pitch_response": true,
+    "sensor_feedback_changes_genuine_commands": true,
+    "disconnected_zero_counters": true,
+    "fresh_replay_byte_identical": true
+  },
+  "simultaneous_checks": {
+    "simultaneous_actual_body_response": true,
+    "actual_multiple_CDU_paths": true,
+    "sensor_feedback_changes_genuine_commands": true,
+    "disconnected_zero_counters": true,
+    "fresh_replay_byte_identical": true
+  }
+}

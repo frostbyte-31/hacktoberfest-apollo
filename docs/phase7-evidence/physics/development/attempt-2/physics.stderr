@@ -1,0 +1,10 @@
+Missing expected rejection nonconvergence
+    while executing
+"error "Missing expected rejection $name""
+    ("foreach" body line 4)
+    invoked from within
+"foreach spec {
+    {negative_dt {phase7_step -0.01 0 0 0}}
+    {too_large_dt {phase7_step 0.1 0 0 0}}
+    {nonpositive_inertia {::phase7::omega_step {..."
+    (file "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/physics/probe.tcl" line 79)

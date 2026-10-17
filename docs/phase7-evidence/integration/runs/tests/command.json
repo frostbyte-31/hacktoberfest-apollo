@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/phase7-evidence/integration",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "start_utc": "2026-10-17T15:29:22.894930+00:00",
+  "end_utc": "2026-10-17T15:29:32.481078+00:00",
+  "exit": 0
+}

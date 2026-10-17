@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED",
+  "command": [
+    "make",
+    "check"
+  ],
+  "exit": 0
+}

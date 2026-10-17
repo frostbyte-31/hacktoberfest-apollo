@@ -1,0 +1,136 @@
+{
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "recorded_utc": "2026-10-17T15:14:13.419462+00:00",
+  "remote_files": {
+    "upstream/Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl": {
+      "sha256": "7cc5247c261dd3cb89b5e42ebdbcb1b3cf55fd99b8543eb4b51a46633f0f620d",
+      "bytes": 20188,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl"
+    },
+    "upstream/Luminary099/DAPIDLER_PROGRAM.agc": {
+      "sha256": "903ef74e8062d3957e96dc3222df29b5940696a238dc858c7192748190f698ab",
+      "bytes": 13257,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/DAPIDLER_PROGRAM.agc"
+    },
+    "upstream/Luminary099/DAP_INTERFACE_SUBROUTINES.agc": {
+      "sha256": "864030dba1a3fe59ded1148b7d35368c5fbcf6dc4b90d01ccfb0c3022bdeba47",
+      "bytes": 5089,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/DAP_INTERFACE_SUBROUTINES.agc"
+    },
+    "upstream/Luminary099/FLAGWORD_ASSIGNMENTS.agc": {
+      "sha256": "a952d345daf80ebf2279f2ff81cc440beba3359980a1c72e426ddce4be41921d",
+      "bytes": 36522,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FLAGWORD_ASSIGNMENTS.agc"
+    },
+    "upstream/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc": {
+      "sha256": "e4a61b24b071c4d2287e663dfaa3299a2fd3de100589c6e7e4d0d9e881238d7f",
+      "bytes": 9540,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc"
+    },
+    "upstream/Luminary099/LEM_GEOMETRY.agc": {
+      "sha256": "b180242b9f5bf08e43cfc00b252f6dfd567ed84df77ab72fbc67fdcb28a01710",
+      "bytes": 5365,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LEM_GEOMETRY.agc"
+    },
+    "upstream/Luminary099/MAIN.agc": {
+      "sha256": "0cfd3412dec956c3ffc0b2a93bdb36a20e7eb88382ab191da883021e2d7adddf",
+      "bytes": 8904,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/MAIN.agc"
+    },
+    "upstream/Luminary099/P-AXIS_RCS_AUTOPILOT.agc": {
+      "sha256": "9da0c4520bdce3c77003a6c9378af94531459d83123526bce128ffd29331a49b",
+      "bytes": 21495,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P-AXIS_RCS_AUTOPILOT.agc"
+    },
+    "upstream/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc": {
+      "sha256": "8cf1ac005f95c67c4c1da5cbd9efafa955f231f266a6eb8ca75ffb85aa841629",
+      "bytes": 17716,
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/Q,R-AXES_RCS_AUTOPILOT.agc"
+    },
+    "external/assembly_language_manual.html": {
+      "sha256": "255043a27b6c4ad2fb6e711386a0c3f6acc5e39c9d7e43949b7b5b728ea828fa",
+      "bytes": 561742,
+      "url": "https://www.ibiblio.org/apollo/assembly_language_manual.html",
+      "status": "Retrieved current external maintainer documentation, not pinned flight source"
+    }
+  },
+  "retained_dependencies": {
+    "docs/milestone2-evidence/startup/source/T4RUPT_PROGRAM.agc": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07",
+    "docs/milestone2-evidence/startup/source/ERASABLE_ASSIGNMENTS.agc": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+    "docs/phase4-evidence/source_excerpts.txt": "96a966bf57f63c2736ba6b7672693a86f079dd8a61de5091cc43d8ebc0046195",
+    "docs/phase5-evidence/plant_server.tcl": "9e14770f744d3d2b7ffa09cb5f05a489de19b812526463a939df4b69f714622b",
+    "docs/phase6-evidence/corresponding-source.tar.gz": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+    "docs/phase6-evidence/corresponding-source-hashes.json": "61e5f57dae86e3f4c6fd0f3a79d515b9a3c6b62c187b834159393f4136859538",
+    "docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e"
+  },
+  "primary_document": {
+    "title": "NASA/MIT MSC Internal Note69-FS-4 Programmed Guidance Equations for Luminary1B September1969",
+    "url": "https://www.ibiblio.org/apollo/Documents/j2-80-MSC-69-FS-4_text.pdf",
+    "original_sha256": "f951cf51e0018c9488b7ae9902f35cfe2c6c81b9dddb704ac0cc5d72d17200d3",
+    "original_bytes": 22861097,
+    "original_pdf_pages": 1020,
+    "full_download_location": "Scratch only; reproduce from URL and original SHA256",
+    "retained_pdf_pages_1_based": [
+      49,
+      53,
+      58,
+      59
+    ],
+    "printed_pages": [
+      37,
+      41,
+      46,
+      47
+    ],
+    "text_extractor": "pypdf 6.14.2",
+    "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+    "render_command": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+      "-f",
+      "49",
+      "-l",
+      "49",
+      "-scale-to",
+      "1800",
+      "-png",
+      "-singlefile",
+      "/private/tmp/apollo-phase7-MSC-69-FS-4-20261017T1509.pdf",
+      "docs/phase7-evidence/source/external/MSC-69-FS-4_pdf-page-0049"
+    ],
+    "render_exit": 0,
+    "visually_inspected": true,
+    "OCR_discrepancy": "Channel005 bit5 code is2U in scan, incorrectly2D in PDF text extraction",
+    "extracts": {
+      "external/MSC-69-FS-4_pdf-page-0049.png": {
+        "sha256": "a06f91f272a07531c84c2fb9079230bd5d7f261b8871c4554e8418731e6a1ed3",
+        "bytes": 273559
+      },
+      "external/MSC-69-FS-4_pdf-page-0049.txt": {
+        "sha256": "1c14d7146feae59187ef70b318971eb410954f411cae4dc0e226665cf029a89d",
+        "bytes": 694
+      },
+      "external/MSC-69-FS-4_pdf-page-0053.txt": {
+        "sha256": "f7098fe3788c6a34ef539597b817f4effb43155ba1a5d5259dcceef205f51ddf",
+        "bytes": 1396
+      },
+      "external/MSC-69-FS-4_pdf-page-0058.txt": {
+        "sha256": "aead3208f932ba4dee75345517850a69d96e5dd8dd0bc04a58e292115bcde957",
+        "bytes": 1055
+      },
+      "external/MSC-69-FS-4_pdf-page-0059.txt": {
+        "sha256": "e5bb1d49dd4f7ca0264558b55a81a5608adefe4950fe0ec03034c669322a1d88",
+        "bytes": 1312
+      }
+    }
+  },
+  "unused_download": {
+    "url": "https://www.ibiblio.org/apollo/Documents/dd_memo_254.pdf",
+    "sha256": "7555554877e6dac7984cb7b29dc982da474332d6950b00f5003cec8241305536",
+    "note": "Retrieved but not used to derive the mappings; not retained in repository"
+  },
+  "derived_notes": {
+    "mappings.json": "286e1b84e1d0b147c90365fceda2be1a20c59b2bbf625c5eb0227e469c0962a4",
+    "README.md": "22186ff6cadd14ebad29b2aad4178f5a1dd5ab885a0f43e6d8040c5f128faad5",
+    "verify_sources.py": "df4146b0a1612dd0b9cb0ec0cf2a826d2891e71609b67aefb3185921d44a3a1b"
+  }
+}
