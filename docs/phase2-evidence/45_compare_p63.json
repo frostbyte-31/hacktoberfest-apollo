@@ -1,0 +1,613 @@
+{
+  "identical": true,
+  "nativeSHA256": "8f9179f0c48edd98d7b7b4e171610070d86cecfe984fde241acdc7a2bd33d662",
+  "otherSHA256": "8f9179f0c48edd98d7b7b4e171610070d86cecfe984fde241acdc7a2bd33d662",
+  "traceCheckpoints": 260,
+  "outputPackets": 4337,
+  "distinctDisplayFrames": 17,
+  "states": [
+    {
+      "cycle": 5402,
+      "display": {
+        "PROG": "??",
+        "VERB": "??",
+        "NOUN": "??",
+        "R1": "?????",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 8828,
+      "display": {
+        "PROG": "  ",
+        "VERB": "??",
+        "NOUN": "??",
+        "R1": "?????",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 432079,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "??",
+        "R1": "?????",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 435490,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "?????",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 438910,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": " ????",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 442320,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "   ??",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 445731,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "?????",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 449144,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "  ???",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 452560,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "    ?",
+        "R3": "???  "
+      }
+    },
+    {
+      "cycle": 455977,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": " ??  "
+      }
+    },
+    {
+      "cycle": 459384,
+      "display": {
+        "PROG": "  ",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 462828,
+      "display": {
+        "PROG": "  ",
+        "VERB": "3 ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 503748,
+      "display": {
+        "PROG": "  ",
+        "VERB": "37",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 565233,
+      "display": {
+        "PROG": "  ",
+        "VERB": "37",
+        "NOUN": "6 ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 606148,
+      "display": {
+        "PROG": "  ",
+        "VERB": "37",
+        "NOUN": "63",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 640294,
+      "display": {
+        "PROG": "63",
+        "VERB": "37",
+        "NOUN": "63",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    {
+      "cycle": 647122,
+      "display": {
+        "PROG": "63",
+        "VERB": "37",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    }
+  ],
+  "lampChannels": [
+    {
+      "ev": "output",
+      "cycle": 1,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 109,
+      "ch": 9,
+      "val": 0
+    },
+    {
+      "ev": "output",
+      "cycle": 507,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 1015,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 3799,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 6111,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 426846,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 426964,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 460944,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 461274,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 495079,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 495412,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 529213,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 529377,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 529434,
+      "ch": 9,
+      "val": 8224
+    },
+    {
+      "ev": "output",
+      "cycle": 546134,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 563432,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 563707,
+      "ch": 9,
+      "val": 8224
+    },
+    {
+      "ev": "output",
+      "cycle": 573440,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 597481,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 597743,
+      "ch": 9,
+      "val": 8224
+    },
+    {
+      "ev": "output",
+      "cycle": 631612,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 631686,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 632876,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 633252,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 634177,
+      "ch": 9,
+      "val": 8192
+    },
+    {
+      "ev": "output",
+      "cycle": 634185,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 634795,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 636366,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 637910,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 637937,
+      "ch": 9,
+      "val": 8194
+    },
+    {
+      "ev": "output",
+      "cycle": 638165,
+      "ch": 9,
+      "val": 8226
+    },
+    {
+      "ev": "output",
+      "cycle": 638278,
+      "ch": 9,
+      "val": 8224
+    },
+    {
+      "ev": "output",
+      "cycle": 655360,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 682667,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 764587,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 791894,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 873814,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 901120,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 983040,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1010347,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1092267,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1119574,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1201494,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1228800,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1310720,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1338027,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1419947,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1447254,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1529174,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1556480,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1638400,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1665707,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1747627,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1774934,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1856854,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1884160,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 1966080,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 1993387,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 2075307,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 2102614,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 2184534,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 2211840,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 2293760,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 2321067,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 2402987,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 2430294,
+      "ch": 115,
+      "val": 128
+    },
+    {
+      "ev": "output",
+      "cycle": 2512214,
+      "ch": 115,
+      "val": 160
+    },
+    {
+      "ev": "output",
+      "cycle": 2539520,
+      "ch": 115,
+      "val": 128
+    }
+  ]
+}
