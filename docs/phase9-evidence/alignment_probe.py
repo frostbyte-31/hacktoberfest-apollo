@@ -58,6 +58,7 @@ START = 3000000
 END = 12000000
 KEYGAP = 21333          # same key spacing as Phases 5/8
 STALL_LIMIT = 3000000   # calls a step may wait for its precondition
+SETTLE = 200000         # calls to wait after a flash appears before acting
 
 KEY = {**{str(d): d for d in range(1, 10)},
        '0': 16, 'V': 17, 'N': 31, '+': 26, '-': 27, 'E': 28}  # Phase 1 key map
