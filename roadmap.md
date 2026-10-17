@@ -10,7 +10,12 @@
 - [x] M3 LM_Simulator interface investigation (no coupling)
 - [x] WASM build + equivalence run
 
-## Next (awaiting approval)
-- P63 pad-load / scenario investigation
-- Step-locked native vs WASM trace comparison
-- Frontend, multiplayer, AI crew, physics coupling (not authorized)
+## Phase 2 (investigation and validation only)
+- [ ] Compare authentic initialization candidates and recommend a reproducible approach
+- [ ] Investigate P63/P64/P66 prerequisites and attempt the smallest descent-entry test
+- [ ] Inspect throttle, radar, and simulator hardware interfaces
+- [ ] Run step-locked native/WebAssembly comparison and real-browser validation
+- [ ] Deliver docs/PHASE2_POWERED_DESCENT_FEASIBILITY.md and new evidence
+
+## Not authorized
+- Frontend, multiplayer, AI crew, physics engine, full application development
