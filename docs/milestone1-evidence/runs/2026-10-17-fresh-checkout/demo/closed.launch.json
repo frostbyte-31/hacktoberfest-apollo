@@ -1,0 +1,19 @@
+{
+  "adapter": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/milestone1-evidence/run_loop_with_tcl.py",
+  "retained_runner": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase5-evidence/run_loop.py",
+  "requested_legacy_command": [
+    "nix",
+    "shell",
+    "nixpkgs#tcl",
+    "-c",
+    "tclsh",
+    "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase5-evidence/plant_server.tcl",
+    "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/source"
+  ],
+  "actual_command": [
+    "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/bin/tclsh8.6",
+    "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase5-evidence/plant_server.tcl",
+    "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/source"
+  ],
+  "change": "Dependency executable selection only; no Nix process is run."
+}

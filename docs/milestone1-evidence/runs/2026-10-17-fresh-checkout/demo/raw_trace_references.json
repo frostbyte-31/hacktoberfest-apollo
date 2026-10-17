@@ -1,0 +1,50 @@
+{
+  "closed.categorized.jsonl": {
+    "fresh_sha256": "8c4c45481a3fc8a9cc4c00dba9e1f166dbf4289bc2662e40315ab36542ae6fe2",
+    "retained_sha256": "8c4c45481a3fc8a9cc4c00dba9e1f166dbf4289bc2662e40315ab36542ae6fe2",
+    "retained_reference": "docs/phase6-evidence/demo-run/closed.categorized.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/closed.categorized.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  },
+  "closed.jsonl": {
+    "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_reference": "docs/phase6-evidence/demo-run/closed.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/closed.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  },
+  "feedback_off.categorized.jsonl": {
+    "fresh_sha256": "86fd6ef4883714577728c6c20d4711970f0eb6b45247c7342a31b20786ffe00f",
+    "retained_sha256": "86fd6ef4883714577728c6c20d4711970f0eb6b45247c7342a31b20786ffe00f",
+    "retained_reference": "docs/phase6-evidence/demo-run/feedback_off.categorized.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/feedback_off.categorized.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  },
+  "feedback_off.jsonl": {
+    "fresh_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+    "retained_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+    "retained_reference": "docs/phase6-evidence/demo-run/feedback_off.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/feedback_off.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  },
+  "repeat.categorized.jsonl": {
+    "fresh_sha256": "545a5f007b01e02efe091bbab3482ae6e9496ff57034c5156cfd646baa8be69e",
+    "retained_sha256": "545a5f007b01e02efe091bbab3482ae6e9496ff57034c5156cfd646baa8be69e",
+    "retained_reference": "docs/phase6-evidence/demo-run/repeat.categorized.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/repeat.categorized.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  },
+  "repeat.jsonl": {
+    "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_reference": "docs/phase6-evidence/demo-run/repeat.jsonl",
+    "byte_identical": true,
+    "fresh_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runs/20261017T135037Z-c5e08200/repeat.jsonl",
+    "retention": "Exact duplicate raw/categorized trace represented by hash and verified original reference."
+  }
+}

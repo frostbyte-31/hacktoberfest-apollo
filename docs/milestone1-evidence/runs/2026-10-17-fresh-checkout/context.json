@@ -1,0 +1,12 @@
+{
+  "expected_commit": "03019afb122dbf426d406ebf66d60cf685677924",
+  "source_repository": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "scratch": "/private/tmp/apollo-milestone1-fresh-u48j1uzb",
+  "checkout": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout",
+  "offline_archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "offline_archive_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "environment_override": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "network": "Not required: git clone --no-local uses the local repository; Tcl is supplied from the exact locked source archive; the installed runtime is rebuilt."
+}

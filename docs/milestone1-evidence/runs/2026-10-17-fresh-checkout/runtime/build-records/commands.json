@@ -1,0 +1,55 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "--version"
+    ],
+    "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout",
+    "start_utc": "2026-10-17T13:49:02.248682+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:49:02.271379+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "--version"
+    ],
+    "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout",
+    "start_utc": "2026-10-17T13:49:02.272148+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:49:02.293008+00:00"
+  },
+  {
+    "argv": [
+      "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/unix/configure",
+      "--prefix=/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime",
+      "--disable-shared",
+      "--enable-threads",
+      "--disable-symbols"
+    ],
+    "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/build/20261017T134901Z-73bbcbf7",
+    "start_utc": "2026-10-17T13:49:02.293381+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:49:18.885697+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "-j2"
+    ],
+    "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/build/20261017T134901Z-73bbcbf7",
+    "start_utc": "2026-10-17T13:49:18.886185+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:50:17.026024+00:00"
+  },
+  {
+    "argv": [
+      "/usr/bin/make",
+      "install"
+    ],
+    "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/build/20261017T134901Z-73bbcbf7",
+    "start_utc": "2026-10-17T13:50:17.026894+00:00",
+    "exit": 0,
+    "end_utc": "2026-10-17T13:50:32.390131+00:00"
+  }
+]

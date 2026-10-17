@@ -1,0 +1,48 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "python_executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+  "launcher_argv": [
+    "docs/milestone1-evidence/reproduce.py"
+  ],
+  "cwd": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout",
+  "runtime_manifest": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime-manifest.json",
+  "runtime_manifest_sha256": "8fa5b76c55fec5bc6cd35aba8e41d9b1bbe9e9f71d2e94074f18083bda33c95e",
+  "runtime": {
+    "schema": 1,
+    "version": "8.6.16",
+    "executable": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/bin/tclsh8.6",
+    "executable_sha256": "9d4d42020f847db2198fe0a2f0ab07b62b823f935202b0b51b1289b392ae2ac9",
+    "runtime_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime",
+    "runtime_tree_sha256": "39e59f066d4621229d5c9bbbc80892dcdb3f6e487606134ca01978cc3b8a085d",
+    "source_path": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16",
+    "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+    "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+    "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+    "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+    "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+    "build_record": "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/build-records/20261017T134901Z-73bbcbf7",
+    "configure_arguments": [
+      "--disable-shared",
+      "--enable-threads",
+      "--disable-symbols"
+    ],
+    "cflags": "-O2",
+    "compiler": "/usr/bin/cc",
+    "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "make": "/usr/bin/make",
+    "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+    "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "smoke_test": {
+      "version": "8.6.16",
+      "hypot_3_4": 5.0,
+      "status": "VERIFIED"
+    },
+    "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+  },
+  "compiler": "/usr/bin/cc",
+  "upstream_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "scope": "retained native single-axis feedback; no new mission experiment"
+}

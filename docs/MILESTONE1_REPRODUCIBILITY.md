@@ -82,6 +82,7 @@ retained records refer to existing raw captures only after exact comparison.
 | New tests | 55 run, 55 passed: evidence tampering/recovery, strict error policy, runtime integrity, adapter/archives/output safety and failure records |
 | Local dependency build | Official locked Tcl source built successfully; exact version and required math verified |
 | Fresh connected/disconnected/replay | All three commands exit 0; original causal checks pass; every raw trace matches Phase 6 exactly |
+| Clean local clone | Commit `03019af`, no build cache: Tcl rebuilt from the locked offline archive, `make check` exits 0, 55 new tests pass, raw/categorized traces agree, working tree stays clean |
 
 Connected: peak synthetic yaw `4.859385265209125°/s`, final X-gimbal
 `16.84156247751019°`, final CDU X `1533`, 1539 generated/delivered sensor requests.
@@ -96,6 +97,16 @@ Retained commands, versions, source/input/binary hashes, tests and raw reference
 - [Fresh demo completion](milestone1-evidence/runs/2026-10-17-verified-demo/completion.json)
 - [Raw comparison](milestone1-evidence/runs/2026-10-17-verified-demo/retained-trace-comparison.json)
 - [Derived demonstration summary](milestone1-evidence/runs/2026-10-17-verified-demo/SUMMARY.md)
+- [Clean-checkout completion](milestone1-evidence/runs/2026-10-17-fresh-checkout/completion.json)
+- [Clean-checkout commands and exit codes](milestone1-evidence/runs/2026-10-17-fresh-checkout/commands.json)
+
+The clean checkout was a real `git clone --no-local` of implementation commit
+`03019afb122dbf426d406ebf66d60cf685677924`. Only the hash-verified Tcl source
+archive was supplied from the download cache; no installed runtime, generated
+source tree or compiled binary was reused. A new Tcl installation and engine
+build succeeded, followed by the documented `make check`. Both raw and categorized
+traces match all three retained Phase 6 captures. This is a second build on the
+same macOS host, not an independent Linux/toolchain validation.
 
 One preliminary packaging test failed because its temporary path expectation did
 not resolve macOS `/var` aliases. The test expectation was corrected; the failure

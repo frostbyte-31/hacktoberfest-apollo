@@ -1,0 +1,93 @@
+{
+  "all_tests_passed": false,
+  "classifications": {
+    "known_historical_gap": 1,
+    "passed": 10
+  },
+  "discovery": {
+    "directory": "docs/phase6-evidence",
+    "pattern": "test_demonstration.py"
+  },
+  "expected_test_count": 11,
+  "outcomes": {
+    "error": 1,
+    "passed": 10
+  },
+  "policy_satisfied": true,
+  "suite": "phase6",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0017360419999999932,
+      "id": "test_demonstration.DemonstrationTests.test_actual_sensor_acceptance_and_counter_application_distinct",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005972124999999995,
+      "id": "test_demonstration.DemonstrationTests.test_changed_measurements_change_original_commands",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0002141249999999817,
+      "id": "test_demonstration.DemonstrationTests.test_compiler_and_runs_exit_zero",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0008684170000000102,
+      "id": "test_demonstration.DemonstrationTests.test_delivery_timestamp_preserved_separately",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0006252079999999882,
+      "id": "test_demonstration.DemonstrationTests.test_fresh_replay_exact",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.14194029200000002,
+      "id": "test_demonstration.DemonstrationTests.test_inspection_is_deterministic",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0011097500000000204,
+      "id": "test_demonstration.DemonstrationTests.test_nonfinite_state_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00038720899999999947,
+      "id": "test_demonstration.DemonstrationTests.test_original_jets_follow_controller_input",
+      "outcome": "passed"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.008678874999999975,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.007735583000000046,
+      "id": "test_demonstration.DemonstrationTests.test_sensor_disconnect_removes_readback_not_motion",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0009681670000000198,
+      "id": "test_demonstration.DemonstrationTests.test_truncated_trace_rejected",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 11,
+  "unittest_successful": false
+}

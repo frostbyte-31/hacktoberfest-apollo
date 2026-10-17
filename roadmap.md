@@ -50,6 +50,7 @@
 - [x] Pin Tcl 8.6.16 source/options, build locally and record host toolchain; replace only the legacy Nix dependency launch through an explicit adapter
 - [x] Rebuild the unchanged engine/model fixture on macOS arm64; verify connected, disconnected and replay raw traces exactly match Phase 6
 - [x] Run 55 new packaging/runtime/launcher tests successfully; Linux and upstream Tcl suite remain NOT RUN
+- [x] Verify a clean local clone rebuilds Tcl from the pinned archive and passes make check while retaining the three historical errors explicitly
 - [x] Document actual build commands and retain dated milestone evidence in docs/milestone1-evidence/
 
 ## Minimum next validation (requires separate approval; Phase 7 not started)

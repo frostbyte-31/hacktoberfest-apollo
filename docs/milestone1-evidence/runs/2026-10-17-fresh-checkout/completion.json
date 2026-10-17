@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED",
+  "commit": "03019afb122dbf426d406ebf66d60cf685677924",
+  "fresh_clone": true,
+  "pre_existing_build_cache": false,
+  "source_archive_offline": true,
+  "new_tcl_runtime_build": true,
+  "make_check_exit": 0,
+  "working_tree_clean_before": true,
+  "working_tree_clean_after": true,
+  "legacy_tests": {
+    "known_historical_errors": 3,
+    "outcomes": {
+      "error": 3,
+      "passed": 35
+    },
+    "tests_run": 38
+  },
+  "new_tests": {
+    "known_historical_errors": 0,
+    "outcomes": {
+      "passed": 55
+    },
+    "tests_run": 55
+  },
+  "raw_and_categorized_trace_byte_agreement": true,
+  "limits": "Same macOS arm64 host toolchain; compiler/system libraries remain recorded rather than pinned. Historical logs remain absent; no Phase 7 work."
+}

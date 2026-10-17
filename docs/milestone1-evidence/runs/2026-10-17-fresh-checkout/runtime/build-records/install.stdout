@@ -1,0 +1,173 @@
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/bin
+Installing libtcl8.6.a to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/
+Installing tclsh as /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/bin/tclsh8.6
+Installing tclConfig.sh to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/
+Installing tclooConfig.sh to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/
+Installing libtclstub8.6.a to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/
+Installing pkg-config file to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/pkgconfig/
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/../tcl8
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/opt0.4
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/http1.0
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/encoding
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/../tcl8/8.4
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/../tcl8/8.4/platform
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/../tcl8/8.5
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/../tcl8/8.6
+Installing library files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/
+Installing package http1.0 files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/http1.0/
+Installing package http 2.9.8 as a Tcl Module
+Installing package opt0.4 files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/opt0.4/
+Installing package msgcat 1.6.1 as a Tcl Module
+Installing package tcltest 2.5.9 as a Tcl Module
+Installing package platform 1.0.19 as a Tcl Module
+Installing package platform::shell 1.1.4 as a Tcl Module
+Installing encoding files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/encoding/
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/msgs
+Installing message catalog files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8.6/msgs/
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/man1
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/man3
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/mann
+Installing and cross-linking top-level (.1) docs to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/man1/
+Installing and cross-linking C API (.3) docs to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/man3/
+Installing and cross-linking command (.n) docs to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/man/mann/
+Making directory /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing header files to /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include/
+Configuring package 'itcl4.3.2'
+Configuring package 'sqlite3.47.2'
+Configuring package 'tdbc1.1.10'
+Configuring package 'tdbcmysql1.1.10'
+Configuring package 'tdbcodbc1.1.10'
+Configuring package 'tdbcpostgres1.1.10'
+Configuring package 'tdbcsqlite3-1.1.10'
+Configuring package 'thread2.8.11'
+Building package 'itcl4.3.2'
+make[1]: Nothing to be done for `all'.
+Building package 'sqlite3.47.2'
+If you have documentation to create, place the commands to
+build the docs in the 'doc:' target.  For example:
+        xml2nroff sample.xml > sample.n
+        xml2html sample.xml > sample.html
+Building package 'tdbc1.1.10'
+make[1]: Nothing to be done for `all'.
+Building package 'tdbcmysql1.1.10'
+make[1]: Nothing to be done for `all'.
+Building package 'tdbcodbc1.1.10'
+make[1]: Nothing to be done for `all'.
+Building package 'tdbcpostgres1.1.10'
+make[1]: Nothing to be done for `all'.
+Building package 'tdbcsqlite3-1.1.10'
+make[1]: Nothing to be done for `all'.
+Building package 'thread2.8.11'
+make[1]: Nothing to be done for `all'.
+Installing package 'itcl4.3.2'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/tclconfig/install-sh -c  -m 644 libitcl4.3.2.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2/libitcl4.3.2.dylib
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/tclconfig/install-sh -c  -m 644 libitclstub4.3.2.a /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2/libitclstub4.3.2.a
+ Install itcl.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2/itcl.tcl
+ Install itclWidget.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2/itclWidget.tcl
+ Install itclHullCmds.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2/itclHullCmds.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2
+/bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/tclconfig/install-sh -c  -m 644 itclConfig.sh "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/itcl4.3.2"
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itcl.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itclDecls.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itclInt.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itclMigrate2TclCore.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itclTclIntStubsFcn.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itcl2TclOO.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/itcl4.3.2/generic/itclIntDecls.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing body.n
+Installing class.n
+Installing code.n
+Installing configbody.n
+Installing delete.n
+Installing ensemble.n
+Installing find.n
+Installing is.n
+Installing itcl.n
+Installing itclcomponent.n
+Installing itcldelegate.n
+Installing itclextendedclass.n
+Installing itcloption.n
+Installing itclvars.n
+Installing itclwidget.n
+Installing local.n
+Installing scope.n
+Installing package 'sqlite3.47.2'
+If you have documentation to create, place the commands to
+build the docs in the 'doc:' target.  For example:
+        xml2nroff sample.xml > sample.n
+        xml2html sample.xml > sample.html
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/sqlite3.47.2/tclconfig/install-sh -c  -m 644 libsqlite3.47.2.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/sqlite3.47.2/libsqlite3.47.2.dylib
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/sqlite3.47.2
+/bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/sqlite3.47.2/tclconfig/install-sh -c  -m 755 /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/sqlite3.47.2/compat/sqlite3/spaceanal.tcl "/private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/bin/sqlite3_analyzer"
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/sqlite3.47.2/doc/sqlite3.n
+Installing package 'tdbc1.1.10'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/tclconfig/install-sh -c  -m 644 libtdbc1.1.10.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbc1.1.10/libtdbc1.1.10.dylib
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/tclconfig/install-sh -c  -m 644 libtdbcstub1.1.10.a /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbc1.1.10/libtdbcstub1.1.10.a
+ Install tdbc.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbc1.1.10/tdbc.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbc1.1.10
+ Install tdbcConfig.sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbc1.1.10
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/generic/tdbc.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/generic/tdbcInt.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/generic/tdbcDecls.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/Tdbc_Init.3
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc_connection.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc_mapSqlState.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc_resultset.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc_statement.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbc1.1.10/doc/tdbc_tokenize.n
+Installing package 'tdbcmysql1.1.10'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcmysql1.1.10/tclconfig/install-sh -c  -m 644 libtdbcmysql1.1.10.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcmysql1.1.10/libtdbcmysql1.1.10.dylib
+ Install tdbcmysql.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcmysql1.1.10/tdbcmysql.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcmysql1.1.10
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcmysql1.1.10/generic/fakemysql.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcmysql1.1.10/generic/mysqlStubs.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcmysql1.1.10/doc/tdbc_mysql.n
+Installing package 'tdbcodbc1.1.10'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcodbc1.1.10/tclconfig/install-sh -c  -m 644 libtdbcodbc1.1.10.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcodbc1.1.10/libtdbcodbc1.1.10.dylib
+ Install tdbcodbc.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcodbc1.1.10/tdbcodbc.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcodbc1.1.10
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcodbc1.1.10/generic/fakesql.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcodbc1.1.10/generic/odbcStubs.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcodbc1.1.10/doc/tdbc_odbc.n
+Installing package 'tdbcpostgres1.1.10'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcpostgres1.1.10/tclconfig/install-sh -c  -m 644 libtdbcpostgres1.1.10.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcpostgres1.1.10/libtdbcpostgres1.1.10.dylib
+ Install tdbcpostgres.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcpostgres1.1.10/tdbcpostgres.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tdbcpostgres1.1.10
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcpostgres1.1.10/generic/fakepq.h
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcpostgres1.1.10/generic/pqStubs.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcpostgres1.1.10/doc/tdbc_postgres.n
+Installing package 'tdbcsqlite3-1.1.10'
+/bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcsqlite3-1.1.10/tclconfig/install-sh -c  -m 644 /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcsqlite3-1.1.10/library/tdbcsqlite3.tcl \
+	    /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8/8.6/`echo tdbcsqlite3 | sed s=tdbc=tdbc/=`-1.1.10.tm
+/bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcsqlite3-1.1.10/tclconfig/install-sh -c  -m 644 /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcsqlite3-1.1.10/manifest.uuid \
+	    /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/tcl8/8.6/`echo tdbcsqlite3 | sed s=tdbc=tdbc/=`-1.1.10.uuid
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/tdbcsqlite3-1.1.10/doc/tdbc_sqlite3.n
+Installing package 'thread2.8.11'
+ /bin/sh /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/tclconfig/install-sh -c  -m 644 libthread2.8.11.dylib /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/thread2.8.11/libthread2.8.11.dylib
+ : /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/thread2.8.11/libthread2.8.11.dylib
+ Install ttrace.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/thread2.8.11/ttrace.tcl
+ Install pkgIndex.tcl /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/lib/thread2.8.11
+Installing header files in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/include
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/generic/tclThread.h
+Installing documentation in /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/runtime/share/man
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/doc/man/thread.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/doc/man/tpool.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/doc/man/tsv.n
+Installing /private/tmp/apollo-milestone1-fresh-u48j1uzb/checkout/.build/reproducibility/sources/20261017T134901Z-73bbcbf7/tcl8.6.16/pkgs/thread2.8.11/doc/man/ttrace.n
