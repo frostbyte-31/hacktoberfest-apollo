@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { DskyFace } from "@/components/console";
 import { phase9, REFSMFLG, stateAt } from "@/lib/replay";
-import { milestones } from "./index";
+import { milestones } from "@/lib/milestones";
 
 export const Route = createFileRoute("/present")({
   head: () => ({

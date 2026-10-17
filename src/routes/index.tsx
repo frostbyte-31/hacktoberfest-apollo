@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { LunarScene } from "@/components/LunarScene";
 import { DskyFace, Nav, Panel, Tag } from "@/components/console";
+import { milestones } from "@/lib/milestones";
 import { cduSigned, frameAt, oct, phase9, REFSMFLG, runs, stateAt, type Event } from "@/lib/replay";
 
 export const Route = createFileRoute("/")({
@@ -30,16 +31,6 @@ function Readout({ label, value, unit, dim }: { label: string; value: string; un
   );
 }
 
-const MILESTONES: [string, (e: Event) => boolean][] = [
-  ["AGC startup (Phase 5 fixture)", (e) => e.text.startsWith("MODREG (PROG) = 32767")],
-  ["P51 entered", (e) => e.text === "MODREG (PROG) = 51"],
-  ["Star data and marks entered", (e) => e.text.startsWith("Star 2: PROCEED after marks")],
-  ["REFSMFLG set · REFSMMAT populated", (e) => e.text.startsWith("REFSMFLG SET")],
-  ["P63 selected — no alarm 00220", (e) => e.text === "MODREG (PROG) = 63"],
-  ["Alarm 01406 — P63 aborted", (e) => e.text === "FAILREG1 = 01406"],
-];
-export const milestones = MILESTONES.map(([l, m]) => ({ label: l, t: phase9.events.find(m)?.t ?? Infinity }));
-
 function usePlayback(t0: number, t1: number, base: number) {
   const [t, setT] = useState(t0);
   const [playing, setPlaying] = useState(false);
@@ -52,7 +43,6 @@ function usePlayback(t0: number, t1: number, base: number) {
   }, [playing, speed, t1, base]);
   return { t, setT, playing, setPlaying, speed, setSpeed };
 }
-export { usePlayback };
 
 function Console() {
   const [runKey, setRunKey] = useState<RunKey>("p9");
@@ -169,7 +159,7 @@ function Console() {
   );
 }
 
-export function Log({ events, empty }: { events: Event[]; empty?: string }) {
+function Log({ events, empty }: { events: Event[]; empty?: string }) {
   const color: Record<string, string> = { alarm: "text-destructive", throttle: "text-warning", rcs: "text-accent", key: "text-foreground", state: "text-primary", input: "text-muted-foreground" };
   if (!events.length) return <p className="font-mono text-xs text-muted-foreground">{empty}</p>;
   return (

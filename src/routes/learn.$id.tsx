@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Diagram } from "@/components/Diagrams";
 import { Nav } from "@/components/console";
 import { tutorials, type Quiz } from "@/lib/content";
-import { useDone } from "./learn.index";
+import { useDone } from "@/lib/progress";
 
 export const Route = createFileRoute("/learn/$id")({
   loader: ({ params }) => {

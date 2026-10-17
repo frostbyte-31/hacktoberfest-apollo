@@ -163,3 +163,4 @@
   text-shadow: 0 0 8px color-mix(in oklab, var(--accent) 60%, transparent);
 }
 @keyframes twinkle { 0%,100% { opacity: .9 } 50% { opacity: .35 } }
+@keyframes dash { to { stroke-dashoffset: -18 } }
