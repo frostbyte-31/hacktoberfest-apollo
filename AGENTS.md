@@ -3,3 +3,4 @@
 - Use the pinned emulator engine with its ringbuffer backend for cycle-locked native/WebAssembly tests, so host socket scheduling does not masquerade as an emulator difference.
 - Keep the minimum integration model outside the emulator, consuming actual actuator packets and returning counter-operation packets; this preserves original flight computations and makes disconnected-loop controls possible.
 - Bound spacecraft-feedback experiments to explicitly supported axes and disclose coupling latency and numerical integration; reject unsupported motion so a minimum fixture cannot silently imply general vehicle fidelity.
+- Demonstration entry points reuse retained integration harnesses and produce categorized summaries from raw traces rather than duplicating the emulator or vehicle model, preserving provenance and causal controls.

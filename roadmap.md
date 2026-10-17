@@ -37,6 +37,13 @@
 - [x] Executed actual RCS/body/CDU feedback with active upstream model, actuator/sensor disconnects, opposite input, exact replay and explicit single-axis guards
 - [x] Delivered docs/PHASE5_IMU_READINESS.md and docs/phase5-evidence/; 12 concrete evidence tests pass
 
+## Phase 6 (in progress — reproducible technical demonstration)
+- [ ] Audit Phase 1–5 reports and Phase 5 causal evidence; fingerprint prior files
+- [ ] Reuse existing integration through a repeatable demonstration entry point
+- [ ] Separate actual AGC outputs, model state, sensor readings and diagnostics in an event trace
+- [ ] Validate fresh replay and feedback-disconnect behavior; preserve new logs separately
+- [ ] Deliver docs/PHASE6_DEMONSTRATION.md and docs/phase6-evidence/; stop
+
 ## Minimum next validation (not authorized follow-on work)
 - Clean revision-specific startup schedule: wait for initialization before V37, isolate cold-start01107, and validate symmetric signed CDU timing before stronger control claims.
 
