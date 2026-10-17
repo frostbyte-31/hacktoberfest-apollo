@@ -42,6 +42,8 @@ def main():
             word = lib.output_word(i); ch, val = (word >> 16) & 65535, word & 32767
             at = lib.output_cycle(i)
             emit({'ev': 'output', 'cycle': at, 'channel': ch, 'value': val})
+            if ch == 5 and val != 0:
+                raise RuntimeError('Unsupported cross-axis jet word')
             if ch in (5, 6, 10): events.append((at, ch, val))
         # Integrate each actual jet/zeroing latch interval, not a fabricated command.
         intervals = events + [(tick + count, -1, 0)]
@@ -53,8 +55,12 @@ def main():
                 response = proc.stdout.readline().strip()
                 if '|' not in response: raise RuntimeError('Plant failed: ' + response)
                 state, packets = response.split('|'); state = list(map(float, state.split()))
+                if state[1] != 0 or state[2] != 0 or state[4] != 0 or state[5] != 0:
+                    raise RuntimeError('Unsupported cross-axis vehicle motion')
                 for op, address in re.findall(r'(PCDU_FAST|MCDU_FAST|PCDU|MCDU) (\d+)', packets):
                     addr = int(address, 8); code = {'PCDU': 1, 'MCDU': 3, 'PCDU_FAST': 17, 'MCDU_FAST': 19}[op]
+                    if addr != 0o32:
+                        raise RuntimeError('Unsupported cross-axis CDU feedback')
                     accepted = 0 if mode == 'feedback_off' else lib.packet_write(128 | addr, code)
                     emit({'ev': 'sensor', 'cycle': tick + count, 'origin_interval_end': at, 'counter': addr, 'code': code, 'delivered': mode != 'feedback_off', 'accepted': accepted})
                     if mode != 'feedback_off' and accepted <= 0: raise RuntimeError('Sensor rejected')
