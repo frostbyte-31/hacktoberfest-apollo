@@ -202,6 +202,7 @@ def main():
                     else:
                         step_i += 1; step_since = None; ok_since = None
             else:
+                ok_since = None
                 if step_since is not None and action_q:
                     # Flash temporarily replaced by a monitor load; keep waiting.
                     pass
