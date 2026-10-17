@@ -1,0 +1,93 @@
+{
+  "all_tests_passed": false,
+  "classifications": {
+    "known_historical_gap": 1,
+    "passed": 10
+  },
+  "discovery": {
+    "directory": "docs/phase6-evidence",
+    "pattern": "test_demonstration.py"
+  },
+  "expected_test_count": 11,
+  "outcomes": {
+    "error": 1,
+    "passed": 10
+  },
+  "policy_satisfied": true,
+  "suite": "phase6",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0012751379999826895,
+      "id": "test_demonstration.DemonstrationTests.test_actual_sensor_acceptance_and_counter_application_distinct",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.003688466999847151,
+      "id": "test_demonstration.DemonstrationTests.test_changed_measurements_change_original_commands",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00010947999999189051,
+      "id": "test_demonstration.DemonstrationTests.test_compiler_and_runs_exit_zero",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0006513050000194198,
+      "id": "test_demonstration.DemonstrationTests.test_delivery_timestamp_preserved_separately",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0009127040000294073,
+      "id": "test_demonstration.DemonstrationTests.test_fresh_replay_exact",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.11777473999995891,
+      "id": "test_demonstration.DemonstrationTests.test_inspection_is_deterministic",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0003952810000100726,
+      "id": "test_demonstration.DemonstrationTests.test_nonfinite_state_rejected",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0002282739999373007,
+      "id": "test_demonstration.DemonstrationTests.test_original_jets_follow_controller_input",
+      "outcome": "passed"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.005830760999970153,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 58, in testPartExecutor\n    yield\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 651, in run\n    self._callTestMethod(testMethod)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 606, in _callTestMethod\n    if method() is not None:\n       ~~~~~~^^\n  File \"/dev-server/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.003920566000033432,
+      "id": "test_demonstration.DemonstrationTests.test_sensor_disconnect_removes_readback_not_motion",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0003429400001095928,
+      "id": "test_demonstration.DemonstrationTests.test_truncated_trace_rejected",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 11,
+  "unittest_successful": false
+}

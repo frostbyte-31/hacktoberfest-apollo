@@ -1,0 +1,326 @@
+{
+  "status": "VERIFIED",
+  "tests_run": 47,
+  "passed": true,
+  "groups": {
+    "common": {
+      "tests_run": 2,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_common.PreservationTests.test_modified_missing_extra_and_symlinked_evidence_are_rejected",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0020015140000850806
+        },
+        {
+          "id": "test_common.PreservationTests.test_unsafe_inventory_path_is_rejected",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0002628919999096979
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    },
+    "startup": {
+      "tests_run": 13,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_startup.StartupTests.test_addresses_agree_with_rope_and_erasable_source",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0059688260000712035
+        },
+        {
+          "id": "test_startup.StartupTests.test_after_ready_control_accepts_p00",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 3.401300000405172e-05
+        },
+        {
+          "id": "test_startup.StartupTests.test_cold_boot_takes_zero_pair_failure_path",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.796299986584927e-05
+        },
+        {
+          "id": "test_startup.StartupTests.test_command_records_are_completed_and_timestamped",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00012988999992558092
+        },
+        {
+          "id": "test_startup.StartupTests.test_exact_replay_and_raw_hashes",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.001707847000034235
+        },
+        {
+          "id": "test_startup.StartupTests.test_imu_off_p00_is_not_dap_readiness",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.0296999991842313e-05
+        },
+        {
+          "id": "test_startup.StartupTests.test_late_v37_enters_p00_with_no_recorded_alarms",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.6670999912093976e-05
+        },
+        {
+          "id": "test_startup.StartupTests.test_legacy_and_premature_keys_hit_original_rejection",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0002512739999929181
+        },
+        {
+          "id": "test_startup.StartupTests.test_no_counter_or_vehicle_stimulus",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.003074483999853328
+        },
+        {
+          "id": "test_startup.StartupTests.test_no_v36_does_not_clear_expected_cold_alarm",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0002544889998716826
+        },
+        {
+          "id": "test_startup.StartupTests.test_original_fresh_start_clears_alarm_and_stays_clear",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00024388999986513227
+        },
+        {
+          "id": "test_startup.StartupTests.test_original_sources_have_pinned_provenance",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00025302899985035765
+        },
+        {
+          "id": "test_startup.StartupTests.test_ready_observed_before_first_delayed_v37_key",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 9.146299998974428e-05
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    },
+    "cdu": {
+      "tests_run": 16,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_all_workloads_replay_exactly",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0016471179999371088
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_backlog_can_catch_up_faster_than_nominal_deadline_spacing",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 6.451600006585068e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_deadline_cadence_uses_exact_clock_and_not_rounded_wrapper",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 8.873399997355591e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_each_supported_packet_is_enqueued_and_applied",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 6.183999994391343e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_fifo_capacity_control_detects_silent_loss_despite_packet_acceptance",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 7.270500009326497e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_mixed_runs_preserve_order_and_signed_net_count",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00029340900005081494
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_other_axes_remain_zero",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0051017360001424095
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_packet_consumption_and_actual_application_are_separate",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0011735240000234626
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_pure_signed_fast_counts_and_symmetric_application_times",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 5.0745000180540956e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_pure_signed_slow_counts_and_symmetric_application_times",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 3.134200005661114e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_queue_settlement_and_quiet_observation_are_bounded",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0002537170000778133
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_ringbuffer_capacity_control_and_same_run_coalescing",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.3683999870627304e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_signed_wrap_uses_packets_without_counter_initialization_writes",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.0422000034159282e-05
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_build_symlink_escape_into_retained_evidence",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.040578945999868665
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_existing_output_without_writing",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.043665233999945485
+        },
+        {
+          "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_new_retained_evidence_path_before_loading_engine",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.040659546000142655
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    },
+    "plant": {
+      "tests_run": 16,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_plant.CapturedPlantTests.test_actual_process_completed_with_locked_tcl",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00024937900002441893
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_angle_wrap_keeps_short_signed_direction",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.917999995588616e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_delta_controls_direction_independently_of_rate_selector",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 8.345800006281934e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_exact_increment_is_retained_until_exceeded",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.1309999965524185e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_existing_negative_fast_motion_selects_slow_mode",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.6523999875062145e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_matched_slow_signed_motion_emits_opposite_counts",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.37660001655604e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_measurements_reject_fabricated_signed_agreement",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00027908399988518795
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_only_x_gimbal_and_octal_counter_32_are_observed",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0019716560000233585
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_output_guard_rejects_retained_evidence",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00046225899995988584
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_parse_fails_without_completion_marker",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00022545100000570528
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_counter",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00022657399995296146
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_state",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00031873100010670896
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_parse_rejects_duplicate_steps",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00028398000017659797
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_positive_four_threshold_switches_mode",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.7477000028520706e-05
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_summary_recomputes_from_raw_process_output",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00026263600011589006
+        },
+        {
+          "id": "test_plant.CapturedPlantTests.test_zeroing_and_lock_inhibits_still_apply",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.80320000708889e-05
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    }
+  },
+  "prior_files_preserved": 534
+}

@@ -1,0 +1,99 @@
+{
+  "all_tests_passed": false,
+  "classifications": {
+    "known_historical_gap": 1,
+    "passed": 11
+  },
+  "discovery": {
+    "directory": "docs/phase5-evidence",
+    "pattern": "test_readiness.py"
+  },
+  "expected_test_count": 12,
+  "outcomes": {
+    "error": 1,
+    "passed": 11
+  },
+  "policy_satisfied": true,
+  "suite": "phase5",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.001070011000138038,
+      "id": "test_readiness.EvidenceTests.test_actual_jets_move_vehicle_and_read_back",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0016425029998572427,
+      "id": "test_readiness.EvidenceTests.test_actuator_disconnect_removes_motion",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.06003458099985437,
+      "id": "test_readiness.EvidenceTests.test_baseline_reproduces_original_failure",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00011852100010401045,
+      "id": "test_readiness.EvidenceTests.test_correction_changes_only_operate_bit",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0012923040001169284,
+      "id": "test_readiness.EvidenceTests.test_exact_replays",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.005190314999936163,
+      "id": "test_readiness.EvidenceTests.test_feedback_changes_original_commands",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.010541101999933744,
+      "id": "test_readiness.EvidenceTests.test_fixture_stays_single_axis",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0035673510001288378,
+      "id": "test_readiness.EvidenceTests.test_imu_off_restores_rejection",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0006100249997871288,
+      "id": "test_readiness.EvidenceTests.test_opposite_input_reverses_initial_response",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0030486910000036005,
+      "id": "test_readiness.EvidenceTests.test_original_issup_clears_the_gate",
+      "outcome": "passed"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.005937873999982912,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 58, in testPartExecutor\n    yield\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 651, in run\n    self._callTestMethod(testMethod)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 606, in _callTestMethod\n    if method() is not None:\n       ~~~~~~^^\n  File \"/dev-server/docs/phase5-evidence/test_readiness.py\", line 17, in test_prior_evidence_unchanged\n    for p, h in hashes.items(): self.assertEqual(hashlib.sha256((ROOT / p).read_bytes()).hexdigest(), h, p)\n                                                                ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.004037534999952186,
+      "id": "test_readiness.EvidenceTests.test_sensor_disconnect_removes_readback",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 12,
+  "unittest_successful": false
+}

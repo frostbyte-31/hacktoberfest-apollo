@@ -1,0 +1,895 @@
+{
+  "all_tests_passed": false,
+  "argv": [
+    "docs/milestone1-evidence/run_tests.py"
+  ],
+  "cwd": "/dev-server",
+  "env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "finished_utc": "2026-10-17T14:47:59.206787+00:00",
+  "git": {
+    "revision": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "3e7d20e18a9426b374912db7f7d62f3f19402f9b\n"
+    },
+    "working_tree": {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "input_sha256": {
+    "docs/milestone1-evidence/baseline.json": "698368f1413b453ac5e37098e64cf8232fb10f3f22e62f18e45fc124acebf264",
+    "docs/milestone1-evidence/evidence.py": "4326e5695c0a386a2b1142bc0d49733bd9736a670dbe23f1ee0bd6fa21d7d3cc",
+    "docs/milestone1-evidence/missing-historical.json": "8dd7633cdcdf87886fe216126295ae2a20f366872160ea815a3fd8a8935bc9a6",
+    "docs/milestone1-evidence/run_tests.py": "bbe13f5f0487385b95c7494e353d2134d623e058c8a6fc0aaa49f139d1556733",
+    "docs/milestone1-evidence/tests/test_evidence.py": "639a18bcaccd6f375e9d46dfef0e2b24702f7102bc33ae5ec0ff1542404411e9",
+    "docs/milestone1-evidence/tests/test_reproduce.py": "93581da1d1d57519c84ce6628e0af23d717fb9ad63c11eb9164814a4a6724286",
+    "docs/milestone1-evidence/tests/test_runtime.py": "9ffbf774019682c722e03545a8f95d0cf0d43240d74c14a15e71a384d6c68c27",
+    "docs/milestone1-evidence/tests/test_test_runner.py": "91258e074987909b7049d8457895b1196037041f496bac6c829909bb7b25e433",
+    "docs/phase2-evidence/test_validation.py": "6b3713970f3df864acc6f75c69c61d73747e197e0bdf844ef49a6fc99ad48c60",
+    "docs/phase3-evidence/test_loop.py": "54f2982af00ee95b8f58aa9c4c6bf50507259900313c877b6db7c513cace38cf",
+    "docs/phase4-evidence/test_control_path.py": "fffba09bf32eb9fc4f93712fb0d2885679d1832a2b58e02aae19dd4d32daae6a",
+    "docs/phase5-evidence/test_readiness.py": "815a00482764cfe5d4c7a7b78684932300d569271d3ed63317f8e197b1b2dccf",
+    "docs/phase6-evidence/test_demonstration.py": "62e743b854bed8ba038c93e03a28da3acd1067fbce483759bbaa460082247047"
+  },
+  "legacy": {
+    "known_historical_errors": 3,
+    "outcomes": {
+      "error": 3,
+      "passed": 35
+    },
+    "tests_run": 38
+  },
+  "milestone1": {
+    "known_historical_errors": 0,
+    "outcomes": {
+      "passed": 55
+    },
+    "tests_run": 55
+  },
+  "platform": "Linux-6.12.111-x86_64-with-glibc2.40",
+  "policy_satisfied": true,
+  "python": {
+    "executable": "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+    "version": "3.13.12 (main, Feb  3 2026, 17:53:27) [GCC 14.3.0]"
+  },
+  "root": "/dev-server",
+  "schema_version": 1,
+  "started_utc": "2026-10-17T14:47:56.603985+00:00",
+  "status": "verified_with_historical_gaps",
+  "suites": [
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase2",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/phase2.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-17T14:47:56.807438+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 2
+        },
+        "discovery": {
+          "directory": "docs/phase2-evidence",
+          "pattern": "test_validation.py"
+        },
+        "expected_test_count": 2,
+        "outcomes": {
+          "passed": 2
+        },
+        "policy_satisfied": true,
+        "suite": "phase2",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0014535699999669305,
+            "id": "test_validation.ValidationTests.test_identical_initial_conditions_and_outputs",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.01044980800020312,
+            "id": "test_validation.ValidationTests.test_p63_readiness_failure_not_descent",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 2,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-17T14:47:56.693289+00:00",
+      "suite": "phase2"
+    },
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase3",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/phase3.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-17T14:47:57.122454+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 7
+        },
+        "discovery": {
+          "directory": "docs/phase3-evidence",
+          "pattern": "test_loop.py"
+        },
+        "expected_test_count": 7,
+        "outcomes": {
+          "passed": 7
+        },
+        "policy_satisfied": true,
+        "suite": "phase3",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.06908827200004453,
+            "id": "test_loop.LoopEvidence.test_actuator_changes_plant",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.07537739999997939,
+            "id": "test_loop.LoopEvidence.test_disconnected_feedback_fails",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.026959631999943667,
+            "id": "test_loop.LoopEvidence.test_negative_sign",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002534052000100928,
+            "id": "test_loop.LoopEvidence.test_prior_evidence_unchanged",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0008190730000023905,
+            "id": "test_loop.LoopEvidence.test_reproducible",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.02672227399989424,
+            "id": "test_loop.LoopEvidence.test_return_measurement_and_agc_response",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.025484672999937175,
+            "id": "test_loop.LoopEvidence.test_sensor_reception",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 7,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-17T14:47:56.807625+00:00",
+      "suite": "phase3"
+    },
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase4",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/phase4.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-17T14:47:57.437234+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 5
+        },
+        "discovery": {
+          "directory": "docs/phase4-evidence",
+          "pattern": "test_control_path.py"
+        },
+        "expected_test_count": 6,
+        "outcomes": {
+          "error": 1,
+          "passed": 5
+        },
+        "policy_satisfied": true,
+        "suite": "phase4",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0001571650000187219,
+            "id": "test_control_path.ControlEvidence.test_component_yaw_sign_and_sensor",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.1665428300000258,
+            "id": "test_control_path.ControlEvidence.test_phase3_not_a_thruster_experiment",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.0062035239998294855,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 58, in testPartExecutor\n    yield\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 651, in run\n    self._callTestMethod(testMethod)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 606, in _callTestMethod\n    if method() is not None:\n       ~~~~~~^^\n  File \"/dev-server/docs/phase4-evidence/test_control_path.py\", line 10, in test_prior_evidence_preserved\n    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)\n                                                                      ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.015403848000005382,
+            "id": "test_control_path.ControlEvidence.test_probe_inputs_received",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002719130000059522,
+            "id": "test_control_path.ControlEvidence.test_replay",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.01615416100003131,
+            "id": "test_control_path.ControlEvidence.test_source_readiness_blocks_actuation",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 6,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-17T14:47:57.122602+00:00",
+      "suite": "phase4"
+    },
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase5",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/phase5.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-17T14:47:58.254105+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 11
+        },
+        "discovery": {
+          "directory": "docs/phase5-evidence",
+          "pattern": "test_readiness.py"
+        },
+        "expected_test_count": 12,
+        "outcomes": {
+          "error": 1,
+          "passed": 11
+        },
+        "policy_satisfied": true,
+        "suite": "phase5",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001188868000099319,
+            "id": "test_readiness.EvidenceTests.test_actual_jets_move_vehicle_and_read_back",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0018100480001521646,
+            "id": "test_readiness.EvidenceTests.test_actuator_disconnect_removes_motion",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.07203960999981973,
+            "id": "test_readiness.EvidenceTests.test_baseline_reproduces_original_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00012986800015823974,
+            "id": "test_readiness.EvidenceTests.test_correction_changes_only_operate_bit",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0014229370001430652,
+            "id": "test_readiness.EvidenceTests.test_exact_replays",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.006507625999802258,
+            "id": "test_readiness.EvidenceTests.test_feedback_changes_original_commands",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.011003605000041716,
+            "id": "test_readiness.EvidenceTests.test_fixture_stays_single_axis",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.003949572999999873,
+            "id": "test_readiness.EvidenceTests.test_imu_off_restores_rejection",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006955339999876742,
+            "id": "test_readiness.EvidenceTests.test_opposite_input_reverses_initial_response",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0033642230000623385,
+            "id": "test_readiness.EvidenceTests.test_original_issup_clears_the_gate",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.006575566000037725,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 58, in testPartExecutor\n    yield\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 651, in run\n    self._callTestMethod(testMethod)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 606, in _callTestMethod\n    if method() is not None:\n       ~~~~~~^^\n  File \"/dev-server/docs/phase5-evidence/test_readiness.py\", line 17, in test_prior_evidence_unchanged\n    for p, h in hashes.items(): self.assertEqual(hashlib.sha256((ROOT / p).read_bytes()).hexdigest(), h, p)\n                                                                ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00428566999994473,
+            "id": "test_readiness.EvidenceTests.test_sensor_disconnect_removes_readback",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 12,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-17T14:47:57.437459+00:00",
+      "suite": "phase5"
+    },
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase6",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/phase6.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-17T14:47:58.670152+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 10
+        },
+        "discovery": {
+          "directory": "docs/phase6-evidence",
+          "pattern": "test_demonstration.py"
+        },
+        "expected_test_count": 11,
+        "outcomes": {
+          "error": 1,
+          "passed": 10
+        },
+        "policy_satisfied": true,
+        "suite": "phase6",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001286896000010529,
+            "id": "test_demonstration.DemonstrationTests.test_actual_sensor_acceptance_and_counter_application_distinct",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004047913000022163,
+            "id": "test_demonstration.DemonstrationTests.test_changed_measurements_change_original_commands",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0001960659999440395,
+            "id": "test_demonstration.DemonstrationTests.test_compiler_and_runs_exit_zero",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006353270000545308,
+            "id": "test_demonstration.DemonstrationTests.test_delivery_timestamp_preserved_separately",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0010180940000736882,
+            "id": "test_demonstration.DemonstrationTests.test_fresh_replay_exact",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.11868602599997757,
+            "id": "test_demonstration.DemonstrationTests.test_inspection_is_deterministic",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0003280769999491895,
+            "id": "test_demonstration.DemonstrationTests.test_nonfinite_state_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0003722530000231927,
+            "id": "test_demonstration.DemonstrationTests.test_original_jets_follow_controller_input",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.006442418999995425,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 58, in testPartExecutor\n    yield\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 651, in run\n    self._callTestMethod(testMethod)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/unittest/case.py\", line 606, in _callTestMethod\n    if method() is not None:\n       ~~~~~~^^\n  File \"/dev-server/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/nix/store/44rn0p64x92bnnh7cwn6x6ybvflybmvz-python3-3.13.12/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/dev-server/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005295307000096727,
+            "id": "test_demonstration.DemonstrationTests.test_sensor_disconnect_removes_readback_not_motion",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0003883639999457955,
+            "id": "test_demonstration.DemonstrationTests.test_truncated_trace_rejected",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 11,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-17T14:47:58.254375+00:00",
+      "suite": "phase6"
+    },
+    {
+      "argv": [
+        "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+        "-B",
+        "/dev-server/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "milestone1",
+        "--root",
+        "/dev-server",
+        "--missing",
+        "/dev-server/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/dev-server/.build/reproducibility/tests/tests-20261017T144756.603431Z/milestone1.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-17T14:47:59.135901+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 55
+        },
+        "discovery": {
+          "directory": "docs/milestone1-evidence/tests",
+          "pattern": "test_*.py"
+        },
+        "expected_test_count": null,
+        "outcomes": {
+          "passed": 55
+        },
+        "policy_satisfied": true,
+        "suite": "milestone1",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0013315549999788345,
+            "id": "test_evidence.EvidenceIntegrityTests.test_baseline_paths_cannot_escape_repository",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0029755099999420054,
+            "id": "test_evidence.EvidenceIntegrityTests.test_changed_retained_file_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.07935052299990275,
+            "id": "test_evidence.EvidenceIntegrityTests.test_cli_exit_codes_and_report_output",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.03877693000004001,
+            "id": "test_evidence.EvidenceIntegrityTests.test_cli_refuses_to_overwrite_retained_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0021196930001678993,
+            "id": "test_evidence.EvidenceIntegrityTests.test_complete_recovery_is_reported_separately",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0014408170000024256,
+            "id": "test_evidence.EvidenceIntegrityTests.test_conflicting_original_hashes_are_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0015183749999323481,
+            "id": "test_evidence.EvidenceIntegrityTests.test_duplicate_json_key_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005879232000097545,
+            "id": "test_evidence.EvidenceIntegrityTests.test_each_historical_record_requires_its_exact_original_hash",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0008783150001363538,
+            "id": "test_evidence.EvidenceIntegrityTests.test_inventory_cannot_add_or_drop_exceptions",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002168556000015087,
+            "id": "test_evidence.EvidenceIntegrityTests.test_known_gaps_remain_explicit_and_do_not_count_as_matches",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.000826167000013811,
+            "id": "test_evidence.EvidenceIntegrityTests.test_malformed_metadata_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0008341469999777473,
+            "id": "test_evidence.EvidenceIntegrityTests.test_missing_inventory_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002197210000076666,
+            "id": "test_evidence.EvidenceIntegrityTests.test_new_missing_retained_file_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002084121000052619,
+            "id": "test_evidence.EvidenceIntegrityTests.test_new_unlisted_evidence_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001323650000131238,
+            "id": "test_evidence.EvidenceIntegrityTests.test_original_manifest_is_verified_directly",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0023745490000237623,
+            "id": "test_evidence.EvidenceIntegrityTests.test_symlink_substitution_is_fatal_even_for_identical_bytes",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009712319999835017,
+            "id": "test_evidence.EvidenceIntegrityTests.test_unpinned_inventory_change_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.07154649900007826,
+            "id": "test_evidence.RetainedRepositoryTests.test_original_snapshot_and_29_gaps_are_intact",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006750889999693754,
+            "id": "test_reproduce.DependencyAdapterTests.test_direct_adapter_cannot_write_retained_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00012429099979271996,
+            "id": "test_reproduce.DependencyAdapterTests.test_only_exact_retained_launch_is_translated",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0003647409998848161,
+            "id": "test_reproduce.SourceAndOutputTests.test_build_symlink_cannot_authorize_writes_into_old_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0018054790000405774,
+            "id": "test_reproduce.SourceAndOutputTests.test_changed_or_unsafe_archive_rejected_before_extraction",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0004465170000003127,
+            "id": "test_reproduce.SourceAndOutputTests.test_duplicate_archive_members_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.06737659100008386,
+            "id": "test_reproduce.SourceAndOutputTests.test_failed_and_timed_out_commands_leave_execution_records",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0004627729999810981,
+            "id": "test_reproduce.SourceAndOutputTests.test_prior_evidence_and_existing_outputs_are_read_only",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0064683539999350614,
+            "id": "test_reproduce.SourceAndOutputTests.test_retained_bundle_extracts_with_exact_member_hashes",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0013661899999988236,
+            "id": "test_runtime.RuntimeChecks.test_added_runtime_file_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0005530429998543696,
+            "id": "test_runtime.RuntimeChecks.test_archive_links_are_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0005084650001663249,
+            "id": "test_runtime.RuntimeChecks.test_archive_members_are_all_checked_before_extraction",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0010259749999477208,
+            "id": "test_runtime.RuntimeChecks.test_archive_mismatch_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006790719999116845,
+            "id": "test_runtime.RuntimeChecks.test_cache_cannot_write_retained_evidence_even_through_build_symlink",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012950799998634466,
+            "id": "test_runtime.RuntimeChecks.test_changed_library_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0010161679999782791,
+            "id": "test_runtime.RuntimeChecks.test_changed_source_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0007586630001696903,
+            "id": "test_runtime.RuntimeChecks.test_corrupt_offline_archive_is_not_extracted",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009733870001582545,
+            "id": "test_runtime.RuntimeChecks.test_lock_mismatch_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0013780429999314947,
+            "id": "test_runtime.RuntimeChecks.test_matching_files_reach_smoke_test",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00042114899997613975,
+            "id": "test_runtime.RuntimeChecks.test_real_build_cache_is_allowed",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00025866099986160407,
+            "id": "test_runtime.RuntimeChecks.test_zero_exit_without_smoke_marker_fails",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0004479360000004817,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_bytes_filename_cannot_match_known_gap",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002461819999552972,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_different_missing_path_in_preservation_check_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012276990000827936,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_exact_known_gap_retains_error_and_explicit_classification",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0001932469999701425,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_filename_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00015387800021926523,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_tests_and_setup_errors_are_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002773779999643011,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_other_errno_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00025683699982437247,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_other_exception_types_are_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002664329999788606,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_previously_missing_path_now_present_cannot_be_exempted",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00014541099994858087,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_same_missing_path_in_unrelated_test_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002272090000587923,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_suite_policy_rejects_every_unverified_outcome",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00016221300006691308,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_uninventoried_missing_log_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00046296699997583346,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_function_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0005482320000282925,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_source_frame_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0008907409999210358,
+            "id": "test_test_runner.OutputProtectionTests.test_build_milestone_records_and_external_scratch_are_allowed",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0018411819999073487,
+            "id": "test_test_runner.OutputProtectionTests.test_retained_phase_and_audit_outputs_rejected_before_any_write",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00037351100013438554,
+            "id": "test_test_runner.OutputProtectionTests.test_symlink_alias_to_retained_evidence_is_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001349987000139663,
+            "id": "test_test_runner.OutputProtectionTests.test_unrelated_repository_outputs_and_existing_directories_are_rejected",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 55,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-17T14:47:58.670402+00:00",
+      "suite": "milestone1"
+    }
+  ],
+  "warning": "Historical-gap classification does not turn original unittest errors into passed tests."
+}

@@ -1,0 +1,21 @@
+test_actual_process_completed_with_locked_tcl (test_plant.CapturedPlantTests.test_actual_process_completed_with_locked_tcl) ... ok
+test_angle_wrap_keeps_short_signed_direction (test_plant.CapturedPlantTests.test_angle_wrap_keeps_short_signed_direction) ... ok
+test_delta_controls_direction_independently_of_rate_selector (test_plant.CapturedPlantTests.test_delta_controls_direction_independently_of_rate_selector) ... ok
+test_exact_increment_is_retained_until_exceeded (test_plant.CapturedPlantTests.test_exact_increment_is_retained_until_exceeded) ... ok
+test_existing_negative_fast_motion_selects_slow_mode (test_plant.CapturedPlantTests.test_existing_negative_fast_motion_selects_slow_mode) ... ok
+test_matched_slow_signed_motion_emits_opposite_counts (test_plant.CapturedPlantTests.test_matched_slow_signed_motion_emits_opposite_counts) ... ok
+test_measurements_reject_fabricated_signed_agreement (test_plant.CapturedPlantTests.test_measurements_reject_fabricated_signed_agreement) ... ok
+test_only_x_gimbal_and_octal_counter_32_are_observed (test_plant.CapturedPlantTests.test_only_x_gimbal_and_octal_counter_32_are_observed) ... ok
+test_output_guard_rejects_retained_evidence (test_plant.CapturedPlantTests.test_output_guard_rejects_retained_evidence) ... ok
+test_parse_fails_without_completion_marker (test_plant.CapturedPlantTests.test_parse_fails_without_completion_marker) ... ok
+test_parse_rejects_cross_axis_counter (test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_counter) ... ok
+test_parse_rejects_cross_axis_state (test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_state) ... ok
+test_parse_rejects_duplicate_steps (test_plant.CapturedPlantTests.test_parse_rejects_duplicate_steps) ... ok
+test_positive_four_threshold_switches_mode (test_plant.CapturedPlantTests.test_positive_four_threshold_switches_mode) ... ok
+test_summary_recomputes_from_raw_process_output (test_plant.CapturedPlantTests.test_summary_recomputes_from_raw_process_output) ... ok
+test_zeroing_and_lock_inhibits_still_apply (test_plant.CapturedPlantTests.test_zeroing_and_lock_inhibits_still_apply) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.015s
+
+OK

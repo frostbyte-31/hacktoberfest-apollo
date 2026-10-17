@@ -1,0 +1,12 @@
+test_actuator_changes_plant (test_loop.LoopEvidence.test_actuator_changes_plant) ... ok
+test_disconnected_feedback_fails (test_loop.LoopEvidence.test_disconnected_feedback_fails) ... ok
+test_negative_sign (test_loop.LoopEvidence.test_negative_sign) ... ok
+test_prior_evidence_unchanged (test_loop.LoopEvidence.test_prior_evidence_unchanged) ... ok
+test_reproducible (test_loop.LoopEvidence.test_reproducible) ... ok
+test_return_measurement_and_agc_response (test_loop.LoopEvidence.test_return_measurement_and_agc_response) ... ok
+test_sensor_reception (test_loop.LoopEvidence.test_sensor_reception) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.240s
+
+OK

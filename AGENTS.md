@@ -1,6 +1,10 @@
-# Investigation architecture
-- Keep Apollo validation harnesses and captured results in phase-specific evidence directories, separate from application code, to preserve reproducibility without starting application development.
-- Use the pinned emulator engine with its ringbuffer backend for cycle-locked native/WebAssembly tests, so host socket scheduling does not masquerade as an emulator difference.
-- Keep the minimum integration model outside the emulator, consuming actual actuator packets and returning counter-operation packets; this preserves original flight computations and makes disconnected-loop controls possible.
-- Bound spacecraft-feedback experiments to explicitly supported axes and disclose coupling latency and numerical integration; reject unsupported motion so a minimum fixture cannot silently imply general vehicle fidelity.
-- Demonstration entry points reuse retained integration harnesses and produce categorized summaries from raw traces rather than duplicating the emulator or vehicle model, preserving provenance and causal controls.
+<!-- LOVABLE:BEGIN -->
+> [!IMPORTANT]
+> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
+> published git history — force pushing, or rebasing/amending/squashing commits
+> that are already pushed — as it rewrites history on Lovable's side and the
+> user will likely lose their project history.
+>
+> Commits you push to the connected branch sync back to Lovable and show up in
+> the editor, so keep the branch in a working state.
+<!-- LOVABLE:END -->
