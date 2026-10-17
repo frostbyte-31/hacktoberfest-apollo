@@ -1,0 +1,63 @@
+{
+  "all_tests_passed": false,
+  "classifications": {
+    "known_historical_gap": 1,
+    "passed": 5
+  },
+  "discovery": {
+    "directory": "docs/phase4-evidence",
+    "pattern": "test_control_path.py"
+  },
+  "expected_test_count": 6,
+  "outcomes": {
+    "error": 1,
+    "passed": 5
+  },
+  "policy_satisfied": true,
+  "suite": "phase4",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0003105829999999962,
+      "id": "test_control_path.ControlEvidence.test_component_yaw_sign_and_sensor",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.156912292,
+      "id": "test_control_path.ControlEvidence.test_phase3_not_a_thruster_experiment",
+      "outcome": "passed"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.009304666999999989,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase4-evidence/test_control_path.py\", line 10, in test_prior_evidence_preserved\n    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.017647583000000022,
+      "id": "test_control_path.ControlEvidence.test_probe_inputs_received",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.0003383329999999962,
+      "id": "test_control_path.ControlEvidence.test_replay",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.01911041699999999,
+      "id": "test_control_path.ControlEvidence.test_source_readiness_blocks_actuation",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 6,
+  "unittest_successful": false
+}

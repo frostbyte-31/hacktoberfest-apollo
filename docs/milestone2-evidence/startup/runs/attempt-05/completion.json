@@ -1,0 +1,6 @@
+{
+  "native_runs": 7,
+  "exact_replay": true,
+  "status": "VERIFIED",
+  "scope": "Cold restart alarm cause and source-observed readiness/P00, stationary single-axis prerequisite only"
+}

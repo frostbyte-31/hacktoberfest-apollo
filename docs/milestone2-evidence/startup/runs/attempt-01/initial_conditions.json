@@ -1,0 +1,20 @@
+{
+  "revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "reset": "fresh native process; cpu_reset zeros erasable; original entry Z=04000",
+  "model": "stationary zero-angle; no vehicle integration or counter packets",
+  "flight_state_writes": 0,
+  "clock_seconds_per_cpu_call": 1.172e-05,
+  "first_input_cpu_call": 100000,
+  "v36_keys_cpu_calls": [
+    426665,
+    447998,
+    469331,
+    490664
+  ],
+  "duration_cpu_calls": 2200000,
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]"
+  }
+}

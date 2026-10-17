@@ -1,0 +1,21 @@
+test_all_workloads_replay_exactly (test_cdu_timing.NativeCduTiming) ... ok
+test_backlog_can_catch_up_faster_than_nominal_deadline_spacing (test_cdu_timing.NativeCduTiming) ... ok
+test_deadline_cadence_uses_exact_clock_and_not_rounded_wrapper (test_cdu_timing.NativeCduTiming) ... ok
+test_each_supported_packet_is_enqueued_and_applied (test_cdu_timing.NativeCduTiming) ... ok
+test_fifo_capacity_control_detects_silent_loss_despite_packet_acceptance (test_cdu_timing.NativeCduTiming) ... ok
+test_mixed_runs_preserve_order_and_signed_net_count (test_cdu_timing.NativeCduTiming) ... ok
+test_other_axes_remain_zero (test_cdu_timing.NativeCduTiming) ... ok
+test_packet_consumption_and_actual_application_are_separate (test_cdu_timing.NativeCduTiming) ... ok
+test_pure_signed_fast_counts_and_symmetric_application_times (test_cdu_timing.NativeCduTiming) ... ok
+test_pure_signed_slow_counts_and_symmetric_application_times (test_cdu_timing.NativeCduTiming) ... ok
+test_queue_settlement_and_quiet_observation_are_bounded (test_cdu_timing.NativeCduTiming) ... ok
+test_ringbuffer_capacity_control_and_same_run_coalescing (test_cdu_timing.NativeCduTiming) ... ok
+test_signed_wrap_uses_packets_without_counter_initialization_writes (test_cdu_timing.NativeCduTiming) ... ok
+test_worker_rejects_build_symlink_escape_into_retained_evidence (test_cdu_timing.NativeCduTiming) ... ok
+test_worker_rejects_existing_output_without_writing (test_cdu_timing.NativeCduTiming) ... ok
+test_worker_rejects_new_retained_evidence_path_before_loading_engine (test_cdu_timing.NativeCduTiming) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 3.726s
+
+OK

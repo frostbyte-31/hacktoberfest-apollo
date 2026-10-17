@@ -1,0 +1,14 @@
+{
+  "captured_utc": "2026-10-17T14:05:37.568427+00:00",
+  "argv": [
+    "python3",
+    "docs/milestone2-evidence/startup/run_validation.py",
+    "--source",
+    ".build/reproducibility/runs/milestone1-verified/source",
+    "--output",
+    ".build/milestone2-startup/attempt-02"
+  ],
+  "exit": 1,
+  "native_runs": 0,
+  "cause": "Preflight rope assertion rejected mistaken BIT6 operand address74740; actual pinned rope is74746. Fixed only new mapping assertion, no engine/flight state changes."
+}

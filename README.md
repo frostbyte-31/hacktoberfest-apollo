@@ -10,8 +10,9 @@ remain separate. There is no npm application to build.
 
 ## Check the evidence and tests
 
-Requirements: Python **3.9 or newer** and `make`. These checks use the standard
-library and require no downloads:
+Requirements: Python **3.9 or newer**, `make`, and a C compiler available as `cc`
+for the native CDU tests. The Python harnesses use the standard library and these
+checks require no downloads:
 
 ```sh
 make verify
@@ -23,7 +24,8 @@ SHA-256 hashes. It separately reports **29 missing historical logs**. New missin
 files, changed bytes, unsafe paths or unlisted retained evidence cause failure.
 The baseline does not reconstruct missing evidence or change old manifests.
 
-`make test` runs the unchanged Phase 2–6 suites and the new packaging tests.
+`make test` runs the unchanged Phase 2–6 suites, packaging tests, and Milestone 2
+startup/CDU/component tests.
 The historical result remains **38 tests: 35 passed, 3 errors** on missing logs.
 Only those exact preservation errors may be classified as known historical gaps;
 unexpected errors, failures or skipped tests make the command fail. A successful
@@ -79,12 +81,39 @@ The model remains synthetic yaw/X-CDU only, with semi-implicit integration,
 about 10 ms maximum coupling latency and undrained counter queues. Operate-only
 readiness does not establish complete IMU alignment or clean mission startup.
 
+## Validate startup and signed CDU timing
+
+```sh
+make validate-milestone2
+```
+
+This runs seven stationary startup comparisons, nine X-CDU transport workloads
+with fresh-process replays, and 24 imposed-yaw component scenarios. `make check`
+also runs this validation after the original three-mode feedback reproduction.
+All source inputs are retained locally; only the first Tcl bootstrap needs a
+download. Earlier evidence stays unchanged.
+
+The new startup fixture reaches P00 with clear alarm registers after original
+V36 and observed software readiness. It retains and explains the initial
+`01107`; it does not claim alarm-free power-on or flight-ready alignment.
+Transport signs match within a fixed slow/fast mode, and queues settle for the
+supported finite cases. Capacity controls expose a silent FIFO drop. The
+unchanged plant still selects slow mode for negative high rates: +8°/s produces
+FAST operations while −8°/s produces slow operations. That defect is diagnosed,
+not repaired by these validation harnesses.
+
+[Milestone 2 findings and evidence](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md)
+separate authentic software observations from synthetic sensor/component probes
+and state the limits on stronger control claims. No Phase 7 work is included.
+
 ## Evidence and provenance
 
 - [Repository audit](docs/PROJECT_STATE_AUDIT.md) records what was verified before
   packaging work and explains the reported Phase 1–6 results and limitations.
 - [Milestone 1 packaging report](docs/MILESTONE1_REPRODUCIBILITY.md) records the new
   baseline and actual validation results.
+- [Milestone 2 validation report](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md) records
+  the clean post-V36 interval, signed transport timing, capacity and model limits.
 - [Historical gap inventory](docs/milestone1-evidence/missing-historical.json)
   retains the 29 absent paths, original expected hashes and manifest references.
   Recovered logs are accepted only at their original hash. Fresh logs belong in

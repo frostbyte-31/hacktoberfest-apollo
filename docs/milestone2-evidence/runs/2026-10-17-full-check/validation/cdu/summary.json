@@ -1,0 +1,422 @@
+{
+  "status": "VERIFIED",
+  "cases": {
+    "positive_slow": {
+      "case": "positive_slow",
+      "classification": "diagnostic_transport",
+      "requests": 12,
+      "packet_accepted": 12,
+      "ringbuffer_rejected": 0,
+      "consumed": 12,
+      "fifo_enqueued": 12,
+      "fifo_dropped": 0,
+      "applied": 12,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 12,
+      "expected_modular_cdu": 12,
+      "final_state": {
+        "cycle": 203561,
+        "cdu": [
+          12,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 202774,
+        "checker": 1
+      },
+      "all_accounted": true,
+      "raw_sha256": "12a712519cf526ae76e2744fe8241b37c2edbae4546ea7db4391e61a93134ccd",
+      "application_codes": {
+        "1": 12
+      },
+      "application_interval_cpu_calls": {
+        "211": 1,
+        "212": 1,
+        "213": 6,
+        "214": 2,
+        "216": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200216,
+      "last_application_cycle": 202561,
+      "last_consumption_cycle": 200012,
+      "replay_byte_identical": true
+    },
+    "negative_slow": {
+      "case": "negative_slow",
+      "classification": "diagnostic_transport",
+      "requests": 12,
+      "packet_accepted": 12,
+      "ringbuffer_rejected": 0,
+      "consumed": 12,
+      "fifo_enqueued": 12,
+      "fifo_dropped": 0,
+      "applied": 12,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 12,
+      "expected_modular_cdu": 32756,
+      "final_state": {
+        "cycle": 203561,
+        "cdu": [
+          32756,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 202774,
+        "checker": 1
+      },
+      "all_accounted": true,
+      "raw_sha256": "bd68f68162cc0cd15216b76fbd933cdf19af0601576b4a5508bff2d556908eed",
+      "application_codes": {
+        "3": 12
+      },
+      "application_interval_cpu_calls": {
+        "211": 1,
+        "212": 1,
+        "213": 6,
+        "214": 2,
+        "216": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200216,
+      "last_application_cycle": 202561,
+      "last_consumption_cycle": 200012,
+      "replay_byte_identical": true
+    },
+    "positive_fast": {
+      "case": "positive_fast",
+      "classification": "diagnostic_transport",
+      "requests": 24,
+      "packet_accepted": 24,
+      "ringbuffer_rejected": 0,
+      "consumed": 24,
+      "fifo_enqueued": 24,
+      "fifo_dropped": 0,
+      "applied": 24,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 24,
+      "expected_modular_cdu": 24,
+      "final_state": {
+        "cycle": 201321,
+        "cdu": [
+          24,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 200334,
+        "checker": 0
+      },
+      "all_accounted": true,
+      "raw_sha256": "3ac943fac03acc3d57e5dcd43d81cdbb8779ac35d1812b0bc1164ac96c37c953",
+      "application_codes": {
+        "17": 24
+      },
+      "application_interval_cpu_calls": {
+        "3": 1,
+        "12": 13,
+        "15": 8,
+        "16": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200026,
+      "last_application_cycle": 200321,
+      "last_consumption_cycle": 200024,
+      "replay_byte_identical": true
+    },
+    "negative_fast": {
+      "case": "negative_fast",
+      "classification": "diagnostic_transport",
+      "requests": 24,
+      "packet_accepted": 24,
+      "ringbuffer_rejected": 0,
+      "consumed": 24,
+      "fifo_enqueued": 24,
+      "fifo_dropped": 0,
+      "applied": 24,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 24,
+      "expected_modular_cdu": 32744,
+      "final_state": {
+        "cycle": 201321,
+        "cdu": [
+          32744,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 200334,
+        "checker": 0
+      },
+      "all_accounted": true,
+      "raw_sha256": "e12055654079703f0f6014039f76251c1cfd168d046f62e5b3d5f353b74debd0",
+      "application_codes": {
+        "19": 24
+      },
+      "application_interval_cpu_calls": {
+        "3": 1,
+        "12": 13,
+        "15": 8,
+        "16": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200026,
+      "last_application_cycle": 200321,
+      "last_consumption_cycle": 200024,
+      "replay_byte_identical": true
+    },
+    "mixed": {
+      "case": "mixed",
+      "classification": "diagnostic_transport",
+      "requests": 22,
+      "packet_accepted": 22,
+      "ringbuffer_rejected": 0,
+      "consumed": 22,
+      "fifo_enqueued": 22,
+      "fifo_dropped": 0,
+      "applied": 22,
+      "max_fifo_entries": 4,
+      "max_fifo_pending": 22,
+      "expected_modular_cdu": 2,
+      "final_state": {
+        "cycle": 202894,
+        "cdu": [
+          2,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 201907,
+        "checker": 0
+      },
+      "all_accounted": true,
+      "raw_sha256": "9cd5b170fc8b2f25cfff6ecd05cc090c190aa7bf82a692c008e0848375b489db",
+      "application_codes": {
+        "1": 4,
+        "3": 3,
+        "17": 8,
+        "19": 7
+      },
+      "application_interval_cpu_calls": {
+        "12": 7,
+        "13": 1,
+        "15": 6,
+        "211": 1,
+        "213": 4,
+        "214": 1,
+        "216": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200214,
+      "last_application_cycle": 201894,
+      "last_consumption_cycle": 200022,
+      "replay_byte_identical": true
+    },
+    "alternating_supported": {
+      "case": "alternating_supported",
+      "classification": "diagnostic_transport",
+      "requests": 64,
+      "packet_accepted": 64,
+      "ringbuffer_rejected": 0,
+      "consumed": 64,
+      "fifo_enqueued": 64,
+      "fifo_dropped": 0,
+      "applied": 64,
+      "max_fifo_entries": 64,
+      "max_fifo_pending": 64,
+      "expected_modular_cdu": 0,
+      "final_state": {
+        "cycle": 208456,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 207467,
+        "checker": 2
+      },
+      "all_accounted": true,
+      "raw_sha256": "529f3caec5004e6a4034d0b38b2921f96ae7136feff14aef792a31f609b61e27",
+      "application_codes": {
+        "1": 16,
+        "3": 16,
+        "17": 16,
+        "19": 16
+      },
+      "application_interval_cpu_calls": {
+        "9": 1,
+        "12": 15,
+        "14": 1,
+        "15": 14,
+        "212": 3,
+        "213": 20,
+        "214": 5,
+        "215": 1,
+        "216": 3
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200214,
+      "last_application_cycle": 207456,
+      "last_consumption_cycle": 200064,
+      "replay_byte_identical": true
+    },
+    "signed_wrap": {
+      "case": "signed_wrap",
+      "classification": "diagnostic_transport",
+      "requests": 2,
+      "packet_accepted": 2,
+      "ringbuffer_rejected": 0,
+      "consumed": 2,
+      "fifo_enqueued": 2,
+      "fifo_dropped": 0,
+      "applied": 2,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 1,
+      "expected_modular_cdu": 0,
+      "final_state": {
+        "cycle": 202429,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 201641,
+        "checker": 1
+      },
+      "all_accounted": true,
+      "raw_sha256": "b0ae1aa1b24dd36b2d1bbe639855a6cec42e80083168e4552b96c2617a89ff4e",
+      "application_codes": {
+        "3": 1,
+        "1": 1
+      },
+      "application_interval_cpu_calls": {
+        "1215": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200214,
+      "last_application_cycle": 201429,
+      "last_consumption_cycle": 201215,
+      "replay_byte_identical": true
+    },
+    "fifo_capacity_control": {
+      "case": "fifo_capacity_control",
+      "classification": "diagnostic_transport",
+      "requests": 129,
+      "packet_accepted": 129,
+      "ringbuffer_rejected": 0,
+      "consumed": 129,
+      "fifo_enqueued": 128,
+      "fifo_dropped": 1,
+      "applied": 128,
+      "max_fifo_entries": 128,
+      "max_fifo_pending": 128,
+      "expected_modular_cdu": 0,
+      "final_state": {
+        "cycle": 228308,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 227521,
+        "checker": 0
+      },
+      "all_accounted": true,
+      "raw_sha256": "6b6a6dbac16d67b0c74cba5145febf7b26b7e419a31a5181bae46f9871be5e2c",
+      "application_codes": {
+        "1": 64,
+        "3": 64
+      },
+      "application_interval_cpu_calls": {
+        "211": 11,
+        "212": 6,
+        "213": 68,
+        "214": 27,
+        "215": 3,
+        "216": 12
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 200216,
+      "last_application_cycle": 227308,
+      "last_consumption_cycle": 200129,
+      "replay_byte_identical": true
+    },
+    "ringbuffer_capacity_control": {
+      "case": "ringbuffer_capacity_control",
+      "classification": "diagnostic_transport",
+      "requests": 1025,
+      "packet_accepted": 1023,
+      "ringbuffer_rejected": 2,
+      "consumed": 1023,
+      "fifo_enqueued": 1023,
+      "fifo_dropped": 0,
+      "applied": 1023,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 1023,
+      "expected_modular_cdu": 1023,
+      "final_state": {
+        "cycle": 214642,
+        "cdu": [
+          1023,
+          0,
+          0
+        ],
+        "fifo_entries": 0,
+        "fifo_pending": 0,
+        "incoming": 0,
+        "next_update": 213654,
+        "checker": 2
+      },
+      "all_accounted": true,
+      "raw_sha256": "f0917b5894f87affa586f624d8e05140ec5fc7e88f40251c2bffff76dc120751",
+      "application_codes": {
+        "17": 1023
+      },
+      "application_interval_cpu_calls": {
+        "3": 93,
+        "4": 4,
+        "5": 1,
+        "9": 6,
+        "10": 7,
+        "11": 4,
+        "12": 446,
+        "13": 73,
+        "14": 18,
+        "15": 336,
+        "16": 25,
+        "17": 8,
+        "19": 1
+      },
+      "first_consumption_cycle": 200001,
+      "first_application_cycle": 201026,
+      "last_application_cycle": 213642,
+      "last_consumption_cycle": 201023,
+      "replay_byte_identical": true
+    }
+  },
+  "binary_sha256": "cb2fe22263dfd4f6b7f568562700ab0de4a1a616990fe03d46180c3e85d1c5fa",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "clock": "1024000/12 CPU calls/second; wrapper 11.72us is an approximation",
+  "scope": "single-axis synthetic counter-transport diagnostics; no vehicle, mission startup or flight-control inference"
+}

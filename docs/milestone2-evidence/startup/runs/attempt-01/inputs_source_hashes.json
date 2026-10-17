@@ -1,0 +1,16 @@
+{
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/startup/startup_probe.c": "43b34d1586414585f922752201014335e64e4fe8791242f6a9184dce3840095f",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/startup/run_validation.py": "0c53d2c4799c8607eda37398d31fdf6365d6d7173f742e57c49bd42b89f75324",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/operate_inputs.txt": "8cf0d52fc54afe45f0903d2632f959f6973def7f790f14ec29d13b14b87f72f4",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/wasm.c": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/agc_engine.c": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/agc_engine_init.c": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/agc_utilities.c": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/ringbuffer_api.c": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/ringbuffer.c": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/milestone1-verified/source/yaAGC/rfopen.c": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/startup/source/ERASABLE_ASSIGNMENTS.agc": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/startup/source/FRESH_START_AND_RESTART.agc": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/startup/source/T4RUPT_PROGRAM.agc": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07"
+}

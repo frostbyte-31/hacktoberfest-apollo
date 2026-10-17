@@ -1,0 +1,70 @@
+{
+  "erasable_addresses_octal": {
+    "FAILREG": "0375",
+    "-PHASE1": "0752",
+    "PHASE1": "0753",
+    "-PHASE6": "0764",
+    "PHASE6": "0765",
+    "MODREG": "1011"
+  },
+  "rope_verified_sequences": {
+    "restart_phase_compare": {
+      "bank_octal": "05",
+      "start_z_octal": "2775",
+      "rope_words_octal": [
+        "34756",
+        "54161",
+        "60000",
+        "00006",
+        "50000",
+        "30753",
+        "00006",
+        "06001",
+        "10000",
+        "13054",
+        "13054",
+        "13054"
+      ]
+    },
+    "ptbad_alarm": {
+      "bank_octal": "05",
+      "start_z_octal": "3054",
+      "rope_words_octal": [
+        "05567",
+        "01107",
+        "12501"
+      ]
+    },
+    "v37_gate": {
+      "bank_octal": "04",
+      "start_z_octal": "2043",
+      "rope_words_octal": [
+        "31302",
+        "74746",
+        "10000",
+        "12065"
+      ]
+    },
+    "cantroo_alarm": {
+      "bank_octal": "04",
+      "start_z_octal": "2065",
+      "rope_words_octal": [
+        "05567",
+        "01520"
+      ]
+    },
+    "issup": {
+      "bank_octal": "06",
+      "start_z_octal": "2321",
+      "rope_words_octal": [
+        "42774",
+        "71302",
+        "55302",
+        "44746",
+        "71303",
+        "55303"
+      ]
+    }
+  },
+  "resolution": "FAILREG anchor retained readiness_probe.c; ERASE count through MODREG; exact rope instruction sequences; retained Phase5 address/v37 resolution"
+}

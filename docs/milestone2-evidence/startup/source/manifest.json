@@ -1,0 +1,22 @@
+{
+  "upstream_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "recorded_utc": "2026-10-17T14:05:15.405143+00:00",
+  "retrieval": "curl --fail --location; primary pinned raw GitHub source; original initial fetch DNS failure retried with approved network access",
+  "files": {
+    "ERASABLE_ASSIGNMENTS.agc": {
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/ERASABLE_ASSIGNMENTS.agc",
+      "sha256": "ec841599e818108cca4947141e1a51fca9956c103670a2764fdab9c3aaffe48c",
+      "bytes": 78861
+    },
+    "FRESH_START_AND_RESTART.agc": {
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FRESH_START_AND_RESTART.agc",
+      "sha256": "47308a301d91326f58c42342cf4e80e8f7ec4b50d82a320bd45d49f7bda09869",
+      "bytes": 28616
+    },
+    "T4RUPT_PROGRAM.agc": {
+      "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/T4RUPT_PROGRAM.agc",
+      "sha256": "daf1e18f0d7fff848458c256cc85a3f6b22aefbb17a6ed3901cc790542b87b07",
+      "bytes": 38034
+    }
+  }
+}

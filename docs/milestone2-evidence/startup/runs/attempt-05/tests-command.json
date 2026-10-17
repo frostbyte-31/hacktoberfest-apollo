@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/milestone2-evidence/startup/tests",
+    "-v"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "start_utc": "2026-10-17T14:08:25.916080+00:00",
+  "end_utc": "2026-10-17T14:08:26.079559+00:00",
+  "exit": 0,
+  "tests": 13
+}

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "make",
+    "check"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "start_utc": "2026-10-17T14:21:20.215490+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0,
+  "end_utc": "2026-10-17T14:21:49.917890+00:00"
+}

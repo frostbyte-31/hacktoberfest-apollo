@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED",
+  "scenarios": 24,
+  "trace_rows": 1014,
+  "axis": "Yaw / X gimbal only",
+  "imposed_motion": true,
+  "quantization_deg": 0.010986328125,
+  "coupling_seconds": 0.00999716,
+  "finding": "Signed rate selector uses Omega_Yaw < 4, not speed magnitude. At -8 deg/s pulses are slow; at +8 fast.",
+  "upstream_changed": false,
+  "limitations": [
+    "No AGC execution or FIFO pacing measured by this component probe.",
+    "GUI wallclock socket loop is not run; retained cycle-coupled wrapper sets Delta_Time2 explicitly.",
+    "No multi-axis control, powered descent or landing tested."
+  ]
+}

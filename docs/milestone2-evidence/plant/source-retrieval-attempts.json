@@ -1,0 +1,29 @@
+{
+  "purpose": "Read-only callback-name search; fetched source was not sourced or used by the experiment. Actual scheduler is already in retained lm_simulator.tcl.",
+  "url": "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Contributed/LM_Simulator/modules/AGC_Outputs.tcl",
+  "output_scratch": ".build/milestone2-plant/AGC_Outputs.tcl",
+  "sha256": "bca480c7bdf776c6f51658105d0c380b24f70922be1622934e0fc1b2cebe8e8f",
+  "bytes": 14656,
+  "attempts": [
+    {
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--output",
+        ".build/milestone2-plant/AGC_Outputs.tcl",
+        "https://raw.githubusercontent.com/virtualagc/virtualagc/f577e3fd917866c59334e6cdd32504f09df76f60/Contributed/LM_Simulator/modules/AGC_Outputs.tcl"
+      ],
+      "sandbox": "default",
+      "exit": 6,
+      "stderr": "curl: (6) Could not resolve host: raw.githubusercontent.com"
+    },
+    {
+      "same_command_as_attempt": 1,
+      "sandbox": "approved require_escalated",
+      "exit": 0,
+      "result": "14656 bytes downloaded"
+    }
+  ],
+  "timing": "Exact timestamps of these tool invocations were not recorded; both occurred before the retained component probe run."
+}

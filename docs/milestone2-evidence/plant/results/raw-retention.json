@@ -1,0 +1,27 @@
+{
+  "status": "VERIFIED",
+  "artifact_hashes": {
+    "commands.json": "1138aaaf620150b7cc6eb80ff659a791d9515f6a4586ef7a863c12103b21541d",
+    "environment.json": "7b815e592714f7004727680b09f483e06fdfb8da86fd6eab41c2175992f2a0fd",
+    "probe-inputs.txt": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7",
+    "probe.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe.stdout": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd",
+    "raw-trace.jsonl": "fc8f3782e1c5a12964cf5d0855ec0084fdadef7a433ef9b40e775667d68e0049",
+    "scenarios.json": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b",
+    "source-audit.json": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a",
+    "summary.json": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3",
+    "validation.json": "e2a12b1a548da97aceaf383875aea3e85e5fd7a9d74d344389ef256543d0d3b0"
+  },
+  "root_invocation": [
+    "python3",
+    "docs/milestone2-evidence/plant/run_validation.py",
+    "--source",
+    ".build/reproducibility/runs/milestone1-verified/source",
+    "--output",
+    ".build/milestone2-plant/attempt-1",
+    "--tcl",
+    ".build/reproducibility/runtime/bin/tclsh8.6"
+  ],
+  "root_invocation_exit": 0,
+  "capture": "Results copied without edits from .build/milestone2-plant/attempt-1. All complete raw Tcl stdout and parsed packet traces retained; no old trace regenerated."
+}

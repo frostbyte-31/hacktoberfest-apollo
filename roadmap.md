@@ -53,13 +53,22 @@
 - [x] Verify a clean local clone rebuilds Tcl from the pinned archive and passes make check while retaining the three historical errors explicitly
 - [x] Document actual build commands and retain dated milestone evidence in docs/milestone1-evidence/
 
-## Minimum next validation (requires separate approval; Phase 7 not started)
-- Clean revision-specific startup schedule: wait for initialization before V37, isolate cold-start01107, and validate symmetric signed CDU timing before stronger control claims.
+## Milestone 2: startup and signed CDU timing (single-axis diagnostics)
+- [x] Trace the cold reset's zero phase pairs through original PTBAD/01107; preserve the alarm and all earlier evidence
+- [x] Verify original V36, ISSUP/STARTDAP and delayed V37 produce a bounded clean post-V36 P00 interval; test early-key, no-V36 and IMU-off controls
+- [x] Measure signed slow/fast CDU X timing, modular wrap, mixed runs and settled queues through actual counter-operation packets
+- [x] Expose accepted-but-dropped FIFO data and explicit ringbuffer rejection in bounded negative controls
+- [x] Confirm the unchanged plant's signed mode-selection defect with paired imposed-yaw component probes
+- [x] Retain raw traces, source/rope address proofs, exact replays and the integrated test/check results in docs/milestone2-evidence/
+
+## Next bounded validation (requires separate approval; Phase 7 not started)
+- Repair the modern model's signed rate-mode selection in a separately identified fixture, then test paced negative-rate feedback and queue settlement before stronger attitude-control claims.
+- Keep the emulator/flight code and earlier baselines unchanged; do not expand axes or begin descent work as part of that correction.
 
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.
-- The additional 01107 alarm in the cold-start P63 attempt requires isolation before a stronger initialization claim.
+- Cold-reset 01107 is explained for the zeroed-memory fixture. A clean post-V36 P00 interval still does not provide calibrated alignment, mission padload or descent readiness.
 
 ## Not authorized
 - Frontend, multiplayer, AI crew, complete lunar physics engine, full application development

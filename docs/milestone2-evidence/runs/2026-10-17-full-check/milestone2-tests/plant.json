@@ -1,0 +1,105 @@
+{
+  "tests_run": 16,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_plant.CapturedPlantTests.test_actual_process_completed_with_locked_tcl",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0003377499999999978
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_angle_wrap_keeps_short_signed_direction",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.799999999999637e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_delta_controls_direction_independently_of_rate_selector",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 2.89579999999956e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_exact_increment_is_retained_until_exceeded",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.158300000000169e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_existing_negative_fast_motion_selects_slow_mode",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 2.7791999999998707e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_matched_slow_signed_motion_emits_opposite_counts",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 2.683300000000388e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_measurements_reject_fabricated_signed_agreement",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00041270799999999774
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_only_x_gimbal_and_octal_counter_32_are_observed",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.004325374999999992
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_output_guard_rejects_retained_evidence",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0012137080000000078
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_parse_fails_without_completion_marker",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00023879200000000156
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_counter",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0003068749999999981
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_parse_rejects_cross_axis_state",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0005449579999999982
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_parse_rejects_duplicate_steps",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0004883330000000075
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_positive_four_threshold_switches_mode",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.3624999999995464e-05
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_summary_recomputes_from_raw_process_output",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00027766699999999533
+    },
+    {
+      "id": "test_plant.CapturedPlantTests.test_zeroing_and_lock_inhibits_still_apply",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 2.970900000000276e-05
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}
