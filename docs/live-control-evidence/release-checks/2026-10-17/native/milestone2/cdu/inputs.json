@@ -1,0 +1,34 @@
+{
+  "upstream_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "source_sha256": {
+    "yaAGC/wasm.c": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+    "yaAGC/agc_engine.c": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+    "yaAGC/agc_engine_init.c": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+    "yaAGC/agc_utilities.c": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+    "yaAGC/ringbuffer_api.c": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+    "yaAGC/ringbuffer.c": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+    "yaAGC/rfopen.c": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29",
+    "yaAGC/agc_cli.h": "a3b201b4831b815bbd58767f467a7540276d72f99b0ea522ded37652a88c1170",
+    "yaAGC/agc_debug.h": "53385fe211fb2497710af3080e0a14084a1716815129a1f332fc13e5ad2088e1",
+    "yaAGC/agc_debugger.h": "5fc221313e6082c6a8094065f032955f6b2b990d9b5773a8c0b62456161665de",
+    "yaAGC/agc_disassembler.h": "efc1e4d7cd40c6dbc56f1d261d37a7f9b0e03487346ea4636bf7066167b25997",
+    "yaAGC/agc_engine.h": "8faf37332826692acbfba6fa211d94439b0868800545e9cda6941454086450c2",
+    "yaAGC/agc_gdbmi.h": "ccf0867ac92a17e0ae316547aca8c900bda05526e2782e0dcfa07db4e7a2adb6",
+    "yaAGC/agc_help.h": "4668d49e3244239139d3aa83c349f3dc6c28087c2a74d70b176809eaf1afc9a5",
+    "yaAGC/agc_simulator.h": "369055cd3a327e9b65adc5a7279fd777e56552f6db6978fedf2f7ad71e7767a9",
+    "yaAGC/agc_symtab.h": "d33a8af719c1e2a876366da8ec6ac4b1d5c169d875c2a7f937191b7c6842cc93",
+    "yaAGC/regex.h": "262ca4eb8cb00905b6713e93d636b1cc275057176f6da89fbbe1d9ad047c1ec7",
+    "yaAGC/ringbuffer.h": "13ddb5ac6542b82c2d6ba133ec7f485e429bf56733c6267746acfdf80c17a459",
+    "yaAGC/yaAGC.h": "7ec26c471ffaa9c279125ee7e6f55555df1dc509f6862853fb1c9203965680ed",
+    "Contributed/LM_Simulator/lm_simulator.tcl": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5",
+    "Contributed/LM_Simulator/modules/AGC_IMU.tcl": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+    "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+    "COPYING": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994",
+    "LICENSE.txt": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+  },
+  "harness_sha256": {
+    "inspect_bridge.c": "2a33b9b01953f5c11f29c1c6ebe97330ff3a6db3d84dd2a7227cfe0682a1fc99",
+    "run_validation.py": "f92e3729035ba43396d27735bbbb929b7e028be8916d61e3815e96490b0c2963"
+  },
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e"
+}

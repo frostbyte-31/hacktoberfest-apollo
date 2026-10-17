@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-10-17T17:11:13.792800+00:00",
+  "source_directory": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01",
+  "copied": [
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/command.json",
+      "relative_path": "command.json",
+      "sha256": "c4de98e37e88e405714b165763eb21b792cf2d2bb768f69e6dfc031722946f9f",
+      "bytes": 365,
+      "retained_path": "command.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/stderr",
+      "relative_path": "stderr",
+      "sha256": "dcede6d2e994bd434d8e14469b24c394eb261b3ad5770afb0a1d082a30279ac1",
+      "bytes": 1872,
+      "retained_path": "stderr"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/stdout",
+      "relative_path": "stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "retained_path": "stdout"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/validation/environment.json",
+      "relative_path": "validation/environment.json",
+      "sha256": "2ead09f06017b189da1a8d7cf4e736569940f7f920dd5b0a41224a6f0594a2e4",
+      "bytes": 669,
+      "retained_path": "validation/environment.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/validation/failure.json",
+      "relative_path": "validation/failure.json",
+      "sha256": "0b9a2f1d65b5000b2c87d52ed4db7ce802b99e59780f2ac97d6b149bc269e2b8",
+      "bytes": 261,
+      "retained_path": "validation/failure.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-01/validation/preservation-before.json",
+      "relative_path": "validation/preservation-before.json",
+      "sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5",
+      "bytes": 224,
+      "retained_path": "validation/preservation-before.json"
+    }
+  ],
+  "lossless_trace_compression": [],
+  "omitted_rebuildable_files": [],
+  "source_archive": "docs/phase6-evidence/corresponding-source.tar.gz",
+  "source_archive_sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+  "note": "Raw JSONL remains byte-identical after decompression; no observations have been recreated"
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/live-control-evidence/run_validation.py",
+    "--output",
+    ".build/live-control/attempt-01/validation"
+  ],
+  "start_utc": "2026-10-17T17:05:12.878175+00:00",
+  "status": "COMPLETED",
+  "pid": 4423,
+  "exit": 1,
+  "end_utc": "2026-10-17T17:05:13.254601+00:00"
+}

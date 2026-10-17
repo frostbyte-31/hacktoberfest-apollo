@@ -1,0 +1,156 @@
+{
+  "ready_cycle": 2200000,
+  "end_cycle": 3200000,
+  "max_pulse_cycles": 85333,
+  "cycle_seconds": 1.171875e-05,
+  "max_coupling_calls": 853,
+  "startup_schedule": [
+    [
+      100000,
+      25,
+      28671
+    ],
+    [
+      100001,
+      24,
+      15615
+    ],
+    [
+      426665,
+      13,
+      17
+    ],
+    [
+      447998,
+      13,
+      3
+    ],
+    [
+      469331,
+      13,
+      6
+    ],
+    [
+      490664,
+      13,
+      28
+    ],
+    [
+      1600000,
+      13,
+      17
+    ],
+    [
+      1621333,
+      13,
+      3
+    ],
+    [
+      1642666,
+      13,
+      7
+    ],
+    [
+      1663999,
+      13,
+      28
+    ],
+    [
+      1685332,
+      13,
+      16
+    ],
+    [
+      1706665,
+      13,
+      16
+    ],
+    [
+      1727998,
+      13,
+      28
+    ],
+    [
+      2000000,
+      13,
+      17
+    ],
+    [
+      2021333,
+      13,
+      7
+    ],
+    [
+      2042666,
+      13,
+      7
+    ],
+    [
+      2063999,
+      13,
+      28
+    ]
+  ],
+  "initial_conditions": "Fresh CPU, fresh model, zero physical rates, identity quaternion, genuine delayed V36/V37/V77 fixture",
+  "classification": "Simulated vehicle and sensors, authentic Luminary commands; not historical flight telemetry",
+  "alignment": "Assumed ideal identity aligned fixture; not authenticated mission padload or physical calibration",
+  "scope": "Yaw/pitch RHC only; no throttle, PIPA or powered descent",
+  "provenance": {
+    "repository_revision": "e8197c8d5227b5a425c5f6529147ba918c0fc67f",
+    "upstream_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "integrity": {
+      "prior_files_checked": 1520,
+      "phase7_files_checked": 674,
+      "phase7_manifest_sha256": "c5985ecb769c6981372c1f3b1c9f182aece736256ed75b59c9ad8407eafac092"
+    },
+    "runtime_manifest_sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14",
+    "runtime": {
+      "schema": 1,
+      "version": "8.6.16",
+      "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+      "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+      "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+      "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+      "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+      "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+      "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+      "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+      "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+      "configure_arguments": [
+        "--disable-shared",
+        "--enable-threads",
+        "--disable-symbols"
+      ],
+      "cflags": "-O2",
+      "compiler": "/usr/bin/cc",
+      "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+      "make": "/usr/bin/make",
+      "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+      "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "smoke_test": {
+        "version": "8.6.16",
+        "hypot_3_4": 5.0,
+        "status": "VERIFIED"
+      },
+      "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+    "inputs_sha256": {
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/backend/native_session.py": "aabbf7a742421864785f580c4965e9f1821bbe4bd3f468374fd56b3b3f8bcf35",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/run_validation.py": "f630b5068e0c0fe7a0c82676cc3b710b7b865a8610b51be6664f74a535c24a36",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/inspect_axes.c": "811653730f357cb086aa4c87d5d8ff3f462199b362fbf0249002546b8af3dded",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/physics/apply_physics.py": "d50635cd7110f6616f6b8afce2e37e1ecad68a748bccb914314b40e9676ac062",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/physics/orientation.tcl": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/assets/server.tcl": "8bda1e22cf7700f188ca2991773b6e5ce45fbe0a7e90f16233a408aa6c8a9ec2",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/assets/physics-overlay.tcl": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/assets/engine.so": "6584c5559c693f7f8e9b5f41265483ae691674fc1f1e92f55325b9e9871094e8"
+    },
+    "scope": "Live synthetic attitude fixture only; original Luminary and emulator unchanged; no descent"
+  }
+}

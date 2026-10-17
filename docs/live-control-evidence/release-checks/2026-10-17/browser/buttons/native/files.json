@@ -1,0 +1,26 @@
+{
+  "configuration.json": {
+    "sha256": "36ae8be73b5d4619bd0fd48ab4d26752ed1d1c4194ac47a06430402a4bdd2eb6",
+    "bytes": 8766
+  },
+  "engine.so": {
+    "sha256": "d98c65d2ae06d5f3bb13abe30320385a554ecbe0a42006d7d3d2925a8fb230bb",
+    "bytes": 74504
+  },
+  "model.stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "session-integrity.json": {
+    "sha256": "0f371e3ec4a1a2bf44430b57e533828957725686a26993bc552db83e305376b1",
+    "bytes": 2764
+  },
+  "summary.json": {
+    "sha256": "c0828fdb1c150b0cb03e4000a0f084ef32f2ce477075061e921740c9023ab7f9",
+    "bytes": 2800
+  },
+  "trace.jsonl": {
+    "sha256": "09b47773234abcbbd987b2ab48e3ab35b91e4a5f572db96ca6ff74195efc5c5d",
+    "bytes": 6983308
+  }
+}

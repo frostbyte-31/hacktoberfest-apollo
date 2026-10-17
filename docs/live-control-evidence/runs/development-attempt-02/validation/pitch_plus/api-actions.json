@@ -1,0 +1,1327 @@
+[
+  {
+    "method": "start",
+    "args": [],
+    "kwargs": {},
+    "start_utc": "2026-10-17T17:05:47.358767+00:00",
+    "result": {
+      "status": "running",
+      "ready": true,
+      "cycle": 2200000,
+      "sim_time": 25.78125,
+      "interactive_time": 0.0,
+      "remaining_time": 11.71875,
+      "model": {
+        "omega": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alpha_rad_s2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "torque_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inertia_before_kgm2": [
+          20681.71127225267,
+          20381.255503614382,
+          20565.102080540757
+        ],
+        "inertia_after_kgm2": [
+          20681.71127225267,
+          20381.255503614382,
+          20565.102080540757
+        ],
+        "mass_before_kg": 15364.0,
+        "mass_after_kg": 15364.0,
+        "fuel_before_kg": 287.0,
+        "fuel_after_kg": 287.0,
+        "legacy_perjet_alpha_deg_s2": [
+          1.2328100681653371,
+          1.2509838698994817,
+          1.2398004047569113
+        ],
+        "gimbal_rates_deg_s": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "suppressed_translation_events": 0
+      },
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "model_cycle": 2199887,
+      "freeze_cycle": null,
+      "physical_time": 25.77992578125,
+      "jets": {
+        "5": 0,
+        "6": 0
+      },
+      "actual_output_jets": {
+        "5": 0,
+        "6": 0
+      },
+      "thrusters": {
+        "5": [],
+        "6": []
+      },
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "native": {
+        "cycle": 2200000,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "incoming": 0,
+        "checker": 2,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          }
+        ]
+      },
+      "rhc_readback": {
+        "channel013_output_latch": 64,
+        "pitch_counter0042": 0,
+        "yaw_counter0043": 0
+      },
+      "counts": [
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        }
+      ],
+      "host_pending": [
+        0,
+        0,
+        0
+      ],
+      "control": {
+        "yaw": 0,
+        "pitch": 0,
+        "neutral_at": null
+      },
+      "events": [
+        {
+          "ev": "startup_checkpoint",
+          "category": "agc_diagnostic_readback",
+          "cycle": 2200000,
+          "registers": {
+            "z": 2465,
+            "eb": 512,
+            "fb": 1024,
+            "bb": 1026,
+            "next_z": 2465,
+            "modreg": 0,
+            "imodes30": 15889,
+            "imodes33": 15360,
+            "failreg": [
+              0,
+              0,
+              0
+            ],
+            "dapbools": 8910,
+            "channel7": 64
+          },
+          "state": {
+            "cycle": 2200000,
+            "cdu": [
+              0,
+              0,
+              0
+            ],
+            "incoming": 0,
+            "checker": 2,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              }
+            ]
+          },
+          "verified": true
+        }
+      ],
+      "error": null,
+      "trace_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/pitch_plus/trace.jsonl",
+      "classification": "Live Luminary output; synthetic 3D attitude/sensors; no powered descent"
+    },
+    "end_utc": "2026-10-17T17:05:48.693432+00:00"
+  },
+  {
+    "method": "advance_to",
+    "args": [
+      2500000
+    ],
+    "kwargs": {},
+    "start_utc": "2026-10-17T17:05:48.693782+00:00",
+    "result": {
+      "status": "running",
+      "ready": true,
+      "cycle": 2500000,
+      "sim_time": 29.296875,
+      "interactive_time": 3.515625,
+      "remaining_time": 8.203125,
+      "model": {
+        "omega": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alpha_rad_s2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "torque_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inertia_before_kgm2": [
+          20681.71127225267,
+          20381.255503614382,
+          20565.102080540757
+        ],
+        "inertia_after_kgm2": [
+          20681.71127225267,
+          20381.255503614382,
+          20565.102080540757
+        ],
+        "mass_before_kg": 15364.0,
+        "mass_after_kg": 15364.0,
+        "fuel_before_kg": 287.0,
+        "fuel_after_kg": 287.0,
+        "legacy_perjet_alpha_deg_s2": [
+          1.2328100681653371,
+          1.2509838698994817,
+          1.2398004047569113
+        ],
+        "gimbal_rates_deg_s": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "suppressed_translation_events": 0
+      },
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "model_cycle": 2499290,
+      "freeze_cycle": null,
+      "physical_time": 29.2885546875,
+      "jets": {
+        "5": 0,
+        "6": 0
+      },
+      "actual_output_jets": {
+        "5": 0,
+        "6": 0
+      },
+      "thrusters": {
+        "5": [],
+        "6": []
+      },
+      "execution": {
+        "z": 1207,
+        "eb": 1536,
+        "fb": 14336,
+        "bb": 14342,
+        "next_z": 1207,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "native": {
+        "cycle": 2500000,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "incoming": 0,
+        "checker": 0,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          }
+        ]
+      },
+      "rhc_readback": {
+        "channel013_output_latch": 64,
+        "pitch_counter0042": 0,
+        "yaw_counter0043": 0
+      },
+      "counts": [
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        }
+      ],
+      "host_pending": [
+        0,
+        0,
+        0
+      ],
+      "control": {
+        "yaw": 0,
+        "pitch": 0,
+        "neutral_at": null
+      },
+      "events": [
+        {
+          "ev": "startup_checkpoint",
+          "category": "agc_diagnostic_readback",
+          "cycle": 2200000,
+          "registers": {
+            "z": 2465,
+            "eb": 512,
+            "fb": 1024,
+            "bb": 1026,
+            "next_z": 2465,
+            "modreg": 0,
+            "imodes30": 15889,
+            "imodes33": 15360,
+            "failreg": [
+              0,
+              0,
+              0
+            ],
+            "dapbools": 8910,
+            "channel7": 64
+          },
+          "state": {
+            "cycle": 2200000,
+            "cdu": [
+              0,
+              0,
+              0
+            ],
+            "incoming": 0,
+            "checker": 2,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              }
+            ]
+          },
+          "verified": true
+        }
+      ],
+      "error": null,
+      "trace_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/pitch_plus/trace.jsonl",
+      "classification": "Live Luminary output; synthetic 3D attitude/sensors; no powered descent"
+    },
+    "end_utc": "2026-10-17T17:05:48.832702+00:00"
+  },
+  {
+    "method": "command",
+    "args": [],
+    "kwargs": {
+      "yaw": 0,
+      "pitch": 1,
+      "duration_cycles": 85333
+    },
+    "start_utc": "2026-10-17T17:05:48.833082+00:00",
+    "result": {
+      "cycle": 2500000,
+      "yaw": 0,
+      "pitch": 1,
+      "neutral_at": 2585333,
+      "duration_cycles": 85333
+    },
+    "end_utc": "2026-10-17T17:05:48.833442+00:00"
+  },
+  {
+    "method": "advance_to",
+    "args": [
+      2585334
+    ],
+    "kwargs": {},
+    "start_utc": "2026-10-17T17:05:48.833748+00:00",
+    "result": {
+      "status": "running",
+      "ready": true,
+      "cycle": 2585334,
+      "sim_time": 30.2968828125,
+      "interactive_time": 4.5156328125,
+      "remaining_time": 7.2031171875,
+      "model": {
+        "omega": [
+          9.464073683055774e-07,
+          4.0373849903939565,
+          -0.0036612813186140377
+        ],
+        "gimbals": [
+          7.584595183033284e-05,
+          1.9004000604313769,
+          359.9968483875856
+        ],
+        "quaternion": [
+          0.9998624862708697,
+          2.0569754365864472e-07,
+          0.016583358869104357,
+          -2.75102008616758e-05
+        ],
+        "alpha_rad_s2": [
+          3.9800667845436644e-08,
+          0.08733644684760847,
+          1.6681271773565054e-11
+        ],
+        "torque_Nm": [
+          0.0,
+          1780.0000000000111,
+          0.0
+        ],
+        "inertia_before_kgm2": [
+          20681.13381353428,
+          20380.952789458093,
+          20564.892451330248
+        ],
+        "inertia_after_kgm2": [
+          20681.12656947951,
+          20380.948991889443,
+          20564.889821507397
+        ],
+        "mass_before_kg": 15363.500572210582,
+        "mass_after_kg": 15363.49430705323,
+        "fuel_before_kg": 286.5005722106071,
+        "fuel_after_kg": 286.49430705325676,
+        "legacy_perjet_alpha_deg_s2": [
+          1.2328444906940241,
+          1.251002450509065,
+          1.2398130427213772
+        ],
+        "gimbal_rates_deg_s": [
+          0.00022173925539965535,
+          4.037385001203632,
+          -0.003656015027443259
+        ],
+        "suppressed_translation_events": 0
+      },
+      "cdu": [
+        0,
+        172,
+        0
+      ],
+      "model_cycle": 2584590,
+      "freeze_cycle": null,
+      "physical_time": 30.2881640625,
+      "jets": {
+        "5": 150,
+        "6": 0
+      },
+      "actual_output_jets": {
+        "5": 150,
+        "6": 0
+      },
+      "thrusters": {
+        "5": [
+          "Q4D",
+          "Q3U",
+          "Q2U",
+          "Q1D"
+        ],
+        "6": []
+      },
+      "execution": {
+        "z": 1273,
+        "eb": 1536,
+        "fb": 14336,
+        "bb": 14342,
+        "next_z": 1273,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 10958,
+        "channel7": 64
+      },
+      "native": {
+        "cycle": 2585334,
+        "cdu": [
+          0,
+          172,
+          0
+        ],
+        "incoming": 0,
+        "checker": 2,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 2584654
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          }
+        ]
+      },
+      "rhc_readback": {
+        "channel013_output_latch": 16832,
+        "pitch_counter0042": 20,
+        "yaw_counter0043": 0
+      },
+      "counts": [
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 172,
+          "delivered": 172,
+          "consumed": 172,
+          "enqueued": 172,
+          "applied": 172
+        },
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        }
+      ],
+      "host_pending": [
+        0,
+        0,
+        0
+      ],
+      "control": {
+        "yaw": 0,
+        "pitch": 0,
+        "neutral_at": null
+      },
+      "events": [
+        {
+          "ev": "startup_checkpoint",
+          "category": "agc_diagnostic_readback",
+          "cycle": 2200000,
+          "registers": {
+            "z": 2465,
+            "eb": 512,
+            "fb": 1024,
+            "bb": 1026,
+            "next_z": 2465,
+            "modreg": 0,
+            "imodes30": 15889,
+            "imodes33": 15360,
+            "failreg": [
+              0,
+              0,
+              0
+            ],
+            "dapbools": 8910,
+            "channel7": 64
+          },
+          "state": {
+            "cycle": 2200000,
+            "cdu": [
+              0,
+              0,
+              0
+            ],
+            "incoming": 0,
+            "checker": 2,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              }
+            ]
+          },
+          "verified": true
+        },
+        {
+          "ev": "pilot_command",
+          "category": "authentic_external_input",
+          "cycle": 2500000,
+          "yaw": 0,
+          "pitch": 1,
+          "channel031": 12286,
+          "yaw_port0167": 0,
+          "pitch_port0166": 20,
+          "neutral_at": 2585333,
+          "origin": "browser pilot"
+        },
+        {
+          "ev": "neutral",
+          "category": "authentic_external_input",
+          "cycle": 2585333,
+          "yaw": 0,
+          "pitch": 0,
+          "channel031": 28671,
+          "yaw_port0167": 0,
+          "pitch_port0166": 0,
+          "neutral_at": null,
+          "origin": "automatic bounded pulse neutral"
+        }
+      ],
+      "error": null,
+      "trace_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/pitch_plus/trace.jsonl",
+      "classification": "Live Luminary output; synthetic 3D attitude/sensors; no powered descent"
+    },
+    "end_utc": "2026-10-17T17:05:49.182255+00:00"
+  },
+  {
+    "method": "advance_to",
+    "args": [
+      3200000
+    ],
+    "kwargs": {},
+    "start_utc": "2026-10-17T17:05:49.182845+00:00",
+    "result": {
+      "status": "stopped",
+      "ready": false,
+      "cycle": 3201001,
+      "sim_time": 37.51173046875,
+      "interactive_time": 11.73048046875,
+      "remaining_time": 0.0,
+      "model": {
+        "omega": [
+          -3.437461982360574e-06,
+          0.14045401300687665,
+          -0.006785190111826144
+        ],
+        "gimbals": [
+          359.9992287757484,
+          12.91192373822432,
+          0.001150799532489407
+        ],
+        "quaternion": [
+          0.9936585712860149,
+          -5.558334811042973e-06,
+          0.11243951068768573,
+          1.0735676408533708e-05
+        ],
+        "alpha_rad_s2": [
+          2.583461096962289e-09,
+          -4.036327201198092e-14,
+          -2.144881436375689e-12
+        ],
+        "torque_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inertia_before_kgm2": [
+          20680.511215330975,
+          20380.6263936845,
+          20564.666420711008
+        ],
+        "inertia_after_kgm2": [
+          20680.511215330975,
+          20380.6263936845,
+          20564.666420711008
+        ],
+        "mass_before_kg": 15362.962108377753,
+        "mass_after_kg": 15362.962108377753,
+        "fuel_before_kg": 285.96210837780546,
+        "fuel_after_kg": 285.96210837780546,
+        "legacy_perjet_alpha_deg_s2": [
+          1.2328816061577994,
+          1.2510224853158816,
+          1.239826669770027
+        ],
+        "gimbal_rates_deg_s": [
+          -6.297216078189868e-06,
+          0.14045392169397883,
+          -0.006787080642918577
+        ],
+        "suppressed_translation_events": 0
+      },
+      "cdu": [
+        0,
+        1175,
+        1
+      ],
+      "model_cycle": 3200000,
+      "freeze_cycle": 3200000,
+      "physical_time": 37.5,
+      "jets": {
+        "5": 0,
+        "6": 0
+      },
+      "actual_output_jets": {
+        "5": 32,
+        "6": 0
+      },
+      "thrusters": {
+        "5": [],
+        "6": []
+      },
+      "execution": {
+        "z": 1477,
+        "eb": 1536,
+        "fb": 15360,
+        "bb": 15366,
+        "next_z": 1477,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "native": {
+        "cycle": 3201001,
+        "cdu": [
+          0,
+          1175,
+          1
+        ],
+        "incoming": 0,
+        "checker": 2,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3199177
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3009812
+          }
+        ]
+      },
+      "rhc_readback": {
+        "channel013_output_latch": 16832,
+        "pitch_counter0042": 0,
+        "yaw_counter0043": 0
+      },
+      "counts": [
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 1175,
+          "delivered": 1175,
+          "consumed": 1175,
+          "enqueued": 1175,
+          "applied": 1175
+        },
+        {
+          "generated": 1,
+          "delivered": 1,
+          "consumed": 1,
+          "enqueued": 1,
+          "applied": 1
+        }
+      ],
+      "host_pending": [
+        0,
+        0,
+        0
+      ],
+      "control": {
+        "yaw": 0,
+        "pitch": 0,
+        "neutral_at": null
+      },
+      "events": [
+        {
+          "ev": "startup_checkpoint",
+          "category": "agc_diagnostic_readback",
+          "cycle": 2200000,
+          "registers": {
+            "z": 2465,
+            "eb": 512,
+            "fb": 1024,
+            "bb": 1026,
+            "next_z": 2465,
+            "modreg": 0,
+            "imodes30": 15889,
+            "imodes33": 15360,
+            "failreg": [
+              0,
+              0,
+              0
+            ],
+            "dapbools": 8910,
+            "channel7": 64
+          },
+          "state": {
+            "cycle": 2200000,
+            "cdu": [
+              0,
+              0,
+              0
+            ],
+            "incoming": 0,
+            "checker": 2,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              }
+            ]
+          },
+          "verified": true
+        },
+        {
+          "ev": "pilot_command",
+          "category": "authentic_external_input",
+          "cycle": 2500000,
+          "yaw": 0,
+          "pitch": 1,
+          "channel031": 12286,
+          "yaw_port0167": 0,
+          "pitch_port0166": 20,
+          "neutral_at": 2585333,
+          "origin": "browser pilot"
+        },
+        {
+          "ev": "neutral",
+          "category": "authentic_external_input",
+          "cycle": 2585333,
+          "yaw": 0,
+          "pitch": 0,
+          "channel031": 28671,
+          "yaw_port0167": 0,
+          "pitch_port0166": 0,
+          "neutral_at": null,
+          "origin": "automatic bounded pulse neutral"
+        },
+        {
+          "ev": "neutral",
+          "category": "authentic_external_input",
+          "cycle": 3200000,
+          "yaw": 0,
+          "pitch": 0,
+          "channel031": 28671,
+          "yaw_port0167": 0,
+          "pitch_port0166": 0,
+          "neutral_at": null,
+          "origin": "stop neutral"
+        },
+        {
+          "ev": "freeze",
+          "category": "diagnostic",
+          "cycle": 3200000,
+          "reason": "bounded live horizon reached",
+          "meaning": "Physical evolution/production frozen; CPU transport tail only; not vehicle equilibrium"
+        },
+        {
+          "ev": "summary",
+          "category": "diagnostic",
+          "status": "VERIFIED bounded live session",
+          "reason": "bounded live horizon reached",
+          "counts": [
+            {
+              "generated": 0,
+              "delivered": 0,
+              "consumed": 0,
+              "enqueued": 0,
+              "applied": 0
+            },
+            {
+              "generated": 1175,
+              "delivered": 1175,
+              "consumed": 1175,
+              "enqueued": 1175,
+              "applied": 1175
+            },
+            {
+              "generated": 1,
+              "delivered": 1,
+              "consumed": 1,
+              "enqueued": 1,
+              "applied": 1
+            }
+          ],
+          "settled": {
+            "cycle": 3200001,
+            "cdu": [
+              0,
+              1175,
+              1
+            ],
+            "incoming": 0,
+            "checker": 1,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 3199177
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 3009812
+              }
+            ]
+          },
+          "quiet": {
+            "cycle": 3201001,
+            "cdu": [
+              0,
+              1175,
+              1
+            ],
+            "incoming": 0,
+            "checker": 2,
+            "fifo": [
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 0
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 3199177
+              },
+              {
+                "entries": 0,
+                "pending": 0,
+                "head": 0,
+                "deadline": 3009812
+              }
+            ]
+          },
+          "final_model": {
+            "omega": [
+              -3.437461982360574e-06,
+              0.14045401300687665,
+              -0.006785190111826144
+            ],
+            "gimbals": [
+              359.9992287757484,
+              12.91192373822432,
+              0.001150799532489407
+            ],
+            "quaternion": [
+              0.9936585712860149,
+              -5.558334811042973e-06,
+              0.11243951068768573,
+              1.0735676408533708e-05
+            ],
+            "alpha_rad_s2": [
+              2.583461096962289e-09,
+              -4.036327201198092e-14,
+              -2.144881436375689e-12
+            ],
+            "torque_Nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia_before_kgm2": [
+              20680.511215330975,
+              20380.6263936845,
+              20564.666420711008
+            ],
+            "inertia_after_kgm2": [
+              20680.511215330975,
+              20380.6263936845,
+              20564.666420711008
+            ],
+            "mass_before_kg": 15362.962108377753,
+            "mass_after_kg": 15362.962108377753,
+            "fuel_before_kg": 285.96210837780546,
+            "fuel_after_kg": 285.96210837780546,
+            "legacy_perjet_alpha_deg_s2": [
+              1.2328816061577994,
+              1.2510224853158816,
+              1.239826669770027
+            ],
+            "gimbal_rates_deg_s": [
+              -6.297216078189868e-06,
+              0.14045392169397883,
+              -0.006787080642918577
+            ],
+            "suppressed_translation_events": 0
+          },
+          "peak_host_queue": [
+            0,
+            4,
+            1
+          ],
+          "state_writes": 0,
+          "scope": "Authentic bounded yaw/pitch input execution; queue settlement is not vehicle stability"
+        }
+      ],
+      "error": null,
+      "trace_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/attempt-02/validation/pitch_plus/trace.jsonl",
+      "classification": "Live Luminary output; synthetic 3D attitude/sensors; no powered descent"
+    },
+    "end_utc": "2026-10-17T17:05:51.219081+00:00"
+  },
+  {
+    "method": "stop",
+    "args": [
+      "deterministic_validation"
+    ],
+    "kwargs": {},
+    "start_utc": "2026-10-17T17:05:51.219770+00:00",
+    "result": {
+      "status": "VERIFIED bounded live session",
+      "reason": "bounded live horizon reached",
+      "counts": [
+        {
+          "generated": 0,
+          "delivered": 0,
+          "consumed": 0,
+          "enqueued": 0,
+          "applied": 0
+        },
+        {
+          "generated": 1175,
+          "delivered": 1175,
+          "consumed": 1175,
+          "enqueued": 1175,
+          "applied": 1175
+        },
+        {
+          "generated": 1,
+          "delivered": 1,
+          "consumed": 1,
+          "enqueued": 1,
+          "applied": 1
+        }
+      ],
+      "settled": {
+        "cycle": 3200001,
+        "cdu": [
+          0,
+          1175,
+          1
+        ],
+        "incoming": 0,
+        "checker": 1,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3199177
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3009812
+          }
+        ]
+      },
+      "quiet": {
+        "cycle": 3201001,
+        "cdu": [
+          0,
+          1175,
+          1
+        ],
+        "incoming": 0,
+        "checker": 2,
+        "fifo": [
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 0
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3199177
+          },
+          {
+            "entries": 0,
+            "pending": 0,
+            "head": 0,
+            "deadline": 3009812
+          }
+        ]
+      },
+      "final_model": {
+        "omega": [
+          -3.437461982360574e-06,
+          0.14045401300687665,
+          -0.006785190111826144
+        ],
+        "gimbals": [
+          359.9992287757484,
+          12.91192373822432,
+          0.001150799532489407
+        ],
+        "quaternion": [
+          0.9936585712860149,
+          -5.558334811042973e-06,
+          0.11243951068768573,
+          1.0735676408533708e-05
+        ],
+        "alpha_rad_s2": [
+          2.583461096962289e-09,
+          -4.036327201198092e-14,
+          -2.144881436375689e-12
+        ],
+        "torque_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inertia_before_kgm2": [
+          20680.511215330975,
+          20380.6263936845,
+          20564.666420711008
+        ],
+        "inertia_after_kgm2": [
+          20680.511215330975,
+          20380.6263936845,
+          20564.666420711008
+        ],
+        "mass_before_kg": 15362.962108377753,
+        "mass_after_kg": 15362.962108377753,
+        "fuel_before_kg": 285.96210837780546,
+        "fuel_after_kg": 285.96210837780546,
+        "legacy_perjet_alpha_deg_s2": [
+          1.2328816061577994,
+          1.2510224853158816,
+          1.239826669770027
+        ],
+        "gimbal_rates_deg_s": [
+          -6.297216078189868e-06,
+          0.14045392169397883,
+          -0.006787080642918577
+        ],
+        "suppressed_translation_events": 0
+      },
+      "peak_host_queue": [
+        0,
+        4,
+        1
+      ],
+      "state_writes": 0,
+      "scope": "Authentic bounded yaw/pitch input execution; queue settlement is not vehicle stability"
+    },
+    "end_utc": "2026-10-17T17:05:51.220375+00:00"
+  }
+]

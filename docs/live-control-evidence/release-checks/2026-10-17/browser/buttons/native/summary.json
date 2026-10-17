@@ -1,0 +1,147 @@
+{
+  "status": "VERIFIED bounded live session",
+  "reason": "operator stop",
+  "counts": [
+    {
+      "generated": 430,
+      "delivered": 430,
+      "consumed": 430,
+      "enqueued": 430,
+      "applied": 430
+    },
+    {
+      "generated": 586,
+      "delivered": 586,
+      "consumed": 586,
+      "enqueued": 586,
+      "applied": 586
+    },
+    {
+      "generated": 34,
+      "delivered": 34,
+      "consumed": 34,
+      "enqueued": 34,
+      "applied": 34
+    }
+  ],
+  "settled": {
+    "cycle": 2728962,
+    "cdu": [
+      32338,
+      586,
+      32734
+    ],
+    "incoming": 0,
+    "checker": 2,
+    "fifo": [
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2729174
+      },
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2729175
+      },
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2728322
+      }
+    ]
+  },
+  "quiet": {
+    "cycle": 2729962,
+    "cdu": [
+      32338,
+      586,
+      32734
+    ],
+    "incoming": 0,
+    "checker": 0,
+    "fifo": [
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2729174
+      },
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2729175
+      },
+      {
+        "entries": 0,
+        "pending": 0,
+        "head": 0,
+        "deadline": 2728322
+      }
+    ]
+  },
+  "final_model": {
+    "omega": [
+      -0.5517889650025353,
+      1.1841562990346166,
+      -0.0024436848321856956
+    ],
+    "gimbals": [
+      355.2744212278502,
+      6.443717623538357,
+      359.62511926417176
+    ],
+    "quaternion": [
+      0.9975576361269941,
+      -0.04134509022985536,
+      0.05628898932978346,
+      -0.0009464665025277515
+    ],
+    "alpha_rad_s2": [
+      7.845116231502559e-09,
+      -2.3327233294798973e-09,
+      -2.9018135222997214e-06
+    ],
+    "torque_Nm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inertia_before_kgm2": [
+      20680.364318198655,
+      20380.54938034928,
+      20564.61308832176
+    ],
+    "inertia_after_kgm2": [
+      20680.364318198655,
+      20380.54938034928,
+      20564.61308832176
+    ],
+    "mass_before_kg": 15362.835062665017,
+    "mass_after_kg": 15362.835062665017,
+    "fuel_before_kg": 285.83506266505356,
+    "fuel_after_kg": 285.83506266505356,
+    "legacy_perjet_alpha_deg_s2": [
+      1.2328903635843924,
+      1.2510272126376152,
+      1.2398298851438476
+    ],
+    "gimbal_rates_deg_s": [
+      -0.5440700484665006,
+      1.1799555624518494,
+      -0.09998282069782657
+    ],
+    "suppressed_translation_events": 0
+  },
+  "peak_host_queue": [
+    3,
+    3,
+    1
+  ],
+  "state_writes": 0,
+  "scope": "Authentic bounded yaw/pitch input execution; queue settlement is not vehicle stability"
+}

@@ -1,0 +1,26 @@
+{
+  "api-actions.json": {
+    "sha256": "0c61776fca972eaa7c7d0946936de7343f6a4014584203b1f992a6f59d331205",
+    "bytes": 16477
+  },
+  "configuration.json": {
+    "sha256": "897d7476646bd3301da968548cbd8be625140ac665df666c64434a7c0f9d7a39",
+    "bytes": 6246
+  },
+  "engine.so": {
+    "sha256": "6584c5559c693f7f8e9b5f41265483ae691674fc1f1e92f55325b9e9871094e8",
+    "bytes": 74504
+  },
+  "model.stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "summary.json": {
+    "sha256": "29ebb2fb69cec2ef78a65ed9a99321c872482c380cc4ab60748943b5e483d152",
+    "bytes": 2574
+  },
+  "trace.jsonl": {
+    "sha256": "46c6e30b45309d101971b42c2b7de8b0c59f9ca55ece104d3a9dc2da3c12908e",
+    "bytes": 7372006
+  }
+}

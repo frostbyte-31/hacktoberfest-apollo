@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "docs/live-control-evidence/run_validation.py",
+    "--output",
+    ".build/live-control/attempt-02/validation"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "repository_head": "e8197c8d5227b5a425c5f6529147ba918c0fc67f",
+  "started_utc": "2026-10-17T17:05:38.822398+00:00",
+  "classification": "Fresh native original Luminary execution with simulated modern rotational dynamics",
+  "scope": "Bounded user-controller signed yaw/pitch; no descent, replacement guidance or flight telemetry"
+}

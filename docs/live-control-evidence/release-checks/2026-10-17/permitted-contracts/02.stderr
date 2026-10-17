@@ -1,0 +1,14 @@
+test_actual_native_counter_queues_settle_without_loss (test_evidence.LiveEvidenceTests) ... ok
+test_all_prior_evidence_is_still_byte_identical (test_evidence.LiveEvidenceTests) ... ok
+test_all_signed_cases_are_actual_original_execution (test_evidence.LiveEvidenceTests) ... ok
+test_altered_actual_wire_packet_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_altered_native_application_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_cycle_identical_combined_replay_has_identical_complete_raw_bytes (test_evidence.LiveEvidenceTests) ... ok
+test_missing_automatic_neutral_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_original_gated_reads_observe_both_signs_and_neutral (test_evidence.LiveEvidenceTests) ... ok
+test_positive_and_negative_commands_have_signed_body_response (test_evidence.LiveEvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 4.439s
+
+OK

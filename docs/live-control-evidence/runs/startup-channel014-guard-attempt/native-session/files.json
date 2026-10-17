@@ -1,0 +1,22 @@
+{
+  "configuration.json": {
+    "sha256": "35bec74d3eba0cede1921581de544b822fa9da123e17bfd7e25e250d41dafb55",
+    "bytes": 6234
+  },
+  "engine.so": {
+    "sha256": "8e37ddce3492bec93bac424e28de0e753254063ba172e7ec602160f61bee6ddb",
+    "bytes": 74504
+  },
+  "model.stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "summary.json": {
+    "sha256": "ee348bf3df128b7f7366f4929d30bb7259f7a8bf46e96b24eb4c8c8c3105335b",
+    "bytes": 973
+  },
+  "trace.jsonl": {
+    "sha256": "168f86e100a18e1c06a028ebd54b6968c4ad0a81f6b1dd08ace63a1f910e2abc",
+    "bytes": 7490
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-17T17:39:46.456253+00:00",
+  "classification": "FAILED DEVELOPMENT STARTUP GUARD; no authentic live-control success claimed",
+  "actual_error": "Unsupported descent throttle servicing requested",
+  "executed_adapter_hash_declared_by_original_provenance": {
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/backend/native_session.py": "2d3a8644c59dc82151d01247e8091035fe95f259b0805b3938db94b604ba6877"
+  },
+  "preservation_gap": "The old adapter source text was not captured at execution and is unavailable. The preserved provenance identifies its SHA-256; it has not been reconstructed from current code.",
+  "observed_cause": "Initial adapter rejected channel014 bit4 during startup as descent throttle. That generic bit meaning was not sufficient to identify authentic LM descent activity; later source-justified adapter guards were changed and fresh runs executed.",
+  "preserved": "Original raw partial trace, genuine output packet, actual failure summary, model stderr, configuration, original asset provenance, build commands and source snapshots. Host binary is omitted with its SHA-256 recorded."
+}

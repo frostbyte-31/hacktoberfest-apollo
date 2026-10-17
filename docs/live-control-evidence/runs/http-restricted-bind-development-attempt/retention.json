@@ -1,0 +1,74 @@
+{
+  "recorded_utc": "2026-10-17T17:39:54.058005+00:00",
+  "source_directory": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01",
+  "copied": [
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/backend/control_service.py",
+      "relative_path": "executed-code/backend/control_service.py",
+      "sha256": "c524ef2624b673e966ae6fc067e088ae88bbc4c05dc881c3a6c5b110aaf07f68",
+      "bytes": 11727,
+      "retained_path": "executed-code/backend/control_service.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/backend/native_session.py",
+      "relative_path": "executed-code/backend/native_session.py",
+      "sha256": "154a8706c7922f194e75e514055a19913cb468040f4c12bac212133d8c25506c",
+      "bytes": 31274,
+      "retained_path": "executed-code/backend/native_session.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/docs/live-control-evidence/analyze.py",
+      "relative_path": "executed-code/docs/live-control-evidence/analyze.py",
+      "sha256": "72e5f5068e466ad3c2728529673d4767a120cd6cd6b4ace603ef20233293443a",
+      "bytes": 16558,
+      "retained_path": "executed-code/docs/live-control-evidence/analyze.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/docs/live-control-evidence/live_common.py",
+      "relative_path": "executed-code/docs/live-control-evidence/live_common.py",
+      "sha256": "a6fbd1f8f9685501272797d0a364c2eba220c8fe316f9174d2178b1f9ee89785",
+      "bytes": 1499,
+      "retained_path": "executed-code/docs/live-control-evidence/live_common.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/docs/live-control-evidence/run_http_validation.py",
+      "relative_path": "executed-code/docs/live-control-evidence/run_http_validation.py",
+      "sha256": "98fd591b0c51e033eba593156343de64fb4304fe20e7242087f94443763d529b",
+      "bytes": 9894,
+      "retained_path": "executed-code/docs/live-control-evidence/run_http_validation.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code/frontend/serve.py",
+      "relative_path": "executed-code/frontend/serve.py",
+      "sha256": "0fb319bc698426528f4b29823a2be5727991b6302d4c3ff895dbba92aaada2dd",
+      "bytes": 7034,
+      "retained_path": "executed-code/frontend/serve.py"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/executed-code-hashes.json",
+      "relative_path": "executed-code-hashes.json",
+      "sha256": "b6b06574492726207f4efee969d08acf5be81e850af301a6bb16bd4119a5e651",
+      "bytes": 642,
+      "retained_path": "executed-code-hashes.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/failure.json",
+      "relative_path": "failure.json",
+      "sha256": "dad2da71ec1a767ec2db4fd411507ccf61611a1d9e3090e1cfb6c60c07936587",
+      "bytes": 153,
+      "retained_path": "failure.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live-control/http-attempt-01/preservation-before.json",
+      "relative_path": "preservation-before.json",
+      "sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5",
+      "bytes": 224,
+      "retained_path": "preservation-before.json"
+    }
+  ],
+  "lossless_trace_compression": [],
+  "omitted_rebuildable_files": [],
+  "source_archive": "docs/phase6-evidence/corresponding-source.tar.gz",
+  "source_archive_sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+  "note": "Raw JSONL remains byte-identical after decompression; no observations have been recreated"
+}

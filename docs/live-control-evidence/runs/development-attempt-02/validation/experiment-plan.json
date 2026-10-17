@@ -1,0 +1,35 @@
+{
+  "cases": {
+    "yaw_plus": [
+      1,
+      0
+    ],
+    "yaw_minus": [
+      -1,
+      0
+    ],
+    "pitch_plus": [
+      0,
+      1
+    ],
+    "pitch_minus": [
+      0,
+      -1
+    ],
+    "combined": [
+      -1,
+      1
+    ],
+    "combined_replay": [
+      -1,
+      1
+    ]
+  },
+  "control_cycle": 2500000,
+  "hold_cycles": 85333,
+  "end_cycle": 3200000,
+  "cycle_seconds": 1.171875e-05,
+  "repeat_criterion": "Identical complete raw traces for combined and combined_replay",
+  "neutralization": "NativeSession bounded command expires through actual normal RHC inputs",
+  "settlement": "Explicit physics freeze, real FIFO drain, then 1000 quiet CPU calls"
+}

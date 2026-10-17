@@ -1,0 +1,143 @@
+{
+  "status": "VERIFIED",
+  "run": "closed",
+  "raw_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+  "initial": {
+    "ev": "initial",
+    "mode": "closed",
+    "cycles": 4000000,
+    "coupling_cpu_calls": 853,
+    "cycle_seconds": 1.172e-05,
+    "model": "active upstream LM-7 defaults",
+    "ram_writes": 0
+  },
+  "selected_observations": {
+    "controller_input": {
+      "raw_line": 4302,
+      "record": {
+        "ev": "input",
+        "cycle": 2500000,
+        "channel": 25,
+        "value": 12283,
+        "accepted": 4
+      }
+    },
+    "first_nonzero_rcs": {
+      "raw_line": 4348,
+      "record": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      }
+    },
+    "first_motion": {
+      "raw_line": 4350,
+      "record": {
+        "ev": "plant",
+        "cycle": 2509384,
+        "omega": [
+          0.014968681222858068,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          4.5437132478361206e-05,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          85
+        ],
+        "zero": 0
+      }
+    },
+    "first_sensor_request": {
+      "raw_line": 4373,
+      "record": {
+        "ev": "sensor",
+        "cycle": 2514502,
+        "origin_interval_end": 2514502,
+        "counter": 26,
+        "code": 1,
+        "delivered": true,
+        "accepted": 4
+      }
+    },
+    "first_cdu_readback": {
+      "raw_line": 4377,
+      "record": {
+        "ev": "sample",
+        "cycle": 2515355,
+        "imodes33": 15360,
+        "cdu": [
+          1,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "first_opposite_jet_word": {
+      "raw_line": 6028,
+      "record": {
+        "ev": "output",
+        "cycle": 2705321,
+        "channel": 6,
+        "value": 170
+      }
+    }
+  },
+  "rcs_nonzero_word_counts_octal": {
+    "006:00125": 8,
+    "006:00120": 2,
+    "006:00005": 1,
+    "006:00252": 7,
+    "006:00240": 5,
+    "006:00012": 4
+  },
+  "generated_sensor_requests": 1539,
+  "delivered_sensor_requests": 1539,
+  "accepted_sensor_requests": 1539,
+  "peak_abs_yaw_deg_s": 4.859385265209125,
+  "final_model": {
+    "ev": "plant",
+    "cycle": 4000000,
+    "omega": [
+      -0.027477428680504824,
+      0.0,
+      0.0
+    ],
+    "gimbals": [
+      16.84156247751019,
+      0.0,
+      0.0
+    ],
+    "jets": [
+      0,
+      0
+    ],
+    "zero": 0
+  },
+  "final_agc_readback": {
+    "ev": "sample",
+    "cycle": 4000000,
+    "imodes33": 15360,
+    "cdu": [
+      1533,
+      0,
+      0
+    ],
+    "failreg": [
+      848,
+      0,
+      0
+    ]
+  },
+  "link_limit": "Selected observations establish chronology, not an instruction-level cause for each jet. Cross-run intervention establishes feedback dependence."
+}

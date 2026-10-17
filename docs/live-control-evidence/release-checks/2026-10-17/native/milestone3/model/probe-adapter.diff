@@ -1,0 +1,11 @@
+--- retained-milestone2/probe.tcl
++++ scratch/probe-with-module-argument.tcl
+@@ -4,7 +4,7 @@
+ set init [open "$src/Contributed/LM_Simulator/lm_simulator.tcl" r]
+ set initialization [join [lrange [split [read $init] "\n"] 123 240] "\n"]
+ close $init
+-source "$src/Contributed/LM_Simulator/modules/AGC_IMU.tcl"
++source [lindex $argv 1]
+ source "$src/Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl"
+ proc write_socket {op address} {
+     global packets

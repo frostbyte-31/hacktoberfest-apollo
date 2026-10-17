@@ -1,0 +1,6 @@
+{
+  "docs/live-control-evidence/run_validation.py": "06e472257200f91d35431a93f290fe17a37e688c46aa6d26b008189cf47b6c2a",
+  "docs/live-control-evidence/live_common.py": "a6fbd1f8f9685501272797d0a364c2eba220c8fe316f9174d2178b1f9ee89785",
+  "docs/live-control-evidence/prior_hashes.json": "a923418ca51f7c9fd42401da7aa7f23830d6885dd2fc04b1f8472a5db5259ae7",
+  "backend/native_session.py": "aabbf7a742421864785f580c4965e9f1821bbe4bd3f468374fd56b3b3f8bcf35"
+}

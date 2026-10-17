@@ -1,0 +1,27 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/cdu",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase7-evidence/integration/inspect_axes.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/plant_bridge.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/assets/20261017T172703Z-1bbf4dac/engine.so"
+    ],
+    "start_utc": "2026-10-17T17:27:03.581105+00:00",
+    "exit": 0,
+    "pid": 5384,
+    "end_utc": "2026-10-17T17:27:04.193901+00:00"
+  }
+]

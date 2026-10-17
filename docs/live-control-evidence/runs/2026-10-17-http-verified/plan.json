@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "docs/live-control-evidence/run_http_validation.py",
+    "--output",
+    ".build/live-control/http-root-final-permitted"
+  ],
+  "started_utc": "2026-10-17T17:34:51.002256+00:00",
+  "base": "http://127.0.0.1:64252",
+  "initial_input": {
+    "yaw": 1,
+    "pitch": -1,
+    "cycle": 2200000
+  },
+  "heartbeat_interval_seconds": 0.15,
+  "initial_hold_wall_seconds": 0.75,
+  "followup_input": {
+    "yaw": -1,
+    "pitch": 0
+  },
+  "release": "Explicit neutral, then followup input expires without heartbeat",
+  "note": "Real handler and worker; only output paths are injected. Tokens are omitted from retained HTTP records."
+}

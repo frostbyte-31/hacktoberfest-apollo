@@ -1,0 +1,7 @@
+{
+  "status": "VERIFIED",
+  "prior_files_preserved": 2572,
+  "started_utc": "2026-10-17T17:34:51.002256+00:00",
+  "completed_utc": "2026-10-17T17:34:56.892001+00:00",
+  "scope": "Actual loopback HTTP to original native AGC; simulated attitude and sensor feedback; no descent"
+}

@@ -1,0 +1,57 @@
+{
+  "recorded_utc": "2026-10-17T17:39:46.443198+00:00",
+  "source_directory": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862",
+  "copied": [
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/configuration.json",
+      "relative_path": "configuration.json",
+      "sha256": "35bec74d3eba0cede1921581de544b822fa9da123e17bfd7e25e250d41dafb55",
+      "bytes": 6234,
+      "retained_path": "configuration.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/files.json",
+      "relative_path": "files.json",
+      "sha256": "5f6f0247d2fc45b8d54c97677435d516b441beed675ebe484da6fe07a6a244f1",
+      "bytes": 627,
+      "retained_path": "files.json"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/model.stderr",
+      "relative_path": "model.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "retained_path": "model.stderr"
+    },
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/summary.json",
+      "relative_path": "summary.json",
+      "sha256": "ee348bf3df128b7f7366f4929d30bb7259f7a8bf46e96b24eb4c8c8c3105335b",
+      "bytes": 973,
+      "retained_path": "summary.json"
+    }
+  ],
+  "lossless_trace_compression": [
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/trace.jsonl",
+      "relative_path": "trace.jsonl",
+      "sha256": "168f86e100a18e1c06a028ebd54b6968c4ad0a81f6b1dd08ace63a1f910e2abc",
+      "bytes": 7490,
+      "retained_path": "trace.jsonl.gz",
+      "gzip_sha256": "cfb88221b1124c37466fec8eccff7197596ae948af63198cd08e53983634cdff",
+      "gzip_bytes": 2854
+    }
+  ],
+  "omitted_rebuildable_files": [
+    {
+      "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/live/sessions/20261017T170242Z-545ea862/engine.so",
+      "relative_path": "engine.so",
+      "sha256": "8e37ddce3492bec93bac424e28de0e753254063ba172e7ec602160f61bee6ddb",
+      "bytes": 74504,
+      "reason": "Rebuildable host binary; compile commands, inputs and binary SHA-256 retained"
+    }
+  ],
+  "source_archive": "docs/phase6-evidence/corresponding-source.tar.gz",
+  "source_archive_sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+  "note": "Raw JSONL remains byte-identical after decompression; no observations have been recreated"
+}

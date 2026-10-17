@@ -1,13 +1,14 @@
-# Apollo 11 — guidance, attitude control and visual replay
+# Apollo 11 — guidance and live attitude control
 
 This repository runs original Luminary 099 through the pinned Virtual AGC engine.
 Phase 7 verifies bounded, simultaneous yaw/pitch spacecraft feedback, following
 independent single-axis demonstrations. A visual replay console presents the
-captured experiments. Full independent three-axis control, sustained attitude
+captured experiments and connects bounded pilot inputs to fresh native AGC sessions.
+Full independent three-axis control, sustained attitude
 stability, powered descent, landing, multiplayer and AI crew remain unverified.
 
 The authentic flight computation, modern emulator, synthetic LM-7 dynamics and
-read-only frontend remain separate. No npm installation is needed for the demo.
+frontend remain separate. No npm installation is needed for the demo.
 
 ## Open the visual demo
 
@@ -18,15 +19,26 @@ python3 -B frontend/serve.py
 Open **http://127.0.0.1:4173/**. The console shows a rotating illustrative lunar
 module, actual recorded RCS commands, sensor readouts and angular-rate histories.
 Switch yaw/pitch experiments, compare connected/disconnected feedback, scrub the
-timeline and download a provenance record. It replays verified recordings; it
-does not run a live AGC or simulate a landing. No external assets or services are
-required. See [frontend instructions and data boundaries](frontend/README.md).
+timeline and download a provenance record. In **Live AGC** mode, start a fresh
+native Luminary session and hold **A/D for yaw**, **W/S for pitch**, or the
+on-screen buttons. Actual RHC hardware inputs reach the original software;
+actual RCS output drives the retained external model and CDU feedback.
+
+Live mode needs the C compiler and pinned Tcl runtime (`make runtime` on first
+use). The server remains local and the CPU waits for the first pilot deflection
+after original readiness. Runs last at most 11.7 simulated seconds after that
+point. Release or input expiry neutralizes the controller; it does not instantly
+stop the vehicle. Use `--replay-only` for a recording viewer without native
+dependencies. No landing is simulated. See [frontend instructions and data
+boundaries](frontend/README.md) and [live validation evidence](docs/live-control-evidence/README.md).
 
 Frontend data and presentation checks:
 
 ```sh
 python3 -B -m unittest discover -s frontend/tests -p test_replay.py -v
-node --test frontend/tests/replay.test.mjs  # Node 20+; no dependencies
+node --test frontend/tests/replay.test.mjs frontend/tests/live.test.mjs
+make test-live      # includes local HTTP/worker contract tests; Node 20+
+make validate-live  # actual fresh native signed-axis/replay and HTTP experiments
 ```
 
 ## Check the evidence and tests

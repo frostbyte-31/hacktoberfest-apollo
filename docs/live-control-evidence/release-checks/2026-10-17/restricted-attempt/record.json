@@ -1,0 +1,80 @@
+{
+  "argv": [
+    "docs/live-control-evidence/run_final_checks.py",
+    "--node",
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "node": "v24.19.0",
+  "base_revision": "e8197c8d5227b5a425c5f6529147ba918c0fc67f",
+  "source_sha256": {
+    "Makefile": "0c149d7d3b720bb181b45ff9b048e2808aa1b89d510630e644a9449e91547e83",
+    "README.md": "20787cce32f6b57ae1c06eb29918e240fd08e52c589cc0e1e77fb18170ec7e57",
+    "backend/__init__.py": "16891c1417a38ca9411e892d34719e2ff29e4dc4348a9ad76e659562fd3f48c5",
+    "backend/control_service.py": "c524ef2624b673e966ae6fc067e088ae88bbc4c05dc881c3a6c5b110aaf07f68",
+    "backend/native_session.py": "154a8706c7922f194e75e514055a19913cb468040f4c12bac212133d8c25506c",
+    "backend/tests/test_http.py": "47ac7b501036b769fb06c9156985087a6b6707418de0f953b1acb940e0c72179",
+    "backend/tests/test_native.py": "f69773a465269d64e194592079a0c9803bc42391e175c876c97cc948c7e9e842",
+    "backend/tests/test_service.py": "f81701d867faa9626e037a9f15a0cf9e5c8c52442c45acd960ee8748bd4ad47a",
+    "docs/live-control-evidence/run_final_checks.py": "fe77eb157ba83dbd1ae2a926cac2f9bc8a0147e55325ff915511db2168021b66",
+    "frontend/README.md": "8e81e713df727106a23569a3dd08acca4e57d87cd13f51a1817fd75e107fdba4",
+    "frontend/dist/app.js": "0e1c8480657c82d37f684cd1065dd9ff65731a5327fd5229c55884399f6d49fd",
+    "frontend/dist/data/replay.json": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+    "frontend/dist/favicon.svg": "1d76cf7cab439b68ed21d0dbf8caf698930ed8f773b90ece17da59334ec18390",
+    "frontend/dist/index.html": "5ca70de245b5b83b042efc4aacb978652c439a8e2fa2d022ae3f00fb0a358496",
+    "frontend/dist/live.mjs": "093fcaf8344d79b319a1d700e7de555829aed73100e1198e1aaa1a9cc6e71324",
+    "frontend/dist/replay.mjs": "5f22429eabb9a2f14bfd247cfe16917ab083dba3c3e94f3fe0d475efae2f6217",
+    "frontend/dist/spacecraft.mjs": "2a79c5aeded8c14a5242b0c31af7535ef6fc0393f30eebce6fe3697bb07634f1",
+    "frontend/dist/styles.css": "3e80272e71d788d028fbcab9bc02fdfe1d6d258fcd6786c290c88ceb77a95dde",
+    "frontend/serve.py": "0fb319bc698426528f4b29823a2be5727991b6302d4c3ff895dbba92aaada2dd",
+    "frontend/tests/live.test.mjs": "28c26cb3a98a0cb8956fabbe4aa487fbc142d24b3c5e42467bf4786707e6be1f",
+    "frontend/tests/replay.test.mjs": "7c66811d46fc923be3b334f15b9f3f601ddde96b9db9a73a232e5cc97c5532c9",
+    "frontend/tests/test_replay.py": "e41d08178283683d71f70528a0857043c90a59a739941a22d2135c5f9d073be2",
+    "frontend/tools/export_replay.py": "06ee6fdb3799de605cd780dd64032952936f248b0903d9bb0151f20142c2c432"
+  },
+  "commands": [
+    {
+      "command": [
+        "make",
+        "check"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T17:29:43.186151+00:00",
+      "returncode": 0,
+      "ended_utc": "2026-10-17T17:30:50.940104+00:00"
+    },
+    {
+      "command": [
+        "make",
+        "test-live",
+        "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T17:30:50.940772+00:00",
+      "returncode": 2,
+      "ended_utc": "2026-10-17T17:30:51.086402+00:00"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/live-control-evidence",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T17:30:51.086679+00:00",
+      "returncode": 0,
+      "ended_utc": "2026-10-17T17:30:56.101920+00:00"
+    }
+  ],
+  "passed": false,
+  "changed_during_checks": [],
+  "interpretation": "make check preserves three classified historical missing-log errors; inspect its per-suite results. Exit zero is not a claim that those tests passed."
+}

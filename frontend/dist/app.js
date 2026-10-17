@@ -1,14 +1,62 @@
 import { activeJets, frameAt, lastAt, octal, formatTime, originalReadiness, presentationQuaternion, rcsAt, validateReplay, wrappedDegrees } from './replay.mjs';
 import { createSpacecraftRenderer } from './spacecraft.mjs';
+import { LiveClient, canPilot, liveSample } from './live.mjs';
 
 const $ = id => document.getElementById(id);
 const renderer = createSpacecraftRenderer($('spacecraft'));
-const state = { data: null, axis: 'combined', feedback: true, time: 31, playing: false, speed: 1, compare: false, axes: true, fullChart: false };
+const state = { data: null, mode:'replay', axis: 'combined', feedback: true, time: 31, playing: false, speed: 1, compare: false, axes: true, fullChart: false };
+const liveCase={id:'live',title:'Live native yaw/pitch session',frames:[],rcsEvents:[],checkpoints:[],durationSeconds:37.5,source:{rawSha256:null}};
+let liveFrame=null, liveState={status:'idle',sessionId:null,frame:null}, replayTime=31;
 const byId = id => state.data?.cases.find(item => item.id === id);
-const current = () => byId(`${state.axis}${state.feedback ? '' : '_off'}`);
+const current = () => state.mode==='live' ? liveCase : byId(`${state.axis}${state.feedback ? '' : '_off'}`);
 const announce = text => { $('announcement').textContent = text; };
 const signed = n => `${n < 0 ? '−' : n > 0 ? '+' : ''}${Math.abs(n).toFixed(3)}`;
 let dragging = null;
+const live = new LiveClient((update,reset)=>{
+  liveState=update;
+  if(reset){liveCase.frames=[];liveFrame=null;$('live-error').hidden=true;}
+  try {
+    liveFrame=liveSample(update.frame);
+    if(liveFrame&&(!liveCase.frames.length||liveFrame.cycle>liveCase.frames.at(-1).cycle))liveCase.frames.push(liveFrame);
+  } catch(error){live.release(true);showLiveError(error.message);}
+  updateLiveControls();
+  if(state.mode==='live'){state.time=liveFrame?.t||0;render();}
+},showLiveError);
+
+function showLiveError(message){$('live-error').textContent=message;$('live-error').hidden=false;}
+function updateLiveControls(){
+  const enabled=canPilot(liveState);
+  document.querySelectorAll('[data-pilot]').forEach(button=>{button.disabled=!enabled;button.classList.toggle('pressed',live.held.has(button.dataset.pilot));});
+  $('live-neutral').disabled=!enabled;
+  $('live-start').disabled=['initializing','ready','running','stopping'].includes(liveState.status);
+  $('live-stop').disabled=!['initializing','ready','running','disconnected'].includes(liveState.status);
+  $('live-download').disabled=!liveState.sessionId;
+  $('live-start').textContent=['stopped','fault'].includes(liveState.status)?'Start new run':'Start live AGC';
+  $('live-status').textContent=liveState.message||'Start a fresh native AGC session.';
+  $('live-remaining').textContent=liveState.frame?`${Math.max(0,liveState.frame.remaining_time).toFixed(1)} s remaining`:'11.7 s bounded run';
+  const applied=liveState.frame?.control;
+  $('live-input-state').textContent=applied?`RHC input: yaw ${applied.yaw*20}, pitch ${applied.pitch*20} counts · interface #${liveState.appliedSequence}`:'Only original AGC outputs drive the vehicle.';
+  if(state.mode==='live')$('mode-badge').innerHTML=`<span class="status-dot"></span> LIVE · ${liveState.status==='ready'?'READY / PAUSED':liveState.status.toUpperCase()}`;
+}
+function setMode(mode){
+  if(mode===state.mode)return;
+  if(mode==='live'){replayTime=state.time;setPlaying(false);}
+  else{live.stop();state.time=replayTime;}
+  state.mode=mode;document.body.dataset.console=mode;
+  document.querySelectorAll('[data-mode]').forEach(button=>{const active=button.dataset.mode===mode;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
+  $('live-controls').hidden=mode!=='live';$('replay-options').hidden=mode==='live';$('replay-transport').hidden=mode==='live';
+  $('compare-button').hidden=mode==='live';$('comparison-key').hidden=mode==='live'||!state.compare;
+  $('mode-description').textContent=mode==='live'?'Original Luminary · live backend · attitude only':'Verified Phase 7 recordings';
+  $('mode-badge').classList.toggle('live',mode==='live');
+  $('mode-badge').innerHTML=`<span class="status-dot"></span> ${mode==='live'?'LIVE NATIVE AGC':'RECORDED NATIVE RUN'}`;
+  $('view-mode-label').textContent=mode==='live'?'LIVE ATTITUDE SESSION':'ATTITUDE REPLAY';
+  $('spacecraft').setAttribute('aria-label',`Illustrative lunar module oriented by ${mode==='live'?'live backend':'recorded'} quaternion samples. No translation or descent is simulated.`);
+  $('output-caption').textContent=mode==='live'?'Actual native output latches · sampled':'Recorded output words · read-only';
+  $('footer-source').textContent=mode==='live'?'Simulated physics. Live original software.':'Simulated physics. Recorded evidence.';
+  $('chart-window').textContent=state.fullChart?'FULL RUN ↔':mode==='live'?'LIVE WINDOW ↔':'CONTROL WINDOW ↔';
+  if(mode==='live'){state.time=liveFrame?.t||0;updateLiveControls();}else if(state.data)selectExperiment(state.axis,state.feedback);
+  render();announce(mode==='live'?'Live mode. Start a native session to enable pilot inputs.':'Recorded replay mode.');
+}
 
 function setPlaying(value) {
   if (!state.data) return;
@@ -52,10 +100,11 @@ function selectExperiment(axis, feedback = state.feedback) {
 function render() {
   const c = current();
   if (!c) { renderer.draw([1,0,0,0], 0, true); return; }
-  const frame = frameAt(c, state.time);
-  const words = rcsAt(c, state.time);
+  const isLive=state.mode==='live';
+  const frame = isLive?liveFrame:frameAt(c, state.time);
+  const words = isLive?(liveState.frame?.actual_output_jets||{5:null,6:null}):rcsAt(c, state.time);
   const jets = activeJets(words);
-  renderer.draw(presentationQuaternion(c, state.time), state.time, state.feedback);
+  renderer.draw(isLive?(frame?.q||[1,0,0,0]):presentationQuaternion(c, state.time), state.time, isLive||state.feedback);
   const rates = frame?.omega;
   for (const [i, id] of ['yaw-value', 'pitch-value', 'roll-value'].entries()) {
     $(id).innerHTML = `${rates ? signed(rates[i]) : '—'}<small>°/s</small>`;
@@ -64,7 +113,7 @@ function render() {
   const modreg = checkpoint?.modreg;
   $('program-value').textContent = Number.isInteger(modreg) && modreg >= 0 && modreg <= 99 ? String(modreg).padStart(2, '0') : '— —';
   const readiness = originalReadiness(checkpoint);
-  $('readiness-state').textContent = !checkpoint ? 'Awaiting recorded checkpoint' : readiness ? 'Original readiness observed' : 'Recorded startup checkpoint';
+  $('readiness-state').textContent = isLive?(!checkpoint?'Awaiting native startup':canPilot(liveState)?'Original readiness observed':`Session ${liveState.status}`):!checkpoint ? 'Awaiting recorded checkpoint' : readiness ? 'Original readiness observed' : 'Recorded startup checkpoint';
   $('channel5').textContent = octal(words[5]);
   $('channel6').textContent = octal(words[6]);
   $('jet-count').textContent = `${words[5] == null || words[6] == null ? '—' : jets.filter(j => j.active).length} / 16`;
@@ -77,7 +126,8 @@ function render() {
   for (const [i, id] of ['gimbal-o', 'gimbal-i', 'gimbal-m'].entries()) $(id).textContent = frame ? `${signed(wrappedDegrees(frame.gimbals[i]))}°` : '—';
   const counters = frame?.cdu;
   for (const [i, id] of ['cdu-x','cdu-y','cdu-z'].entries()) $(id).textContent = Array.isArray(counters) ? String(counters[i]).padStart(5, '0') : '—';
-  $('sample-time').textContent = frame ? `Recorded sample · ${formatTime(frame.t)}` : 'No model sample at this time';
+  $('sample-time').textContent = isLive?(frame?`Model ${formatTime(frame.t)} · CPU ${frame.cpuCycle}`:'Waiting for native telemetry'):frame ? `Recorded sample · ${formatTime(frame.t)}` : 'No model sample at this time';
+  if(isLive){$('sensor-message').textContent='Actual CDU counters · live native CPU';$('sensor-dot').style.background='var(--green)';}
   $('time-current').textContent = formatTime(state.time);
   $('scrubber').value = state.time;
   $('scrubber').style.setProperty('--progress', `${state.time / c.durationSeconds * 100}%`);
@@ -94,12 +144,12 @@ function drawChart(c) {
   if (canvas.width !== Math.round(width*dpr) || canvas.height !== Math.round(height*dpr)) {canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);}
   const ctx = canvas.getContext('2d');
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
-  const compare = state.compare ? byId(`${state.axis}${state.feedback ? '_off' : ''}`) : null;
+  const compare = state.mode==='replay'&&state.compare ? byId(`${state.axis}${state.feedback ? '_off' : ''}`) : null;
   let magnitude = 0.1;
   for (const source of [c,compare].filter(Boolean)) for (const frame of source.frames) magnitude = Math.max(magnitude,...frame.omega.map(Math.abs));
   const max = magnitude <= 5 ? 5 : Math.ceil(magnitude / 5) * 5;
   const left=33,right=12,top=7,bottom=22,w=width-left-right,h=height-top-bottom;
-  const start = state.fullChart ? 0 : 28;
+  const start = state.fullChart ? 0 : state.mode==='live'?25.78125:28;
   const x = t => left + (t-start)/(c.durationSeconds-start)*w;
   const y = n => top + (max-n)/(2*max)*h;
   ctx.font='7px monospace';ctx.textAlign='right';ctx.textBaseline='middle';
@@ -121,15 +171,28 @@ function drawChart(c) {
     }ctx.restore();
   }
   if(compare)trace(compare,true);trace(c,false);
-  for(const time of [29.296875,31.640625]){ctx.strokeStyle='#909d6155';ctx.lineWidth=.6;ctx.setLineDash([2,3]);ctx.beginPath();ctx.moveTo(x(time),top);ctx.lineTo(x(time),height-bottom);ctx.stroke();ctx.setLineDash([]);}
+  const inputTimes=state.mode==='live'?(liveState.frame?.events||[]).filter(e=>e.ev==='pilot_command'||e.ev==='neutral').map(e=>e.cycle*12/1024000):[29.296875,31.640625];
+  for(const time of inputTimes){ctx.strokeStyle='#909d6155';ctx.lineWidth=.6;ctx.setLineDash([2,3]);ctx.beginPath();ctx.moveTo(x(time),top);ctx.lineTo(x(time),height-bottom);ctx.stroke();ctx.setLineDash([]);}
   ctx.strokeStyle='#e5d5af88';ctx.lineWidth=.8;ctx.beginPath();if(state.time>=start){ctx.moveTo(x(state.time),top);ctx.lineTo(x(state.time),height-bottom);}ctx.stroke();
   const frame=frameAt(c,state.time);
   if(frame&&state.time>=start)frame.omega.forEach((value,i)=>{ctx.fillStyle=colors[i];ctx.beginPath();ctx.arc(x(state.time),y(value),2,0,Math.PI*2);ctx.fill();});
-  canvas.setAttribute('aria-label',`Recorded angular rates from ${start} to ${c.durationSeconds} seconds${compare ? ', comparing connected and disconnected feedback' : ''}`);
+  canvas.setAttribute('aria-label',`${state.mode==='live'?'Live sampled':'Recorded'} angular rates from ${start} to ${c.durationSeconds} seconds${compare ? ', comparing connected and disconnected feedback' : ''}`);
 }
 
 function openDialog(kind) {
   const c = current();
+  if(state.mode==='live')live.release(true);
+  if(state.mode==='live'&&kind!=='frames'){
+    const details={
+      brief:['Pilot the original guidance software.', '<p>Start a fresh native session. The backend verifies pinned sources and runs the original startup until P00, clear IMU inhibition, ACCSOKAY and alarm readbacks agree. The CPU then pauses until your first deflection.</p><p>Hold yaw and pitch controls with the mouse, touch or <strong>A/D and W/S</strong>. The browser sends only bounded controller directions. The backend presents source-verified ±20 RHC counts through ports <code>0167 / 0166</code> and active-low channel <code>031</code>. Original channel <code>013</code> gating delivers those counts to Luminary.</p><p>Actual native RCS outputs drive the retained modern vehicle model; real counter-operation packets return the resulting IMU measurements. The browser never writes orientation, rates or actuator outputs.</p><p class="dialog-note">This is the bounded Phase 7 attitude fixture: about 11.7 seconds after readiness, synthetic mass properties and ideal alignment. Powered descent, a calibrated flight vehicle and a complete landing are unimplemented.</p>'],
+      help:['Live controls and automatic neutral.', '<p>Hold <strong>A/D for yaw</strong>, <strong>W/S for pitch</strong>, or the on-screen buttons. Two different axes may be held together. Opposing inputs on the same axis cancel to neutral.</p><p>Release, blur, hidden tab and pointer cancellation clear the controls. The server expires unrefreshed deflections within 0.5 simulated seconds and also checks wall-clock freshness. An input queued too long is discarded.</p><p>The original software decides the RCS response. Neutralizing the controller does not instantly stop a rotating vehicle. Use <strong>Stop run</strong> to freeze the bounded experiment and drain queued sensors. Use <strong>Start new run</strong> for a genuine fresh initialization.</p><p>Live values are backend samples, not browser predictions. Model time and CPU time are shown separately because sensor service and the final drain can lag or outlive physical integration. Dragging the illustration changes the camera only.</p>'],
+      evidence:['A new trace for each live session.', '<p>Each session creates new raw traces under <code>.build/live/sessions/</code>, with original AGC outputs, applied RHC inputs, source/runtime hashes, body dynamics and every generated, delivered, enqueued and applied CDU operation.</p><p>The gateway separately records HTTP intent, sequence acknowledgements, cancellations, expiry and actual input application. HTTP acceptance alone is not evidence that Luminary has sampled an input; the native trace observes the original RHC read gate.</p><p>Earlier Phase 1–7 and replay evidence stays unchanged. New validation includes both signs on each axis and exact repeated native runs.</p><p class="dialog-note">Stop and queue settlement are distinct from attitude equilibrium. Failed or unsupported sessions remain failed, retain their logs and cannot be presented as verified control.</p><button class="download-button" id="download-live-record"><svg><use href="#i-download"/></svg> Download current live record</button>']
+    };
+    const [title,html]=details[kind]||details.help;
+    $('dialog-title').textContent=title;$('dialog-content').innerHTML=html;$('detail-dialog').showModal();
+    $('download-live-record')?.addEventListener('click',()=>live.download().catch(error=>showLiveError(error.message)));
+    return;
+  }
   const contents = {
     brief: ['A real computer. A measurable response.', `<p>This demo replays the verified <strong>Phase 7 attitude-control experiments</strong>. Original Apollo Lunar Module software, Luminary 099, ran through the pinned Virtual AGC emulator and produced actual RCS channel outputs.</p><p>Those commands drove a modern rotational model. Simulated IMU/CDU measurements returned through real emulator counter operations, changing subsequent flight-software commands.</p><ol><li><strong>Yaw and pitch:</strong> independently verified, then demonstrated simultaneously.</li><li><strong>Feedback controls:</strong> switch the sensor connection or compare traces to see why the returned measurements matter.</li><li><strong>Exact replays:</strong> repeated pitch and combined runs reproduced their raw trace bytes.</li></ol><p class="dialog-note">Capability C: bounded simultaneous two-axis feedback. Full independent three-axis control and sustained stability remain unverified. Descent propulsion, altitude, trajectory and landing are not demonstrated.</p><p>The vehicle geometry is illustrative. Inertia and torque arms are synthetic. This is generated experimental telemetry, not historical Apollo 11 flight data.</p>`],
     help: ['Explore the experiment.', `<p>Choose an experiment, then play or scrub its recorded timeline. The default position starts during the rate-controller input, with the full startup sequence available to the left. The chart starts at 28 seconds; toggle its window to see the full run.</p><div class="keyboard-row"><kbd>Space</kbd> Play / pause</div><div class="keyboard-row"><kbd>← / →</kbd> Move by 0.5 seconds</div><div class="keyboard-row"><kbd>R</kbd> Restart from the beginning</div><div class="keyboard-row"><kbd>Esc</kbd> Close details</div><p><strong>Drag the spacecraft view</strong> to orbit the camera. This changes your viewpoint, never the recorded vehicle state. Use the grid button to toggle body axes.</p><p>Numeric readouts hold actual captured samples, around 10 Hz. Quaternion interpolation smooths the illustration only. RCS indicators use exact recorded output-event times.</p><p>Feedback switches between separate native experiments; it does not change a running AGC. The yaw export has no disconnected case. Playback ends at the documented physics cutoff.</p>`],
@@ -154,7 +217,7 @@ async function load() {
     if(!response.ok)throw new Error(`Data request failed (${response.status}).`);
     state.data=validateReplay(await response.json());
     $('loading').hidden=true;$('play-button').disabled=false;$('scrubber').disabled=false;
-    selectExperiment('combined',true);
+    if(state.mode==='replay')selectExperiment('combined',true);
     announce('Verified Phase 7 replay loaded. Press Play replay to begin.');
   } catch(error) {
     $('loading').hidden=true;$('load-error').hidden=false;$('error-detail').textContent=error.message;
@@ -185,7 +248,7 @@ $('viewport').addEventListener('pointerdown',event=>{if(event.target.closest('bu
 $('viewport').addEventListener('pointermove',event=>{if(!dragging)return;renderer.orbit(event.clientX-dragging.x,event.clientY-dragging.y);dragging={x:event.clientX,y:event.clientY};render();});
 for(const type of ['pointerup','pointercancel'])$('viewport').addEventListener(type,()=>{dragging=null;});
 document.addEventListener('keydown',event=>{
-  if(!state.data||$('detail-dialog').open||event.ctrlKey||event.metaKey||event.altKey||event.target.matches('input,select,textarea,button'))return;
+  if(state.mode==='live'||!state.data||$('detail-dialog').open||event.ctrlKey||event.metaKey||event.altKey||event.target.matches('input,select,textarea,button'))return;
   if(event.code==='Space'){event.preventDefault();setPlaying(!state.playing);render();}
   if(event.code==='ArrowLeft'||event.code==='ArrowRight'){event.preventDefault();state.time=Math.max(0,Math.min(current().durationSeconds,state.time+(event.code==='ArrowRight' ? .5 : -.5)));render();}
   if(event.code==='KeyR'){state.time=0;setPlaying(false);render();}
@@ -194,4 +257,22 @@ window.addEventListener('resize',render);
 document.addEventListener('visibilitychange',()=>{if(document.hidden){setPlaying(false);render();}});
 let previous=performance.now();
 function tick(now){const delta=Math.min(.1,(now-previous)/1000);previous=now;if(state.playing&&state.data&&!$('detail-dialog').open){state.time=Math.min(current().durationSeconds,state.time+delta*state.speed);if(state.time>=current().durationSeconds)setPlaying(false);render();}requestAnimationFrame(tick);}
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>setMode(button.dataset.mode)));
+$('live-start').addEventListener('click',()=>live.start());
+$('live-stop').addEventListener('click',()=>live.stop());
+$('live-neutral').addEventListener('click',()=>{live.release(true);updateLiveControls();});
+$('live-download').addEventListener('click',()=>live.download().catch(error=>showLiveError(error.message)));
+document.querySelectorAll('[data-pilot]').forEach(button=>{
+  button.addEventListener('pointerdown',event=>{if(!canPilot(liveState))return;event.preventDefault();button.setPointerCapture(event.pointerId);live.hold(button.dataset.pilot,`pointer-${event.pointerId}`);updateLiveControls();});
+  const release=event=>{live.lift(`pointer-${event.pointerId}`);updateLiveControls();};
+  button.addEventListener('pointerup',release);button.addEventListener('pointercancel',release);button.addEventListener('lostpointercapture',release);
+  button.addEventListener('keydown',event=>{if(event.code==='Space'||event.code==='Enter'){event.preventDefault();if(!event.repeat)live.hold(button.dataset.pilot,`button-${event.code}`);updateLiveControls();}});
+  button.addEventListener('keyup',event=>{if(event.code==='Space'||event.code==='Enter'){event.preventDefault();live.lift(`button-${event.code}`);updateLiveControls();}});
+});
+const pilotKeys={KeyA:'yaw-',KeyD:'yaw+',KeyW:'pitch+',KeyS:'pitch-'};
+document.addEventListener('keydown',event=>{if(state.mode!=='live'||$('detail-dialog').open||event.ctrlKey||event.metaKey||event.altKey||event.target.matches('input,select,textarea'))return;const key=pilotKeys[event.code];if(key){event.preventDefault();if(!event.repeat)live.hold(key,`key-${event.code}`);updateLiveControls();}});
+document.addEventListener('keyup',event=>{if(state.mode==='live'&&pilotKeys[event.code]){live.lift(`key-${event.code}`);updateLiveControls();}});
+window.addEventListener('blur',()=>{live.release(true);updateLiveControls();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){live.release(true);updateLiveControls();}});
+window.addEventListener('pagehide',()=>{live.release(true);});
 render();requestAnimationFrame(tick);load();
