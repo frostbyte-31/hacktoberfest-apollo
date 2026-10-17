@@ -193,16 +193,16 @@ def main():
                 ok = (s['MODREG'] == 0o77777)
             if ok:
                 if step_since is None:
-                    step_since = tick
-                    emit({'ev': 'step', 'cycle': tick, 'name': name})
+                    start_actions(tick)  # emits 'step', fills action_q
                 if action_q:
                     queue_action(tick + KEYGAP, action_q.pop(0))
                 else:
-                    if steps[step_i][2]:
-                        start_actions(tick)
                     step_i += 1; step_since = None
             else:
-                if step_since is None:
+                if step_since is not None and action_q:
+                    # Flash temporarily replaced by a monitor load; keep waiting.
+                    pass
+                elif step_since is None:
                     step_since = tick
                     emit({'ev': 'await', 'cycle': tick, 'name': name, 'pre': list(pre)})
                 elif tick - step_since > STALL_LIMIT:
