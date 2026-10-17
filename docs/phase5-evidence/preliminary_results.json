@@ -1,0 +1,932 @@
+{
+  "baseline": {
+    "checkpoints": {
+      "16,2041": 469,
+      "16,2000": 469,
+      "16,2163": 469,
+      "16,2007": 914,
+      "16,2012": 914
+    },
+    "rcs_packets": 942,
+    "nonzero_rcs": 0,
+    "first_nonzero": [],
+    "last_sample": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 0,
+      "chan30": 15871,
+      "chan31": 28671,
+      "imodes30": 16137,
+      "imodes33": 15392,
+      "dapbools": 8910,
+      "rcsflags": 4100,
+      "mass": 1701,
+      "lemmass": 1701,
+      "rhc_yaw": 0,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "failreg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "issup_before": []
+  },
+  "operate": {
+    "checkpoints": {
+      "16,2041": 175,
+      "16,2000": 469,
+      "16,2163": 174,
+      "16,2007": 914,
+      "16,2012": 324,
+      "06,2622": 2,
+      "06,2643": 4,
+      "06,2556": 4,
+      "06,2242": 4,
+      "06,2347": 4,
+      "06,2361": 2,
+      "06,2313": 2,
+      "06,2321": 2,
+      "06,2327": 2,
+      "16,2206": 295,
+      "16,2046": 1
+    },
+    "rcs_packets": 1234,
+    "nonzero_rcs": 25,
+    "first_nonzero": [
+      {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2517540,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2526236,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2534563,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2543186,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2551733,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2560348,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2568671,
+        "channel": 6,
+        "value": 85
+      }
+    ],
+    "last_sample": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 32767,
+      "chan30": 15615,
+      "chan31": 28671,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "dapbools": 8926,
+      "rcsflags": 6152,
+      "mass": 1701,
+      "lemmass": 1701,
+      "rhc_yaw": 0,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "failreg": [
+        848,
+        0,
+        0
+      ]
+    },
+    "issup_before": [
+      {
+        "ev": "before",
+        "cycle": 1480197,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480198,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480199,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480200,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480201,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480202,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480203,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480204,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480205,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480206,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480207,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480208,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "repeat": {
+    "checkpoints": {
+      "16,2041": 175,
+      "16,2000": 469,
+      "16,2163": 174,
+      "16,2007": 914,
+      "16,2012": 324,
+      "06,2622": 2,
+      "06,2643": 4,
+      "06,2556": 4,
+      "06,2242": 4,
+      "06,2347": 4,
+      "06,2361": 2,
+      "06,2313": 2,
+      "06,2321": 2,
+      "06,2327": 2,
+      "16,2206": 295,
+      "16,2046": 1
+    },
+    "rcs_packets": 1234,
+    "nonzero_rcs": 25,
+    "first_nonzero": [
+      {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2517540,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2526236,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2534563,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2543186,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2551733,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2560348,
+        "channel": 6,
+        "value": 85
+      },
+      {
+        "ev": "output",
+        "cycle": 2568671,
+        "channel": 6,
+        "value": 85
+      }
+    ],
+    "last_sample": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 32767,
+      "chan30": 15615,
+      "chan31": 28671,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "dapbools": 8926,
+      "rcsflags": 6152,
+      "mass": 1701,
+      "lemmass": 1701,
+      "rhc_yaw": 0,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "failreg": [
+        848,
+        0,
+        0
+      ]
+    },
+    "issup_before": [
+      {
+        "ev": "before",
+        "cycle": 1480197,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480198,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480199,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480200,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480201,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480202,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480203,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480204,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480205,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480206,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480207,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480208,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "off": {
+    "checkpoints": {
+      "16,2041": 383,
+      "16,2000": 469,
+      "16,2163": 383,
+      "16,2007": 914,
+      "16,2012": 742,
+      "06,2622": 3,
+      "06,2643": 4,
+      "06,2556": 4,
+      "06,2242": 4,
+      "06,2347": 4,
+      "06,2361": 2,
+      "06,2313": 2,
+      "06,2321": 2,
+      "06,2327": 2,
+      "16,2206": 86,
+      "16,2046": 1
+    },
+    "rcs_packets": 1025,
+    "nonzero_rcs": 0,
+    "first_nonzero": [],
+    "last_sample": {
+      "ev": "sample",
+      "cycle": 4000000,
+      "modreg": 32767,
+      "chan30": 15871,
+      "chan31": 28671,
+      "imodes30": 16129,
+      "imodes33": 15392,
+      "dapbools": 8910,
+      "rcsflags": 6148,
+      "mass": 1701,
+      "lemmass": 1701,
+      "rhc_yaw": 0,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "failreg": [
+        848,
+        0,
+        0
+      ]
+    },
+    "issup_before": [
+      {
+        "ev": "before",
+        "cycle": 1480197,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480198,
+        "bank": 6,
+        "z": 1233,
+        "a": 1834,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480199,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480200,
+        "bank": 6,
+        "z": 1234,
+        "a": 65491,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480201,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480202,
+        "bank": 6,
+        "z": 1235,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15933,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480203,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480204,
+        "bank": 6,
+        "z": 1236,
+        "a": 15889,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480205,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480206,
+        "bank": 6,
+        "z": 1237,
+        "a": 65503,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480207,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "ev": "before",
+        "cycle": 1480208,
+        "bank": 6,
+        "z": 1238,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}
