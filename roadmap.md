@@ -17,10 +17,16 @@
 - [x] Run step-locked native/WebAssembly comparison and real-browser validation
 - [x] Deliver docs/PHASE2_POWERED_DESCENT_FEASIBILITY.md and new evidence
 
-## Unresolved prerequisites (not authorized follow-on work)
+## Phase 3 (done — minimum instrument integration experiment)
+- [x] Review prior evidence and verify minimum sensor/actuator loop in pinned sources
+- [x] Execute Luminary099 V41 IMU-gimbal feedback with recorded synthetic initial conditions
+- [x] Verify sensor reception, actual AGC output, gimbal motion, feedback-dependent completion, disconnected controls, negative sign, and exact replay (7 tests pass)
+- [x] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and docs/phase3-evidence/; verify Phases 1–2 unchanged
+
+## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.
 - The additional 01107 alarm in the cold-start P63 attempt requires isolation before a stronger initialization claim.
 
 ## Not authorized
-- Frontend, multiplayer, AI crew, physics engine, full application development
+- Frontend, multiplayer, AI crew, complete lunar physics engine, full application development
