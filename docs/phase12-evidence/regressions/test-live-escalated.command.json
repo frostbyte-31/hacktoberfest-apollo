@@ -1,0 +1,13 @@
+{
+  "name": "test-live-escalated",
+  "argv": [
+    "make",
+    "test-live",
+    "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "started_utc": "2026-10-17T22:42:26.886669+00:00",
+  "reason": "Unchanged suite requires local loopback socket bind, denied in initial sandbox run",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:42:37.482455+00:00"
+}

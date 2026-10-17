@@ -1,0 +1,19 @@
+{
+  "name": "guidance-data-tests",
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "frontend/tests",
+    "-p",
+    "test_guidance_data.py",
+    "-v"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "started_utc": "2026-10-17T22:42:11.947520+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:42:29.025526+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "all_match": true,
+  "cases": {
+    "sink": {
+      "fresh": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "retained": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "byte_identical": true
+    },
+    "connected": {
+      "fresh": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "retained": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "byte_identical": true
+    },
+    "no-feedback": {
+      "fresh": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "retained": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "byte_identical": true
+    },
+    "repeat": {
+      "fresh": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "retained": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "byte_identical": true
+    }
+  }
+}

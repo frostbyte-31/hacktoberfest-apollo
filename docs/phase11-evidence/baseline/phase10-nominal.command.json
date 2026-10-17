@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline/docs/phase10-evidence/run_mission.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+    "--config",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline/docs/phase10-evidence/configs/mission-15km.json",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/nominal"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline",
+  "ended_utc": "2026-10-17T21:57:49.397180+00:00",
+  "exit": 0,
+  "started_utc": "2026-10-17T21:57:42.732330+00:00"
+}

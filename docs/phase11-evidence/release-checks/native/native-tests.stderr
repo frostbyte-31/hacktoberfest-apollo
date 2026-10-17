@@ -1,0 +1,21 @@
+test_all_native_and_causal_checks_pass (test_native.NativePipaTests) ... ok
+test_counter_events_are_accepted_and_observed_at_exact_cycles (test_native.NativePipaTests) ... ok
+test_deterministic_native_replay (test_native.NativePipaTests) ... ok
+test_disconnection_is_a_real_causal_negative_control (test_native.NativePipaTests) ... ok
+test_negative_force_original_velocity_and_position_response (test_native.NativePipaTests) ... ok
+test_original_display_and_no_ignition (test_native.NativePipaTests) ... ok
+test_original_navigation_updates_and_delta_v_accumulation (test_native.NativePipaTests) ... ok
+test_original_p47_readiness_and_navigation_execution (test_native.NativePipaTests) ... ok
+test_original_reader_consumes_pulses_and_clears_counters (test_native.NativePipaTests) ... ok
+test_original_rope_and_source_integrity (test_native.NativePipaTests) ... ok
+test_phase10_original_nine_roots_and_review_preserved (test_native.NativePipaTests) ... ok
+test_physical_units_transform_and_sensor_quantization (test_native.NativePipaTests) ... ok
+test_positive_force_original_velocity_and_position_response (test_native.NativePipaTests) ... ok
+test_prior_evidence_preserved (test_native.NativePipaTests) ... ok
+test_source_hardware_addresses_and_signed_operations (test_native.NativePipaTests) ... ok
+test_zero_specific_force_has_no_sensor_events (test_native.NativePipaTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.411s
+
+OK

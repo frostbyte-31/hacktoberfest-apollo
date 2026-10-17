@@ -1,0 +1,774 @@
+{
+  "case": "positive",
+  "phase10": {
+    "classification": "SYNTHETIC numerical-guidance fixture using published Apollo 11 target padloads",
+    "candidate_file": "math/synthetic-candidate-t120-angle050.json",
+    "synthetic_geometry": {
+      "classification": "SYNTHETIC CANDIDATE, not native experiment evidence",
+      "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+      "symbols_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+      "assumptions": [
+        "Moon-centered basic-REF inertial circular orbit",
+        "Clock zero at synthetic nominal lunar orientation epoch, TEPHEM=0",
+        "Zero libration, not historical Apollo 11 geometry",
+        "Fixed stable member uses actual near-identity Phase 9 matrix",
+        "Landing direction is basic REF +X at nominal landing time",
+        "State initialized at epoch, no modern propagation or guidance"
+      ],
+      "immutable_rope_constants": {
+        "MUM": {
+          "raw_octal": [
+            "16471",
+            "01352"
+          ],
+          "fraction": 0.45660678297281265
+        },
+        "RSUBM": {
+          "raw_octal": [
+            "00065",
+            "01265"
+          ],
+          "fraction": 0.003237444907426834
+        },
+        "COSI": {
+          "raw_octal": [
+            "17775",
+            "02052"
+          ],
+          "fraction": 0.49982086569070816
+        },
+        "SINI": {
+          "raw_octal": [
+            "00333",
+            "10374"
+          ],
+          "fraction": 0.013382896780967712
+        },
+        "BSUBO": {
+          "raw_octal": [
+            "02052",
+            "35552"
+          ],
+          "fraction": 0.0651201382279396
+        },
+        "NODIO": {
+          "raw_octal": [
+            "37436",
+            "01613"
+          ],
+          "fraction": 0.9862094335258007
+        },
+        "FSUBO": {
+          "raw_octal": [
+            "32417",
+            "32160"
+          ],
+          "fraction": 0.8290905356407166
+        },
+        "BDOT": {
+          "raw_octal": [
+            "77777",
+            "77767"
+          ],
+          "fraction": -2.9802322387695312e-08
+        },
+        "NODDOT": {
+          "raw_octal": [
+            "77665",
+            "42175"
+          ],
+          "fraction": -0.004573352634906769
+        },
+        "FDOT": {
+          "raw_octal": [
+            "22211",
+            "00625"
+          ],
+          "fraction": 0.5708633251488209
+        },
+        "MOONRATE": {
+          "raw_octal": [
+            "00344",
+            "24331"
+          ],
+          "fraction": 0.013954970985651016
+        }
+      },
+      "mu_m3_s2": 4902778000000.0,
+      "lunar_reference_radius_m": 1738090.0,
+      "state_epoch_cs": 12000,
+      "TLAND_cs": 78440,
+      "initial_angle_behind_target_rad": 0.5,
+      "independent_physical_moon_matrix_at_TLAND": [
+        [
+          -0.4008178443244797,
+          0.8496064061220946,
+          0.3428031642807681
+        ],
+        [
+          -0.9161548391443668,
+          -0.37264663771479767,
+          -0.1476305992771155
+        ],
+        [
+          0.0023165436817404756,
+          -0.3732337563884116,
+          0.9277344423604215
+        ]
+      ],
+      "input_candidates": {
+        "RRECTLEM": {
+          "value": [
+            1538481.2134243937,
+            0,
+            -840476.1174716422
+          ],
+          "units": "m",
+          "binary_scale": 27,
+          "raw_octal": [
+            "00273",
+            "31542",
+            "00000",
+            "00000",
+            "77631",
+            "54707"
+          ],
+          "encoded_si_readback": [
+            1538481.0,
+            0.0,
+            -840476.0
+          ]
+        },
+        "VRECTLEM": {
+          "value": [
+            801.7522232998804,
+            0,
+            1467.597600606091
+          ],
+          "units": "m/s",
+          "binary_scale": 5,
+          "cs_factor": 100,
+          "raw_octal": [
+            "10010",
+            "37053",
+            "00000",
+            "00000",
+            "16532",
+            "03142"
+          ],
+          "encoded_si_readback": [
+            801.7522215843201,
+            0.0,
+            1467.5976037979126
+          ]
+        },
+        "RLS": {
+          "value": [
+            -696657.487041935,
+            -1592359.5643684324,
+            4026.3614077963034
+          ],
+          "units": "m Moon-fixed",
+          "binary_scale": 27,
+          "raw_octal": [
+            "77652",
+            "76534",
+            "77475",
+            "63660",
+            "00000",
+            "17565"
+          ],
+          "encoded_si_readback": [
+            -696657.5,
+            -1592359.5,
+            4026.5
+          ]
+        }
+      },
+      "diagnostics": {
+        "radius_m": 1753090.0000000002,
+        "altitude_above_reference_m": 15000.000000000233,
+        "speed_m_s": 1672.3185536467197,
+        "radial_velocity_m_s": 1.3599905258803739e-13,
+        "tangential_speed_m_s": 1672.3185536467197,
+        "landing_site_radius_m": 1738090.0,
+        "site_central_angle_rad": 0.5000000000000001,
+        "surface_arc_distance_m": 869045.0000000002,
+        "circular_speed_at_radius_m_s": 1672.3185536467195,
+        "specific_orbital_energy_J_kg": -1398324.6724355277,
+        "bound_two_body_energy": true,
+        "point_gravity_m_s2": 1.5952685514554616,
+        "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+      },
+      "caution": "All targeting padloads remain separately specified mission inputs; this geometry alone does not establish a guidance solution"
+    },
+    "negative_control": false,
+    "post_selection_horizon_cpu_calls": 1000000,
+    "blocks": [
+      {
+        "symbol": "UPSVFLAG",
+        "words": [
+          32765,
+          187,
+          13154,
+          0,
+          0,
+          32665,
+          22983,
+          4104,
+          15915,
+          0,
+          0,
+          7514,
+          1634,
+          0,
+          12000
+        ],
+        "words_octal": [
+          "77775",
+          "00273",
+          "31542",
+          "00000",
+          "00000",
+          "77631",
+          "54707",
+          "10010",
+          "37053",
+          "00000",
+          "00000",
+          "16532",
+          "03142",
+          "00000",
+          "27340"
+        ],
+        "provenance": "SYNTHETIC circular orbit: math/synthetic-candidate-t120-angle050.json; UPDATE_PROGRAM.agc:119-143 original LM lunar-state identifier",
+        "units_and_scales": "77775 identifier; R metres B27, V m/cs B5, epoch cs B28; Moon-centered basic REF",
+        "reason": "Original INTWAKEU/ATOPLEM establishes permanent navigation state and its own flags"
+      },
+      {
+        "symbol": "TEPHEM",
+        "words": [
+          0,
+          0,
+          0
+        ],
+        "words_octal": [
+          "00000",
+          "00000",
+          "00000"
+        ],
+        "provenance": "SYNTHETIC midnight 1 July 1969 epoch; LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc:91-94",
+        "units_and_scales": "TP centiseconds B42; TIMSUBO aliases TEPHEM",
+        "reason": "Explicitly anchor original lunar orientation constants"
+      },
+      {
+        "symbol": "504LM",
+        "words": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "words_octal": [
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000"
+        ],
+        "provenance": "SYNTHETIC zero libration; PLANETARY_INERTIAL_ORIENTATION.agc:33-58",
+        "units_and_scales": "DP radians B0 in Moon-fixed coordinates",
+        "reason": "Document the bounded nominal orientation approximation"
+      },
+      {
+        "symbol": "RLS",
+        "words": [
+          32682,
+          32092,
+          32573,
+          26544,
+          0,
+          8053
+        ],
+        "words_octal": [
+          "77652",
+          "76534",
+          "77475",
+          "63660",
+          "00000",
+          "17565"
+        ],
+        "provenance": "SYNTHETIC geometry from original MOONMX formulas; math/synthetic-candidate-t120-angle050.json",
+        "units_and_scales": "Moon-fixed metres B27",
+        "reason": "Landing direction corresponds to basic REF +X at nominal TLAND; verify actual original RP-TO-R result"
+      },
+      {
+        "symbol": "TLAND",
+        "words": [
+          4,
+          12904
+        ],
+        "words_octal": [
+          "00004",
+          "31150"
+        ],
+        "provenance": "SYNTHETIC 78440 cs; initial state epoch + original GUIDDURN 66440 cs",
+        "units_and_scales": "DP centiseconds B28 from synthetic AGC clock zero",
+        "reason": "Original P63 selects its first integrated state epoch from TLAND-GUIDDURN"
+      },
+      {
+        "symbol": "RBRFG",
+        "words": [
+          0,
+          838,
+          0,
+          0,
+          32764,
+          29842,
+          32762,
+          30090,
+          0,
+          0,
+          32767,
+          31936,
+          4,
+          16165,
+          0,
+          0,
+          32695,
+          20553
+        ],
+        "words_octal": [
+          "00000",
+          "01506",
+          "00000",
+          "00000",
+          "77774",
+          "72222",
+          "77772",
+          "72612",
+          "00000",
+          "00000",
+          "77777",
+          "76300",
+          "00004",
+          "37445",
+          "00000",
+          "00000",
+          "77667",
+          "50111"
+        ],
+        "provenance": {
+          "kind": "Published historical preflight target inputs, not a recovered flight state",
+          "source": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+          "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+          "records": [
+            {
+              "symbol": "RBRFG",
+              "address": "2402",
+              "words": [
+                "00000",
+                "01506",
+                "00000",
+                "00000",
+                "77774",
+                "72222"
+              ],
+              "printed_value": [
+                52.375308,
+                0,
+                -3254.836061
+              ],
+              "units": "m",
+              "sf": 24,
+              "pdf_page": 5
+            },
+            {
+              "symbol": "VBRFG",
+              "address": "2410",
+              "words": [
+                "77772",
+                "72612",
+                "00000",
+                "00000",
+                "77777",
+                "76300"
+              ],
+              "printed_value": [
+                -0.322710048,
+                0,
+                -0.00316992
+              ],
+              "units": "m/cs",
+              "sf": 10,
+              "pdf_page": 5
+            },
+            {
+              "symbol": "ABRFG",
+              "address": "2416",
+              "words": [
+                "00004",
+                "37445",
+                "00000",
+                "00000",
+                "77667",
+                "50111"
+              ],
+              "printed_value": [
+                1.9022568e-05,
+                0,
+                -0.000277502112
+              ],
+              "units": "m/cs^2",
+              "sf": -4,
+              "pdf_pages": [
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        "units_and_scales": [
+          {
+            "symbol": "RBRFG",
+            "units": "m",
+            "binary_scale": 24
+          },
+          {
+            "symbol": "VBRFG",
+            "units": "m/cs",
+            "binary_scale": 10
+          },
+          {
+            "symbol": "ABRFG",
+            "units": "m/cs^2",
+            "binary_scale": -4
+          }
+        ],
+        "reason": "Original braking cubic/quadratic guidance, coordinate erection, and ignition-time iteration; never TABLTTF/TTF or readiness flags"
+      },
+      {
+        "symbol": "VBRFG*",
+        "words": [
+          32767,
+          30897,
+          32331,
+          25016,
+          32570,
+          29983,
+          16383,
+          16383,
+          375,
+          11250
+        ],
+        "words_octal": [
+          "77777",
+          "74261",
+          "77113",
+          "60670",
+          "77472",
+          "72437",
+          "37777",
+          "37777",
+          "00567",
+          "25762"
+        ],
+        "provenance": {
+          "kind": "Published historical preflight target inputs, not a recovered flight state",
+          "source": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+          "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+          "records": [
+            {
+              "symbol": "VBRFG*",
+              "address": "2424",
+              "words": [
+                "77777",
+                "74261"
+              ],
+              "printed_value": -0.05705856,
+              "units": "m/cs",
+              "sf": 13,
+              "pdf_page": 6
+            },
+            {
+              "symbol": "ABRFG*",
+              "address": "2426",
+              "words": [
+                "77113",
+                "60670"
+              ],
+              "printed_value": -0.001665012672,
+              "units": "m/cs^2",
+              "sf": -4,
+              "pdf_page": 6
+            },
+            {
+              "symbol": "JBRFG*",
+              "address": "2430",
+              "words": [
+                "77472",
+                "72437"
+              ],
+              "printed_value": -5.738399496e-09,
+              "units": "m/cs^3",
+              "sf": -21,
+              "pdf_page": 6
+            },
+            {
+              "symbol": "GAINBRAK",
+              "address": "2432",
+              "words": [
+                "37777",
+                "37777"
+              ],
+              "printed_value": 1.0,
+              "units": "dimensionless",
+              "sf": 0,
+              "pdf_page": 6
+            },
+            {
+              "symbol": "TCGFBRAK",
+              "address": "2434",
+              "words": [
+                "00567"
+              ],
+              "printed_value": 3000,
+              "units": "cs",
+              "sf": 17,
+              "pdf_page": 6
+            },
+            {
+              "symbol": "TCGIBRAK",
+              "address": "2435",
+              "words": [
+                "25762"
+              ],
+              "printed_value": 90000,
+              "units": "cs",
+              "sf": 17,
+              "pdf_page": 6
+            }
+          ]
+        },
+        "units_and_scales": [
+          {
+            "symbol": "VBRFG*",
+            "units": "m/cs",
+            "binary_scale": 13
+          },
+          {
+            "symbol": "ABRFG*",
+            "units": "m/cs^2",
+            "binary_scale": -4
+          },
+          {
+            "symbol": "JBRFG*",
+            "units": "m/cs^3",
+            "binary_scale": -21
+          },
+          {
+            "symbol": "GAINBRAK",
+            "units": "dimensionless",
+            "binary_scale": 0
+          },
+          {
+            "symbol": "TCGFBRAK",
+            "units": "cs",
+            "binary_scale": 17
+          },
+          {
+            "symbol": "TCGIBRAK",
+            "units": "cs",
+            "binary_scale": 17
+          }
+        ],
+        "reason": "Original braking cubic/quadratic guidance, coordinate erection, and ignition-time iteration; never TABLTTF/TTF or readiness flags"
+      },
+      {
+        "symbol": "VIGN",
+        "words": [
+          270,
+          7225,
+          32729,
+          18840,
+          32341,
+          25860,
+          32135,
+          25326,
+          30108,
+          21378,
+          30205,
+          24575
+        ],
+        "words_octal": [
+          "00416",
+          "16071",
+          "77731",
+          "44630",
+          "77125",
+          "62404",
+          "76607",
+          "61356",
+          "72634",
+          "51602",
+          "72775",
+          "57777"
+        ],
+        "provenance": {
+          "kind": "Published historical preflight target inputs, not a recovered flight state",
+          "source": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+          "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+          "records": [
+            {
+              "symbol": "VIGN",
+              "address": "2472",
+              "words": [
+                "00416",
+                "16071"
+              ],
+              "printed_value": 16.90256208,
+              "units": "m/cs",
+              "sf": 10,
+              "pdf_page": 8
+            },
+            {
+              "symbol": "RIGNX",
+              "address": "2474",
+              "words": [
+                "77731",
+                "44630"
+              ],
+              "printed_value": -39782.453328,
+              "units": "m",
+              "sf": 24,
+              "pdf_page": 8
+            },
+            {
+              "symbol": "RIGNZ",
+              "address": "2476",
+              "words": [
+                "77125",
+                "62404"
+              ],
+              "printed_value": -436655.657,
+              "units": "m",
+              "sf": 24,
+              "pdf_page": 8
+            },
+            {
+              "symbol": "KIGNX/B4",
+              "address": "2500",
+              "words": [
+                "76607",
+                "61356"
+              ],
+              "printed_value": -0.617631,
+              "units": "dimensionless",
+              "sf": 4,
+              "pdf_page": 8
+            },
+            {
+              "symbol": "KIGNY/B8",
+              "address": "2502",
+              "words": [
+                "72634",
+                "51602"
+              ],
+              "printed_value": -2.4770341207e-06,
+              "units": "1/m",
+              "sf": -16,
+              "pdf_page": 8
+            },
+            {
+              "symbol": "KIGNV/B4",
+              "address": "2504",
+              "words": [
+                "72775",
+                "57777"
+              ],
+              "printed_value": -41000,
+              "units": "cs",
+              "sf": 18,
+              "pdf_page": 8
+            }
+          ]
+        },
+        "units_and_scales": [
+          {
+            "symbol": "VIGN",
+            "units": "m/cs",
+            "binary_scale": 10
+          },
+          {
+            "symbol": "RIGNX",
+            "units": "m",
+            "binary_scale": 24
+          },
+          {
+            "symbol": "RIGNZ",
+            "units": "m",
+            "binary_scale": 24
+          },
+          {
+            "symbol": "KIGNX/B4",
+            "units": "dimensionless",
+            "binary_scale": 4
+          },
+          {
+            "symbol": "KIGNY/B8",
+            "units": "1/m",
+            "binary_scale": -16
+          },
+          {
+            "symbol": "KIGNV/B4",
+            "units": "cs",
+            "binary_scale": 18
+          }
+        ],
+        "reason": "Original braking cubic/quadratic guidance, coordinate erection, and ignition-time iteration; never TABLTTF/TTF or readiness flags"
+      },
+      {
+        "symbol": "ZOOMTIME",
+        "words": [
+          2600
+        ],
+        "words_octal": [
+          "05050"
+        ],
+        "provenance": {
+          "kind": "Published historical preflight target inputs, not a recovered flight state",
+          "source": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+          "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+          "records": [
+            {
+              "symbol": "ZOOMTIME",
+              "address": "3422",
+              "words": [
+                "05050"
+              ],
+              "printed_value": 2600,
+              "units": "cs",
+              "sf": 14,
+              "pdf_page": 15,
+              "note": "26 seconds of low-throttle trim before throttle-up command; consumed by original EXGSUB and DDUMGOOD."
+            }
+          ]
+        },
+        "units_and_scales": [
+          {
+            "symbol": "ZOOMTIME",
+            "units": "cs",
+            "binary_scale": 14
+          }
+        ],
+        "reason": "Original braking cubic/quadratic guidance, coordinate erection, and ignition-time iteration; never TABLTTF/TTF or readiness flags"
+      }
+    ],
+    "scope": "Original P51/P27/P63 numerical initialization; no propulsion plant or descent demonstration"
+  },
+  "scope": "SYNTHETIC stationary instrument; P63 review then original P47; no ignition",
+  "sensor_input": "constant stable-member X specific force, 6 seconds, then 4 seconds settlement"
+}

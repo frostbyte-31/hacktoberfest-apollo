@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "archive",
+    "--format=tar",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline.git.tar",
+    "6859637ae8dcb1041db3944489d0f909ed58429f"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+  "ended_utc": "2026-10-17T21:57:39.332957+00:00",
+  "exit": 0,
+  "started_utc": "2026-10-17T21:57:38.781562+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "demo-tests",
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/demo/tests",
+    "-v"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+  "started_utc": "2026-10-17T22:01:47.105561+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:02:00.778853+00:00"
+}

@@ -1,0 +1,50 @@
+{
+  "classification": "Development observations; superseded by frozen validation, never acceptance results",
+  "captures": [
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/sink-probe1/native",
+      "retained_path": "docs/phase12-evidence/development/sink-probe1",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/sink-probe2/native",
+      "retained_path": "docs/phase12-evidence/development/sink-probe2",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/sink-probe3/native",
+      "retained_path": "docs/phase12-evidence/development/sink-probe3",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/connected-probe1/native",
+      "retained_path": "docs/phase12-evidence/development/connected-probe1",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final/connected/native",
+      "retained_path": "docs/phase12-evidence/development/final-connected",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/verified/sink/native",
+      "retained_path": "docs/phase12-evidence/development/verified-sink",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/verified/no-feedback/native",
+      "retained_path": "docs/phase12-evidence/development/verified-no-feedback",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/verified/connected/native",
+      "retained_path": "docs/phase12-evidence/development/verified-connected",
+      "final_acceptance_evidence": false
+    },
+    {
+      "original_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/verified/repeat/native",
+      "retained_path": "docs/phase12-evidence/development/verified-repeat",
+      "final_acceptance_evidence": false
+    }
+  ]
+}

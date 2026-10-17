@@ -1,0 +1,14 @@
+{
+  "name": "phase10-focused",
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline/docs/phase10-evidence/run_tests.py",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/release-regression-20261018/phase10-focused-tests"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline",
+  "started_utc": "2026-10-17T22:15:15.852700+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:15:24.117444+00:00"
+}

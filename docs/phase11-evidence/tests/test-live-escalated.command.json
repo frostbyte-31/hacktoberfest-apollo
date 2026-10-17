@@ -1,0 +1,13 @@
+{
+  "name": "test-live-escalated",
+  "argv": [
+    "make",
+    "test-live",
+    "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+  "reason": "Sandbox denied loopback bind in 11 HTTP unit tests; rerun unchanged suite with local socket permission.",
+  "started_utc": "2026-10-17T22:02:46.709814+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:02:58.983019+00:00"
+}

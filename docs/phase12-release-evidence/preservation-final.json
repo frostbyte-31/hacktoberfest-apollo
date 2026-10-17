@@ -1,0 +1,28 @@
+{
+  "classification": "VERIFIED",
+  "earlier_backend_files_checked": 6340,
+  "earlier_backend_changed_or_missing": [],
+  "existing_phase12_files_checked": 539,
+  "existing_phase12_changed_or_missing": [],
+  "frontend": {
+    "files_checked": 5607,
+    "changed_or_missing": [],
+    "added_files": [],
+    "missing_files": [],
+    "branch_head_status_identical": true,
+    "state": {
+      "branch": "codex/frontend-mission-control",
+      "head": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+      "status": " M frontend/README.md\n M frontend/dist/guidance.html\n M frontend/dist/guidance.mjs\n?? docs/FRONTEND_ARCHITECTURE.md\n?? docs/FRONTEND_INTEGRATION_CONTRACT.md\n?? docs/FRONTEND_MVP_VALIDATION.md\n?? docs/frontend-evidence/\n?? frontend/dist/mission-control.css\n?? frontend/dist/mission-provider.mjs\n?? frontend/dist/mission-types.d.ts\n?? frontend/dist/spacecraft-view.mjs\n?? frontend/package-lock.json\n?? frontend/package.json\n?? frontend/tests/mission-provider.test.mjs\n?? frontend/tests/spacecraft-view.test.mjs\n?? frontend/tsconfig.json\n"
+    }
+  },
+  "backend_phase11": {
+    "head": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+    "status": ""
+  },
+  "phase12_before_commit": {
+    "branch": "codex/backend-phase12",
+    "head": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+    "tracked_diff": ""
+  }
+}

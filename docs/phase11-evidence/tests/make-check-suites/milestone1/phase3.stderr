@@ -1,0 +1,12 @@
+test_actuator_changes_plant (test_loop.LoopEvidence) ... ok
+test_disconnected_feedback_fails (test_loop.LoopEvidence) ... ok
+test_negative_sign (test_loop.LoopEvidence) ... ok
+test_prior_evidence_unchanged (test_loop.LoopEvidence) ... ok
+test_reproducible (test_loop.LoopEvidence) ... ok
+test_return_measurement_and_agc_response (test_loop.LoopEvidence) ... ok
+test_sensor_reception (test_loop.LoopEvidence) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.444s
+
+OK

@@ -1,0 +1,24 @@
+test_actual_phase5_startup_packets_and_outputs_preserved (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_authentic_dsky_packets_field_widths_and_load_order (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_early_matrix_substitution_fails_causal_order_check (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_executed_bridge_provenance_is_separate_from_flight_execution (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_identical_fresh_runs_have_exact_raw_bytes (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_matrix_and_flag_are_native_stores_after_original_sightings (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_missing_original_markrupt_is_not_replaced_by_success_metadata (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_original_r02_accepts_then_p63_reaches_genuine_01406_path (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_packet_only_negative_control_cannot_align (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_real_external_marks_trigger_original_markrupt_and_pairs (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_root_limit_and_uninitialized_navigation_are_observations (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_short_numeric_load_and_wrong_gate_are_rejected (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_stationary_scope_and_no_engine_on_are_explicit (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_success_metadata_cannot_substitute_for_native_matrix (test_alignment.NativeAlignmentEvidenceTests) ... ok
+test_nonfinite_and_duplicate_json_are_rejected (test_alignment.TraceInspectionTests) ... ok
+test_noninteger_and_out_of_order_cpu_calls_are_rejected (test_alignment.TraceInspectionTests) ... ok
+test_packet_width_and_native_failure_are_rejected (test_alignment.TraceInspectionTests) ... ok
+test_snapshot_map_width_mismatch_is_rejected (test_alignment.TraceInspectionTests) ... ok
+test_truncated_trace_is_rejected (test_alignment.TraceInspectionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.697s
+
+OK

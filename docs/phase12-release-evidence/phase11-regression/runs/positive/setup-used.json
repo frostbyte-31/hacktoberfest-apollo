@@ -1,0 +1,17 @@
+{
+  "archive": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+  "archiveSHA256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+  "assembly": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/assembly-a86f4b85910d437f869ed866ee091af4",
+  "licensing": "Original Luminary source is public domain; Virtual AGC tools carry GPL notices. See source/COPYING, LICENSE.txt and individual source headers.",
+  "listing": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/assembly-a86f4b85910d437f869ed866ee091af4/Luminary099/MAIN.agc.lst",
+  "provenance": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/setups/20261017T232541Z-bd90d5c3",
+  "rope": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/assembly-a86f4b85910d437f869ed866ee091af4/Luminary099/MAIN.agc.bin",
+  "ropeSHA256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "setupFile": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/setups/20261017T232541Z-bd90d5c3/setup.json",
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/source",
+  "sourceFileCount": 359,
+  "sourceRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "symbols": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/assembly-a86f4b85910d437f869ed866ee091af4/symbols.json",
+  "symtab": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/dependencies/assembly-a86f4b85910d437f869ed866ee091af4/Luminary099/MAIN.agc.symtab",
+  "verified": true
+}

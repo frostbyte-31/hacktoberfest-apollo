@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/phase10-evidence/run_tests.py",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/release-final-phase10-tests"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/baseline",
+  "environment_overrides": {
+    "SOURCE_DATE_EPOCH": "1792195200",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "started_utc": "2026-10-17T23:27:14.726877+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T23:27:19.829607+00:00"
+}

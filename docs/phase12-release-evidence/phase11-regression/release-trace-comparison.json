@@ -1,0 +1,65 @@
+{
+  "all_phase11_raw_traces_identical": true,
+  "phase11": {
+    "zero": {
+      "fresh": {
+        "sha256": "1b98304dfbc1c7b7cb781e441366d56314563b0c36ed867252ee3486915fef0c",
+        "bytes": 5298866
+      },
+      "retained": {
+        "sha256": "1b98304dfbc1c7b7cb781e441366d56314563b0c36ed867252ee3486915fef0c",
+        "bytes": 5298866
+      },
+      "byte_identical": true
+    },
+    "positive": {
+      "fresh": {
+        "sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+        "bytes": 6813875
+      },
+      "retained": {
+        "sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+        "bytes": 6813875
+      },
+      "byte_identical": true
+    },
+    "negative": {
+      "fresh": {
+        "sha256": "5749961d94c9ed378008dbd926106826ed07e8ebb9f9015bb659b00529903c45",
+        "bytes": 6826102
+      },
+      "retained": {
+        "sha256": "5749961d94c9ed378008dbd926106826ed07e8ebb9f9015bb659b00529903c45",
+        "bytes": 6826102
+      },
+      "byte_identical": true
+    },
+    "disconnected": {
+      "fresh": {
+        "sha256": "e62fe345246f01376f7190c167da70e9953aa22179107656a8cb87b6a52e6568",
+        "bytes": 5299073
+      },
+      "retained": {
+        "sha256": "e62fe345246f01376f7190c167da70e9953aa22179107656a8cb87b6a52e6568",
+        "bytes": 5299073
+      },
+      "byte_identical": true
+    },
+    "repeat": {
+      "fresh": {
+        "sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+        "bytes": 6813875
+      },
+      "retained": {
+        "sha256": "4a8fec0aa1af0238e12cd28053ec5d19a2d56bcf2a6a43765ce4e14a6b36341b",
+        "bytes": 6813875
+      },
+      "byte_identical": true
+    }
+  },
+  "phase10": {
+    "expected_raw_sha256": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2",
+    "actual_raw_sha256": "6fe0d3c6ee46639c82d9c563925f206324325bc14bdabb5a3f4c6293c8085bc2",
+    "byte_identical": true
+  }
+}

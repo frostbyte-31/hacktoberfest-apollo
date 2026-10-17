@@ -1,0 +1,60 @@
+{
+  "classification": "VERIFIED with known historical evidence gaps",
+  "counts_by_group": {
+    "make_check": 210,
+    "phase8_9_10_focused": 57,
+    "live_evidence": 9,
+    "guidance_data": 14,
+    "demo_guards": 6,
+    "test_live": 66,
+    "guidance_node": 14
+  },
+  "passed": 376,
+  "failed": 0,
+  "errored": 3,
+  "skipped": 0,
+  "historical_errors": [
+    {
+      "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    },
+    {
+      "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    },
+    {
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    }
+  ],
+  "initial_sandbox_attempt": {
+    "command": "make test-live",
+    "passed": 21,
+    "errored": 11,
+    "cause": "PermissionError [Errno 1] on local HTTP socket bind",
+    "assertion_failures": 0,
+    "disposition": "Identical complete suite rerun with local socket permission passed 66 tests; both attempts retained."
+  },
+  "additional_integrity_checks": [
+    "make demo-verify",
+    "python3 -B docs/phase10_5-evidence/retain_native.py --check",
+    "python3 -B docs/phase10_5-evidence/check_integrity.py"
+  ],
+  "phase7_fresh_native": {
+    "execution_status": "VERIFIED",
+    "capability": "C",
+    "prior_files_preserved": 1520,
+    "limits": "Synthetic attitude fixture; no historical mass-property or descent/landing claim"
+  },
+  "not_run": [
+    "Existing native HTTP watchdog-neutralization validator; unrelated to the cycle-locked PIPA experiment",
+    "Separate frontend branch checks; worktree preserved untouched"
+  ],
+  "scope": "Final regression checks; parent release evidence records fresh Phase 11 sensor/native tests separately"
+}

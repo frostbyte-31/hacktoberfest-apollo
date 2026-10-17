@@ -1,0 +1,67 @@
+{
+  "classification": "VERIFIED FOR AUTHORIZED BACKEND PHASE12 RELEASE",
+  "scope": "Bounded synthetic DPS/PIPA/navigation interface; no calibrated powered descent or landing claim",
+  "tested_base_revision": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+  "target_branch": "codex/backend-phase12",
+  "target_repository": "git@github.com:frostbyte-31/hacktoberfest-apollo.git",
+  "counts_by_group": {
+    "legacy_make_check": 210,
+    "phase11_sensor_native": 29,
+    "phase8_9_10_focused": 57,
+    "phase12_native": 16,
+    "phase12_physics_model": 23,
+    "http_replay": 66,
+    "live_evidence": 9,
+    "guidance_data": 14,
+    "demo_guards": 6,
+    "node_guidance": 14
+  },
+  "passed": 444,
+  "failed": 0,
+  "errored": 3,
+  "skipped": 0,
+  "historical_errors": {
+    "classification": "Known original preservation-test FileNotFoundError, not a failed assertion or recovered log",
+    "missing_file": "docs/phase3-evidence/build.log",
+    "affected_phase_tests": [
+      4,
+      5,
+      6
+    ]
+  },
+  "phase12_raw_traces_match_prior_evidence": {
+    "all_match": true,
+    "cases": {
+      "sink": {
+        "fresh": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+        "retained": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+        "byte_identical": true
+      },
+      "connected": {
+        "fresh": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "retained": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "byte_identical": true
+      },
+      "no-feedback": {
+        "fresh": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+        "retained": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+        "byte_identical": true
+      },
+      "repeat": {
+        "fresh": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "retained": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "byte_identical": true
+      }
+    }
+  },
+  "phase11_raw_traces_match_prior_evidence": true,
+  "phase10_canonical_raw_trace_matches": true,
+  "implementation_frozen_files": 11,
+  "not_run": [
+    "Unrelated native HTTP watchdog-neutralization validator",
+    "Separate frontend feature-branch tests",
+    "Next phase, calibrated full powered descent, P64/P66 and landing"
+  ],
+  "preservation": "See preservation-final.json and before.json; original report/sealed evidence left unchanged",
+  "disjoint_count_note": "Each final test counted once; trace equality and checksum checks are additional integrity checks, not added test passes"
+}

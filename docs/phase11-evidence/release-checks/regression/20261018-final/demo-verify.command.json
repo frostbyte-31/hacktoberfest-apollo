@@ -1,0 +1,11 @@
+{
+  "name": "demo-verify",
+  "argv": [
+    "make",
+    "demo-verify"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+  "started_utc": "2026-10-17T22:15:30.416301+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-17T22:15:38.293949+00:00"
+}

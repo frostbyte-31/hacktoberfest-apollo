@@ -1,0 +1,62 @@
+{
+  "all_tests_passed": true,
+  "classifications": {
+    "passed": 7
+  },
+  "discovery": {
+    "directory": "docs/phase3-evidence",
+    "pattern": "test_loop.py"
+  },
+  "expected_test_count": 7,
+  "outcomes": {
+    "passed": 7
+  },
+  "policy_satisfied": true,
+  "suite": "phase3",
+  "tests": [
+    {
+      "classification": "passed",
+      "duration_seconds": 0.115359583,
+      "id": "test_loop.LoopEvidence.test_actuator_changes_plant",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.164773042,
+      "id": "test_loop.LoopEvidence.test_disconnected_feedback_fails",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.051117417,
+      "id": "test_loop.LoopEvidence.test_negative_sign",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.010030291999999996,
+      "id": "test_loop.LoopEvidence.test_prior_evidence_unchanged",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.00044158300000002315,
+      "id": "test_loop.LoopEvidence.test_reproducible",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.053194792000000046,
+      "id": "test_loop.LoopEvidence.test_return_measurement_and_agc_response",
+      "outcome": "passed"
+    },
+    {
+      "classification": "passed",
+      "duration_seconds": 0.049218708,
+      "id": "test_loop.LoopEvidence.test_sensor_reception",
+      "outcome": "passed"
+    }
+  ],
+  "tests_run": 7,
+  "unittest_successful": true
+}

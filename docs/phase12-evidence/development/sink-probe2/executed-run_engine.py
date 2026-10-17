@@ -1,0 +1,184 @@
+#!/usr/bin/env python3
+"""Original P63 continuation, initially into a disconnected diagnostic sink.
+
+No flight-memory setter, restored core, instruction patch or fabricated output.
+Reuses sealed Phase10 startup/alignment/P27 and the Phase11 read-only observer.
+"""
+import argparse
+import datetime
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+sys.dont_write_bytecode = True
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+
+
+def load(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+def save(path, value):
+    path.write_text(json.dumps(value, indent=2, allow_nan=False)+'\n')
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+EXTRA = {'THRUST': 1, 'PIF': 2, 'PSEUDO55': 1, 'FC': 2, 'FP': 2,
+         'FCOLD': 1, 'FWEIGHT': 2, '/AFC/': 2, 'ABDELV': 2,
+         'MASS': 2, 'L*WCR*T': 2, 'H*GHCR*T': 2, 'LOWCRIT': 2,
+         'FMAXPOS': 2, 'FMAXODD': 2, 'TTHROT': 1, 'FLAGWRD0': 1,
+         'FLAGWRD1': 1, 'FLAGWRD4': 1, 'FLAGWRD5': 1, 'FLAGWRD8': 1}
+CHECKPOINTS = ['ASTNRETN', 'R51P63', 'R60LEM', 'P63SPOT3', 'P63SPOT4',
+               'BURNBABY', 'P40AUTO', 'ENGINOF3', 'MIDTOAV1', 'READACCS',
+               'IGNITION', 'P63IGN', 'P63ZOOM', 'FLATOUT', 'THROTTLE',
+               'DOIT', 'THROTRET', 'SERVICER', 'SERVEXIT']
+
+
+def build(p11, p10, source, table, output):
+    addresses, checkpoints = p11.build(p10, source, table, output)
+    mapping = json.loads((output/'observer-map.json').read_text())
+    snapshot = mapping['snapshot_addresses']
+    sizes = dict(p10.EXTRA, **p11.EXTRA)
+    missing = []
+    for name, size in EXTRA.items():
+        if name not in table:
+            missing.append(name)
+            continue
+        address = p10.p9.address(table[name])
+        if address is None:
+            missing.append(name+' (fixed rope constant, not erasable)')
+            continue
+        addresses[name] = address
+        sizes[name] = size
+        for address in range(addresses[name], addresses[name]+size):
+            if address not in snapshot:
+                snapshot.append(address)
+    for name in CHECKPOINTS:
+        if name not in table:
+            missing.append(name)
+            continue
+        symbol = table[name]
+        z = symbol.get('sRegister', symbol.get('value'))
+        checkpoints[name] = [symbol.get('fixedBank', 2 if z < 0o6000 else 3), z]
+    watches = sorted(set(mapping['watch_addresses']+[addresses['THRUST']]))
+    arrays = {'p9_snapshot_addresses': snapshot, 'p9_watch_addresses': watches,
+              'p9_checkpoint_banks': [v[0] for v in checkpoints.values()],
+              'p9_checkpoint_z': [v[1] for v in checkpoints.values()]}
+    header = '#define P9_WATCH_COUNT {}\n#define P9_CHECKPOINT_COUNT {}\n#define P9_SNAPSHOT_COUNT {}\n'.format(len(watches), len(checkpoints), len(snapshot))
+    header += '\n'.join('static const unsigned {}[] = {{{}}};'.format(k, ','.join(map(str, v))) for k, v in arrays.items())+'\n'
+    (output/'p9_watch.h').write_text(header)
+    save(output/'observer-map.json', {'addresses': addresses, 'snapshot_addresses': snapshot,
+          'watch_addresses': watches, 'checkpoints': checkpoints, 'sizes': sizes,
+          'optional_symbols_missing': missing})
+    command = json.loads((output/'phase11-observer-build.json').read_text())['argv']
+    with (output/'build.stdout').open('a') as out, (output/'build.stderr').open('a') as err:
+        result = subprocess.run(command, stdout=out, stderr=err)
+    save(output/'phase12-observer-build.json', {'argv': command, 'exit': result.returncode})
+    if result.returncode:
+        raise ValueError('Phase12 read-only observer build failed')
+    return addresses, checkpoints, sizes
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--setup', type=Path, required=True)
+    parser.add_argument('--output', type=Path, required=True)
+    args = parser.parse_args()
+    output = args.output.resolve()
+    if ROOT/'.build/phase12' not in output.parents:
+        raise ValueError('Require a new output directory below .build/phase12')
+    demo = load('p12_stage', ROOT/'tools/demo/demo.py')
+    baseline = demo.stage_baseline(ROOT, output)
+    run = output/'native'; run.mkdir()
+    driver = None
+    try:
+        expected = json.loads((HERE/'prior_hashes.json').read_text())['sha256']
+        def preserve():
+            bad = [n for n,h in expected.items() if not (ROOT/n).is_file() or sha(ROOT/n) != h]
+            if bad:
+                raise ValueError('Prior files changed: '+repr(bad))
+            return {'files_checked':len(expected),'changed_or_missing':bad}
+        save(run/'preservation-before.json', preserve())
+        sys.path.insert(0, str(baseline/'docs/phase9-evidence'))
+        p10 = load('p12_original_mission', baseline/'docs/phase10-evidence/run_mission.py')
+        p11 = load('p12_verified_pipa', ROOT/'docs/phase11-evidence/run_pipa.py')
+        source, symbols, hashes = p10.p9.verified_setup(args.setup.resolve(), run)
+        table = json.loads(symbols.read_text())['symbols']
+        addresses, checkpoints, sizes = build(p11, p10, source, table, run)
+        config = json.loads((baseline/'docs/phase10-evidence/configs/mission-15km.json').read_text())
+        driver = p10.Driver(run, addresses, checkpoints, True, config=config)
+        driver.all_addresses = {name:p10.p9.address(value) for name,value in table.items()}
+        def state():
+            return {n:[driver.lib.inspect_ram(addresses[n]+i) for i in range(size)] for n,size in sizes.items() if n in addresses and not n.startswith('VAC')}
+        def stage(name):
+            driver.emit('stage', name=name, state=driver.snapshot(), observed_words=state(),
+                        channels={str(c):driver.lib.inspect_channel(c) for c in (0o11,0o14,0o30,0o31,0o32,0o33)})
+        save(run/'execution.json', {'argv':sys.argv,'revision':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+             'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'driver_sha256':sha(Path(__file__)),
+             'engine_sha256':sha(run/'engine.so'),'rope_sha256':p10.p9.ROPE_SHA,
+             'scope':'SYNTHETIC stationary fixture; actual P63 commands into disconnected sink; no thrust model'})
+        shutil.copyfile(__file__, run/'executed-run_engine.py')
+        p10.p9.execute(driver)
+        driver.step(config['post_selection_horizon_cpu_calls']-400000)
+        stage('phase10-V06N61')
+        driver.keys('V33E')
+        driver.display('50','25')
+        stage('R51-checklist')
+        driver.keys('E')
+        driver.display('50','18', limit=1000000)
+        stage('R60-crew-attitude-review')
+        driver.keys('E')
+        driver.step(100000)
+        stage('after-attitude-review')
+        # Real external switch settings, active-low, never internal flags.
+        # Auto throttle, engine armed, G+N control, ATT MODE AUTO.
+        for channel, clear in ((0o30, (1<<2)|(1<<4)|(1<<9)), (0o31,1<<13), (0o33,1<<5)):
+            driver.packet(channel, driver.lib.inspect_channel(channel) & (0o77777 ^ clear),
+                          'documented synthetic crew switch setting')
+        driver.step(21333)
+        stage('crew-switches-set')
+        # Original P40AUTO/radar checklist, when presented: normal PROCEED.
+        for _ in range(3):
+            d = driver.decoder.snapshot()
+            if d['VERB']=='50' and d['NOUN']=='25':
+                stage('crew-switch-checklist')
+                driver.keys('V33E')
+                driver.step(100000)
+        stage('preignition-wait')
+        driver.display('99','62',limit=16000000)
+        stage('original-engine-enable-request')
+        driver.keys('V33E')
+        driver.step(3000000)
+        stage('bounded-post-enable-horizon')
+        driver.emit('finish', state=driver.snapshot(), observed_words=state())
+        save(run/'completion.json', {'cycle':driver.cycle,'state':driver.snapshot(),'observed_words':state()})
+        save(run/'preservation-after.json', preserve())
+        save(run/'original-preservation-after.json',p10.preserve())
+        changed=[n for n,h in hashes.items() if sha(source/n)!=h]
+        save(run/'source-integrity/after-execution.json',{'files_checked':len(hashes),'changed_or_missing':changed})
+        if changed:
+            raise ValueError('Pinned source changed')
+        print(json.dumps({'cycle':driver.cycle,'state':driver.snapshot()}))
+    except BaseException as error:
+        save(run/'failure.json',{'error':repr(error)})
+        if driver:driver.emit('failure',error=repr(error),state=driver.snapshot())
+        raise
+    finally:
+        if driver:
+            driver.trace.close()
+            save(run/'trace-sha256.json',{'sha256':sha(run/'trace.jsonl'),'bytes':(run/'trace.jsonl').stat().st_size})
+
+
+if __name__=='__main__':main()

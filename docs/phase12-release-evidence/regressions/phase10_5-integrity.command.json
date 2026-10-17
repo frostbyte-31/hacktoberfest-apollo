@@ -1,0 +1,15 @@
+{
+  "name": "phase10_5-integrity",
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/phase10_5-evidence/check_integrity.py"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "started_utc": "2026-10-17T23:28:13.764554+00:00",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0,
+  "ended_utc": "2026-10-17T23:28:14.651101+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/phase12-evidence",
+    "-p",
+    "test_native.py",
+    "-v"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "exit": 0,
+  "scope": "Same16native assertions rerun over losslessly retained gzip captures; not additional disjoint test count"
+}

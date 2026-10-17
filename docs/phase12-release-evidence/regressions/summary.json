@@ -1,0 +1,55 @@
+{
+  "classification": "VERIFIED final checks with known historical evidence gaps",
+  "completed_utc": "2026-10-17T23:31:21.967126+00:00",
+  "counts_by_group": {
+    "milestone1_and_legacy": 90,
+    "milestone2": 47,
+    "milestone3": 34,
+    "phase7": 39,
+    "live-evidence-tests": 9,
+    "guidance-data-tests": 14,
+    "demo-tests": 6,
+    "guidance-node-tests": 14
+  },
+  "make_check_passed": 210,
+  "passed": 253,
+  "failed": 0,
+  "errored": 3,
+  "skipped": 0,
+  "historical_errors": [
+    {
+      "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    },
+    {
+      "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    },
+    {
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "classification": "known_historical_gap",
+      "exception_type": "FileNotFoundError",
+      "exception_filename": "docs/phase3-evidence/build.log"
+    }
+  ],
+  "phase7_fresh_native": {
+    "execution_status": "VERIFIED",
+    "capability": "C",
+    "prior_files_preserved": 1520,
+    "limits": "Synthetic attitude fixture; no historical mass-property or descent/landing claim"
+  },
+  "additional_integrity_checks": [
+    "make demo-verify",
+    "python3 -B docs/phase10_5-evidence/retain_native.py --check",
+    "python3 -B docs/phase10_5-evidence/check_integrity.py"
+  ],
+  "not_run": [
+    "make test-live and native HTTP validation (owned by root task)",
+    "Separate frontend branch checks (protected worktree untouched)"
+  ],
+  "scope": "Disjoint regression groups only; fresh Phase11/Phase10 and new Phase12 tests counted by coordinating task separately."
+}

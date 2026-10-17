@@ -1,0 +1,2 @@
+git-archive: exit 0
+{"cycle": 28306729, "state": {"modreg": 0, "flagword3": 5264, "refsmflg": true, "imodes30": 15873, "imodes33": 15360, "failreg": [848, 963, 0], "refsmmat": [8192, 32767, 32767, 31519, 32767, 32705, 0, 1250, 8192, 0, 32767, 29841, 0, 64, 0, 2934, 8192, 32767], "cdu": [0, 0, 0], "markstat": 0, "markcntr": 32752, "aotcode": 450, "az": 13733, "el": 6291, "starind": 1, "display": {"PROG": "00", "VERB": "  ", "NOUN": "  ", "R1": "     ", "R2": "     ", "R3": "     "}}}

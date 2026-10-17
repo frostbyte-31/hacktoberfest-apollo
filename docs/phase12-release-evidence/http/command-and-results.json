@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "make",
+    "test-live",
+    "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "exit": 0,
+  "sandbox": "Authorized loopback socket access; no failed sandbox attempt in this release run",
+  "passed": 66,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "groups": {
+    "backend": 32,
+    "replay_data": 12,
+    "node": 22
+  },
+  "scope": "Existing backend/replay application tests in backend worktree; frontend feature branch untouched"
+}

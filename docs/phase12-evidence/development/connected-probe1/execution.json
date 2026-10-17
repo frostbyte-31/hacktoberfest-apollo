@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "docs/phase12-evidence/run_engine.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+    "--case",
+    "connected",
+    "--plant-source",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/pinned-source",
+    "--tcl",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+    "--output",
+    ".build/phase12/connected-probe1"
+  ],
+  "revision": "82499e64b5d85259ca54ebe06e6de896504f50f0",
+  "utc": "2026-10-17T22:38:44.033594+00:00",
+  "driver_sha256": "0d24adba853af3a3281b2b1c95fe5588acd1a80c04030bbf847db746ddf83a31",
+  "engine_sha256": "3c824592ae4d2b60bacd95445f17feb2fe538b3efe910083aab0532d8ab4ac2d",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "scope": "SYNTHETIC stationary fixture; actual P63 commands into disconnected sink; no thrust model"
+}

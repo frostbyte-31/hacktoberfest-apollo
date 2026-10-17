@@ -1,0 +1,25 @@
+test_actual_signed_fast_head_and_modular_transition_are_visible (test_feedback.PacedSingleAxisFeedback) ... ok
+test_all_five_captures_reconcile_without_tcl (test_feedback.PacedSingleAxisFeedback) ... ok
+test_clean_delayed_schedule_has_no_collisions_and_preserves_negative_rhc (test_feedback.PacedSingleAxisFeedback) ... ok
+test_corrected_replay_raw_bytes_match (test_feedback.PacedSingleAxisFeedback) ... ok
+test_disconnected_retains_model_motion_and_actual_zero_cdu (test_feedback.PacedSingleAxisFeedback) ... ok
+test_feedback_changes_timed_genuine_jets_while_rhc_is_held (test_feedback.PacedSingleAxisFeedback) ... ok
+test_negative_high_rate_exercises_correction_without_forced_state (test_feedback.PacedSingleAxisFeedback) ... ok
+test_original_and_corrected_use_identical_declared_physical_inputs (test_feedback.PacedSingleAxisFeedback) ... ok
+test_output_guard_refuses_existing_retained_and_symlink_destinations (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_clean_start_claim_with_recorded_alarm (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_cross_axis_packets_motion_words_and_nonfinite_data (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_fake_queue_settlement (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_generated_data_mislabeled_as_agc_output (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_missing_application_despite_summary_claim (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_unbounded_availability_delay (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_wrong_actual_counter_delta (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_wrong_actual_fifo_head_rate (test_feedback.PacedSingleAxisFeedback) ... ok
+test_reject_wrong_applied_deadline_rate (test_feedback.PacedSingleAxisFeedback) ... ok
+test_short_cutoff_observes_real_nonempty_drain_then_quiet_cpu (test_feedback.PacedSingleAxisFeedback) ... ok
+test_summary_counts_cannot_replace_actual_applications (test_feedback.PacedSingleAxisFeedback) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 5.096s
+
+OK
