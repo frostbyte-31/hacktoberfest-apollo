@@ -99,7 +99,7 @@ Observed, all decoded from channel 010 words sent by the AGC:
 **What it does not establish:**
 - Any guidance program. P63 needs an aligned IMU, a state vector and pad loads, which were not supplied.
 - How R3's low digits were refreshed: they only change when the AGC rewrites that relay pair. This is ASSUMED to be normal PINBALL behaviour, not checked.
-- `--show-alarms` printed no hardware alarms during the 24 s run (`20_`), but alarm-free operation over longer runs is NOT RUN.
+- yaAGC (run with `--show-alarms`) printed nothing during the 24 s run (`20_`; the CMD line in that log leaves out the flag, and a note at the end records this), but alarm-free operation over longer runs is NOT RUN.
 
 ## M3. Physics coupling (NOT RUN — investigation only)
 
