@@ -51,3 +51,44 @@ def run8():
 out = ROOT / 'src/data/replay.json'; out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps({'phase7': {'closed': run7('closed'), 'feedback_off': run7('feedback_off')}, 'phase8': run8()}, separators=(',', ':')))
 print(out, out.stat().st_size)
+
+# --- Phase 9 (added for the learning frontend; read-only on evidence) ---
+def run9(name='alignment-05'):
+    p = ROOT / f'docs/phase9-evidence/runs/{name}.jsonl'
+    r = rows(p); states = []; events = []; prev = {}
+    label = {'enter-p51': 'Driver keys V37E51E (select P51)', 'v50n25-proceed': 'PROCEED at V50N25 (start sightings)',
+             'r54-accept': 'PROCEED to accept star-angle difference (V06N05)', 'p63-attempt': 'Driver keys V37E63E (select P63)'}
+    for x in r:
+        t = x.get('cycle', 0) * SEC
+        if x['ev'] == 'step':
+            n = x['name']; txt = label.get(n)
+            if not txt:
+                star = 'Star 1' if n.startswith('s1') else 'Star 2'
+                txt = {'load-code': 'load star code (V21 N71)', 'pro-code': 'PROCEED star code', 'load-az': 'load AOT azimuth (V21 N87)',
+                       'load-el': 'load AOT elevation (V22 N87)', 'pro-azel': 'PROCEED angles', 'marks': 'begin AOT marks',
+                       'pro-marks': 'PROCEED after marks'}.get(n[3:], n)
+                txt = f'{star}: {txt}'
+            events.append({'t': t, 'kind': 'key', 'text': txt})
+        if x['ev'] == 'mark' and x['bits']:
+            events.append({'t': t, 'kind': 'input', 'text': f"AOT mark pulse ch016 bits {x['bits']:o}"})
+        if x['ev'] == 'skip':
+            events.append({'t': t, 'kind': 'input', 'text': f"Optional V05N71 flash not shown ({x['name']}); continued"})
+        if x['ev'] == 'stall':
+            events.append({'t': t, 'kind': 'input', 'text': 'Driver wait for P00 timed out; display V37 (continued to P63 step)'})
+        if x['ev'] == 'sample':
+            s = {'t': round(t, 4), 'prog': x['MODREG'], 'verb': x['VERBREG'], 'noun': x['NOUNREG'], 'f0': x['FAILREG0'],
+                 'f1': x['FAILREG1'], 'f2': x['FAILREG2'], 'flag3': x['FLAGWRD3'], 'refs': any(x['REFSMMAT'])}
+            if prev:
+                if prev['prog'] != s['prog']: events.append({'t': t, 'kind': 'state', 'text': f"MODREG (PROG) = {s['prog']:02d}"})
+                if prev['f0'] != s['f0'] and s['f0']: events.append({'t': t, 'kind': 'alarm', 'text': f"FAILREG0 = {s['f0']:05o}"})
+                if prev['f1'] != s['f1'] and s['f1']: events.append({'t': t, 'kind': 'alarm', 'text': f"FAILREG1 = {s['f1']:05o}"})
+                if (prev['flag3'] ^ s['flag3']) & 0o10000: events.append({'t': t, 'kind': 'state', 'text': f"REFSMFLG {'SET' if s['flag3'] & 0o10000 else 'CLEARED'} (FLAGWRD3 {s['flag3']:05o})"})
+                if prev['refs'] != s['refs']: events.append({'t': t, 'kind': 'state', 'text': 'REFSMMAT populated (18 words nonzero)'})
+            states.append(s); prev = s
+    events.sort(key=lambda e: e['t'])
+    final = [x for x in r if x['ev'] == 'sample'][-1]
+    return {'name': name, 'source': str(p.relative_to(ROOT)), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(),
+            'states': states, 'events': events, 'initial': r[0], 'final_refsmmat': final['REFSMMAT']}
+
+d = json.loads(out.read_text()); d['phase9'] = run9()
+out.write_text(json.dumps(d, separators=(',', ':'))); print('phase9 added', out.stat().st_size)
