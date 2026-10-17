@@ -183,27 +183,28 @@ def main():
         if key != last: emit(s); last = key
         # Event-driven step machine (only after the baseline schedule).
         if tick >= START and step_i < len(steps) and not queue:
-            if action_q:
-                tick_due = tick + KEYGAP
-                tick_dummy = queue_action(tick + KEYGAP, action_q.pop(0))
+            name, pre, _ = steps[step_i]
+            ok = False
+            if pre[0] == 'always':
+                ok = True
+            elif pre[0] == 'flash':
+                ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
+            elif pre[0] == 'p00':
+                ok = (s['MODREG'] == 0o77777)
+            if ok:
+                if step_since is None:
+                    step_since = tick
+                    emit({'ev': 'step', 'cycle': tick, 'name': name})
+                if action_q:
+                    queue_action(tick + KEYGAP, action_q.pop(0))
+                else:
+                    if steps[step_i][2]:
+                        start_actions(tick)
+                    step_i += 1; step_since = None
             else:
-                name, pre, _ = steps[step_i]
                 if step_since is None:
                     step_since = tick
                     emit({'ev': 'await', 'cycle': tick, 'name': name, 'pre': list(pre)})
-                ok = False
-                if pre[0] == 'always':
-                    ok = True
-                elif pre[0] == 'flash':
-                    ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
-                elif pre[0] == 'p00':
-                    ok = (s['MODREG'] == 0o77777)
-                if ok:
-                    start_actions(tick)
-                    if not steps[step_i][2]:
-                        step_i += 1; step_since = None
-                    else:
-                        step_i += 1
                 elif tick - step_since > STALL_LIMIT:
                     emit({'ev': 'stall', 'cycle': tick, 'name': name, 'pre': list(pre),
                           'verb': s['VERBREG'], 'noun': s['NOUNREG']})
