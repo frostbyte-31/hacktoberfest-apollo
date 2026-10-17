@@ -1,0 +1,56 @@
+[
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase7-evidence/source/verify_sources.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "start_utc": "2026-10-17T22:03:24.361170+00:00",
+    "end_utc": "2026-10-17T22:03:24.493445+00:00",
+    "exit": 0,
+    "timeout_seconds": 60
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase7-evidence/physics/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase7/runs/20261017T220323Z-9635939e/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase7/runs/20261017T220323Z-9635939e/physics",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--runtime-manifest",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/reproducibility/runtime-manifest.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "start_utc": "2026-10-17T22:03:24.494359+00:00",
+    "end_utc": "2026-10-17T22:03:26.644687+00:00",
+    "exit": 0,
+    "timeout_seconds": 600
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase7-evidence/integration/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase7/runs/20261017T220323Z-9635939e/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase7/runs/20261017T220323Z-9635939e/integration",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+      "--runtime-manifest",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/reproducibility/runtime-manifest.json",
+      "--cc",
+      "/usr/bin/cc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "start_utc": "2026-10-17T22:03:26.645596+00:00",
+    "end_utc": "2026-10-17T22:04:32.399744+00:00",
+    "exit": 0,
+    "timeout_seconds": 600
+  }
+]

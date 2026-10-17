@@ -1,0 +1,13 @@
+{
+  "python": {
+    "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "recorded_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "NODE": "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  },
+  "scope": "Final regression and integrity checks; parent records fresh Phase 11 executions separately"
+}

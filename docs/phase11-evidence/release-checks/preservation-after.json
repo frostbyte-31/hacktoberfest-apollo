@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-17T22:18:24.957274+00:00",
+  "original_package_files_checked": 509,
+  "original_package_mismatches": [],
+  "prior_files_checked": 5531,
+  "prior_changed_or_missing": [],
+  "frontend_files_checked": 5607,
+  "frontend_changed_or_missing": [],
+  "frontend_added_or_removed": [],
+  "frontend_branch_unchanged": true,
+  "frontend_head_unchanged": true,
+  "frontend_git_status_unchanged": true
+}

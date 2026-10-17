@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "docs/phase11-evidence/run_pipa.py",
+    "--case",
+    "zero",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10_5/release-20261018/native/baseline/.build/phase10_5/dependencies/setups/20261017T203617Z-9a3f5310/setup.json",
+    "--output",
+    ".build/phase11/probe-zero"
+  ],
+  "revision": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+  "utc": "2026-10-17T21:59:46.090347+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "engine_sha256": "056539f16f3ced8e147ecd91929b152c404aa6da107f3c25ee8762d47ffdaf40",
+  "driver_sha256": "0e5549c7aea45ac6d2510b49a8fca0b94423de661ad05f904796642430a9a676",
+  "sensor_sha256": "e62f92e8c18f1c5b7f271565d28ea9beb9b43e9812377ae4bdf8b39611220cfb",
+  "observer_sha256": "96e1bbd62ccdb20e3a9c7b3a8e158be5e3768b135f4a1c4206af92708b0f9ca1"
+}

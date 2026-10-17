@@ -1,0 +1,12 @@
+{
+  "name": "test-live",
+  "argv": [
+    "make",
+    "test-live",
+    "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+  "started_utc": "2026-10-17T22:15:15.852825+00:00",
+  "exit": 2,
+  "ended_utc": "2026-10-17T22:15:16.119185+00:00"
+}

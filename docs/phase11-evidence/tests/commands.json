@@ -1,0 +1,144 @@
+{
+  "commands": [
+    {
+      "name": "make-check",
+      "argv": [
+        "make",
+        "check"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:35.860626+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:04:32.871291+00:00"
+    },
+    {
+      "name": "phase10-focused",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline/docs/phase10-evidence/run_tests.py",
+        "--output",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/regression/phase10-focused-tests"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/baseline-validation/baseline",
+      "started_utc": "2026-10-17T22:01:35.860823+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:01:47.103637+00:00"
+    },
+    {
+      "name": "test-live",
+      "argv": [
+        "make",
+        "test-live",
+        "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:35.860936+00:00",
+      "exit": 2,
+      "ended_utc": "2026-10-17T22:01:36.124776+00:00"
+    },
+    {
+      "name": "live-evidence-tests",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/live-control-evidence",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:35.861087+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:01:54.896485+00:00"
+    },
+    {
+      "name": "guidance-data-tests",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "frontend/tests",
+        "-p",
+        "test_guidance_data.py",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:36.125292+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:02:00.508587+00:00"
+    },
+    {
+      "name": "demo-tests",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/demo/tests",
+        "-v"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:47.105561+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:02:00.778853+00:00"
+    },
+    {
+      "name": "guidance-node-tests",
+      "argv": [
+        "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "frontend/tests/guidance.test.mjs"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:54.897367+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:01:55.648455+00:00"
+    },
+    {
+      "name": "demo-verify",
+      "argv": [
+        "make",
+        "demo-verify"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:01:55.649382+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:02:07.838677+00:00"
+    },
+    {
+      "name": "retained-native-package",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "docs/phase10_5-evidence/retain_native.py",
+        "--check"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:02:00.513639+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:02:00.790187+00:00"
+    },
+    {
+      "name": "phase10_5-integrity",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "docs/phase10_5-evidence/check_integrity.py"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+      "started_utc": "2026-10-17T22:02:00.780014+00:00",
+      "exit": 0,
+      "ended_utc": "2026-10-17T22:02:01.947626+00:00"
+    }
+  ]
+}

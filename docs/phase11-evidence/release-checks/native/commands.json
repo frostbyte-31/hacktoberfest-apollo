@@ -1,0 +1,194 @@
+[
+  {
+    "name": "zero",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/run_pipa.py",
+      "--case",
+      "zero",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero",
+      "--archive",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:14:32.461212+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:14:51.632273+00:00"
+  },
+  {
+    "name": "positive",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/run_pipa.py",
+      "--case",
+      "positive",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/native/setup-used.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/positive"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:14:51.633558+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:15:05.347558+00:00"
+  },
+  {
+    "name": "negative",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/run_pipa.py",
+      "--case",
+      "negative",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/native/setup-used.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/negative"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:15:05.348695+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:15:19.296763+00:00"
+  },
+  {
+    "name": "disconnected",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/run_pipa.py",
+      "--case",
+      "disconnected",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/native/setup-used.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/disconnected"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:15:19.298119+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:15:38.722388+00:00"
+  },
+  {
+    "name": "repeat",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/run_pipa.py",
+      "--case",
+      "positive",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/native/setup-used.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/repeat"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:15:38.723271+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:15:53.847364+00:00"
+  },
+  {
+    "name": "analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence/analyze.py",
+      "--runs",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:15:53.847957+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:15:55.215668+00:00"
+  },
+  {
+    "name": "phase10-baseline",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/baseline/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/native/setup-used.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/baseline/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/phase10-baseline"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/baseline",
+    "started_utc": "2026-10-17T22:15:55.216383+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:16:02.131413+00:00"
+  },
+  {
+    "name": "phase10-analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-c",
+      "import importlib.util,json,sys; from pathlib import Path; p=Path(sys.argv[1]); s=importlib.util.spec_from_file_location(\"original_phase10_analysis\",p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); r=m.analyze_run(Path(sys.argv[2])); Path(sys.argv[3]).write_text(json.dumps(r,indent=2,allow_nan=False)+\"\\n\"); print(json.dumps({\"all_pass\":r[\"all_pass\"],\"raw_sha256\":r[\"raw_sha256\"]})); sys.exit(0 if r[\"all_pass\"] else 1)",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/baseline/docs/phase10-evidence/analyze.py",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/phase10-baseline",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/phase10-analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs/zero/baseline",
+    "started_utc": "2026-10-17T22:16:02.132198+00:00",
+    "environment_overrides": {},
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:16:02.639003+00:00"
+  },
+  {
+    "name": "sensor-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence",
+      "-p",
+      "test_sensor.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:16:02.643364+00:00",
+    "environment_overrides": {
+      "PHASE11_RUNS": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:16:02.775447+00:00"
+  },
+  {
+    "name": "native-tests",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/docs/phase11-evidence",
+      "-p",
+      "test_native.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11",
+    "started_utc": "2026-10-17T22:16:02.776080+00:00",
+    "environment_overrides": {
+      "PHASE11_RUNS": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase11/.build/phase11/push-check-20261018/runs"
+    },
+    "exit": 0,
+    "ended_utc": "2026-10-17T22:16:04.305872+00:00"
+  }
+]

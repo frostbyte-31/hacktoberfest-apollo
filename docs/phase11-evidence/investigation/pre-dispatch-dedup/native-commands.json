@@ -1,0 +1,34 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "docs/phase11-evidence/analyze.py",
+        "--runs",
+        ".build/phase11/release",
+        "--output",
+        "docs/phase11-evidence/release-analysis.json"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/phase11-evidence",
+        "-p",
+        "test_native.py",
+        "-v"
+      ],
+      "environment": {
+        "PHASE11_RUNS": ".build/phase11/release"
+      },
+      "exit": 0
+    }
+  ]
+}

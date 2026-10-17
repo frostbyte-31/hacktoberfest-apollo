@@ -1,0 +1,26 @@
+{
+  "classification": "VERIFIED native PIPA navigation through Level 4",
+  "native_cases": [
+    "zero",
+    "positive",
+    "negative",
+    "disconnected",
+    "positive repeat"
+  ],
+  "phase10_canonical_raw_trace_identical": true,
+  "test_results": {
+    "sensor": {
+      "passed": 13,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "native": {
+      "passed": 16,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "scope": "Synthetic stationary instrument and original P47; Level 5 guidance use, ignition and powered descent NOT RUN"
+}

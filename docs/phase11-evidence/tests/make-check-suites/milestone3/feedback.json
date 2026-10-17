@@ -1,0 +1,129 @@
+{
+  "tests_run": 20,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_actual_signed_fast_head_and_modular_transition_are_visible",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0063497910000001045
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_all_five_captures_reconcile_without_tcl",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.7090996249999999
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_clean_delayed_schedule_has_no_collisions_and_preserves_negative_rhc",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0004867909999999309
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_corrected_replay_raw_bytes_match",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 7.774999999998755e-05
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_disconnected_retains_model_motion_and_actual_zero_cdu",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 7.066700000013526e-05
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_feedback_changes_timed_genuine_jets_while_rhc_is_held",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.010356834000000203
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_negative_high_rate_exercises_correction_without_forced_state",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0004337500000000105
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_original_and_corrected_use_identical_declared_physical_inputs",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00750049999999991
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_output_guard_refuses_existing_retained_and_symlink_destinations",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.002267832999999886
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_clean_start_claim_with_recorded_alarm",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.47247950000000016
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_cross_axis_packets_motion_words_and_nonfinite_data",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0011679170000000738
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_fake_queue_settlement",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.5783246660000003
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_generated_data_mislabeled_as_agc_output",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.539886375
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_missing_application_despite_summary_claim",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.4297394579999998
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_unbounded_availability_delay",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.7025523330000003
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_wrong_actual_counter_delta",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.6109652080000005
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_wrong_actual_fifo_head_rate",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.4680586660000001
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_reject_wrong_applied_deadline_rate",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.641849959
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_short_cutoff_observes_real_nonempty_drain_then_quiet_cpu",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.006786041999999881
+    },
+    {
+      "id": "test_feedback.PacedSingleAxisFeedback.test_summary_counts_cannot_replace_actual_applications",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.5948084160000002
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}
