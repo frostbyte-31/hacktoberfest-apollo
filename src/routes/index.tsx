@@ -91,7 +91,7 @@ function Console() {
                   {[0.5, 1, 2, 4, 8].map((v) => <option key={v} value={v}>{v}×</option>)}
                 </select>
               </div>
-              <input type="range" min={t0} max={t1} step={0.05} value={t} onChange={(e) => pb.setT(Number(e.target.value))} className="w-full accent-primary" aria-label="Replay time" />
+              <input type="range" min={t0} max={t1} step="any" value={t} onChange={(e) => pb.setT(Number(e.target.value))} className="w-full accent-primary" aria-label="Replay time" />
               <span className="seg font-mono text-sm text-accent">T+{t.toFixed(2)} s</span>
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
