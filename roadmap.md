@@ -1,15 +1,16 @@
 # Roadmap
 
-## Phase 1 (approved, in progress)
-- [ ] Fetch pinned virtualagc f577e3f; record tool versions + licenses
-- [ ] Investigate rope provenance, binsource formats, yaAGC CLI/socket protocol/keycodes/channels
-- [ ] Build yaYUL + yaAGC; assemble Luminary099; hash artifacts
-- [ ] Binary comparison milestone (independent)
-- [ ] M1: genuine headless AGC execution with preserved log
-- [ ] M2: DSKY behaviour via socket (independent)
-- [ ] M3: investigate LM_Simulator interfaces only
-- [ ] WASM evaluation (separate)
-- [ ] docs/PHASE1_PROOF_PLAN.md + docs/phase1-evidence/
+## Phase 1 (done — see docs/PHASE1_PROOF_PLAN.md)
+- [x] Pinned source, versions, licenses
+- [x] Provenance + formats of both binsource files
+- [x] Build yaYUL/oct2bin/yaAGC; assemble Luminary099; hashes
+- [x] Binary comparison (3 images byte-identical)
+- [x] M1 authentic execution trace
+- [x] M2 DSKY V35 / V16N36 via socket
+- [x] M3 LM_Simulator interface investigation (no coupling)
+- [x] WASM build + equivalence run
 
-## Later (not authorized)
-- Frontend, multiplayer, AI crew, physics coupling
+## Next (awaiting approval)
+- P63 pad-load / scenario investigation
+- Step-locked native vs WASM trace comparison
+- Frontend, multiplayer, AI crew, physics coupling (not authorized)
