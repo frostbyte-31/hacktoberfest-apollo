@@ -23,6 +23,16 @@
 - [x] Verify sensor reception, actual AGC output, gimbal motion, feedback-dependent completion, disconnected controls, negative sign, and exact replay (7 tests pass)
 - [x] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and docs/phase3-evidence/; verify Phases 1–2 unchanged
 
+## Phase 4 (done — bounded control-path validation, blocker alternative)
+- [x] Reviewed and fingerprinted all 78 prior documentation/evidence files; zero preservation mismatches
+- [x] Traced Phase 3 output to IMU gimbals/error needles, not spacecraft thrusters; audited the active RCS implementation
+- [x] Executed a 4M-cycle original-software readiness probe and exact replay: no STARTDAP, 469 shutdown visits, all 942 RCS packets zero; IMODES33 bit6 blocks control
+- [x] Executed active upstream yaw-model component sign/sensor checks, explicitly not an AGC-driven loop
+- [x] Delivered docs/PHASE4_CONTROL_PATH_VALIDATION.md and docs/phase4-evidence/; six evidence checks pass
+
+## Minimum next control prerequisite (not authorized follow-on work)
+- Establish a synchronized Luminary099-compatible IMU startup fixture that clears software unusable status without direct readiness writes, then validate actual RCS/CDU feedback and disconnect controls.
+
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.

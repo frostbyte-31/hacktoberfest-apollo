@@ -1,0 +1,29 @@
+COMMAND: ["date", "-u", "--iso-8601=seconds"]
+EXIT: 0
+2026-10-17T12:33:09+00:00
+
+COMMAND: ["uname", "-a"]
+EXIT: 0
+Linux sandbox 6.12.111 #1 SMP PREEMPT_DYNAMIC 2024-01-01 00:00:00 UTC x86_64 GNU/Linux
+
+COMMAND: ["gcc", "--version"]
+EXIT: 0
+gcc (GCC) 14.3.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+COMMAND: ["python3", "--version"]
+EXIT: 0
+Python 3.13.12
+
+COMMAND: ["node", "--version"]
+EXIT: 0
+v22.22.0
+
+COMMAND: ["sha256sum", "/tmp/apollo/virtualagc.tgz", "docs/phase1-evidence/artifacts/MAIN.agc.bin"]
+EXIT: 0
+1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267  /tmp/apollo/virtualagc.tgz
+1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e  docs/phase1-evidence/artifacts/MAIN.agc.bin
+

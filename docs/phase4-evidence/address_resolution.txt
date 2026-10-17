@@ -1,0 +1,12 @@
+65247: 065197,000940: 20,3672           40111                           CS       DAPBOOLS                      	# SET BIT TO INDICATE DATA GOOD.
+65249: 065199,000942: 20,3674           26111                           ADS      DAPBOOLS                      	#
+65533: 065482,000150: 21,3717           40111                           CS       DAPBOOLS                      	# IF DRIFTBIT = 1, USE ZERO TARGET RATE
+65923:    817,F:   CHECKUP      16,2041  		   862,F:   CLEANDSP     10,2456  		   907,F:   COARS2       07,3040  
+65926:    820,F:   CHEKBITS     16,2000  		   865,F:   CLEARMRK        5474  		   910,F:   COASTSET     36,3606  
+66022:   1093,E:   DAPBOOLS        0111  		  1138,C:   DBSELFLG     0000316  		  1183,F:   DEC585       37,3055  
+66473:   2429,E:   IMODES33        1303  		  2474,E:   INCORPEX     E7,1674  		  2519,F:   INITVEL4     11,2137  
+66588:   2720,E:   KRDAP        E6,1506  		  2764,F:   LAST         16,3325  		  2809,E:   LEMMASS         1331  
+66752:   3238,F:   MIXBACK      40,3047  		  3283,E:   MODREG          1011  		  3328,F:   MPERFMSK     10,3520  
+67209:   4580,E:   RCSFLAGS        1273  		  4625,F:   RECALTST     40,3547  		  4670,F:   RELDSP1         4502  
+67453:   5268,F:   SETGMEX      13,2556  		  5313,F:   SETXTACT     43,2105  		  5358,F:   SHUTDOWN     16,2163  
+67509:   5413,F:   SLOPEHI      00,2314  		  5458,F:   SPECSTS      37,2572  		  5503,F:   STARTDAP     16,2046  

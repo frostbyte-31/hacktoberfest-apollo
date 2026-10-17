@@ -1,0 +1,4 @@
+COMMAND: ["nix", "shell", "nixpkgs#tcl", "-c", "tclsh", "/dev/stdin"]
+STDIN: puts [info patchlevel]
+EXIT: 0
+8.6.16

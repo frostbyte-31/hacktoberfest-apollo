@@ -1,0 +1,5 @@
+VERIFIED preliminary tool attempt, not part of acceptance runs.
+COMMAND: nix run nixpkgs#tcl -- /dev/stdin
+EXIT: 1
+Observed error: unable to execute /nix/store/r16kihjy5nfyyy4cxh9lgbvia5969868-tcl-8.6.16/bin/tcl: No such file or directory
+Corrected command: nix shell nixpkgs#tcl -c tclsh (actual successful command/outputs retained in runs/).
