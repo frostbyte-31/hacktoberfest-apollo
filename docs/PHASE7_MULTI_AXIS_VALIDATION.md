@@ -91,3 +91,17 @@ All runs exited 0.
 
 ## 9. Recommended next milestone
 Simultaneous pitch+yaw (and roll-only) commands in the same bounded fixture. Check the roll channel and the cross-coupled gimbal transform at non-zero gimbal angles. Then isolate the 01520/01107 alarms for a clean initialization. Phase 8 was not started.
+
+## 10. Independent re-validation (14:47 UTC)
+- **VERIFIED:** I rebuilt the engine into a fresh directory and re-ran all five modes. All five raw traces are byte-identical to `docs/phase7-evidence/runs/`.
+- **VERIFIED:** all 11 analysis checks passed, and `test_multi_axis.py` passed 10/10.
+- **VERIFIED:** `make test` ran the existing suites:
+  - Milestone 1: 38 run, 35 passed, 3 errors. These 3 are counted by the suite as `known_historical_errors: 3` and predate Phase 7.
+  - Second suite: 55/55 passed.
+  - Milestone 2: 47 passed.
+- None of this validation needs the preview.
+
+## 11. Preview status (not a Phase 7 blocker)
+- **Symptom:** the preview server fails with `Error: no command found for task "dev"`.
+- **Cause:** this repository has no `package.json`, no `lovable.toml`, and no `.lovable/` start script. Its only entry points are the `Makefile` targets (`verify`, `test`, `runtime`, `reproduce`, `validate-milestone2`, `check`), which are batch validation commands, not a server. Creating `lovable.toml` from the agent was refused as read-only. No bypass was attempted.
+- **Minimum action to resolve:** someone with project-configuration permission adds a `[run] dev = "<command>"` entry. Alternatively, leave the preview unused, which is consistent with the investigation-only scope. No app or viewer was created.
