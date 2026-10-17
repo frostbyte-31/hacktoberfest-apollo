@@ -1,0 +1,7 @@
+{
+  "status": "INCOMPLETE; manually interrupted experiment",
+  "utc": "2026-10-17T14:43:49.517613+00:00",
+  "exit": 130,
+  "reason": "Native observer per-call stepping also advanced Tcl per CPU call, producing excessive integration/trace volume; stopped to separate853-call physical coupling from observer granularity",
+  "last_raw_line": "{\"ev\":\"plant\",\"category\":\"simulated_vehicle\",\"cycle\":2661580,\"interval_start\":2661579,\"omega\":[-4.908133275962706,0.0,0.0],\"gimbals\":[353.81586902412107,0.0,0.0],\"jets\":[0,0],\"zero\":0}"
+}

@@ -24,8 +24,8 @@ SHA-256 hashes. It separately reports **29 missing historical logs**. New missin
 files, changed bytes, unsafe paths or unlisted retained evidence cause failure.
 The baseline does not reconstruct missing evidence or change old manifests.
 
-`make test` runs the unchanged Phase 2–6 suites, packaging tests, and Milestone 2
-startup/CDU/component tests.
+`make test` runs the unchanged Phase 2–6 suites, packaging tests, Milestone 2
+startup/CDU/component tests, and Milestone 3 selector/feedback checks.
 The historical result remains **38 tests: 35 passed, 3 errors** on missing logs.
 Only those exact preservation errors may be classified as known historical gaps;
 unexpected errors, failures or skipped tests make the command fail. A successful
@@ -98,13 +98,36 @@ V36 and observed software readiness. It retains and explains the initial
 `01107`; it does not claim alarm-free power-on or flight-ready alignment.
 Transport signs match within a fixed slow/fast mode, and queues settle for the
 supported finite cases. Capacity controls expose a silent FIFO drop. The
-unchanged plant still selects slow mode for negative high rates: +8°/s produces
+Milestone 2 plant baseline selects slow mode for negative high rates: +8°/s produces
 FAST operations while −8°/s produces slow operations. That defect is diagnosed,
 not repaired by these validation harnesses.
 
 [Milestone 2 findings and evidence](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md)
 separate authentic software observations from synthetic sensor/component probes
 and state the limits on stronger control claims. No Phase 7 work is included.
+
+## Validate the corrected yaw selector and paced feedback
+
+```sh
+make validate-milestone3
+```
+
+The Milestone 3 fixture generates a derived model from the hash-checked original
+source. Its X-axis rate selector uses `abs(Omega_Yaw) < 4`; an explicit boundary
+rejects unsupported Y/Z increments. Earlier model files and traces remain intact.
+The emulator and Luminary are unchanged.
+
+Paired component probes check the selector correction. Coupled native runs use
+actual AGC RCS output, paced X-CDU feedback, and observations of packet
+consumption, FIFO enqueue and counter application. A separately labeled tail
+ends vehicle integration and sensor generation before draining finite queued
+work. Queue settlement does not establish vehicle stability or mission readiness.
+`make check` includes these fresh experiments after the earlier reproduction and
+Milestone 2 probes.
+
+[Milestone 3 findings and evidence](docs/MILESTONE3_SIGNED_FEEDBACK.md) record the
+measured outcomes and limits. This remains a synthetic single-axis fixture;
+Phase 7 and powered descent have not started.
 
 ## Evidence and provenance
 
@@ -114,6 +137,8 @@ and state the limits on stronger control claims. No Phase 7 work is included.
   baseline and actual validation results.
 - [Milestone 2 validation report](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md) records
   the clean post-V36 interval, signed transport timing, capacity and model limits.
+- [Milestone 3 feedback report](docs/MILESTONE3_SIGNED_FEEDBACK.md) records the
+  external model correction, pacing and finite queue settlement.
 - [Historical gap inventory](docs/milestone1-evidence/missing-historical.json)
   retains the 29 absent paths, original expected hashes and manifest references.
   Recovered logs are accepted only at their original hash. Fresh logs belong in

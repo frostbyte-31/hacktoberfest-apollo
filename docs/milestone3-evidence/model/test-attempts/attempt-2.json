@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/milestone3-evidence/model",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "start_utc": "2026-10-17T14:42:40.376103+00:00",
+  "end_utc": "2026-10-17T14:42:40.590546+00:00",
+  "exit": 0
+}

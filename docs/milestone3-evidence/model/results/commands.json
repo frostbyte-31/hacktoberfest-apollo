@@ -1,0 +1,58 @@
+[
+  {
+    "argv": [
+      ".build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/milestone2-evidence/plant/probe.tcl",
+      ".build/milestone3/pinned-source"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "original",
+    "start_utc": "2026-10-17T14:40:41.430269+00:00",
+    "end_utc": "2026-10-17T14:40:41.686498+00:00",
+    "exit": 0,
+    "stdin": "probe-inputs.txt",
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  },
+  {
+    "argv": [
+      ".build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/model-attempt-1/probe-with-module-argument.tcl",
+      ".build/milestone3/pinned-source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/model-attempt-1/AGC_IMU.corrected-yaw.tcl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "corrected",
+    "start_utc": "2026-10-17T14:40:41.686784+00:00",
+    "end_utc": "2026-10-17T14:40:41.940003+00:00",
+    "exit": 0,
+    "stdin": "probe-inputs.txt",
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  },
+  {
+    "argv": [
+      ".build/reproducibility/runtime/bin/tclsh8.6",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/model-attempt-1/guard-probe.tcl",
+      ".build/milestone3/pinned-source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/model-attempt-1/AGC_IMU.corrected-yaw.tcl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "label": "axis-guard",
+    "start_utc": "2026-10-17T14:40:41.959943+00:00",
+    "end_utc": "2026-10-17T14:40:41.974518+00:00",
+    "exit": 0,
+    "stdin": null,
+    "environment_overrides": {
+      "LC_ALL": "C",
+      "LANG": "C",
+      "TZ": "UTC"
+    }
+  }
+]

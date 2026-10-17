@@ -1,0 +1,13 @@
+[
+  {
+    "argv": [
+      "make",
+      "check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "start_utc": "2026-10-17T14:51:10.238904+00:00",
+    "end_utc": "2026-10-17T14:52:08.064762+00:00",
+    "exit": 0,
+    "timeout_seconds": 900
+  }
+]

@@ -1,0 +1,299 @@
+{
+  "cases": {
+    "original_negative": {
+      "selector": "original",
+      "feedback_disconnected": false,
+      "counts": {
+        "generated": 1439,
+        "delivered": 1439,
+        "consumed": 1439,
+        "enqueued": 1439,
+        "applied": 1439,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 5.646112945333554,
+      "max_host_queue": 128,
+      "max_origin_to_delivery_calls": 27351,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 1,
+      "generated_negative_fast": 0,
+      "generated_slow_negative_at_high_rate": 825,
+      "final_model": [
+        0.23827435241666767,
+        0.0,
+        0.0,
+        350.813653496938,
+        0.0,
+        0.0
+      ],
+      "settled": {
+        "cycle": 4000000,
+        "cdu": [
+          31931,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3997585,
+        "checker": 1
+      },
+      "quiet": {
+        "cycle": 4001000,
+        "cdu": [
+          31931,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3997585,
+        "checker": 0
+      },
+      "freeze_cycle": 4000000,
+      "expected_modular_cdu": 31931,
+      "state_writes": 0,
+      "raw_sha256": "d036228c12ec9a89837c041a64c7b93d20571c5b278b120ad8e33f237de8e515",
+      "nonzero_rcs_words_octal": {
+        "00252": 8,
+        "00012": 3,
+        "00240": 3,
+        "00125": 11,
+        "00120": 2
+      },
+      "applied_codes": {
+        "3": 1138,
+        "1": 301
+      }
+    },
+    "corrected_negative": {
+      "selector": "corrected",
+      "feedback_disconnected": false,
+      "counts": {
+        "generated": 1582,
+        "delivered": 1582,
+        "consumed": 1582,
+        "enqueued": 1582,
+        "applied": 1582,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 4.858000127629546,
+      "max_host_queue": 5,
+      "max_origin_to_delivery_calls": 710,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 1,
+      "generated_negative_fast": 691,
+      "generated_slow_negative_at_high_rate": 0,
+      "final_model": [
+        -0.036645365338664325,
+        0.0,
+        0.0,
+        342.61434840519075,
+        0.0,
+        0.0
+      ],
+      "settled": {
+        "cycle": 4000000,
+        "cdu": [
+          31186,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3988202,
+        "checker": 2
+      },
+      "quiet": {
+        "cycle": 4001000,
+        "cdu": [
+          31186,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3988202,
+        "checker": 0
+      },
+      "freeze_cycle": 4000000,
+      "expected_modular_cdu": 31186,
+      "state_writes": 0,
+      "raw_sha256": "a56ce0305fb888c63754fea929b2d7b580f470e36b2887747ee9e5937f550af8",
+      "nonzero_rcs_words_octal": {
+        "00252": 8,
+        "00012": 2,
+        "00240": 2,
+        "00125": 6,
+        "00120": 6,
+        "00005": 3
+      },
+      "applied_codes": {
+        "3": 891,
+        "19": 691
+      }
+    },
+    "corrected_feedback_off": {
+      "selector": "corrected",
+      "feedback_disconnected": true,
+      "counts": {
+        "generated": 16169,
+        "delivered": 0,
+        "consumed": 0,
+        "enqueued": 0,
+        "applied": 0,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 16169
+      },
+      "peak_abs_yaw_deg_s": 11.3399576784135,
+      "max_host_queue": 0,
+      "max_origin_to_delivery_calls": 0,
+      "max_fifo_entries": 0,
+      "max_fifo_pending": 0,
+      "generated_negative_fast": 16021,
+      "generated_slow_negative_at_high_rate": 0,
+      "final_model": [
+        -10.843402575996302,
+        0.0,
+        0.0,
+        182.35133197569334,
+        0.0,
+        0.0
+      ],
+      "settled": {
+        "cycle": 4000000,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 0,
+        "checker": 2
+      },
+      "quiet": {
+        "cycle": 4001000,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 0,
+        "checker": 0
+      },
+      "freeze_cycle": 4000000,
+      "expected_modular_cdu": 0,
+      "state_writes": 0,
+      "raw_sha256": "4056c4482c7026ceb7f5a260aeee4488ff9d06554fb6a0f11d6704c1ffbb2174",
+      "nonzero_rcs_words_octal": {
+        "00252": 23,
+        "00120": 2
+      },
+      "applied_codes": {}
+    },
+    "corrected_repeat": {
+      "selector": "corrected",
+      "feedback_disconnected": false,
+      "counts": {
+        "generated": 1582,
+        "delivered": 1582,
+        "consumed": 1582,
+        "enqueued": 1582,
+        "applied": 1582,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 4.858000127629546,
+      "max_host_queue": 5,
+      "max_origin_to_delivery_calls": 710,
+      "max_fifo_entries": 1,
+      "max_fifo_pending": 1,
+      "generated_negative_fast": 691,
+      "generated_slow_negative_at_high_rate": 0,
+      "final_model": [
+        -0.036645365338664325,
+        0.0,
+        0.0,
+        342.61434840519075,
+        0.0,
+        0.0
+      ],
+      "settled": {
+        "cycle": 4000000,
+        "cdu": [
+          31186,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3988202,
+        "checker": 2
+      },
+      "quiet": {
+        "cycle": 4001000,
+        "cdu": [
+          31186,
+          0,
+          0
+        ],
+        "entries": 0,
+        "pending": 0,
+        "head_code": 0,
+        "incoming": 0,
+        "deadline": 3988202,
+        "checker": 0
+      },
+      "freeze_cycle": 4000000,
+      "expected_modular_cdu": 31186,
+      "state_writes": 0,
+      "raw_sha256": "a56ce0305fb888c63754fea929b2d7b580f470e36b2887747ee9e5937f550af8",
+      "nonzero_rcs_words_octal": {
+        "00252": 8,
+        "00012": 2,
+        "00240": 2,
+        "00125": 6,
+        "00120": 6,
+        "00005": 3
+      },
+      "applied_codes": {
+        "3": 891,
+        "19": 691
+      }
+    }
+  },
+  "checks": {
+    "exact_corrected_replay": true,
+    "natural_negative_high_rate_observed": true,
+    "original_selector_slow_at_negative_high_rate": true,
+    "original_no_negative_fast": true,
+    "feedback_changes_rcs": true,
+    "disconnected_no_delivery": true,
+    "disconnected_counter_zero": true,
+    "all_connected_settled_without_loss": true
+  },
+  "scope": "Synthetic single-axis negative yaw, modern sensor-selector correction; no general-axis or landing claim"
+}

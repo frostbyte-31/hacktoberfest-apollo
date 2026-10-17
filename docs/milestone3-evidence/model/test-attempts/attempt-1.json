@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/milestone3-evidence/model",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "exit": 1,
+  "tests_run": 14,
+  "passed": 13,
+  "failures": 1,
+  "errors": 0,
+  "failure_id": "test_model.SourceAdapterTests.test_source_root_input_selects_only_locked_complete_module",
+  "cause": "Test compared canonical API source path /private/var/folders/... against unresolved macOS temporary alias /var/folders/...; derived module and other13 checks succeeded.",
+  "repair": "Expected path now uses source.resolve(), matching documented absolute-path audit. No model or result changed.",
+  "capture_note": "This summary records the actual first tool output. Its full text was visible in the tool transcript; it was not redirected to a file."
+}

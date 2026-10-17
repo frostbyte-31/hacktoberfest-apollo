@@ -1,0 +1,42 @@
+{
+  "status": "VERIFIED",
+  "root_invocation": [
+    "python3",
+    "-B",
+    "docs/milestone3-evidence/model/run_validation.py",
+    "--source",
+    ".build/milestone3/pinned-source",
+    "--output",
+    ".build/milestone3/model-attempt-1",
+    "--tcl",
+    ".build/reproducibility/runtime/bin/tclsh8.6"
+  ],
+  "root_invocation_exit": 0,
+  "capture": "Copied unchanged from .build/milestone3/model-attempt-1. No native binaries are included. Original and corrected outputs are fresh paired captures, not replacements for old logs.",
+  "artifact_sha256": {
+    "AGC_IMU.corrected-yaw.tcl": "e2026ac57ce0b2eb67b4ad3e608ecd2bf4142a306ffe35fdef37aaba168aef08",
+    "axis-guard.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axis-guard.stdout": "e3b670f4babf415a2116504c538d8cbce6303283ad4dd013ef5e6aa87d383c7a",
+    "commands.json": "5aa48b01c920076ecb1c555b32798559c611599c1582cc0ea0b2f2e56d29cb9a",
+    "complete.diff": "b9f80fb2160ba0f2e6e115349b4315e4bbce826f63ea7941f8429da622cd5ff1",
+    "corrected.jsonl": "2b7ad07eb5a21d2901ac54d25015c725877c841664cf89430669add5a42889db",
+    "corrected.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "corrected.stdout": "82071754760b5e62234b1e3ceb5af5914023daeb2e9f9a7e87f06dca84938b66",
+    "corrected.summary.json": "1a8f0f9fba419b2eb62f00ea19aadfa6a9f2f1cf216eb74835c3a9bb1a80f8bb",
+    "environment.json": "7e11592053cb2a68c3cb8a2b51bf36b8b79b3ceca71da42b992921dcfd2d891e",
+    "guard-probe.tcl": "c6a55da3e5484d4b0e2418f637b8cee405499e467aeadef240f0c2e7aaf0d864",
+    "inputs_source_hashes.json": "67b46bd185fd63aaccc706c4d476042eef123d4df00b91447faa4f8c5944184b",
+    "original.jsonl": "fc8f3782e1c5a12964cf5d0855ec0084fdadef7a433ef9b40e775667d68e0049",
+    "original.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original.stdout": "8c08260a7b2c96ef8c8300c74e6f97f843f0c4d3f1f8a5b22087a4cb6191e3fd",
+    "original.summary.json": "7c3b8d47eb086cdd5f2b91da7ec7c1fa73d553a2c93e8b149a0afd55c82114b3",
+    "probe-adapter.diff": "27944f89463ff3a762c08f5ae57aa642f33a636a662c88f294e728b9dbaae9fa",
+    "probe-inputs.txt": "2a70b6581395d4cf78cfbcde3a9ee3e353ef69929c402d38b92351de79ddcec7",
+    "probe-with-module-argument.tcl": "95653fbd2a6e2f6cb27c15f0123402f11b96cc20632302287fa132f79073cdb5",
+    "scenarios.json": "2d3cf2cf14aa714397e42bfddc5ba7b67815ccbff5dffa9d931b55fe4e8c346b",
+    "selector-audit.json": "ad7d310b78bdac6fa0132cdccccc6b0154ae5a519d7ae3bb5fa8b87eec78f38e",
+    "selector.diff": "6c681750dcfec600e1520c664d80ac11c8f4af70f6b9355393dfebbbe1085a92",
+    "source-audit.json": "f0c42f52f19fe02cad6fcecd60b4cfc5842cc36d1c727ba77acca35311ee457a",
+    "validation.json": "97930104f978ec5970217a791b0d7b59cb8ca19da7b41ffaf2d9d186ad0b76bd"
+  }
+}

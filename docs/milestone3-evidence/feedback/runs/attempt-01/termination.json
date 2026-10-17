@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-17T14:45:12.126585+00:00",
+  "command": [
+    "pkill",
+    "-TERM",
+    "-f",
+    "/feedback-attempt-01/original_negative.jsonl --case original_negative"
+  ],
+  "command_exit": 0,
+  "raw_sha256": "dbda634944cf14ef7b66a93de818e45f2055c013a679ffd3431598c2e52293e5",
+  "raw_bytes": 33994632,
+  "status": "INCOMPLETE partial experiment; top runner interrupted exit130; orphan worker termination requested SIGTERM; worker exit status not captured"
+}

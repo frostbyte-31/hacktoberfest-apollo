@@ -61,9 +61,17 @@
 - [x] Confirm the unchanged plant's signed mode-selection defect with paired imposed-yaw component probes
 - [x] Retain raw traces, source/rope address proofs, exact replays and the integrated test/check results in docs/milestone2-evidence/
 
-## Next bounded validation (requires separate approval; Phase 7 not started)
-- Repair the modern model's signed rate-mode selection in a separately identified fixture, then test paced negative-rate feedback and queue settlement before stronger attitude-control claims.
-- Keep the emulator/flight code and earlier baselines unchanged; do not expand axes or begin descent work as part of that correction.
+## Milestone 3: corrected yaw selector and paced feedback
+- [x] Generate a source-locked modern model with the X/yaw selector changed to use rate magnitude; reject unsupported Y/Z increments
+- [x] Verify paired component motion retains numerical states, pulse counts, directions, quantization, wraparound and original inhibits
+- [x] Run authentic negative RHC/RCS feedback with distinct packet delivery, FIFO enqueue and counter-application observations
+- [x] Compare the original selector, corrected selector, disconnected feedback and exact replay under the same clean startup and conservative pacing
+- [x] Preserve all prior evidence and keep the emulator, Luminary and original source archive unchanged
+- See docs/MILESTONE3_SIGNED_FEEDBACK.md for actual check results and the separate transport-tail experiment
+
+## Remaining single-axis uncertainty (requires separate approval; Phase 7 not started)
+- Finite pulse delivery and empty queues do not establish sustained attitude hold or vehicle stability. Define bounded rate/hold acceptance criteria and sensitivity to coupling/pacing before stronger control claims.
+- Mission initialization, calibrated IMU alignment and source-justified propulsion/radar interfaces remain prerequisites for a credible descent experiment.
 
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
