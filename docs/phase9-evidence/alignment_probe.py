@@ -3,7 +3,7 @@
 Reuses the Phase 5 operate_inputs.txt schedule unchanged (fresh cpu_reset, IMU
 OPERATE asserted, V36E/V37E00E/V77E). The only additions, starting at
 3,000,000 CPU calls, are DSKY keystrokes on channel 015 (Phase 1 key map),
-PRO on channel 032 bit14 (Phase 1 mechanism), and AOT mark discretes on
+PRO on channel 032 bit 14 (0o20000; an earlier attempt used bit 15 in error - see the Phase 9 report), and AOT mark discretes on
 channel 016 with KEYRUPT2 (the hardware path; the socket API cannot raise it
 - see alignment_bridge.c header). No memory writes, no flag forcing.
 
@@ -62,7 +62,7 @@ SETTLE = 200000         # calls to wait after a flash appears before acting
 
 KEY = {**{str(d): d for d in range(1, 10)},
        '0': 16, 'V': 17, 'N': 31, '+': 26, '-': 27, 'E': 28}  # Phase 1 key map
-PRO_CH, PRO_BIT = 0o32, 0o40000  # Phase 1: PRO = channel 032 bit 14
+PRO_CH, PRO_BIT = 0o32, 0o20000  # PRO = channel 032 bit 14 (INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc:203)
 
 # Catalog star unit vectors (CONTROLLED_CONSTANTS.agc, B-1 halved values doubled)
 STAR37 = (0.8342971408, -0.2392481515, -0.4966976975)  # code 01
