@@ -17,11 +17,11 @@
 - [x] Run step-locked native/WebAssembly comparison and real-browser validation
 - [x] Deliver docs/PHASE2_POWERED_DESCENT_FEASIBILITY.md and new evidence
 
-## Phase 3 — minimum integration experiment
-- [ ] Review prior evidence and verify minimum sensor/actuator loop in pinned sources
-- [ ] Implement and execute the smallest genuine feedback loop with recorded synthetic initial conditions
-- [ ] Test sensor reception, AGC output, physical response, feedback, and reproducibility
-- [ ] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and phase-specific evidence; preserve Phases 1–2
+## Phase 3 (done — minimum instrument integration experiment)
+- [x] Review prior evidence and verify minimum sensor/actuator loop in pinned sources
+- [x] Execute Luminary099 V41 IMU-gimbal feedback with recorded synthetic initial conditions
+- [x] Verify sensor reception, actual AGC output, gimbal motion, feedback-dependent completion, disconnected controls, negative sign, and exact replay (7 tests pass)
+- [x] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and docs/phase3-evidence/; verify Phases 1–2 unchanged
 
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
