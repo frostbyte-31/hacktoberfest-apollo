@@ -1,0 +1,144 @@
+
+$ ls -la scenarios
+total 16
+drwxrwxr-x   2 root root 4096 Oct 17 10:04 .
+drwxr-xr-x 100 root root 4096 Oct 17 11:46 ..
+-rw-rw-r--   1 root root 1231 Oct 17 10:04 CmQuickStart.txt
+-rw-rw-r--   1 root root 1988 Oct 17 10:04 LmQuickStart.txt
+EXIT=0
+
+$ rg --files --hidden | rg '(\.core$|\.pad$|\.scn$)'
+Corona261/Corona261.pad
+Validation-Block1/Validation-Block1.pad
+Sunrise69/Sunrise69.pad
+Sunrise45/Sunrise45.pad
+Solarium055/Solarium055.pad
+EXIT=0
+
+$ rg --files | rg -i '(scenario|padload|erasab|\.ini$|\.cfg$|apollo.?11)'
+Retread44/ERASABLE_ASSIGNMENTS.agc
+Comanche051/ERASABLE_ASSIGNMENTS.agc
+Comanche045/ERASABLE_ASSIGNMENTS.agc
+yaDSKY/src/LM1.ini
+yaDSKY/src/LM0.ini
+yaDSKY/src/LM.ini
+yaDSKY/src/CM.ini
+Comanche044/ERASABLE_ASSIGNMENTS.agc
+Luminary069/PADLOADS.agc
+Luminary069/ERASABLE_ASSIGNMENTS.agc
+yaDSKY2/LM1.ini
+yaDSKY2/LM0.ini
+yaDSKY2/LM.ini
+yaDSKY2/CM.ini
+yaDSKY2/Apollo11-launch.canned
+yaDSKY2/Apollo11-landing.canned
+Colossus249/ERASABLE_ASSIGNMENTS.agc
+LUM69R2/PADLOADS.agc
+Corona261/ERASABLE_ASSIGNMENTS.agc
+LUM69R2/ERASABLE_ASSIGNMENTS.agc
+Manche72R3/ERASABLE_ASSIGNMENTS.agc
+yaAGC/DebugModeScripts/NOOPerasable.PAT.DEL
+yaAGC/DebugModeScripts/NOOPerasable.PAT
+Zerlina56/ERASABLE_ASSIGNMENTS.agc
+Colossus237/ERASABLE_ASSIGNMENTS.agc
+Manche45R2/ERASABLE_ASSIGNMENTS.agc
+Borealis/ERASABLE_ASSIGNMENTS.agc
+Comanche072/ERASABLE_ASSIGNMENTS.agc
+LM131R1/ERASABLE_ASSIGNMENTS.agc
+Aurora88/ERASABLE_ASSIGNMENTS.agc
+Luminary210/ERASABLE_ASSIGNMENTS.agc
+Comanche067/ERASABLE_ASSIGNMENTS.agc
+Comanche055/ERASABLE_ASSIGNMENTS.agc
+Luminary173/ERASABLE_ASSIGNMENTS.agc.bak
+Luminary173/ERASABLE_ASSIGNMENTS.agc
+VirtualAGC/VirtualAGC.cfg
+Artemis071/ERASABLE_ASSIGNMENTS.agc
+Artemis072/ERASABLE_ASSIGNMENTS.agc
+Aurora12/DIGITAL_AUTOPILOT_ERASABLE.agc
+Aurora12/ERASABLE_ASSIGNMENTS.agc
+Luminary163/ERASABLE_ASSIGNMENTS.agc.bak
+Luminary163/ERASABLE_ASSIGNMENTS.agc
+Luminary178/ERASABLE_ASSIGNMENTS.agc
+Luminary099/ERASABLE_ASSIGNMENTS.agc
+Sunrise69/ERASABLE_ASSIGNMENTS.agc
+Luminary131/ERASABLE_ASSIGNMENTS.agc
+LUM99R2/ERASABLE_ASSIGNMENTS.agc
+Sunrise45/ERASABLE_ASSIGNMENTS.agc
+SundialE/ERASABLE_ASSIGNMENTS.agc
+Luminary116/ERASABLE_ASSIGNMENTS.agc
+Sunburst120/ERASABLE_ASSIGNMENTS.agc
+Luminary130/ERASABLE_ASSIGNMENTS.agc
+LMY99R0/ERASABLE_ASSIGNMENTS.agc
+Retread50/ERASABLE_ASSIGNMENTS.agc
+SundanceXXX/ERASABLE_ASSIGNMENTS.agc
+Solarium055/ERASABLE_ASSIGNMENTS.agc
+scenarios/LmQuickStart.txt
+scenarios/CmQuickStart.txt
+Skylark048/ERASABLE_ASSIGNMENTS.agc
+Contributed/LM_Simulator/lm_simulator_windows_nodsky.ini
+Contributed/LM_Simulator/lm_simulator_windows.ini
+Contributed/LM_Simulator/lm_simulator_nodsky.ini
+Contributed/LM_Simulator/lm_simulator.ini
+Luminary098/ERASABLE_ASSIGNMENTS.agc
+Luminary096/ERASABLE_ASSIGNMENTS.agc
+Luminary097/ERASABLE_ASSIGNMENTS.agc
+Sunburst37/ERASABLE_ASSIGNMENTS.agc
+Sundance306ish/ERASABLE_ASSIGNMENTS.agc
+EXIT=0
+
+$ rg -n 'THRUST|RequestRadarData' yaAGC Contributed/LM_Simulator yaUniverse
+Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl:74: label .att.p1_l3 -text "THRUST:               " -font ${font11} -bg $colb
+Contributed/LM_Simulator/modules/AGC_Outputs.tcl:129: label .lmsys.l_14_4 -text "THRUST DRIVE ACTIVITY\nFOR DESCENT ENGINE" -font ${font11} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:67: label .crewinp.l5a -text "THRUSTERS:" -font ${font11b} -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:70: checkbutton .crewinp.cb6a -text "THRUSTERS 2&4 DISABLED" -variable b(32,1) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000000001"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:73: checkbutton .crewinp.cb7a -text "THRUSTERS 5&8 DISABLED" -variable b(32,2) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000000010"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:76: checkbutton .crewinp.cb8a -text "THRUSTERS 1&3 DISABLED" -variable b(32,3) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000000100"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:79: checkbutton .crewinp.cb9a -text "THRUSTERS 6&7 DISABLED" -variable b(32,4) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000001000"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:82: checkbutton .crewinp.cb10a -text "THRUSTERS 14&16 DISABLED" -variable b(32,5) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000010000"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:85: checkbutton .crewinp.cb11a -text "THRUSTERS 13&15 DISABLED" -variable b(32,6) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000000100000"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:88: checkbutton .crewinp.cb12a -text "THRUSTERS 9&12 DISABLED" -variable b(32,7) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000001000000"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Crew_Inputs.tcl:91: checkbutton .crewinp.cb13a -text "THRUSTERS 10&11 DISABLED" -variable b(32,8) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(32) "000000010000000"; write_socket b 32} -justify left -bg $colb
+Contributed/LM_Simulator/modules/AGC_Attitude.tcl:71: label .att.p1_l3 -text "DESCENT THRUST:       " -font ${font11} -bg $colb
+Contributed/LM_Simulator/doc/verb_noun.txt:305:#  92	PCT FTP (10.5K LB) AT PRESENT THRUST	3COMP	xxxxx.
+Contributed/LM_Simulator/doc/alarm_codes.txt:61:# 		        .GT. 90 DEGREES AWAY FROM DESIRED THRUST	S40.8
+yaAGC/ringbuffer_api.c:41:             2024-01-29 MAS  Added stub RequestRadarData function for use
+yaAGC/ringbuffer_api.c:194:RequestRadarData (agc_t *State)
+yaAGC/agc_gdbmi.c:132:  {"II",SP,  1.0/16384},       // THRUST MOMENT: Frac. of 1,048,576 Nm
+yaAGC/agc_gdbmi.c:803:    { "THRUST", 055 },
+yaAGC/agc_engine.h:318:#define DL_CM_RENDEZVOUS_PRETHRUST 4
+yaAGC/agc_engine.h:319:#define DL_LM_RENDEZVOUS_PRETHRUST 5
+yaAGC/agc_engine.h:610:void RequestRadarData (agc_t *State);
+yaAGC/agc_engine.c:2229:              //    (this is expected to be performed by RequestRadarData().
+yaAGC/agc_engine.c:2233:              RequestRadarData(State);
+yaAGC/SocketAPI.c:80:		01/29/24 MAS	Added a stub RequestRadarData function for use
+yaAGC/SocketAPI.c:513:RequestRadarData (agc_t *State)
+yaAGC/NullAPI.c:44:		01/29/24 MAS	Added a stub RequestRadarData function for use
+yaAGC/NullAPI.c:193:RequestRadarData (agc_t *State)
+EXIT=0
+
+$ rg -n 'resume|--core|--pads' yaAGC/agc_cli.c yaAGC/agc_simulator.c VirtualAGC/VirtualAGC.cpp
+yaAGC/agc_simulator.c:65:		if (Simulator.Options->resume == NULL)
+yaAGC/agc_simulator.c:80:			else if (Simulator.Options->no_resume)
+yaAGC/agc_simulator.c:94:					Simulator.Options->core, Simulator.Options->resume, 1);
+VirtualAGC/VirtualAGC.cpp:1840:          "The magnetic-core memory of the AGC is \"persistent\", meaning that it retains its memory when power is off, and hence can resume the computer program after power-up that it was running before shutdown.  If you would prefer NOT to resume and instead to start with completely erased memory, then choose this option."));
+VirtualAGC/VirtualAGC.cpp:1847:          "The magnetic-core memory of the AGC is \"persistent\", meaning that it retains its memory when power is off, and hence can resume the computer program after power-up that it was running before shutdown.  If you would like to do that, then choose this option."));
+VirtualAGC/VirtualAGC.cpp:1849:      wxT("Select a custom memory-core file from which to resume operation."));
+VirtualAGC/VirtualAGC.cpp:1858:          "Click this button to select the name of an AGC core dump from which to resume execution."));
+VirtualAGC/VirtualAGC.cpp:1865:          "Click this button to preserve the most-recent core-dump so that you can resume operation from it later, by name."));
+VirtualAGC/VirtualAGC.cpp:3303:    CoreCmd = wxT("--core=");
+VirtualAGC/VirtualAGC.cpp:3436:      yaAGS += wxT(" --core=\"") + CoreBin + wxT("\"");
+VirtualAGC/VirtualAGC.cpp:3546:          yaAGC += wxT(" --pads=\"") + CorePad + wxT("\" --listing=\"")
+VirtualAGC/VirtualAGC.cpp:3556:        yaAGC += wxT(" --resume=") + CMorLM + wxT(".core");
+VirtualAGC/VirtualAGC.cpp:3559:        yaAGC += wxT(" --resume=\"") + CoreFilename->GetValue() + wxT("\"");
+yaAGC/agc_cli.c:61:--core is somewhat confusing because in the old builds it represents the
+yaAGC/agc_cli.c:67:"\tyaAGC [options] exec-ropes-file [core-resume-file]\n\n"
+yaAGC/agc_cli.c:107:"--no-resume              Disables the resuming from a core-resume-file.\n"
+yaAGC/agc_cli.c:108:"                         By default yaAGC resumes from the \"core\" resume file or\n"
+yaAGC/agc_cli.c:180:	  Options.resume = (char*)0;
+yaAGC/agc_cli.c:197:	  Options.resumed = 0;
+yaAGC/agc_cli.c:201:	  Options.no_resume = 0;
+yaAGC/agc_cli.c:225:		/* If --core is used assume classic behavior is expected */
+yaAGC/agc_cli.c:234:	else if (!strncmp (token, "-resume=", 8))Options.resume = strdup(&token[8]);
+yaAGC/agc_cli.c:255:	else if (!strcmp (token, "-no-resume")) Options.no_resume = 1;
+yaAGC/agc_cli.c:257:	else if (Options.resume == (char*)0) Options.resume = strdup(token);
+EXIT=0

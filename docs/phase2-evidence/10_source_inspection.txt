@@ -1,0 +1,1367 @@
+
+=== Luminary099/MAIN.agc:20-40 ===
+20: # The contents of the "Luminary099" files, in general, are
+21: # transcribed from a digital images created from a hardcopy of the program
+22: # residing at the MIT Museum.  Many thanks to Debbie Douglas of the Museum,
+23: # and to Paul Fjeld (who made the images).
+24: #
+25: # Notations on this document read, in part:
+26: #
+27: #	ASSEMBLE REVISION 001 OF AGC PROGRAM LMY99 BY NASA 2021112-061
+28: #	16:27 JULY 14,1969
+29: #	[Note that this is the date the hardcopy was made, not the
+30: #	date of the program revision or the assembly.]
+31: #	...
+32: #	THIS LGC PROGRAM IS INTENDED FOR USE IN THE LM DURING THE MANNED
+33: #	LUNAR LANDING MISSION OR ANY SUBSET THEREOF.
+34: #	...
+35: #
+36: # The page images themselves, as reduced in size (and consequently in
+37: # quality) to be suitable for online presentation, are available at 
+38: # http://www.ibiblio.org/apollo.  If you want to see the (much) higher
+39: # quality digital images that Paul actually made, contact info@sandroi.org
+40: # directly.
+
+=== scenarios/LmQuickStart.txt:1-100 ===
+1: L			# For LM
+2: # This just duplicates a few of the CM "Quick Start" steps from 
+3: # http://www.ibiblio.org/apollo/index.html.  I'm not certain 
+4: # exactly what has to be done to put the AGC in a state in which
+5: # it's receptive, but doing a V35E from the true DSKY seems to 
+6: # do it.  However, if the AGC isn't in a receptive state, all of
+7: # these commands will really be goofed up.
+8: 
+9: # What the following line would do is to open up an X-window and
+10: # display a message.  (Of course, this wouldn't work in Microsoft
+11: # Windows, so that's why it's commented out.  Uncomment it if you
+12: # want to see it in action.) The same applies to the other lines 
+13: # below beginning with "#!". (You have to keep the ! when you remove
+14: # the #.)  A more typical thing to do here might be to play back an 
+15: # audio clip, but I didn't want to take the liberty of doing that!  
+16: # (Not to mention that I don't know what software is installed on 
+17: # your computer anyway.
+18: #!xmessage -timeout 3 -center "First, let's see any stored-up program alarms."
+19: 
+20: V05N09E			# Show program alarms
+21: "          "		# Delay 5 seconds.  Each space is 0.5 seconds.
+22: 			# The quotes are just to make it easy to see how
+23: 			# many spaces there are, but aren't necessary in
+24: 			# the syntax.  Everywhere else it looks like you
+25: 			# see spaces, they're really tabs, and tabs don't
+26: 			# trigger delays.
+27: 			
+28: #!xmessage -timeout 10 -center "Now let's cycle through a few memory-bank checksums."
+29: V91E			# Commence showing memory-bank checksums.
+30: "          "		# Delay 5 seconds.
+31: V33E			# Show next memory bank
+32: "          "		# Delay 5 seconds.
+33: V33E			# Show next memory bank
+34: "          "		# Delay 5 seconds.
+35: V33E			# Show next memory bank
+36: "          "		# Delay 5 seconds.
+37: V33E			# Show next memory bank.  I figure that's enough,
+38: 			# though there are really a lot more banks to go!
+39: "          "		# Delay 5 seconds.
+40: 
+41: #!xmessage -timeout 5 -center "Finally, let's monitor the elapsed time since power-up."
+42: V16N36E			# Commence showing time.
+43: "          "
+44: 
+45: 
+
+=== scenarios/CmQuickStart.txt:1-100 ===
+1: C			# For CM.# This just duplicates a few of the CM "Quick Start" steps from 
+2: # http://www.ibiblio.org/apollo/index.html.  I'm not certain 
+3: # exactly what has to be done to put the AGC in a state in which
+4: # it's receptive, but doing a V35E from the true DSKY seems to 
+5: # do it.  However, if the AGC isn't in a receptive state, all of
+6: # these commands will really be goofed up.
+7: #Z			# Clear any uplink errors.
+8: #"          "		# Delay 5 seconds
+9: V05N09E			# Show program alarms
+10: "          "		# Delay 5 seconds.  Each space is 0.5 seconds.
+11: 			# The quotes are just to make it easy to see how
+12: 			# many spaces there are, but aren't necessary in
+13: 			# the syntax.  Everywhere else it looks like you
+14: 			# see spaces, they're really tabs, and tabs don't
+15: 			# trigger delays.
+16: V91E			# Commence showing memory-bank checksums.
+17: "          "		# Delay 5 seconds.
+18: V33E			# Show next memory bank
+19: "          "		# Delay 5 seconds.
+20: V33E			# Show next memory bank
+21: "          "		# Delay 5 seconds.
+22: V33E			# Show next memory bank
+23: "          "		# Delay 5 seconds.
+24: V33E			# Show next memory bank.  I figure that's enough,
+25: 			# though there are really a lot more banks to go!
+26: "          "		# Delay 5 seconds.
+27: V16N36E			# Commence showing time.
+28: "          "
+29: 
+
+=== Contributed/LM_Simulator/lm_simulator.ini:1-100 ===
+1: # -------------------------------------
+2: # LM Simulator Config File / 18.04.2007
+3: # -------------------------------------
+4: 
+5: # ---- Simulation Initialization Parameter (LM 7) -----
+6: 
+7: # ---- LM Parameter ----
+8: LM_Weight_Ascent_KG           4670.0
+9: LM_Weight_Descent_KG          10694.0
+10: 
+11: # ---- Ascent Engine ----
+12: Ascent_Propellant_Mass_KG     2353.0
+13: Ascent_Thrust_N               15600.0
+14: Ascent_Specific_Impulse_MS    3050.0
+15: 
+16: # ---- Descent Engine ----
+17: Descent_Propellant_Mass_KG    8355.0
+18: Descent_Propulsion_Min_N      4560.0
+19: Descent_Propulsion_Max_N      45040.0
+20: Descent_Specific_Impulse_MS   3050.0
+21: 
+22: # ---- RCS Thruster ----
+23: RCS_Propellant_Mass_KG        287.0
+24: RCS_Thrust_N                  445.0
+25: RCS_Specific_Impulse_MS       2840.0
+26: 
+27: # ---- Used Oerating System: Linux or Windows (Please don't move this line!) ----
+28: Operating_System Linux 
+29: 
+30: # ---- Program Configuration Parameter ----
+31: ServerIP         localhost
+32: ServerSocket     19801
+33: dsky             on
+34: output           on
+35: system           off
+36: crew             on
+37: imu              on
+38: attitude         on
+39: 
+40: # ---- FDAI Updates/Second. If you experience performance problems then lower this value ----
+41: FDAI_Update_Rate 10
+
+=== yaAGC/agc_engine_init.c:110-130 ===
+110: rfopen (const char *Filename, const char *mode);
+111: 
+112: //---------------------------------------------------------------------------
+113: // Returns:
+114: //      0 -- success.
+115: //      1 -- ROM image file not found.
+116: //      2 -- ROM image file larger than core memory.
+117: //      3 -- ROM image file size is odd.
+118: //      4 -- agc_t structure not allocated.
+119: //      5 -- File-read error.
+120: //      6 -- Core-dump file not found.
+121: // Normally, on input the CoreDump filename is NULL, in which case all of the 
+122: // i/o channels, erasable memory, etc., are cleared to their reset values.
+123: // When the CoreDump is loaded instead, it allows execution to continue precisely
+124: // from the point at which the CoreDump was created, if AllOrErasable != 0.
+125: // If AllOrErasable == 0, then only the erasable memory is initialized from the
+126: // core-dump file.
+127: 
+128: int
+129: agc_load_binfile (agc_t *State, const char *RomImage)
+130: 
+
+=== yaAGC/agc_engine_init.c:245-325 ===
+245:   if (RomImage)
+246:     {
+247:       RetVal = agc_load_binfile (State, RomImage);
+248:       if (RetVal > 0)
+249: 	goto Done;
+250:     }
+251: 
+252:   // Clear i/o channels.
+253:   for (i = 0; i < NUM_CHANNELS; i++)
+254:     State->InputChannel[i] = 0;
+255:   State->InputChannel[030] = 037777;
+256:   State->InputChannel[031] = 077777;
+257:   State->InputChannel[032] = 077777;
+258:   State->InputChannel[033] = 077777;
+259: 
+260:   // Clear erasable memory.
+261:   for (Bank = 0; Bank < 8; Bank++)
+262:     for (j = 0; j < 0400; j++)
+263:       State->Erasable[Bank][j] = 0;
+264:   State->Erasable[0][RegZ] = 04000;	// Initial program counter.
+265: 
+266:   // Set up the CPU state variables that aren't part of normal memory.
+267:   State->CycleCounter = 0;
+268:   State->ExtraCode = 0;
+269:   State->AllowInterrupt = 1; // The GOJAM sequence enables interrupts
+270:   State->InterruptRequests[8] = 1;	// DOWNRUPT.
+271:   //State->RegA16 = 0;
+272:   State->PendFlag = 0;
+273:   State->PendDelay = 0;
+274:   State->ExtraDelay = 0;
+275:   //State->RegQ16 = 0;
+276: 
+277:   State->OutputChannel7 = 0;
+278:   for (j = 0; j < 16; j++)
+279:     State->OutputChannel10[j] = 0;
+280:   State->IndexValue = 0;
+281:   for (j = 0; j < 1 + NUM_INTERRUPT_TYPES; j++)
+282:     State->InterruptRequests[j] = 0;
+283:   State->InIsr = 0;
+284:   State->SubstituteInstruction = 0;
+285:   State->DownruptTimeValid = 1;
+286:   State->DownruptTime = 0;
+287:   State->Downlink = 0;
+288: 
+289:   State->NightWatchman = 0;
+290:   State->NightWatchmanTripped = 0;
+291:   State->RuptLock = 0;
+292:   State->NoRupt = 0;
+293:   State->TCTrap = 0;
+294:   State->NoTC = 0;
+295:   State->ParityFail = 0;
+296: 
+297:   State->WarningFilter = 0;
+298:   State->GeneratedWarning = 0;
+299: 
+300:   State->RestartLight = 0;
+301:   State->Standby = 0;
+302:   State->SbyPressed = 0;
+303:   State->SbyStillPressed = 0;
+304: 
+305:   State->NextZ = 0;
+306:   State->ScalerCounter = 0;
+307:   State->ChannelRoutineCount = 0;
+308: 
+309:   State->DskyTimer = 0;
+310:   State->DskyFlash = 0;
+311:   State->DskyChannel163 = 0;
+312: 
+313:   State->TookBZF = 0;
+314:   State->TookBZMF = 0;
+315: 
+316:   State->Trap31A = 0;
+317:   State->Trap31B = 0;
+318:   State->Trap32 = 0;
+319: 
+320:   State->RadarGateCounter = 0;
+321: 
+322:   if (initializeSunburst37)
+323:     {
+324:       State->Erasable[0][0067] = 077777;
+325:       State->Erasable[0][0157] = 077777;
+
+=== yaAGC/agc_engine_init.c:330-425 ===
+330:   if (CoreDump != NULL)
+331:     {
+332:       cd = fopen (CoreDump, "r");
+333:       if (cd == NULL)
+334: 	{
+335: 	  if (AllOrErasable)
+336: 	    RetVal = 6;
+337: 	  else
+338: 	    RetVal = 0;
+339: 	}
+340:       else
+341: 	{
+342: 	  RetVal = 5;
+343: 
+344: 	  // Load up the i/o channels.
+345: 	  for (i = 0; i < NUM_CHANNELS; i++)
+346: 	    {
+347: 	      if (1 != fscanf (cd, "%o", &j))
+348: 		goto Done;
+349: 	      if (AllOrErasable)
+350: 		State->InputChannel[i] = j;
+351: 	    }
+352: 
+353: 	  // Load up erasable memory.
+354: 	  for (Bank = 0; Bank < 8; Bank++)
+355: 	    for (j = 0; j < 0400; j++)
+356: 	      {
+357: 		if (1 != fscanf (cd, "%o", &i))
+358: 		  goto Done;
+359: 		if (AllOrErasable || Bank > 0 || j >= 010)
+360: 		  State->Erasable[Bank][j] = i;
+361: 	      }
+362: 
+363: 	  if (AllOrErasable)
+364: 	    {
+365: 	      // Set up the CPU state variables that aren't part of normal memory.
+366: 	      if (1 != fscanf (cd, "%o", &i))
+367: 		goto Done;
+368: 	      State->CycleCounter = i;
+369: 	      if (1 != fscanf (cd, "%o", &i))
+370: 		goto Done;
+371: 	      State->ExtraCode = i;
+372: 	      // I've seen no indication so far of a reset value for interrupt-enable. 
+373: 	      if (1 != fscanf (cd, "%o", &i))
+374: 		goto Done;
+375: 	      State->AllowInterrupt = i;
+376: 	      //if (1 != fscanf (cd, "%o", &i))
+377: 	      //  goto Done;
+378: 	      //State->RegA16 = i;
+379: 	      if (1 != fscanf (cd, "%o", &i))
+380: 		goto Done;
+381: 	      State->PendFlag = i;
+382: 	      if (1 != fscanf (cd, "%o", &i))
+383: 		goto Done;
+384: 	      State->PendDelay = i;
+385: 	      if (1 != fscanf (cd, "%o", &i))
+386: 		goto Done;
+387: 	      State->ExtraDelay = i;
+388: 	      //if (1 != fscanf (cd, "%o", &i))
+389: 	      //  goto Done;
+390: 	      //State->RegQ16 = i;
+391: 	      if (1 != fscanf (cd, "%o", &i))
+392: 		goto Done;
+393: 	      State->OutputChannel7 = i;
+394: 	      for (j = 0; j < 16; j++)
+395: 		{
+396: 		  if (1 != fscanf (cd, "%o", &i))
+397: 		    goto Done;
+398: 		  State->OutputChannel10[j] = i;
+399: 		}
+400: 	      if (1 != fscanf (cd, "%o", &i))
+401: 		goto Done;
+402: 	      State->IndexValue = i;
+403: 	      for (j = 0; j < 1 + NUM_INTERRUPT_TYPES; j++)
+404: 		{
+405: 		  if (1 != fscanf (cd, "%o", &i))
+406: 		    goto Done;
+407: 		  State->InterruptRequests[j] = i;
+408: 		}
+409: 	      // Override the above and make DOWNRUPT always enabled at start.
+410: 	      State->InterruptRequests[8] = 1;
+411: 	      if (1 != fscanf (cd, "%o", &i))
+412: 		goto Done;
+413: 	      State->InIsr = i;
+414: 	      if (1 != fscanf (cd, "%o", &i))
+415: 		goto Done;
+416: 	      State->SubstituteInstruction = i;
+417: 	      if (1 != fscanf (cd, "%o", &i))
+418: 		goto Done;
+419: 	      State->DownruptTimeValid = i;
+420: 	      if (1 != fscanf (cd, "%llo", &lli))
+421: 		goto Done;
+422: 	      State->DownruptTime = lli;
+423: 	      if (1 != fscanf (cd, "%o", &i))
+424: 		goto Done;
+425: 	      State->Downlink = i;
+
+=== yaAGC/agc_engine_init.c:441-495 ===
+441: MakeCoreDump (agc_t * State, const char *CoreDump)
+442: {
+443: #if defined (WIN32) || defined (__APPLE__)  
+444:   uint64_t lli;
+445: #else
+446:   unsigned long long lli;
+447: #endif  
+448:   FILE *cd = NULL;
+449:   int i, j, Bank;
+450:   extern int DebugMode;
+451: 
+452:   cd = fopen (CoreDump, "w");
+453:   if (cd == NULL)
+454:     {
+455:       printf ("Could not create the core-dump file.\n");
+456:       return;
+457:     }
+458: 
+459:   // Write out the i/o channels.
+460:   for (i = 0; i < NUM_CHANNELS; i++)
+461:     fprintf (cd, "%06o\n", State->InputChannel[i]);
+462: 
+463:   // Write out the erasable memory.
+464:   for (Bank = 0; Bank < 8; Bank++)
+465:     for (j = 0; j < 0400; j++)
+466:       fprintf (cd, "%06o\n", State->Erasable[Bank][j]);
+467: 
+468:   // Write out CPU state variables that aren't part of normal memory.
+469:   fprintf (cd, FORMAT_64O "\n", State->CycleCounter);
+470:   fprintf (cd, "%o\n", State->ExtraCode);
+471:   fprintf (cd, "%o\n", State->AllowInterrupt);
+472:   //fprintf (cd, "%o\n", State->RegA16);
+473:   fprintf (cd, "%o\n", State->PendFlag);
+474:   fprintf (cd, "%o\n", State->PendDelay);
+475:   fprintf (cd, "%o\n", State->ExtraDelay);
+476:   //fprintf (cd, "%o\n", State->RegQ16);
+477: 
+478:   // 03/27/09 RSB.  Extra agc_t fields that weren't being saved before
+479:   // now.  I've made no analysis to determine that all of these are 
+480:   // actually needed for anything.
+481:   fprintf (cd, "%o\n", State->OutputChannel7);
+482:   for (i = 0; i < 16; i++)
+483:     fprintf (cd, "%o\n", State->OutputChannel10[i]);
+484:   fprintf (cd, "%o\n", State->IndexValue);
+485:   for (i = 0; i < 1 + NUM_INTERRUPT_TYPES; i++)
+486:     fprintf (cd, "%o\n", State->InterruptRequests[i]);
+487:   fprintf (cd, "%o\n", State->InIsr);
+488:   fprintf (cd, "%o\n", State->SubstituteInstruction);
+489:   fprintf (cd, "%o\n", State->DownruptTimeValid);
+490:   fprintf (cd, "%llo\n", lli = State->DownruptTime);
+491:   fprintf (cd, "%o\n", State->Downlink);
+492: 
+493:   if (!DebugMode)
+494:     printf ("Core-dump file \"%s\" created.\n", CoreDump);
+495:   fclose (cd);
+
+=== yaAGC/agc_cli.c:90-120 ===
+90: "                         to the DEDA.  In other words, lets yaAGC parse the\n"
+91: "                         messages being received from the DEDA, but never to\n"
+92: "                         send any.  That lets \"yaAGC --debug-deda --deda-quiet\"\n"
+93: "                         to be used alongside yaAGS without conflict.\n"
+94: "--inhibit-alarms         Prevents the simulated hardware alarms (Night Watchman\n"
+95: "                         Rupt Lock, and TC Trap) from causing resets.\n"
+96: "--show-alarms            Prints notifications upon hardware alarm (Night Watchman\n"
+97: "                         Rupt Lock, and TC Trap).\n"
+98: "--cfg=file               The name of a configuration file.  Presently, the\n"
+99: "                         configuration files is used only for --debug-dsky\n"
+100: "                         mode.  It would typically be the same configuration\n"
+101: "                         file as used for yaDSKY.\n\n"
+102: "--initialize-sunburst-37 Makes some initializations to erasable memory needed\n"
+103: "                         for a first-time run of SUNBURST 37 (SHEPATIN 0) having\n"
+104: "                         otherwise clean memory, in lieu of pad-loads.  Not\n"
+105: "                         required for subsequent runs.  Note that this option only\n"
+106: "                         has an effect if there is no existing core-dump file.\n"
+107: "--no-resume              Disables the resuming from a core-resume-file.\n"
+108: "                         By default yaAGC resumes from the \"core\" resume file or\n"
+109: "                         another file provided as a command line argument.\n"
+110: "Note that the exec-ropes file should contain exactly 36 banks\n"
+111: "(36x1024=36864 words, or 73728 bytes). Other sizes may be accepted,\n"
+112: "but it is unclear what (if any) utility such core-rope images\n"
+113: "would have. (In particular, if the core-rope\n"
+114: "is supposed to be for actual Luminary or Colossus software, then\n"
+115: "the checksums of the missing memory banks would be incorrect, and\n"
+116: "so the built-in self-test would fail.)\n\n");
+117: }
+118: 
+119: extern FILE *rfopen (const char *Filename, const char *mode);
+120: 
+
+=== yaAGC/SocketAPI.c:210-275 ===
+210: 	      {
+211: 		int uBit, Type, Data;
+212: 		//printf ("Received from %d: %02X %02X %02X %02X\n",
+213: 		//	i, Client->Packet[0], Client->Packet[1],
+214: 		//	Client->Packet[2], Client->Packet[3]);
+215: 		if (!ParseIoPacket (Client->Packet, &Channel, &Value, &uBit))
+216: 		  {
+217: 		    // Convert to AGC format (upper 15 bits).
+218: 		    Value &= 077777;
+219: 		    if (uBit)
+220: 		      {
+221: 			Client->ChannelMasks[Channel] = Value;
+222: 		      }
+223: 		    else if (Channel & 0x80)
+224: 		      {
+225: 		        // In this case we're dealing with a counter increment.
+226: 			// So increment the counter.
+227: 			//printf ("Channel=%02o Int=%o\n", Channel, Value);
+228: 			UnprogrammedIncrement (State, Channel, Value);
+229: 			Client->Size = 0;
+230: 			return (1);
+231: 		      }
+232: 		    else
+233: 		      {
+234: 			Value &= Client->ChannelMasks[Channel];
+235: 			Value |=
+236: 			  ReadIO (State,
+237: 				  Channel) & ~Client->ChannelMasks[Channel];
+238: 			WriteIO (State, Channel, Value);
+239: 			// If this is a keystroke from the DSKY, generate an interrupt req.
+240: 			if (Channel == 015)
+241: 			  State->InterruptRequests[5] = 1;
+242: 			// If this is on fictitious input channel 0173, then the data
+243: 			// should be placed in the INLINK counter register, and an
+244: 			// UPRUPT interrupt request should be set.
+245: 			else if (Channel == 0173)
+246: 			  {
+247: 			    State->Erasable[0][RegINLINK] = (Value & 077777);
+248: 			    State->InterruptRequests[7] = 1;
+249: 			  }
+250: 			// Fictitious registers for rotational hand controller (RHC).
+251: 			// Note that the RHC angles are not immediately used, but
+252: 			// merely squirreled away for later.  They won't actually
+253: 			// go into the counter registers until the RHC counters are
+254: 			// enabled and the data requested (bits 8,9 of channel 13).
+255: 			else if (Channel == 0166)
+256: 			  {
+257: 			    LastRhcPitch = Value;
+258: 			    ChannelOutput (State, Channel, Value);	// echo
+259: 			  }
+260: 			else if (Channel == 0167)
+261: 			  {
+262: 			    LastRhcYaw = Value;
+263: 			    ChannelOutput (State, Channel, Value);	// echo
+264: 			  }
+265: 			else if (Channel == 0170)
+266: 			  {
+267: 			    LastRhcRoll = Value;
+268: 			    ChannelOutput (State, Channel, Value);	// echo
+269: 			  }
+270: 			//---------------------------------------------------------------
+271: 			// For --debug-dsky mode.
+272: 			if (DebugDsky)
+273: 			  {
+274: 			    if (Channel == 032)
+275: 			      {
+
+=== yaAGC/SocketAPI.c:505-520 ===
+505:     send (Client->Socket, (const char *) Packet, 4, MSG_NOSIGNAL);
+506: }
+507: 
+508: //----------------------------------------------------------------------
+509: // This function is provided as a stub for integrators of yaAGC into
+510: // more complete simulations. It is expected to populate the counter
+511: // RNRAD with radar data.
+512: void
+513: RequestRadarData (agc_t *State)
+514: {
+515:     // State->Erasable[0][RegRNRAD] = 012345;
+516: }
+
+=== yaAGC/agc_engine.c:1565-1622 ===
+1565: //----------------------------------------------------------------------------
+1566: // This function is used to update the counter registers on the basis of 
+1567: // commands received from the outside world.
+1568: 
+1569: void
+1570: UnprogrammedIncrement (agc_t *State, int Counter, int IncType)
+1571: {
+1572:   int16_t *Ch;
+1573:   int Overflow = 0;
+1574:   Counter &= 0x7f;
+1575:   Ch = &State->Erasable[0][Counter];
+1576:   if (CoverageCounts)
+1577:     ErasableWriteCounts[0][Counter]++;
+1578:   switch (IncType)
+1579:     {
+1580:     case 0:
+1581:       //TrapPIPA = (Counter >= 037 && Counter <= 041);
+1582:       Overflow = CounterPINC (Ch);
+1583:       break;
+1584:     case 1:
+1585:     case 021:
+1586:       // For the CDUX,Y,Z counters, push the command into a FIFO.
+1587:       if (Counter >= FIRST_CDU && Counter < FIRST_CDU + NUM_CDU_FIFOS)
+1588: 	PushCduFifo (State, Counter, IncType);
+1589:       else
+1590: 	Overflow = CounterPCDU (Ch);
+1591:       break;
+1592:     case 2:
+1593:       //TrapPIPA = (Counter >= 037 && Counter <= 041);
+1594:       Overflow = CounterMINC (Ch);
+1595:       break;
+1596:     case 3:
+1597:     case 023:
+1598:       // For the CDUX,Y,Z counters, push the command into a FIFO.
+1599:       if (Counter >= FIRST_CDU && Counter < FIRST_CDU + NUM_CDU_FIFOS)
+1600: 	PushCduFifo (State, Counter, IncType);
+1601:       else
+1602: 	Overflow = CounterMCDU (Ch);
+1603:       break;
+1604:     case 4:
+1605:       Overflow = CounterDINC (State, Counter, Ch);
+1606:       break;
+1607:     case 5:
+1608:       Overflow = CounterSHINC (Ch);
+1609:       break;
+1610:     case 6:
+1611:       Overflow = CounterSHANC (Ch);
+1612:       break;
+1613:     default:
+1614:       break;
+1615:     }
+1616:   if (Overflow)
+1617:     {
+1618:       // On some counters, overflow is supposed to cause
+1619:       // an interrupt.  Take care of setting the interrupt request here.
+1620: 
+1621:     }
+1622:   TrapPIPA = 0;
+
+=== yaAGC/agc_engine.c:2160-2185 ===
+2160: 	        {
+2161: 	          State->ExtraDelay++;
+2162: 	          CounterPINC (&c(RegTIME2));
+2163: 	        }
+2164: 	      State->ExtraDelay++;
+2165: 	      if (CounterPINC (&c(RegTIME3)))
+2166: 	        State->InterruptRequests[3] = 1;
+2167: 	    }
+2168:           // TIME5 is the same as TIME3, but 5 ms. out of phase.
+2169:           if (000 == (037 & State->InputChannel[ChanSCALER1]))
+2170: 	    {
+2171: 	      State->ExtraDelay++;
+2172: 	      if (CounterPINC (&c(RegTIME5)))
+2173: 	        State->InterruptRequests[2] = 1;
+2174: 
+2175:               // Synchronously with TIME5, if radar activity is enabled,
+2176:               // increment the radar gate counter.
+2177:               if (State->InputChannel[013] & 010)
+2178:                 State->RadarGateCounter++;
+2179: 	    }
+2180:           // TIME4 is the same as TIME3, but 7.5ms out of phase
+2181:           if (010 == (037 & State->InputChannel[ChanSCALER1]))
+2182: 	    {
+2183: 	      State->ExtraDelay++;
+2184: 	      if (CounterPINC (&c(RegTIME4)))
+2185: 	        State->InterruptRequests[4] = 1;
+
+=== yaAGC/agc_engine.c:2220-2240 ===
+2220:           // Similarly, check for radar cycle completion. As with HANDRUPT, the
+2221:           // timing here is slightly off (early by ~13 MCT), but this should
+2222:           // not be enough to matter.
+2223:           if ((State->RadarGateCounter == 9) && (036 == (037 & State->InputChannel[ChanSCALER1])))
+2224:             {
+2225:               // Completion of a radar cycle triggers the following actions:
+2226:               // 1. The radar gate counter is set back to 0.
+2227:               // 2. The radar activity bit (bit 4 of channel 13) is reset.
+2228:               // 3. Data from the radar is shifted into the RNRAD counter
+2229:               //    (this is expected to be performed by RequestRadarData().
+2230:               // 4. RADARUPT is set pending.
+2231:               State->RadarGateCounter = 0;
+2232:               State->InputChannel[013] &= ~010;
+2233:               RequestRadarData(State);
+2234:               State->InterruptRequests[9] = 1; // RADARUPT
+2235:             }
+2236:         }
+2237: 
+2238: 
+2239:       // If we triggered any alarms, simulate a GOJAM
+2240:       if (TriggeredAlarm || State->ParityFail)
+
+=== Luminary099/ERASABLE_ASSIGNMENTS.agc:135-155 ===
+135: PIPAY		EQUALS	40
+136: PIPAZ		EQUALS	41
+137: Q-RHCCTR	EQUALS	42		# RHC COUNTER REGISTERS
+138: P-RHCCTR	EQUALS	43
+139: R-RHCCTR	EQUALS	44
+140: INLINK		EQUALS	45
+141: RNRAD		EQUALS	46
+142: GYROCMD		EQUALS	47
+143: CDUXCMD		EQUALS	50
+144: CDUYCMD		EQUALS	51
+145: CDUZCMD		EQUALS	52
+146: CDUTCMD		EQUALS	53		# RADAR TRUNNION COMMAND
+147: CDUSCMD		EQUALS	54		# RADAR SHAFT COMMAND
+148: ## Page 93
+149: THRUST		EQUALS	55
+150: LEMONM		EQUALS	56
+151: OUTLINK		EQUALS	57
+152: ALTM		EQUALS	60
+153: 
+154: # INTERPRETIVE REGISTERS ADDRESSED RELATIVE TO VAC AREA.
+155: 
+
+=== Luminary099/ERASABLE_ASSIGNMENTS.agc:920-955 ===
+920: VCV		EQUALS	RCV 	+6	# B(6)
+921: TC		EQUALS	VCV 	+6	# B(2)
+922: XKEP		EQUALS	TC 	+2	# B(2)
+923: 
+924: # PERMANENT STATE VECTORS AND TIMES.	(99D)
+925: 
+926: # (DO NOT OVERLAY WITH ANYTHING AFTER BOOST)
+927: 
+928: # (RRECTCSM...XKEPCSM MUST BE KEPT IN THIS ORDER)
+929: 
+930: RRECTCSM	ERASE	+5		# B(6)PRM CSM VARIABLES.
+931: RRECTOTH	=	RRECTCSM
+932: VRECTCSM	ERASE	+5		# B(6)PRM
+933: ## Page 111
+934: TETCSM		ERASE	+1		# B(2)PRM
+935: TETOTHER	=	TETCSM
+936: DELTACSM	ERASE	+5		# B(6)PRM
+937: NUVCSM		ERASE	+5		# B(6)PRM
+938: RCVCSM		ERASE	+5		# B(6)PRM
+939: VCVCSM		ERASE	+5		# B(6)PRM
+940: TCCSM		ERASE	+1		# B(2)PRM
+941: XKEPCSM		ERASE	+1		# B(2)PRM
+942: 
+943: # (RRECTLEM...XKEPLEM MUST BE KEPT IN THIS ORDER)
+944: 
+945: RRECTLEM	ERASE	+5		# B(6)PRM LEM VARIABLES
+946: RRECTHIS	=	RRECTLEM
+947: VRECTLEM	ERASE	+5		# B(6)PRM
+948: TETLEM		ERASE	+1		# B(2)PRM
+949: TETTHIS		=	TETLEM
+950: DELTALEM	ERASE	+5		# B(6)PRM
+951: NUVLEM		ERASE	+5		# B(6)PRM
+952: RCVLEM		ERASE	+5		# B(6)PRM
+953: VCVLEM		ERASE	+5		# B(6)PRM
+954: TCLEM		ERASE	+1		# B(2)PRM
+955: XKEPLEM		ERASE	+1		# B(2)PRM
+
+=== Luminary099/THROTTLE_CONTROL_ROUTINES.agc:100-145 ===
+100: LOWFCOLD	CS	H*GHCR*T
+101: 		AD	FCODD
+102: 		EXTEND
+103: 		BZMF	DOPIF		# BRANCH IF FC < OR = HIGHCRIT
+104: 
+105: 		CA	FMAXPOS		# NO:  THROTTLE-UP
+106: FLATOUT1	DXCH	FCODD
+107: 		CA	FEXTRA
+108: FLATOUT2	TS	PIFPSET
+109: 
+110: # NOTE 1	FC IS SET EQUAL TO FP SO PIF WILL BE ZERO.  THIS IS DESIRABLE
+111: #		AS THERE IS ACTUALLY NO THROTTLE CHANGE.
+112: #
+113: # NOTE2		HERE, SINCE WE ARE ABOUT TO RETURN TO THE THROTTLEABLE REGION
+114: #		(BELOW 55%) THE QUANTITY -(FMAXODD-FP) IS COMPUTED AND PUT
+115: #		INTO PIFPSET TO COMPENSATE FOR THE DIFFERENCE BETWEEN THE
+116: #		NUMBER OF BITS CORRESPONDING TO FULL THROTTLE (FMAXODD) AND THE
+117: #		NUMBER CORRESPONDING TO ACTUAL THRUST (FP).  THUS THE TOTAL
+118: #		THROTTLE COMMAND PIF = FC - FP - (FMAXODD - FP) = FC - FMAXODD.
+119: 
+120: DOPIF		TC	FASTCHNG
+121: 		EXTEND
+122: 		DCA	FCODD
+123: 		TS	FCOLD
+124: 		DXCH	PIF
+125: 		EXTEND
+126: ## Page 795
+127: 		DCS	FP
+128: 		DAS	PIF		# PIF = FC - FP, NEVER EQUALS +0
+129: 
+130: DOIT		CA	PIF
+131: 		AD	PIFPSET		# ADD IN PIFPSET, WITHOUT CHANGING PIF
+132: 		TS	PSEUDO55
+133: 		TS	THRUST
+134: 		CAF	BIT4
+135: 		EXTEND
+136: 		WOR	CHAN14
+137: 		CA	TIME1
+138: 		TS	TTHROT
+139: 
+140: # SINCE /AF/ IS NOT AN INSTANTANEOUS ACCELERATION, BUT RATHER AN "AVERAGE" OF THE ACCELERATION LEVELS DURING
+141: # THE PRECEEDING PIPA INTERVAL, AND SINCE FP IS COMPUTED DIRECTLY FROM /AF/, FP IN ORDER TO CORRESPOND TO THE
+142: # ACTUAL THRUST LEVEL AT THE END OF THE INTERVAL MUST BE WEIGHTED BY
+143: #
+144: # 	          PIF(PPROCESS + TL)     PIF /PIF/
+145: #	FWEIGHT = ------------------ + -------------
+
+=== Luminary099/P20-P25.agc:2733-2890 ===
+2733: ## Page 553
+2734: # RADAR READ INITIALIZATION
+2735: #
+2736: # RADAR DATA ARE READ BY A BANKCALL FOR THE APPROPRIATE LEAD-IN BELOW.
+2737: 
+2738: LRALT		TC	INITREAD -1	# ONE SAMPLE PER READING.
+2739: ALLREAD		OCT	17
+2740: 
+2741: LRVELZ		TC	INITREAD
+2742: 		OCT	16
+2743: 		
+2744: LRVELY		TC	INITREAD
+2745: 		OCT	15
+2746: 		
+2747: LRVELX		TC	INITREAD
+2748: 		OCT	14
+2749: 		
+2750: RRRDOT		TC	INITREAD -1
+2751: 		OCT	12
+2752: 		
+2753: RRRANGE		TC	INITREAD -1
+2754: 		OCT	11
+2755: 		
+2756: # LRVEL IS THE ENTRY TO THE LR VELOCITY READ ROUTINE WHEN 5 SAMPLES ARE
+2757: # WANTED.  ENTER WITH C(A)= 0,2,4 FOR LRVELZ,LRVELY,LRVELX RESP.
+2758: 
+2759: LRVEL		TS	TIMEHOLD	# STORE VBEAM INDEX HERE MOMEMTARILY
+2760: 		CAF	FIVE		# SPECIFY FIVE SAMPLES
+2761: 		INDEX	TIMEHOLD
+2762: 		TCF	LRVELZ
+2763: 		
+2764: ## Page 554
+2765:  -1		CAF	ONE		# ENTRY TO TAKE ONLY 1 SAMPLE.
+2766: INITREAD	INHINT
+2767: 
+2768: 		TS	TIMEHOLD	# GET DT OF MIDPOINT OF NOMINAL SAMPLING
+2769: 		EXTEND			# INTERVAL (ASSUMES NO BAD SAMPLES WILL BE
+2770: 		MP	BIT3		# ENCOUNTERED).
+2771: 		DXCH	TIMEHOLD
+2772: 		
+2773: 		CCS	A
+2774: 		TS	NSAMP
+2775: 		AD	ONE
+2776: # INSERT FOLLOWING INSTRUCTION TO GET 2N TRIES FOR N SAMPLES.
+2777: #		DOUBLE
+2778: 		TS	SAMPLIM
+2779: 		
+2780: 		CAF	DGBITS		# READ CURRENT VALUE OF DATA GOOD BITS.
+2781: 		EXTEND
+2782: 		RAND	CHAN33
+2783: 		TS	OLDATAGD
+2784: 		
+2785: 		CS	ALLREAD
+2786: 		EXTEND
+2787: 		WAND	CHAN13		# REMOVE ALL RADAR BITS
+2788: 		
+2789: 		INDEX	Q
+2790: 		CAF	0
+2791: 		EXTEND
+2792: 		WOR	CHAN13		# SET NEW RADAR BITS
+2793: 		
+2794: 		EXTEND
+2795: 		DCA	TIME2
+2796: 		DAS	TIMEHOLD	# TIME OF NOMINAL MIDPOINT.
+2797: 		
+2798: 		CAF	ZERO
+2799: 		TS	L
+2800: 		DXCH	SAMPLSUM
+2801: 		TCF	ROADBACK
+2802: 		
+2803: DGBITS		OCT	230
+2804: 
+2805: ## Page 555
+2806: # RADAR RUPT READER
+2807: #
+2808: # THIS ROUTINE STARTS FROM A RADARUPT.  IT READS THE DATA $ LOTS MORE.
+2809: 
+2810: 		SETLOC	RADARUPT
+2811: 		BANK
+2812: 		
+2813: 		COUNT*	$$/RRUPT
+2814: RADAREAD	EXTEND			# MUST SAVE SBANK BECAUSE OF RUPT EXITS
+2815: 		ROR	SUPERBNK	# VIA TASKOVER (BADEND OR GOODEND.
+2816: 		TS	BANKRUPT
+2817: 		EXTEND
+2818: 		QXCH	QRUPT
+2819: 		
+2820: 		CAF	SEVEN
+2821: 		EXTEND
+2822: 		RAND	CHAN13
+2823: 		TS	DNINDEX
+2824: 		EXTEND			# IF RADAR SELECT BITS ZERO, DO NOT STORE
+2825: 		BZF	TRYCOUNT	# DATA FOR DOWNLIST (ERASABLE PROBLEMS)
+2826: 		CA	RNRAD
+2827: 		INDEX	DNINDEX
+2828: 		TS	DNRRANGE -1
+2829: TRYCOUNT	CCS	SAMPLIM
+2830: 		TCF	PLENTY
+2831: 		TCF	NOMORE
+2832: 		TC	ALARM
+2833: 		OCT	520
+2834: 		TC	RESUME
+2835: 		
+2836: NOMORE		CA	FLGWRD11	# IS LRBYPASS SET?
+2837: 		MASK	LRBYBIT
+2838: 		EXTEND
+2839: 		BZF	BADRAD		# NO.  R12 IS ON -- BYPASS 521 ALARM.
+2840: 		
+2841: 		CS	FLAGWRD3	# CHECK R04FLAG.
+2842: 		MASK	R04FLBIT	# IF 1, R04 IS RUNNING.  DO NOT ALARM-
+2843: 		EXTEND
+2844: 		BZF	BADRAD
+2845: 		
+2846: 		TC	ALARM		# P20 WANTS THE ALARM.
+2847: 		OCT	521
+2848: BADRAD		CS	ONE
+2849: 		TS	SAMPLIM
+2850: 		TC	RDBADEND -2
+2851: PLENTY		TS	SAMPLIM
+2852: 		CAF	BIT3
+2853: 		EXTEND
+2854: 		RAND	CHAN13		# TO FIND OUT WHICH RADAR
+2855: 		EXTEND
+2856: ## Page 556
+2857: 		BZF	RENDRAD
+2858: 		
+2859: 		TC	R77CHECK	# R77 QUITS HERE.
+2860: LRPOSCHK	CA	RADMODES	# SEE IF LR IN DESIRED POSITION.
+2861: 		EXTEND
+2862: 		RXOR	CHAN33
+2863: 		MASK	BIT6
+2864: 		EXTEND
+2865: 		BZF	VELCHK
+2866: 		
+2867: 		TC	ALARM
+2868: 		OCT	522
+2869: 		TC	BADRAD
+2870: 		
+2871: VELCHK		CAF	BIN3		# = 00003 OCT
+2872: 		EXTEND
+2873: 		RXOR	CHAN13		# RESET ACTIVITY BIT
+2874: 		MASK	BIN3
+2875: 		EXTEND
+2876: 		BZF	LRHEIGHT	# TAKE A LR RANGE READING
+2877: 		
+2878: 		CAF	POSMAX
+2879: 		MASK	RNRAD
+2880: 		AD	LVELBIAS
+2881: 		TS	L
+2882: 		CAE	RNRAD
+2883: 		DOUBLE
+2884: 		MASK	BIT1
+2885: 		DXCH	ITEMP3
+2886: 		
+2887: 		CAF	BIT8		# DATA GOOD ISNT CHECKED UNTIL AFTER READ-
+2888: 		TC	DGCHECK		# ING DATA SO SOME RADAR TESTS WILL WORK
+2889: 					# INDEPENDENT OF DATA GOOD.
+2890: 					
+
+=== Luminary099/P20-P25.agc:3083-3127 ===
+3083: 		RAND	CHAN33		# SEE IF ALREADY THERE.
+3084: 		EXTEND
+3085: 		BZF	RADNOOP
+3086: 		
+3087: 		CAF	BIT13
+3088: 		EXTEND
+3089: 		WOR	CHAN12		# COMMAND TO POSITION 2
+3090: 		CAF	6SECS		# START SCANNING FOR INBIT AFTER 7 SECS.
+3091: 		TC	WAITLIST
+3092: 		EBANK=	LOSCOUNT
+3093: 		2CADR	LRPOSCAN
+3094: 		
+3095: 		TC	ROADBACK
+3096: 		
+3097: LRPOSNXT	TS	SAMPLIM
+3098: 		TC	FIXDELAY	# SCAN ONCE PER SECOND 15 TIMES MAX AFTER
+3099: 		DEC	100		# INITIAL DELAY OF 7 SECONDS.
+3100: 		
+3101: 		CAF	BIT7		# SEE IF LR POS2 IS ON
+3102: 		EXTEND
+3103: 		RAND	CHAN33
+3104: 		EXTEND
+3105: 		BZF	LASTLRDT	# IF THERE, WAIT FINAL SECOND FOR BOUNCE.
+3106: 		
+3107: 		CCS	SAMPLIM		# SEE IF MAX TIME UP.
+3108: 		TCF	LRPOSNXT
+3109: 		
+3110: 		CS	BIT13		# IF TIME UP, DISABLE COMMAND AND ALARM.
+3111: 		EXTEND
+3112: 		WAND	CHAN12
+3113: 		TCF	RDBADEND
+3114: 		
+3115: RADNOOP		CAF	ONE		# NO FURTHER ACTION REQUESTED.
+3116: 		TC	WAITLIST
+3117: 		EBANK=	LOSCOUNT
+3118: 		2CADR	RGOODEND
+3119: ## Page 562
+3120: 		TC	ROADBACK
+3121: 
+3122: LASTLRDT	CA	2SECS		# WAIT TWO SECONDS AFTER RECEIPT OF INBIT
+3123: 		TC	VARDELAY	# TO WAIT FOR ANTENNA BOUNCE TO DIE OUT.
+3124: 		
+3125: 		CS	BIT13		# REMOVE COMMAND
+3126: 		EXTEND
+3127: 		WAND	CHAN12
+
+=== Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl:145-210 ===
+145: }
+146: 
+147: 
+148: # ********************************************************************************************
+149: # **** Function: Dynamic Simulation Model                                                 ****
+150: # ********************************************************************************************
+151: proc dynamic_simulation {} {
+152:  global LM_Weight_KG Descent_Propulsion_Max_N Descent_Propulsion_Min_N LM_CONFIG a b c
+153:  global Descent_Propellant_Mass_KG Propellant_Flow_Max_KGS Descent_Thrust_Procent
+154:  global Descent_Acceleration DESCENT_ENGINE_FLAG Descent_Propulsion_N
+155:  global Descent_Specific_Impulse_MS Descent_Fuel_Flow_SEC RCS_Propellant_Mass_KG
+156:  global Omega_Roll Omega_Pitch Omega_Yaw
+157:  global LM_Weight_Descent_KG LM_Weight_Ascent_KG Ascent_Propellant_Mass_KG 
+158:  global Ascent_Fuel_Flow_SEC Ascent_Acceleration ASCENT_ENGINE_FLAG Ascent_Thrust_N
+159:  global Ascent_Specific_Impulse_MS Delta_Time Delta_Time2
+160:  global Alpha_Yaw Alpha_Pitch Alpha_Roll RAD_TO_DEG_PI4
+161:  global Delta_Time2 ASCENT_SEPARATION
+162: 
+163:  # -------------------------- Main Engine Simulation ----------------------------------
+164:  set LM_Weight_KG [expr $LM_Weight_Ascent_KG + $LM_Weight_Descent_KG]
+165:  catch {set Descent_Propulsion_N [.att.p1_s1 get]}
+166:  set Descent_Thrust_Procent [expr $Descent_Propulsion_N / $Descent_Propulsion_Max_N]
+167: 
+168:  catch {.att.p1_l2 configure -text [format "%10.1f SEC" $Simulation_Timer]}
+169:  catch {.att.p1_l4 configure -text [format "%5.1f " [expr 100 * $Descent_Thrust_Procent]]%}
+170:  catch {.att.p1_l6 configure -text [format "%5.0f KG" $LM_Weight_KG]}
+171:  catch {.att.p1_l8 configure -text [format "%5.0f KG" $Descent_Propellant_Mass_KG]}
+172:  catch {.att.p1_l10 configure -text [format "%5.2f KG/S" $Descent_Fuel_Flow_SEC]}
+173:  catch {.att.p1_l12 configure -text [format "%5.3f M/S*S" $Descent_Acceleration]}
+174:  catch {.att.p1_l16 configure -text [format "%5.1f KG" $RCS_Propellant_Mass_KG]}
+175:  catch {.att.p1_l24 configure -text [format "%5.0f KG" $Ascent_Propellant_Mass_KG]}
+176:  catch {.att.p1_l26 configure -text [format "%5.1f KG" $Ascent_Fuel_Flow_SEC]}
+177:  catch {.att.p1_l28 configure -text [format "%5.3f M/S*S" $Ascent_Acceleration]}
+178: 
+179:  if {$DESCENT_ENGINE_FLAG == 1 && $Descent_Propellant_Mass_KG > 0} {
+180:    set Descent_Fuel_Flow_SEC [expr $Descent_Propulsion_N / $Descent_Specific_Impulse_MS]
+181:    set Descent_Fuel_Flow [expr $Descent_Fuel_Flow_SEC * $Delta_Time2]
+182:    set Descent_Propellant_Mass_KG [expr $Descent_Propellant_Mass_KG - $Descent_Fuel_Flow]
+183:    set LM_Weight_Descent_KG [expr $LM_Weight_Descent_KG - $Descent_Fuel_Flow]
+184:    set Descent_Acceleration [expr $Descent_Propulsion_N / $LM_Weight_KG]
+185:    set yawDeltaV [expr $Descent_Acceleration * $Delta_Time2]
+186:    modify_pipaXYZ $yawDeltaV 0.0 0.0
+187:  } else {
+188:    set DESCENT_ENGINE_FLAG 0
+189:    set Descent_Acceleration 0
+190:    set Descent_Fuel_Flow_SEC 0
+191:  }
+192: 
+193:  if {$ASCENT_ENGINE_FLAG == 1 && $Ascent_Propellant_Mass_KG > 0} {
+194:    set Ascent_Fuel_Flow_SEC [expr $Ascent_Thrust_N / $Ascent_Specific_Impulse_MS]
+195:    set Ascent_Fuel_Flow [expr $Ascent_Fuel_Flow_SEC * $Delta_Time2]
+196:    set Ascent_Propellant_Mass_KG [expr $Ascent_Propellant_Mass_KG - $Ascent_Fuel_Flow]
+197:    set LM_Weight_Ascent_KG [expr $LM_Weight_Ascent_KG - $Ascent_Fuel_Flow]
+198:    set Ascent_Acceleration [expr $Ascent_Thrust_N / $LM_Weight_Ascent_KG]
+199:    set yawDeltaV [expr $Ascent_Acceleration * $Delta_Time2]
+200:    modify_pipaXYZ $yawDeltaV 0.0 0.0
+201:  } else {
+202:    set ASCENT_ENGINE_FLAG 0
+203:    set Ascent_Acceleration 0
+204:    set Ascent_Fuel_Flow_SEC 0
+205:  }
+206: 
+207:  # ---- Calculate Single Jet Accelleration / Moment of Inertia depend on LM weight ----
+208:  set m [expr $LM_Weight_KG / 65535.0]
+209:  set Alpha_Yaw [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,YAW) + $a($LM_CONFIG,YAW)/($m + $c($LM_CONFIG,YAW)))]
+210:  set Alpha_Pitch [expr $RAD_TO_DEG_PI4 * ($b($LM_CONFIG,PITCH) + $a($LM_CONFIG,PITCH)/($m + $c($LM_CONFIG,PITCH)))]
+
+=== Contributed/LM_Simulator/modules/AGC_System_Inputs.tcl:88-115 ===
+88:  label .sysinp.l0b -text "RADAR:" -font ${font11b} -bg $colb
+89:  pack  .sysinp.l0b -side top -in .sysinp.fmb -anchor w
+90: 
+91:  checkbutton .sysinp.cb0b -text "RR CDU FAIL" -variable b(30,7) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(30) "000000001000000"; write_socket b 30} -bg $colb
+92:  pack .sysinp.cb0b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+93: 
+94:  checkbutton .sysinp.cb2b -text "RR RANGE LOW SCALE" -variable b(33,3) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(33) "000000000000100"; write_socket b 33} -bg $colb
+95:  pack .sysinp.cb2b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+96: 
+97:  checkbutton .sysinp.cb3b -text "RR DATA GOOD" -variable b(33,4) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(33) "000000000001000"; write_socket b 33} -bg $colb
+98:  pack .sysinp.cb3b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+99: 
+100:  checkbutton .sysinp.cb4b -text "LR RANGE DATA GOOD" -variable b(33,5) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(33) "000000000010000"; write_socket b 33} -bg $colb
+101:  pack .sysinp.cb4b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+102: 
+103:  checkbutton .sysinp.cb5b -text "LR VELOCITY DATA GOOD" -variable b(33,8) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(33) "000000010000000"; write_socket b 33} -bg $colb
+104:  pack .sysinp.cb5b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+105: 
+106:  checkbutton .sysinp.cb6b -text "LR RANGE LOW SCALE" -variable b(33,9) -relief raised -borderwidth 2 -anchor w -font ${font11}  -onvalue "0" -offvalue "1" -command {set bmask(33) "000000100000000"; write_socket b 33} -bg $colb
+107:  pack .sysinp.cb6b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+108: 
+109:  checkbutton .sysinp.cb7b -text "LR POS1" -variable b(33,6) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(33) "000000000100000"; write_socket b 33} -bg $colb
+110:  pack .sysinp.cb7b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+111: 
+112:  checkbutton .sysinp.cb8b -text "LR POS2" -variable b(33,7) -relief raised -borderwidth 2 -anchor w -font ${font11} -onvalue "0" -offvalue "1" -command {set bmask(33) "000000001000000"; write_socket b 33} -bg $colb
+113:  pack .sysinp.cb8b -side top -in .sysinp.fmb -anchor w -fill x -pady 1
+114: }
+
+=== Contributed/LM_Simulator/lm_simulator.tcl:140-215 ===
+140: # ---------------- IMU Simulation Initialization ---------------------
+141: # ---- 39.55078125'' of arc ----
+142: set ANGLE_INCR                    [expr 360.0 / 32768.0]
+143: set CA_ANGLE                      0.043948
+144: set FA_ANGLE                      [expr 0.617981/3600.0]
+145: set PIPA_INCR                     0.0585
+146: set NEEDLE_SCALE                  [expr 42.1875/384.0]
+147: set IMUX_ANGLE                    0
+148: set IMUY_ANGLE                    0
+149: set IMUZ_ANGLE                    0
+150: set PIMUX                         0
+151: set PIMUY                         0
+152: set PIMUZ                         0
+153: set PIPAX_COUNT                   0
+154: set PIPAY_COUNT                   0
+155: set PIPAZ_COUNT                   0
+156: set xVelocity                     0
+157: set yVelocity                     0
+158: set zVelocity                     0
+159: set RHCRoll                       0
+160: set RHCPitch                      0
+161: set RHCYaw                        0
+162: 
+163: # ---------------- Constant ------------------------------------------
+164: set PI                            [expr 4.0 * atan(1)]
+165: set 2PI                           [expr 2.0 * $PI]
+166: set PI4                           [expr $PI/4.0]
+167: set RAD_TO_DEG                    [expr 180.0/$PI]
+168: set DEG_TO_RAD                    [expr $PI/180.0]
+169: set RAD_TO_DEG_PI4                [expr 180.0/$PI*$PI4]
+170: 
+171: # ---------------- Simulation Start Values (LM-7 Configuration) ----------------------
+172: set Simulation_Timer_Init         [expr abs([clock clicks -milliseconds])]
+173: set Simulation_Timer              0
+174: set Delta_Time                    0
+175: set Delta_Time2                   0
+176: set Delta_Time3                   0
+177: set LM_Weight_KG                  0
+178: set LM_Weight_Ascent_KG           4670.0
+179: set LM_Weight_Descent_KG          10694.0
+180: # ---- Reaction Control System ----
+181: set RCS_Propellant_Mass_KG        287.0
+182: set RCS_Thrust_N                  445.0
+183: set RCS_Specific_Impulse_MS       2840.0
+184: # ---- Descent Engine ----
+185: set Descent_Propellant_Mass_KG    8355.0
+186: set Descent_Propulsion_Max_N      45040.0
+187: set Descent_Propulsion_Min_N      4560.0
+188: set Descent_Specific_Impulse_MS   3050.0
+189: set Descent_Propulsion_N          0
+190: set Descent_Fuel_Flow_SEC         0
+191: set Descent_Thrust_Procent        0
+192: set Descent_Acceleration          0
+193: set DESCENT_ENGINE_FLAG           0
+194: # ---- Ascent Engine ----
+195: set Ascent_Propellant_Mass_KG     2353.0
+196: set Ascent_Thrust_N               15600.0
+197: set Ascent_Specific_Impulse_MS    3050.0
+198: set Ascent_Fuel_Flow_SEC          0
+199: set Ascent_Acceleration           0
+200: set ASCENT_ENGINE_FLAG            0
+201: set ASCENT_SEPARATION             0
+202: # ----
+203: set Omega_Roll                    0
+204: set Omega_Pitch                   0
+205: set Omega_Yaw                     0
+206: set Alpha_Yaw                     0
+207: set Alpha_Pitch                   0
+208: set Alpha_Roll                    0
+209: set error_x                       0
+210: set error_y                       0
+211: set error_z                       0
+212: # ---- Parameter to calculate Moment of Inertia ----
+213: set LM_CONFIG                     "DESCENT"
+214: # ---- LM Ascent Configuration ----
+215: set a(ASCENT,YAW)                 0.0065443852
+
+=== Contributed/LM_Simulator/lm_simulator.tcl:777-915 ===
+777: proc process_data {} {
+778:  global ChanData cdata log_out_flag bo unpSeq colb colact pulse_count_x pulse_count_y pulse_count_z
+779:  global m4 JET_FLAG
+780:  global Q4U Q4D Q3U Q3D 
+781:  global Q2U Q2D Q1U Q1D
+782:  global Q3A Q4F Q1F Q2A
+783:  global Q2L Q3R Q4R Q1L
+784: 
+785:  set data "$ChanData(0)$ChanData(1)$ChanData(2)$ChanData(3)"
+786:  set t [string index $data 3]
+787:  set channel [string range $data 4 7][string range $data  10 12]
+788:  set octChannel [convert_bin_oct $channel]
+789:  set tmp2 0
+790: 
+791: 
+792:  if {$t == 0} {
+793:    set cdata($octChannel) [string range $data 13 15][string range $data 18 23][string range $data 26 31]
+794: 
+795:    # ---- Gyro Fine Align if Octal Channel = 0177 ----
+796:    if {$octChannel == 177} {gyro_fine_align} 
+797:    # ----------------------------------------------
+798: 
+799:    # ---- Gyro Coarse Align if Octal Channel = 0174; 0175; 0176 ----
+800:    if {$octChannel == 174 || $octChannel == 175 || $octChannel == 176} {gyro_coarse_align $octChannel}
+801:    # ---------------------------------------------------------------
+802: 
+803:    # ---- Joystick Channel ----
+804:    #if {$octChannel == 31 || $octChannel == 166 || $octChannel == 167 || $octChannel == 170} {read_joystick $octChannel}
+805: 
+806:    # ---- Heart Beat ----
+807:    #if {$octChannel == 165} {
+808:    #  .text insert end "HB: $cdata(165)\n"
+809:    #  .text yview moveto 1
+810:    #}
+811: 
+812:    # ---- Check if there is a Jet Firing on Channel 5 or 6 ----
+813:    if {$octChannel == 5 || $octChannel == 6} {
+814:      set Q4U $bo(5,1); set Q4D $bo(5,2); set Q3U $bo(5,3); set Q3D $bo(5,4)
+815:      set Q2U $bo(5,5); set Q2D $bo(5,6); set Q1U $bo(5,7); set Q1D $bo(5,8)
+816: 
+817:      set Q3A $bo(6,1); set Q4F $bo(6,2); set Q1F $bo(6,3); set Q2A $bo(6,4)
+818:      set Q2L $bo(6,5); set Q3R $bo(6,6); set Q4R $bo(6,7); set Q1L $bo(6,8)
+819: 
+820:      if {$Q4U == 0 && $Q4D == 0 && $Q3U == 0 && $Q3D == 0 && $Q2U == 0 && $Q2D == 0 && $Q1U == 0 && $Q1D == 0 && $Q3A == 0 && $Q4F == 0 && $Q1F == 0 && $Q2A == 0 && $Q2L == 0 && $Q3R == 0 && $Q4R == 0 && $Q1L == 0} {set JET_FLAG 0} else {set JET_FLAG 1}
+821:    }
+822: 
+823:    for {set j 0} {$j <= 15} {incr j 1} {
+824:      set bit [expr 15-$j]
+825:      set tmp [string index $cdata($octChannel) $j]
+826:      catch {set tmp2 $bo($octChannel,$bit)}
+827:      if {$tmp != $tmp2} {
+828:        set bo($octChannel,$bit) $tmp
+829:        # ---------------- Set Output Signals -------------------
+830:        if {[winfo exists .lmsys] == 1 && ($octChannel == 5 || $octChannel == 6 || $octChannel == 11 || $octChannel == 12 || $octChannel == 13 || $octChannel == 14)} {
+831:          if {$bo($octChannel,$bit) == 1} {
+832:            catch {.lmsys.l_${octChannel}_${bit} configure -background $colact}
+833:          } else {
+834:            catch {.lmsys.l_${octChannel}_${bit} configure -background $colb}
+835:          }
+836:        }
+837:      }
+838:    }
+839: 
+840:    # ---------------- Check if Zero IMU CDU is active ------------------
+841:    if {$bo(12,5) == 1 && $m4 == 0} {zeroIMU; set m4 1} elseif {$bo(12,5) == 0 && $m4 == 1} {set m4 0}
+842: 
+843:    if {$log_out_flag == 1} {
+844:      catch {.text insert end "Out: [format %2d $octChannel]  $channel  $cdata($octChannel)\n"}
+845:      .text yview moveto 1
+846:    }
+847:  } else {
+848:    if {$log_out_flag == 1} {
+849:      set temp [string range $data 13 15][string range $data 18 23][string range $data 26 31]
+850:      catch {.text insert end "Out: [format %2d $octChannel]  $channel  $temp  US: $unpSeq($temp)\n"}
+851:      .text yview moveto 1
+852:    }
+853:  }
+854: }
+855: 
+856: 
+857: # *********************************************************************************************
+858: # **** Function: Write to Socket (Bitmask; Input Channel and Unprogrammed Sequences)       ****
+859: # *********************************************************************************************
+860: proc write_socket {par0 par1} {
+861:  global sockChan wdata bmask b unpSeq log_in_flag bytesSentCount
+862: 
+863:  if {$par0 == "b"} {
+864:    set wdata($par1) ""
+865:    for {set j 15} {$j >= 0} {incr j -1} {set wdata($par1) $wdata($par1)$b($par1,$j)}
+866:  }
+867: 
+868:  if {$par0 == "w"} {
+869:    for {set j 0} {$j <= 15} {incr j 1} {set b($par1,[expr 15-$j]) [string index $wdata($par1) $j]}
+870:  }
+871: 
+872:  set channel [convert_oct_bin $par1]
+873: 
+874:  if {$par0 == "b" || $par0 == "w"} {
+875:    if {$log_in_flag == 1} {
+876:      .text insert end "In:  [format %2d $par1]  $channel  $wdata($par1)  $bmask($par1)\n"
+877:      .text yview moveto 1
+878:    }
+879:    set cd1 "0010[string range $channel 0 3]"
+880:    set cd2 "01[string range $channel 4 6][string range $bmask($par1) 0 2]"
+881:    set cd3 "10[string range $bmask($par1) 3 8]"
+882:    set cd4 "11[string range $bmask($par1) 9 14]"
+883: 
+884:    puts -nonewline $sockChan [binary format B8 $cd1]
+885:    puts -nonewline $sockChan [binary format B8 $cd2]
+886:    puts -nonewline $sockChan [binary format B8 $cd3]
+887:    puts -nonewline $sockChan [binary format B8 $cd4]
+888:    set bytesSentCount [expr $bytesSentCount + 4]
+889: 
+890:    set cd1 "0000[string range $channel 0 3]"
+891:    set cd2 "01[string range $channel 4 6][string range $wdata($par1) 0 2]"
+892:    set cd3 "10[string range $wdata($par1) 3 8]"
+893:    set cd4 "11[string range $wdata($par1) 9 14]"
+894:  } else {
+895:    if {$log_in_flag == 1} {
+896:      #.text insert end "IN:  [format %2d $par1]  $channel  $unpSeq($par0)  US: $par0\n"
+897:      #.text yview moveto 1
+898:    }
+899: 
+900:    set cd1 "0001[string range $channel 0 3]"
+901:    set cd2 "01[string range $channel 4 6][string range $unpSeq($par0) 0 2]"
+902:    set cd3 "10[string range $unpSeq($par0) 3 8]"
+903:    set cd4 "11[string range $unpSeq($par0) 9 14]"
+904:  }
+905: 
+906:  puts -nonewline $sockChan [binary format B8 $cd1]
+907:  puts -nonewline $sockChan [binary format B8 $cd2]
+908:  puts -nonewline $sockChan [binary format B8 $cd3]
+909:  puts -nonewline $sockChan [binary format B8 $cd4]
+910:  set bytesSentCount [expr $bytesSentCount + 4]
+911: 
+912:  flush $sockChan
+913: }
+914: 
+915: 
+
+=== Luminary099/UPDATE_PROGRAM.agc:116-160 ===
+116: #                 1. CSM/LM STATE VECTOR UPDATE
+117: #                 2. REFSMMAT UPDATE
+118: #
+119: #
+120: #          THE FOLLOWING COMMENTS DELINEATE EACH SPECIAL UPDATE----
+121: #
+122: # 1. CSM/LM STATE VECTOR UPDATE(ALL DATA ENTRIES IN OCTAL)
+123: #
+124: # ENTRIES:        DATA DEFINITION:                                        SCALE FACTORS:
+125: # V71E            CONTIGUOUS BLOCK UPDATE VERB
+126: #    21E          NUMBER OF COMPONENTS FOR STATE VECTOR UPDATE
+127: #  AAAAE          ECADR OF 'UPSVFLAG'
+128: # XXXXXE          STATE VECTOR IDENTIFIER: 00001 FOR CSM, 77776 FOR LEM - EARTH SPHERE OF INFLUENCE SCALING
+129: #                                          00002 FOR CSM, 77775 FOR LEM - LUNAR SPHERE OF INFLUENCE SCALING
+130: #
+131: # XXXXXEXXXXXE    X POSITION
+132: # XXXXXEXXXXXE    Y POSITION
+133: # XXXXXEXXXXXE    Z POSITION
+134: # XXXXXEXXXXXE    X VELOCITY
+135: # XXXXXEXXXXXE    Y VELOCITY
+136: # XXXXXEXXXXXE    Z VELOCITY
+137: # XXXXXEXXXXXE    TIME FROM AGC CLOCK ZERO
+138: # V33E            VERB 33 TO SIGNAL THAT THE STATE VECTOR IS READY TO BE STORED.
+139: #
+140: #
+141: # 2. REFSMMAT(ALL DATA ENTRIES IN OCTAL)
+142: # ENTRIES:        DATA DEFINITITIONS:                                     SCALE FACTORS:
+143: ## Page 1388
+144: # V71E            CONTIGUOUS BLOCK UPDATE VERB
+145: #    24E          NUMBER OF COMPONENTS FOR REFSMMAT UPDATE
+146: #  AAAAE          ECADR OF 'REFSMMAT'
+147: # XXXXXEXXXXXE    ROW 1 COLUMN 1                                          2(-1)
+148: # XXXXXEXXXXXE    ROW 1 COLUMN 2                                          2(-1)
+149: # XXXXXEXXXXXE    ROW 1 COLUMN 3                                          2(-1)
+150: # XXXXXEXXXXXE    ROW 2 COLUMN 1                                          2(-1)
+151: # XXXXXEXXXXXE    ROW 2 COLUMN 2                                          2(-1)
+152: # XXXXXEXXXXXE    ROW 2 COLUMN 3                                          2(-1)
+153: # XXXXXEXXXXXE    ROW 3 COLUMN 1                                          2(-1)
+154: # XXXXXEXXXXXE    ROW 3 COLUMN 2                                          2(-1)
+155: # XXXXXEXXXXXE    ROW 3 COLUMN 3                                          2(-1)
+156: # V33E            VERB 33 TO SIGNAL THAT REFSMMAT IS READY TO BE STORED.
+157: 
+158: 
+159: 		BANK	07
+160: 		SETLOC	EXTVERBS
+
+=== yaDSKY2/yaDSKY2.cpp:870-885 ===
+870: }
+871: 
+872: void
+873: MainFrame::on_Annunciator23_clicked (wxMouseEvent &event)
+874: {
+875:   // When you click on the PROG lamp, we want to:
+876:   //	Save the current display settings (they're always already saved).
+877:   //	Show a file-dialog to select a pre-canned script of i/o channel changes.
+878:   //	Start playback of the pre-canned script, ignoring AGC commands
+879:   //	After completion of playback,
+880:   //		Show a message box.
+881:   //		Restore the original display settings
+882:   //		Quickly run through all of the pending commands from AGC.
+883:   //		Start taking commands from the AGC again.
+884:   if (recordingFileOpen)
+885:     return;
+
+=== yaDSKY2/yaDSKY2.cpp:1555-1575 ===
+1555:       if (j)
+1556:       MainWindow->ImageSet (MainWindow->Annunciator11, "OprErrOnO.jpg");
+1557:       else
+1558:       MainWindow->ImageSet (MainWindow->Annunciator11, "OprErrOff.jpg");
+1559:     }
+1560: #endif
+1561: 
+1562:   if (StartupDelay > 0)
+1563:     {
+1564:       StartupDelay -= PULSE_INTERVAL;
+1565:       return;
+1566:     }
+1567:   // Process canned script, if any, rather than actual packets from yaAGC.
+1568:   if (MainWindow->scriptFileOpen)
+1569:     {
+1570:       int i, j;
+1571:       // If any buttons that have been pressed (and hence are Disabled) have
+1572:       // timed out (and hence need to be Enabled), then fix them.
+1573:       for (j = 0; j < MainWindow->numScriptKeysPressed; j++)
+1574: 	if (pulseCount >= MainWindow->scriptKeysPressed[j].whenPressed + 4)
+1575: 	  MainWindow->scriptKeysPressed[j].button->Enable ();
+
+=== yaUniverse/yaUniverse.c:415-430 ===
+415: 	  // Integrate for the TimeStep seconds.
+416: 	  for (j = 0; j < EPH_STEP; j += TimeStep)
+417: 	    TsStep (State, TimeStep, i * EPH_STEP + j, StateVector);
+418: 	}
+419:       TsFree (State);
+420:       return (0);
+421:     }
+422:   
+423:   // Here's where to put code that will actually do something ...
+424:   printf ("Not implemented yet.  Use --ephem-read or --ephem-int, with --mission=Test.\n");
+425:   
+426:   return (0);
+427: }
+428: 
