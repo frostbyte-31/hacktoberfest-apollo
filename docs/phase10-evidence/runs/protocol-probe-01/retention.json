@@ -1,0 +1,82 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/protocol-probe-01",
+  "files": [
+    {
+      "source_path": "build.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "build.stderr",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "build.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "build.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "commands.json",
+      "raw_bytes": 1452,
+      "raw_sha256": "b76714dbddc46664aa58da785895380bbf1d0e9e2b0e5fd98a79a6321f5d7374",
+      "retained_path": "commands.json",
+      "retained_sha256": "b76714dbddc46664aa58da785895380bbf1d0e9e2b0e5fd98a79a6321f5d7374"
+    },
+    {
+      "source_path": "engine.so",
+      "raw_bytes": 74280,
+      "raw_sha256": "77c4b0f18e7f69cdbc87dac92e60f4300bd292e192fa9eec256e1c6164b84512",
+      "omitted": "Host-specific build product; reproduce from verified original engine sources and retained command/header"
+    },
+    {
+      "source_path": "failure.json",
+      "raw_bytes": 34,
+      "raw_sha256": "06b06340f8006b622daa414ca43e09ded9b6d01b664cf5eddd501de1e21524e2",
+      "retained_path": "failure.json",
+      "retained_sha256": "06b06340f8006b622daa414ca43e09ded9b6d01b664cf5eddd501de1e21524e2"
+    },
+    {
+      "source_path": "observer-map.json",
+      "raw_bytes": 3218,
+      "raw_sha256": "309f96f9bf224149ae789df53cdf21cc2625cc8ff4b7e3b893c6e8339f9bd9f0",
+      "retained_path": "observer-map.json",
+      "retained_sha256": "309f96f9bf224149ae789df53cdf21cc2625cc8ff4b7e3b893c6e8339f9bd9f0"
+    },
+    {
+      "source_path": "p9_watch.h",
+      "raw_bytes": 1044,
+      "raw_sha256": "539748a4d07ebff225196b1636f2ab64b430c263e4cb865849733dca62e83572",
+      "retained_path": "p9_watch.h",
+      "retained_sha256": "539748a4d07ebff225196b1636f2ab64b430c263e4cb865849733dca62e83572"
+    },
+    {
+      "source_path": "preservation-before.json",
+      "raw_bytes": 70,
+      "raw_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "retained_path": "preservation-before.json",
+      "retained_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf"
+    },
+    {
+      "source_path": "setup-used.json",
+      "raw_bytes": 1676,
+      "raw_sha256": "3964fbe2d45a59e15da2487b86545c31fd07a467407f7a1a85e27c37de630f45",
+      "retained_path": "setup-used.json",
+      "retained_sha256": "3964fbe2d45a59e15da2487b86545c31fd07a467407f7a1a85e27c37de630f45"
+    },
+    {
+      "source_path": "source-integrity/source-archive-hashes.json",
+      "raw_bytes": 37142,
+      "raw_sha256": "2ff3eca1627774d74183ab86fe485ed0417a1f0a95ddf770cc1395c31fb8763b",
+      "retained_path": "source-integrity/source-archive-hashes.json",
+      "retained_sha256": "2ff3eca1627774d74183ab86fe485ed0417a1f0a95ddf770cc1395c31fb8763b"
+    },
+    {
+      "source_path": "source-integrity/source-verification.json",
+      "raw_bytes": 179,
+      "raw_sha256": "2b8a07b9fcdbffe145e928202383364f4368af198e5a180fa7c7acc068d249a0",
+      "retained_path": "source-integrity/source-verification.json",
+      "retained_sha256": "2b8a07b9fcdbffe145e928202383364f4368af198e5a180fa7c7acc068d249a0"
+    }
+  ],
+  "note": "Fresh Phase10 work only; compressed logs are actual captured bytes, not reconstructed historical evidence"
+}

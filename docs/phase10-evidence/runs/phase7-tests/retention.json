@@ -1,0 +1,76 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/tests/20261017T191305Z-e2b267cf",
+  "files": [
+    {
+      "source_path": "commands.json",
+      "raw_bytes": 1327,
+      "raw_sha256": "41f920d24ac3ba34d1f526fc235237b6849530a4381dd07ab5fead99890e1ab0",
+      "retained_path": "commands.json",
+      "retained_sha256": "41f920d24ac3ba34d1f526fc235237b6849530a4381dd07ab5fead99890e1ab0"
+    },
+    {
+      "source_path": "integration.json",
+      "raw_bytes": 5523,
+      "raw_sha256": "bc9150b475b3ae8d78a5ceced0cb91b0536ce2609a2f41aaed7b06974a86c645",
+      "retained_path": "integration.json",
+      "retained_sha256": "bc9150b475b3ae8d78a5ceced0cb91b0536ce2609a2f41aaed7b06974a86c645"
+    },
+    {
+      "source_path": "integration.stderr",
+      "raw_bytes": 2586,
+      "raw_sha256": "b1c3532ee290ddf1e0a06a8522954adc81e0ccf3e559426ad461ff88c1a4c5a4",
+      "retained_path": "integration.stderr",
+      "retained_sha256": "b1c3532ee290ddf1e0a06a8522954adc81e0ccf3e559426ad461ff88c1a4c5a4"
+    },
+    {
+      "source_path": "integration.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "integration.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "physics.json",
+      "raw_bytes": 3696,
+      "raw_sha256": "09bb76a28426589c2f2b24283fbebdb497ba3f09f911a7dfbae8d4c3827170fc",
+      "retained_path": "physics.json",
+      "retained_sha256": "09bb76a28426589c2f2b24283fbebdb497ba3f09f911a7dfbae8d4c3827170fc"
+    },
+    {
+      "source_path": "physics.stderr",
+      "raw_bytes": 1623,
+      "raw_sha256": "0359873e317f2841029c5a5bac562efd5c50fdefa7a1031de59b22b34a7bad18",
+      "retained_path": "physics.stderr",
+      "retained_sha256": "0359873e317f2841029c5a5bac562efd5c50fdefa7a1031de59b22b34a7bad18"
+    },
+    {
+      "source_path": "physics.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "physics.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "preservation-after.json",
+      "raw_bytes": 267,
+      "raw_sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc",
+      "retained_path": "preservation-after.json",
+      "retained_sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "source_path": "preservation-before.json",
+      "raw_bytes": 267,
+      "raw_sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc",
+      "retained_path": "preservation-before.json",
+      "retained_sha256": "0e3a36bc6cb978b6ddc13b789312794f603d0926ae909fdcbcf205a2766e4dcc"
+    },
+    {
+      "source_path": "results.json",
+      "raw_bytes": 10370,
+      "raw_sha256": "113486fd495a961bb39f49b9570fe73891ffe39d96b10db9bc96ee2998ba3578",
+      "retained_path": "results.json",
+      "retained_sha256": "113486fd495a961bb39f49b9570fe73891ffe39d96b10db9bc96ee2998ba3578"
+    }
+  ],
+  "note": "Fresh Phase10 work only; compressed logs are actual captured bytes, not reconstructed historical evidence"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "phase8",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase8-evidence",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "started_utc": "2026-10-17T19:23:31.467889+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:23:32.116981+00:00"
+  },
+  {
+    "name": "phase9",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase9-evidence",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "started_utc": "2026-10-17T19:23:32.117484+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:23:32.905199+00:00"
+  },
+  {
+    "name": "math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase10-evidence/math",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "started_utc": "2026-10-17T19:23:32.905561+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:23:33.022776+00:00"
+  }
+]

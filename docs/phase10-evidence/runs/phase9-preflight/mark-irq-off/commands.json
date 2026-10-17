@@ -1,0 +1,26 @@
+[
+  {
+    "argv": [
+      "cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/phase9-baseline/mark-irq-off",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/hardware_bridge.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/agc_engine.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/phase9-baseline/mark-irq-off/engine.so"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  }
+]

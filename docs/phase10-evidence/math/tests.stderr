@@ -1,0 +1,19 @@
+test_both_ones_complement_zeros (test_diagnostics.ArithmeticTests) ... ok
+test_canonical_encoding_quantization_and_sign (test_diagnostics.ArithmeticTests) ... ok
+test_causal_altitude_variant_preserves_frame_epoch (test_diagnostics.ArithmeticTests) ... ok
+test_coefficient_operations_follow_source (test_diagnostics.ArithmeticTests) ... ok
+test_dp_mixed_sign_and_signed_zero_low_word (test_diagnostics.ArithmeticTests) ... ok
+test_earlier_downrange_candidates_preserve_circular_state (test_diagnostics.ArithmeticTests) ... ok
+test_explicit_si_scaling (test_diagnostics.ArithmeticTests) ... ok
+test_half_unit_identity_matrix (test_diagnostics.ArithmeticTests) ... ok
+test_reject_non_word_inputs (test_diagnostics.ArithmeticTests) ... ok
+test_retained_phase9_actual_matrix (test_diagnostics.ArithmeticTests) ... ok
+test_retained_synthetic_candidate_is_coherent (test_diagnostics.ArithmeticTests) ... ok
+test_root_diagnostic_never_solves_or_changes_root (test_diagnostics.ArithmeticTests) ... ok
+test_si_state_consistency (test_diagnostics.ArithmeticTests) ... ok
+test_zero_coefficients_are_degenerate (test_diagnostics.ArithmeticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.041s
+
+OK

@@ -1,0 +1,145 @@
+Pinned yaAGC/agc_engine.c. These are CPU-call timing and DP normalization diagnostics, not modifications.
+
+1070: {
+1071:   int16_t Msb, Lsb;
+1072:   int Value, Complement;
+1073:   Msb = LsbSP[-1];
+1074:   Lsb = *LsbSP;
+1075:   if (Msb == AGC_P0 || Msb == AGC_M0)	// Msb is zero.
+1076:     {
+1077:       // As far as the case of the sign of +0-0 or -0+0 is concerned,
+1078:       // we follow the convention of the DV instruction, in which the
+1079:       // overall sign is the sign of the less-significant word.
+1080:       Value = SignExtend (Lsb);
+1081:       if (Value & 0100000)
+1082: 	Value |= ~0177777;
+1083:       return (07777777777 & Value);	// Eliminate extra sign-ext. bits.
+1084:     }
+1085:   // If signs of Msb and Lsb words don't match, then make them match.
+1086:   if ((040000 & Lsb) != (040000 & Msb))
+1087:     {
+1088:       if (Lsb == AGC_P0 || Lsb == AGC_M0)	// Lsb is zero.
+1089: 	{
+1090: 	  // Adjust sign of Lsb to match Msb.
+1091: 	  if (0 == (040000 & Msb))
+1092: 	    Lsb = AGC_P0;
+1093: 	  else
+1094: 	    Lsb = AGC_M0;	// 2005-08-17 RSB.  Was "Msb".  Oops!
+1095: 	}
+1096:       else			// Lsb is not zero.
+1097: 	{
+1098: 	  // The logic will be easier if the Msb is positive.
+1099: 	  Complement = (040000 & Msb);
+1100: 	  if (Complement)
+1101: 	    {
+1102: 	      Msb = (077777 & ~Msb);
+1103: 	      Lsb = (077777 & ~Lsb);
+1104: 	    }
+1105: 	  // We now have Msb positive non-zero and Lsb negative non-zero.
+1106: 	  // Subtracting 1 from Msb is equivalent to adding 2**14 (i.e.,
+1107: 	  // 0100000, accounting for the parity) to Lsb.  An additional 1 
+1108: 	  // must be added to account for the negative overflow.
+1109: 	  Msb--;
+1110: 	  Lsb = ((Lsb + 040000 + AGC_P1) & 077777);
+1111: 	  // Restore the signs, if necessary.
+1112: 	  if (Complement)
+1113: 	    {
+1114: 	      Msb = (077777 & ~Msb);
+1115: 	      Lsb = (077777 & ~Lsb);
+1116: 	    }
+1117: 	}
+1118:     }
+1119:   // We now have an Msb and Lsb of the same sign; therefore,
+1120:   // we can simply juxtapose them, discarding the sign bit from the 
+1121:   // Lsb.  (And recall that the 0-position is still the parity.)
+1122:   Value = (03777740000 & (Msb << 14)) | (037777 & Lsb);
+1123:   // Also, sign-extend for further arithmetic.
+1124:   if (02000000000 & Value)
+1125:     Value |= 04000000000;
+
+1942:   if (State->ChannelRoutineCount == 0)
+1943:     ChannelRoutine (State);
+1944:   State->ChannelRoutineCount = ((State->ChannelRoutineCount + 1) & 017777);
+1945: 
+1946:   // Update the various hardware-driven DSKY lights
+1947:   UpdateDSKY(State);
+1948: 
+1949:   // Get data from input channels.  Return immediately if a unprogrammed 
+1950:   // counter-increment was performed.
+1951:   if (ChannelInput (State))
+1952:     return (0);
+1953: 
+1954:   // If in --debug-dsky mode, don't want to take the chance of executing
+1955:   // any AGC code, since there isn't any loaded anyway.
+1956:   if (DebugDsky)
+1957:     return (0);
+1958: 
+1959:   //----------------------------------------------------------------------  
+1960:   // This stuff takes care of extra CPU cycles used by some instructions.
+1961: 
+1962:   // A little extra delay, needed sometimes after branch instructions that
+1963:   // don't always take the same amount of time.
+1964:   if (State->ExtraDelay)
+1965:     {
+1966:       State->ExtraDelay--;
+1967:       return (0);
+1968:     }
+1969: 
+1970:   // If an instruction that takes more than one clock-cycle is in progress,
+1971:   // we simply return.  We don't do any of the actual computations for such
+1972:   // an instruction until the last clock cycle for it is reached.  
+1973:   // (Except for a few weird cases dealt with by ExtraDelay as above.) 
+1974:   if (State->PendFlag && State->PendDelay > 0)
+1975:     {
+1976:       State->PendDelay--;
+1977:       return (0);
+1978:     }
+1979: 
+1980:   //----------------------------------------------------------------------
+1981:   // Take care of any PCDU or MCDU operations that are lingering in CDU
+1982:   // FIFOs.
+1983:   if (ServiceCduFifo (State))
+1984:     {
+1985:       // A CDU counter was serviced, so a cycle was used up, and we must
+
+2545:   // Add delay for multi-MCT instructions.  Works for all instructions 
+2546:   // except EDRUPT, BZF, and BZMF.  For BZF and BZMF, an extra cycle is added
+2547:   // AFTER executing the instruction -- not because it's more logically
+2548:   // correct, just because it's easier. EDRUPT's timing is handled with
+2549:   // the interrupt logic.
+2550:   if (!State->PendFlag)
+2551:     {
+2552:       int i;
+2553:       i = QuarterCode >> 10;
+2554:       if (State->ExtraCode)
+2555: 	i = ExtracodeTiming[i];
+2556:       else
+2557: 	i = InstructionTiming[i];
+2558:       if (i)
+2559: 	{
+2560: 	  State->PendFlag = 1;
+2561: 	  State->PendDelay = i-1;
+2562: 	  return (0);
+2563: 	}
+2564:     }
+2565:   else
+2566:     State->PendFlag = 0;
+2567: 
+2568:   // Now that the index value has been used, get rid of it.
+2569:   State->IndexValue = AGC_P0;
+2570:   // And similarly for the substitute instruction from a RESUME.
+2571:   State->SubstituteInstruction = 0;
+2572: 
+2573:   // Compute the next value of the instruction pointer. The Z register is
+2574:   // 16 bits long, even though in almost all cases only the lower 12 bits
+2575:   // are used. When the Z register is incremented between each instruction,
+2576:   // only the lower 12 bits are read into the adder, so if something sets
+2577:   // any of the 4 most significant bits of Z, they will be lost before
+2578:   // the next instruction sees them.
+2579:   State->NextZ = 1 + c(RegZ);
+2580:   // The contents of the Z register are updated before an instruction is
+2581:   // executed (really, it happens at the end of the previous instruction).
+2582:   c (RegZ)= State->NextZ;
+2583: 
+2584:   // A BZF followed by an instruction other than EXTEND causes a TCF0 transient
+2585:   if (State->TookBZF && !((ExtendedOpcode == 000) && (Address12 == 6)))

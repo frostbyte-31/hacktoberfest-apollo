@@ -1,0 +1,55 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/regressions-loopback",
+  "files": [
+    {
+      "source_path": "01.stderr",
+      "raw_bytes": 4382,
+      "raw_sha256": "2ccc33ced353a89e888f26018e2ffd5eefc002bf62efca4e2e4f9923eec3913a",
+      "retained_path": "01.stderr",
+      "retained_sha256": "2ccc33ced353a89e888f26018e2ffd5eefc002bf62efca4e2e4f9923eec3913a"
+    },
+    {
+      "source_path": "01.stdout",
+      "raw_bytes": 2241,
+      "raw_sha256": "4ae9b76a5d87eb5bc6b5890f990446ddb2f7f8a355384cce772e0dcabdbac322",
+      "retained_path": "01.stdout",
+      "retained_sha256": "4ae9b76a5d87eb5bc6b5890f990446ddb2f7f8a355384cce772e0dcabdbac322"
+    },
+    {
+      "source_path": "02.stderr",
+      "raw_bytes": 941,
+      "raw_sha256": "99a737adf3920ee13c2b8007587b51952df63a2470c3ab810d0c9101a7a69126",
+      "retained_path": "02.stderr",
+      "retained_sha256": "99a737adf3920ee13c2b8007587b51952df63a2470c3ab810d0c9101a7a69126"
+    },
+    {
+      "source_path": "02.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "02.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "preservation-after.json",
+      "raw_bytes": 224,
+      "raw_sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5",
+      "retained_path": "preservation-after.json",
+      "retained_sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5"
+    },
+    {
+      "source_path": "preservation-before.json",
+      "raw_bytes": 224,
+      "raw_sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5",
+      "retained_path": "preservation-before.json",
+      "retained_sha256": "155e8eaa48ff3660259b104d27e84d773fe929122757d63ebe570628ef8fd2f5"
+    },
+    {
+      "source_path": "record.json",
+      "raw_bytes": 3936,
+      "raw_sha256": "d20ea99e5f85e1e72bd08d92f53d92bfdbb42f28fd9b2bffe5302a55f96c486e",
+      "retained_path": "record.json",
+      "retained_sha256": "d20ea99e5f85e1e72bd08d92f53d92bfdbb42f28fd9b2bffe5302a55f96c486e"
+    }
+  ],
+  "note": "Fresh Phase10 work only; compressed logs are actual captured bytes, not reconstructed historical evidence"
+}

@@ -1,0 +1,242 @@
+python3 docs/milestone1-evidence/run_tests.py
+{
+  "status": "verified_with_historical_gaps",
+  "legacy": {
+    "tests_run": 38,
+    "outcomes": {
+      "passed": 35,
+      "error": 3
+    },
+    "known_historical_errors": 3
+  },
+  "milestone1": {
+    "tests_run": 55,
+    "outcomes": {
+      "passed": 55
+    },
+    "known_historical_errors": 0
+  },
+  "results": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/tests/tests-20261017T191208.463797Z/results.json"
+}
+python3 docs/milestone2-evidence/run_tests.py
+{"tests_run": 47, "passed": true, "records": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/tests/20261017T191211Z-30f12f03"}
+python3 docs/milestone3-evidence/run_tests.py
+{"tests_run": 34, "passed": true, "records": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/tests/20261017T191215Z-7fcbe731"}
+/Applications/Xcode.app/Contents/Developer/usr/bin/make reproduce
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+  "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+  "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 docs/milestone1-evidence/reproduce.py
+# Recorded demonstration summary
+
+**VERIFIED — native single-axis feedback demonstration; not a landing.**
+
+| Run | Model peak yaw °/s | Model final X ° | AGC CDU X | Sensor generated / delivered |
+|---|---:|---:|---:|---:|
+| closed | 4.859385 | 16.841562 | 1533 | 1539 / 1539 |
+| feedback_off | 11.341167 | 177.686497 | 0 | 16173 / 0 |
+| repeat | 4.859385 | 16.841562 | 1533 | 1539 / 1539 |
+
+## Connected event trace (decimal CPU-call indices; octal channel words)
+
+- controller_input: call 2500000, raw line 4302: `{"ev": "input", "cycle": 2500000, "channel": 25, "value": 12283, "accepted": 4}`
+- first_nonzero_rcs: call 2509125, raw line 4348: `{"ev": "output", "cycle": 2509125, "channel": 6, "value": 85}`
+- first_motion: call 2509384, raw line 4350: `{"ev": "plant", "cycle": 2509384, "omega": [0.014968681222858068, 0.0, 0.0], "gimbals": [4.5437132478361206e-05, 0.0, 0.0], "jets": [0, 85], "zero": 0}`
+- first_sensor_request: call 2514502, raw line 4373: `{"ev": "sensor", "cycle": 2514502, "origin_interval_end": 2514502, "counter": 26, "code": 1, "delivered": true, "accepted": 4}`
+- first_cdu_readback: call 2515355, raw line 4377: `{"ev": "sample", "cycle": 2515355, "imodes33": 15360, "cdu": [1, 0, 0], "failreg": [848, 0, 0]}`
+- first_opposite_jet_word: call 2705321, raw line 6028: `{"ev": "output", "cycle": 2705321, "channel": 6, "value": 170}`
+
+Actual channel006 word00125 selects positive-yaw jets in this model; word00252 selects opposing jets. The latter occurs in the connected run and not the feedback-disconnected run.
+
+Categorized traces separate AGC outputs, simulated vehicle, simulated sensors and diagnostic readbacks. Sensor delivery and model-origin timestamps are distinct; rows are not globally time-sorted.
+
+**ASSUMED:** synthetic LM-7 dynamics, zero initial rates/gimbals, operate-only hardware fixture. Semi-implicit integration; at most853 CPU calls per coupling chunk; sensor delivery at chunk end; counter queues not drained.
+
+**NOT RUN:** historical calibration, complete IMU alignment/REFSMMAT, clean mission initialization, cold-start01107 isolation, general three-axis control, coupled WASM, throttle/radar, powered descent, landing, UI, multiplayer or AI crew.
+
+Readiness instruction proof is retained in Phase5, not rerun here. The schedule retains V36E, prematurely requested V37E00E (01520; not P00), and V77E. This is not alarm-free mission readiness.
+Fresh reproduction verified: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runs/20261017T191220Z-7c2d74c1
+/Applications/Xcode.app/Contents/Developer/usr/bin/make validate-milestone2
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+  "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+  "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 docs/milestone2-evidence/validate.py
+Milestone 2 validation records: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone2/runs/20261017T191232Z-6b31d127
+/Applications/Xcode.app/Contents/Developer/usr/bin/make validate-milestone3
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+  "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+  "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 docs/milestone3-evidence/validate.py
+Milestone 3 validation records: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/milestone3/runs/20261017T191240Z-90d43c3f
+/Applications/Xcode.app/Contents/Developer/usr/bin/make test-phase7
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+  "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+  "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 docs/phase7-evidence/run_tests.py
+{"tests_run": 39, "passed": true, "records": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/tests/20261017T191305Z-e2b267cf"}
+/Applications/Xcode.app/Contents/Developer/usr/bin/make validate-phase7
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+  "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+  "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 docs/phase7-evidence/validate.py
+Phase 7 validation records: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase7/runs/20261017T191316Z-d4ea3128

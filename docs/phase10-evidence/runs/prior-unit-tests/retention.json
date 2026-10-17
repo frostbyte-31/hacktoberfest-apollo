@@ -1,0 +1,55 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/prior-unit-tests",
+  "files": [
+    {
+      "source_path": "commands.json",
+      "raw_bytes": 1165,
+      "raw_sha256": "ea8afe2f387752bfa918e6836d880211d67acb2a97100b2a1a5c80993b3d6a69",
+      "retained_path": "commands.json",
+      "retained_sha256": "ea8afe2f387752bfa918e6836d880211d67acb2a97100b2a1a5c80993b3d6a69"
+    },
+    {
+      "source_path": "math.stderr",
+      "raw_bytes": 1239,
+      "raw_sha256": "b6243c7083a58003f7fc637d07133d5393364374355aaa6c032437d1e28c7b13",
+      "retained_path": "math.stderr",
+      "retained_sha256": "b6243c7083a58003f7fc637d07133d5393364374355aaa6c032437d1e28c7b13"
+    },
+    {
+      "source_path": "math.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "math.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "phase8.stderr",
+      "raw_bytes": 974,
+      "raw_sha256": "5f6d08119211ab7fb0fe10035b223a87a3ebdf2606e2bd4c72279c273be0081b",
+      "retained_path": "phase8.stderr",
+      "retained_sha256": "5f6d08119211ab7fb0fe10035b223a87a3ebdf2606e2bd4c72279c273be0081b"
+    },
+    {
+      "source_path": "phase8.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "phase8.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "phase9.stderr",
+      "raw_bytes": 2104,
+      "raw_sha256": "1d89531fb4bccc2b66a77ad1c38c24a903ca79aaf75299c90a94a68bd9ec1c97",
+      "retained_path": "phase9.stderr",
+      "retained_sha256": "1d89531fb4bccc2b66a77ad1c38c24a903ca79aaf75299c90a94a68bd9ec1c97"
+    },
+    {
+      "source_path": "phase9.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "phase9.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "note": "Fresh Phase10 work only; compressed logs are actual captured bytes, not reconstructed historical evidence"
+}

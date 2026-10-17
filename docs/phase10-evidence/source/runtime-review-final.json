@@ -1,0 +1,1032 @@
+{
+  "classification": "VERIFIED independent read-only final native evidence review; bounded numerical guidance only",
+  "reviewed_batch": ".build/phase10/final-validation",
+  "final": {
+    "trace_sha256": "591e2f1049d03eea27dd302ce643dc6d56107fc9f261be696162d4b95fdea99b",
+    "configuration_sha256": "bc3bd52bad6fe30dc2855d52ec4a76366795b0cc347814f7e6aafc2491102fb6",
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "AOTMARK": 2,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKRUPT": 4,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "P51E": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "P63LM": 1,
+      "R02BOTH": 1,
+      "P63_AFTER_R02": 1,
+      "CALCRGVG": 9,
+      "RGVGCALC": 9,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "ROOTSTOR": 9,
+      "ROOTSTOR_RESULT": 9,
+      "QUADGUID": 9,
+      "CGCALC": 9,
+      "DDUMCALC": 3,
+      "IGNALGRT": 1
+    },
+    "root_records": [
+      {
+        "entry_cycle": 18502070,
+        "coefficient_fractions": [
+          0.015160813927650452,
+          0.011262834072113037,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -664.4,
+        "result_cycle": 18504866,
+        "result_s": -847.235498046875,
+        "iterations": 3,
+        "residual_fraction": -2.0105992131619344e-09,
+        "derivative_fraction": 0.03061824040270811,
+        "newton_correction_fraction": -6.566671326364338e-08
+      },
+      {
+        "entry_cycle": 18535727,
+        "coefficient_fractions": [
+          0.015162721276283264,
+          0.011200815439224243,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.125,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -847.235498046875,
+        "result_cycle": 18536845,
+        "result_s": -849.0368994140625,
+        "iterations": 1,
+        "residual_fraction": -7.939065866519046e-09,
+        "derivative_fraction": 0.030565234461230543,
+        "newton_correction_fraction": -2.597416969462181e-07
+      },
+      {
+        "entry_cycle": 18565497,
+        "coefficient_fractions": [
+          0.015162721276283264,
+          0.01120079681277275,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.125,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -849.0368994140625,
+        "result_cycle": 18566622,
+        "result_s": -849.0370556640626,
+        "iterations": 1,
+        "residual_fraction": 4.828164465453533e-10,
+        "derivative_fraction": 0.030565216610606634,
+        "newton_correction_fraction": 1.5796271058579966e-08
+      },
+      {
+        "entry_cycle": 18656987,
+        "coefficient_fractions": [
+          0.009517554193735123,
+          0.011791907250881195,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -689.4370556640625,
+        "result_cycle": 18658928,
+        "result_s": -585.822275390625,
+        "iterations": 2,
+        "residual_fraction": -3.4968171476468246e-08,
+        "derivative_fraction": 0.02839345117575591,
+        "newton_correction_fraction": -1.231557631371217e-06
+      },
+      {
+        "entry_cycle": 18689543,
+        "coefficient_fractions": [
+          0.009517364203929901,
+          0.011790577322244644,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -585.822275390625,
+        "result_cycle": 18690667,
+        "result_s": -585.83947265625,
+        "iterations": 1,
+        "residual_fraction": -3.070312549341425e-09,
+        "derivative_fraction": 0.028392396879113848,
+        "newton_correction_fraction": -1.0813854717563572e-07
+      },
+      {
+        "entry_cycle": 18719335,
+        "coefficient_fractions": [
+          0.0095173679292202,
+          0.01179058849811554,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -585.83947265625,
+        "result_cycle": 18720423,
+        "result_s": -585.8393017578126,
+        "iterations": 1,
+        "residual_fraction": -6.382415290717702e-10,
+        "derivative_fraction": 0.028392405315943166,
+        "newton_correction_fraction": -2.2479304658044557e-08
+      },
+      {
+        "entry_cycle": 18811521,
+        "coefficient_fractions": [
+          0.009453769773244858,
+          0.01179562509059906,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -584.0793017578125,
+        "result_cycle": 18812706,
+        "result_s": -582.7977197265625,
+        "iterations": 1,
+        "residual_fraction": -9.177808919097474e-09,
+        "derivative_fraction": 0.02834849911992194,
+        "newton_correction_fraction": -3.23749376652105e-07
+      },
+      {
+        "entry_cycle": 18843435,
+        "coefficient_fractions": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -582.7977197265625,
+        "result_cycle": 18844524,
+        "result_s": -582.79703125,
+        "iterations": 1,
+        "residual_fraction": 4.887743525888721e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "newton_correction_fraction": 1.7241646522840814e-07
+      },
+      {
+        "entry_cycle": 18873105,
+        "coefficient_fractions": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -582.79703125,
+        "result_cycle": 18874051,
+        "result_s": -582.79703125,
+        "iterations": 1,
+        "residual_fraction": 4.887743525888721e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "newton_correction_fraction": 1.7241646522840814e-07
+      }
+    ],
+    "max_coefficient_formula_error_DP_LSB": 0.875,
+    "max_abs_ROOTPS_at_ROOTLOOP": 0.6508595608174801,
+    "ignition_return": {
+      "cycle": 18900007,
+      "TIG_s": 255.36,
+      "clock_s": 221.48,
+      "TTF_s": -582.79703125,
+      "ZOOMTIME_cs": 2600
+    },
+    "completion": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    }
+  },
+  "repeat": {
+    "trace_sha256": "591e2f1049d03eea27dd302ce643dc6d56107fc9f261be696162d4b95fdea99b",
+    "configuration_sha256": "bc3bd52bad6fe30dc2855d52ec4a76366795b0cc347814f7e6aafc2491102fb6",
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "AOTMARK": 2,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKRUPT": 4,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "P51E": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "P63LM": 1,
+      "R02BOTH": 1,
+      "P63_AFTER_R02": 1,
+      "CALCRGVG": 9,
+      "RGVGCALC": 9,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "ROOTSTOR": 9,
+      "ROOTSTOR_RESULT": 9,
+      "QUADGUID": 9,
+      "CGCALC": 9,
+      "DDUMCALC": 3,
+      "IGNALGRT": 1
+    },
+    "root_records": [
+      {
+        "entry_cycle": 18502070,
+        "coefficient_fractions": [
+          0.015160813927650452,
+          0.011262834072113037,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -664.4,
+        "result_cycle": 18504866,
+        "result_s": -847.235498046875,
+        "iterations": 3,
+        "residual_fraction": -2.0105992131619344e-09,
+        "derivative_fraction": 0.03061824040270811,
+        "newton_correction_fraction": -6.566671326364338e-08
+      },
+      {
+        "entry_cycle": 18535727,
+        "coefficient_fractions": [
+          0.015162721276283264,
+          0.011200815439224243,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.125,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -847.235498046875,
+        "result_cycle": 18536845,
+        "result_s": -849.0368994140625,
+        "iterations": 1,
+        "residual_fraction": -7.939065866519046e-09,
+        "derivative_fraction": 0.030565234461230543,
+        "newton_correction_fraction": -2.597416969462181e-07
+      },
+      {
+        "entry_cycle": 18565497,
+        "coefficient_fractions": [
+          0.015162721276283264,
+          0.01120079681277275,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.125,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -849.0368994140625,
+        "result_cycle": 18566622,
+        "result_s": -849.0370556640626,
+        "iterations": 1,
+        "residual_fraction": 4.828164465453533e-10,
+        "derivative_fraction": 0.030565216610606634,
+        "newton_correction_fraction": 1.5796271058579966e-08
+      },
+      {
+        "entry_cycle": 18656987,
+        "coefficient_fractions": [
+          0.009517554193735123,
+          0.011791907250881195,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -689.4370556640625,
+        "result_cycle": 18658928,
+        "result_s": -585.822275390625,
+        "iterations": 2,
+        "residual_fraction": -3.4968171476468246e-08,
+        "derivative_fraction": 0.02839345117575591,
+        "newton_correction_fraction": -1.231557631371217e-06
+      },
+      {
+        "entry_cycle": 18689543,
+        "coefficient_fractions": [
+          0.009517364203929901,
+          0.011790577322244644,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -585.822275390625,
+        "result_cycle": 18690667,
+        "result_s": -585.83947265625,
+        "iterations": 1,
+        "residual_fraction": -3.070312549341425e-09,
+        "derivative_fraction": 0.028392396879113848,
+        "newton_correction_fraction": -1.0813854717563572e-07
+      },
+      {
+        "entry_cycle": 18719335,
+        "coefficient_fractions": [
+          0.0095173679292202,
+          0.01179058849811554,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -585.83947265625,
+        "result_cycle": 18720423,
+        "result_s": -585.8393017578126,
+        "iterations": 1,
+        "residual_fraction": -6.382415290717702e-10,
+        "derivative_fraction": 0.028392405315943166,
+        "newton_correction_fraction": -2.2479304658044557e-08
+      },
+      {
+        "entry_cycle": 18811521,
+        "coefficient_fractions": [
+          0.009453769773244858,
+          0.01179562509059906,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -584.0793017578125,
+        "result_cycle": 18812706,
+        "result_s": -582.7977197265625,
+        "iterations": 1,
+        "residual_fraction": -9.177808919097474e-09,
+        "derivative_fraction": 0.02834849911992194,
+        "newton_correction_fraction": -3.23749376652105e-07
+      },
+      {
+        "entry_cycle": 18843435,
+        "coefficient_fractions": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -582.7977197265625,
+        "result_cycle": 18844524,
+        "result_s": -582.79703125,
+        "iterations": 1,
+        "residual_fraction": 4.887743525888721e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "newton_correction_fraction": 1.7241646522840814e-07
+      },
+      {
+        "entry_cycle": 18873105,
+        "coefficient_fractions": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -582.79703125,
+        "result_cycle": 18874051,
+        "result_s": -582.79703125,
+        "iterations": 1,
+        "residual_fraction": 4.887743525888721e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "newton_correction_fraction": 1.7241646522840814e-07
+      }
+    ],
+    "max_coefficient_formula_error_DP_LSB": 0.875,
+    "max_abs_ROOTPS_at_ROOTLOOP": 0.6508595608174801,
+    "ignition_return": {
+      "cycle": 18900007,
+      "TIG_s": 255.36,
+      "clock_s": 221.48,
+      "TTF_s": -582.79703125,
+      "ZOOMTIME_cs": 2600
+    },
+    "completion": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    }
+  },
+  "altitude_16km": {
+    "trace_sha256": "9555637bb4a68c6387adbfdbc37c1c82d3fe6528a540bb5a27552d11b9905fe6",
+    "configuration_sha256": "4f240fffa5c8d85b637464ec49a7c2b88fd039b5ab12c5986a72fc736706679a",
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "AOTMARK": 2,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKRUPT": 4,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "P51E": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "P63LM": 1,
+      "R02BOTH": 2,
+      "P63_AFTER_R02": 1,
+      "CALCRGVG": 9,
+      "RGVGCALC": 9,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "ROOTSTOR": 9,
+      "ROOTSTOR_RESULT": 9,
+      "QUADGUID": 9,
+      "CGCALC": 9,
+      "DDUMCALC": 3,
+      "IGNALGRT": 1
+    },
+    "root_records": [
+      {
+        "entry_cycle": 18502038,
+        "coefficient_fractions": [
+          0.015169523656368256,
+          0.011259607970714569,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.375,
+          -0.75,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -664.4,
+        "result_cycle": 18505127,
+        "result_s": -847.6976025390625,
+        "iterations": 3,
+        "residual_fraction": -9.34798067078746e-10,
+        "derivative_fraction": 0.030617339287869222,
+        "newton_correction_fraction": -3.053165587935718e-08
+      },
+      {
+        "entry_cycle": 18535749,
+        "coefficient_fractions": [
+          0.015171419829130173,
+          0.011197671294212341,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.875,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -847.6976025390625,
+        "result_cycle": 18536898,
+        "result_s": -849.497294921875,
+        "iterations": 1,
+        "residual_fraction": -8.177347202154017e-09,
+        "derivative_fraction": 0.030564371863603283,
+        "newton_correction_fraction": -2.6754507629491905e-07
+      },
+      {
+        "entry_cycle": 18565525,
+        "coefficient_fractions": [
+          0.015171419829130173,
+          0.01119764894247055,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -849.497294921875,
+        "result_cycle": 18566581,
+        "result_s": -849.4976123046876,
+        "iterations": 1,
+        "residual_fraction": -1.0918180821245516e-09,
+        "derivative_fraction": 0.03056435108161881,
+        "newton_correction_fraction": -3.5721945452366025e-08
+      },
+      {
+        "entry_cycle": 18657026,
+        "coefficient_fractions": [
+          0.009526122361421585,
+          0.011788379400968552,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -689.8376123046875,
+        "result_cycle": 18658946,
+        "result_s": -586.290673828125,
+        "iterations": 2,
+        "residual_fraction": -3.6792699033283416e-08,
+        "derivative_fraction": 0.028397426217323263,
+        "newton_correction_fraction": -1.2956349900061997e-06
+      },
+      {
+        "entry_cycle": 18689578,
+        "coefficient_fractions": [
+          0.00952593982219696,
+          0.011787049472332,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -586.290673828125,
+        "result_cycle": 18690633,
+        "result_s": -586.3078662109375,
+        "iterations": 1,
+        "residual_fraction": 3.084635841893446e-09,
+        "derivative_fraction": 0.028396371503965786,
+        "newton_correction_fraction": 1.0862781681323797e-07
+      },
+      {
+        "entry_cycle": 18719289,
+        "coefficient_fractions": [
+          0.009525943547487259,
+          0.011787060648202896,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -586.3078662109375,
+        "result_cycle": 18720234,
+        "result_s": -586.3078662109375,
+        "iterations": 1,
+        "residual_fraction": 1.8107645972931241e-09,
+        "derivative_fraction": 0.02839638267983668,
+        "newton_correction_fraction": 6.37674388920983e-08
+      },
+      {
+        "entry_cycle": 18811275,
+        "coefficient_fractions": [
+          0.009461987763643265,
+          0.011792093515396118,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.125,
+          -0.75,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -584.5378662109375,
+        "result_cycle": 18812463,
+        "result_s": -583.250263671875,
+        "iterations": 1,
+        "residual_fraction": -8.658016491247533e-09,
+        "derivative_fraction": 0.028352274154195178,
+        "newton_correction_fraction": -3.0537291097569467e-07
+      },
+      {
+        "entry_cycle": 18843207,
+        "coefficient_fractions": [
+          0.009461984038352966,
+          0.011792078614234924,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -583.250263671875,
+        "result_cycle": 18844365,
+        "result_s": -583.249921875,
+        "iterations": 1,
+        "residual_fraction": 1.6409080413892774e-09,
+        "derivative_fraction": 0.02835225373775436,
+        "newton_correction_fraction": 5.787575324935158e-08
+      },
+      {
+        "entry_cycle": 18872945,
+        "coefficient_fractions": [
+          0.009461984038352966,
+          0.011792082339525223,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -583.249921875,
+        "result_cycle": 18874103,
+        "result_s": -583.2497509765625,
+        "iterations": 1,
+        "residual_fraction": 3.679925520555516e-09,
+        "derivative_fraction": 0.028352254705403004,
+        "newton_correction_fraction": 1.2979304675385282e-07
+      }
+    ],
+    "max_coefficient_formula_error_DP_LSB": 0.875,
+    "max_abs_ROOTPS_at_ROOTLOOP": 0.6512324213981628,
+    "ignition_return": {
+      "cycle": 18900002,
+      "TIG_s": 255.42,
+      "clock_s": 221.48,
+      "TTF_s": -583.2497509765625,
+      "ZOOMTIME_cs": 2600
+    },
+    "completion": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    }
+  },
+  "missing_site": {
+    "trace_sha256": "7de52fe83d3e1edb01cf4d19f00a156ce2a092e2e50b5bfb7e3a4582821d942f",
+    "configuration_sha256": "cdeac805f2d2a207e7e15064aa9db95995992cd1beedaccd6f4cb8a1d411decb",
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "AOTMARK": 2,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKRUPT": 4,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "P51E": 1,
+      "V71UPDAT": 8,
+      "UPSTORE": 8,
+      "UPEND71": 8,
+      "P63LM": 1,
+      "R02BOTH": 1,
+      "P63_AFTER_R02": 1,
+      "DVOVF": 4,
+      "CALCRGVG": 2,
+      "RGVGCALC": 2,
+      "TTF/8CL": 2,
+      "ROOTPSRS": 2,
+      "ROOTLOOP": 12,
+      "ROOTSTOR": 1,
+      "ROOTSTOR_RESULT": 1,
+      "QUADGUID": 1,
+      "CGCALC": 1,
+      "BUFZERO": 1,
+      "BADROOT": 1,
+      "1406POO": 1
+    },
+    "root_records": [
+      {
+        "entry_cycle": 17301158,
+        "coefficient_fractions": [
+          0.015186440199613571,
+          0.011262834072113037,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -664.4,
+        "result_cycle": 17303942,
+        "result_s": -848.332421875,
+        "iterations": 3,
+        "residual_fraction": -2.0364003434913958e-09,
+        "derivative_fraction": 0.030623744722587918,
+        "newton_correction_fraction": -6.649743073352349e-08
+      },
+      {
+        "entry_cycle": 17333163,
+        "coefficient_fractions": [
+          -7.274746894836426e-05,
+          -6.966292858123779e-06,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "formula_error_DP_LSB": [
+          0.875,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_s": -848.332421875
+      }
+    ],
+    "max_coefficient_formula_error_DP_LSB": 0.875,
+    "max_abs_ROOTPS_at_ROOTLOOP": 0.9988749623298645,
+    "ignition_return": null,
+    "completion": {
+      "modreg": 63,
+      "flagword3": 5120,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        774,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 0,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "  ",
+        "VERB": "37",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    }
+  },
+  "preservation": {
+    "ok": true,
+    "files_checked": 4098,
+    "changed_or_missing": []
+  },
+  "independent_comparisons": {
+    "identical_replay_bytes": true,
+    "altitude_changes_first_coefficients": true,
+    "altitude_changes_first_root": true,
+    "missing_site_raises_01406_after_one_partial_good_root": true
+  },
+  "stronger_capabilities_NOT_RUN": [
+    "crew Proceed beyond N61",
+    "subsequent R51/attitude maneuver",
+    "preignition MIDTOAV timing check",
+    "engine ignition",
+    "engine/throttle plant",
+    "PIPA navigation",
+    "P64/P66 or lunar landing"
+  ]
+}

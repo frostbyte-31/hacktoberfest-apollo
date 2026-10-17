@@ -1,0 +1,110 @@
+{
+  "accessed_utc": "2026-10-17",
+  "sources": [
+    {
+      "url": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+      "retained": "Luminary99PadLoads.pdf",
+      "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+      "role": "Primary Apollo11 preflight padload source; relevant scans visually verified"
+    },
+    {
+      "url": "https://www.ibiblio.org/apollo/Documents/luminary_1b_updates.pdf",
+      "retained": "luminary_1b_updates.pdf",
+      "sha256": "aea6afd05a3df5b2a255e53a435ae134c8425f3ae35cb540859f7ed23d229cee",
+      "role": "Later Luminary1B interface/scaling corroboration; 099 source controls actual addresses"
+    },
+    {
+      "url": "https://www.ibiblio.org/apollo/Documents/A11_MissionReport.pdf",
+      "retained": null,
+      "sha256": "5b9d033c7b9dd604220f439cddc8a53ad08e3e9c43c83f7342d7e61ef32a1baa",
+      "retained_page_images": [
+        "mission-report-p051.png",
+        "mission-report-p063.png"
+      ],
+      "role": "Primary mission operations context; full PDF inspected from temporary download"
+    },
+    {
+      "url": "https://www.ibiblio.org/apollo/Documents/R-577-Colossus2-Martin-5.1.pdf",
+      "role": "1969 shared basic inertial frame; CSM GSOP, not LM operational authority"
+    },
+    {
+      "url": "https://www.ibiblio.org/apollo/NARA-SW/R-567-sec5-rev8-5.1-5.2.pdf",
+      "role": "1970 Luminary1C frames and landing-site update context; epoch mismatch explicitly disclosed"
+    },
+    {
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html",
+      "role": "Crew transcript corroboration of pre-PDI solar/radar/visual checks"
+    }
+  ],
+  "retained_files": {
+    "Luminary99PadLoads.pdf": {
+      "bytes": 2191052,
+      "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86"
+    },
+    "README.md": {
+      "bytes": 7182,
+      "sha256": "2709a76727377cbc5c6c1dc74b3c64690b5ca3aa935e431aaea7db5870aa367b"
+    },
+    "check_padload.py": {
+      "bytes": 2588,
+      "sha256": "842dcef8874a13e8b11605fbe4b07ea3ff69056e6675ca0486c0e4e467b2a1a6"
+    },
+    "independent-padload-validation.json": {
+      "bytes": 8326,
+      "sha256": "70d28382a91bc25d17be0ab447609d4936d9ef5b55dc41a2f764ae5a814ecd6f"
+    },
+    "independent-padload-validation.v1.json": {
+      "bytes": 8034,
+      "sha256": "fb3b92ba5ca058641cf5a34d41ab8ad211659926c75125bd983fc394a1900035"
+    },
+    "luminary_1b_updates.ocr.txt": {
+      "bytes": 8165,
+      "sha256": "80f68e082b743a267694575abfca9caf4f08a853408f3aa18cb8ecb2f09f6d06"
+    },
+    "luminary_1b_updates.pdf": {
+      "bytes": 468195,
+      "sha256": "aea6afd05a3df5b2a255e53a435ae134c8425f3ae35cb540859f7ed23d229cee"
+    },
+    "mission-report-p051.png": {
+      "bytes": 183664,
+      "sha256": "63f2869e685db95faf4ec974092a3c327d22c2f5c0e20df77f0769ac26741a7a"
+    },
+    "mission-report-p063.png": {
+      "bytes": 41815,
+      "sha256": "334de7bc7b3de758bcd5c5f0ab8bae5c68320bb756031bd97f17837a1b85f767"
+    },
+    "padload-05.png": {
+      "bytes": 276655,
+      "sha256": "f9706a9584a29d088264f77b10c5d088501d02d58ac0a094bfc42eebe57ca802"
+    },
+    "padload-06.png": {
+      "bytes": 270047,
+      "sha256": "839c55daeb341a9ee95e9a2b024da9bd22ea006acda190df81dd0523bf85a6bc"
+    },
+    "padload-07.png": {
+      "bytes": 274064,
+      "sha256": "dac16492c286b87a66c67a4a5b8bf012c6523414b61d13d8f691f2e37ed4474a"
+    },
+    "padload-08.png": {
+      "bytes": 249007,
+      "sha256": "1a3a6dadb466054e94db8aa3e27022c1e7a3ce393736707e95051bac5b60376c"
+    },
+    "padload-15.png": {
+      "bytes": 333497,
+      "sha256": "eef6298df31060a38ce454de80086c7d52424004a93f999e54c00e035558d93d"
+    },
+    "padload-19.png": {
+      "bytes": 382960,
+      "sha256": "aa0e9654ab1ed272705ecf072bc659a74194281a2742dc04233652b1817536b3"
+    },
+    "padload-transcription.json": {
+      "bytes": 6350,
+      "sha256": "8e8180b394983f673bd262d983ab120aa7623d34e9898205d73032e89607059d"
+    },
+    "padload-transcription.v1.json": {
+      "bytes": 3872,
+      "sha256": "496b6b8ee2c75a586836579a40e06bcac8e532f3f3f7ebe1b9d02391a777ff05"
+    }
+  },
+  "note": "This manifest intentionally excludes itself; parent Phase10 seal can include it. SHA256 of unretained mission-report full PDF identifies bytes inspected, not a promise of local full-PDF retention."
+}

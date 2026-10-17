@@ -1,0 +1,30 @@
+{
+  "classification": "VERIFIED scan transcription; historical preflight values, not a recovered flight-state vector",
+  "source": "https://www.ibiblio.org/apollo/Documents/Luminary99PadLoads.pdf",
+  "document": "SNA-8-D-027(II) Rev 1, Table LM5/4.5.1-1, NASA data source, June 1969",
+  "sha256": "e112f47d5c413a1c7385e6422c7dbb12e19f2802fdecb31429828d90cac9ff86",
+  "transcription_note": "Addresses and words are octal strings. SF is the source table binary scale exponent. Decimal values are printed source values, not independently recomputed exact fixed-point values. Relevant pages were rendered and visually inspected; do not substitute OCR for this transcription.",
+  "mission_tape": [
+    {"symbol":"TLAND","address":"2400","words":["04247","34030"],"printed_value":36304920,"units":"cs from AGC clock zero","sf":28,"pdf_page":5,"note":"Preflight estimated landing time 100:50:49.20 GET; not actual Apollo 11 landing time."},
+    {"symbol":"RBRFG","address":"2402","words":["00000","01506","00000","00000","77774","72222"],"printed_value":[52.37530800,0,-3254.836061],"units":"m","sf":24,"pdf_page":5},
+    {"symbol":"VBRFG","address":"2410","words":["77772","72612","00000","00000","77777","76300"],"printed_value":[-0.3227100480,0,-0.0031699200],"units":"m/cs","sf":10,"pdf_page":5},
+    {"symbol":"ABRFG","address":"2416","words":["00004","37445","00000","00000","77667","50111"],"printed_value":[0.000019022568,0,-0.000277502112],"units":"m/cs^2","sf":-4,"pdf_pages":[5,6]},
+    {"symbol":"VBRFG*","address":"2424","words":["77777","74261"],"printed_value":-0.0570585600,"units":"m/cs","sf":13,"pdf_page":6},
+    {"symbol":"ABRFG*","address":"2426","words":["77113","60670"],"printed_value":-0.001665012672,"units":"m/cs^2","sf":-4,"pdf_page":6},
+    {"symbol":"JBRFG*","address":"2430","words":["77472","72437"],"printed_value":-0.5738399496e-8,"units":"m/cs^3","sf":-21,"pdf_page":6},
+    {"symbol":"GAINBRAK","address":"2432","words":["37777","37777"],"printed_value":1.0,"units":"dimensionless","sf":0,"pdf_page":6},
+    {"symbol":"TCGFBRAK","address":"2434","words":["00567"],"printed_value":3000,"units":"cs","sf":17,"pdf_page":6},
+    {"symbol":"TCGIBRAK","address":"2435","words":["25762"],"printed_value":90000,"units":"cs","sf":17,"pdf_page":6},
+    {"symbol":"VIGN","address":"2472","words":["00416","16071"],"printed_value":16.90256208,"units":"m/cs","sf":10,"pdf_page":8},
+    {"symbol":"RIGNX","address":"2474","words":["77731","44630"],"printed_value":-39782.453328,"units":"m","sf":24,"pdf_page":8},
+    {"symbol":"RIGNZ","address":"2476","words":["77125","62404"],"printed_value":-436655.657,"units":"m","sf":24,"pdf_page":8},
+    {"symbol":"KIGNX/B4","address":"2500","words":["76607","61356"],"printed_value":-0.617631,"units":"dimensionless","sf":4,"pdf_page":8},
+    {"symbol":"KIGNY/B8","address":"2502","words":["72634","51602"],"printed_value":-2.4770341207e-6,"units":"1/m","sf":-16,"pdf_page":8},
+    {"symbol":"KIGNV/B4","address":"2504","words":["72775","57777"],"printed_value":-41000,"units":"cs","sf":18,"pdf_page":8}
+  ],
+  "launch_tape_context_not_mandatory_for_synthetic_scenario": [
+    {"symbol":"TEPHEM","address":"1706","words":["00000","20017","20500"],"printed_value":134472000,"units":"cs","sf":42,"pdf_page":19,"note":"Printed epoch is launch July 16 1969, 13:32 GMT. Triple-precision encoding must be traced before use."},
+    {"symbol":"504LM","address":"2012","words":["77775","46355","77766","72372","77777","52552"],"units":"rad","sf":0,"pdf_page":19},
+    {"symbol":"RLS","address":"2022","words":["00301","34760","00125","04627","00002","24342"],"printed_value":[1588471.994,697547.4954,21616.9998],"units":"m, Moon-fixed","sf":27,"pdf_page":19,"note":"Independent norm of printed values = 1735016.7373087506 m, not the rope equatorial lunar radius 1738090 m. Do not mix those reference radii silently."}
+  ]
+}

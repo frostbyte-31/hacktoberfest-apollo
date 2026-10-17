@@ -1,0 +1,2101 @@
+{
+  "scope": "Independent diagnostics of actual native guidance, not substitute guidance",
+  "input_run": ".build/phase10/future-15km-01",
+  "raw_trace_sha256": "591e2f1049d03eea27dd302ce643dc6d56107fc9f261be696162d4b95fdea99b",
+  "observer_map_sha256": "cfccad8d5649ff412fad218003cb2bc3d452a220100872b2c519967cb842a406",
+  "configuration_sha256": "bc3bd52bad6fe30dc2855d52ec4a76366795b0cc347814f7e6aafc2491102fb6",
+  "root_entries": 9,
+  "original_normal_returns": 9,
+  "passes": [
+    {
+      "entry_cycle": 18502070,
+      "normal_return_cycle": 18504866,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00370",
+          "14504",
+          "00270",
+          "20760",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.015160813927650452,
+          0.011262834072113037,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.6463893875479698,
+        "signed_time_to_go_seconds": -847.235498046875,
+        "residual_fraction": -2.0105992146487373e-09,
+        "derivative_fraction": 0.03061824040270811,
+        "relative_residual": 5.460330960800557e-08,
+        "diagnostic_newton_correction_fraction": -6.566671331220276e-08
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.625,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "20000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "20000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "00000",
+          "20000",
+          "00000"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "determinant": 1.0,
+        "max_orthogonality_error": 0.0,
+        "max_identity_difference": 0.0,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 12000.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1614703.3125,
+          29.875,
+          -682684.75
+        ],
+        "V_m_s_SM": [
+          651.2308120727539,
+          -0.027513504028320312,
+          1540.3077125549316
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ],
+        "RGU_m": [
+          -123384.0,
+          2865.25,
+          -681538.25
+        ],
+        "VGU_m_s": [
+          650.5523681640625,
+          -4.0187835693359375,
+          1538.7035369873047
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1614703.0,
+          0.0,
+          -682685.5
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738087.2557030048,
+          -2835.576053518275,
+          -1146.0153369959855
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.005703004775568843,
+          0.2010535182748754,
+          -0.4846630040144646
+        ],
+        "LAND_current_epoch_error_norm_m": 0.524741144693744,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.002857007086277008,
+          -0.04590972512960434,
+          -0.019950389862060547
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          -0.0625,
+          0.0,
+          0.0
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -0.0002776311276875276,
+          0.000178439985987211,
+          1.5209055845843977e-05
+        ],
+        "original_TTFINCR_first_order_formula_m": [
+          1738087.2557054795,
+          -2835.4444728495455,
+          -1146.3235086974955
+        ],
+        "LAND_minus_source_transport_formula_m": [
+          -0.00570547953248024,
+          0.06947284954549104,
+          -0.17649130250447342
+        ],
+        "LAND_source_transport_error_norm_m": 0.18975829146678028
+      }
+    },
+    {
+      "entry_cycle": 18535727,
+      "normal_return_cycle": 18536845,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00370",
+          "15504",
+          "00267",
+          "20350",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.015162721276283264,
+          0.011200815439224243,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.6477637477219105,
+        "signed_time_to_go_seconds": -849.0368994140625,
+        "residual_fraction": -7.93906586775472e-09,
+        "derivative_fraction": 0.030565234461230543,
+        "relative_residual": 2.1534165998470505e-07,
+        "diagnostic_newton_correction_fraction": -2.597416969866455e-07
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.125,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37457",
+          "77762",
+          "64267",
+          "77772",
+          "63051",
+          "00015",
+          "14466",
+          "17777",
+          "33262",
+          "00056",
+          "35717",
+          "00005",
+          "12356",
+          "77721",
+          "41643",
+          "17777",
+          "33504"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999984428286552,
+            -0.001631319522857666,
+            -0.0006596297025680542
+          ],
+          [
+            0.0016350001096725464,
+            0.9999822527170181,
+            0.005729310214519501
+          ],
+          [
+            0.0006502717733383179,
+            -0.005730360746383667,
+            0.9999833405017853
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999819744654,
+            -7.223086395669043e-08,
+            9.664413713750264e-11
+          ],
+          [
+            -7.223086395669043e-08,
+            1.000000003969895,
+            1.891345702276226e-08
+          ],
+          [
+            9.664413713750264e-11,
+            1.891345702276226e-08,
+            0.9999999411687723
+          ]
+        ],
+        "determinant": 0.9999999635565633,
+        "max_orthogonality_error": 7.223086395669043e-08,
+        "max_identity_difference": 0.005730360746383667,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 12000.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1614703.3125,
+          29.875,
+          -682684.75
+        ],
+        "V_m_s_SM": [
+          649.2578506469727,
+          -0.08587837219238281,
+          1531.4208030700684
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ],
+        "RGU_m": [
+          -122938.875,
+          -1241.25,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5761413574219,
+          5.7476043701171875,
+          1530.2360534667969
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1614703.0,
+          0.0,
+          -682685.5
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738087.2557030048,
+          -2835.576053518275,
+          -1146.0153369959855
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.005703004775568843,
+          0.2010535182748754,
+          -0.4846630040144646
+        ],
+        "LAND_current_epoch_error_norm_m": 0.524741144693744,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.002857007086277008,
+          -0.04590972512960434,
+          -0.019950389862060547
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          -0.01836480526253581,
+          0.027659057639539242,
+          0.0479227090254426
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -7.200827326414583e-05,
+          -0.00036291210021133224,
+          -0.0001904648622712557
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18565497,
+      "normal_return_cycle": 18566622,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00370",
+          "15504",
+          "00267",
+          "20343",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.015162721276283264,
+          0.01120079681277275,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.6477638669312,
+        "signed_time_to_go_seconds": -849.0370556640624,
+        "residual_fraction": 4.828164467908624e-10,
+        "derivative_fraction": 0.030565216610606634,
+        "relative_residual": 1.3096063241821576e-08,
+        "diagnostic_newton_correction_fraction": 1.5796271066612274e-08
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.125,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37457",
+          "77762",
+          "64267",
+          "77772",
+          "63051",
+          "00015",
+          "14463",
+          "17777",
+          "33340",
+          "00056",
+          "16236",
+          "00005",
+          "12374",
+          "77721",
+          "61323",
+          "17777",
+          "33562"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999984428286552,
+            -0.001631319522857666,
+            -0.0006596297025680542
+          ],
+          [
+            0.0016349777579307556,
+            0.9999825954437256,
+            0.005669817328453064
+          ],
+          [
+            0.0006503760814666748,
+            -0.005670875310897827,
+            0.9999836832284927
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999819744654,
+            -5.589839296993304e-08,
+            7.138785118598889e-09
+          ],
+          [
+            -5.589839296993304e-08,
+            1.0000000111711767,
+            1.1553937362407396e-08
+          ],
+          [
+            7.138785118598889e-09,
+            1.1553937362407396e-08,
+            0.9999999485390616
+          ]
+        ],
+        "determinant": 0.9999999708423498,
+        "max_orthogonality_error": 5.589839296993304e-08,
+        "max_identity_difference": 0.005670875310897827,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 12000.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1614703.3125,
+          29.875,
+          -682684.75
+        ],
+        "V_m_s_SM": [
+          649.270486831665,
+          -0.03762245178222656,
+          1531.4178466796875
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ],
+        "RGU_m": [
+          -122938.875,
+          -1200.75,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5887298583984,
+          5.7048797607421875,
+          1530.233383178711
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1614703.0,
+          0.0,
+          -682685.5
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738087.2557030048,
+          -2835.576053518275,
+          -1146.0153369959855
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.005703004775568843,
+          0.2010535182748754,
+          -0.4846630040144646
+        ],
+        "LAND_current_epoch_error_norm_m": 0.524741144693744,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.002857007086277008,
+          -0.04590972512960434,
+          -0.019950389862060547
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          -0.01836480526253581,
+          -0.022758243139833212,
+          0.12393337301909924
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -4.290161029985029e-05,
+          -0.000317399987827649,
+          1.1604650580920861e-05
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18656987,
+      "normal_return_cycle": 18658928,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00234",
+          "75740",
+          "00301",
+          "06266",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.009517554193735123,
+          0.011791907250881195,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.4469469264149666,
+        "signed_time_to_go_seconds": -585.822275390625,
+        "residual_fraction": -3.496817147621448e-08,
+        "derivative_fraction": 0.02839345117575591,
+        "relative_residual": 1.6506835569696344e-06,
+        "diagnostic_newton_correction_fraction": -1.2315576313622795e-06
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        -0.625,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37457",
+          "77762",
+          "64267",
+          "77772",
+          "63051",
+          "00015",
+          "14463",
+          "17777",
+          "33311",
+          "00056",
+          "25655",
+          "00005",
+          "12366",
+          "77721",
+          "51705",
+          "17777",
+          "33534"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999984428286552,
+            -0.001631319522857666,
+            -0.0006596297025680542
+          ],
+          [
+            0.0016349777579307556,
+            0.9999824240803719,
+            0.005698539316654205
+          ],
+          [
+            0.0006503313779830933,
+            -0.005699589848518372,
+            0.9999835193157196
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999819744654,
+            -7.456472111977419e-08,
+            9.38607869205299e-09
+          ],
+          [
+            -7.456472111977419e-08,
+            0.9999999949722689,
+            1.9005179874298506e-08
+          ],
+          [
+            9.38607869205299e-09,
+            1.9005179874298506e-08,
+            0.9999999471583947
+          ]
+        ],
+        "determinant": 0.9999999620525615,
+        "max_orthogonality_error": 7.456472111977419e-08,
+        "max_identity_difference": 0.005699589848518372,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 27960.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1699552.1875,
+          25.1875,
+          -429903.25
+        ],
+        "V_m_s_SM": [
+          408.1369400024414,
+          -0.043201446533203125,
+          1612.3658657073975
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ],
+        "RGU_m": [
+          -38256.625,
+          -332.125,
+          -429062.875
+        ],
+        "VGU_m_s": [
+          406.6535949707031,
+          5.6026458740234375,
+          1610.9397888183594
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1699552.0,
+          0.0,
+          -429904.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.3981180645,
+          -2150.555696841793,
+          -870.4979311291086
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.02311806450597942,
+          0.055696841793178464,
+          -0.3770688708914349
+        ],
+        "LAND_current_epoch_error_norm_m": 0.38186059823917234,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.011088132858276367,
+          -0.012890100479125977,
+          -0.0604095458984375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.04923613416031003,
+          0.0894062016159296,
+          -0.10892881080508232
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -0.0001384518987492811,
+          7.561688356894081e-05,
+          -0.00037229231952551345
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18689543,
+      "normal_return_cycle": 18690667,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00233",
+          "35656",
+          "00301",
+          "05521",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.009517364203929901,
+          0.011790577322244644,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.44696004688739777,
+        "signed_time_to_go_seconds": -585.83947265625,
+        "residual_fraction": -3.0703125503124347e-09,
+        "derivative_fraction": 0.028392396879113848,
+        "relative_residual": 1.449365948782181e-07,
+        "diagnostic_newton_correction_fraction": -1.0813854720983535e-07
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.875,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37610",
+          "77765",
+          "73516",
+          "77773",
+          "74515",
+          "00012",
+          "05301",
+          "17777",
+          "27012",
+          "00103",
+          "01234",
+          "00004",
+          "00540",
+          "77674",
+          "76423",
+          "17777",
+          "27140"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999991059303284,
+            -0.0012372806668281555,
+            -0.0005010515451431274
+          ],
+          [
+            0.0012412145733833313,
+            0.9999657422304153,
+            0.008183687925338745
+          ],
+          [
+            0.0004909038543701172,
+            -0.008184283971786499,
+            0.9999663829803467
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999937775554,
+            -1.2526618109465204e-07,
+            -5.029485494745245e-09
+          ],
+          [
+            -1.2526618109465204e-07,
+            0.9999999989961019,
+            1.8534687118432203e-08
+          ],
+          [
+            -5.029485494745245e-09,
+            1.8534687118432203e-08,
+            0.9999999905815224
+          ]
+        ],
+        "determinant": 0.9999999916775819,
+        "max_orthogonality_error": 1.2526618109465204e-07,
+        "max_identity_difference": 0.008184283971786499,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 27960.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1699552.1875,
+          25.1875,
+          -429903.25
+        ],
+        "V_m_s_SM": [
+          408.6641788482666,
+          -0.06361007690429688,
+          1612.2658252716064
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ],
+        "RGU_m": [
+          -38323.875,
+          -1383.375,
+          -429054.625
+        ],
+        "VGU_m_s": [
+          407.4348449707031,
+          9.424209594726562,
+          1610.7582092285156
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1699552.0,
+          0.0,
+          -429904.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.3981180645,
+          -2150.555696841793,
+          -870.4979311291086
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.02311806450597942,
+          0.055696841793178464,
+          -0.3770688708914349
+        ],
+        "LAND_current_epoch_error_norm_m": 0.38186059823917234,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.011088132858276367,
+          -0.012890100479125977,
+          -0.0604095458984375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.002647634129971266,
+          -0.08922140439972281,
+          0.05121752806007862
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -0.00021905404651079152,
+          -9.07210653231516e-05,
+          -0.0002809623115354043
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18719335,
+      "normal_return_cycle": 18720423,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00233",
+          "35657",
+          "00301",
+          "05524",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.0095173679292202,
+          0.01179058849811554,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.4469599165022373,
+        "signed_time_to_go_seconds": -585.8393017578124,
+        "residual_fraction": -6.382415301225806e-10,
+        "derivative_fraction": 0.028392405315943166,
+        "relative_residual": 3.012870477134969e-08,
+        "diagnostic_newton_correction_fraction": -2.2479304695054818e-08
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.625,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37610",
+          "77765",
+          "73516",
+          "77773",
+          "74515",
+          "00012",
+          "05310",
+          "17777",
+          "27033",
+          "00102",
+          "35141",
+          "00004",
+          "00542",
+          "77675",
+          "42515",
+          "17777",
+          "27160"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999991059303284,
+            -0.0012372806668281555,
+            -0.0005010515451431274
+          ],
+          [
+            0.0012412667274475098,
+            0.9999658688902855,
+            0.008167989552021027
+          ],
+          [
+            0.000490918755531311,
+            -0.008168593049049377,
+            0.9999665021896362
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999937775554,
+            -6.54031831470725e-08,
+            -9.602142969633576e-09
+          ],
+          [
+            -6.54031831470725e-08,
+            0.9999999957419141,
+            1.105746927354545e-08
+          ],
+          [
+            -9.602142969633576e-09,
+            1.105746927354545e-08,
+            0.9999999724150013
+          ]
+        ],
+        "determinant": 0.9999999809672331,
+        "max_orthogonality_error": 6.54031831470725e-08,
+        "max_identity_difference": 0.008168593049049377,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 27960.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1699552.1875,
+          25.1875,
+          -429903.25
+        ],
+        "V_m_s_SM": [
+          408.6549758911133,
+          -0.049304962158203125,
+          1612.267255783081
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ],
+        "RGU_m": [
+          -38323.875,
+          -1376.625,
+          -429054.75
+        ],
+        "VGU_m_s": [
+          407.4256896972656,
+          9.41314697265625,
+          1610.7597351074219
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1699552.0,
+          0.0,
+          -429904.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.3981180645,
+          -2150.555696841793,
+          -870.4979311291086
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.02311806450597942,
+          0.055696841793178464,
+          -0.3770688708914349
+        ],
+        "LAND_current_epoch_error_norm_m": 0.38186059823917234,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.011088132858276367,
+          -0.012890100479125977,
+          -0.0604095458984375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.002647634129971266,
+          -0.07259754603728652,
+          -0.05620213784277439
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          -0.00015296235687856097,
+          -0.00019553767304714142,
+          -0.0001953646988113178
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18811521,
+      "normal_return_cycle": 18812706,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00232",
+          "34377",
+          "00301",
+          "10234",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.009453769773244858,
+          0.01179562509059906,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.4446393735706806,
+        "signed_time_to_go_seconds": -582.7977197265625,
+        "residual_fraction": -9.17780892036028e-09,
+        "derivative_fraction": 0.02834849911992194,
+        "relative_residual": 4.365531551158995e-07,
+        "diagnostic_newton_correction_fraction": -3.237493766966507e-07
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37610",
+          "77765",
+          "73516",
+          "77773",
+          "74515",
+          "00012",
+          "05310",
+          "17777",
+          "27017",
+          "00103",
+          "00044",
+          "00004",
+          "00540",
+          "77674",
+          "77613",
+          "17777",
+          "27144"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999991059303284,
+            -0.0012372806668281555,
+            -0.0005010515451431274
+          ],
+          [
+            0.0012412667274475098,
+            0.9999657794833183,
+            0.00817897915840149
+          ],
+          [
+            0.0004909038543701172,
+            -0.008179575204849243,
+            0.9999664127826691
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999937775554,
+            -7.079892089256745e-08,
+            -1.0870484290492755e-08
+          ],
+          [
+            -7.079892089256745e-08,
+            0.9999999965808426,
+            1.8496312259586034e-08
+          ],
+          [
+            -1.0870484290492755e-08,
+            1.8496312259586034e-08,
+            0.9999999731305653
+          ]
+        ],
+        "determinant": 0.999999981744479,
+        "max_orthogonality_error": 7.079892089256745e-08,
+        "max_identity_difference": 0.008179575204849243,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 28136.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1700272.1875,
+          25.125,
+          -427055.25
+        ],
+        "V_m_s_SM": [
+          405.93910217285156,
+          -0.049686431884765625,
+          1612.956953048706
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ],
+        "RGU_m": [
+          -37605.25,
+          -1364.75,
+          -426209.375
+        ],
+        "VGU_m_s": [
+          404.7126770019531,
+          9.431076049804688,
+          1611.4471435546875
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1700272.0,
+          0.0,
+          -427056.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.408967619,
+          -2143.001586777854,
+          -867.4596391915784
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.03396761906333268,
+          0.0015867778538449784,
+          -0.4153608084216103
+        ],
+        "LAND_current_epoch_error_norm_m": 0.4167504267321664,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.009772539138793945,
+          -0.020008087158203125,
+          -0.06075286865234375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.04442607518285513,
+          -0.08317264076322317,
+          -0.015994295477867126
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          0.00021889697927690577,
+          -9.229212754746641e-05,
+          -0.0003279851955539925
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18843435,
+      "normal_return_cycle": 18844524,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00232",
+          "34375",
+          "00301",
+          "10230",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.44463884830474854,
+        "signed_time_to_go_seconds": -582.79703125,
+        "residual_fraction": 4.887743526614448e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "relative_residual": 2.3249160856120437e-07,
+        "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.875,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37610",
+          "77765",
+          "74622",
+          "77773",
+          "75065",
+          "00012",
+          "04202",
+          "17777",
+          "26734",
+          "00103",
+          "14644",
+          "00004",
+          "00166",
+          "77674",
+          "63013",
+          "17777",
+          "27060"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999991059303284,
+            -0.0012329593300819397,
+            -0.0004993230104446411
+          ],
+          [
+            0.0012369304895401,
+            0.9999653995037079,
+            0.008227616548538208
+          ],
+          [
+            0.000489160418510437,
+            -0.008228212594985962,
+            0.999966025352478
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999813736344,
+            -9.55237029476308e-08,
+            -1.0134655337168397e-09
+          ],
+          [
+            -9.55237029476308e-08,
+            1.0000000238757158,
+            1.4180855378853607e-08
+          ],
+          [
+            -1.0134655337168397e-09,
+            1.4180855378853607e-08,
+            0.999999994619656
+          ]
+        ],
+        "determinant": 0.9999999999344983,
+        "max_orthogonality_error": 9.55237029476308e-08,
+        "max_identity_difference": 0.008228212594985962,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 28136.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1700272.1875,
+          25.125,
+          -427055.25
+        ],
+        "V_m_s_SM": [
+          405.9441566467285,
+          -0.05002021789550781,
+          1612.956142425537
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ],
+        "RGU_m": [
+          -37606.0,
+          -1385.25,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1700272.0,
+          0.0,
+          -427056.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.408967619,
+          -2143.001586777854,
+          -867.4596391915784
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.03396761906333268,
+          0.0015867778538449784,
+          -0.4153608084216103
+        ],
+        "LAND_current_epoch_error_norm_m": 0.4167504267321664,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.009772539138793945,
+          -0.020008087158203125,
+          -0.06075286865234375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.02173654269427061,
+          -0.01768715400248766,
+          0.10840969253331423
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          2.6243004128900793e-05,
+          0.00030625043664755935,
+          -0.00030546461289304716
+        ]
+      }
+    },
+    {
+      "entry_cycle": 18873105,
+      "normal_return_cycle": 18874051,
+      "original_result": {
+        "coefficient_raw_octal": [
+          "00232",
+          "34375",
+          "00301",
+          "10230",
+          "77113",
+          "60670",
+          "77472",
+          "72437"
+        ],
+        "fractional_coefficients_A0_to_A3": [
+          0.00945376232266426,
+          0.011795610189437866,
+          -0.02664020285010338,
+          -0.012034296989440918
+        ],
+        "degenerate_all_zero": false,
+        "derivative_coefficient_abs_lt_one": true,
+        "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+        "root_fraction": -0.44463884830474854,
+        "signed_time_to_go_seconds": -582.79703125,
+        "residual_fraction": 4.887743526614448e-09,
+        "derivative_fraction": 0.02834847309631188,
+        "relative_residual": 2.3249160856120437e-07,
+        "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+      },
+      "coefficient_ideal_minus_observed_DP_LSB": [
+        0.875,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "REFSMMAT": {
+        "raw_words_octal": [
+          "20000",
+          "77777",
+          "77777",
+          "75437",
+          "77777",
+          "77701",
+          "00000",
+          "02342",
+          "20000",
+          "00000",
+          "77777",
+          "72221",
+          "00000",
+          "00100",
+          "00000",
+          "05566",
+          "20000",
+          "77777"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            1.0,
+            -9.298324584960938e-06,
+            -4.6193599700927734e-07
+          ],
+          [
+            9.313225746154785e-06,
+            1.0,
+            -2.180039882659912e-05
+          ],
+          [
+            4.76837158203125e-07,
+            2.1860003471374512e-05,
+            1.0
+          ]
+        ],
+        "row_dot_products": [
+          [
+            1.0000000000866722,
+            1.491123158281482e-08,
+            1.4697899786142443e-08
+          ],
+          [
+            1.491123158281482e-08,
+            1.0000000005619936,
+            5.960908566748913e-08
+          ],
+          [
+            1.4697899786142443e-08,
+            5.960908566748913e-08,
+            1.0000000004780871
+          ]
+        ],
+        "determinant": 1.0000000005633745,
+        "max_orthogonality_error": 5.960908566748913e-08,
+        "max_identity_difference": 2.1860003471374512e-05,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "CG": {
+        "raw_words_octal": [
+          "17777",
+          "37610",
+          "77765",
+          "74622",
+          "77773",
+          "75065",
+          "00012",
+          "04202",
+          "17777",
+          "26734",
+          "00103",
+          "14656",
+          "00004",
+          "00166",
+          "77674",
+          "63001",
+          "17777",
+          "27060"
+        ],
+        "direction_cosines_reference_to_stable_member": [
+          [
+            0.9999991059303284,
+            -0.0012329593300819397,
+            -0.0004993230104446411
+          ],
+          [
+            0.0012369304895401,
+            0.9999653995037079,
+            0.008227691054344177
+          ],
+          [
+            0.000489160418510437,
+            -0.008228287100791931,
+            0.999966025352478
+          ]
+        ],
+        "row_dot_products": [
+          [
+            0.9999999813736344,
+            -9.556090541096296e-08,
+            -9.216029051017927e-10
+          ],
+          [
+            -9.556090541096296e-08,
+            1.0000000251017318,
+            1.4180902008220642e-08
+          ],
+          [
+            -9.216029051017927e-10,
+            1.4180902008220642e-08,
+            0.9999999958457608
+          ]
+        ],
+        "determinant": 1.0000000011605588,
+        "max_orthogonality_error": 9.556090541096296e-08,
+        "max_identity_difference": 0.008228287100791931,
+        "classification": "VERIFIED numerical properties of observed words",
+        "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+      },
+      "TPIP_cs": 28136.0,
+      "TLAND_cs": 78440.0,
+      "AGC_COMPUTED": {
+        "R_m_SM": [
+          1700272.1875,
+          25.125,
+          -427055.25
+        ],
+        "V_m_s_SM": [
+          405.9440612792969,
+          -0.04978179931640625,
+          1612.956142425537
+        ],
+        "LAND_m_SM_at_TPIP": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ],
+        "RGU_m": [
+          -37606.0,
+          -1385.375,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "omega_rad_s_SM": [
+          6.1731952882837504e-09,
+          -9.934893796526012e-07,
+          2.469329274390475e-06
+        ],
+        "integration_RATT1_m_REF": [
+          1700272.0,
+          0.0,
+          -427056.0
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "site_m_SM_at_TLAND": [
+          1738089.946528875,
+          16.100336656945412,
+          0.9433458145373451
+        ],
+        "site_m_SM_at_TPIP": [
+          1738088.408967619,
+          -2143.001586777854,
+          -867.4596391915784
+        ],
+        "LAND_minus_independent_current_epoch_m": [
+          -0.03396761906333268,
+          0.0015867778538449784,
+          -0.4153608084216103
+        ],
+        "LAND_current_epoch_error_norm_m": 0.4167504267321664,
+        "R_minus_REFSM_transformed_RATT1_m": [
+          -0.009772539138793945,
+          -0.020008087158203125,
+          -0.06075286865234375
+        ],
+        "RGU_minus_CG_R_minus_LAND_m": [
+          0.02173654269427061,
+          -0.11093372013419867,
+          0.10857123043388128
+        ],
+        "VGU_minus_CG_surface_velocity_m_s": [
+          0.0001219043109017548,
+          -5.209067215794505e-05,
+          -0.00030377292478078743
+        ]
+      }
+    }
+  ]
+}

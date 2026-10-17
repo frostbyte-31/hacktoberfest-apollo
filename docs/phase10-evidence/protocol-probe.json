@@ -1,0 +1,20 @@
+{
+  "classification": "historical target-data DSKY protocol probe, not navigation or guidance validation",
+  "protocol_probe": true,
+  "blocks": [
+    {
+      "symbol": "RBRFG",
+      "words": [
+        0,
+        838,
+        0,
+        0,
+        32764,
+        29842
+      ],
+      "provenance": "Luminary99PadLoads.pdf p6; source RBRFG guidance target, metres B-24",
+      "units_and_scales": "metres B24, DP; published RBRFG target vector",
+      "reason": "Verify original P27 transaction/store mechanics before the numerical experiment"
+    }
+  ]
+}

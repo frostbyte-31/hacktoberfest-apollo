@@ -1,0 +1,133 @@
+{
+  "classification": "VERIFIED new Phase10 tests; existing historical gaps remain errors",
+  "suites": [
+    {
+      "suite": "Phases2-6 legacy",
+      "run": 38,
+      "passed": 35,
+      "errors": 3
+    },
+    {
+      "suite": "Milestone1",
+      "run": 55,
+      "passed": 55,
+      "errors": 0
+    },
+    {
+      "suite": "Milestone2",
+      "run": 47,
+      "passed": 47,
+      "errors": 0
+    },
+    {
+      "suite": "Milestone3",
+      "run": 34,
+      "passed": 34,
+      "errors": 0
+    },
+    {
+      "suite": "Phase7",
+      "run": 39,
+      "passed": 39,
+      "errors": 0
+    },
+    {
+      "suite": "Backend",
+      "run": 32,
+      "passed": 32,
+      "errors": 0
+    },
+    {
+      "suite": "FrontendPython",
+      "run": 12,
+      "passed": 12,
+      "errors": 0
+    },
+    {
+      "suite": "FrontendNode",
+      "run": 22,
+      "passed": 22,
+      "errors": 0
+    },
+    {
+      "suite": "LiveEvidence",
+      "run": 9,
+      "passed": 9,
+      "errors": 0
+    },
+    {
+      "suite": "phase8",
+      "run": 10,
+      "passed": 10,
+      "errors": 0
+    },
+    {
+      "suite": "phase9",
+      "run": 19,
+      "passed": 19,
+      "errors": 0
+    },
+    {
+      "suite": "phase10-native",
+      "run": 14,
+      "passed": 14,
+      "errors": 0
+    },
+    {
+      "suite": "phase10-math",
+      "run": 14,
+      "passed": 14,
+      "errors": 0
+    }
+  ],
+  "unique_final_test_totals": {
+    "run": 345,
+    "passed": 342,
+    "errors": 3,
+    "failures": 0,
+    "skipped": 0
+  },
+  "historical_errors": [
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.0077024160000000175,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase4-evidence/test_control_path.py\", line 10, in test_prior_evidence_preserved\n    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.007097624999999996,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/test_readiness.py\", line 17, in test_prior_evidence_unchanged\n    for p, h in hashes.items(): self.assertEqual(hashlib.sha256((ROOT / p).read_bytes()).hexdigest(), h, p)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    },
+    {
+      "classification": "known_historical_gap",
+      "duration_seconds": 0.007574915999999987,
+      "errno": 2,
+      "exception_filename": "docs/phase3-evidence/build.log",
+      "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'",
+      "exception_type": "FileNotFoundError",
+      "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+      "outcome": "error",
+      "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/build.log'\n"
+    }
+  ],
+  "sandbox_attempt": {
+    "path": "runs/regressions/02.stderr",
+    "errors": 11,
+    "cause": "Localhost socket bind denied",
+    "rerun": "runs/regressions-loopback",
+    "rerun_exit": 0
+  },
+  "interpretation": "Totals count each final suite once; earlier probes, repeat checks and superseded sandbox attempts are retained separately, not counted as extra passes."
+}

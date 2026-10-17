@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "docs/phase10-evidence/math",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "exit": 0,
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "scope": "Modern independent arithmetic checks, not native AGC execution"
+}

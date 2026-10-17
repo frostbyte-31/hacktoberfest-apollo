@@ -1,0 +1,260 @@
+{
+  "status": "VERIFIED",
+  "tests_run": 39,
+  "passed": true,
+  "groups": {
+    "physics": {
+      "tests_run": 16,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_physics.FreshPhysicsTests.test_adapter_protects_retained_paths_and_symlinks",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.001039832999999879
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_adapter_rejects_changed_source_and_existing_destinations",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0022340000000000693
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_assumed_inertias_and_source_jet_torque_are_positive_physical",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 5.329200000003809e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_bounds_and_nonconvergence_fail_explicitly",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 4.254199999986774e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_constant_principal_torque_uses_declared_semiimplicit_step",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 3.0041999999896873e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_coordinate_roundtrip_and_rotation_matrix",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 3.108299999987629e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_fresh_actual_execution_and_complete_markers",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00024112499999984216
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_inertial_momentum_direction_converges_at_first_order",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.891700000007269e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_original_gimbal_jacobian_matches_body_rate_quaternion",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.408400000009081e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_parser_rejects_incomplete_or_wrong_convention_trace",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0008431250000000556
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_principal_physical_motion_emits_correct_signed_cdu_axis",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.829200000009635e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_source_locked_selectors_and_exact_decode",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00020849999999983382
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_translation_logs_suppression_and_never_produces_pipa",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.4750000000128836e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_two_torques_include_induced_third_axis_motion",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.491600000009697e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_unequal_inertia_torque_free_energy_and_momentum_norm",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.366599999992225e-05
+        },
+        {
+          "id": "test_physics.FreshPhysicsTests.test_yaw_remains_within_legacy_predeclared_tolerance",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 2.333300000012528e-05
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    },
+    "integration": {
+      "tests_run": 23,
+      "passed": true,
+      "tests": [
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_actual_error_needles_are_not_coarse_platform_motion",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.005750041999999844
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_all_captured_cases_reconcile_actual_native_boundaries",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 1.3785828749999998
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_all_derived_gimbal_paths_retained_without_claiming_third_axis_control",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.003300042000000225
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_combined_horizon_declared_before_execution_and_guard_active",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.014881166999999529
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_disconnected_controls_change_actual_timed_commands_keep_zero_cdus",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.017735833999999784
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_final_actual_cdu_angles_match_quaternion_derived_gimbals_within_quantum",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 9.7957999999565e-05
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_independent_pitch_uses_original_qr_jets_and_actual_cdus",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.004658874999999618
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_original_yaw_and_new_quaternion_yaw_preserve_baseline",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.03687462500000027
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_pc_bank_flags_and_real_inertia_telemetry_exist",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.01679858300000081
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_pitch_and_simultaneous_replays_are_exact",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.03164208399999957
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_active_unsupported_alignment_without_discarding_raw_packet",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.11155404199999985
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_false_summary_and_settlement",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.44604541699999967
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_missing_observed_application_despite_summary",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.08560466700000013
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_sensor_data_mislabeled_as_authentic_output",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.08679983299999972
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_swapped_final_orientation_interface",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.22489654199999976
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_swapped_native_packet_axis",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.003910249999999671
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_unsupported_sensor_path_and_nonunit_orientation",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.0002710420000004987
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_wrong_actual_counter_delta",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.08628783399999929
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_reject_wrong_actual_fifo_head",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.08848383299999973
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_same_call_analog_vector_schedule_is_source_justified",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00025695799999958524
+        },
+        {
+          "id": "test_integration.CapturedMultiAxisControl.test_simultaneous_actual_pq_torque_rates_and_orientation_overlap",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.002936457999999753
+        },
+        {
+          "id": "test_integration.NativeWireAndFifos.test_actual_native_bytes_preserve_mixed_normal_and_three_counter_order",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 0.00021074999999992627
+        },
+        {
+          "id": "test_integration.NativeWireAndFifos.test_actual_three_fifo_heads_modular_counts_and_quiet_settlement",
+          "outcome": "passed",
+          "classification": "passed",
+          "duration_seconds": 4.4916000000227996e-05
+        }
+      ],
+      "failure_count": 0,
+      "error_count": 0,
+      "skipped_count": 0
+    }
+  },
+  "prior_files_preserved": 1520
+}

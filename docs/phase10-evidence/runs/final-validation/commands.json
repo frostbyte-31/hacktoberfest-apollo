@@ -1,0 +1,140 @@
+[
+  {
+    "name": "phase9-baseline",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/validate.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/phase9-baseline"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:23:46.141058+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:23:58.123967+00:00"
+  },
+  {
+    "name": "final",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/final"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:23:58.124663+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:03.757479+00:00"
+  },
+  {
+    "name": "repeat",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/repeat"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:03.758169+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:09.483352+00:00"
+  },
+  {
+    "name": "altitude-16km",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-16km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/altitude-16km"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:09.484095+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:15.164116+00:00"
+  },
+  {
+    "name": "missing-site",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/missing-site.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/missing-site"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:15.164895+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:20.580495+00:00"
+  },
+  {
+    "name": "analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/analyze.py",
+      "--runs",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation",
+      "--baseline-analysis",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/phase9-baseline/analysis.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:20.581174+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:22.140671+00:00"
+  },
+  {
+    "name": "final-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/final",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/final-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:22.141456+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:22.356447+00:00"
+  },
+  {
+    "name": "altitude-16km-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/altitude-16km",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-angle050-validation/altitude-16km-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:24:22.357038+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:24:22.576696+00:00"
+  }
+]

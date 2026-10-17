@@ -1,0 +1,5 @@
+final exit0
+repeat exit0
+mark-irq-off exit0
+analysis exit0
+Phase9 final native validation: /Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/phase9-baseline

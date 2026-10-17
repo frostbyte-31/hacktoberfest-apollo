@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "docs/phase10-evidence/run_mission.py",
+    "--setup",
+    ".build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+    "--config",
+    "docs/phase10-evidence/protocol-probe.json",
+    "--output",
+    ".build/phase10/protocol-probe-02"
+  ],
+  "base_revision": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "utc": "2026-10-17T19:11:42.520018+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "symbols_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+  "driver_sha256": "447657ab343d277064b6d41c4d8ce75b30cef3c80b97f672c6f06b45798ff819",
+  "engine_sha256": "5e6b20d67f3ce13db89c86f25907326b7a33ef1cda2b9dee9c68f20f0c4aa4c3",
+  "config_sha256": "1c73c7a879dd9c2e0bf66928b68fc5b2b1585c2f6e00d75048b36f6f394fe8d0",
+  "scope": "SYNTHETIC mission-input feasibility; original P51 and P27/P63 instructions; no thrust plant"
+}

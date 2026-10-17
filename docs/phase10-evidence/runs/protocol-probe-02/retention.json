@@ -1,0 +1,138 @@
+{
+  "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/protocol-probe-02",
+  "files": [
+    {
+      "source_path": "build.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "build.stderr",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "build.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_path": "build.stdout",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_path": "commands.json",
+      "raw_bytes": 1452,
+      "raw_sha256": "5b6d75da2f0dccafc5644e248ddc25331c4ed1c0b290c9e2c522865222326ae6",
+      "retained_path": "commands.json",
+      "retained_sha256": "5b6d75da2f0dccafc5644e248ddc25331c4ed1c0b290c9e2c522865222326ae6"
+    },
+    {
+      "source_path": "completion.json",
+      "raw_bytes": 791,
+      "raw_sha256": "f1513b8a088ba45f7f136bd4c864de1cff4ee6cbaa44f302d05654e4e6a3a42c",
+      "retained_path": "completion.json",
+      "retained_sha256": "f1513b8a088ba45f7f136bd4c864de1cff4ee6cbaa44f302d05654e4e6a3a42c"
+    },
+    {
+      "source_path": "configuration.json",
+      "raw_bytes": 382,
+      "raw_sha256": "1c73c7a879dd9c2e0bf66928b68fc5b2b1585c2f6e00d75048b36f6f394fe8d0",
+      "retained_path": "configuration.json",
+      "retained_sha256": "1c73c7a879dd9c2e0bf66928b68fc5b2b1585c2f6e00d75048b36f6f394fe8d0"
+    },
+    {
+      "source_path": "engine.so",
+      "raw_bytes": 74280,
+      "raw_sha256": "5e6b20d67f3ce13db89c86f25907326b7a33ef1cda2b9dee9c68f20f0c4aa4c3",
+      "omitted": "Host-specific build product; reproduce from verified original engine sources and retained command/header"
+    },
+    {
+      "source_path": "executed-run_mission.py",
+      "raw_bytes": 9331,
+      "raw_sha256": "447657ab343d277064b6d41c4d8ce75b30cef3c80b97f672c6f06b45798ff819",
+      "retained_path": "executed-run_mission.py",
+      "retained_sha256": "447657ab343d277064b6d41c4d8ce75b30cef3c80b97f672c6f06b45798ff819"
+    },
+    {
+      "source_path": "execution.json",
+      "raw_bytes": 1060,
+      "raw_sha256": "cab786de358b16c9b68b5ab2d24c958689eb284344c5b179224cf613e21d82e4",
+      "retained_path": "execution.json",
+      "retained_sha256": "cab786de358b16c9b68b5ab2d24c958689eb284344c5b179224cf613e21d82e4"
+    },
+    {
+      "source_path": "observer-build.json",
+      "raw_bytes": 1337,
+      "raw_sha256": "7a7007237e32c5f87108d763687fa797e53f8202e67272cea1f20166ece3badf",
+      "retained_path": "observer-build.json",
+      "retained_sha256": "7a7007237e32c5f87108d763687fa797e53f8202e67272cea1f20166ece3badf"
+    },
+    {
+      "source_path": "observer-map.json",
+      "raw_bytes": 6397,
+      "raw_sha256": "b005e9720188e020e42a2ecf9b188740522a7a637ec92c47da7008162dc55a7d",
+      "retained_path": "observer-map.json",
+      "retained_sha256": "b005e9720188e020e42a2ecf9b188740522a7a637ec92c47da7008162dc55a7d"
+    },
+    {
+      "source_path": "p9_watch.h",
+      "raw_bytes": 1797,
+      "raw_sha256": "8a4fc821b783bf4e0f1960c7f2a423e0da948cde530084627f1e4172844a66b5",
+      "retained_path": "p9_watch.h",
+      "retained_sha256": "8a4fc821b783bf4e0f1960c7f2a423e0da948cde530084627f1e4172844a66b5"
+    },
+    {
+      "source_path": "preservation-after.json",
+      "raw_bytes": 70,
+      "raw_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "retained_path": "preservation-after.json",
+      "retained_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf"
+    },
+    {
+      "source_path": "preservation-before.json",
+      "raw_bytes": 70,
+      "raw_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf",
+      "retained_path": "preservation-before.json",
+      "retained_sha256": "0400f255276a0b6e2d2a528d388bfea46fc0cdfc6369f393b5e32eb2fd410fbf"
+    },
+    {
+      "source_path": "setup-used.json",
+      "raw_bytes": 1676,
+      "raw_sha256": "3964fbe2d45a59e15da2487b86545c31fd07a467407f7a1a85e27c37de630f45",
+      "retained_path": "setup-used.json",
+      "retained_sha256": "3964fbe2d45a59e15da2487b86545c31fd07a467407f7a1a85e27c37de630f45"
+    },
+    {
+      "source_path": "source-integrity/after-execution.json",
+      "raw_bytes": 55,
+      "raw_sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9",
+      "retained_path": "source-integrity/after-execution.json",
+      "retained_sha256": "35911dc23000e1f023f2a5fb7984af133fa473ae9be79ac87c1d06cc374357c9"
+    },
+    {
+      "source_path": "source-integrity/source-archive-hashes.json",
+      "raw_bytes": 37142,
+      "raw_sha256": "2ff3eca1627774d74183ab86fe485ed0417a1f0a95ddf770cc1395c31fb8763b",
+      "retained_path": "source-integrity/source-archive-hashes.json",
+      "retained_sha256": "2ff3eca1627774d74183ab86fe485ed0417a1f0a95ddf770cc1395c31fb8763b"
+    },
+    {
+      "source_path": "source-integrity/source-verification.json",
+      "raw_bytes": 179,
+      "raw_sha256": "2b8a07b9fcdbffe145e928202383364f4368af198e5a180fa7c7acc068d249a0",
+      "retained_path": "source-integrity/source-verification.json",
+      "retained_sha256": "2b8a07b9fcdbffe145e928202383364f4368af198e5a180fa7c7acc068d249a0"
+    },
+    {
+      "source_path": "trace-sha256.json",
+      "raw_bytes": 103,
+      "raw_sha256": "514af9761b3a8c2162a5f66fcfa09c9eda7b39f4605adc7fa0b1be3ff85ab14b",
+      "retained_path": "trace-sha256.json",
+      "retained_sha256": "514af9761b3a8c2162a5f66fcfa09c9eda7b39f4605adc7fa0b1be3ff85ab14b"
+    },
+    {
+      "source_path": "trace.jsonl",
+      "raw_bytes": 1241517,
+      "raw_sha256": "f0c151af9c5a284432e0fc696834f52c160ff50990d26f092f1e02ea6ba60c9b",
+      "retained_path": "trace.jsonl.gz",
+      "retained_sha256": "404f1514115d0e1b0288dfb1293e7bd2c7559be6e751995ed0fda316269d54f0"
+    }
+  ],
+  "note": "Fresh Phase10 work only; compressed logs are actual captured bytes, not reconstructed historical evidence"
+}

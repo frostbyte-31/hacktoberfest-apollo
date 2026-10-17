@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-17T19:21:16.272523+00:00",
+  "scope": "Frozen independent diagnostic code before parent final native validation; no further Python changes",
+  "sha256": {
+    "docs/phase10-evidence/math/candidate_geometry.py": "1c9e58c63ef7349bae02cc1ae93885675710e1846528d8c2d247ab706a42b4ad",
+    "docs/phase10-evidence/math/diagnostics.py": "c127b650b117774eb695bbe4511a0787c8bcddf658d59669a4134c201059572a",
+    "docs/phase10-evidence/math/inspect_native.py": "7f072ef56086607fa45660864ec5b1d5d44e2dbbfaf35f6b42ad537c12ea3d8e",
+    "docs/phase10-evidence/math/test_diagnostics.py": "d05aec06b53bfe611bf432f25d3a00ee776e939cbb38662c1d0c052cbb1af9c5"
+  }
+}

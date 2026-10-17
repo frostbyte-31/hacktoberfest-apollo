@@ -1,0 +1,154 @@
+{
+  "classification": "VERIFIED development-run observation; mission timing limitation, not a final Phase10 result",
+  "input_trace": ".build/phase10/mission-15km-02/trace.jsonl",
+  "trace_sha256": "bb4ebf0d2fc362a88a4ecc227e44281c7db6ecf87a6aede6bc31e61b5f640b3b",
+  "configuration_sha256": "50b6b4f4c506ef8f35855d3d0674f4304b110773d48ad9466861b9e4a119096e",
+  "checkpoint_counts": {
+    "P51": 1,
+    "P51B": 1,
+    "AOTMARK": 2,
+    "GETDAT": 4,
+    "CODE7": 4,
+    "GETMKS": 2,
+    "MARKRUPT": 4,
+    "MARKCHEX": 2,
+    "AVESTAR": 2,
+    "P51E": 1,
+    "V71UPDAT": 8,
+    "UPSTORE": 8,
+    "UPEND71": 8,
+    "P63LM": 1,
+    "R02BOTH": 1,
+    "P63_AFTER_R02": 1,
+    "CALCRGVG": 9,
+    "RGVGCALC": 9,
+    "TTF/8CL": 9,
+    "ROOTPSRS": 9,
+    "ROOTLOOP": 12,
+    "ROOTSTOR": 9,
+    "ROOTSTOR_RESULT": 9,
+    "QUADGUID": 9,
+    "CGCALC": 9,
+    "DDUMCALC": 3,
+    "IGNALGRT": 1
+  },
+  "roots": [
+    {
+      "cycle": 17941672,
+      "root_seconds_from_MPAC": -396.2309814453125,
+      "iteration_count_MPAC2": 3
+    },
+    {
+      "cycle": 17973932,
+      "root_seconds_from_MPAC": -396.252158203125,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18003760,
+      "root_seconds_from_MPAC": -396.252158203125,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18096748,
+      "root_seconds_from_MPAC": -588.42873046875,
+      "iteration_count_MPAC2": 2
+    },
+    {
+      "cycle": 18128383,
+      "root_seconds_from_MPAC": -588.4374658203125,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18160194,
+      "root_seconds_from_MPAC": -588.4374658203125,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18250465,
+      "root_seconds_from_MPAC": -584.911650390625,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18282672,
+      "root_seconds_from_MPAC": -584.910966796875,
+      "iteration_count_MPAC2": 1
+    },
+    {
+      "cycle": 18314375,
+      "root_seconds_from_MPAC": -584.910966796875,
+      "iteration_count_MPAC2": 1
+    }
+  ],
+  "ignition_algorithm_return": {
+    "cycle": 18340935,
+    "TIG_words": [
+      32767,
+      1701
+    ],
+    "TIG_seconds": 17.01,
+    "TIME2_TIME1_words": [
+      1,
+      5109
+    ],
+    "clock_seconds": 214.93,
+    "TTF_seconds": -584.910966796875,
+    "failreg_octal": [
+      "01520",
+      "00000",
+      "00000"
+    ],
+    "ignition_minus_current_clock_seconds": -197.92000000000002
+  },
+  "completion_state": {
+    "modreg": 63,
+    "flagword3": 5128,
+    "refsmflg": true,
+    "imodes30": 15873,
+    "imodes33": 15360,
+    "failreg": [
+      848,
+      0,
+      0
+    ],
+    "refsmmat": [
+      8192,
+      32767,
+      32767,
+      31519,
+      32767,
+      32705,
+      0,
+      1250,
+      8192,
+      0,
+      32767,
+      29841,
+      0,
+      64,
+      0,
+      2934,
+      8192,
+      32767
+    ],
+    "cdu": [
+      0,
+      0,
+      0
+    ],
+    "markstat": 0,
+    "markcntr": 32766,
+    "aotcode": 450,
+    "az": 13733,
+    "el": 6291,
+    "starind": 1,
+    "display": {
+      "PROG": "63",
+      "VERB": "06",
+      "NOUN": "61",
+      "R1": "09 45",
+      "R2": "03 23",
+      "R3": "00018"
+    }
+  },
+  "independent_decode": "ones-complement signed-word sum, root seconds=DP fraction*1310.72, DP epoch seconds=fraction*2^28/100; checkpoints are CPU-call snapshots"
+}

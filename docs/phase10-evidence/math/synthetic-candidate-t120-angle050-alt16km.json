@@ -1,0 +1,199 @@
+{
+  "classification": "SYNTHETIC CANDIDATE, not native experiment evidence",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "symbols_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+  "assumptions": [
+    "Moon-centered basic-REF inertial circular orbit",
+    "Clock zero at synthetic nominal lunar orientation epoch, TEPHEM=0",
+    "Zero libration, not historical Apollo 11 geometry",
+    "Fixed stable member uses actual near-identity Phase 9 matrix",
+    "Landing direction is basic REF +X at nominal landing time",
+    "State initialized at epoch, no modern propagation or guidance"
+  ],
+  "immutable_rope_constants": {
+    "MUM": {
+      "raw_octal": [
+        "16471",
+        "01352"
+      ],
+      "fraction": 0.45660678297281265
+    },
+    "RSUBM": {
+      "raw_octal": [
+        "00065",
+        "01265"
+      ],
+      "fraction": 0.003237444907426834
+    },
+    "COSI": {
+      "raw_octal": [
+        "17775",
+        "02052"
+      ],
+      "fraction": 0.49982086569070816
+    },
+    "SINI": {
+      "raw_octal": [
+        "00333",
+        "10374"
+      ],
+      "fraction": 0.013382896780967712
+    },
+    "BSUBO": {
+      "raw_octal": [
+        "02052",
+        "35552"
+      ],
+      "fraction": 0.0651201382279396
+    },
+    "NODIO": {
+      "raw_octal": [
+        "37436",
+        "01613"
+      ],
+      "fraction": 0.9862094335258007
+    },
+    "FSUBO": {
+      "raw_octal": [
+        "32417",
+        "32160"
+      ],
+      "fraction": 0.8290905356407166
+    },
+    "BDOT": {
+      "raw_octal": [
+        "77777",
+        "77767"
+      ],
+      "fraction": -2.9802322387695312e-08
+    },
+    "NODDOT": {
+      "raw_octal": [
+        "77665",
+        "42175"
+      ],
+      "fraction": -0.004573352634906769
+    },
+    "FDOT": {
+      "raw_octal": [
+        "22211",
+        "00625"
+      ],
+      "fraction": 0.5708633251488209
+    },
+    "MOONRATE": {
+      "raw_octal": [
+        "00344",
+        "24331"
+      ],
+      "fraction": 0.013954970985651016
+    }
+  },
+  "mu_m3_s2": 4902778000000.0,
+  "lunar_reference_radius_m": 1738090.0,
+  "state_epoch_cs": 12000,
+  "TLAND_cs": 78440,
+  "initial_angle_behind_target_rad": 0.5,
+  "independent_physical_moon_matrix_at_TLAND": [
+    [
+      -0.4008178443244797,
+      0.8496064061220946,
+      0.3428031642807681
+    ],
+    [
+      -0.9161548391443668,
+      -0.37264663771479767,
+      -0.1476305992771155
+    ],
+    [
+      0.0023165436817404756,
+      -0.3732337563884116,
+      0.9277344423604215
+    ]
+  ],
+  "input_candidates": {
+    "RRECTLEM": {
+      "value": [
+        1539358.795986284,
+        0,
+        -840955.5430102465
+      ],
+      "units": "m",
+      "binary_scale": 27,
+      "raw_octal": [
+        "00273",
+        "35076",
+        "00000",
+        "00000",
+        "77631",
+        "53010"
+      ],
+      "encoded_si_readback": [
+        1539359.0,
+        0.0,
+        -840955.5
+      ]
+    },
+    "VRECTLEM": {
+      "value": [
+        801.5236527804507,
+        0,
+        1467.1792050767294
+      ],
+      "units": "m/s",
+      "binary_scale": 5,
+      "cs_factor": 100,
+      "raw_octal": [
+        "10007",
+        "31505",
+        "00000",
+        "00000",
+        "16527",
+        "36510"
+      ],
+      "encoded_si_readback": [
+        801.5236496925354,
+        0.0,
+        1467.1792030334473
+      ]
+    },
+    "RLS": {
+      "value": [
+        -696657.487041935,
+        -1592359.5643684324,
+        4026.3614077963034
+      ],
+      "units": "m Moon-fixed",
+      "binary_scale": 27,
+      "raw_octal": [
+        "77652",
+        "76534",
+        "77475",
+        "63660",
+        "00000",
+        "17565"
+      ],
+      "encoded_si_readback": [
+        -696657.5,
+        -1592359.5,
+        4026.5
+      ]
+    }
+  },
+  "diagnostics": {
+    "radius_m": 1754090.0,
+    "altitude_above_reference_m": 16000.0,
+    "speed_m_s": 1671.8417944817925,
+    "radial_velocity_m_s": 0.0,
+    "tangential_speed_m_s": 1671.8417944817925,
+    "landing_site_radius_m": 1738090.0,
+    "site_central_angle_rad": 0.4999999999999999,
+    "surface_arc_distance_m": 869044.9999999998,
+    "circular_speed_at_radius_m_s": 1671.8417944817925,
+    "specific_orbital_energy_J_kg": -1397527.4928880504,
+    "bound_two_body_energy": true,
+    "point_gravity_m_s2": 1.593450156933852,
+    "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+  },
+  "caution": "All targeting padloads remain separately specified mission inputs; this geometry alone does not establish a guidance solution"
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "Independent numerical inspection of retained Phase 9 AGC-computed REFSMMAT",
+  "input_trace": "docs/phase9-evidence/runs/final/trace.jsonl.gz",
+  "raw_trace_sha256": "343419a500fdcf9d548fabdc6eba4805a72490d72161e23153461fa31a3e7128",
+  "observed_cycle": 4760295,
+  "agc_set_refsmflg": true,
+  "matrix": {
+    "raw_words_octal": [
+      "20000",
+      "77777",
+      "77777",
+      "75437",
+      "77777",
+      "77701",
+      "00000",
+      "02342",
+      "20000",
+      "00000",
+      "77777",
+      "72221",
+      "00000",
+      "00100",
+      "00000",
+      "05566",
+      "20000",
+      "77777"
+    ],
+    "direction_cosines_reference_to_stable_member": [
+      [
+        1.0,
+        -9.298324584960938e-06,
+        -4.6193599700927734e-07
+      ],
+      [
+        9.313225746154785e-06,
+        1.0,
+        -2.180039882659912e-05
+      ],
+      [
+        4.76837158203125e-07,
+        2.1860003471374512e-05,
+        1.0
+      ]
+    ],
+    "row_dot_products": [
+      [
+        1.0000000000866722,
+        1.491123158281482e-08,
+        1.4697899786142443e-08
+      ],
+      [
+        1.491123158281482e-08,
+        1.0000000005619936,
+        5.960908566748913e-08
+      ],
+      [
+        1.4697899786142443e-08,
+        5.960908566748913e-08,
+        1.0000000004780871
+      ]
+    ],
+    "determinant": 1.0000000005633745,
+    "max_orthogonality_error": 5.960908566748913e-08,
+    "max_identity_difference": 2.1860003471374512e-05,
+    "classification": "VERIFIED numerical properties of observed words",
+    "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "result": "packet-only negative control completed",
+  "state": {
+    "modreg": 51,
+    "flagword3": 1024,
+    "refsmflg": false,
+    "imodes30": 15873,
+    "imodes33": 15360,
+    "failreg": [
+      848,
+      0,
+      0
+    ],
+    "refsmmat": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "cdu": [
+      0,
+      0,
+      0
+    ],
+    "markstat": 257,
+    "markcntr": 0,
+    "aotcode": 449,
+    "az": 281,
+    "el": 5555,
+    "starind": 0,
+    "display": {
+      "PROG": "51",
+      "VERB": "54",
+      "NOUN": "71",
+      "R1": "00701",
+      "R2": "     ",
+      "R3": "     "
+    }
+  },
+  "cycle": 3454981
+}

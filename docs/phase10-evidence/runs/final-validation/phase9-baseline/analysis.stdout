@@ -1,0 +1,12 @@
+{
+  "all_pass": true,
+  "comparisons": {
+    "fresh_repeat_trace_byte_identical": true,
+    "negative_control_removes_native_alignment": true
+  },
+  "failed_checks": {
+    "run": [],
+    "repeat": [],
+    "negative": []
+  }
+}

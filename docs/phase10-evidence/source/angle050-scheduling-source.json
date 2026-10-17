@@ -1,0 +1,41 @@
+{
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "D29.9SEC": {
+    "symbol": {
+      "addressOctal": "36,3142",
+      "bank": 30,
+      "fixedBank": 30,
+      "index": 1638,
+      "kind": "F",
+      "listingLine": 64662,
+      "offset": 610,
+      "sRegister": 1634
+    },
+    "words_octal": [
+      "00000",
+      "05656"
+    ],
+    "value_centiseconds": 2990
+  },
+  "TIMEDELT": {
+    "symbol": {
+      "addressOctal": "13,3673",
+      "bank": 11,
+      "fixedBank": 11,
+      "index": 5869,
+      "kind": "F",
+      "listingLine": 66105,
+      "offset": 955,
+      "sRegister": 1979
+    },
+    "words_octal": [
+      "00000",
+      "03720"
+    ],
+    "value_centiseconds": 2000
+  },
+  "source_hashes": {
+    "BURN,_BABY,_BURN_--_MASTER_IGNITION_ROUTINE.agc": "8be1bf0b0346dc3ac8efd2bccb113d6cbd46dd9c22f716266cbaf4e3c1ce94d4",
+    "INTEGRATION_INITIALIZATION.agc": "35197ba93b209defdcfb21f3deb65d9215097e7778b437d5264d05bf0e6bdf1e"
+  }
+}

@@ -1,0 +1,345 @@
+Ol'TIONAL ~OftM NO, 10 
+"!.MAY 1111 l'.01TION 
+G ■ A P'P'MII ('1 Cl'II) 101·11.I 
+UNITED ST ATES GOVERNMENT 
+Memorandum 
+TO See list attached 
+FROM FS/Chief, Flight Support Division 
+1 J---
+DATE: SEP 8 1969 
+In reply refer to: 
+69-FS55-30 
+SUBJECT: . LUMINARY 1B updates (mission H1) 
+l 
+0010 .. 101 
+The enclosure to this memorandum gives the standard updates for the 
+LUMINARY lB program (LUMINARY Revision 116) to be used on H1 mission. 
+Erasable memory addresses, scalings, coordinate systems, order of 
+transmission, and a brief description for the para.meters are also 
+included. 
+Enclosure 
+FS55:WSAnkney:beb 
+Buy U.S. Savings Bonds Regularly on the Payroll Savings Pl,:m 
+Addressees: 
+MIT /IL/S. Copps 
+F. JI. Martin 
+G. Cherry 
+R. Tinkham 
+IBM(Houston)/R. N. Harr i s 
+Philco(Ho ust on )/R. Thomas 
+TRW(Houston)/J. L. Norto n 
+ED3/M. T. Cunningham 
+ED7/S. M. Keath ley 
+EG2/D. C. Cheatham 
+EG23/K . J. Cox 
+EaJ+3/H. S. Croyts 
+C. F. Wasson 
+PF/R. W. Lanzkron 
+PM/w. B. Goeckl er 
+FC / A. D. Aldrich 
+J. S. Llewellyn 
+J .C. Bost ic k 
+C. B. Parker 
+C. E. Swearingen 
+J. L. Cole 
+C. R. Lewis 
+H, G. Miller 
+G. S. Lunney 
+J . G. Renick 
+S. G. Bales 
+J. L. Munson 
+0 . C. Lindsey 
+FM/J. P. Mayer 
+H. W. Tindall, Jr. 
+C.R. Huss 
+FM7 /s. P. Mann 
+FS2/R. W. Cole 
+FS6/J. A. Mil le r 
+P. Segota 
+FS5/L. J. Dungan 
+C.R . Parker 
+J. W. Bormann 
+cc: 
+EA/M. A. Faget 
+EA2/R. A. Gardiner 
+PA/G. M. Low 
+FA/C. C. Kraft , Jr. 
+FC/E. F. Kranz 
+LUMINARY lB Updates (Mission H1 ) 
+1. The following is a list of the erasable complete starting addresses 
+(ECADR), with associated program names, required for the standard LGC 
+updates that are defined for the LUMINARY lB program. 
+a. CSM/LM state vector •.••••. UPSVFLAG 
+b. REFSMMAT (actual) ••••••.•• REFSMMAT 
+c. REFSMMAT (preferred .•••••• XSMD 
+d. LGC external delta-V ••.••• DELVSLV 
+e. LGC landing site RLS 
+TLAND 
+1501 
+1733 
+3606 
+3433 
+2022 
+2400 
+(VERB 71) 
+(VERB 71) 
+(VERB 71) 
+(VERB 71) 
+(VERB 72) 
+2. The following pages give scali ng , coordinate systems, order of 
+transmission, and a brief parameter description for the above updates. 
+ENCLOSURE 
+A. LGC CM/LM State Vector Update (Verb 71) 
+1. Update quantities 
+(a) Inde x (lSP) 
+(b) Starting Address (lSP) 
+Scale Factor 
+units/214 
+(ECADR form) 
+(c) State Vector Identifie r (lSP) 
+(d) 
+( e) 
+Position Components 
+Velocity Components 
+{ 
+earth - (meters/229) 
+moon - (meters/227) 
+{ 
+earth - (meters/centisecori.ct'')/27 
+moon - (meters/centisecond)/ 25 
+(f) State Vector Time (lDP) centiseconds/228 
+Note: The scaling as indicated gives the units and the number 
+by which the true value must be multiplied in order to force the value 
+to be less than one. 
+2. Order of uplink 
+Octal 
+Identifier 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+108 
+118 
+128 
+138 
+148 
+158 
+168 
+178 
+208 
+218 
+transmissio n 
+index (000218) 
+1501 
+state vector identifier 
+most sig. part of X position 
+least sig. part of X position 
+most sig. part of Y position 
+least sig. part of Y position 
+most sig. part of Z position 
+least sig. part of Z position 
+most sig. part of X velocity 
+least sig. part of X velocity 
+most sig. part of Y velocity 
+least sig. part of Y velocity 
+most s i g . part of Z velocity 
+least sig. part of Z velocity 
+most sig. part of time 
+least sig. part of time 
+2 
+3. Definitions 
+(a) The index is the total number of data lines (a data line 
+being a 5-octal character uplink word group) in the update. For the 
+state vector update the index must be equal to 1710, transmitted as 
+000213. 
+(b) The quantities beginnin g with the state vector identifier 
+will be placed, in sequence, into erasable memory beginning at the lo­
+cation specified by the starting address. The address must be in an 
+"ECADR" form. 
+(c) The state vector identifier is used to indicate which 
+vehicle state vector is to be update d and where the coordinate system 
+is centered. This is accomplishe d by setting the identifier to one 
+of the following values. 
+State Vector to Coordinate System Center 
+be updated Earth Moon 
+CSM +1(000013) +2(000023) 
+LM -1(777763) -2(777758) 
+(d) The position and velocity components must be in reference 
+(Besselian) coordinates (may be either geocentric or selenocentric) with 
+the time referenced to the computer clock. 
+B. LGC Lift-off Time Update (Verb 70) 
+1. Update quantities 
+Time Increment (1.DP) 
+2. Order of uplink transmission 
+Octal 
+Identifier 
+1 
+2 
+C. LGC Time Increment Update (Verb 73) 
+1. Update quantities 
+Time Increment (lDP) 
+Scale Factor 
+centiseconds/22 8 
+time increment MSB 
+time increment LSB 
+Scale Factor 
+centiseconds/22 8 
+3 
+2. Order of transmission 
+Octal 
+Identifier 
+1 time increment MSB 
+2 time increment LSB 
+D. LGC REFSMMAT Update (Verb 71) 
+1. Update quantities 
+(a) Index (lSP) Scale Factor 
+Units/214 
+(b) Starting address (lSP) ECADR form 
+(c) Elements of matrix (9DP) units/21 
+2. Order of transmission 
+Octal 
+Identifier 
+1 index (00024 8) 
+2 1733 
+3 row 1 column 1 MSB 
+4 row 1 column 1 LSB 
+5 row 1 column 2 MSB 
+6 row 1 column 2 LSB 
+7 row 1 column 3 MSB 
+108 row 1 column 3 LSB 
+118 row 2 column 1 MSB 
+128 row 2 column 1 LSB 
+138 row 2 column 2 MSB 
+148 row 2 column 2 LSB 
+158 row 2 column 3 MSB 
+168 row 2 column 3 LSB 
+178 row 3 column 1 MSB 
+203 row 3 column 1 LSB 
+213 row 3 column 2 MSB 
+223 row 3 column 2 LSB 
+233 row 3 column 3 MSB 
+243 row 3 column 3 LSB 
+A. LGC Preferred Alignments (Verb 71) 
+1. Update quantities 
+(a) Index (lSP) Scale Factor 
+units/2Il+ 
+(b) Starting address (lSP) ECADR form 
+(c) Elements of matrix (9DP) units/21 
+2. Order of transmissi on 
+Octal 
+Identifier 
+1 index (000243) 
+2 3606 
+3 row 1 column 1 MSB 
+4 row 1 column 1 LSB 
+5 row 1 column 2 MSB 
+6 row 1 column 2 LSB 
+7 row 1 column 3 MSB 
+108 row 1 column 3 LSB 
+118 row 2 column 1 MSB 
+128 row 2 column 1 LSB 
+138 row 2 column 2 MSB 
+148 row 2 column 2 LSB 
+158 row 2 column 3 MSB 
+163 row 2 column 3 LSB 
+178 r ow 3 column 1 MSB 
+208 row 3 column 1 LSB 
+218 row 3 column 2 MSB 
+228 row 3 column 2 LSB 
+238 row 3 column 3 MSB 
+248 row 3 column 3 LSB 
+' . 
+F. LGC External Delta V (Verb 71) 
+1. Update quantities 
+(a) Index (lSP) 
+(b) Address of DELVSLVX (lSP) 
+(c) DELVSLV's (3DP) 
+(d) TIG (lDP) 
+2. Order of transmission 
+Octal 
+Identifier 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+108 
+118 
+128 
+3. Definitions 
+Scale Factor 
+units/214 
+(ECADR form) 
+(meters/centisecona)/ 27 
+(centiseconds/228) 
+index (000128) 
+3433 
+X component of DELVSLVS 
+X component of DELVSLVS 
+y component of DELVSLVS 
+y component of DELVSLVS 
+z component of DELVSLVS 
+z component of DELVSLVS 
+TIG (MSB) 
+TIG (LSB) 
+5 
+(MSB) 
+(LSB) 
+(MSB) 
+(LSB) 
+(MSB) 
+(LSB) 
+(a) The index is as defined previously for the state vector update; 
+the value for the External Delta V update is 1010 transmitted as 000128. 
+(b) The address of DELVSLVX must be in ECADR form. 
+(c) The DELVSLV's specify the required velocity change in local 
+vertical coordinates at the time of ignition. 
+(d) TIG is the time of ignition, reference to the computer clock. 
+. . 
+H. LGC 
+1. 
+2. 
+Landing site vector update 
+(Verb 72) 
+TJpdate quantities 
+1 Index (lSP) (00021g) 
+2 2022 
+3 RLS X component (MSB) 
+4 2023 
+5 RLS X component (LSB) 
+6 2024 
+7 RLS Y component (MSB) 
+10g 2025 
+llg RLS Y component (LSB) 
+12g 2026 
+13g RLS Z component (MSB) 
+148 2027 
+158 RLS Z component (LSB) 
+16g 2400 
+. l?g TLAND (MSB) 
+20g 2401 
+21g TLAND (LSB) 
+Definitions 
+Scale Factor 
+(units / 214) 
+All addresses are in ECADR 
+form. 
+RLS double precision compo­
+nents are scaled meters/227 •. 
+TLAND is a double precision 
+qua nt ity scaled (centiseconds/ 
+228). 
+(a) The index is the total number of data lines (a data line being 
+a 5-octal character uplink word group) in an update. For the LGC landing site 
+update the index is 1710 transmitted as 00021 g. 
+(b) A 5-character core address location will precede each 5-character 
+uplink data word in a "verb 72" format (see Sect II of Guidance System Operation 
+Plan). All addresses are in ECADR form. 
+(c) RLS is t he landing site position vec tor in moon fixed coordinates 
+(see part 5.1.4.5 of Sect V of the Luminary Guidance Sys tems Operati on Plan). 
+(d) TLAND is the predic t ed tim e of landi ng . 

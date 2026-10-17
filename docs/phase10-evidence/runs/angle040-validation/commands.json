@@ -1,0 +1,140 @@
+[
+  {
+    "name": "phase9-baseline",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase9-evidence/validate.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/phase9-baseline"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:20:44.390071+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:20:56.479799+00:00"
+  },
+  {
+    "name": "final",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/final"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:20:56.480420+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:02.098701+00:00"
+  },
+  {
+    "name": "repeat",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-15km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/repeat"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:02.099372+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:07.667977+00:00"
+  },
+  {
+    "name": "altitude-16km",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-16km.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/altitude-16km"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:07.668731+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:13.209992+00:00"
+  },
+  {
+    "name": "missing-site",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+      "--setup",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+      "--config",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/missing-site.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/missing-site"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:13.210542+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:18.652949+00:00"
+  },
+  {
+    "name": "analysis",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/analyze.py",
+      "--runs",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation",
+      "--baseline-analysis",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/phase9-baseline/analysis.json",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/analysis.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:18.653595+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:20.197663+00:00"
+  },
+  {
+    "name": "final-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/final",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/final-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:20.198441+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:20.409180+00:00"
+  },
+  {
+    "name": "altitude-16km-independent-math",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/math/inspect_native.py",
+      "--run",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/altitude-16km",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/altitude-16km-independent-math.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "started_utc": "2026-10-17T19:21:20.409845+00:00",
+    "exit": 0,
+    "ended_utc": "2026-10-17T19:21:20.619268+00:00"
+  }
+]

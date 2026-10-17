@@ -1,0 +1,18 @@
+{
+  "classification": "historical target-data DSKY protocol probe, not navigation or guidance validation",
+  "protocol_probe": true,
+  "blocks": [
+    {
+      "symbol": "RBRFG",
+      "words": [
+        0,
+        838,
+        0,
+        0,
+        32764,
+        29842
+      ],
+      "provenance": "Luminary99PadLoads.pdf p6; source RBRFG guidance target, metres B-24"
+    }
+  ]
+}

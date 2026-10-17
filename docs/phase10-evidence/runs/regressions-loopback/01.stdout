@@ -1,0 +1,33 @@
+python3 -m unittest discover -s backend/tests -v
+python3 -m unittest discover -s frontend/tests -p test_replay.py -v
+/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test frontend/tests/replay.test.mjs frontend/tests/live.test.mjs
+✔ independent directions combine and opposing same-axis controls cancel (1.341042ms)
+✔ live controls require both server permission and original readiness (0.190542ms)
+✔ physical freeze and subsequent actual CPU counters remain separate (0.208417ms)
+✔ malformed live telemetry fails instead of creating a substitute state (0.291917ms)
+✔ separate held sources preserve another axis when one is released (3.869625ms)
+✔ neutral release can overtake an in-flight deflection with a newer sequence (0.504458ms)
+✔ connection loss releases controls and marks retained telemetry stale (0.277709ms)
+✔ inputs are not emitted before native startup is ready (0.372167ms)
+✔ exported real data satisfies the presentation contract (3.863375ms)
+✔ seeking holds the last real sample and never selects future telemetry (0.12875ms)
+✔ RCS words follow interleaved actual event edges without looking ahead (0.56625ms)
+✔ source-derived jet names and bit positions remain distinct from axes (0.250667ms)
+✔ scalar-first active body-to-stable quaternion has the right handed sign (0.17025ms)
+✔ render rotation preserves vector lengths for actual compound attitude (0.083084ms)
+✔ SLERP follows the short quaternion arc and normalizes presentation (0.164542ms)
+✔ rendering freezes at the actual horizon without extrapolating residual rate (0.13125ms)
+✔ interpolated drawing does not mutate held actual samples (1.537834ms)
+✔ gimbal wrapping and octal register presentation preserve values (0.196458ms)
+✔ physical freeze is distinct from the one-count settlement tail (0.078ms)
+✔ original readiness requires actual P00 and both original inhibition gates (0.157792ms)
+✔ malformed quaternion and command chronology fail rather than fabricate (25.225458ms)
+✔ non-numeric times and out-of-range authentic words are rejected (26.382041ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.189875

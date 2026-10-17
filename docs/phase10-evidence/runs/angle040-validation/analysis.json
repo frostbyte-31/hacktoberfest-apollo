@@ -1,0 +1,3159 @@
+{
+  "run": {
+    "classification": "VERIFIED bounded numerical guidance",
+    "checks": {
+      "retained_fresh_unmodified_rope_no_flight_memory_writes": true,
+      "retained_exact_phase5_startup_packets": true,
+      "retained_phase5_startup_actual_outputs_match_phase8": true,
+      "retained_startup_is_legacy_unaligned_operate_state": true,
+      "retained_only_supported_accepted_hardware_packets": true,
+      "retained_dsky_sequence_packets_match_logged_keys_and_cpu_timing": true,
+      "retained_dsky_display_reconstructed_from_actual_output": true,
+      "retained_octal_five_digit_code_and_signed_decimal_field_loads": true,
+      "retained_native_transition_snapshots_agree_with_actual_values": true,
+      "retained_stationary_cdu_fixture_without_counter_feedback": true,
+      "retained_four_documented_mark_inputs_irqs_and_original_markrupts": true,
+      "retained_two_real_star_pairs_complete_in_original_markstat": true,
+      "retained_matrix_native_stores_precede_original_flag_set": true,
+      "retained_alignment_result_matches_native_matrix_and_flag": true,
+      "retained_original_p51g_set_refsmflag_operand_observed": true,
+      "retained_alignment_precedes_normal_p63_selection": true,
+      "retained_original_r02_with_valid_refsm_returns_to_p63": true,
+      "retained_no_engine_on_output_after_alignment_request": true,
+      "all_configured_inputs_have_real_p27_transactions": true,
+      "all_generic_padloads_match_actual_original_stores": true,
+      "state_update_original_intwake_clears_identifier_and_populates_permanent_state": true,
+      "alignment_matrix_and_flag_preserved_through_mission_inputs": true,
+      "explicit_nominal_epoch_and_zero_libration": true,
+      "p63_reaches_original_polynomial_construction": true,
+      "original_coefficients_match_independent_operand_formulas_within_2_DP_LSB": true,
+      "input_state_is_bound_nearly_circular_lunar_orbit": true,
+      "actual_p51_matrix_numerically_proper": true,
+      "nondegenerate_scaled_cubic_inputs": true,
+      "each_original_root_returns_normally_and_stores_ttf": true,
+      "returned_countdowns_have_nonzero_derivative_and_small_residual": true,
+      "original_ignition_time_iteration_converges": true,
+      "no_new_program_alarms": true,
+      "actual_next_display_is_preignition_n61": true,
+      "original_ignition_solution_is_in_the_future": true
+    },
+    "all_pass": true,
+    "raw_sha256": "591e2f1049d03eea27dd302ce643dc6d56107fc9f261be696162d4b95fdea99b",
+    "raw_bytes": 4361647,
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "P51E": 1,
+      "AOTMARK": 2,
+      "MARKRUPT": 4,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "R02BOTH": 1,
+      "P63LM": 1,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "P63_AFTER_R02": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "CALCRGVG": 9,
+      "CGCALC": 9,
+      "RGVGCALC": 9,
+      "DDUMCALC": 3,
+      "ROOTSTOR": 9,
+      "QUADGUID": 9,
+      "IGNALGRT": 1,
+      "ROOTSTOR_RESULT": 9
+    },
+    "input_state_independent_diagnostics": {
+      "radius_m": 1753090.205927593,
+      "altitude_above_reference_m": 15000.205927592935,
+      "speed_m_s": 1672.3185535279465,
+      "radial_velocity_m_s": -2.2556545214412424e-05,
+      "tangential_speed_m_s": 1672.3185535279465,
+      "landing_site_radius_m": 1738090.0,
+      "site_central_angle_rad": 0.40000001120338924,
+      "surface_arc_distance_m": 695236.0194724988,
+      "circular_speed_at_radius_m_s": 1672.318455426861,
+      "specific_orbital_energy_J_kg": -1398324.34412438,
+      "bound_two_body_energy": true,
+      "point_gravity_m_s2": 1.5952681766774932,
+      "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+    },
+    "actual_p51_matrix_diagnostics": {
+      "raw_words_octal": [
+        "20000",
+        "77777",
+        "77777",
+        "75437",
+        "77777",
+        "77701",
+        "00000",
+        "02342",
+        "20000",
+        "00000",
+        "77777",
+        "72221",
+        "00000",
+        "00100",
+        "00000",
+        "05566",
+        "20000",
+        "77777"
+      ],
+      "direction_cosines_reference_to_stable_member": [
+        [
+          1.0,
+          -9.298324584960938e-06,
+          -4.6193599700927734e-07
+        ],
+        [
+          9.313225746154785e-06,
+          1.0,
+          -2.180039882659912e-05
+        ],
+        [
+          4.76837158203125e-07,
+          2.1860003471374512e-05,
+          1.0
+        ]
+      ],
+      "row_dot_products": [
+        [
+          1.0000000000866722,
+          1.491123158281482e-08,
+          1.4697899786142443e-08
+        ],
+        [
+          1.491123158281482e-08,
+          1.0000000005619936,
+          5.960908566748913e-08
+        ],
+        [
+          1.4697899786142443e-08,
+          5.960908566748913e-08,
+          1.0000000004780871
+        ]
+      ],
+      "determinant": 1.0000000005633745,
+      "max_orthogonality_error": 5.960908566748913e-08,
+      "max_identity_difference": 2.1860003471374512e-05,
+      "classification": "VERIFIED numerical properties of observed words",
+      "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+    },
+    "polynomial_entries": [
+      {
+        "cycle": 18502070,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "14504",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015160813927650452,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -664.4,
+        "RGU_m": [
+          -123384.0,
+          2865.25,
+          -681538.25
+        ],
+        "VGU_m_s": [
+          650.5523681640625,
+          -4.0187835693359375,
+          1538.7035369873047
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18535727,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.011200815439224243,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.125,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -847.235498046875,
+        "RGU_m": [
+          -122938.875,
+          -1241.25,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5761413574219,
+          5.7476043701171875,
+          1530.2360534667969
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18565497,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20343",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.01120079681277275,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.125,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -849.0368994140625,
+        "RGU_m": [
+          -122938.875,
+          -1200.75,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5887298583984,
+          5.7048797607421875,
+          1530.233383178711
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18656987,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00234",
+            "75740",
+            "00301",
+            "06266",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517554193735123,
+            0.011791907250881195,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -689.4370556640625,
+        "RGU_m": [
+          -38256.625,
+          -332.125,
+          -429062.875
+        ],
+        "VGU_m_s": [
+          406.6535949707031,
+          5.6026458740234375,
+          1610.9397888183594
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18689543,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35656",
+            "00301",
+            "05521",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517364203929901,
+            0.011790577322244644,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -585.822275390625,
+        "RGU_m": [
+          -38323.875,
+          -1383.375,
+          -429054.625
+        ],
+        "VGU_m_s": [
+          407.4348449707031,
+          9.424209594726562,
+          1610.7582092285156
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18719335,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35657",
+            "00301",
+            "05524",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.0095173679292202,
+            0.01179058849811554,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -585.83947265625,
+        "RGU_m": [
+          -38323.875,
+          -1376.625,
+          -429054.75
+        ],
+        "VGU_m_s": [
+          407.4256896972656,
+          9.41314697265625,
+          1610.7597351074219
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18811521,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34377",
+            "00301",
+            "10234",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009453769773244858,
+            0.01179562509059906,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -584.0793017578125,
+        "RGU_m": [
+          -37605.25,
+          -1364.75,
+          -426209.375
+        ],
+        "VGU_m_s": [
+          404.7126770019531,
+          9.431076049804688,
+          1611.4471435546875
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      },
+      {
+        "cycle": 18843435,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -582.7977197265625,
+        "RGU_m": [
+          -37606.0,
+          -1385.25,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      },
+      {
+        "cycle": 18873105,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -582.79703125,
+        "RGU_m": [
+          -37606.0,
+          -1385.375,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      }
+    ],
+    "returned_roots": [
+      {
+        "cycle": 18504866,
+        "iterations": 3,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "14504",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015160813927650452,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6463893875479698,
+          "signed_time_to_go_seconds": -847.235498046875,
+          "residual_fraction": -2.0105992146487373e-09,
+          "derivative_fraction": 0.03061824040270811,
+          "relative_residual": 5.460330960800557e-08,
+          "diagnostic_newton_correction_fraction": -6.566671331220276e-08
+        },
+        "original_DXCRIT_fraction": 0.003960132598876953,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18536845,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.011200815439224243,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6477637477219105,
+          "signed_time_to_go_seconds": -849.0368994140625,
+          "residual_fraction": -7.93906586775472e-09,
+          "derivative_fraction": 0.030565234461230543,
+          "relative_residual": 2.1534165998470505e-07,
+          "diagnostic_newton_correction_fraction": -2.597416969866455e-07
+        },
+        "original_DXCRIT_fraction": 0.005049914121627808,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18566622,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20343",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.01120079681277275,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6477638669312,
+          "signed_time_to_go_seconds": -849.0370556640624,
+          "residual_fraction": 4.828164467908624e-10,
+          "derivative_fraction": 0.030565216610606634,
+          "relative_residual": 1.3096063241821576e-08,
+          "diagnostic_newton_correction_fraction": 1.5796271066612274e-08
+        },
+        "original_DXCRIT_fraction": 0.005060654133558273,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18658928,
+        "iterations": 2,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00234",
+            "75740",
+            "00301",
+            "06266",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517554193735123,
+            0.011791907250881195,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4469469264149666,
+          "signed_time_to_go_seconds": -585.822275390625,
+          "residual_fraction": -3.496817147621448e-08,
+          "derivative_fraction": 0.02839345117575591,
+          "relative_residual": 1.6506835569696344e-06,
+          "diagnostic_newton_correction_fraction": -1.2315576313622795e-06
+        },
+        "original_DXCRIT_fraction": 0.004109364002943039,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18690667,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35656",
+            "00301",
+            "05521",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517364203929901,
+            0.011790577322244644,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44696004688739777,
+          "signed_time_to_go_seconds": -585.83947265625,
+          "residual_fraction": -3.0703125503124347e-09,
+          "derivative_fraction": 0.028392396879113848,
+          "relative_residual": 1.449365948782181e-07,
+          "diagnostic_newton_correction_fraction": -1.0813854720983535e-07
+        },
+        "original_DXCRIT_fraction": 0.0034917742013931274,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18720423,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35657",
+            "00301",
+            "05524",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.0095173679292202,
+            0.01179058849811554,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4469599165022373,
+          "signed_time_to_go_seconds": -585.8393017578124,
+          "residual_fraction": -6.382415301225806e-10,
+          "derivative_fraction": 0.028392405315943166,
+          "relative_residual": 3.012870477134969e-08,
+          "diagnostic_newton_correction_fraction": -2.2479304695054818e-08
+        },
+        "original_DXCRIT_fraction": 0.0034918785095214844,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18812706,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34377",
+            "00301",
+            "10234",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009453769773244858,
+            0.01179562509059906,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4446393735706806,
+          "signed_time_to_go_seconds": -582.7977197265625,
+          "residual_fraction": -9.17780892036028e-09,
+          "derivative_fraction": 0.02834849911992194,
+          "relative_residual": 4.365531551158995e-07,
+          "diagnostic_newton_correction_fraction": -3.237493766966507e-07
+        },
+        "original_DXCRIT_fraction": 0.003481384366750717,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18844524,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44463884830474854,
+          "signed_time_to_go_seconds": -582.79703125,
+          "residual_fraction": 4.887743526614448e-09,
+          "derivative_fraction": 0.02834847309631188,
+          "relative_residual": 2.3249160856120437e-07,
+          "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+        },
+        "original_DXCRIT_fraction": 0.0034737475216388702,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18874051,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44463884830474854,
+          "signed_time_to_go_seconds": -582.79703125,
+          "residual_fraction": 4.887743526614448e-09,
+          "derivative_fraction": 0.02834847309631188,
+          "relative_residual": 2.3249160856120437e-07,
+          "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+        },
+        "original_DXCRIT_fraction": 0.0034737437963485718,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      }
+    ],
+    "final_state": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    },
+    "ignition_solution": [
+      {
+        "cycle": 18900007,
+        "PIPTIME1_cs": 28136.0,
+        "TIG_cs": 25536.0,
+        "TIME2_cs": 22148.0,
+        "TDEC1_cs": 28136.0
+      }
+    ]
+  },
+  "repeat": {
+    "classification": "VERIFIED bounded numerical guidance",
+    "checks": {
+      "retained_fresh_unmodified_rope_no_flight_memory_writes": true,
+      "retained_exact_phase5_startup_packets": true,
+      "retained_phase5_startup_actual_outputs_match_phase8": true,
+      "retained_startup_is_legacy_unaligned_operate_state": true,
+      "retained_only_supported_accepted_hardware_packets": true,
+      "retained_dsky_sequence_packets_match_logged_keys_and_cpu_timing": true,
+      "retained_dsky_display_reconstructed_from_actual_output": true,
+      "retained_octal_five_digit_code_and_signed_decimal_field_loads": true,
+      "retained_native_transition_snapshots_agree_with_actual_values": true,
+      "retained_stationary_cdu_fixture_without_counter_feedback": true,
+      "retained_four_documented_mark_inputs_irqs_and_original_markrupts": true,
+      "retained_two_real_star_pairs_complete_in_original_markstat": true,
+      "retained_matrix_native_stores_precede_original_flag_set": true,
+      "retained_alignment_result_matches_native_matrix_and_flag": true,
+      "retained_original_p51g_set_refsmflag_operand_observed": true,
+      "retained_alignment_precedes_normal_p63_selection": true,
+      "retained_original_r02_with_valid_refsm_returns_to_p63": true,
+      "retained_no_engine_on_output_after_alignment_request": true,
+      "all_configured_inputs_have_real_p27_transactions": true,
+      "all_generic_padloads_match_actual_original_stores": true,
+      "state_update_original_intwake_clears_identifier_and_populates_permanent_state": true,
+      "alignment_matrix_and_flag_preserved_through_mission_inputs": true,
+      "explicit_nominal_epoch_and_zero_libration": true,
+      "p63_reaches_original_polynomial_construction": true,
+      "original_coefficients_match_independent_operand_formulas_within_2_DP_LSB": true,
+      "input_state_is_bound_nearly_circular_lunar_orbit": true,
+      "actual_p51_matrix_numerically_proper": true,
+      "nondegenerate_scaled_cubic_inputs": true,
+      "each_original_root_returns_normally_and_stores_ttf": true,
+      "returned_countdowns_have_nonzero_derivative_and_small_residual": true,
+      "original_ignition_time_iteration_converges": true,
+      "no_new_program_alarms": true,
+      "actual_next_display_is_preignition_n61": true,
+      "original_ignition_solution_is_in_the_future": true
+    },
+    "all_pass": true,
+    "raw_sha256": "591e2f1049d03eea27dd302ce643dc6d56107fc9f261be696162d4b95fdea99b",
+    "raw_bytes": 4361647,
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "P51E": 1,
+      "AOTMARK": 2,
+      "MARKRUPT": 4,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "R02BOTH": 1,
+      "P63LM": 1,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "P63_AFTER_R02": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "CALCRGVG": 9,
+      "CGCALC": 9,
+      "RGVGCALC": 9,
+      "DDUMCALC": 3,
+      "ROOTSTOR": 9,
+      "QUADGUID": 9,
+      "IGNALGRT": 1,
+      "ROOTSTOR_RESULT": 9
+    },
+    "input_state_independent_diagnostics": {
+      "radius_m": 1753090.205927593,
+      "altitude_above_reference_m": 15000.205927592935,
+      "speed_m_s": 1672.3185535279465,
+      "radial_velocity_m_s": -2.2556545214412424e-05,
+      "tangential_speed_m_s": 1672.3185535279465,
+      "landing_site_radius_m": 1738090.0,
+      "site_central_angle_rad": 0.40000001120338924,
+      "surface_arc_distance_m": 695236.0194724988,
+      "circular_speed_at_radius_m_s": 1672.318455426861,
+      "specific_orbital_energy_J_kg": -1398324.34412438,
+      "bound_two_body_energy": true,
+      "point_gravity_m_s2": 1.5952681766774932,
+      "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+    },
+    "actual_p51_matrix_diagnostics": {
+      "raw_words_octal": [
+        "20000",
+        "77777",
+        "77777",
+        "75437",
+        "77777",
+        "77701",
+        "00000",
+        "02342",
+        "20000",
+        "00000",
+        "77777",
+        "72221",
+        "00000",
+        "00100",
+        "00000",
+        "05566",
+        "20000",
+        "77777"
+      ],
+      "direction_cosines_reference_to_stable_member": [
+        [
+          1.0,
+          -9.298324584960938e-06,
+          -4.6193599700927734e-07
+        ],
+        [
+          9.313225746154785e-06,
+          1.0,
+          -2.180039882659912e-05
+        ],
+        [
+          4.76837158203125e-07,
+          2.1860003471374512e-05,
+          1.0
+        ]
+      ],
+      "row_dot_products": [
+        [
+          1.0000000000866722,
+          1.491123158281482e-08,
+          1.4697899786142443e-08
+        ],
+        [
+          1.491123158281482e-08,
+          1.0000000005619936,
+          5.960908566748913e-08
+        ],
+        [
+          1.4697899786142443e-08,
+          5.960908566748913e-08,
+          1.0000000004780871
+        ]
+      ],
+      "determinant": 1.0000000005633745,
+      "max_orthogonality_error": 5.960908566748913e-08,
+      "max_identity_difference": 2.1860003471374512e-05,
+      "classification": "VERIFIED numerical properties of observed words",
+      "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+    },
+    "polynomial_entries": [
+      {
+        "cycle": 18502070,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "14504",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015160813927650452,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -664.4,
+        "RGU_m": [
+          -123384.0,
+          2865.25,
+          -681538.25
+        ],
+        "VGU_m_s": [
+          650.5523681640625,
+          -4.0187835693359375,
+          1538.7035369873047
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18535727,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.011200815439224243,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.125,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -847.235498046875,
+        "RGU_m": [
+          -122938.875,
+          -1241.25,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5761413574219,
+          5.7476043701171875,
+          1530.2360534667969
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18565497,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20343",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.01120079681277275,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.125,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -849.0368994140625,
+        "RGU_m": [
+          -122938.875,
+          -1200.75,
+          -681623.5
+        ],
+        "VGU_m_s": [
+          647.5887298583984,
+          5.7048797607421875,
+          1530.233383178711
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18656987,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00234",
+            "75740",
+            "00301",
+            "06266",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517554193735123,
+            0.011791907250881195,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -689.4370556640625,
+        "RGU_m": [
+          -38256.625,
+          -332.125,
+          -429062.875
+        ],
+        "VGU_m_s": [
+          406.6535949707031,
+          5.6026458740234375,
+          1610.9397888183594
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18689543,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35656",
+            "00301",
+            "05521",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517364203929901,
+            0.011790577322244644,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -585.822275390625,
+        "RGU_m": [
+          -38323.875,
+          -1383.375,
+          -429054.625
+        ],
+        "VGU_m_s": [
+          407.4348449707031,
+          9.424209594726562,
+          1610.7582092285156
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18719335,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35657",
+            "00301",
+            "05524",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.0095173679292202,
+            0.01179058849811554,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.5,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -585.83947265625,
+        "RGU_m": [
+          -38323.875,
+          -1376.625,
+          -429054.75
+        ],
+        "VGU_m_s": [
+          407.4256896972656,
+          9.41314697265625,
+          1610.7597351074219
+        ],
+        "PIPTIME1_cs": 27960.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.5,
+          -870.875
+        ]
+      },
+      {
+        "cycle": 18811521,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34377",
+            "00301",
+            "10234",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009453769773244858,
+            0.01179562509059906,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -584.0793017578125,
+        "RGU_m": [
+          -37605.25,
+          -1364.75,
+          -426209.375
+        ],
+        "VGU_m_s": [
+          404.7126770019531,
+          9.431076049804688,
+          1611.4471435546875
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      },
+      {
+        "cycle": 18843435,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -582.7977197265625,
+        "RGU_m": [
+          -37606.0,
+          -1385.25,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      },
+      {
+        "cycle": 18873105,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.875,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -582.79703125,
+        "RGU_m": [
+          -37606.0,
+          -1385.375,
+          -426209.125
+        ],
+        "VGU_m_s": [
+          404.7203063964844,
+          9.50775146484375,
+          1611.4452362060547
+        ],
+        "PIPTIME1_cs": 28136.0,
+        "LAND_m": [
+          1738088.375,
+          -2143.0,
+          -867.875
+        ]
+      }
+    ],
+    "returned_roots": [
+      {
+        "cycle": 18504866,
+        "iterations": 3,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "14504",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015160813927650452,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6463893875479698,
+          "signed_time_to_go_seconds": -847.235498046875,
+          "residual_fraction": -2.0105992146487373e-09,
+          "derivative_fraction": 0.03061824040270811,
+          "relative_residual": 5.460330960800557e-08,
+          "diagnostic_newton_correction_fraction": -6.566671331220276e-08
+        },
+        "original_DXCRIT_fraction": 0.003960132598876953,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18536845,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.011200815439224243,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6477637477219105,
+          "signed_time_to_go_seconds": -849.0368994140625,
+          "residual_fraction": -7.93906586775472e-09,
+          "derivative_fraction": 0.030565234461230543,
+          "relative_residual": 2.1534165998470505e-07,
+          "diagnostic_newton_correction_fraction": -2.597416969866455e-07
+        },
+        "original_DXCRIT_fraction": 0.005049914121627808,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18566622,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "15504",
+            "00267",
+            "20343",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015162721276283264,
+            0.01120079681277275,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6477638669312,
+          "signed_time_to_go_seconds": -849.0370556640624,
+          "residual_fraction": 4.828164467908624e-10,
+          "derivative_fraction": 0.030565216610606634,
+          "relative_residual": 1.3096063241821576e-08,
+          "diagnostic_newton_correction_fraction": 1.5796271066612274e-08
+        },
+        "original_DXCRIT_fraction": 0.005060654133558273,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18658928,
+        "iterations": 2,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00234",
+            "75740",
+            "00301",
+            "06266",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517554193735123,
+            0.011791907250881195,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4469469264149666,
+          "signed_time_to_go_seconds": -585.822275390625,
+          "residual_fraction": -3.496817147621448e-08,
+          "derivative_fraction": 0.02839345117575591,
+          "relative_residual": 1.6506835569696344e-06,
+          "diagnostic_newton_correction_fraction": -1.2315576313622795e-06
+        },
+        "original_DXCRIT_fraction": 0.004109364002943039,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18690667,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35656",
+            "00301",
+            "05521",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009517364203929901,
+            0.011790577322244644,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44696004688739777,
+          "signed_time_to_go_seconds": -585.83947265625,
+          "residual_fraction": -3.0703125503124347e-09,
+          "derivative_fraction": 0.028392396879113848,
+          "relative_residual": 1.449365948782181e-07,
+          "diagnostic_newton_correction_fraction": -1.0813854720983535e-07
+        },
+        "original_DXCRIT_fraction": 0.0034917742013931274,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18720423,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "35657",
+            "00301",
+            "05524",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.0095173679292202,
+            0.01179058849811554,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4469599165022373,
+          "signed_time_to_go_seconds": -585.8393017578124,
+          "residual_fraction": -6.382415301225806e-10,
+          "derivative_fraction": 0.028392405315943166,
+          "relative_residual": 3.012870477134969e-08,
+          "diagnostic_newton_correction_fraction": -2.2479304695054818e-08
+        },
+        "original_DXCRIT_fraction": 0.0034918785095214844,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18812706,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34377",
+            "00301",
+            "10234",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009453769773244858,
+            0.01179562509059906,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4446393735706806,
+          "signed_time_to_go_seconds": -582.7977197265625,
+          "residual_fraction": -9.17780892036028e-09,
+          "derivative_fraction": 0.02834849911992194,
+          "relative_residual": 4.365531551158995e-07,
+          "diagnostic_newton_correction_fraction": -3.237493766966507e-07
+        },
+        "original_DXCRIT_fraction": 0.003481384366750717,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18844524,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44463884830474854,
+          "signed_time_to_go_seconds": -582.79703125,
+          "residual_fraction": 4.887743526614448e-09,
+          "derivative_fraction": 0.02834847309631188,
+          "relative_residual": 2.3249160856120437e-07,
+          "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+        },
+        "original_DXCRIT_fraction": 0.0034737475216388702,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18874051,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00232",
+            "34375",
+            "00301",
+            "10230",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00945376232266426,
+            0.011795610189437866,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44463884830474854,
+          "signed_time_to_go_seconds": -582.79703125,
+          "residual_fraction": 4.887743526614448e-09,
+          "derivative_fraction": 0.02834847309631188,
+          "relative_residual": 2.3249160856120437e-07,
+          "diagnostic_newton_correction_fraction": 1.7241646525400837e-07
+        },
+        "original_DXCRIT_fraction": 0.0034737437963485718,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      }
+    ],
+    "final_state": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    },
+    "ignition_solution": [
+      {
+        "cycle": 18900007,
+        "PIPTIME1_cs": 28136.0,
+        "TIG_cs": 25536.0,
+        "TIME2_cs": 22148.0,
+        "TDEC1_cs": 28136.0
+      }
+    ]
+  },
+  "altitude_variant": {
+    "classification": "VERIFIED bounded numerical guidance",
+    "checks": {
+      "retained_fresh_unmodified_rope_no_flight_memory_writes": true,
+      "retained_exact_phase5_startup_packets": true,
+      "retained_phase5_startup_actual_outputs_match_phase8": true,
+      "retained_startup_is_legacy_unaligned_operate_state": true,
+      "retained_only_supported_accepted_hardware_packets": true,
+      "retained_dsky_sequence_packets_match_logged_keys_and_cpu_timing": true,
+      "retained_dsky_display_reconstructed_from_actual_output": true,
+      "retained_octal_five_digit_code_and_signed_decimal_field_loads": true,
+      "retained_native_transition_snapshots_agree_with_actual_values": true,
+      "retained_stationary_cdu_fixture_without_counter_feedback": true,
+      "retained_four_documented_mark_inputs_irqs_and_original_markrupts": true,
+      "retained_two_real_star_pairs_complete_in_original_markstat": true,
+      "retained_matrix_native_stores_precede_original_flag_set": true,
+      "retained_alignment_result_matches_native_matrix_and_flag": true,
+      "retained_original_p51g_set_refsmflag_operand_observed": true,
+      "retained_alignment_precedes_normal_p63_selection": true,
+      "retained_original_r02_with_valid_refsm_returns_to_p63": true,
+      "retained_no_engine_on_output_after_alignment_request": true,
+      "all_configured_inputs_have_real_p27_transactions": true,
+      "all_generic_padloads_match_actual_original_stores": true,
+      "state_update_original_intwake_clears_identifier_and_populates_permanent_state": true,
+      "alignment_matrix_and_flag_preserved_through_mission_inputs": true,
+      "explicit_nominal_epoch_and_zero_libration": true,
+      "p63_reaches_original_polynomial_construction": true,
+      "original_coefficients_match_independent_operand_formulas_within_2_DP_LSB": true,
+      "input_state_is_bound_nearly_circular_lunar_orbit": true,
+      "actual_p51_matrix_numerically_proper": true,
+      "nondegenerate_scaled_cubic_inputs": true,
+      "each_original_root_returns_normally_and_stores_ttf": true,
+      "returned_countdowns_have_nonzero_derivative_and_small_residual": true,
+      "original_ignition_time_iteration_converges": true,
+      "no_new_program_alarms": true,
+      "actual_next_display_is_preignition_n61": true,
+      "original_ignition_solution_is_in_the_future": true
+    },
+    "all_pass": true,
+    "raw_sha256": "9555637bb4a68c6387adbfdbc37c1c82d3fe6528a540bb5a27552d11b9905fe6",
+    "raw_bytes": 4363411,
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "P51E": 1,
+      "AOTMARK": 2,
+      "MARKRUPT": 4,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "R02BOTH": 2,
+      "P63LM": 1,
+      "TTF/8CL": 9,
+      "ROOTPSRS": 9,
+      "ROOTLOOP": 12,
+      "P63_AFTER_R02": 1,
+      "V71UPDAT": 9,
+      "UPSTORE": 9,
+      "UPEND71": 9,
+      "CALCRGVG": 9,
+      "CGCALC": 9,
+      "RGVGCALC": 9,
+      "DDUMCALC": 3,
+      "ROOTSTOR": 9,
+      "QUADGUID": 9,
+      "IGNALGRT": 1,
+      "ROOTSTOR_RESULT": 9
+    },
+    "input_state_independent_diagnostics": {
+      "radius_m": 1754090.1815474026,
+      "altitude_above_reference_m": 16000.181547402637,
+      "speed_m_s": 1671.8417887882044,
+      "radial_velocity_m_s": -0.00011210099021441993,
+      "tangential_speed_m_s": 1671.8417887882006,
+      "landing_site_radius_m": 1738090.0,
+      "site_central_angle_rad": 0.4000000676159362,
+      "surface_arc_distance_m": 695236.1175225825,
+      "circular_speed_at_radius_m_s": 1671.8417079644212,
+      "specific_orbital_energy_J_kg": -1397527.2131201217,
+      "bound_two_body_energy": true,
+      "point_gravity_m_s2": 1.5934498270913784,
+      "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+    },
+    "actual_p51_matrix_diagnostics": {
+      "raw_words_octal": [
+        "20000",
+        "77777",
+        "77777",
+        "75437",
+        "77777",
+        "77701",
+        "00000",
+        "02342",
+        "20000",
+        "00000",
+        "77777",
+        "72221",
+        "00000",
+        "00100",
+        "00000",
+        "05566",
+        "20000",
+        "77777"
+      ],
+      "direction_cosines_reference_to_stable_member": [
+        [
+          1.0,
+          -9.298324584960938e-06,
+          -4.6193599700927734e-07
+        ],
+        [
+          9.313225746154785e-06,
+          1.0,
+          -2.180039882659912e-05
+        ],
+        [
+          4.76837158203125e-07,
+          2.1860003471374512e-05,
+          1.0
+        ]
+      ],
+      "row_dot_products": [
+        [
+          1.0000000000866722,
+          1.491123158281482e-08,
+          1.4697899786142443e-08
+        ],
+        [
+          1.491123158281482e-08,
+          1.0000000005619936,
+          5.960908566748913e-08
+        ],
+        [
+          1.4697899786142443e-08,
+          5.960908566748913e-08,
+          1.0000000004780871
+        ]
+      ],
+      "determinant": 1.0000000005633745,
+      "max_orthogonality_error": 5.960908566748913e-08,
+      "max_identity_difference": 2.1860003471374512e-05,
+      "classification": "VERIFIED numerical properties of observed words",
+      "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+    },
+    "polynomial_entries": [
+      {
+        "cycle": 18502038,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "21146",
+            "00270",
+            "17216",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015169523656368256,
+            0.011259607970714569,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.375,
+          -0.75,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -664.4,
+        "RGU_m": [
+          -122463.0,
+          2865.25,
+          -681927.75
+        ],
+        "VGU_m_s": [
+          650.3665924072266,
+          -4.0210723876953125,
+          1538.2633209228516
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18535749,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "22143",
+            "00267",
+            "16634",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015171419829130173,
+            0.011197671294212341,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.875,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -847.6976025390625,
+        "RGU_m": [
+          -122017.625,
+          -1240.0,
+          -682012.5
+        ],
+        "VGU_m_s": [
+          647.3430633544922,
+          5.7384490966796875,
+          1529.8065185546875
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18565525,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "22143",
+            "00267",
+            "16626",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015171419829130173,
+            0.01119764894247055,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -849.497294921875,
+        "RGU_m": [
+          -122017.625,
+          -1199.375,
+          -682012.625
+        ],
+        "VGU_m_s": [
+          647.3564147949219,
+          5.6957244873046875,
+          1529.803466796875
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          1738087.25,
+          -2835.375,
+          -1146.5
+        ]
+      },
+      {
+        "cycle": 18657026,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02335",
+            "00301",
+            "04403",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009526122361421585,
+            0.011788379400968552,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -689.8376123046875,
+        "RGU_m": [
+          -37328.375,
+          -332.0,
+          -429446.375
+        ],
+        "VGU_m_s": [
+          406.60057067871094,
+          5.5927276611328125,
+          1610.457992553711
+        ],
+        "PIPTIME1_cs": 27966.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.125,
+          -870.75
+        ]
+      },
+      {
+        "cycle": 18689578,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02254",
+            "00301",
+            "03636",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00952593982219696,
+            0.011787049472332,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -586.290673828125,
+        "RGU_m": [
+          -37395.625,
+          -1380.75,
+          -429438.25
+        ],
+        "VGU_m_s": [
+          407.3661804199219,
+          9.3994140625,
+          1610.2764129638672
+        ],
+        "PIPTIME1_cs": 27966.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.125,
+          -870.75
+        ]
+      },
+      {
+        "cycle": 18719289,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02255",
+            "00301",
+            "03641",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009525943547487259,
+            0.011787060648202896,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -586.3078662109375,
+        "RGU_m": [
+          -37395.625,
+          -1374.25,
+          -429438.375
+        ],
+        "VGU_m_s": [
+          407.35740661621094,
+          9.389495849609375,
+          1610.2779388427734
+        ],
+        "PIPTIME1_cs": 27966.0,
+        "LAND_m": [
+          1738088.375,
+          -2150.125,
+          -870.75
+        ]
+      },
+      {
+        "cycle": 18811275,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00635",
+            "00301",
+            "06350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461987763643265,
+            0.011792093515396118,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.125,
+          -0.75,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -584.5378662109375,
+        "RGU_m": [
+          -36677.125,
+          -1362.125,
+          -426577.0
+        ],
+        "VGU_m_s": [
+          404.6257019042969,
+          9.40704345703125,
+          1610.965347290039
+        ],
+        "PIPTIME1_cs": 28143.0,
+        "LAND_m": [
+          1738088.375,
+          -2142.625,
+          -867.75
+        ]
+      },
+      {
+        "cycle": 18843207,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00634",
+            "00301",
+            "06344",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461984038352966,
+            0.011792078614234924,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -583.250263671875,
+        "RGU_m": [
+          -36677.75,
+          -1382.875,
+          -426576.875
+        ],
+        "VGU_m_s": [
+          404.6337127685547,
+          9.483718872070312,
+          1610.9630584716797
+        ],
+        "PIPTIME1_cs": 28143.0,
+        "LAND_m": [
+          1738088.375,
+          -2142.625,
+          -867.75
+        ]
+      },
+      {
+        "cycle": 18872945,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00634",
+            "00301",
+            "06345",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461984038352966,
+            0.011792082339525223,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -583.249921875,
+        "RGU_m": [
+          -36677.75,
+          -1382.75,
+          -426576.875
+        ],
+        "VGU_m_s": [
+          404.6337127685547,
+          9.483718872070312,
+          1610.9634399414062
+        ],
+        "PIPTIME1_cs": 28143.0,
+        "LAND_m": [
+          1738088.375,
+          -2142.625,
+          -867.75
+        ]
+      }
+    ],
+    "returned_roots": [
+      {
+        "cycle": 18505127,
+        "iterations": 3,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "21146",
+            "00270",
+            "17216",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015169523656368256,
+            0.011259607970714569,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.646741945296526,
+          "signed_time_to_go_seconds": -847.6976025390625,
+          "residual_fraction": -9.347980670328386e-10,
+          "derivative_fraction": 0.030617339287869222,
+          "relative_residual": 2.5367661386136553e-08,
+          "diagnostic_newton_correction_fraction": -3.05316558778578e-08
+        },
+        "original_DXCRIT_fraction": 0.003960132598876953,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18536898,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "22143",
+            "00267",
+            "16634",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015171419829130173,
+            0.011197671294212341,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6481150016188622,
+          "signed_time_to_go_seconds": -849.497294921875,
+          "residual_fraction": -8.17734720224775e-09,
+          "derivative_fraction": 0.030564371863603283,
+          "relative_residual": 2.216362759179462e-07,
+          "diagnostic_newton_correction_fraction": -2.6754507629798584e-07
+        },
+        "original_DXCRIT_fraction": 0.005052670836448669,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18566581,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "22143",
+            "00267",
+            "16626",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015171419829130173,
+            0.01119764894247055,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6481152437627316,
+          "signed_time_to_go_seconds": -849.4976123046876,
+          "residual_fraction": -1.0918180818880306e-09,
+          "derivative_fraction": 0.03056435108161881,
+          "relative_residual": 2.959229759571494e-08,
+          "diagnostic_newton_correction_fraction": -3.572194544462757e-08
+        },
+        "original_DXCRIT_fraction": 0.005063395947217941,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18658946,
+        "iterations": 2,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02335",
+            "00301",
+            "04403",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009526122361421585,
+            0.011788379400968552,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44730428606271744,
+          "signed_time_to_go_seconds": -586.290673828125,
+          "residual_fraction": -3.679269903409701e-08,
+          "derivative_fraction": 0.028397426217323263,
+          "relative_residual": 1.7349848349250785e-06,
+          "diagnostic_newton_correction_fraction": -1.29563499003485e-06
+        },
+        "original_DXCRIT_fraction": 0.004111751914024353,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18690633,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02254",
+            "00301",
+            "03636",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.00952593982219696,
+            0.011787049472332,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4473174028098583,
+          "signed_time_to_go_seconds": -586.3078662109375,
+          "residual_fraction": 3.084635842933192e-09,
+          "derivative_fraction": 0.028396371503965786,
+          "relative_residual": 1.4545958635856497e-07,
+          "diagnostic_newton_correction_fraction": 1.0862781684985341e-07
+        },
+        "original_DXCRIT_fraction": 0.003494568169116974,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18720234,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00234",
+            "02255",
+            "00301",
+            "03641",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009525943547487259,
+            0.011787060648202896,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4473174028098583,
+          "signed_time_to_go_seconds": -586.3078662109375,
+          "residual_fraction": 1.8107645983328699e-09,
+          "derivative_fraction": 0.02839638267983668,
+          "relative_residual": 8.538867293094645e-08,
+          "diagnostic_newton_correction_fraction": 6.376743892871373e-08
+        },
+        "original_DXCRIT_fraction": 0.0034946687519550323,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18812463,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00635",
+            "00301",
+            "06350",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461987763643265,
+            0.011792093515396118,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44498463720083237,
+          "signed_time_to_go_seconds": -583.250263671875,
+          "residual_fraction": -8.65801649143819e-09,
+          "derivative_fraction": 0.028352274154195178,
+          "relative_residual": 4.114104674989654e-07,
+          "diagnostic_newton_correction_fraction": -3.0537291098241926e-07
+        },
+        "original_DXCRIT_fraction": 0.003484118729829788,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18844365,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00634",
+            "00301",
+            "06344",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461984038352966,
+            0.011792078614234924,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.4449843764305115,
+          "signed_time_to_go_seconds": -583.249921875,
+          "residual_fraction": 1.640908042141122e-09,
+          "derivative_fraction": 0.02835225373775436,
+          "relative_residual": 7.797252804849085e-08,
+          "diagnostic_newton_correction_fraction": 5.787575327586957e-08
+        },
+        "original_DXCRIT_fraction": 0.0034764446318149567,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      },
+      {
+        "cycle": 18874103,
+        "iterations": 1,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00233",
+            "00634",
+            "00301",
+            "06345",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.009461984038352966,
+            0.011792082339525223,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.44498424604535103,
+          "signed_time_to_go_seconds": -583.2497509765625,
+          "residual_fraction": 3.679925520209765e-09,
+          "derivative_fraction": 0.028352254705403004,
+          "relative_residual": 1.748624186670567e-07,
+          "diagnostic_newton_correction_fraction": 1.29793046741658e-07
+        },
+        "original_DXCRIT_fraction": 0.003476440906524658,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      }
+    ],
+    "final_state": {
+      "modreg": 63,
+      "flagword3": 5128,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 32767,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "63",
+        "VERB": "06",
+        "NOUN": "61",
+        "R1": "09 43",
+        "R2": "00 28",
+        "R3": "00012"
+      }
+    },
+    "ignition_solution": [
+      {
+        "cycle": 18900002,
+        "PIPTIME1_cs": 28143.0,
+        "TIG_cs": 25542.0,
+        "TIME2_cs": 22148.0,
+        "TDEC1_cs": 28142.0
+      }
+    ]
+  },
+  "missing_site_control": {
+    "classification": "VERIFIED negative control",
+    "checks": {
+      "retained_fresh_unmodified_rope_no_flight_memory_writes": true,
+      "retained_exact_phase5_startup_packets": true,
+      "retained_phase5_startup_actual_outputs_match_phase8": true,
+      "retained_startup_is_legacy_unaligned_operate_state": true,
+      "retained_only_supported_accepted_hardware_packets": true,
+      "retained_dsky_sequence_packets_match_logged_keys_and_cpu_timing": true,
+      "retained_dsky_display_reconstructed_from_actual_output": true,
+      "retained_octal_five_digit_code_and_signed_decimal_field_loads": true,
+      "retained_native_transition_snapshots_agree_with_actual_values": true,
+      "retained_stationary_cdu_fixture_without_counter_feedback": true,
+      "retained_four_documented_mark_inputs_irqs_and_original_markrupts": true,
+      "retained_two_real_star_pairs_complete_in_original_markstat": true,
+      "retained_matrix_native_stores_precede_original_flag_set": true,
+      "retained_alignment_result_matches_native_matrix_and_flag": true,
+      "retained_original_p51g_set_refsmflag_operand_observed": true,
+      "retained_alignment_precedes_normal_p63_selection": true,
+      "retained_original_r02_with_valid_refsm_returns_to_p63": true,
+      "retained_no_engine_on_output_after_alignment_request": true,
+      "all_configured_inputs_have_real_p27_transactions": true,
+      "all_generic_padloads_match_actual_original_stores": true,
+      "state_update_original_intwake_clears_identifier_and_populates_permanent_state": true,
+      "alignment_matrix_and_flag_preserved_through_mission_inputs": true,
+      "explicit_nominal_epoch_and_zero_libration": true,
+      "p63_reaches_original_polynomial_construction": true,
+      "original_coefficients_match_independent_operand_formulas_within_2_DP_LSB": true,
+      "input_state_is_bound_nearly_circular_lunar_orbit": true,
+      "actual_p51_matrix_numerically_proper": true,
+      "site_really_absent": true,
+      "missing_site_reproduces_authentic_root_failure": true,
+      "missing_site_prevents_completed_ignition_solution": true
+    },
+    "all_pass": true,
+    "raw_sha256": "7de52fe83d3e1edb01cf4d19f00a156ce2a092e2e50b5bfb7e3a4582821d942f",
+    "raw_bytes": 3977953,
+    "checkpoint_counts": {
+      "P51": 1,
+      "P51B": 1,
+      "P51E": 1,
+      "AOTMARK": 2,
+      "MARKRUPT": 4,
+      "GETDAT": 4,
+      "CODE7": 4,
+      "GETMKS": 2,
+      "MARKCHEX": 2,
+      "AVESTAR": 2,
+      "R02BOTH": 1,
+      "P63LM": 1,
+      "TTF/8CL": 2,
+      "ROOTPSRS": 2,
+      "ROOTLOOP": 12,
+      "BADROOT": 1,
+      "1406POO": 1,
+      "BUFZERO": 1,
+      "DVOVF": 4,
+      "P63_AFTER_R02": 1,
+      "V71UPDAT": 8,
+      "UPSTORE": 8,
+      "UPEND71": 8,
+      "CALCRGVG": 2,
+      "CGCALC": 1,
+      "RGVGCALC": 2,
+      "ROOTSTOR": 1,
+      "QUADGUID": 1,
+      "ROOTSTOR_RESULT": 1
+    },
+    "input_state_independent_diagnostics": {
+      "radius_m": 1753090.205927593,
+      "altitude_above_reference_m": 15000.205927592935,
+      "speed_m_s": 1672.3185535279465,
+      "radial_velocity_m_s": -2.2556545214412424e-05,
+      "tangential_speed_m_s": 1672.3185535279465,
+      "landing_site_radius_m": 1738090.0,
+      "site_central_angle_rad": 0.40000001120338924,
+      "surface_arc_distance_m": 695236.0194724988,
+      "circular_speed_at_radius_m_s": 1672.318455426861,
+      "specific_orbital_energy_J_kg": -1398324.34412438,
+      "bound_two_body_energy": true,
+      "point_gravity_m_s2": 1.5952681766774932,
+      "scope": "Independent two-body diagnostics, not original AGC navigation or propagated flight"
+    },
+    "actual_p51_matrix_diagnostics": {
+      "raw_words_octal": [
+        "20000",
+        "77777",
+        "77777",
+        "75437",
+        "77777",
+        "77701",
+        "00000",
+        "02342",
+        "20000",
+        "00000",
+        "77777",
+        "72221",
+        "00000",
+        "00100",
+        "00000",
+        "05566",
+        "20000",
+        "77777"
+      ],
+      "direction_cosines_reference_to_stable_member": [
+        [
+          1.0,
+          -9.298324584960938e-06,
+          -4.6193599700927734e-07
+        ],
+        [
+          9.313225746154785e-06,
+          1.0,
+          -2.180039882659912e-05
+        ],
+        [
+          4.76837158203125e-07,
+          2.1860003471374512e-05,
+          1.0
+        ]
+      ],
+      "row_dot_products": [
+        [
+          1.0000000000866722,
+          1.491123158281482e-08,
+          1.4697899786142443e-08
+        ],
+        [
+          1.491123158281482e-08,
+          1.0000000005619936,
+          5.960908566748913e-08
+        ],
+        [
+          1.4697899786142443e-08,
+          5.960908566748913e-08,
+          1.0000000004780871
+        ]
+      ],
+      "determinant": 1.0000000005633745,
+      "max_orthogonality_error": 5.960908566748913e-08,
+      "max_identity_difference": 2.1860003471374512e-05,
+      "classification": "VERIFIED numerical properties of observed words",
+      "physical_calibration": "NOT RUN; numerical rotation validity does not prove mission alignment"
+    },
+    "polynomial_entries": [
+      {
+        "cycle": 17301158,
+        "observed": {
+          "coefficient_raw_octal": [
+            "00370",
+            "32043",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015186440199613571,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          -0.625,
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -664.4,
+        "RGU_m": [
+          1614703.25,
+          29.875,
+          -682684.75
+        ],
+        "VGU_m_s": [
+          650.5523681640625,
+          -4.0187835693359375,
+          1538.7035369873047
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "cycle": 17333163,
+        "observed": {
+          "coefficient_raw_octal": [
+            "77776",
+            "71667",
+            "77777",
+            "74261",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            -7.274746894836426e-05,
+            -6.966292858123779e-06,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone"
+        },
+        "independent_formula_error_DP_LSB": [
+          0.875,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_guess_seconds": -848.332421875,
+        "RGU_m": [
+          3229406.5,
+          3229406.5,
+          0.0
+        ],
+        "VGU_m_s": [
+          1282.89794921875,
+          1282.89794921875,
+          0.0
+        ],
+        "PIPTIME1_cs": 12000.0,
+        "LAND_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "returned_roots": [
+      {
+        "cycle": 17303942,
+        "iterations": 3,
+        "diagnostics": {
+          "coefficient_raw_octal": [
+            "00370",
+            "32043",
+            "00270",
+            "20760",
+            "77113",
+            "60670",
+            "77472",
+            "72437"
+          ],
+          "fractional_coefficients_A0_to_A3": [
+            0.015186440199613571,
+            0.011262834072113037,
+            -0.02664020285010338,
+            -0.012034296989440918
+          ],
+          "degenerate_all_zero": false,
+          "derivative_coefficient_abs_lt_one": true,
+          "source_limits": "No guarantee of polynomial-evaluation overflow absence from this inequality alone",
+          "root_fraction": -0.6472262740135193,
+          "signed_time_to_go_seconds": -848.332421875,
+          "residual_fraction": -2.036400343609329e-09,
+          "derivative_fraction": 0.030623744722587918,
+          "relative_residual": 5.518930039089173e-08,
+          "diagnostic_newton_correction_fraction": -6.649743073737453e-08
+        },
+        "original_DXCRIT_fraction": 0.003960132598876953,
+        "residual_within_original_step_tolerance_plus_32_DP_LSB": true,
+        "actual_normal_return_and_original_TTF_store": true
+      }
+    ],
+    "final_state": {
+      "modreg": 63,
+      "flagword3": 5120,
+      "refsmflg": true,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        774,
+        0
+      ],
+      "refsmmat": [
+        8192,
+        32767,
+        32767,
+        31519,
+        32767,
+        32705,
+        0,
+        1250,
+        8192,
+        0,
+        32767,
+        29841,
+        0,
+        64,
+        0,
+        2934,
+        8192,
+        32767
+      ],
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "markstat": 0,
+      "markcntr": 0,
+      "aotcode": 450,
+      "az": 13733,
+      "el": 6291,
+      "starind": 1,
+      "display": {
+        "PROG": "  ",
+        "VERB": "37",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     "
+      }
+    },
+    "ignition_solution": []
+  },
+  "comparisons": {
+    "phase9_negative_baseline_reproduced_without_changes": true,
+    "full_repeat_native_trace_byte_identical": true,
+    "coherent_altitude_change_changes_original_coefficients_and_root": true,
+    "missing_landing_site_changes_actual_root_behavior": true
+  },
+  "all_pass": true,
+  "scope": "SYNTHETIC coherent lunar navigation + historical target padloads; original numerical guidance only; no powered descent"
+}

@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/run_mission.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase9/setup-test/setups/20261017T181903Z-486ff63e/setup.json",
+    "--config",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase10-evidence/configs/mission-16km.json",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase10/final-validation/altitude-16km"
+  ],
+  "base_revision": "6859637ae8dcb1041db3944489d0f909ed58429f",
+  "utc": "2026-10-17T19:21:10.556715+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "symbols_sha256": "16ee199168beb4105f94bf8c0e61ccc2429914e73c1f6d731b1f214b81eeb40b",
+  "driver_sha256": "861052a643fdcc493da47696277471622eb0eb61cf1802adc3b4a09ca8a5c1d8",
+  "engine_sha256": "fde5bcd6b0b7e242a4d5c1b238fb29428968e36a76db9345e8bbe8a3aaf18a96",
+  "config_sha256": "4f240fffa5c8d85b637464ec49a7c2b88fd039b5ab12c5986a72fc736706679a",
+  "dependency_sha256": {
+    "docs/phase9-evidence/run_alignment.py": "afac7f66588c0680ed77a6f571b4dba225409311c8684976888bb94fb1ce5e5d",
+    "docs/phase9-evidence/hardware_bridge.c": "fc69beba525c442526c3a6d99c5f1b8a4ed43fe8f76806bb6b0cc1838c65665c",
+    "docs/phase5-evidence/plant_bridge.c": "62ee2ee10c28739696afaec500675c8ebddfd537bff908d8842a3f272bb79569",
+    "docs/phase5-evidence/operate_inputs.txt": "8cf0d52fc54afe45f0903d2632f959f6973def7f790f14ec29d13b14b87f72f4",
+    "docs/phase1-evidence/m2_dsky_client.py": "2d290eb0095af194ddf52560f0d87a97ccb575a95c9e587d390ff8c42ef7a86e"
+  },
+  "generated_observer_sha256": "8639d0e3c5121e922c7fec93dd6a942f62c53fbf5bc3f590854313fc8371efac",
+  "scope": "SYNTHETIC mission-input feasibility; original P51 and P27/P63 instructions; no thrust plant"
+}
