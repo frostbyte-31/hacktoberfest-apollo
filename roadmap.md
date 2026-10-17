@@ -61,7 +61,9 @@
 - [x] Confirm the unchanged plant's signed mode-selection defect with paired imposed-yaw component probes
 - [x] Retain raw traces, source/rope address proofs, exact replays and the integrated test/check results in docs/milestone2-evidence/
 
-## Next bounded validation (requires separate approval; Phase 7 not started)
+## Phase 7 (done — pitch-axis feedback loop VERIFIED; see docs/PHASE7_MULTI_AXIS_VALIDATION.md)
+
+## Next bounded validation (requires separate approval; Phase 8 not started)
 - Repair the modern model's signed rate-mode selection in a separately identified fixture, then test paced negative-rate feedback and queue settlement before stronger attitude-control claims.
 - Keep the emulator/flight code and earlier baselines unchanged; do not expand axes or begin descent work as part of that correction.
 

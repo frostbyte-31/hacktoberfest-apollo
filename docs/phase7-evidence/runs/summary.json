@@ -1,0 +1,485 @@
+{
+  "runs": {
+    "closed": {
+      "mode": "closed",
+      "nonzero_jet_words_octal": {
+        "005:00022": 2,
+        "005:00226": 14,
+        "005:00204": 2,
+        "005:00041": 5,
+        "005:00151": 13,
+        "005:00110": 5,
+        "005:00001": 4,
+        "005:00011": 3,
+        "005:00010": 4,
+        "005:00040": 2,
+        "005:00140": 1,
+        "005:00100": 2,
+        "005:00050": 1,
+        "005:00101": 1
+      },
+      "first_ch005_nonzero": {
+        "ev": "output",
+        "cycle": 2509765,
+        "channel": 5,
+        "value": 18
+      },
+      "first_pitch_motion": {
+        "ev": "plant",
+        "cycle": 2509906,
+        "omega": [
+          0.0,
+          0.004134551729372583,
+          -0.004097589929737782
+        ],
+        "gimbals": [
+          0.0,
+          6.832429423822781e-06,
+          359.9999932286507
+        ],
+        "jets": [
+          18,
+          0
+        ],
+        "zero": 0
+      },
+      "first_sensor": {
+        "ev": "sensor",
+        "cycle": 2515355,
+        "origin_interval_end": 2515355,
+        "counter": 27,
+        "code": 1,
+        "delivered": true,
+        "accepted": 4
+      },
+      "first_cdu_y_readback": {
+        "ev": "sample",
+        "cycle": 2516208,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          1,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "peak_abs_omega_yaw_pitch_roll_deg_s": [
+        0.0,
+        4.236101226216706,
+        0.010389528449706888
+      ],
+      "final_model": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.0,
+          0.0137007450627375,
+          -0.010389528449706888
+        ],
+        "gimbals": [
+          0.0012067995636151796,
+          18.8226574632355,
+          359.9121783508739
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "sensor_generated_by_counter_octal": {
+        "033": 1713,
+        "034": 7
+      },
+      "sensor_delivered": 1720,
+      "sensor_accepted": 1720,
+      "final_agc_readback": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          1713,
+          32761
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "feedback_off": {
+      "mode": "feedback_off",
+      "nonzero_jet_words_octal": {
+        "005:00022": 1,
+        "005:00226": 45,
+        "005:00245": 1,
+        "005:00151": 1,
+        "005:00110": 1
+      },
+      "first_ch005_nonzero": {
+        "ev": "output",
+        "cycle": 2509765,
+        "channel": 5,
+        "value": 18
+      },
+      "first_pitch_motion": {
+        "ev": "plant",
+        "cycle": 2509906,
+        "omega": [
+          0.0,
+          0.004134551729372583,
+          -0.004097589929737782
+        ],
+        "gimbals": [
+          0.0,
+          6.832429423822781e-06,
+          359.9999932286507
+        ],
+        "jets": [
+          18,
+          0
+        ],
+        "zero": 0
+      },
+      "first_sensor": {
+        "ev": "sensor",
+        "cycle": 2515355,
+        "origin_interval_end": 2515355,
+        "counter": 27,
+        "code": 1,
+        "delivered": false,
+        "accepted": 0
+      },
+      "first_cdu_y_readback": null,
+      "peak_abs_omega_yaw_pitch_roll_deg_s": [
+        0.0,
+        11.505119568424966,
+        0.006829637959101336
+      ],
+      "final_model": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.0,
+          11.020710732629034,
+          -0.002615451126123232
+        ],
+        "gimbals": [
+          0.027332732813788254,
+          180.43633820357758,
+          0.00546594558484202
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "sensor_generated_by_counter_octal": {
+        "033": 16423,
+        "034": 2,
+        "032": 2
+      },
+      "sensor_delivered": 0,
+      "sensor_accepted": 0,
+      "final_agc_readback": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "negative": {
+      "mode": "negative",
+      "nonzero_jet_words_octal": {
+        "005:00041": 2,
+        "005:00151": 14,
+        "005:00110": 2,
+        "005:00022": 5,
+        "005:00226": 13,
+        "005:00204": 5,
+        "005:00020": 3,
+        "005:00220": 3,
+        "005:00200": 6,
+        "005:00002": 3,
+        "005:00202": 3
+      },
+      "first_ch005_nonzero": {
+        "ev": "output",
+        "cycle": 2509762,
+        "channel": 5,
+        "value": 33
+      },
+      "first_pitch_motion": {
+        "ev": "plant",
+        "cycle": 2509906,
+        "omega": [
+          0.0,
+          -0.004222520915103915,
+          0.004184772694200288
+        ],
+        "gimbals": [
+          0.0,
+          359.9999928737359,
+          7.062557180547942e-06
+        ],
+        "jets": [
+          33,
+          0
+        ],
+        "zero": 0
+      },
+      "first_sensor": {
+        "ev": "sensor",
+        "cycle": 2515355,
+        "origin_interval_end": 2515355,
+        "counter": 27,
+        "code": 3,
+        "delivered": true,
+        "accepted": 4
+      },
+      "first_cdu_y_readback": {
+        "ev": "sample",
+        "cycle": 2516208,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          32767,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "peak_abs_omega_yaw_pitch_roll_deg_s": [
+        0.0,
+        4.236511755152403,
+        0.011363019686963943
+      ],
+      "final_model": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.0,
+          0.012236334064526408,
+          0.0066551346359102525
+        ],
+        "gimbals": [
+          359.99906143901006,
+          341.3657439368651,
+          0.030138087785611913
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "sensor_generated_by_counter_octal": {
+        "033": 1699,
+        "034": 2
+      },
+      "sensor_delivered": 1701,
+      "sensor_accepted": 1701,
+      "final_agc_readback": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          31071,
+          2
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "repeat": {
+      "mode": "closed",
+      "nonzero_jet_words_octal": {
+        "005:00022": 2,
+        "005:00226": 14,
+        "005:00204": 2,
+        "005:00041": 5,
+        "005:00151": 13,
+        "005:00110": 5,
+        "005:00001": 4,
+        "005:00011": 3,
+        "005:00010": 4,
+        "005:00040": 2,
+        "005:00140": 1,
+        "005:00100": 2,
+        "005:00050": 1,
+        "005:00101": 1
+      },
+      "first_ch005_nonzero": {
+        "ev": "output",
+        "cycle": 2509765,
+        "channel": 5,
+        "value": 18
+      },
+      "first_pitch_motion": {
+        "ev": "plant",
+        "cycle": 2509906,
+        "omega": [
+          0.0,
+          0.004134551729372583,
+          -0.004097589929737782
+        ],
+        "gimbals": [
+          0.0,
+          6.832429423822781e-06,
+          359.9999932286507
+        ],
+        "jets": [
+          18,
+          0
+        ],
+        "zero": 0
+      },
+      "first_sensor": {
+        "ev": "sensor",
+        "cycle": 2515355,
+        "origin_interval_end": 2515355,
+        "counter": 27,
+        "code": 1,
+        "delivered": true,
+        "accepted": 4
+      },
+      "first_cdu_y_readback": {
+        "ev": "sample",
+        "cycle": 2516208,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          1,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "peak_abs_omega_yaw_pitch_roll_deg_s": [
+        0.0,
+        4.236101226216706,
+        0.010389528449706888
+      ],
+      "final_model": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.0,
+          0.0137007450627375,
+          -0.010389528449706888
+        ],
+        "gimbals": [
+          0.0012067995636151796,
+          18.8226574632355,
+          359.9121783508739
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "sensor_generated_by_counter_octal": {
+        "033": 1713,
+        "034": 7
+      },
+      "sensor_delivered": 1720,
+      "sensor_accepted": 1720,
+      "final_agc_readback": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          1713,
+          32761
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "cross_axis": {
+    "closed": {
+      "peak_roll_deg_s": 0.010389528449706888,
+      "final_gimbals_deg": [
+        0.0012067995636151796,
+        18.8226574632355,
+        359.9121783508739
+      ],
+      "final_cdu": [
+        0,
+        1713,
+        32761
+      ]
+    },
+    "feedback_off": {
+      "peak_roll_deg_s": 0.006829637959101336,
+      "final_gimbals_deg": [
+        0.027332732813788254,
+        180.43633820357758,
+        0.00546594558484202
+      ],
+      "final_cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "negative": {
+      "peak_roll_deg_s": 0.011363019686963943,
+      "final_gimbals_deg": [
+        359.99906143901006,
+        341.3657439368651,
+        0.030138087785611913
+      ],
+      "final_cdu": [
+        0,
+        31071,
+        2
+      ]
+    },
+    "repeat": {
+      "peak_roll_deg_s": 0.010389528449706888,
+      "final_gimbals_deg": [
+        0.0012067995636151796,
+        18.8226574632355,
+        359.9121783508739
+      ],
+      "final_cdu": [
+        0,
+        1713,
+        32761
+      ]
+    }
+  }
+}

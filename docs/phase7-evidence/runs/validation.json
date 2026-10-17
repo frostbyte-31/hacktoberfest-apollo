@@ -1,0 +1,13 @@
+{
+  "single_axis_baseline_matches_phase6": true,
+  "agc_emits_nonzero_channel005": true,
+  "pitch_motion_from_agc_jets": true,
+  "cdu_y_readback_nonzero_connected": true,
+  "feedback_changes_agc_jet_transcript": true,
+  "disconnected_readback_all_zero": true,
+  "disconnected_generated_none_delivered": true,
+  "connected_all_sensor_accepted": true,
+  "negative_reverses_pitch_sign": true,
+  "replay_byte_identical": true,
+  "no_yaw_axis_motion_in_pitch_runs": true
+}
