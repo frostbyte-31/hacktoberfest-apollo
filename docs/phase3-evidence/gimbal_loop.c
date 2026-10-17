@@ -25,10 +25,11 @@ int main(int argc,char **argv) {
   unsigned end,start,gap; char keys[256];
   if(fscanf(f,"%u %u %u %255s",&end,&start,&gap,keys)!=4)return 6; fclose(f);
   int feedback=strcmp(argv[3],"closed")==0;
-  if(!feedback && strcmp(argv[3],"open")!=0)return 7;
+  int actuator=strcmp(argv[3],"blocked")!=0;
+  if(!feedback && strcmp(argv[3],"open")!=0 && actuator)return 7;
   cpu_reset(); set_fixed(rope);
   printf("{\"ev\":\"initial\",\"end\":%u,\"start\":%u,\"gap\":%u,\"keys\":\"%s\",\"feedback\":%d,\"position_counts\":[0,0,0],\"drive_count_degrees\":%.12f,\"sensor_count_degrees\":%.12f}\n",end,start,gap,keys,feedback,360.0/8192,360.0/32768);
-  size_t next=0;
+  size_t next=0; unsigned old_checkpoint=0;
   for(unsigned t=0;t<end;t++) {
     if(next<strlen(keys) && t==start+next*gap) {
       int k=key(keys[next]); if(k<0)return 8;
@@ -45,12 +46,22 @@ int main(int argc,char **argv) {
       break;
     }
     cpu_step(1);
+    unsigned z=(uint16_t)State.Erasable[0][5];
+    unsigned fb=((uint16_t)State.Erasable[0][4])>>10;
+    unsigned checkpoint=fb==07 && (z==03073 || z==03110 || z==03636 || z==03637 || z==03706)?z:0;
+    if(checkpoint && checkpoint!=old_checkpoint)
+      printf("{\"ev\":\"checkpoint\",\"cycle\":%u,\"bank\":%u,\"z\":%u,\"a\":%u,\"target\":[%u,%u,%u],\"cdu\":[%u,%u,%u],\"imucadr\":%u}\n",t+1,fb,z,(uint16_t)State.Erasable[0][0],(uint16_t)State.Erasable[0][0321],(uint16_t)State.Erasable[0][0322],(uint16_t)State.Erasable[0][0323],(uint16_t)State.Erasable[0][032],(uint16_t)State.Erasable[0][033],(uint16_t)State.Erasable[0][034],(uint16_t)State.Erasable[2][0304-0200]);
+    old_checkpoint=checkpoint;
     uint32_t p;
     while((p=packet_read())) {
       int ch=p>>16,v=p&077777;
       printf("{\"ev\":\"output\",\"cycle\":%u,\"channel\":%d,\"value\":%d}\n",t+1,ch,v);
       if(ch>=0174 && ch<=0176 && (State.InputChannel[012]&010) && !(State.InputChannel[012]&020)) {
         int a=ch-0174,sgn=(v&040000)?-1:1,n=v&037777;
+        if(!actuator) {
+          printf("{\"ev\":\"blocked\",\"cycle\":%u,\"axis\":%d,\"drive_pulses\":%d}\n",t+1,a,sgn*n);
+          continue;
+        }
         if(pending[a] && direction[a]!=sgn)return 11;
         position[a]+=sgn*n*4; pending[a]+=n*4; direction[a]=sgn;
         printf("{\"ev\":\"plant\",\"cycle\":%u,\"axis\":%d,\"drive_pulses\":%d,\"position_counts\":%ld,\"angle_degrees\":%.12f,\"enable12\":%d}\n",t+1,a,sgn*n,position[a],position[a]*360.0/32768,State.InputChannel[012]);

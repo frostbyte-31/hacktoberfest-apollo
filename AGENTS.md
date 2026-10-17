@@ -1,3 +1,4 @@
 # Investigation architecture
 - Keep Apollo validation harnesses and captured results in phase-specific evidence directories, separate from application code, to preserve reproducibility without starting application development.
 - Use the pinned emulator engine with its ringbuffer backend for cycle-locked native/WebAssembly tests, so host socket scheduling does not masquerade as an emulator difference.
+- Keep the minimum integration model outside the emulator, consuming actual actuator packets and returning counter-operation packets; this preserves original flight computations and makes disconnected-loop controls possible.
