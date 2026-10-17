@@ -1,0 +1,70 @@
+{
+  "all_tests_passed": false,
+  "argv": [
+    "docs/milestone1-evidence/run_tests.py"
+  ],
+  "cwd": "/dev-server",
+  "env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "finished_utc": "2026-10-17T14:59:51.773347+00:00",
+  "git": {
+    "revision": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "a214906a89309ba3063120e65ece42e816a269dd\n"
+    },
+    "working_tree": {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "input_sha256": {
+    "docs/milestone1-evidence/baseline.json": "698368f1413b453ac5e37098e64cf8232fb10f3f22e62f18e45fc124acebf264",
+    "docs/milestone1-evidence/evidence.py": "4326e5695c0a386a2b1142bc0d49733bd9736a670dbe23f1ee0bd6fa21d7d3cc",
+    "docs/milestone1-evidence/missing-historical.json": "8dd7633cdcdf87886fe216126295ae2a20f366872160ea815a3fd8a8935bc9a6",
+    "docs/milestone1-evidence/run_tests.py": "bbe13f5f0487385b95c7494e353d2134d623e058c8a6fc0aaa49f139d1556733",
+    "docs/milestone1-evidence/tests/test_evidence.py": "639a18bcaccd6f375e9d46dfef0e2b24702f7102bc33ae5ec0ff1542404411e9",
+    "docs/milestone1-evidence/tests/test_reproduce.py": "93581da1d1d57519c84ce6628e0af23d717fb9ad63c11eb9164814a4a6724286",
+    "docs/milestone1-evidence/tests/test_runtime.py": "9ffbf774019682c722e03545a8f95d0cf0d43240d74c14a15e71a384d6c68c27",
+    "docs/milestone1-evidence/tests/test_test_runner.py": "91258e074987909b7049d8457895b1196037041f496bac6c829909bb7b25e433",
+    "docs/phase2-evidence/test_validation.py": "6b3713970f3df864acc6f75c69c61d73747e197e0bdf844ef49a6fc99ad48c60",
+    "docs/phase3-evidence/test_loop.py": "54f2982af00ee95b8f58aa9c4c6bf50507259900313c877b6db7c513cace38cf",
+    "docs/phase4-evidence/test_control_path.py": "fffba09bf32eb9fc4f93712fb0d2885679d1832a2b58e02aae19dd4d32daae6a",
+    "docs/phase5-evidence/test_readiness.py": "815a00482764cfe5d4c7a7b78684932300d569271d3ed63317f8e197b1b2dccf",
+    "docs/phase6-evidence/test_demonstration.py": "62e743b854bed8ba038c93e03a28da3acd1067fbce483759bbaa460082247047"
+  },
+  "legacy": {
+    "known_historical_errors": 0,
+    "outcomes": {},
+    "tests_run": 0
+  },
+  "milestone1": {
+    "known_historical_errors": 0,
+    "outcomes": {},
+    "tests_run": 0
+  },
+  "platform": "Linux-6.12.111-x86_64-with-glibc2.40",
+  "policy_satisfied": false,
+  "python": {
+    "executable": "/nix/store/k1nwi2hrhnb9nk32bis8iip1n1xbv8ww-sandbox-python-env/bin/python3.13",
+    "version": "3.13.12 (main, Feb  3 2026, 17:53:27) [GCC 14.3.0]"
+  },
+  "root": "/dev-server",
+  "schema_version": 1,
+  "started_utc": "2026-10-17T14:59:51.592490+00:00",
+  "status": "failed",
+  "suites": [],
+  "warning": "Historical-gap classification does not turn original unittest errors into passed tests."
+}
