@@ -65,7 +65,13 @@
 
 ## Phase 8 (done — blocked at R02 alarm 00220, no valid REFSMMAT; see docs/PHASE8_POWERED_DESCENT_FEASIBILITY.md)
 
-## Next bounded validation (requires separate approval; Phase 9 not started)
+## Phase 9 (in progress — IMU alignment / REFSMMAT; see docs/PHASE9_IMU_ALIGNMENT.md when delivered)
+- [ ] Trace P51/P52 alignment, star-sighting interfaces, REFSMMAT generation and P63 readiness checks in pinned source
+- [ ] Design and run a source-faithful alignment experiment (no forced flags, no fabricated REFSMMAT)
+- [ ] Record V37E63E outcome after alignment attempt; classify all findings VERIFIED/ASSUMED/NOT RUN
+- [ ] Deliver docs/PHASE9_IMU_ALIGNMENT.md and docs/phase9-evidence/; keep Milestone 1 integrity failure visible
+
+## Next bounded validation (requires separate approval)
 - Repair the modern model's signed rate-mode selection in a separately identified fixture, then test paced negative-rate feedback and queue settlement before stronger attitude-control claims.
 - Keep the emulator/flight code and earlier baselines unchanged; do not expand axes or begin descent work as part of that correction.
 
