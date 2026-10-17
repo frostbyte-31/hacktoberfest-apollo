@@ -63,7 +63,9 @@
 
 ## Phase 7 (done — pitch-axis feedback loop VERIFIED; see docs/PHASE7_MULTI_AXIS_VALIDATION.md)
 
-## Next bounded validation (requires separate approval; Phase 8 not started)
+## Phase 8 (done — blocked at R02 alarm 00220, no valid REFSMMAT; see docs/PHASE8_POWERED_DESCENT_FEASIBILITY.md)
+
+## Next bounded validation (requires separate approval; Phase 9 not started)
 - Repair the modern model's signed rate-mode selection in a separately identified fixture, then test paced negative-rate feedback and queue settlement before stronger attitude-control claims.
 - Keep the emulator/flight code and earlier baselines unchanged; do not expand axes or begin descent work as part of that correction.
 
