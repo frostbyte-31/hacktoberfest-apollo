@@ -37,5 +37,6 @@ int main(int argc, char **argv) {
       printf("{\"ev\":\"trace\",\"cycle\":%u,\"registerHash\":%u,\"ramHash\":%u,\"z\":%u,\"fb\":%u,\"eb\":%u}\n",i+1,hash,ram,(uint16_t)State.Erasable[0][5],(uint16_t)State.Erasable[0][4],(uint16_t)State.Erasable[0][3]);
     }
   }
+  fprintf(stderr,"FINAL cycle=%u MODREG=%o FLAGWRD3=%o IMODES30=%o FAILREG=%o,%o,%o\n",end,(uint16_t)State.Erasable[2][011],(uint16_t)State.Erasable[0][077],(uint16_t)State.Erasable[2][0102],(uint16_t)State.Erasable[0][0375],(uint16_t)State.Erasable[0][0376],(uint16_t)State.Erasable[0][0377]);
   fclose(in); return 0;
 }
