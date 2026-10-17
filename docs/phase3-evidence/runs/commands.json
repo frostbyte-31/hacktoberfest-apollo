@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "gcc",
+      "-O2",
+      "-I/tmp/apollo/va/yaAGC",
+      "/dev-server/docs/phase3-evidence/gimbal_loop.c",
+      "/tmp/apollo/va/yaAGC/wasm.c",
+      "/tmp/apollo/va/yaAGC/agc_engine.c",
+      "/tmp/apollo/va/yaAGC/agc_engine_init.c",
+      "/tmp/apollo/va/yaAGC/agc_utilities.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer_api.c",
+      "/tmp/apollo/va/yaAGC/ringbuffer.c",
+      "/tmp/apollo/va/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase3-evidence/positive_inputs.txt",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase3-evidence/positive_inputs.txt",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase3-evidence/positive_inputs.txt",
+      "open"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase3-evidence/positive_inputs.txt",
+      "blocked"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/dev-server/docs/phase3-evidence/runs/gimbal_loop",
+      "/dev-server/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/dev-server/docs/phase3-evidence/negative_inputs.txt",
+      "closed"
+    ],
+    "cwd": "/dev-server",
+    "exit": 0
+  }
+]
