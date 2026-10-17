@@ -1,0 +1,1046 @@
+
+SOURCE=yaAGC/agc_engine.c SHA256=9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef
+RANGE=1246-1275
+1246: // 2's-complement increment.
+1247: int
+1248: CounterPCDU (int16_t * Counter)
+1249: {
+1250:   int16_t i;
+1251:   int Overflow = 0;
+1252:   i = *Counter;
+1253:   if (i == (int16_t) 077777)
+1254:     Overflow = 1;
+1255:   i++;
+1256:   i &= 077777;
+1257:   *Counter = i;
+1258:   return (Overflow);
+1259: }
+1260: 
+1261: // 2's-complement decrement.
+1262: int
+1263: CounterMCDU (int16_t * Counter)
+1264: {
+1265:   int16_t i;
+1266:   int Overflow = 0;
+1267:   i = *Counter;
+1268:   if (i == 0)
+1269:     Overflow = 1;
+1270:   i--;
+1271:   i &= 077777;
+1272:   *Counter = i;
+1273:   return (Overflow);
+1274: }
+1275: 
+RANGE=1363-1404
+1363: // The case of PCDU or MCDU triggers being applied to the CDUX,Y,Z counters
+1364: // presents a special problem.  The AGC expects these triggers to be 
+1365: // applied at a certain fixed rate.  The DAP portion of Luminary or Colossus
+1366: // applies a digital filter to the counts, in order to eliminate electrical
+1367: // noise, as well as noise caused by vibration of the spacecraft.  Therefore,
+1368: // if the simulated IMU applies PCDU/MCDU triggers too fast, the digital
+1369: // filter in the DAP will simply reject the count, and therefore the spacecraft's
+1370: // orientation cannot be measured by the DAP.  Consequently, we have to 
+1371: // fake up a kind of FIFO on the triggers to the CDUX,Y,Z counters so that
+1372: // we can increment or decrement the counters at no more than the fixed rate.
+1373: // (Conversely, of course, the simulated IMU has to be able to supply the 
+1374: // triggers *at least* as fast as the fixed rate.)
+1375: //
+1376: // Actually, there are two different fixed rates for PCDU/MCDU:  400 counts
+1377: // per second in "slow mode", and 6400 counts per second in "fast mode".
+1378: //
+1379: // *** FIXME! All of the following junk will need to move to agc_t, and will
+1380: //     somehow have to be made compatible with backtraces. ***
+1381: // The way the FIFO works is that it can hold an ordered set of + counts and
+1382: // - counts.  For example, if it held 7,-5,10, it would mean to apply 7 PCDUs,
+1383: // followed by 5 MCDUs, followed by 10 PCDUs.  If there are too many sign-changes
+1384: // buffered, triggers will be transparently dropped.
+1385: #define MAX_CDU_FIFO_ENTRIES 128
+1386: #define NUM_CDU_FIFOS 3			// Increase to 5 to include OPTX, OPTY.
+1387: #define FIRST_CDU 032
+1388: typedef struct
+1389: {
+1390:   int Ptr;				// Index of next entry being pulled.
+1391:   int Size;				// Number of entries.
+1392:   int IntervalType;			// 0,1,2,0,1,2,...
+1393:   uint64_t NextUpdate;	// Cycle count at which next counter update occurs.
+1394:   int32_t Counts[MAX_CDU_FIFO_ENTRIES];
+1395: } CduFifo_t;
+1396: static CduFifo_t CduFifos[NUM_CDU_FIFOS];// For registers 032, 033, and 034.
+1397: static int CduChecker = 0;		// 0, 1, ..., NUM_CDU_FIFOS-1, 0, 1, ...
+1398: 
+1399: // Here's an auxiliary function to add a count to a CDU FIFO.  The only allowed
+1400: // increment types are:
+1401: //	001	PCDU "slow mode"
+1402: //	003	MCDU "slow mode"
+1403: //	021	PCDU "fast mode"
+1404: //	023	MCDU "fast mode"
+RANGE=1550-1615
+1550: 	  else
+1551: 	    CduFifo->NextUpdate += 214;
+1552: 	  CduFifo->IntervalType = 0;
+1553: 	}
+1554:       // Return an indication that a counter was updated.
+1555:       RetVal = 1;
+1556:     }
+1557: 
+1558:   CduChecker++;
+1559:   if (CduChecker >= NUM_CDU_FIFOS)
+1560:     CduChecker = 0;
+1561: 
+1562:   return (RetVal);
+1563: }
+1564: 
+1565: //----------------------------------------------------------------------------
+1566: // This function is used to update the counter registers on the basis of 
+1567: // commands received from the outside world.
+1568: 
+1569: void
+1570: UnprogrammedIncrement (agc_t *State, int Counter, int IncType)
+1571: {
+1572:   int16_t *Ch;
+1573:   int Overflow = 0;
+1574:   Counter &= 0x7f;
+1575:   Ch = &State->Erasable[0][Counter];
+1576:   if (CoverageCounts)
+1577:     ErasableWriteCounts[0][Counter]++;
+1578:   switch (IncType)
+1579:     {
+1580:     case 0:
+1581:       //TrapPIPA = (Counter >= 037 && Counter <= 041);
+1582:       Overflow = CounterPINC (Ch);
+1583:       break;
+1584:     case 1:
+1585:     case 021:
+1586:       // For the CDUX,Y,Z counters, push the command into a FIFO.
+1587:       if (Counter >= FIRST_CDU && Counter < FIRST_CDU + NUM_CDU_FIFOS)
+1588: 	PushCduFifo (State, Counter, IncType);
+1589:       else
+1590: 	Overflow = CounterPCDU (Ch);
+1591:       break;
+1592:     case 2:
+1593:       //TrapPIPA = (Counter >= 037 && Counter <= 041);
+1594:       Overflow = CounterMINC (Ch);
+1595:       break;
+1596:     case 3:
+1597:     case 023:
+1598:       // For the CDUX,Y,Z counters, push the command into a FIFO.
+1599:       if (Counter >= FIRST_CDU && Counter < FIRST_CDU + NUM_CDU_FIFOS)
+1600: 	PushCduFifo (State, Counter, IncType);
+1601:       else
+1602: 	Overflow = CounterMCDU (Ch);
+1603:       break;
+1604:     case 4:
+1605:       Overflow = CounterDINC (State, Counter, Ch);
+1606:       break;
+1607:     case 5:
+1608:       Overflow = CounterSHINC (Ch);
+1609:       break;
+1610:     case 6:
+1611:       Overflow = CounterSHANC (Ch);
+1612:       break;
+1613:     default:
+1614:       break;
+1615:     }
+RANGE=1630-1685
+1630: BurstOutput (agc_t *State, int DriveBitMask, int CounterRegister, int Channel)
+1631: {
+1632:   static int CountCDUX = 0, CountCDUY = 0, CountCDUZ = 0; // In target CPU format.
+1633:   int DriveCount = 0, DriveBit, Direction = 0, Delta, DriveCountSaved;
+1634:   if (CounterRegister == RegCDUXCMD)
+1635:     DriveCountSaved = CountCDUX;
+1636:   else if (CounterRegister == RegCDUYCMD)
+1637:     DriveCountSaved = CountCDUY;
+1638:   else if (CounterRegister == RegCDUZCMD)
+1639:     DriveCountSaved = CountCDUZ;
+1640:   else
+1641:     return (0);
+1642:   // Driving this axis?
+1643:   DriveBit = (State->InputChannel[014] & DriveBitMask);
+1644:   // If so, we must retrieve the count from the counter register.
+1645:   if (DriveBit)
+1646:     {
+1647:       DriveCount = State->Erasable[0][CounterRegister];
+1648:       State->Erasable[0][CounterRegister] = 0;
+1649:     }
+1650:   // The count may be negative.  If so, normalize to be positive and set the
+1651:   // direction flag.
+1652:   Direction = (040000 & DriveCount);
+1653:   if (Direction)
+1654:     {
+1655:       DriveCount ^= 077777;
+1656:       DriveCountSaved -= DriveCount;
+1657:     }
+1658:   else
+1659:     DriveCountSaved += DriveCount;
+1660:   if (DriveCountSaved < 0)
+1661:     {
+1662:       DriveCountSaved = -DriveCountSaved;
+1663:       Direction = 040000;
+1664:     }
+1665:   else
+1666:     Direction = 0;
+1667:   // Determine how many pulses to output.  The max is 192 per burst.
+1668:   Delta = DriveCountSaved;
+1669:   if (Delta >= 192 / COARSE_SMOOTH)
+1670:     Delta = 192 / COARSE_SMOOTH;
+1671:   // If the count is non-zero, pulse it.
+1672:   if (Delta > 0)
+1673:     {
+1674:       ChannelOutput (State, Channel, Direction | Delta);
+1675:       DriveCountSaved -= Delta;
+1676:     }
+1677:   if (Direction)
+1678:     DriveCountSaved = -DriveCountSaved;
+1679:   if (CounterRegister == RegCDUXCMD)
+1680:     CountCDUX = DriveCountSaved;
+1681:   else if (CounterRegister == RegCDUYCMD)
+1682:     CountCDUY = DriveCountSaved;
+1683:   else if (CounterRegister == RegCDUZCMD)
+1684:     CountCDUZ = DriveCountSaved;
+1685:   return (DriveCountSaved);
+RANGE=2392-2427
+2392:   //----------------------------------------------------------------------
+2393:   // ... and somewhat similar principles for the IMU CDU drive for 
+2394:   // coarse alignment.
+2395: 
+2396: #if 0  
+2397:   i = (State->InputChannel[014] & 070000);	// Check IMU CDU drive bits.
+2398:   if (ImuChannel14 == 0 && i != 0)// If suddenly active, start drive.
+2399:   ImuCduCount = IMUCDU_BURST_CYCLES;
+2400:   if (i != 0 && ImuCduCount >= IMUCDU_BURST_CYCLES)// Time for next burst.
+2401:     {
+2402:       // Adjust the cycle counter.
+2403:       ImuCduCount -= IMUCDU_BURST_CYCLES;
+2404:       // Determine how many pulses are wanted on each axis this burst.
+2405:       ImuChannel14 = BurstOutput (State, 040000, RegCDUXCMD, 0174);
+2406:       ImuChannel14 |= BurstOutput (State, 020000, RegCDUYCMD, 0175);
+2407:       ImuChannel14 |= BurstOutput (State, 010000, RegCDUZCMD, 0176);
+2408:     }
+2409:   else
+2410:   ImuCduCount++;
+2411: #else // 0
+2412:   i = (State->InputChannel[014] & 070000);	// Check IMU CDU drive bits.
+2413:   if (ImuChannel14 == 0 && i != 0)	// If suddenly active, start drive.
+2414:     ImuCduCount = State->CycleCounter - IMUCDU_BURST_CYCLES;
+2415:   if (i != 0 && (State->CycleCounter - ImuCduCount) >= IMUCDU_BURST_CYCLES) // Time for next burst.
+2416:     {
+2417:       // Adjust the cycle counter.
+2418:       ImuCduCount += IMUCDU_BURST_CYCLES;
+2419:       // Determine how many pulses are wanted on each axis this burst.
+2420:       ImuChannel14 = BurstOutput (State, 040000, RegCDUXCMD, 0174);
+2421:       ImuChannel14 |= BurstOutput (State, 020000, RegCDUYCMD, 0175);
+2422:       ImuChannel14 |= BurstOutput (State, 010000, RegCDUZCMD, 0176);
+2423:     }
+2424: #endif // 0
+2425: 
+2426:   //----------------------------------------------------------------------
+2427:   // Finally, stuff for driving the optics shaft & trunnion CDUs.  Nothing
+
+SOURCE=yaAGC/ringbuffer_api.c SHA256=554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530
+RANGE=65-180
+65: }
+66: 
+67: /* The simulated AGC CPU calls this function when it wants to output data.  It
+68:  * stores the data in ringbuffer_out so as to not have to call
+69:  * a foreign and possibly slow function.  The data is supposed to be read from
+70:  * the ring buffer asynchronously. See also NullAPI.c
+71:  *
+72:  * The bulk of the code was copied from SocketAPI.c
+73:  */
+74: void
+75: ChannelOutput (agc_t* State, int Channel, int Value)
+76: {
+77:   if (!ChannelIsSetUp)
+78:     ChannelSetup (State);
+79: 
+80:   // Some output channels have purposes within the CPU, so we have to
+81:   // account for those separately.
+82:   if (Channel == 7)
+83:     {
+84:       State->InputChannel[7] = State->OutputChannel7 = (Value & 0160);
+85:       return;
+86:     }
+87: 
+88:   // Stick data into the RHCCTR registers, if bits 8,9 of channel 013 are set.
+89:   if (Channel == 013 && 0600 == (0600 & Value) && !CmOrLm)
+90:     {
+91:       State->Erasable[0][042] = LastRhcPitch;
+92:       State->Erasable[0][043] = LastRhcYaw;
+93:       State->Erasable[0][044] = LastRhcRoll;
+94:     }
+95: 
+96:   unsigned char Packet[4];
+97:   if (!FormIoPacket (Channel, Value, Packet))
+98:     ringbuffer_put (&ringbuffer_out, Packet);
+99: }
+100: 
+101: 
+102: /* The simulated AGC CPU calls this function when it wants to input data.
+103:  * The data is read from the ring buffer ringbuffer_in.
+104:  * See also NullAPI.c
+105:  */
+106: int
+107: ChannelInput (agc_t* State)
+108: {
+109:   if (!ChannelIsSetUp)
+110:     ChannelSetup (State);
+111: 
+112:   unsigned char Packet[4];
+113:   while (ringbuffer_get(&ringbuffer_in, Packet))
+114:     {
+115:       // This body of the while loop follows the work done in SocketAPI.c.
+116:       // I removed socket client related code, and refactored and reformatted
+117:       // the code.
+118: 
+119:       int uBit, Value, Channel;
+120: 
+121:       if (ParseIoPacket (Packet, &Channel, &Value, &uBit))
+122:         continue; // Not a valid packet; try the next one.
+123: 
+124:       Value &= 077777; // Convert to AGC format (only keep upper 15 bits).
+125: 
+126:       if (uBit)
+127:         {
+128:           // This is not an actual input to the CPU. It only sets a bit mask
+129:           // for masking of future inputs.
+130:           ChannelMasks[Channel] = Value;
+131:           continue; // Proceed with the next packet in the ring buffer.
+132:         }
+133: 
+134:       if (Channel & 0x80)
+135:         {
+136:           // This is a counter increment. According to NullAPI.c we need to
+137:           // immediately return a value of 1.
+138:           UnprogrammedIncrement (State, Channel, Value);
+139:           return 1;
+140:         }
+141: 
+142:       // Mask out irrelevant bits, set current bits, and write to CPU.
+143:       Value &= ChannelMasks[Channel];
+144:       Value |= ReadIO (State, Channel) & ~ChannelMasks[Channel];
+145:       WriteIO (State, Channel, Value);
+146: 
+147:       // If this is a keystroke from the DSKY, generate an interrupt req.
+148:       if (Channel == 015)
+149:         State->InterruptRequests[5] = 1;
+150:       // If this is on fictitious input channel 0173, then the data
+151:       // should be placed in the INLINK counter register, and an
+152:       // UPRUPT interrupt request should be set.
+153:       else if (Channel == 0173)
+154:         {
+155:           State->Erasable[0][RegINLINK] = (Value & 077777);
+156:           State->InterruptRequests[7] = 1;
+157:         }
+158:       // Fictitious registers for rotational hand controller (RHC).
+159:       // Note that the RHC angles are not immediately used, but
+160:       // merely squirreled away for later.  They won't actually
+161:       // go into the counter registers until the RHC counters are
+162:       // enabled and the data requested (bits 8,9 of channel 13).
+163:       else if (Channel == 0166)
+164:         {
+165:           LastRhcPitch = Value;
+166:           ChannelOutput (State, Channel, Value);  // echo
+167:         }
+168:       else if (Channel == 0167)
+169:         {
+170:           LastRhcYaw = Value;
+171:           ChannelOutput (State, Channel, Value);  // echo
+172:         }
+173:       else if (Channel == 0170)
+174:         {
+175:           LastRhcRoll = Value;
+176:           ChannelOutput (State, Channel, Value);  // echo
+177:         }
+178:     } // while
+179: 
+180:   return 0;
+
+SOURCE=yaAGC/wasm.c SHA256=0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83
+RANGE=100-180
+100: 
+101: /*
+102:  * Steps the CPU a number of (`steps`) times.
+103:  * Call this function so that the CPU is stepped once every 11.72 microseconds.
+104:  */
+105: export void
+106: cpu_step (uint32_t steps)
+107: {
+108:   for (uint32_t i = 0; i < steps; i++)
+109:     agc_engine (&State);
+110: }
+111: 
+112: 
+113: /*
+114:  * Compose a 4 byte "Packet for Socket Implementation of AGC I/O System" from a
+115:  * given channel number and data, and put it into a ringbuffer for later
+116:  * processing by yaAGC.
+117:  *
+118:  * `data` is 15 bits.
+119:  *
+120:  * `channel` is 9 bits, composed of:
+121:  *
+122:  * - Bit 0-6:  Port number `p`.
+123:  * - Bit 7:    Type bit `t`. If set, this packet is an "unprogrammed counter
+124:  *             increment".  If unset, this packet will write `data` to the
+125:  *             port.
+126:  * - Bit 8:    Mask bit `u`. If set, the data is set as a bit mask for the
+127:  *             given port number.  Does not influence the state of the CPU.
+128:  *
+129:  * See https://www.ibiblio.org/apollo/developer.html
+130:  *
+131:  * You can call this function up to RINGBUFFER_ELEMENTS times at once before
+132:  * the ring buffer is full. Some or all of the packets in the buffer will be
+133:  * processed at the next call to `cpu_step`.
+134:  *
+135:  * Returns 0 when then ringbuffer was full and no write took place. You then
+136:  * need to re-try later.
+137:  *
+138:  * Returns a positive number if the write was successful.
+139:  *
+140:  * Returns a negative number if a packed could not be formed.
+141:  */
+142: export int
+143: packet_write (uint16_t channel, uint16_t data)
+144: {
+145:   unsigned char packet[4];
+146: 
+147:   if (FormIoPacket (channel, data, packet))
+148:     return -1;
+149: 
+150:   return ringbuffer_put (&ringbuffer_in, packet);
+151: }
+152: 
+153: 
+154: /*
+155:  * Returns from a ringbuffer the next output from yaAGC.
+156:  *
+157:  * The return value is a single integer number which is the combination of the
+158:  * port number and the data.
+159:  *
+160:  * - Bits  0-14: 15 bit data
+161:  * - Bits 15-21: 7 bit port number
+162:  *
+163:  * If 0 is returned, the ringbuffer was emtpy, and the value can be discarded.
+164:  * To keep the ringbuffer depleted, call this function and process the return
+165:  * values repeatedly until 0 is returned.
+166:  *
+167:  * If you want the timing to be perfect, you need to call this function every
+168:  * time after calling `cpu_step()`.
+169:  */
+170: export uint32_t
+171: packet_read ()
+172: {
+173:   unsigned char packet[4];
+174:   int port, val, bit;
+175: 
+176:   if (ringbuffer_get (&ringbuffer_out, packet))
+177:     {
+178:       ParseIoPacket (packet, &port, &val, &bit);
+179:       return (port << 16) + val;
+180:     }
+
+SOURCE=yaAGC/agc_engine_init.c SHA256=7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1
+RANGE=245-270
+245:   if (RomImage)
+246:     {
+247:       RetVal = agc_load_binfile (State, RomImage);
+248:       if (RetVal > 0)
+249: 	goto Done;
+250:     }
+251: 
+252:   // Clear i/o channels.
+253:   for (i = 0; i < NUM_CHANNELS; i++)
+254:     State->InputChannel[i] = 0;
+255:   State->InputChannel[030] = 037777;
+256:   State->InputChannel[031] = 077777;
+257:   State->InputChannel[032] = 077777;
+258:   State->InputChannel[033] = 077777;
+259: 
+260:   // Clear erasable memory.
+261:   for (Bank = 0; Bank < 8; Bank++)
+262:     for (j = 0; j < 0400; j++)
+263:       State->Erasable[Bank][j] = 0;
+264:   State->Erasable[0][RegZ] = 04000;	// Initial program counter.
+265: 
+266:   // Set up the CPU state variables that aren't part of normal memory.
+267:   State->CycleCounter = 0;
+268:   State->ExtraCode = 0;
+269:   State->AllowInterrupt = 1; // The GOJAM sequence enables interrupts
+270:   State->InterruptRequests[8] = 1;	// DOWNRUPT.
+
+SOURCE=Luminary099/EXTENDED_VERBS.agc SHA256=fd9afc77cb319d779089cfa736a83ce045a18fb76eba55ddf825c5678b101e29
+RANGE=235-317
+235: # VBCOARK	VERB 41		DESCRIPTION
+236: #	COARSE ALIGN IMU OR RADAR
+237: #
+238: #	1.	REQUIRE NOUN 20 OR NOUN 72 OR TURN ON OPERATOR ERROR.
+239: #	2.	REQUIRE EXT VERB DISPLAY SYS AVAILABLE OR TURN ON OPERATOR ERROR LIGHT AND GO TO PINBRNCH.
+240: #				CASE 1 NOUN 20 (ICDU ANGLES)
+241: #	3.	SET EXT VERB DISPLAY ACTIVE FLAG.
+242: #	4.	DISPLAY FLASHING V25,N22 (LOAD NEW ICDU ANGLES).
+243: #		RESPONSES
+244: #		A.	TERMINATE
+245: #			1.	RELEASE EXT VERB DISPLAY SYSTEM
+246: #		B.	PROCEED
+247: #			1.	COARSE ALIGN TO THE EXISTING THETAD'S (ICORK2).
+248: #		C.	ENTER
+249: #			1.	COARSE ALIGN TO THE LOADED THETAD'S (ICORK2).
+250: # ICORK2
+251: #	1.	RE-DISPLAY VERB 41.
+252: #	2.	EXECUTE IMUCOARS (IMU COARSE ALIGN).
+253: #	3.	EXECUTE IMUSTALL (ALLOW TIME FOR DATA TRANSFER).
+254: #	4.	RELEASE EXT VERB DISPLAY SYSTEM.
+255: #				CASE 2 NOUN 72 (RCDU ANGLES)
+256: #		EXIT WITH OP ERROR IF SOMEONE IS USING EITHER RADAD.
+257: #	5.	DISPLAY FLASHING V24, N73 (LOAD NEW RR TRUNION ANGLE AND NEW SHAFT ANGLE).
+258: #		RESPONSES
+259: #		A.	TERMINATE
+260: #			1.	RELEASE EXT VERB DISPLAY SYS.
+261: #		B.	PROCEED OR ENTER
+262: #			1.	EXECUTE AURLOKON (ASK OPERATOR FOR LOCK-ON REQUIREMENTS).
+263: #			2.	RE-DISPLAY VERB 41.
+264: #			3.	SCHEDULE RRDESK2 WITH PRIORITY 20.
+265: #			4.	RELEASE EXT VERB DISPLAY SYS.
+266: # AURLOKON
+267: #	1.	FLASH V04 N12 R1 = 00006 R2 = 00002
+268: #		RESPONSES
+269: #		A.	TERMINATE
+270: #		B.	PROCEED
+271: #			1.	RESET LOCK-ON SWITCH
+272: #			2.	SET CONTINUOUS DESIGNATE FLAG
+273: #			3.	DISABLE R25
+274: #		C.	V22 E 1 E, R1 = 00001, PROCEED
+275: #			1.	SET LOCK-ON SWITCH
+276: 
+277: VBCOARK		TC	OP/INERT
+278: 		TC	IMUCOARK		# RETURN HERE IF NOUN = ICDU (20)
+279: 		TC	RRDESNBK		# RETURN HERE IF NOUN = RCDU (72)
+280: 		
+281: # RETURNS TO L+1 IF IMU OR L+2 IF RR.
+282: 
+283: OP/INERT	CS	OCT24
+284: 		AD	NOUNREG
+285: 		EXTEND
+286: ## Page 268
+287: 		BZF	TCQ			# IF = 20.
+288: 		
+289: 		AD	RRIMUDIF		# -52
+290: 		EXTEND
+291: 		BZF	Q+1
+292: 		
+293: 		TC	ALM/END			# ILLEGAL.
+294: 		
+295: RRIMUDIF	DEC	-52			# THE IMU
+296: IMUCOARK	TC	CKMODCAD
+297: 		TC	TESTXACT		# COARSE ALIGN FROM KEYBOARD.
+298: 		CAF	VNLODCDU		# CALL FOR THETAD LOAD
+299: 		TC	BANKCALL
+300: 		CADR	GOXDSPF
+301: 		TC	TERMEXTV
+302: 		TCF	+1
+303: 		
+304: ICORK2		CAF	IMUCOARV		# RE-DISPLAY COARSE ALIGN VERB.
+305: 		TC	BANKCALL
+306: 		CADR	EXDSPRET
+307: 		
+308: 		TC	BANKCALL		# CALL MODE SWITCHING PROG
+309: 		CADR	IMUCOARS
+310: 		
+311: 		TC	BANKCALL		# STALL
+312: 		CADR	IMUSTALL
+313: 		TC	ENDEXTVB
+314: 		TC	ENDEXTVB
+315: 		
+316: VNLODCDU	VN	2522
+317: IMUCOARV	VN	4100
+
+SOURCE=Luminary099/IMU_MODE_SWITCHING_ROUTINES.agc SHA256=49bf6c8ecb8f185e19547fe4405d1270e70c15503c28f065199a2a6645e2e31e
+RANGE=140-314
+140: 
+141: ## Page 1312
+142: # IMU COARSE ALIGN MODE.
+143: 
+144: IMUCOARS	INHINT
+145: 		TC	CAGETSTJ
+146: 		TC	SETCOARS
+147: 
+148: 		CAF	SIX
+149: 		TC	WAITLIST
+150: 		EBANK=	CDUIND
+151: 		2CADR	COARS
+152: 
+153: 		TCF	MODEEXIT
+154: 
+155: COARS		TC	CAGETEST
+156: 		CAF	BIT6		# ENABLE ALL THREE ISS CDU ERROR COUNTERS
+157: 		EXTEND
+158: 		WOR	CHAN12
+159: 
+160: 		CAF	TWO		# SET CDU INDICATOR
+161: COARS1		TS	CDUIND
+162: 
+163: 		INDEX	CDUIND		# COMPUTE THETAD - THETAA IN 1:S
+164: 		CA	THETAD		# 	COMPLEMENT FORM
+165: 		EXTEND
+166: 		INDEX	CDUIND
+167: 		MSU	CDUX
+168: 		EXTEND
+169: 		MP	BIT13		# SHIFT RIGHT 2
+170: 		XCH	L		# ROUND
+171: 		DOUBLE
+172: 		TS	ITEMP1
+173: 		TCF	+2
+174: 		ADS	L
+175: 
+176: 		INDEX	CDUIND		# DIFFERENCE TO BE COMPUTED
+177: 		LXCH	COMMAND
+178: 		CCS	CDUIND
+179: 		TC	COARS1
+180: 
+181: 		CAF	TWO		# MINIMUM OF 4 MS WAIT
+182: 		TC 	VARDELAY
+183: 
+184: ## Page 1313
+185: COARS2		TC	CAGETEST	# DONT CONTINUE IF CAGED.
+186: 		TS	ITEMP1		# SETS TO +0.
+187: 		CAF	TWO		# SET CDU INDICATOR
+188:  +3		TS	CDUIND
+189: 
+190: 		INDEX	CDUIND
+191: 		CCS	COMMAND		# NUMBER OF PULSES REQUIRED
+192: 		TC	COMPOS		# GREATER THAN MAX ALLOWED
+193: 		TC	NEXTCDU +1
+194: 		TC	COMNEG
+195: 		TC	NEXTCDU +1
+196: 
+197: COMPOS		AD	-COMMAX		# COMMAX = MAX NUMBER OF PULSES ALLOWED
+198: 		EXTEND			# 	MINUS ONE
+199: 		BZMF	COMZERO
+200: 		INDEX	CDUIND
+201: 		TS	COMMAND		# REDUCE COMMAND BY MAX NUMBER OF PULSES
+202: 		CS	-COMMAX-	# 	ALLOWED
+203: 
+204: NEXTCDU		INCR	ITEMP1
+205: 		AD	NEG0
+206: 		INDEX	CDUIND
+207: 		TS	CDUXCMD		# SET UP COMMAND REGISTER.
+208: 
+209: 		CCS	CDUIND
+210: 		TC	COARS2 +3
+211: 
+212: 		CCS	ITEMP1		# SEE IF ANY PULSES TO GO OUT.
+213: 		TCF	SENDPULS
+214: 
+215: 		TC	FIXDELAY	# WAIT FOR GIMBALS TO SETTLE.
+216: 		DEC	150
+217: 
+218: 		CAF	TWO		# AT END OF COMMAND, CHECK TO SEE THAT
+219: CHKCORS		TS	ITEMP1		# GIMBALS ARE WITHIN 2 DEGREES OF THETAD.
+220: 		INDEX	A
+221: 		CA	CDUX
+222: 		EXTEND
+223: 		INDEX	ITEMP1
+224: 		MSU	THETAD
+225: 		CCS	A
+226: 		TCF	COARSERR
+227: 		TCF	CORSCHK2
+228: 		TCF	COARSERR
+229: 
+230: ## Page 1314
+231: CORSCHK2	CCS	ITEMP1
+232: 		TCF	CHKCORS
+233: 		TCF	ENDIMU		# END OF COARSE ALIGNMENT.
+234: 
+235: COARSERR	AD	COARSTOL	# 2 DEGREES.
+236: 		EXTEND
+237: 		BZMF	CORSCHK2
+238: 
+239: 		TC	ALARM		# COARSE ALIGN ERROR.
+240: 		OCT	211
+241: 
+242: 		TCF	IMUBAD
+243: 
+244: COARSTOL	DEC	-.01111		# 2 DEGREES SCALED AT HALF-REVOLUTIONS
+245: 
+246: COMNEG		AD	-COMMAX
+247: 		EXTEND
+248: 		BZMF	COMZERO
+249: 		COM
+250: 		INDEX	CDUIND
+251: 		TS	COMMAND
+252: 		CA	-COMMAX-
+253: 		TC	NEXTCDU
+254: 
+255: COMZERO		CAF	ZERO
+256: 		INDEX	CDUIND
+257: 		XCH	COMMAND
+258: 		TC	NEXTCDU
+259: 
+260: SENDPULS	CAF	13,14,15
+261: 		EXTEND
+262: 		WOR	CHAN14
+263: 		CAF	600MS
+264: 		TCF	COARS2 -1	# THEN TO VARDELAY
+265: 
+266: CA+ECE		CAF	BIT6		# ENABLE ALL THREE ISS CDU ERROR COUNTERS
+267: 		EXTEND
+268: 		WOR	CHAN12
+269: 		TC	TASKOVER
+270: 
+271: ## Page 1315
+272: SETCOARS	CAF	BIT4		# BYPASS IF ALREADY IN COARSE ALIGN
+273: 		EXTEND
+274: 		RAND	CHAN12
+275: 		CCS	A
+276: 		TC	Q
+277: 
+278: 		CS	BIT6		# CLEAR ISS ERROR COUNTERS
+279: 		EXTEND
+280: 		WAND	CHAN12
+281: 
+282: 		CS	BIT10		# KNOCK DOWN GYRO ACTIVITY
+283: 		EXTEND
+284: 		WAND	CHAN14
+285: 		CS	ZERO
+286: 		TS	GYROCMD
+287: 
+288: 		CAF	BIT4		# PUT ISS IN COARSE ALIGN
+289: 		EXTEND
+290: 		WOR	CHAN12
+291: 
+292: 		CS	DSPTAB +11D	# TURN ON NO ATT LAMP
+293: 		MASK	OCT40010
+294: 		ADS	DSPTAB +11D
+295: 
+296: 		CS	IMODES33	# DISABLE DAP AUTO AND HOLD MODES
+297: 		MASK	BIT6
+298: 		ADS	IMODES33
+299: 
+300: 		CS	IMODES30	# DISABLE IMUFAIL
+301: 		MASK	BIT4
+302: 		ADS	IMODES30
+303: 
+304: RNDREFDR	CS	TRACKBIT	# CLEAR TRACK FLAG
+305: 		MASK	FLAGWRD1
+306: 		TS	FLAGWRD1
+307: 
+308: 		CS	DRFTBIT		# CLEAR DRIFT FLAG
+309: 		MASK	FLAGWRD2
+310: 		TS	FLAGWRD2
+311: 
+312: 		CS	REFSMBIT	# CLEAR REFSMMAT FLAG
+313: 		MASK	FLAGWRD3
+314: 		TS	FLAGWRD3
+RANGE=690-780
+690: # IMU MODE SWITCHING ROUTINES COME HERE WHEN ACTION COMPLETE.
+691: 
+692: ENDIMU		EXTEND			# MODE IS BAD IF CAGE HAS OCCURED OR IF
+693: 		READ	DSALMOUT	# ISS WARNING IS ON.
+694: 		MASK	BIT1
+695: 		CCS	A
+696: 		TCF	IMUBAD
+697: 
+698: IMUGOOD		TCF	GOODEND		# WITH C(A) = 0.
+699: 
+700: IMUBAD		CAF	ZERO
+701: 		TCF	BADEND
+702: 
+703: CAGETEST	CAF	BIT6		# SUBROUTINE TO TERMINATE IMU MODE
+704: 		MASK	IMODES30	# SWITCH IF IMU HAS BEEN CAGED.
+705: 		CCS	A
+706: 		TCF	IMUBAD		# DIRECTLY.
+707: 		TC	Q		# WITH C(A) = +0.
+708: 
+709: CAGETSTQ	CS	IMODES30	# SKIP IF IMU NOT BEING CAGED.
+710: 		MASK	BIT6
+711: 		CCS	A
+712: 		INCR	Q
+713: 		TC	Q
+714: 
+715: CAGETSTJ	CS	IMODES30	# IF DURING MODE SWITCH INITIALIZATION
+716: 		MASK	BIT6		# IT IS FOUND THAT THE IMU IS BEING CAGED,
+717: 		CCS	A		# SET IMUCADR TO -0 TO INDICATE OPERATION
+718: 		TC	Q		# COMPLETE BUT FAILED.  RETURN IMMEDIATELY
+719: 		
+720: 		CS	ZERO		# TO SWRETURN.
+721: 		TS	IMUCADR
+722: 		TCF	MODEEXIT
+723: 
+724: ## Page 1328
+725: # GENERALIZED MODE SWITCHING TERMINATION.  ENTER AT GOODEND FOR SUCCESSFUL COMPLETION OF AN I/O OPERATION
+726: # OR AT BADEND FOR AN UNSUCCESSFUL ONE.  C(A) OR ARRIVAL =0 FOR IMU, 1 FOR OPTICS.
+727: 
+728: BADEND		TS	RUPTREG2	# DEVICE INDEX.
+729: 		CS	ZERO		# FOR FAILURE.
+730: 		TCF	GOODEND +2
+731: 
+732: GOODEND		TS	RUPTREG2
+733: 		CS	ONE		# FOR SUCCESS.
+734: 
+735: 		TS	RUPTREG3
+736: 		INDEX	RUPTREG2	# SEE IF USING PROGRAM ASLEEP.
+737: 		CCS	MODECADR
+738: 		TCF	+4		# YES - WAKE IT UP.
+739: 		TCF	ENDMODE		# IF 0, PROGRAM NOT IN YET.
+740: 
+741: 		EXTEND
+742: 		BZF	ENDMODE +1	# BZF = TCF IF MODECADR = -0.
+743: 
+744: 		CAF	ZERO		# WAKE SLEEPING PROGRAM.
+745: 		INDEX	RUPTREG2
+746: 		XCH	MODECADR
+747: 		TC	JOBWAKE
+748: 
+749: 		CS	RUPTREG3	# ADVANCE LOC IF SUCCESSFUL.
+750: 		INDEX	LOCCTR
+751: 		ADS	LOC
+752: 
+753: 		TCF	TASKOVER
+754: 
+755: ENDMODE		CA	RUPTREG3	# -0 INDICATES OPERATION COMPLETE BUT
+756:  +1		INDEX	RUPTREG2	# UNSUCCESSFUL:  -1 INDICATES COMPLETE AND
+757: 		TS	MODECADR	# SUCCESSFUL.
+758: 		TCF	TASKOVER
+759: 
+760: ## Page 1329
+761: # GENERAL STALLING ROUTINE.  USING PROGRAMS COME HERE TO WAIT FOR I/O COMPLETION.
+762: #
+763: # PROGRAM DESCRIPTION				DATE - 21 FEB 1967
+764: #						LOG SECTION IMU MODE SWITCHING
+765: # MOD BY - R. MELANSON TO ADD DOCUMENTATION	ASSEMBLY SUNDISK REV. 82
+766: #
+767: # FUNCTIONAL DESCRIPTION -
+768: #	TO DELAY FURTHER EXECUTION OF THE CALLING ROUTINE UNTIL ITS SELECTED
+769: #	I/O FUNCTION IS COMPLETE.  THE FOLLOWING CHECKS ON THE CALLING ROUTINE:S
+770: #	MODECADR ARE MADE AND ACTED UPON.
+771: #	1) +0 INDICATES INCOMPLETE I/O OPERATION.  CALLING ROUTINE IS PUT TO
+772: #	   SLEEP.
+773: #	2) -1 INDICATES COMPLETED I/O OPERATION.  STALL BYPASSES JOBSLEEP
+774: #	   CALL AND RETURNS TO CALLING ROUTINE AT L+3
+775: #	3) -0 INDICATES COMPLETED I/O WITH FAILURE.  STALL CLEARS MODECADR
+776: #	   AND RETURNS TO CALLING ROUTINE AT L+2.
+777: #	4) VALUE GREATER THAN 0 INDICATES TWO ROUTINES CALLING FOR USE OF
+778: #	   SAME DEVICE.  STALL EXITS TO ABORT WHICH EXECUTES A PROGRAM
+779: #	   RESTART WHICH IN TURN CLEARS ALL MODECADR REGISTERS.
+780: #
+
+SOURCE=Contributed/LM_Simulator/lm_simulator.tcl SHA256=74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5
+RANGE=125-146
+125: set unpSeq(PINC)                  000000000000000
+126: set unpSeq(MINC)                  000000000000010
+127: set unpSeq(DINC)                  000000000000100
+128: # ---- 400cps ----
+129: set unpSeq(PCDU)                  000000000000001
+130: set unpSeq(MCDU)                  000000000000011
+131: # ---- 6400cps ----
+132: set unpSeq(PCDU_FAST)             000000000010001
+133: set unpSeq(MCDU_FAST)             000000000010011
+134: 
+135: # ---- OUT ----
+136: set unpSeq(000000000001101)       POUT
+137: set unpSeq(000000000001110)       MOUT
+138: set unpSeq(000000000001111)       ZOUT
+139: 
+140: # ---------------- IMU Simulation Initialization ---------------------
+141: # ---- 39.55078125'' of arc ----
+142: set ANGLE_INCR                    [expr 360.0 / 32768.0]
+143: set CA_ANGLE                      0.043948
+144: set FA_ANGLE                      [expr 0.617981/3600.0]
+145: set PIPA_INCR                     0.0585
+146: set NEEDLE_SCALE                  [expr 42.1875/384.0]
+RANGE=790-802
+790: 
+791: 
+792:  if {$t == 0} {
+793:    set cdata($octChannel) [string range $data 13 15][string range $data 18 23][string range $data 26 31]
+794: 
+795:    # ---- Gyro Fine Align if Octal Channel = 0177 ----
+796:    if {$octChannel == 177} {gyro_fine_align} 
+797:    # ----------------------------------------------
+798: 
+799:    # ---- Gyro Coarse Align if Octal Channel = 0174; 0175; 0176 ----
+800:    if {$octChannel == 174 || $octChannel == 175 || $octChannel == 176} {gyro_coarse_align $octChannel}
+801:    # ---------------------------------------------------------------
+802: 
+
+SOURCE=Contributed/LM_Simulator/modules/AGC_IMU.tcl SHA256=4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e
+RANGE=460-600
+460: # *************************************************************************************************
+461: # **** Function: Gyro Coarse Align (will be called in case of Channel 0174; 0175; 0176 output) ****
+462: # *************************************************************************************************
+463: proc gyro_coarse_align {par1} {
+464:  global cdata CA_ANGLE bo error_x error_y error_z
+465: 
+466:  set sign [string index $cdata($par1) 0]
+467:  if {$sign == 0} {set sign 1} else {set sign -1}
+468:  set cdu_pulses [expr $sign * [convert_bin_dec [string range $cdata($par1) 1 14]]]
+469: 
+470:  # ---- Coarse Align Enable ----
+471:  if {$bo(12,4) == 1} {
+472:    if {$par1 == 174} {
+473:       .text insert end "DRIVE CDU X: $cdu_pulses\n"; .text yview moveto 1
+474:       modify_gimbal_angle [expr $cdu_pulses * $CA_ANGLE] 0 0
+475:    }
+476: 
+477:    if {$par1 == 175} {
+478:       .text insert end "DRIVE CDU Y: $cdu_pulses\n"; .text yview moveto 1
+479:       modify_gimbal_angle 0 [expr $cdu_pulses * $CA_ANGLE] 0
+480:    }
+481: 
+482:    if {$par1 == 176} {
+483:       .text insert end "DRIVE CDU Z: $cdu_pulses\n"; .text yview moveto 1
+484:       modify_gimbal_angle 0 0 [expr $cdu_pulses * $CA_ANGLE]
+485:    }
+486: 
+487:    move_fdai_marker
+488:  } else {
+489:    # ---- Error Needles ----
+490:    if {$par1 == 174} {set error_x [expr $error_x + $cdu_pulses]}
+491:    if {$par1 == 175} {set error_y [expr $error_y + $cdu_pulses]}
+492:    if {$par1 == 176} {set error_z [expr $error_z + $cdu_pulses]}
+493:  }
+494: }
+495: 
+496: 
+497: # *************************************************************************************************
+498: # **** Function: Modify a specific IMU Delta Gimbal-Angle par1=X; par2=Y; par3=Z               ****
+499: # *************************************************************************************************
+500: proc modify_gimbal_angle {dx dy dz} {
+501:  global IMUX_ANGLE IMUY_ANGLE IMUZ_ANGLE ANGLE_INCR
+502:  global PIMUX PIMUY PIMUZ bo gimbalLock
+503:  global Omega_Roll Omega_Pitch Omega_Yaw DEG_TO_RAD RAD_TO_DEG PI 2PI
+504: 
+505:  if {$gimbalLock == 1 || $bo(12,5) == 1} {return}
+506:  set ang_delta 0
+507: 
+508:  # ---- Modify X-Axis ----
+509:  if {$dx != 0} {
+510:    # ---- Calculate New X-Angle ----
+511:    set IMUX_ANGLE [expr $IMUX_ANGLE + $dx]
+512:    if {$IMUX_ANGLE < 0}   {set IMUX_ANGLE [expr $IMUX_ANGLE + 360]}
+513:    if {$IMUX_ANGLE >= 360} {set IMUX_ANGLE [expr $IMUX_ANGLE - 360]}
+514: 
+515:    # ---- Calculate Delta between X-Angle and already feeded IMU X-Angle ----
+516:    set dx [expr  $IMUX_ANGLE - $PIMUX]
+517:    if {$dx < -180}   {set dx [expr $dx + 360]}
+518:    if {$dx > 180} {set dx [expr $dx - 360]}
+519: 
+520:    # ---- Feed yaAGC with the new Angular Delta ----
+521:    if {$dx >= 0} {set ANGLE_INCR_SIGN $ANGLE_INCR} else {set ANGLE_INCR_SIGN -$ANGLE_INCR}
+522:    set ang_delta [expr abs($dx)]
+523:    while {$ang_delta > $ANGLE_INCR} {
+524:      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]
+525:      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+526:      # ---- LM X-Axis/YAW-Axis ----
+527:      if {$Omega_Yaw < 4} {
+528:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 32} else {write_socket "PCDU" 32}
+529:      } else {
+530:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 32} else {write_socket "PCDU_FAST" 32}
+531:      }
+532:    }
+533: 
+534:    # ---- Check for Angular Boundaries ----
+535:    if {$PIMUX < 0}    {set PIMUX [expr $PIMUX + 360]}
+536:    if {$PIMUX >= 360} {set PIMUX [expr $PIMUX - 360]}
+537:  }
+538: 
+539:  # ---- Modify Y-Axis ----
+540:  if {$dy != 0} {
+541:    # ---- Calculate new IMU Y-Angel ----
+542:    set IMUY_ANGLE [expr $IMUY_ANGLE + $dy]
+543:    if {$IMUY_ANGLE < 0}   {set IMUY_ANGLE [expr $IMUY_ANGLE + 360]}
+544:    if {$IMUY_ANGLE >= 360} {set IMUY_ANGLE [expr $IMUY_ANGLE - 360]}
+545: 
+546:    # ---- Calculate Delta between Y-Angle and already feeded IMU Y-Angle ----
+547:    set dy [expr  $IMUY_ANGLE - $PIMUY]
+548:    if {$dy < -180}   {set dy [expr $dy + 360]}
+549:    if {$dy > 180} {set dy [expr $dy - 360]}
+550: 
+551:    # ---- Feed yaAGC with the new Angular Delta ----
+552:    if {$dy >= 0} {set ANGLE_INCR_SIGN $ANGLE_INCR} else {set ANGLE_INCR_SIGN -$ANGLE_INCR}
+553:    set ang_delta [expr abs($dy)]
+554:    while {$ang_delta > $ANGLE_INCR} {
+555:      set PIMUY [expr $PIMUY + $ANGLE_INCR_SIGN]
+556:      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+557:      # ---- LM Y-Axis/PITCH-Axis ----
+558:      if {$Omega_Pitch < 4.0} {
+559:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 33} else {write_socket "PCDU" 33}
+560:      } else {
+561:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 33} else {write_socket "PCDU_FAST" 33}
+562:      }
+563:    }
+564: 
+565:    # ---- Check for Angular Boundaries ----
+566:    if {$PIMUY < 0}    {set PIMUY [expr $PIMUY + 360]}
+567:    if {$PIMUY >= 360} {set PIMUY [expr $PIMUY - 360]}
+568:  }
+569: 
+570:  # ---- Modify Z-Axis ----
+571:  if {$dz != 0} {
+572:    # ---- Calculate new IMU Z-Angel ----
+573:    set IMUZ_ANGLE [expr $IMUZ_ANGLE + $dz]
+574:    if {$IMUZ_ANGLE < 0}   {set IMUZ_ANGLE [expr $IMUZ_ANGLE + 360]}
+575:    if {$IMUZ_ANGLE >= 360} {set IMUZ_ANGLE [expr $IMUZ_ANGLE - 360]}
+576: 
+577:    # ---- Check for Gimbal Lock ----
+578:    if {$IMUZ_ANGLE > 85.1 && $IMUZ_ANGLE < 274.9} {set gimbalLock 1}
+579:    
+580:    # ---- Calculate Delta between Z-Angle and already feeded IMU Z-Angle ----
+581:    set dz [expr  $IMUZ_ANGLE - $PIMUZ]
+582:    if {$dz < -180}   {set dz [expr $dz + 360]}
+583:    if {$dz > 180} {set dz [expr $dz - 360]}
+584: 
+585:    # ---- Feed yaAGC with the new Angular Delta ----
+586:    if {$dz >= 0} {set ANGLE_INCR_SIGN $ANGLE_INCR} else {set ANGLE_INCR_SIGN -$ANGLE_INCR}
+587:    set ang_delta [expr abs($dz)]
+588:    while {$ang_delta > $ANGLE_INCR} {
+589:      set PIMUZ [expr $PIMUZ + $ANGLE_INCR_SIGN]
+590:      set ang_delta [expr $ang_delta - $ANGLE_INCR]
+591:      # ---- LM Z-Axis/ROLL-Axis ----
+592:      if {$Omega_Roll < 4.0} {
+593:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU" 34} else {write_socket "PCDU" 34}
+594:      } else {
+595:        if {$ANGLE_INCR_SIGN < 0} {write_socket "MCDU_FAST" 34} else {write_socket "PCDU_FAST" 34}
+596:      }
+597:    }
+598: 
+599:    # ---- Check for Angular Boundaries ----
+600:    if {$PIMUZ < 0}    {set PIMUZ [expr $PIMUZ + 360]}
+
+SOURCE=Contributed/LM_Simulator/Documentation/readme.html SHA256=e151b4c5c27865f58fcf672c89ecf37f731be7c64eeacd7fe0b2b50eb7da3cab
+RANGE=213-247
+213: <u>0.1 AGC/LGC Initialization:</u><br>
+214: After a fresh AGC start there is a need to do a reset by typing V36E. To go into the idle loop it is necessary to change the program by V37E 00E. Probably that has to be repeated a couple of times until "PROG" shows 00.<br>
+215: <br><br>
+216: 
+217: <u>1.0 IMU Introduction:</u><br>
+218: The IMU is constructed of a navigational platform gimbaled by a three axis system.<br>
+219: The following mapping is valid after setting the IMU to zero degrees:<br>
+220: <br>
+221: X-Gimbal-Axis = Outer Gimbal  = X-LM-Axis = YAW<br>
+222: Y-Gimbal-Axis = Inner Gimbal  = Y-LM-Axis = PITCH<br>
+223: Z-Gimbal-Axis = Middle Gimbal = Z-LM-Axis = Roll (Gimbal Lock Warning +/-70 Degrees)<br>
+224: <br>
+225: <u>1.1 IMU Start:</u><br>
+226: After a fresh start of yaAGC and LM Simulator the AGC assumes an aligned IMU.<br>
+227: That means that the steps 1.1 to 1.4 are not urgently necessary if you want to do a fast start.<br>
+228: <br>
+229: - AGC Crew Inputs: Set "ISS TURN ON REQUESTED" to ON<br>
+230: - Wait for about 90 sec until the DSKY "NO ATT" signal goes off<br>
+231: <br>
+232: <u>1.2 IMU Pre-flight Checkout:</u><br>
+233: Pre-flight check-out of the FDAI display interface -&gt; DSKY: V43E<br>
+234: All values should be set to +00000.<br>
+235: <br>
+236: <u>1.3 IMU Coarse Align:</u><br>
+237: - Type the following sequence into the DSKY: V41N20E (V = VERB; N = NOUN; E = ENTR)<br>
+238: - Now the AGC asks for the angles in the format 000.00 Deg. The sequence is X, Y, Z. Don't forget the "+" or "-" sign!<br>
+239: - The AGC drives the IMU to the absolute position given<br>
+240: - Use the "FDAI/IMU" window to control the angle changes<br>
+241: <br>
+242: <u>1.4 IMU Fine Align:</u><br>
+243: After IMU Coarse Align the "NO ATT" light indicates that the platform is not completely aligned.<br>
+244: To finalize the alignment the following procedure is needed:<br>
+245: - DSKY: V42E<br>
+246: - Give the relative angles in format 00.000 Deg (e.g. three times +00000)<br>
+247: <br>
