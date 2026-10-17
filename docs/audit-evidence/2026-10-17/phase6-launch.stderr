@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/demonstrate.py", line 193, in <module>
+    if __name__ == '__main__': main()
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/demonstrate.py", line 155, in main
+    if shutil.which(tool) is None: raise RuntimeError(f'Missing {tool}; install before launching')
+RuntimeError: Missing nix; install before launching

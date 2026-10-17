@@ -1,0 +1,13 @@
+{
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/gimbal_loop.c": "00663396f25fea178359372170a2e65ed307b89e942247c7a0cebbe688beddee",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/positive_inputs.txt": "5a2f4af3841e4b8ad1a9bb105d9fae88fa37fa29e7b8ac28b7db3ec842467f84",
+  "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/negative_inputs.txt": "b95cb1789948cbe386a2cb0445e1014ae8a4148d75da6a7d24d307779c448851",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/wasm.c": "0aecff185f8307f3bb64d7aa2f0fc0284c91d837a50a1d79aeebed1681623a83",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine.c": "9c59728cdd968503caaaafe50a18ab3ed841f6176da3299c137f3a6a158fcbef",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine_init.c": "7cc75c5f92b32a02e3553ee23cda10dc91e83ebdf4a9ca4d8a8248d6b33af4c1",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_utilities.c": "9e38dc48a1c6232b7f40b20199685710c40f85141f70a6a25c1cdca80fd95102",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer_api.c": "554f1c13756f9e4fc50b08f8338244acd7f957c85275e5be5a85c5703f804530",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer.c": "98d5d9924db17f9b41aae317421f24aeb318fb71032a36d138296559d5f4e268",
+  "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/rfopen.c": "4481b7006235592a982d073ff894c1b2723621be0fde9a458cb5d0832e3b2f29"
+}

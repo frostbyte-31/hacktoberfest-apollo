@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/run_validation.py",
+    "/private/tmp/apollo-audit-readiness-187l1e6n",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "source_bundle": "docs/phase6-evidence/corresponding-source.tar.gz",
+  "source_bundle_sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+  "source_directory": "/private/tmp/apollo-audit-readiness-187l1e6n",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "start_utc": "2026-10-17T13:27:50.241686+00:00",
+  "exit": 0,
+  "end_utc": "2026-10-17T13:27:52.708931+00:00"
+}

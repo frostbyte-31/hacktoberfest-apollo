@@ -1,0 +1,34 @@
+{
+  "raw_traces": {
+    "baseline.stdout": {
+      "sha256": "2ad4a59ae01cb1b1bc460c98cd6dacfd8bfe089e1d53cc6a45d99db6ec8a8fab",
+      "bytes": 2529231,
+      "retained_identical_reference": "docs/phase5-evidence/runs/baseline.stdout",
+      "fresh_copy_scratch_path": "/private/tmp/apollo-audit-readiness-187l1e6n/generated-readiness-outputs/baseline.stdout"
+    },
+    "operate.stdout": {
+      "sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+      "bytes": 2251353,
+      "retained_identical_reference": "docs/phase5-evidence/runs/operate.stdout",
+      "fresh_copy_scratch_path": "/private/tmp/apollo-audit-readiness-187l1e6n/generated-readiness-outputs/operate.stdout"
+    },
+    "off.stdout": {
+      "sha256": "e47e2444161957d5994faf7a561c4b220e3211c73caee97d0362f72054051f22",
+      "bytes": 2457971,
+      "retained_identical_reference": "docs/phase5-evidence/runs/off.stdout",
+      "fresh_copy_scratch_path": "/private/tmp/apollo-audit-readiness-187l1e6n/generated-readiness-outputs/off.stdout"
+    },
+    "repeat.stdout": {
+      "sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+      "bytes": 2251353,
+      "retained_identical_reference": "docs/phase5-evidence/runs/repeat.stdout",
+      "fresh_copy_scratch_path": "/private/tmp/apollo-audit-readiness-187l1e6n/generated-readiness-outputs/repeat.stdout"
+    }
+  },
+  "build_artifact": {
+    "sha256": "46faa8ee56051e670b900e196b6d0620c51191bc27ebf2d972fa6abc77f86ea0",
+    "scratch_path": "/private/tmp/apollo-audit-readiness-187l1e6n/generated-readiness-outputs/readiness_probe"
+  },
+  "source_bundle_members_match_manifest": true,
+  "source_bundle_file_count": 24
+}

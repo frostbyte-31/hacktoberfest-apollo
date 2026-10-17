@@ -1,0 +1,174 @@
+{
+  "started_utc": "2026-10-17T13:29:05.324329+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "source_archive": {
+    "path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase6-evidence/corresponding-source.tar.gz",
+    "sha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d"
+  },
+  "source_scratch_directory": "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93",
+  "python_dont_write_bytecode": true,
+  "commands": [
+    {
+      "name": "gcc_version",
+      "argv": [
+        "gcc",
+        "--version"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T13:29:05.342903+00:00",
+      "stdout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/gcc_version.stdout",
+      "stderr": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/gcc_version.stderr",
+      "finished_utc": "2026-10-17T13:29:05.448281+00:00",
+      "exit_status": 0
+    },
+    {
+      "name": "phase2_build",
+      "argv": [
+        "gcc",
+        "-O2",
+        "-I/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase2-evidence/cycle_native.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/wasm.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine_init.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_utilities.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer_api.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer.c",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/rfopen.c",
+        "-lm",
+        "-o",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/cycle_native"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T13:29:05.450615+00:00",
+      "stdout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_build.stdout",
+      "stderr": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_build.stderr",
+      "finished_utc": "2026-10-17T13:29:06.225222+00:00",
+      "exit_status": 0
+    },
+    {
+      "name": "phase2_clock",
+      "argv": [
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/cycle_native",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase2-evidence/clock_inputs.txt"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T13:29:06.225884+00:00",
+      "stdout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_clock.stdout",
+      "stderr": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_clock.stderr",
+      "finished_utc": "2026-10-17T13:29:08.588304+00:00",
+      "exit_status": 0,
+      "stdout_replaced_with_retained_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase2-evidence/41_native_clock.jsonl"
+    },
+    {
+      "name": "phase2_p63",
+      "argv": [
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/cycle_native",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase2-evidence/p63_inputs.txt"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T13:29:08.589879+00:00",
+      "stdout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_p63.stdout",
+      "stderr": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase2_p63.stderr",
+      "finished_utc": "2026-10-17T13:29:08.699616+00:00",
+      "exit_status": 0,
+      "stdout_replaced_with_retained_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase2-evidence/41_native_p63.jsonl"
+    },
+    {
+      "name": "phase3_driver",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/run_experiment.py",
+        "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "started_utc": "2026-10-17T13:29:08.701123+00:00",
+      "stdout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3_driver.stdout",
+      "stderr": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3_driver.stderr",
+      "finished_utc": "2026-10-17T13:29:11.813608+00:00",
+      "exit_status": 0
+    }
+  ],
+  "phase2_binary_sha256": "de288ae4cbc24932bace97a5b710553a213073b6844f4dcf66c5e02536a7393f",
+  "phase3_nested_commands": [
+    {
+      "command": [
+        "gcc",
+        "-O2",
+        "-I/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/gimbal_loop.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/wasm.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_engine_init.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/agc_utilities.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer_api.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/ringbuffer.c",
+        "/private/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-native-u_c_8o93/yaAGC/rfopen.c",
+        "-lm",
+        "-o",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    },
+    {
+      "command": [
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/positive_inputs.txt",
+        "closed"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    },
+    {
+      "command": [
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/positive_inputs.txt",
+        "closed"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    },
+    {
+      "command": [
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/positive_inputs.txt",
+        "open"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    },
+    {
+      "command": [
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/positive_inputs.txt",
+        "blocked"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    },
+    {
+      "command": [
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/native-reproduction/phase3-runs/gimbal_loop",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/negative_inputs.txt",
+        "closed"
+      ],
+      "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+      "exit": 0
+    }
+  ],
+  "phase3_nested_timestamps_note": "The retained unmodified driver logs nested argv, cwd and exit statuses; execution_manifest timestamps bound the entire driver invocation.",
+  "phase3_binary_sha256": "644944dbd0921f806c0fe470c756ebe31cbb263fd1ed1ada708be1cdf2db8bef",
+  "phase3_binary_removed_after_hashing": true,
+  "finished_utc": "2026-10-17T13:29:11.823304+00:00"
+}

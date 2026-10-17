@@ -1,0 +1,200 @@
+{
+  "status": "VERIFIED fresh native execution",
+  "source_modified": false,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "phase2": {
+    "clock_exit": 0,
+    "clock_cycles": 2300000,
+    "clock_failreg_octal": [
+      "0",
+      "0",
+      "0"
+    ],
+    "p63_exit": 0,
+    "p63_cycles": 2600000,
+    "p63_failreg_octal": [
+      "1107",
+      "210",
+      "0"
+    ],
+    "both_fresh_traces_byte_identical_to_retained": true
+  },
+  "phase3": {
+    "driver_exit": 0,
+    "scenarios": {
+      "positive": {
+        "exit": 0,
+        "trace_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/runs/positive.stdout",
+        "final_record": {
+          "ev": "sample",
+          "cycle": 8000000,
+          "position_counts": [
+            912,
+            0,
+            0
+          ],
+          "sent": [
+            912,
+            0,
+            0
+          ],
+          "pending": [
+            0,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "chan12": 40,
+          "failreg": [
+            583,
+            0,
+            0
+          ]
+        }
+      },
+      "repeat": {
+        "exit": 0,
+        "trace_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/runs/repeat.stdout",
+        "final_record": {
+          "ev": "sample",
+          "cycle": 8000000,
+          "position_counts": [
+            912,
+            0,
+            0
+          ],
+          "sent": [
+            912,
+            0,
+            0
+          ],
+          "pending": [
+            0,
+            0,
+            0
+          ],
+          "cdu": [
+            912,
+            0,
+            0
+          ],
+          "chan12": 40,
+          "failreg": [
+            583,
+            0,
+            0
+          ]
+        }
+      },
+      "open": {
+        "exit": 0,
+        "trace_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/runs/open.stdout",
+        "final_record": {
+          "ev": "sample",
+          "cycle": 8000000,
+          "position_counts": [
+            912,
+            0,
+            0
+          ],
+          "sent": [
+            0,
+            0,
+            0
+          ],
+          "pending": [
+            912,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "chan12": 40,
+          "failreg": [
+            583,
+            137,
+            0
+          ]
+        }
+      },
+      "blocked": {
+        "exit": 0,
+        "trace_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/runs/blocked.stdout",
+        "final_record": {
+          "ev": "sample",
+          "cycle": 8000000,
+          "position_counts": [
+            0,
+            0,
+            0
+          ],
+          "sent": [
+            0,
+            0,
+            0
+          ],
+          "pending": [
+            0,
+            0,
+            0
+          ],
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "chan12": 40,
+          "failreg": [
+            583,
+            137,
+            0
+          ]
+        }
+      },
+      "negative": {
+        "exit": 0,
+        "trace_reference": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase3-evidence/runs/negative.stdout",
+        "final_record": {
+          "ev": "sample",
+          "cycle": 8000000,
+          "position_counts": [
+            -912,
+            0,
+            0
+          ],
+          "sent": [
+            -912,
+            0,
+            0
+          ],
+          "pending": [
+            0,
+            0,
+            0
+          ],
+          "cdu": [
+            31856,
+            0,
+            0
+          ],
+          "chan12": 40,
+          "failreg": [
+            583,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "all_fresh_traces_byte_identical_to_retained": true
+  },
+  "raw_retention": "All seven new raw captures matched retained evidence byte-for-byte. New identical copies were removed after hashing; trace_comparison.json supplies retained references. Build/process logs, commands, input/source hashes and execution timestamps remain."
+}

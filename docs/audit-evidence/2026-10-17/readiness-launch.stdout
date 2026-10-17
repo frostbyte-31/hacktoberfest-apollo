@@ -1,0 +1,66 @@
+[
+  {
+    "command": [
+      "gcc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  },
+  {
+    "command": [
+      "gcc",
+      "-O2",
+      "-I/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/readiness_probe.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/wasm.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/agc_engine.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/agc_engine_init.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/agc_utilities.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/ringbuffer_api.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/ringbuffer.c",
+      "/private/tmp/apollo-audit-readiness-187l1e6n/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction/readiness_probe"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction/readiness_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/baseline_inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction/readiness_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/operate_inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction/readiness_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/operate_inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  },
+  {
+    "command": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/readiness-reproduction/readiness_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/phase5-evidence/off_inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "exit": 0
+  }
+]

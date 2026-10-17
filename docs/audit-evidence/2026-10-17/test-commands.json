@@ -1,0 +1,107 @@
+[
+  {
+    "phase": 2,
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase2-evidence",
+      "-p",
+      "test_validation.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:35.582924+00:00",
+    "end_utc": "2026-10-17T13:27:35.712587+00:00",
+    "exit": 0
+  },
+  {
+    "phase": 3,
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase3-evidence",
+      "-p",
+      "test_loop.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:35.583300+00:00",
+    "end_utc": "2026-10-17T13:27:36.036462+00:00",
+    "exit": 0
+  },
+  {
+    "phase": 4,
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase4-evidence",
+      "-p",
+      "test_control_path.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:35.583391+00:00",
+    "end_utc": "2026-10-17T13:27:36.038660+00:00",
+    "exit": 1
+  },
+  {
+    "phase": 5,
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase5-evidence",
+      "-p",
+      "test_readiness.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:35.583579+00:00",
+    "end_utc": "2026-10-17T13:27:36.363893+00:00",
+    "exit": 1
+  },
+  {
+    "phase": 6,
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/phase6-evidence",
+      "-p",
+      "test_demonstration.py",
+      "-v"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:35.583831+00:00",
+    "end_utc": "2026-10-17T13:27:36.199101+00:00",
+    "exit": 1
+  }
+]

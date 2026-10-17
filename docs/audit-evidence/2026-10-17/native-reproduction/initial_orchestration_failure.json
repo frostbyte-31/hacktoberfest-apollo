@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-17T13:29:05.313703+00:00",
+  "argv": [
+    "python3",
+    "-"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+  "exit_status": 1,
+  "stage": "source archive extraction, before compilation or test execution",
+  "error": "TypeError: extractall() got an unexpected keyword argument 'filter'",
+  "resolution": "Extract validated regular archive members using host-compatible Python API; no source or test changes."
+}

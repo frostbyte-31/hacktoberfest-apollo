@@ -1,0 +1,5 @@
+native distinct states: 35  wasm distinct states: 35
+states before clock display: native 28 wasm 28 identical: False
+first diff at 27 
+ native {"NOUN": "36", "PROG": "  ", "R1": "00000", "R2": "00000", "R3": "01888", "VERB": "16"} 
+ wasm   {"NOUN": "36", "PROG": "  ", "R1": "00000", "R2": "00000", "R3": "01788", "VERB": "16"}

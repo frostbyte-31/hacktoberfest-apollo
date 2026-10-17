@@ -1,0 +1,60 @@
+[
+  {
+    "argv": [
+      "gcc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:56.129259+00:00",
+    "end_utc": "2026-10-17T13:27:56.170259+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "tclsh",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/docs/audit-evidence/2026-10-17/tcl-version-input.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:56.170639+00:00",
+    "end_utc": "2026-10-17T13:27:56.191554+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/phase1-evidence/compare_display_sequences.py",
+      "docs/phase1-evidence/21_M2_dsky_transcript.jsonl",
+      "docs/phase1-evidence/31_wasm_dsky_transcript.jsonl"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:56.191594+00:00",
+    "end_utc": "2026-10-17T13:27:56.270040+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/phase6-evidence/demonstrate.py",
+      "--source",
+      "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-phase6-8aqd43ag/source",
+      "--output",
+      "/var/folders/bx/p5xp40ls6h53dgyd163rszlm0000gn/T/apollo-audit-phase6-8aqd43ag/demo"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo",
+    "env_overrides": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "start_utc": "2026-10-17T13:27:56.280198+00:00",
+    "end_utc": "2026-10-17T13:27:56.356946+00:00",
+    "exit": 1
+  }
+]

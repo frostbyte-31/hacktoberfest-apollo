@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "byte_identical": true,
+    "new_sha256": "2ad4a59ae01cb1b1bc460c98cd6dacfd8bfe089e1d53cc6a45d99db6ec8a8fab",
+    "retained_reference": "docs/phase5-evidence/runs/baseline.stdout",
+    "retained_sha256": "2ad4a59ae01cb1b1bc460c98cd6dacfd8bfe089e1d53cc6a45d99db6ec8a8fab",
+    "bytes": 2529231
+  },
+  "operate": {
+    "byte_identical": true,
+    "new_sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+    "retained_reference": "docs/phase5-evidence/runs/operate.stdout",
+    "retained_sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+    "bytes": 2251353
+  },
+  "off": {
+    "byte_identical": true,
+    "new_sha256": "e47e2444161957d5994faf7a561c4b220e3211c73caee97d0362f72054051f22",
+    "retained_reference": "docs/phase5-evidence/runs/off.stdout",
+    "retained_sha256": "e47e2444161957d5994faf7a561c4b220e3211c73caee97d0362f72054051f22",
+    "bytes": 2457971
+  },
+  "repeat": {
+    "byte_identical": true,
+    "new_sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+    "retained_reference": "docs/phase5-evidence/runs/repeat.stdout",
+    "retained_sha256": "4856d46ad9e4fe1675c8c156907eb92eacdc0275ad56f134ae9615bd8b164fb7",
+    "bytes": 2251353
+  }
+}
