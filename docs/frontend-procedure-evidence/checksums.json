@@ -1,0 +1,18 @@
+{
+  "algorithm": "SHA256",
+  "scope": "Retained correction evidence, excluding this inventory",
+  "files": {
+    "docs/frontend-procedure-evidence/README.md": "3b17d5c3e6ec85ebb8f7c20f2d42f0f253cd811cdddd8f03525b0746e62e2d4f",
+    "docs/frontend-procedure-evidence/backend-tests.txt": "ff7b0937a5e8478b0bc923f77f514990d6455bdec6ea4c33215ff39bf5a5a1cc",
+    "docs/frontend-procedure-evidence/browser-checks.json": "9230143e861702dc626bf0f6df71059671bd517335991ff49fb1bfdf151ea4c1",
+    "docs/frontend-procedure-evidence/controller-native-record.json": "02e70d63fcfd4fc3a7031186af5e2df65244732b35f09ed40d933d895d50ba56",
+    "docs/frontend-procedure-evidence/frontend-check.txt": "7b2c7500a5d3a33ec1f1c902b0dd3a072360fdf4659263694c0c6854796e094d",
+    "docs/frontend-procedure-evidence/javascript-tests.txt": "8ba0a677afbd8dbee4f91e9cfddd9181ba4498d3d1fd7798c0f7f3b65449667a",
+    "docs/frontend-procedure-evidence/preservation.json": "3ee52e936df041f74e2e6fc1c3527a70c9c2d7323cc8e8f991455e85d102804b",
+    "docs/frontend-procedure-evidence/python-frontend-tests.txt": "3071f4bba05148ca1de197d5fde50dc0a00b19e1010a025e8864cf7247709c06",
+    "docs/frontend-procedure-evidence/screenshots/mission-desktop.jpg": "57acce66807b06ab11af5e51c8f83538f449835552800c2f37bc28ef56f34420",
+    "docs/frontend-procedure-evidence/screenshots/mission-mobile.jpg": "b90fbb472e4e68c23e5bf4ad53a50ce7c6a5a0bc2116a8291bcd96135159ead1",
+    "docs/frontend-procedure-evidence/screenshots/separate-lab.jpg": "75c3150ad7f11a4882e8279360961793213561ca67f23f69c6a0efdb955f1f78",
+    "docs/frontend-procedure-evidence/validation.json": "8fe03f63f26b5a5cd4cd57851fa3f10be831277812aca07517e295a7f14e69f9"
+  }
+}

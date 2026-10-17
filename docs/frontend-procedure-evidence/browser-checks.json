@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "check": "P63 checkpoint preserves actual lagging display",
+      "program": "00",
+      "verb": "37",
+      "noun": "63",
+      "control": "Recorded sequence: VERB 3 7 ENTR 6 3 ENTR"
+    },
+    {
+      "check": "nominal crew-review boundary",
+      "program": "63",
+      "verb": "06",
+      "noun": "61",
+      "ignition": "360.29 s",
+      "nextEnabled": false,
+      "limit": "The nominal recording reaches V06 N61, then ends without crew continuation or ignition. Engine arming, PROCEED and powered descent need verified live support."
+    },
+    {
+      "check": "16km independent outcome",
+      "ignition": "360.44 s",
+      "program": "63"
+    },
+    {
+      "check": "missing site retains actual failure",
+      "ignition": "Unavailable",
+      "alarms": "01520 \u00b7 01406",
+      "limit": "The missing-site experiment recorded alarm 01406. No crew review or engine ignition is invented after that failure."
+    },
+    {
+      "check": "keyboard shortcuts disabled by default",
+      "status": "Original readiness established. CPU paused until your first deflection.",
+      "time": "11.72s",
+      "direction": "Target relative to current attitude: 3.00\u00b0 yaw, 0.00\u00b0 pitch. Use the highlighted controller direction for a short input, then watch the rate.",
+      "checkedAttribute": null
+    },
+    {
+      "check": "virtual hand-controller drag starts actual native execution",
+      "status": "Live native execution \u00b7 authoritative simulation clock.",
+      "time": "11.42s",
+      "handleTransform": "transform: translate(0px, 0px);"
+    },
+    {
+      "check": "desktop main viewport",
+      "layout": {
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "renderer": "WEBGL 3D"
+    },
+    {
+      "check": "390px mobile main layout",
+      "layout": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "check": "320px mobile main layout",
+      "layout": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    }
+  ],
+  "mainConsole": [],
+  "note": "Absent checked attribute plus actual paused readiness after D input establish the default; no checkbox toggle occurred."
+}

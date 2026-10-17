@@ -3,72 +3,41 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0c1015">
-  <meta name="description" content="Pilot a 3D Apollo lunar module in a bounded live AGC attitude-training challenge. Original Luminary controls, authoritative rotational physics, no descent simulation.">
-  <title>Apollo 11 · Eagle Flight Trainer</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./flight.css">
+  <meta name="description" content="Apollo 11 mission preparation: a guided review of verified original Luminary execution, with explicit historical and simulation boundaries.">
+  <title>Apollo 11 · Mission Procedures</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./flight.css"><link rel="stylesheet" href="./procedures.css">
 </head>
-<body>
-  <a class="skip-link" href="#flight-controls">Skip to flight controls</a>
+<body class="procedure-page">
+  <a class="skip-link" href="#current-task">Skip to current task</a>
   <header class="flight-header">
-    <a class="brand" href="./guidance.html" aria-label="Apollo 11 mission control"><span class="mission-patch" aria-hidden="true">A</span>APOLLO <b>11</b><small>FLIGHT TRAINER</small></a>
-    <nav aria-label="Mission navigation"><a href="./guidance.html">Guidance explorer ↗</a><a href="./">Systems lab ↗</a><button id="help-open">How to fly <span>?</span></button></nav>
+    <a class="brand" href="./play.html"><span class="mission-patch" aria-hidden="true">A</span>APOLLO <b>11</b><small>MISSION PROCEDURES</small></a>
+    <nav aria-label="Mission navigation"><a href="./guidance.html">Full evidence explorer ↗</a><a href="./attitude-lab.html">Separate attitude lab ↗</a></nav>
   </header>
   <main>
-    <div class="flight-status"><span class="status-source"><i id="source-dot"></i><strong id="backend-mode">CHECKING LOCAL AGC</strong></span><span class="status-description" id="session-status" role="status">Connecting to the local flight service…</span><span class="training-label">SYNTHETIC ATTITUDE TRAINING</span></div>
-    <div class="flight-layout">
-      <section class="mission-brief" aria-labelledby="flight-title">
-        <div class="eyebrow">EAGLE / ATTITUDE EXERCISE</div>
-        <h1>A steady<br><em>hand.</em></h1>
-        <p class="intro">A real guidance computer.<br>A lunar module. Your controls.</p>
-        <div class="brief-rule"></div>
-        <h2 class="eyebrow">01 — CHOOSE YOUR CHALLENGE</h2>
-        <div class="challenges" role="group" aria-label="Training challenge">
-          <button data-challenge="yaw" class="selected" aria-pressed="true"><span>01</span><div><strong>Find your heading</strong><small>Yaw · single axis</small></div><i>↗</i></button>
-          <button data-challenge="pitch" aria-pressed="false"><span>02</span><div><strong>Set your attitude</strong><small>Pitch · single axis</small></div><i>↗</i></button>
-          <button data-challenge="combined" aria-pressed="false"><span>03</span><div><strong>Bring it together</strong><small>Yaw + pitch</small></div><i>↗</i></button>
-        </div>
-        <div class="mission-objective"><span class="eyebrow">YOUR OBJECTIVE</span><p id="objective-copy">Match the target attitude, then countersteer to reduce your rotation.</p><span class="target-note" id="target-description">Target preview · +3° yaw</span></div>
-        <div class="brief-tip"><span>FLIGHT NOTE</span><p>Release means neutral, not a brake. Use the opposite control to slow the rotation.</p></div>
+    <div class="procedure-source"><strong id="execution-mode">LOADING VERIFIED RECORDING</strong><span>Synthetic experiment inputs · not historical flight telemetry</span></div>
+    <section class="mission-intent"><div><span class="eyebrow">LUNAR MODULE / PRE-IGNITION PREPARATION</span><h1>Follow the <em>procedure.</em></h1><p>Understand what the crew must check before a burn.<br>Start with the original computer’s recorded preparation sequence.</p></div><div class="task-boundary"><span class="eyebrow">WHAT YOU CAN DO HERE</span><strong>Review evidence, step by step.</strong><p>This is a guided recording of our test sequence, not Apollo 11’s complete flown checklist. Live cockpit commands and the historical landing sequence are not connected yet.</p></div></section>
+    <div class="scenario-choice"><label for="procedure-scenario">RETAINED EXPERIMENT</label><select id="procedure-scenario" disabled><option value="nominal">A · Synthetic 15 km orbit</option><option value="altitude-16km">B · Synthetic 16 km orbit</option><option value="missing-site">C · Landing target omitted</option></select><span>Each selection uses its own recorded outcome.</span></div>
+    <div class="procedure-error" id="procedure-error" role="alert" hidden><strong>Recording unavailable.</strong><p id="procedure-error-copy"></p><button id="procedure-retry">Reload verified evidence</button></div>
+    <section class="current-task" id="current-task" aria-labelledby="task-title" aria-busy="true"><div><span class="eyebrow" id="task-number">YOUR CURRENT TASK</span><h2 id="task-title">Review the guidance preparation.</h2><p id="task-focus">You are not aiming the spacecraft at a landing point in this recording. Inspect alignment, mission inputs and P63, then read the recorded crew-review display.</p></div><div class="task-actions"><button id="procedure-back" disabled aria-label="Previous recorded checkpoint">← Previous</button><button class="primary-action" id="procedure-next" disabled>Loading evidence…</button></div></section>
+    <div class="procedure-console">
+      <aside class="procedure-checklist" aria-labelledby="checklist-title"><div class="section-label"><span class="eyebrow" id="checklist-title">RECORDED TEST SEQUENCE</span><small id="step-count">8 observations</small></div><ol id="procedure-steps"></ol><p class="checklist-note">Selecting a step seeks a recording. It does not perform an astronaut action or send a command.</p><a href="./guidance.html">Inspect every retained event →</a></aside>
+      <section class="procedure-vehicle" aria-label="Illustrative three-dimensional Lunar Module">
+        <canvas id="procedure-canvas" aria-label="Illustrative 3D Lunar Module. Drag to orbit the viewing camera. This recording supplies no spacecraft attitude or motion."></canvas>
+        <div class="vehicle-top"><span>LM / EAGLE</span><span id="procedure-renderer">3D VISUAL MODEL</span></div><div class="vehicle-note"><span>STATIC EDUCATIONAL ILLUSTRATION</span><strong>Camera view, not flight state.</strong><p>The recording supplies no propagated attitude or descent. Turning this model only moves your viewing camera.</p></div>
+        <div class="camera-tools"><button id="procedure-camera-reset" aria-label="Reset model camera">↺</button><button id="procedure-camera-in" aria-label="Zoom in">+</button><button id="procedure-camera-out" aria-label="Zoom out">−</button></div>
       </section>
-
-      <section class="flight-stage" aria-label="Interactive 3D lunar module">
-        <canvas id="flight-canvas" aria-label="Three-dimensional illustrative lunar module. Drag to orbit the camera. Live orientation comes only from backend samples; no descent or translation is simulated."></canvas>
-        <div class="stage-top"><span><i></i>LM / EAGLE</span><strong id="render-mode">3D VISUAL MODEL</strong></div>
-        <div class="stage-coordinate">BODY → STABLE<br><span>ILLUSTRATIVE VEHICLE GEOMETRY</span></div>
-        <div class="aim-hud" aria-label="Magnified attitude error indicator">
-          <svg viewBox="0 0 140 140" aria-hidden="true"><circle cx="70" cy="70" r="49"/><circle cx="70" cy="70" r="23"/><path d="M70 10v15m0 90v15M10 70h15m90 0h15M65 70h10M70 65v10"/><g id="aim-marker" hidden><path d="m-6 0 6-6 6 6-6 6z"/></g></svg>
-          <span>ANGULAR ERROR<br><small>ENLARGED REFERENCE</small></span>
-        </div>
-        <div class="stage-caption"><span id="visual-source">VISUAL MODEL · AWAITING LIVE STATE</span><small>Drag to orbit · scroll to zoom</small></div>
-        <div class="camera-tools"><button id="camera-reset" aria-label="Reset 3D camera" title="Reset camera">↺</button><button id="camera-zoom-in" aria-label="Zoom in on spacecraft">+</button><button id="camera-zoom-out" aria-label="Zoom out from spacecraft">−</button></div>
-        <div class="stage-message" id="stage-message"><span class="eyebrow">THE CHECKLIST</span><h2>Ready when you are.</h2><p>Arm the original AGC. Once it is ready, your first control input starts the clock.</p></div>
-        <section class="result-card" id="flight-result" aria-labelledby="result-title" hidden><span class="eyebrow" id="result-eyebrow">TRAINING DEBRIEF</span><h2 id="result-title">Run complete.</h2><p id="result-copy"></p><div class="result-score"><strong id="final-score">—</strong><span>TRAINING POINTS</span><small id="result-detail"></small></div></section>
-      </section>
-
-      <aside class="flight-instruments" aria-label="Authoritative flight observations">
-        <div class="instrument-heading"><span class="eyebrow">FLIGHT INSTRUMENTS</span><span id="observation-kind">NO LIVE SAMPLE</span></div>
-        <div class="flight-timer"><span>TIME AVAILABLE</span><strong id="time-remaining">—<small>s</small></strong><div class="time-track"><span id="time-progress"></span></div><p>11.7 seconds of bounded control.<br>Starts on your first deflection.</p></div>
-        <div class="instrument"><span>TARGET ANGLE ERROR</span><strong id="angle-error">—<small>°</small></strong><small id="angle-rule">Get within 1° of the target</small></div>
-        <div class="instrument"><span>ROTATION RATE</span><strong id="rotation-rate">—<small>°/s</small></strong><small id="rate-rule">Reduce total rate below 1°/s</small></div>
-        <div class="lock-instrument"><div><span>TARGET HOLD</span><strong id="hold-label">0.0 / 0.4 s</strong></div><div class="hold-track"><span id="hold-progress"></span></div><p id="hold-hint">Match the attitude and slow down.</p></div>
-        <div class="computer-instrument"><div><span class="eyebrow">ORIGINAL AGC</span><strong>LUMINARY 099</strong></div><dl><dt>Program</dt><dd id="agc-program">—</dd><dt>RCS commands</dt><dd id="jet-count">—</dd><dt>Yaw rate</dt><dd id="yaw-rate">— °/s</dd><dt>Pitch rate</dt><dd id="pitch-rate">— °/s</dd></dl><span id="sample-time">Awaiting authoritative state.</span></div>
+      <aside class="procedure-computer" aria-labelledby="computer-title"><div class="section-label"><span class="eyebrow" id="computer-title">ORIGINAL DSKY OUTPUT</span><strong>READ ONLY</strong></div>
+        <div class="procedure-dsky"><div class="dsky-program"><span>PROG</span><strong id="dsky-program">??</strong></div><div class="dsky-verbs"><div><span>VERB</span><strong id="dsky-verb">??</strong></div><div><span>NOUN</span><strong id="dsky-noun">??</strong></div></div><div class="dsky-register"><span>R1</span><strong id="dsky-r1">?????</strong></div><div class="dsky-register"><span>R2</span><strong id="dsky-r2">?????</strong></div><div class="dsky-register"><span>R3</span><strong id="dsky-r3">?????</strong></div><small>CHANNEL 010 · RECORDED DIGITS</small></div>
+        <p class="display-note">Blank and unknown digits are preserved. Sign and indicator lamps are unavailable. The display may lag the program event.</p><div class="keypad-boundary"><span class="eyebrow">DSKY KEYPAD</span><strong>Live entry unavailable</strong><p>This recording cannot accept DSKY input. Live keypad control is not connected.</p><button disabled>VERB / NOUN / ENTR</button></div><p class="trace-location" id="dsky-source">Awaiting a recorded display observation.</p>
       </aside>
     </div>
-
-    <section class="control-deck" id="flight-controls" aria-labelledby="controls-title">
-      <div class="launch-controls"><span class="eyebrow" id="controls-title">02 — TAKE CONTROL</span><button id="flight-start" class="launch-button" disabled><span aria-hidden="true">▶</span><span id="start-label">Checking service…</span></button><button id="flight-stop" class="stop-button" disabled>End run</button></div>
-      <div class="pilot-controls" role="group" aria-label="Original rotational hand controller">
-        <div class="pilot-axis"><span>YAW</span><button data-pilot="yaw-" aria-label="Hold negative yaw" disabled><kbd>A</kbd><span>−</span></button><button data-pilot="yaw+" aria-label="Hold positive yaw" disabled><kbd>D</kbd><span>+</span></button></div>
-        <div class="pilot-axis"><span>PITCH</span><button data-pilot="pitch-" aria-label="Hold negative pitch" disabled><kbd>S</kbd><span>−</span></button><button data-pilot="pitch+" aria-label="Hold positive pitch" disabled><kbd>W</kbd><span>+</span></button></div>
-        <button id="flight-neutral" class="neutral-button" disabled>Release <kbd>SPACE</kbd></button>
-      </div>
-      <div class="score-readout"><span>THIS RUN</span><strong id="current-score">—</strong><small id="best-score">No completed attempts</small></div>
-    </section>
-    <div class="flight-notice" id="flight-error" role="alert" hidden><strong>Live controls unavailable.</strong><p id="flight-error-copy"></p><button id="service-retry">Check again</button><button id="setup-open">Startup instructions ↗</button></div>
-    <footer><span><i></i><strong>Original AGC commands.</strong> Synthetic rotational dynamics. Training score.</span><button id="scope-open">How this simulation works ↗</button><span>No translation, engine ignition or landing.</span></footer>
+    <section class="observation-details" aria-label="Selected original software observation"><div><span class="eyebrow">WHY THIS STEP MATTERS</span><p id="step-why">The computer needs a reference orientation and coherent navigation and target inputs before calculating when a burn should begin.</p></div><div><span class="eyebrow">CONTROL / OBSERVATION IN THIS RUN</span><strong id="step-control">Recorded execution only</strong><p id="step-expect">Begin at the startup checkpoint. No flight or control action is implied by reviewing it.</p></div><div class="recorded-values"><span class="eyebrow">ACTUAL GUIDANCE OBSERVATIONS</span><dl><dt>Root results</dt><dd id="procedure-roots">—</dd><dt>Ignition time</dt><dd id="procedure-tig">—</dd><dt>Recorded alarms</dt><dd id="procedure-alarms">—</dd></dl><p id="step-source">No checkpoint selected.</p></div></section>
+    <section class="mission-limit" id="mission-limit" hidden aria-labelledby="limit-title"><span class="eyebrow">END OF AVAILABLE PROCEDURE EVIDENCE</span><h2 id="limit-title">Crew continuation is not connected.</h2><p id="limit-copy">The recording stops before ignition. There is no verified engine-arm, PROCEED or powered-descent action available here.</p><button disabled>Continue to powered descent · unavailable</button></section>
+    <section class="historical-context" aria-labelledby="history-title"><div><span class="eyebrow">THE HISTORICAL EXPERIENCE WE ARE BUILDING TOWARD</span><h2 id="history-title">Cockpit actions, in mission context.</h2><p>Apollo 11’s crew used checklists, DSKY entries, switches and hand controllers. During P64, Armstrong checked manual attitude response; later he used P66 during final descent. That sequence is different from our synthetic target exercise.</p><a href="https://apollojournals.org/alsj/a11/a11.landing.html" target="_blank" rel="noreferrer">Read the landing transcript and crew commentary ↗</a></div><div class="historical-stages"><span>Pre-descent checks <small>Historical checklist mapping needed</small></span><span>P63 · braking <small>Ignition and flight unavailable</small></span><span>P64 · approach <small>Flight controls unavailable</small></span><span>P66 · landing <small>Thrust and touchdown unavailable</small></span></div></section>
+    <footer><span><strong>Original software. Clearly bounded evidence.</strong> The lab is separate from the mission.</span><a href="./attitude-lab.html">Open synthetic attitude exercise ↗</a></footer>
   </main>
-  <dialog id="flight-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">APOLLO 11 / FLIGHT TRAINER</span><button id="dialog-close" aria-label="Close flight help">×</button></div><h2 id="dialog-title">How to fly</h2><div id="dialog-content"></div></dialog>
-  <div class="sr-only" role="status" aria-live="polite" id="flight-announcement"></div>
-  <script type="module" src="./flight.mjs"></script>
+  <div class="sr-only" role="status" aria-live="polite" id="procedure-announcement"></div>
+  <script type="module" src="./procedures.mjs"></script>
 </body>
 </html>

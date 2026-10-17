@@ -1,11 +1,16 @@
-# Apollo 11 — guidance and 3D flight training
+# Apollo 11 — mission procedures and original guidance
 
-Play the **3D Eagle flight trainer** with `make play`, then open
-**http://127.0.0.1:4173/play.html**. Arm original Luminary 099, use A/D and S/W to
-rotate the Lunar Module, and acquire a training attitude within the bounded live
-control window. The browser renders actual backend orientation in WebGL; no
-powered descent or landing is claimed. [Game contract](docs/FRONTEND_GAME_CONTRACT.md)
-and [verification](docs/frontend-game-evidence/README.md).
+Start the **procedure-led mission screen** with `make play`, then open
+**http://127.0.0.1:4173/play.html**. Review the original computer's recorded
+preparation sequence, inspect actual DSKY observations and see where live crew
+controls are unavailable. This uses synthetic test inputs; it does not claim a
+complete historical Apollo 11 checklist or landing.
+
+The former target/points exercise is preserved separately at
+**http://127.0.0.1:4173/attitude-lab.html**, clearly labeled synthetic. It now offers
+an illustrative hand controller, clearer relative-target guidance and optional
+keyboard shortcuts that are off by default. [Procedure architecture and missing
+contracts](docs/FRONTEND_PROCEDURES.md); [verification](docs/frontend-procedure-evidence/README.md).
 
 The **Phase 10 mission-control frontend** explores three verified recorded
 synthetic pre-ignition experiments. Start with `make demo`, then open

@@ -74,6 +74,6 @@ test-frontend:
 
 .PHONY: play
 
-# Playable live attitude trainer: original AGC + existing bounded external model.
+# Mission procedures and separate live lab: original AGC + bounded external model.
 play: runtime
 	$(PYTHON) -B frontend/serve.py --port $(PORT)

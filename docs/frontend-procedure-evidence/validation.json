@@ -1,0 +1,16 @@
+{
+  "automated": {
+    "javascript": 87,
+    "pythonFrontend": 26,
+    "pythonBackend": 32,
+    "uniqueTotal": 145,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": "Verified existing export and every ES module syntax check; static application, no bundler",
+  "nativeController": "Actual +yaw request and neutral; operator-stopped smoke only",
+  "protectedExistingFiles": 5554,
+  "mainMode": "VERIFIED RECORDED EXECUTION with static educational 3D model",
+  "historicalMission": "Full flown crew procedure not implemented; missing capabilities explicit",
+  "server": "Existing user-requested loopback server reused and left running"
+}

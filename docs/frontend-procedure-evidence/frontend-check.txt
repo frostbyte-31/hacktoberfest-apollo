@@ -1,0 +1,8 @@
+python3 -B frontend/tools/export_guidance.py --check
+{
+  "result": "VERIFIED",
+  "mode": "recorded authentic replay",
+  "bytes": 2736537,
+  "sha256": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709",
+  "checked": true
+}

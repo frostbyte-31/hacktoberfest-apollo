@@ -2,6 +2,7 @@ import { LiveClient, canPilot, heldDirection } from './live.mjs';
 import { activeJets } from './replay.mjs';
 import { createFlightRenderer } from './spacecraft-3d.mjs';
 import { CHALLENGES, createGameState, resetGame, updateGame, notePilotInput, finishGame } from './game-state.mjs';
+import { labControlGuidance, stickDirections } from './control-guidance.mjs';
 
 const $ = id => document.getElementById(id);
 const text = (id, value) => { $(id).textContent = value; };
@@ -12,6 +13,7 @@ let session = { status:'idle', sessionId:null, frame:null };
 let available = false, starting = false, controlError = false, stopRequested = false, lastResult = null;
 let renderer = null, lastOrientation = null, lastTrustedFrame = null;
 let drawPending = false;
+let stickPointer=null;
 const announce = value => text('flight-announcement', value);
 const activeSession = () => ['initializing','ready','running','stopping'].includes(session.status);
 const pilotEnabled = () => available && !controlError && canPilot(session) && ['await-input','running'].includes(game.phase);
@@ -76,7 +78,7 @@ function render() {
   $('stage-message').hidden = hasSample && game.phase !== 'await-input' && status !== 'initializing';
   if (!$('stage-message').hidden) {
     $('stage-message').querySelector('h2').textContent = !available ? 'Start the live service.' : status === 'initializing' ? 'Waking the computer.' : game.phase === 'await-input' ? 'You have the controls.' : 'Ready when you are.';
-    $('stage-message').querySelector('p').textContent = !available ? 'Run make play from the repository root to enable real AGC controls. You can still explore the 3D visual model.' : status === 'initializing' ? 'The pinned engine is executing original startup. Controls unlock only after the readiness checks pass.' : game.phase === 'await-input' ? 'Tap A / D for yaw or S / W for pitch. Small inputs first. Your first deflection starts the clock.' : 'Arm the original AGC. Once it is ready, your first control input starts the clock.';
+    $('stage-message').querySelector('p').textContent = !available ? 'Run make play from the repository root to enable the separate live lab. You can still explore the visual model.' : status === 'initializing' ? 'The pinned engine is executing original startup. Controls unlock only after the readiness checks pass.' : game.phase === 'await-input' ? 'The target marker shows relative rotation: right is positive yaw; up is positive pitch. Deflect the illustrative hand controller briefly. Your first deflection starts the clock.' : 'Arm the separate synthetic lab. This exercise is not a historical mission procedure.';
   }
   quantity('time-remaining',m?.remainingSeconds,'s');
   quantity('angle-error',m?.errorDeg,'°'); quantity('rotation-rate',m?.rateDegS,'°/s');
@@ -107,6 +109,11 @@ function render() {
   document.querySelectorAll('[data-pilot]').forEach(button=>{button.disabled=!enabled;button.classList.toggle('pressed',live.held.has(button.dataset.pilot));});
   $('flight-neutral').disabled=!enabled;
   const errorVector = m?.errorVectorDeg;
+  const direction = labControlGuidance(stale ? null : m,game.config);
+  text('lab-direction',stale ? 'Last sample only. Steering assistance unavailable.' : game.result ? 'Lab run ended. The marker shows the scored relative error; controls are released. Return to mission procedures for the main experience.' : direction.text);
+  document.querySelectorAll('[data-pilot]').forEach(button=>button.classList.toggle('suggested',enabled && direction.keys.includes(button.dataset.pilot)));
+  $('rhc-pad').setAttribute('aria-disabled',String(!enabled));
+  if(!enabled)resetStick();
   if (errorVector && !stale) {
     $('aim-marker').removeAttribute('hidden');
     const x = 70 + Math.max(-44,Math.min(44,errorVector[0]*12));
@@ -137,7 +144,7 @@ async function start() {
   announce('Starting original Luminary and checking native readiness.');
   await live.start();
 }
-function release(send=true) { live.release(send); game=notePilotInput(game,{yaw:0,pitch:0});render(); }
+function release(send=true) { resetStick();live.release(send); game=notePilotInput(game,{yaw:0,pitch:0});render(); }
 function stop() { game=finishGame(game); stopRequested=true; live.stop(); render(); }
 function hold(key,source) { if(!pilotEnabled())return;live.hold(key,source);game=notePilotInput(game,heldDirection(live.held));render(); }
 function lift(source) { live.lift(source);game=notePilotInput(game,heldDirection(live.held));render(); }
@@ -156,12 +163,33 @@ document.querySelectorAll('[data-pilot]').forEach(button=>{
 const keys={KeyA:'yaw-',KeyD:'yaw+',KeyS:'pitch-',KeyW:'pitch+'};
 document.addEventListener('keydown',event=>{
   if($('flight-dialog').open||event.ctrlKey||event.metaKey||event.altKey||event.target.closest('input,select,textarea,[contenteditable]'))return;
+  if(!$('keyboard-assist').checked)return;
   if(keys[event.code]){event.preventDefault();if(!event.repeat)hold(keys[event.code],`key-${event.code}`);}
   else if(event.code==='Space'&&!event.target.closest('button,a')){event.preventDefault();release(true);}
 });
 document.addEventListener('keyup',event=>{if(keys[event.code])lift(`key-${event.code}`);});
+$('keyboard-assist').addEventListener('change',()=>release(true));
 window.addEventListener('blur',()=>release(true));document.addEventListener('visibilitychange',()=>{if(document.hidden)release(true);});
 window.addEventListener('pagehide',()=>release(true));
+
+const stick=$('rhc-pad');
+function resetStick(){stickPointer=null;$('rhc-handle').style.transform='translate(0px,0px)';}
+function moveStick(event){
+  const box=stick.getBoundingClientRect();
+  const x=Math.max(-1,Math.min(1,(event.clientX-box.left-box.width/2)/(box.width*.34)));
+  const y=Math.max(-1,Math.min(1,(event.clientY-box.top-box.height/2)/(box.height*.34)));
+  const direction=stickDirections(x,y);
+  for(const [axis,value] of Object.entries(direction)){
+    const source=`stick-${axis}`,key=value?`${axis}${value>0?'+':'-'}`:null;
+    const held=[...live.held].find(item=>item.startsWith(source+':'));
+    if(held!== (key?`${source}:${key}`:undefined)){live.lift(source);if(key)live.hold(key,source);}
+  }
+  $('rhc-handle').style.transform=`translate(${x*25}px,${y*25}px)`;
+  game=notePilotInput(game,heldDirection(live.held));render();
+}
+stick.addEventListener('pointerdown',event=>{if(!pilotEnabled()||event.button!==0)return;event.preventDefault();stick.setPointerCapture(event.pointerId);stickPointer=event.pointerId;moveStick(event);});
+stick.addEventListener('pointermove',event=>{if(stickPointer===event.pointerId&&pilotEnabled())moveStick(event);});
+for(const type of ['pointerup','pointercancel','lostpointercapture'])stick.addEventListener(type,event=>{if(stickPointer!==event.pointerId)return;live.lift('stick-yaw');live.lift('stick-pitch');resetStick();game=notePilotInput(game,heldDirection(live.held));render();});
 
 const pointers=new Map(); let previousDistance=null;
 const viewSurface=$('flight-canvas').parentElement;
@@ -184,9 +212,9 @@ window.addEventListener('resize',requestDraw);
 function openHelp(kind='help') {
   release(true);
   const content={
-    help:['A light touch. An opposite push.',`<ol><li><b>Choose a challenge and arm the AGC.</b> The local native engine verifies pinned sources, then executes original startup. Wait for “You have the controls.”</li><li><b>Tap A / D for yaw, S / W for pitch.</b> Try a short tap around half a second. Keyboard holds and the on-screen controls send only the supported original hand-controller inputs.</li><li><b>Watch the angle and rotation rate.</b> Release returns the controller to neutral. Use the opposite input to reduce motion. Get inside the marked angle/rate limits and hold for the required observed interval.</li></ol><p>Drag the model to orbit the camera. Scroll or use + / − to zoom. Camera movement does not steer the spacecraft. The teal outline is a target orientation; the small instrument enlarges angular error.</p><p class="scope-note">The 11.7-second model clock starts at the first deflection. It continues while help is open or controls are released. Closing or hiding the tab releases controls; no pause or instant brake is implied.</p>`],
-    setup:['Start a real control session.',`<p>The game needs the existing live attitude service. The recorded demo launcher intentionally disables inputs. From the repository root:</p><pre><code>make play</code></pre><p>Then open <code>http://127.0.0.1:4173/play.html</code>. For an occupied port use <code>make play PORT=4180</code> and open that port.</p><p>The first launch builds checksum-pinned Tcl 8.6.16 locally. Python 3.9+, a C compiler, make and initial download access are required. Later rounds reuse the prepared sources/runtime. No AGC starts until you arm it.</p>`],
-    scope:['Original computer. Bounded game.',`<p><b>Live computation:</b> your yaw/pitch requests reach original Luminary 099 via the pinned native AGC and ringbuffer. Actual RCS outputs drive the retained external rotational model; generated sensor measurements return to the AGC.</p><p><b>Modern presentation:</b> WebGL draws an illustrative 3D Lunar Module from the actual scalar-first body-to-stable quaternion. The target ghost and score are frontend training rules, not flight-software goals or claims of mission success.</p><p><b>Numerical boundary:</b> the retained synthetic rigid-body/ideal-IMU fixture uses its existing semi-implicit integration, approximately 10 ms coupling cadence and quaternion attitude overlay. Its ideal alignment and synthetic mass properties are not a calibrated flight vehicle. Browser polling is coarser; missing intervals do not count toward a target hold.</p><p class="scope-note">Only bounded yaw/pitch control is supported. No independent roll input, translation, descent-engine thrust, radar, touchdown or landing is simulated by this game. Reference rings are attitude instruments, not a propagated orbit.</p><p>After a successful sampled target hold, the UI asks the backend to stop. The physical model freezes and finite sensor work settles. A short training hold does not demonstrate sustained spacecraft stability.</p>`]
+    help:['A light touch. An opposite push.',`<ol><li><b>Choose a challenge and arm the AGC.</b> The local native engine verifies pinned sources, then executes original startup. Wait for “You have the controls.”</li><li><b>Use the illustrative hand controller.</b> Drag right/left for positive/negative yaw or up/down for positive/negative pitch. The target is relative rotation, not a point to fly toward. Accessible direction buttons are also available. Keyboard shortcuts are off unless explicitly enabled.</li><li><b>Watch the angle and rotation rate.</b> Release returns the controller to neutral. Use the opposite input to reduce motion. Get inside the marked angle/rate limits and hold for the required observed interval.</li></ol><p>Drag the model to orbit the camera. Scroll or use + / − to zoom. Camera movement does not steer the spacecraft. The teal outline is an invented lab target orientation. The fixed reference instrument marks YOU at its center and TARGET at the required relative rotation. This is a synthetic experiment, not an Apollo 11 procedure.</p><p class="scope-note">The 11.7-second model clock starts at the first deflection. It continues while help is open or controls are released. Closing or hiding the tab releases controls; no pause or instant brake is implied.</p>`],
+    setup:['Start a real control session.',`<p>The game needs the existing live attitude service. The recorded demo launcher intentionally disables inputs. From the repository root:</p><pre><code>make play</code></pre><p>Then open <code>http://127.0.0.1:4173/attitude-lab.html</code>. For an occupied port use <code>make play PORT=4180</code> and open that port.</p><p>The first launch builds checksum-pinned Tcl 8.6.16 locally. Python 3.9+, a C compiler, make and initial download access are required. Later rounds reuse the prepared sources/runtime. No AGC starts until you arm it.</p>`],
+    scope:['Original computer. Bounded game.',`<p><b>Live computation:</b> your yaw/pitch requests reach original Luminary 099 via the pinned native AGC and ringbuffer. Actual RCS outputs drive the retained external rotational model; generated sensor measurements return to the AGC.</p><p><b>Modern presentation:</b> WebGL draws an illustrative 3D Lunar Module from the actual scalar-first body-to-stable quaternion. The target ghost and score are frontend training rules, not flight-software goals or claims of mission success. The illustrative hand controller uses only discrete supported directions and is not a calibrated replica of the flight hardware.</p><p><b>Numerical boundary:</b> the retained synthetic rigid-body/ideal-IMU fixture uses its existing semi-implicit integration, approximately 10 ms coupling cadence and quaternion attitude overlay. Its ideal alignment and synthetic mass properties are not a calibrated flight vehicle. Browser polling is coarser; missing intervals do not count toward a target hold.</p><p class="scope-note">Only bounded yaw/pitch control is supported. No independent roll input, translation, descent-engine thrust, radar, touchdown or landing is simulated by this game. Reference rings are attitude instruments, not a propagated orbit.</p><p>After a successful sampled target hold, the UI asks the backend to stop. The physical model freezes and finite sensor work settles. A short training hold does not demonstrate sustained spacecraft stability.</p>`]
   };
   const [title,html]=content[kind]||content.help;text('dialog-title',title);$('dialog-content').innerHTML=html;$('flight-dialog').showModal();
 }

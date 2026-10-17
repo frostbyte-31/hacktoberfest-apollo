@@ -1,24 +1,27 @@
 # Apollo 11 · Guidance Labs
 
-## Play the 3D flight trainer
+## Procedure-led mission experience
 
 ```sh
 make play
 ```
 
-Open **http://127.0.0.1:4173/play.html**. Select yaw, pitch or combined training,
-arm a fresh original AGC session, then hold **A/D** for yaw and **S/W** for pitch.
-Touch controls, camera orbit/zoom, target capture, scoring, debrief and retry are
-available. Space releases the controller. Neutral does not instantly brake.
+Open **http://127.0.0.1:4173/play.html**. The main experience explains the current
+preparation task and steps through verified recorded software observations with
+a read-only DSKY and an illustrative 3D Lunar Module. This is a walkthrough of
+the synthetic experiment, not the full Apollo 11 flown checklist. Live DSKY,
+cockpit switches, crew continuation and powered descent are explicitly unavailable.
 
-The first launch downloads/builds the checksum-pinned Tcl runtime locally and
-needs a C compiler and make. Later launches reuse it. The game runs the existing
-bounded native Luminary control loop; its 3D renderer owns no physics. The
-11.7-second challenge is attitude training, with no translation or descent engine.
-`make demo` remains replay-only and cannot run scored live challenges.
+The modern target exercise remains at **/attitude-lab.html**, separate from
+mission procedures. Its illustrative hand controller uses existing live yaw/pitch
+inputs. Keyboard steering requires an explicit opt-in; accessible direction
+buttons remain available. The first live launch needs the pinned Tcl runtime,
+C compiler and make. `make demo` remains replay-only.
 
-See [the game integration contract](../docs/FRONTEND_GAME_CONTRACT.md) and
-[actual native/browser/test evidence](../docs/frontend-game-evidence/README.md).
+See [procedure architecture and missing contracts](../docs/FRONTEND_PROCEDURES.md)
+and [verification](../docs/frontend-procedure-evidence/README.md). The earlier
+[game contract](../docs/FRONTEND_GAME_CONTRACT.md) and its evidence describe the
+previous revision; the target exercise is now at the separate lab route.
 
 ## Phase 10 mission control
 
