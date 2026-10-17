@@ -197,15 +197,17 @@ def main():
                 if ok_since is None:
                     ok_since = tick
                 if tick - ok_since >= SETTLE:
-                    if step_since is None:
+                    if not started:
                         start_actions(tick)  # emits 'step', fills action_q
+                        started = True
                     if action_q:
                         queue_action(tick + KEYGAP, action_q.pop(0))
                     else:
-                        step_i += 1; step_since = None; ok_since = None
+                        step_i += 1
+                        step_since = ok_since = None; started = False
             else:
                 ok_since = None
-                if step_since is not None and action_q:
+                if started:
                     # Flash temporarily replaced by a monitor load; keep waiting.
                     pass
                 elif step_since is None:
@@ -214,7 +216,8 @@ def main():
                 elif tick - step_since > STALL_LIMIT:
                     emit({'ev': 'stall', 'cycle': tick, 'name': name, 'pre': list(pre),
                           'verb': s['VERBREG'], 'noun': s['NOUNREG']})
-                    step_i += 1; step_since = None
+                    step_i += 1
+                    step_since = ok_since = None; started = False
     emit(snap(tick)); log.close()
 
 if __name__ == '__main__': main()
