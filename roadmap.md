@@ -17,10 +17,16 @@
 - [x] Run step-locked native/WebAssembly comparison and real-browser validation
 - [x] Deliver docs/PHASE2_POWERED_DESCENT_FEASIBILITY.md and new evidence
 
-## Unresolved prerequisites (not authorized follow-on work)
+## Phase 3 — minimum integration experiment
+- [ ] Review prior evidence and verify minimum sensor/actuator loop in pinned sources
+- [ ] Implement and execute the smallest genuine feedback loop with recorded synthetic initial conditions
+- [ ] Test sensor reception, AGC output, physical response, feedback, and reproducibility
+- [ ] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and phase-specific evidence; preserve Phases 1–2
+
+## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.
 - The additional 01107 alarm in the cold-start P63 attempt requires isolation before a stronger initialization claim.
 
 ## Not authorized
-- Frontend, multiplayer, AI crew, physics engine, full application development
+- Frontend, multiplayer, AI crew, complete lunar physics engine, full application development
