@@ -43,3 +43,7 @@ This is a small browser console that replays **recorded** evidence from Phases 7
   - **MOCK VISUAL:** the illustration of the LM and surface; the LM's tilt follows the recorded pitch gimbal.
   - **NOT MODELLED:** altitude, velocities and fuel, which have no data in this project.
 - **Rule:** the web app is only a viewer. It must read just `src/data/replay.json`, never run the emulator or write to `docs/`.
+
+## Learning frontend (recorded replay only)
+Run `bun install && bun run dev`, open http://localhost:8080. Pages: `/` Mission Control (Phase 9 P51→P63 replay and Phase 7 pitch runs), `/learn` (8 tutorials), `/evidence` (Phases 1–9 status, including missing Phase 1–6 logs), `/present` (full-screen talk; ← → keys).
+Data is regenerated read-only from evidence with `python3 tools/replay/extract_replay.py` → `src/data/replay.json`. No live emulator connection exists; nothing is labelled LIVE. App tests: `bunx vitest run`.

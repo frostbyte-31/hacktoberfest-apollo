@@ -83,4 +83,7 @@
 - Cold-reset 01107 is explained for the zeroed-memory fixture. A clean post-V36 P00 interval still does not provide calibrated alignment, mission padload or descent readiness.
 
 ## Not authorized
-- Frontend, multiplayer, AI crew, complete lunar physics engine, full application development
+- Multiplayer, AI crew, complete lunar physics engine, full application development
+
+## Learning frontend
+- [x] Mission control (Phase 9 replay), tutorials, help dialogs, evidence explorer, presentation mode
