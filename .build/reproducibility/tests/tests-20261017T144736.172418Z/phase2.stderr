@@ -1,7 +1,0 @@
-test_identical_initial_conditions_and_outputs (test_validation.ValidationTests.test_identical_initial_conditions_and_outputs) ... ok
-test_p63_readiness_failure_not_descent (test_validation.ValidationTests.test_p63_readiness_failure_not_descent) ... ok
-
-----------------------------------------------------------------------
-Ran 2 tests in 0.012s
-
-OK

@@ -1,6 +1,5 @@
-# Logs
-logs
-*.log
+# Logs (evidence *.log files under docs/ MUST be tracked)
+npm-debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -30,3 +29,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated validation output and Python caches
+.build/
+__pycache__/
+*.py[cod]
