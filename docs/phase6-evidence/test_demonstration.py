@@ -16,9 +16,9 @@ spec.loader.exec_module(demo)
 class DemonstrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.run = HERE / 'demo-run'
-        cls.closed = demo.load_trace(cls.run / 'closed.jsonl')
-        cls.off = demo.load_trace(cls.run / 'feedback_off.jsonl')
+        cls.records = HERE / 'demo-run'
+        cls.closed = demo.load_trace(cls.records / 'closed.jsonl')
+        cls.off = demo.load_trace(cls.records / 'feedback_off.jsonl')
 
     def test_prior_evidence_preserved(self):
         hashes = json.loads((HERE / 'prior_hashes.json').read_text())
@@ -27,7 +27,7 @@ class DemonstrationTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)
 
     def test_fresh_replay_exact(self):
-        self.assertEqual((self.run / 'closed.jsonl').read_bytes(), (self.run / 'repeat.jsonl').read_bytes())
+        self.assertEqual((self.records / 'closed.jsonl').read_bytes(), (self.records / 'repeat.jsonl').read_bytes())
 
     def test_original_jets_follow_controller_input(self):
         first = next(r for r in self.closed if r['ev'] == 'output' and r['channel'] == 6 and r['value'])
@@ -62,9 +62,9 @@ class DemonstrationTests(unittest.TestCase):
     def test_inspection_is_deterministic(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)
-            demo.inspect_trace(self.run / 'closed.jsonl', output, 'closed')
-            self.assertEqual((output / 'closed.summary.json').read_bytes(), (self.run / 'closed.summary.json').read_bytes())
-            self.assertEqual((output / 'closed.categorized.jsonl').read_bytes(), (self.run / 'closed.categorized.jsonl').read_bytes())
+            demo.inspect_trace(self.records / 'closed.jsonl', output, 'closed')
+            self.assertEqual((output / 'closed.summary.json').read_bytes(), (self.records / 'closed.summary.json').read_bytes())
+            self.assertEqual((output / 'closed.categorized.jsonl').read_bytes(), (self.records / 'closed.categorized.jsonl').read_bytes())
 
     def test_truncated_trace_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -79,7 +79,7 @@ class DemonstrationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Non-finite'): demo.load_trace(path)
 
     def test_compiler_and_runs_exit_zero(self):
-        commands = json.loads((self.run / 'commands.json').read_text())
+        commands = json.loads((self.records / 'commands.json').read_text())
         self.assertEqual(len(commands), 8)
         self.assertTrue(all(r['exit'] == 0 for r in commands))
 
