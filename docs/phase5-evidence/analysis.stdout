@@ -1,0 +1,568 @@
+{
+  "readiness": {
+    "baseline": {
+      "checkpoints": {
+        "16,2041": 469,
+        "16,2000": 469,
+        "16,2163": 469,
+        "16,2007": 914,
+        "16,2012": 914
+      },
+      "rcs_packets": 942,
+      "nonzero_rcs_packets": 0,
+      "first_nonzero_rcs": null,
+      "first_readiness_cleared_snapshot": null,
+      "last_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "modreg": 0,
+        "chan30": 15871,
+        "chan31": 28671,
+        "imodes30": 16137,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "rcsflags": 4100,
+        "mass": 1701,
+        "lemmass": 1701,
+        "rhc_yaw": 0,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "operate": {
+      "checkpoints": {
+        "16,2041": 175,
+        "16,2000": 469,
+        "16,2163": 174,
+        "16,2007": 914,
+        "16,2012": 324,
+        "06,2622": 2,
+        "06,2643": 4,
+        "06,2556": 4,
+        "06,2242": 4,
+        "06,2347": 4,
+        "06,2361": 2,
+        "06,2313": 2,
+        "06,2321": 2,
+        "06,2327": 2,
+        "16,2206": 295,
+        "16,2046": 1
+      },
+      "rcs_packets": 1234,
+      "nonzero_rcs_packets": 25,
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "first_readiness_cleared_snapshot": {
+        "ev": "before",
+        "cycle": 1480209,
+        "bank": 6,
+        "z": 1239,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      "last_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "modreg": 32767,
+        "chan30": 15615,
+        "chan31": 28671,
+        "imodes30": 15873,
+        "imodes33": 15360,
+        "dapbools": 8926,
+        "rcsflags": 6152,
+        "mass": 1701,
+        "lemmass": 1701,
+        "rhc_yaw": 0,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "repeat": {
+      "checkpoints": {
+        "16,2041": 175,
+        "16,2000": 469,
+        "16,2163": 174,
+        "16,2007": 914,
+        "16,2012": 324,
+        "06,2622": 2,
+        "06,2643": 4,
+        "06,2556": 4,
+        "06,2242": 4,
+        "06,2347": 4,
+        "06,2361": 2,
+        "06,2313": 2,
+        "06,2321": 2,
+        "06,2327": 2,
+        "16,2206": 295,
+        "16,2046": 1
+      },
+      "rcs_packets": 1234,
+      "nonzero_rcs_packets": 25,
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "first_readiness_cleared_snapshot": {
+        "ev": "before",
+        "cycle": 1480209,
+        "bank": 6,
+        "z": 1239,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      "last_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "modreg": 32767,
+        "chan30": 15615,
+        "chan31": 28671,
+        "imodes30": 15873,
+        "imodes33": 15360,
+        "dapbools": 8926,
+        "rcsflags": 6152,
+        "mass": 1701,
+        "lemmass": 1701,
+        "rhc_yaw": 0,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    },
+    "off": {
+      "checkpoints": {
+        "16,2041": 383,
+        "16,2000": 469,
+        "16,2163": 383,
+        "16,2007": 914,
+        "16,2012": 742,
+        "06,2622": 3,
+        "06,2643": 4,
+        "06,2556": 4,
+        "06,2242": 4,
+        "06,2347": 4,
+        "06,2361": 2,
+        "06,2313": 2,
+        "06,2321": 2,
+        "06,2327": 2,
+        "16,2206": 86,
+        "16,2046": 1
+      },
+      "rcs_packets": 1025,
+      "nonzero_rcs_packets": 0,
+      "first_nonzero_rcs": null,
+      "first_readiness_cleared_snapshot": {
+        "ev": "before",
+        "cycle": 1480209,
+        "bank": 6,
+        "z": 1239,
+        "a": 15360,
+        "chan30": 15615,
+        "chan31": 28671,
+        "chan12": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "dapbools": 8910,
+        "cdu": [
+          0,
+          0,
+          0
+        ]
+      },
+      "last_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "modreg": 32767,
+        "chan30": 15871,
+        "chan31": 28671,
+        "imodes30": 16129,
+        "imodes33": 15392,
+        "dapbools": 8910,
+        "rcsflags": 6148,
+        "mass": 1701,
+        "lemmass": 1701,
+        "rhc_yaw": 0,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "loop": {
+    "closed": {
+      "nonzero_rcs_words": {
+        "006:00125": 8,
+        "006:00120": 2,
+        "006:00005": 1,
+        "006:00252": 7,
+        "006:00240": 5,
+        "006:00012": 4
+      },
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "sensor_packets_generated": 1539,
+      "sensor_packets_delivered": 1539,
+      "first_sensor_readback": {
+        "ev": "sample",
+        "cycle": 2515355,
+        "imodes33": 15360,
+        "cdu": [
+          1,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "max_abs_yaw_rate": 4.859385265209125,
+      "final_plant": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          -0.027477428680504824,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          16.84156247751019,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "final_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          1533,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "nonzero_channel005": 0,
+      "non_x_sensor_packets": 0
+    },
+    "feedback_off": {
+      "nonzero_rcs_words": {
+        "006:00125": 23,
+        "006:00012": 2
+      },
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "sensor_packets_generated": 16173,
+      "sensor_packets_delivered": 0,
+      "first_sensor_readback": null,
+      "max_abs_yaw_rate": 11.341167317374987,
+      "final_plant": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          10.844530345898027,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          177.68649693043514,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "final_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "nonzero_channel005": 0,
+      "non_x_sensor_packets": 0
+    },
+    "blocked": {
+      "nonzero_rcs_words": {
+        "006:00125": 23,
+        "006:00012": 2
+      },
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "sensor_packets_generated": 0,
+      "sensor_packets_delivered": 0,
+      "first_sensor_readback": null,
+      "max_abs_yaw_rate": 0.0,
+      "final_plant": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "final_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          0,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "nonzero_channel005": 0,
+      "non_x_sensor_packets": 0
+    },
+    "negative": {
+      "nonzero_rcs_words": {
+        "006:00252": 8,
+        "006:00012": 4,
+        "006:00240": 3,
+        "006:00125": 11,
+        "006:00120": 2
+      },
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509127,
+        "channel": 6,
+        "value": 170
+      },
+      "sensor_packets_generated": 1468,
+      "sensor_packets_delivered": 1468,
+      "first_sensor_readback": {
+        "ev": "sample",
+        "cycle": 2515355,
+        "imodes33": 15360,
+        "cdu": [
+          32767,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "max_abs_yaw_rate": 5.620591215542955,
+      "final_plant": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          0.2640469737156175,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          351.2199656435405,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "final_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          31968,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "nonzero_channel005": 0,
+      "non_x_sensor_packets": 0
+    },
+    "repeat": {
+      "nonzero_rcs_words": {
+        "006:00125": 8,
+        "006:00120": 2,
+        "006:00005": 1,
+        "006:00252": 7,
+        "006:00240": 5,
+        "006:00012": 4
+      },
+      "first_nonzero_rcs": {
+        "ev": "output",
+        "cycle": 2509125,
+        "channel": 6,
+        "value": 85
+      },
+      "sensor_packets_generated": 1539,
+      "sensor_packets_delivered": 1539,
+      "first_sensor_readback": {
+        "ev": "sample",
+        "cycle": 2515355,
+        "imodes33": 15360,
+        "cdu": [
+          1,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "max_abs_yaw_rate": 4.859385265209125,
+      "final_plant": {
+        "ev": "plant",
+        "cycle": 4000000,
+        "omega": [
+          -0.027477428680504824,
+          0.0,
+          0.0
+        ],
+        "gimbals": [
+          16.84156247751019,
+          0.0,
+          0.0
+        ],
+        "jets": [
+          0,
+          0
+        ],
+        "zero": 0
+      },
+      "final_sample": {
+        "ev": "sample",
+        "cycle": 4000000,
+        "imodes33": 15360,
+        "cdu": [
+          1533,
+          0,
+          0
+        ],
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      },
+      "nonzero_channel005": 0,
+      "non_x_sensor_packets": 0
+    }
+  },
+  "readiness_replay_byte_identical": true,
+  "loop_replay_byte_identical": true,
+  "baseline_preserves_phase4_outputs_and_samples": true,
+  "prior_preservation": {
+    "files": 109,
+    "mismatches": []
+  }
+}

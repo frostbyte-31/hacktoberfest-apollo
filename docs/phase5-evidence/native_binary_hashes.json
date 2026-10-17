@@ -1,0 +1,10 @@
+{
+  "/tmp/apollo/phase5-loop01/engine.so": {
+    "bytes": 55824,
+    "sha256": "96027b7060a24ce1075991b1d87571c16a77ef27e997f09f65a82214571b8aa1"
+  },
+  "/tmp/apollo/phase5-run01/readiness_probe": {
+    "bytes": 47600,
+    "sha256": "9e047695652d1369e4c225a34b127857b2c4b3d2314619857ce624c806e0a5dd"
+  }
+}
