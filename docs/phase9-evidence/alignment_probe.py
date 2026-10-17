@@ -194,24 +194,31 @@ def main():
                 ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
             elif pre[0] == 'p00':
                 ok = (s['MODREG'] == 0o77777)
-            if ok:
+            if started:
+                if action_q:
+                    if ok:
+                        if ok_since is None:
+                            ok_since = tick
+                        if tick - ok_since >= SETTLE:
+                            queue_action(tick + KEYGAP, action_q.pop(0))
+                            ok_since = None
+                    else:
+                        ok_since = None  # flash hidden by a monitor load; wait
+                else:
+                    # All actions queued and drained; the flash may already be
+                    # gone (e.g. after PRO), so completion does not re-check pre.
+                    step_i += 1
+                    step_since = ok_since = None; started = False
+            elif ok:
                 if ok_since is None:
                     ok_since = tick
                 if tick - ok_since >= SETTLE:
-                    if not started:
-                        start_actions(tick)  # emits 'step', fills action_q
-                        started = True
-                    if action_q:
-                        queue_action(tick + KEYGAP, action_q.pop(0))
-                    else:
-                        step_i += 1
-                        step_since = ok_since = None; started = False
+                    start_actions(tick)  # emits 'step', fills action_q
+                    started = True
+                    ok_since = None
             else:
                 ok_since = None
-                if started:
-                    # Flash temporarily replaced by a monitor load; keep waiting.
-                    pass
-                elif step_since is None:
+                if step_since is None:
                     step_since = tick
                     emit({'ev': 'await', 'cycle': tick, 'name': name, 'pre': list(pre)})
                 elif tick - step_since > STALL_LIMIT:
