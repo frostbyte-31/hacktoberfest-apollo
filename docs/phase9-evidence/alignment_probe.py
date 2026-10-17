@@ -73,8 +73,10 @@ def az_el(star):
     return math.degrees(math.atan2(y, z)), math.degrees(math.asin(x))
 
 def deg_str(value):
-    """CDU DEG noun entry text: sign + 5 digits (xxx.xx)."""
-    return ('+' if value >= 0 else '-') + f'{abs(value):05.2f}'.replace('.', '')
+    """CDU DEG noun entry text: sign + 5 digits (xxx.xx). Width 6 includes the
+    decimal point; :05.2f under-pads values < 100 deg (4 digits), which Pinball
+    rejects as an incomplete field (alignment-02 EL stall)."""
+    return ('+' if value >= 0 else '-') + f'{abs(value):06.2f}'.replace('.', '')
 
 def main():
     library, output = sys.argv[1:]
