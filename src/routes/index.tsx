@@ -54,12 +54,12 @@ function Readout({ label, value, unit, dim }: { label: string; value: string; un
 function Console() {
   const [runKey, setRunKey] = useState<RunKey>("closed");
   const run = runs[runKey];
-  const t0 = run.frames[0].t, t1 = run.frames[run.frames.length - 1].t;
+  const t0 = run.frames[0]!.t, t1 = run.frames[run.frames.length - 1]!.t;
   const [t, setT] = useState(t0);
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
 
-  useEffect(() => setT(runs[runKey].frames[0].t), [runKey]);
+  useEffect(() => setT(runs[runKey].frames[0]!.t), [runKey]);
   useEffect(() => {
     if (!playing) return;
     const id = setInterval(() => setT((v) => (v + 0.05 * speed >= t1 ? (setPlaying(false), t1) : v + 0.05 * speed)), 50);
@@ -68,7 +68,8 @@ function Console() {
 
   const f = frameAt(run, t);
   const events = useMemo(() => run.events.filter((e) => e.t <= t && e.t >= t0 - 0.2).slice(-14).reverse(), [run, t, t0]);
-  const pitchGimbal = f.gimbals[1] > 180 ? f.gimbals[1] - 360 : f.gimbals[1];
+  const g1 = f.gimbals[1] ?? 0;
+  const pitchGimbal = g1 > 180 ? g1 - 360 : g1;
 
   return (
     <main className="min-h-screen bg-background p-4 text-foreground">
@@ -124,12 +125,12 @@ function Console() {
         <div className="grid min-w-0 content-start gap-3">
           <Dsky />
           <Panel title="Telemetry" tag={<Tag kind="rec" />}>
-            <Readout label="Pitch rate" value={f.omega[1].toFixed(3)} unit="°/s" />
-            <Readout label="Roll rate" value={f.omega[2].toFixed(4)} unit="°/s" />
-            <Readout label="Yaw rate" value={f.omega[0].toFixed(3)} unit="°/s" />
+            <Readout label="Pitch rate" value={(f.omega[1] ?? 0).toFixed(3)} unit="°/s" />
+            <Readout label="Roll rate" value={(f.omega[2] ?? 0).toFixed(4)} unit="°/s" />
+            <Readout label="Yaw rate" value={(f.omega[0] ?? 0).toFixed(3)} unit="°/s" />
             <Readout label="Model gimbal X/Y/Z" value={f.gimbals.map((g) => g.toFixed(1)).join(" / ")} unit="°" />
             <Readout label="AGC CDU X/Y/Z" value={f.cdu.map(cduSigned).join(" / ")} unit="cnt" />
-            <Readout label="Jets ch005 / ch006" value={`${oct(f.jets[0], 3)} / ${oct(f.jets[1], 3)}`} />
+            <Readout label="Jets ch005 / ch006" value={`${oct(f.jets[0] ?? 0, 3)} / ${oct(f.jets[1] ?? 0, 3)}`} />
             <Readout label="Altitude" value="NOT MODELLED" dim />
             <Readout label="Vertical velocity" value="NOT MODELLED" dim />
             <Readout label="Horizontal velocity" value="NOT MODELLED" dim />

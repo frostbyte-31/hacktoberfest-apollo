@@ -24,7 +24,7 @@ export function LunarScene({ pitchDeg, jets }: { pitchDeg: number; jets: number[
         <circle key={i} cx={s.x} cy={s.y} r={s.r} fill="var(--foreground)" style={{ animation: `twinkle ${4 + s.d}s ease-in-out infinite` }} />
       ))}
       <path d="M0 410 Q 180 392 360 404 T 700 398 T 1000 406 L1000 520 L0 520 Z" fill="url(#ground)" />
-      {[[120, 450, 30], [420, 470, 18], [760, 445, 40], [610, 490, 12], [880, 480, 20]].map(([x, y, r], i) => (
+      {([[120, 450, 30], [420, 470, 18], [760, 445, 40], [610, 490, 12], [880, 480, 20]] as const).map(([x, y, r], i) => (
         <ellipse key={i} cx={x} cy={y} rx={r} ry={r / 3.2} fill="var(--lunar-dark)" opacity={0.7} />
       ))}
       <g transform={`translate(500 230) rotate(${-pitchDeg})`}>

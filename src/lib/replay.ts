@@ -8,11 +8,11 @@ export type Run = {
 };
 
 export const runs = data.phase7 as unknown as Record<"closed" | "feedback_off", Run>;
-export const phase8 = data.phase8 as unknown as { source: string; sha256: string; events: Event[]; final: Record<string, number> };
+export const phase8 = data.phase8 as unknown as { source: string; sha256: string; events: Event[]; final: { MODREG: number; FAILREG0: number; FAILREG1: number; FAILREG2: number; THRUST: number } };
 
 /** Latest frame at or before t (recorded values only, no interpolation). */
 export function frameAt(run: Run, t: number): Frame {
-  let f = run.frames[0];
+  let f = run.frames[0]!;
   for (const x of run.frames) { if (x.t <= t) f = x; else break; }
   return f;
 }
