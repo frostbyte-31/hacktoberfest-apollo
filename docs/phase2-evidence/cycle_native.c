@@ -26,6 +26,9 @@ int main(int argc, char **argv) {
       has=fscanf(in,"%u %u %u",&tick,&ch,&val)==3;
     }
     cpu_step(1);
+    unsigned z=(uint16_t)State.Erasable[0][5], fb=((uint16_t)State.Erasable[0][4])>>10;
+    if((fb==032 && z==02776)||(fb==004 && (z==03254||z==03270||z==03261||z==03267))||(fb==014 && z==03135))
+      printf("{\"ev\":\"checkpoint\",\"cycle\":%u,\"z\":%u,\"bank\":%u,\"flagword3\":%u,\"imodes30\":%u,\"modreg\":%u}\n",i+1,z,fb,(uint16_t)State.Erasable[0][077],(uint16_t)State.Erasable[2][0102],(uint16_t)State.Erasable[2][011]);
     for(int j=0;j<8;j++) mix((uint16_t)State.Erasable[0][j]);
     uint32_t p; while((p=packet_read())) printf("{\"ev\":\"output\",\"cycle\":%u,\"ch\":%u,\"val\":%u}\n",i+1,p>>16,p&32767);
     if((i+1)%10000==0 || i+1==end) {

@@ -24,6 +24,9 @@ export async function runCycles(wasm, rope, schedule) {
       if(accepted<=0) throw new Error('input ringbuffer rejected packet');
     }
     x.cpu_step(1);
+    const z=ram[5],bank=ram[4]>>>10;
+    if((bank===0o32&&z===0o2776)||(bank===0o4&&[0o3254,0o3270,0o3261,0o3267].includes(z))||(bank===0o14&&z===0o3135))
+      out.push(JSON.stringify({ev:'checkpoint',cycle:i+1,z,bank,flagword3:ram[0o77],imodes30:ram[2*256+0o102],modreg:ram[2*256+0o11]}));
     for(let j=0;j<8;j++) hash=mix(hash,ram[j]);
     for(let v;(v=x.packet_read());) out.push(JSON.stringify({ev:'output',cycle:i+1,ch:v>>>16,val:v&32767}));
     if((i+1)%10000===0 || i+1===end) {
