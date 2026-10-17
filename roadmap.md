@@ -30,12 +30,15 @@
 - [x] Executed active upstream yaw-model component sign/sensor checks, explicitly not an AGC-driven loop
 - [x] Delivered docs/PHASE4_CONTROL_PATH_VALIDATION.md and docs/phase4-evidence/; six evidence checks pass
 
-## Phase 5 (in progress — IMU readiness and autopilot initialization)
-- [ ] Preserve Phase 1–4 evidence and reproduce the Phase 4 failure
-- [ ] Trace readiness/alignment requirements and capture the first failed condition
-- [ ] Test only source-justified interface corrections, or document the minimum missing hardware prerequisite
-- [ ] Assess authentic autopilot acceptance and RCS feedback only if readiness is established
-- [ ] Deliver docs/PHASE5_IMU_READINESS.md and docs/phase5-evidence/, with execution checks and preservation verification
+## Phase 5 (done — bounded readiness and spacecraft-model feedback)
+- [x] Fingerprinted 109 prior files; reproduced Phase 4 outputs and failure exactly, with zero preservation mismatches
+- [x] Traced IMU-off input and captured original readiness gate; corrected only active-low channel030 bit9
+- [x] Verified original ISSUP clears inhibition, STARTDAP runs, actual RCS outputs appear, and IMU-off restores rejection
+- [x] Executed actual RCS/body/CDU feedback with active upstream model, actuator/sensor disconnects, opposite input, exact replay and explicit single-axis guards
+- [x] Delivered docs/PHASE5_IMU_READINESS.md and docs/phase5-evidence/; 12 concrete evidence tests pass
+
+## Minimum next validation (not authorized follow-on work)
+- Clean revision-specific startup schedule: wait for initialization before V37, isolate cold-start01107, and validate symmetric signed CDU timing before stronger control claims.
 
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
