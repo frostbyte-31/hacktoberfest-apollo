@@ -79,16 +79,16 @@ def main():
 
     t = 3000000
     def keys(seq):
-        global t
+        nonlocal t
         for k in seq:
             sched.append((t, 'packet', (0o15, KEY[k] if isinstance(k, str) else k)))
             t += GAP
     def pro():
-        global t
+        nonlocal t
         sched.append((t, 'packet', (PRO_CH, PRO_BIT))); t += GAP
         sched.append((t, 'packet', (PRO_CH, 0))); t += GAP
     def markpair():
-        global t
+        nonlocal t
         sched.append((t, 'mark', 0o4)); t += GAP          # X mark, ch016 bit3
         sched.append((t, 'mark', 0)); t += GAP
         sched.append((t, 'mark', 0o10)); t += GAP         # Y mark, ch016 bit4
