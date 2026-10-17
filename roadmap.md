@@ -23,6 +23,12 @@
 - [x] Verify sensor reception, actual AGC output, gimbal motion, feedback-dependent completion, disconnected controls, negative sign, and exact replay (7 tests pass)
 - [x] Deliver docs/PHASE3_CLOSED_LOOP_FEASIBILITY.md and docs/phase3-evidence/; verify Phases 1–2 unchanged
 
+## Phase 4 (bounded control-path validation)
+- [ ] Review and fingerprint all prior reports and evidence
+- [ ] Trace Phase 3 outputs and inspect source-validated spacecraft actuators
+- [ ] Execute the smallest credible spacecraft feedback experiment, or establish the precise blocker
+- [ ] Deliver docs/PHASE4_CONTROL_PATH_VALIDATION.md and docs/phase4-evidence/; verify prior evidence unchanged
+
 ## Unresolved descent prerequisites
 - Authenticated Rev-1 mission initialization and synchronized vehicle/peripheral state are not available.
 - Automatic throttle and radar-measurement integration is not implemented in inspected sources.
