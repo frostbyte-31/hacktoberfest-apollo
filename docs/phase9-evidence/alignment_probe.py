@@ -134,6 +134,7 @@ def main():
     action_q = []       # actions of the current step
     step_since = None
     ok_since = None     # when the current precondition was first observed
+    started = False     # whether the current step's actions were loaded
     def start_actions(tick):
         nonlocal action_q, step_since
         action_q = list(steps[step_i][2])
