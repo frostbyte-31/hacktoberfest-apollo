@@ -2,23 +2,33 @@
 
 Reuses the Phase 5 operate_inputs.txt schedule unchanged (fresh cpu_reset, IMU
 OPERATE asserted, V36E/V37E00E/V77E). The only additions, starting at
-3,000,000 CPU calls, are DSKY keystrokes on channel 015 (same key codes as
-Phase 1/5/8), PRO on channel 032 bit14 (Phase 1 mechanism), and AOT mark
-discretes on channel 016 with KEYRUPT2 (the hardware path; the socket API
-cannot raise it - see alignment_bridge.c header).
+3,000,000 CPU calls, are DSKY keystrokes on channel 015 (Phase 1 key map),
+PRO on channel 032 bit14 (Phase 1 mechanism), and AOT mark discretes on
+channel 016 with KEYRUPT2 (the hardware path; the socket API cannot raise it
+- see alignment_bridge.c header). No memory writes, no flag forcing.
 
-Procedure (all through the original software, no memory writes, no flag
-forcing):
-  V37E51E            enter P51 (IMU orientation determination)
-  PRO                V50N25 00015 -> P51B (skip optional gimbal zero)
-  00701 E, PRO       V01N71: AOTCODE = COAS detent 7 + star code 01 (star 37)
-  AZ, EL, PRO        V06N87: COAS optic-axis az/el aimed at star 37
-  X mark, Y mark, PRO  V54: one mark pair; MARKRUPT captures CDUX/Y/Z (=0)
-  00717 E, PRO       V01N71: COAS + star code 15 (star 23)
-  AZ, EL, PRO        V06N87 aimed at star 23
-  X mark, Y mark, PRO  second mark pair
-  PRO                V06N05 (R54 separation discrepancy) -> accept
-  V37E63E            then attempt P63 selection again (Phase 8 baseline)
+The driver is event-driven: each step waits until Pinball's flash registers
+(VERBREG 01001, NOUNREG 01002) show the expected display before acting, and
+each data load waits until the target erasable shows the loaded value. A step
+that is not satisfied within STALL_LIMIT calls is recorded as a stall and the
+run continues to the end for evidence.
+
+Procedure (all through the original software):
+  V37E51E              enter P51 (IMU orientation determination)
+  PRO                  V50N25 00015 -> P51B (skip optional gimbal zero)
+  V21N71E 00701 E, PRO load AOTCODE = COAS detent 7 + star code 01 (star 37),
+                       then proceed past the V01N71 flash
+  V21N87E az E,        load COAS optic-axis az/el aimed at star 37, PRO past
+  V22N87E el E, PRO    the V06N87 flash
+  X mark, Y mark, PRO  V54N71: one mark pair; MARKRUPT captures CDUX/Y/Z (=0)
+  (same for star 23, code 15)
+  PRO                  V06N05 (R54 separation discrepancy) -> accept
+  V37E63E              then attempt P63 selection again (Phase 8 baseline)
+
+Why V21/V22 loads: GOMARKF flashes block direct data-in (DSPCOUNT negative,
+observed), so data is loaded with the standard load-data verbs V21 (R1) and
+V22 (R2), which write the noun's erasables through Pinball's normal monitor
+path (DISPLAY_INTERFACE_ROUTINES.agc:1238 LOADITIS).
 
 Geometry: the fixture holds the IMU at zero gimbal angles, so the
 stable-member frame equals the navigation-base frame. COAS az/el are chosen
@@ -40,10 +50,14 @@ import ctypes, json, math, sys
 ROOT = Path(__file__).resolve().parents[2]
 P5 = ROOT / 'docs/phase5-evidence'
 ADDR = {'MODREG': 0o1011, 'FLAGWRD3': 0o77, 'IMODES30': 0o1302, 'IMODES33': 0o1303,
-        'THRUST': 0o55, 'FAILREG0': 0o375, 'FAILREG1': 0o376, 'FAILREG2': 0o377}
+        'THRUST': 0o55, 'FAILREG0': 0o375, 'FAILREG1': 0o376, 'FAILREG2': 0o377,
+        'VERBREG': 0o1001, 'NOUNREG': 0o1002, 'AOTCODE': 0o735,
+        'AZ': 0o1347, 'EL': 0o1350, 'MARKSTAT': 0o1312}
 REFSMMAT = 0o1733  # bank 3, 18 words (9 DP elements), ERASABLE_ASSIGNMENTS.agc:972
-END = 7600000
-GAP = 50000
+START = 3000000
+END = 12000000
+KEYGAP = 21333          # same key spacing as Phases 5/8
+STALL_LIMIT = 3000000   # calls a step may wait for its precondition
 
 KEY = {**{str(d): d for d in range(1, 10)},
        '0': 16, 'V': 17, 'N': 31, '+': 26, '-': 27, 'E': 28}  # Phase 1 key map
@@ -55,15 +69,11 @@ STAR23 = (-0.5812035376, -0.2909171294, 0.7599800468)  # code 15
 
 def az_el(star):
     x, y, z = star
-    el = math.degrees(math.asin(x))
-    az = math.degrees(math.atan2(y, z))
-    return az, el
+    return math.degrees(math.atan2(y, z)), math.degrees(math.asin(x))
 
-def deg_keys(value):
-    """CDU DEG noun entry: sign + 5 digits (xxx.xx)."""
-    sign = '+' if value >= 0 else '-'
-    digits = f'{abs(value):05.2f}'.replace('.', '')
-    return [KEY[sign]] + [KEY[d] for d in digits] + [KEY['E']]
+def deg_str(value):
+    """CDU DEG noun entry text: sign + 5 digits (xxx.xx)."""
+    return ('+' if value >= 0 else '-') + f'{abs(value):05.2f}'.replace('.', '')
 
 def main():
     library, output = sys.argv[1:]
@@ -71,52 +81,30 @@ def main():
     lib.set_fixed((ctypes.c_ubyte * 73728).from_buffer_copy(
         (ROOT / 'docs/phase1-evidence/artifacts/MAIN.agc.bin').read_bytes()))
 
-    sched = []  # (time, kind, payload)
-    lines = (P5 / 'operate_inputs.txt').read_text().splitlines()
-    for l in lines[1:]:
+    sched = []  # (time, kind, payload); kinds: packet, mark
+    for l in (P5 / 'operate_inputs.txt').read_text().splitlines()[1:]:
         t, ch, v = map(int, l.split())
         sched.append((t, 'packet', (ch, v)))
-
-    t = 3000000
-    def keys(seq):
-        nonlocal t
-        for k in seq:
-            sched.append((t, 'packet', (0o15, KEY[k] if isinstance(k, str) else k)))
-            t += GAP
-    def pro():
-        nonlocal t
-        sched.append((t, 'packet', (PRO_CH, PRO_BIT))); t += GAP
-        sched.append((t, 'packet', (PRO_CH, 0))); t += GAP
-    def markpair():
-        nonlocal t
-        sched.append((t, 'mark', 0o4)); t += GAP          # X mark, ch016 bit3
-        sched.append((t, 'mark', 0)); t += GAP
-        sched.append((t, 'mark', 0o10)); t += GAP         # Y mark, ch016 bit4
-        sched.append((t, 'mark', 0)); t += GAP
 
     az1, el1 = az_el(STAR37)
     az2, el2 = az_el(STAR23)
 
-    keys('V37E51E')                                   # enter P51
-    pro()                                             # V50N25 00015 -> P51B
-    keys(['0', '0', '7', '0', '1', 'E'])              # V01N71: COAS + star 37
-    pro()
-    keys(deg_keys(az1))                               # V06N87: AZ
-    keys(deg_keys(el1))                               # EL
-    pro()                                             # -> V54
-    markpair()
-    pro()                                             # process marks -> star 2
-    keys(['0', '0', '7', '1', '7', 'E'])              # V01N71: COAS + star 23
-    pro()
-    keys(deg_keys(az2))
-    keys(deg_keys(el2))
-    pro()
-    markpair()
-    pro()                                             # -> R54 V06N05
-    pro()                                             # accept -> P51G, REFSMFLG
-    t += 4 * GAP                                      # settle in P00
-    keys('V37E63E')                                   # Phase 8 baseline attempt
-    sched.sort(key=lambda r: r[0])
+    # Event-driven script. Each step: (name, precondition, actions).
+    # precondition: ('flash', verb, noun) on VERBREG/NOUNREG, or ('p00',).
+    # actions: ('keys', text), ('pro',), ('marks',), ('load', verb, noun, text)
+    def sighting(code_text, az, el):
+        return [('load', '21', '71', code_text), ('pro',),
+                ('load', '21', '87', deg_str(az)), ('load', '22', '87', deg_str(el)),
+                ('pro',), ('marks',), ('pro',)]
+    steps = [
+        ('enter-p51', ('always',), [('keys', 'V37E51E')]),
+        ('v50n25-proceed', ('flash', 50, 25), [('pro',)]),
+        ('star1', ('flash', 1, 71), sighting('00701', az1, el1)),
+        ('star2', ('flash', 1, 71), sighting('00717', az2, el2)),
+        ('r54-accept', ('flash', 6, 5), [('pro',)]),
+        ('back-in-p00', ('p00',), []),
+        ('p63-attempt', ('always',), [('keys', 'V37E63E')]),
+    ]
 
     log = Path(output).open('w')
     emit = lambda r: log.write(json.dumps(r, separators=(',', ':')) + '\n')
@@ -124,26 +112,58 @@ def main():
         s = {'ev': 'sample', 'cycle': tick}
         for k, a in ADDR.items(): s[k] = lib.inspect_ram(a)
         s['REFSMMAT'] = [lib.inspect_ram(REFSMMAT + i) for i in range(18)]
-        s['CH16'] = lib.inspect_channel(0o16)
         return s
-    emit({'ev': 'initial', 'end': END, 'ram_writes': 0,
-          'star37': {'code': 1, 'az': az1, 'el': el1},
-          'star23': {'code': 15, 'az': az2, 'el': el2},
+    emit({'ev': 'initial', 'start': START, 'end': END, 'ram_writes': 0,
+          'star37': {'code': 1, 'az': az1, 'el': el1, 'az_text': deg_str(az1), 'el_text': deg_str(el1)},
+          'star23': {'code': 15, 'az': az2, 'el': el2, 'az_text': deg_str(az2), 'el_text': deg_str(el2)},
           'az_el_rule': 'EL=asin(x), AZ=atan2(y,z); catalog B-1 vectors; OANB convention',
+          'load_rule': 'V21/V22 load-data verbs; GOMARKF flashes block direct data-in',
           'mark_path': 'channel 016 bits 3/4 + KEYRUPT2 (index 6) via alignment_bridge.c'})
+
+    queue = []          # pending (due_time, kind, payload) for scheduled actions
+    step_i = 0
+    action_q = []       # actions of the current step
+    step_since = None
+    def start_actions(tick):
+        nonlocal action_q, step_since
+        action_q = list(steps[step_i][2])
+        step_since = tick
+        emit({'ev': 'step', 'cycle': tick, 'name': steps[step_i][0]})
+    def queue_action(tick, act):
+        kind = act[0]
+        if kind == 'keys':
+            for k in act[1]:
+                queue.append((tick, 'packet', (0o15, KEY[k]))); tick += KEYGAP
+        elif kind == 'load':
+            seq = 'V' + act[1] + 'N' + act[2] + 'E' + act[3] + 'E'
+            for k in seq:
+                queue.append((tick, 'packet', (0o15, KEY[k]))); tick += KEYGAP
+        elif kind == 'pro':
+            queue.append((tick, 'packet', (PRO_CH, PRO_BIT))); tick += KEYGAP
+            queue.append((tick, 'packet', (PRO_CH, 0))); tick += KEYGAP
+        elif kind == 'marks':
+            for b in (0o4, 0, 0o10, 0):
+                queue.append((tick, 'mark', b)); tick += KEYGAP
+        return tick
+
     tick = idx = 0; last = None
     while tick < END:
         while idx < len(sched) and sched[idx][0] == tick:
             _, kind, payload = sched[idx]; idx += 1
+            emit({'ev': 'input', 'cycle': tick, 'channel': payload[0], 'value': payload[1],
+                  'accepted': lib.packet_write(*payload)})
+        while queue and queue[0][0] == tick:
+            _, kind, payload = queue.pop(0)
             if kind == 'packet':
-                ch, v = payload
-                emit({'ev': 'input', 'cycle': tick, 'channel': ch, 'value': v,
-                      'accepted': lib.packet_write(ch, v)})
+                emit({'ev': 'input', 'cycle': tick, 'channel': payload[0], 'value': payload[1],
+                      'accepted': lib.packet_write(*payload)})
             else:
                 lib.mark_write(payload, 1 if payload else 0)
                 emit({'ev': 'mark', 'cycle': tick, 'bits': payload})
         n = min(853, END - tick)
         if idx < len(sched): n = min(n, sched[idx][0] - tick)
+        if queue: n = min(n, queue[0][0] - tick)
+        if n <= 0: n = 1
         used = lib.step_chunk(n)
         for i in range(used):
             w = lib.output_word(i); ch = (w >> 16) & 65535
@@ -153,6 +173,33 @@ def main():
         tick += n
         s = snap(tick); key = tuple(v for k, v in s.items() if k not in ('ev', 'cycle'))
         if key != last: emit(s); last = key
+        # Event-driven step machine (only after the baseline schedule).
+        if tick >= START and step_i < len(steps) and not queue:
+            if action_q:
+                tick_due = tick + KEYGAP
+                tick_dummy = queue_action(tick + KEYGAP, action_q.pop(0))
+            else:
+                name, pre, _ = steps[step_i]
+                if step_since is None:
+                    step_since = tick
+                    emit({'ev': 'await', 'cycle': tick, 'name': name, 'pre': list(pre)})
+                ok = False
+                if pre[0] == 'always':
+                    ok = True
+                elif pre[0] == 'flash':
+                    ok = (s['VERBREG'] == pre[1] and s['NOUNREG'] == pre[2])
+                elif pre[0] == 'p00':
+                    ok = (s['MODREG'] == 0o77777)
+                if ok:
+                    start_actions(tick)
+                    if not steps[step_i][2]:
+                        step_i += 1; step_since = None
+                    else:
+                        step_i += 1
+                elif tick - step_since > STALL_LIMIT:
+                    emit({'ev': 'stall', 'cycle': tick, 'name': name, 'pre': list(pre),
+                          'verb': s['VERBREG'], 'noun': s['NOUNREG']})
+                    step_i += 1; step_since = None
     emit(snap(tick)); log.close()
 
 if __name__ == '__main__': main()
