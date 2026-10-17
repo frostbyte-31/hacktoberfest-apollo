@@ -1,0 +1,556 @@
+{
+  "classification": "Actual original startup diagnostic readbacks from fresh game calibration traces",
+  "scope": "Initial execution registers only. Subsequent compact frames retain originalReady, not full per-frame register readbacks.",
+  "sourceExtractor": {
+    "path": "docs/frontend-game-evidence/extract_readiness.py",
+    "sha256": "213ca980bc7d14a4eb078ec03f6b0451f6c3d4d8552129c4ecd67e1aa0ba253e"
+  },
+  "cases": {
+    "yaw_one_second": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/yaw_one_second/trace.jsonl",
+        "sha256": "1f453c01af1d6c2446fa6a87aff62b124be784ea4a3578ee727997c0aec2ee36",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    },
+    "pitch_one_second": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/pitch_one_second/trace.jsonl",
+        "sha256": "860656fed56a3c64e92396860570efdf29ad46b430f867304dd1aad5d65d0d99",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    },
+    "yaw_short_pulse": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/yaw_short_pulse/trace.jsonl",
+        "sha256": "cf917553759e39bcd9dd439385db00d39a341a2ce6ad0fef843e1693a644e60e",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    },
+    "pitch_short_pulse": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/pitch_short_pulse/trace.jsonl",
+        "sha256": "45a149c60066cb36a3534cf9810b67f60a214a13e02376460d26e2a100fbfcd4",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    },
+    "combined_short_pulse": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-combined-result.json",
+        "sha256": "0ed3473265383801a485af517bc80af1d7be4673c597d16d82db7c7db0d569fd"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214808Z-bb7ca34b/combined_short_pulse/trace.jsonl",
+        "sha256": "3f8d8a3e6def62a8b46a353b1d47443e76eea5ea4d3953e1eb89928926a4a943",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    },
+    "combined_brief_pulse": {
+      "execution": {
+        "z": 2465,
+        "eb": 512,
+        "fb": 1024,
+        "bb": 1026,
+        "next_z": 2465,
+        "modreg": 0,
+        "imodes30": 15889,
+        "imodes33": 15360,
+        "failreg": [
+          0,
+          0,
+          0
+        ],
+        "dapbools": 8910,
+        "channel7": 64
+      },
+      "readbackCycle": 2200000,
+      "verifiedStartup": true,
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-combined-result.json",
+        "sha256": "0ed3473265383801a485af517bc80af1d7be4673c597d16d82db7c7db0d569fd"
+      },
+      "sourceTrace": {
+        "path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214808Z-bb7ca34b/combined_brief_pulse/trace.jsonl",
+        "sha256": "b3b187f4d0e8029a4ad232aaeda87129f6ceee6e20d73a265a7f33f84276df72",
+        "lineNumber": 13936,
+        "rawLineSha256ExcludingNewline": "0f1fb52183ec4108fc16972beb00d32307d4cff6f2b45a3e54698574ec151e70"
+      },
+      "actualStartupCheckpoint": {
+        "ev": "startup_checkpoint",
+        "category": "agc_diagnostic_readback",
+        "cycle": 2200000,
+        "registers": {
+          "z": 2465,
+          "eb": 512,
+          "fb": 1024,
+          "bb": 1026,
+          "next_z": 2465,
+          "modreg": 0,
+          "imodes30": 15889,
+          "imodes33": 15360,
+          "failreg": [
+            0,
+            0,
+            0
+          ],
+          "dapbools": 8910,
+          "channel7": 64
+        },
+        "state": {
+          "cycle": 2200000,
+          "cdu": [
+            0,
+            0,
+            0
+          ],
+          "incoming": 0,
+          "checker": 2,
+          "fifo": [
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            },
+            {
+              "entries": 0,
+              "pending": 0,
+              "head": 0,
+              "deadline": 0
+            }
+          ]
+        },
+        "verified": true
+      },
+      "firstSampleClocks": {
+        "cycle": 2200000,
+        "modelCycle": 2199887,
+        "cpuTimeSeconds": 25.78125,
+        "physicalTimeSeconds": 25.77992578125
+      },
+      "couplingLagSecondsAtReady": 0.0013242187499997726
+    }
+  }
+}

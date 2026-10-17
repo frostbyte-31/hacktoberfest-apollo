@@ -1,0 +1,113 @@
+{
+  "scope": "Actual browser UI checks; model motion and scores use native sessions. Losing rounds are retained as losses.",
+  "checks": [
+    {
+      "test": "actual browser yaw attempt",
+      "detail": "0.49° error · 0.98°/s\nScored at 2.55 s physical elapsed",
+      "error": "0.49°",
+      "mode": "LIVE RUN · ENDED",
+      "rate": "0.98°/s",
+      "renderer": "WEBGL 3D",
+      "score": "884",
+      "status": "Run ended. Physics frozen; queue settlement is not stability.",
+      "title": "Target acquired."
+    },
+    {
+      "test": "desktop 3D standby",
+      "renderer": "WEBGL 3D",
+      "score": "—",
+      "scrollWidth": 1440,
+      "source": "VISUAL MODEL · AWAITING LIVE STATE",
+      "width": 1440
+    },
+    {
+      "test": "orbit camera changes view without telemetry",
+      "imageChanged": true,
+      "angleUnchanged": true
+    },
+    {
+      "test": "actual browser pitch attempt",
+      "detail": "0.52° error · 0.90°/s\nScored at 2.70 s physical elapsed",
+      "program": "00",
+      "score": "885",
+      "source": "FINAL BACKEND ORIENTATION · POSITION FIXED",
+      "title": "Target acquired."
+    },
+    {
+      "test": "combined round can finish without awarding unobserved success",
+      "detail": "8.26° error · 0.41°/s\nScored at 11.72 s physical elapsed",
+      "score": "275",
+      "status": "Run ended. Physics frozen; queue settlement is not stability.",
+      "title": "Time for another try."
+    },
+    {
+      "test": "short-pulse combined result under initial thresholds",
+      "detail": "2.38° error · 0.04°/s\nScored at 11.72 s physical elapsed",
+      "title": "Time for another try."
+    },
+    {
+      "test": "combined training rule is visible",
+      "rule": "Reduce total rate below 1.3°/s"
+    },
+    {
+      "check": "final combined browser round",
+      "result": "TRAINING DEBRIEF\nTime for another try.\n\nBounded native run complete. Target hold was not observed.\n\n440\nTRAINING POINTS\n4.72° error · 0.15°/s Scored at 11.72 s physical elapsed",
+      "rateRule": "Reduce total rate below 1.3°/s"
+    },
+    {
+      "check": "mobile 390px layout",
+      "dom": {
+        "canvas": {
+          "bottom": 750.0859375,
+          "height": 462.1953125,
+          "left": 16,
+          "right": 374,
+          "top": 287.890625,
+          "width": 358,
+          "x": 16,
+          "y": 287.890625
+        },
+        "controls": {
+          "bottom": 836,
+          "height": 207,
+          "left": 15,
+          "right": 375,
+          "top": 629,
+          "width": 360,
+          "x": 15,
+          "y": 629
+        },
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "check": "mobile on-screen hold",
+      "result": "TRAINING OBJECTIVE COMPLETE\nTarget acquired.\n\nYou matched the attitude and held a low rotation rate in live backend samples. The session is ending; this is a training goal, not a landing.\n\n890\nTRAINING POINTS\n0.44° error · 0.98°/s Scored at 2.60 s physical elapsed",
+      "status": "Run ended. Physics frozen; queue settlement is not stability."
+    },
+    {
+      "check": "mobile 320px no horizontal overflow",
+      "dom": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "check": "tablet 900px no horizontal overflow",
+      "dom": {
+        "scrollWidth": 900,
+        "width": 900
+      }
+    },
+    {
+      "check": "replay-only refuses live gameplay",
+      "mode": "LIVE SERVICE UNAVAILABLE",
+      "armEnabled": false,
+      "error": "Live controls are disabled. Restart the local server without --replay-only.",
+      "stage": "THE CHECKLIST\nStart the live service.\n\nRun make play from the repository root to enable real AGC controls. You can still explore the 3D visual model.",
+      "score": "—"
+    }
+  ],
+  "console": []
+}

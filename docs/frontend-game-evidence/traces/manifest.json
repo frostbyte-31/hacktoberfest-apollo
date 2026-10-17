@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "classification": "Lossless retained copies of six core fresh native game calibration traces",
+  "sourcePackager": {
+    "path": "docs/frontend-game-evidence/package_traces.py",
+    "sha256": "bba92b5e3480784600c2972997a763c2858d3abcb9e861c49f5f5454c5c6e696"
+  },
+  "compression": "gzip level 9, empty stored filename, mtime 0",
+  "traceCount": 6,
+  "totalRawBytes": 44239634,
+  "totalGzipBytes": 2708314,
+  "pathMapping": "For each sourceReport/readinessMetadata JSON pointer, use the sibling gzip file; verify the decompressed bytes against rawSha256. Original absolute paths are provenance, not a runtime requirement.",
+  "supplementalCases": "Supplemental browser/chord and interrupted calibration cases are not part of this core trace package.",
+  "traces": [
+    {
+      "case": "yaw_one_second",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "yaw_one_second.jsonl.gz",
+      "gzipSha256": "446ed7671768db4d8e665edb1dd80cb0216a65eb4b58e2f86ec0dbc601796285",
+      "gzipBytes": 360665,
+      "rawSha256": "1f453c01af1d6c2446fa6a87aff62b124be784ea4a3578ee727997c0aec2ee36",
+      "rawBytes": 7304935,
+      "rawJsonlRows": 24598,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/yaw_one_second/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1",
+        "traceJsonPointer": "/cases/yaw_one_second/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/yaw_one_second/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    },
+    {
+      "case": "pitch_one_second",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "pitch_one_second.jsonl.gz",
+      "gzipSha256": "af96279c616089cce2e86ef80226a74221db6ad3a58f92bb74a2f37c32e4f55f",
+      "gzipBytes": 559378,
+      "rawSha256": "860656fed56a3c64e92396860570efdf29ad46b430f867304dd1aad5d65d0d99",
+      "rawBytes": 8153803,
+      "rawJsonlRows": 26179,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/pitch_one_second/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1",
+        "traceJsonPointer": "/cases/pitch_one_second/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/pitch_one_second/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    },
+    {
+      "case": "yaw_short_pulse",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "yaw_short_pulse.jsonl.gz",
+      "gzipSha256": "c31f35d34d40fe7cf3ba7d3734229d6ac2e61909f58d5bf81410690b6956372f",
+      "gzipBytes": 303003,
+      "rawSha256": "cf917553759e39bcd9dd439385db00d39a341a2ce6ad0fef843e1693a644e60e",
+      "rawBytes": 6696062,
+      "rawJsonlRows": 22886,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/yaw_short_pulse/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1",
+        "traceJsonPointer": "/cases/yaw_short_pulse/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/yaw_short_pulse/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    },
+    {
+      "case": "pitch_short_pulse",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "pitch_short_pulse.jsonl.gz",
+      "gzipSha256": "b326046b0541adca237ed878199537208e9de970839bba6ac421aa6ed51c2f04",
+      "gzipBytes": 496051,
+      "rawSha256": "45a149c60066cb36a3534cf9810b67f60a214a13e02376460d26e2a100fbfcd4",
+      "rawBytes": 7418376,
+      "rawJsonlRows": 24080,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214638Z-33d8db14/pitch_short_pulse/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-result.json",
+        "sha256": "02dc51dd82cf241faa437d0c40dd7a2dfe2398f9cbe5fdd6d98e6a14568fa6c1",
+        "traceJsonPointer": "/cases/pitch_short_pulse/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/pitch_short_pulse/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    },
+    {
+      "case": "combined_short_pulse",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "combined_short_pulse.jsonl.gz",
+      "gzipSha256": "7c11faf76b86ec0fdbddb4da80777067c3f56e010a776b7b903dddbb8fb99ab1",
+      "gzipBytes": 593733,
+      "rawSha256": "3f8d8a3e6def62a8b46a353b1d47443e76eea5ea4d3953e1eb89928926a4a943",
+      "rawBytes": 8519094,
+      "rawJsonlRows": 27101,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214808Z-bb7ca34b/combined_short_pulse/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-combined-result.json",
+        "sha256": "0ed3473265383801a485af517bc80af1d7be4673c597d16d82db7c7db0d569fd",
+        "traceJsonPointer": "/cases/combined_short_pulse/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/combined_short_pulse/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    },
+    {
+      "case": "combined_brief_pulse",
+      "classification": "Core verified fresh native calibration; no partial or supplemental case",
+      "file": "combined_brief_pulse.jsonl.gz",
+      "gzipSha256": "d66989993e851a7ffe5e64e0012e1969bdf27c9cd5ef64861ea2a048ec1e695a",
+      "gzipBytes": 395484,
+      "rawSha256": "b3b187f4d0e8029a4ad232aaeda87129f6ceee6e20d73a265a7f33f84276df72",
+      "rawBytes": 6147364,
+      "rawJsonlRows": 20452,
+      "originalRawPath": "/Users/giorgikhubua/hacktoberfest-apollo/.build/game-ui/native/20261017T214808Z-bb7ca34b/combined_brief_pulse/trace.jsonl",
+      "sourceReport": {
+        "path": "docs/frontend-game-evidence/native-combined-result.json",
+        "sha256": "0ed3473265383801a485af517bc80af1d7be4673c597d16d82db7c7db0d569fd",
+        "traceJsonPointer": "/cases/combined_brief_pulse/trace"
+      },
+      "readinessMetadata": {
+        "path": "docs/frontend-game-evidence/readiness-metadata.json",
+        "sha256": "5cc83537dd53b6aed10663b9a95fd51d49027fb9486f535fd0359f7a358e2c8b",
+        "traceJsonPointer": "/cases/combined_brief_pulse/sourceTrace",
+        "startupLineNumber": 13936
+      }
+    }
+  ]
+}

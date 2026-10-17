@@ -1,4 +1,11 @@
-# Apollo 11 — guidance and live attitude control
+# Apollo 11 — guidance and 3D flight training
+
+Play the **3D Eagle flight trainer** with `make play`, then open
+**http://127.0.0.1:4173/play.html**. Arm original Luminary 099, use A/D and S/W to
+rotate the Lunar Module, and acquire a training attitude within the bounded live
+control window. The browser renders actual backend orientation in WebGL; no
+powered descent or landing is claimed. [Game contract](docs/FRONTEND_GAME_CONTRACT.md)
+and [verification](docs/frontend-game-evidence/README.md).
 
 The **Phase 10 mission-control frontend** explores three verified recorded
 synthetic pre-ignition experiments. Start with `make demo`, then open

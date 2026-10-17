@@ -1,5 +1,25 @@
 # Apollo 11 · Guidance Labs
 
+## Play the 3D flight trainer
+
+```sh
+make play
+```
+
+Open **http://127.0.0.1:4173/play.html**. Select yaw, pitch or combined training,
+arm a fresh original AGC session, then hold **A/D** for yaw and **S/W** for pitch.
+Touch controls, camera orbit/zoom, target capture, scoring, debrief and retry are
+available. Space releases the controller. Neutral does not instantly brake.
+
+The first launch downloads/builds the checksum-pinned Tcl runtime locally and
+needs a C compiler and make. Later launches reuse it. The game runs the existing
+bounded native Luminary control loop; its 3D renderer owns no physics. The
+11.7-second challenge is attitude training, with no translation or descent engine.
+`make demo` remains replay-only and cannot run scored live challenges.
+
+See [the game integration contract](../docs/FRONTEND_GAME_CONTRACT.md) and
+[actual native/browser/test evidence](../docs/frontend-game-evidence/README.md).
+
 ## Phase 10 mission control
 
 The frontend now extends the existing recorded guidance experience with a

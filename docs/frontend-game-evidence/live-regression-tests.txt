@@ -1,0 +1,87 @@
+python3 -m unittest discover -s backend/tests -v
+test_exact_fields_and_pilot_value_bounds_reject_without_forwarding (test_http.HttpTests.test_exact_fields_and_pilot_value_bounds_reject_without_forwarding) ... ok
+test_host_origin_and_fetch_site_reject_cross_site_control_before_state_changes (test_http.HttpTests.test_host_origin_and_fetch_site_reject_cross_site_control_before_state_changes) ... ok
+test_localhost_requires_its_own_matching_origin (test_http.HttpTests.test_localhost_requires_its_own_matching_origin) ... ok
+test_non_finite_duplicate_malformed_and_non_object_json_never_submit_inputs (test_http.HttpTests.test_non_finite_duplicate_malformed_and_non_object_json_never_submit_inputs) ... ok
+test_preflight_has_no_cors_grant_and_cannot_start_native_work (test_http.HttpTests.test_preflight_has_no_cors_grant_and_cannot_start_native_work) ... ok
+test_read_only_routes_do_not_create_session_or_submit_inputs (test_http.HttpTests.test_read_only_routes_do_not_create_session_or_submit_inputs) ... ok
+test_replay_only_server_discloses_disabled_live_and_rejects_all_mutations (test_http.HttpTests.test_replay_only_server_discloses_disabled_live_and_rejects_all_mutations) ... ok
+test_request_framing_body_limit_and_content_type_fail_before_mutation (test_http.HttpTests.test_request_framing_body_limit_and_content_type_fail_before_mutation) ... ok
+test_start_input_and_stop_preserve_session_identity_and_forward_only_pilot_inputs (test_http.HttpTests.test_start_input_and_stop_preserve_session_identity_and_forward_only_pilot_inputs) ... ok
+test_static_routes_serve_dist_and_never_repository_source (test_http.HttpTests.test_static_routes_serve_dist_and_never_repository_source) ... ok
+test_token_is_required_for_mutation_and_record_and_non_ascii_is_rejected (test_http.HttpTests.test_token_is_required_for_mutation_and_record_and_non_ascii_is_rejected) ... ok
+test_all_source_mapped_signed_rhc_switch_words (test_native.NativeContractTests.test_all_source_mapped_signed_rhc_switch_words) ... ok
+test_command_lease_bounds_and_zero_duration_neutral (test_native.NativeContractTests.test_command_lease_bounds_and_zero_duration_neutral) ... ok
+test_conservative_fast_sensor_choice_is_permitted (test_native.NativeContractTests.test_conservative_fast_sensor_choice_is_permitted) ... ok
+test_execution_rejects_invalid_cycle_values (test_native.NativeContractTests.test_execution_rejects_invalid_cycle_values) ... ok
+test_returned_frame_cannot_mutate_authoritative_state (test_native.NativeContractTests.test_returned_frame_cannot_mutate_authoritative_state) ... ok
+test_rhc_rejects_bool_float_string_and_out_of_range_values (test_native.NativeContractTests.test_rhc_rejects_bool_float_string_and_out_of_range_values) ... ok
+test_runtime_tree_validation_failure_prevents_engine_creation (test_native.NativeContractTests.test_runtime_tree_validation_failure_prevents_engine_creation) ... ok
+test_slow_sensor_mode_is_limited_by_actual_gimbal_rate (test_native.NativeContractTests.test_slow_sensor_mode_is_limited_by_actual_gimbal_rate) ... ok
+test_tampered_prepared_source_rejected_before_engine_creation (test_native.NativeContractTests.test_tampered_prepared_source_rejected_before_engine_creation) ... ok
+test_tampered_runtime_manifest_rejected_before_engine_creation (test_native.NativeContractTests.test_tampered_runtime_manifest_rejected_before_engine_creation) ... ok
+test_unstarted_session_rejects_commands_and_execution (test_native.NativeContractTests.test_unstarted_session_rejects_commands_and_execution) ... ok
+test_wrong_thread_rejected_before_native_execution (test_native.NativeContractTests.test_wrong_thread_rejected_before_native_execution) ... ok
+test_cached_snapshots_and_downloads_cannot_mutate_authoritative_state (test_service.ServiceTests.test_cached_snapshots_and_downloads_cannot_mutate_authoritative_state) ... ok
+test_expired_queued_deflection_never_reaches_native_and_lost_client_neutralizes (test_service.ServiceTests.test_expired_queued_deflection_never_reaches_native_and_lost_client_neutralizes) ... ok
+test_neutral_cancels_a_full_pending_queue_and_bypasses_rate_limit (test_service.ServiceTests.test_neutral_cancels_a_full_pending_queue_and_bypasses_rate_limit) ... ok
+test_one_owner_drives_commands_stop_and_persisted_record (test_service.ServiceTests.test_one_owner_drives_commands_stop_and_persisted_record) ... ok
+test_processing_delay_does_not_extend_receipt_based_wall_lease (test_service.ServiceTests.test_processing_delay_does_not_extend_receipt_based_wall_lease) ... ok
+test_ready_is_paused_and_neutral_does_not_start_native_time (test_service.ServiceTests.test_ready_is_paused_and_neutral_does_not_start_native_time) ... ok
+test_stop_during_startup_does_not_publish_ready_or_accept_input (test_service.ServiceTests.test_stop_during_startup_does_not_publish_ready_or_accept_input) ... ok
+test_strict_inputs_session_identity_and_sequence_rejection_do_not_reach_native (test_service.ServiceTests.test_strict_inputs_session_identity_and_sequence_rejection_do_not_reach_native) ... ok
+test_unready_startup_faults_and_never_accepts_pilot_input (test_service.ServiceTests.test_unready_startup_faults_and_never_accepts_pilot_input) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.297s
+
+OK
+python3 -m unittest discover -s frontend/tests -p test_replay.py -v
+test_clock_horizons_and_queue_tail (test_replay.ReplayExportTests.test_clock_horizons_and_queue_tail) ... ok
+test_disconnected_controls_keep_zero_actual_counters (test_replay.ReplayExportTests.test_disconnected_controls_keep_zero_actual_counters) ... ok
+test_display_sampling_is_bounded_and_endpoints_retained (test_replay.ReplayExportTests.test_display_sampling_is_bounded_and_endpoints_retained) ... ok
+test_every_frame_is_an_exact_original_model_sample (test_replay.ReplayExportTests.test_every_frame_is_an_exact_original_model_sample) ... ok
+test_exact_agc_output_packet_sequence_is_preserved (test_replay.ReplayExportTests.test_exact_agc_output_packet_sequence_is_preserved) ... ok
+test_five_cases_and_evidence_level_are_explicit (test_replay.ReplayExportTests.test_five_cases_and_evidence_level_are_explicit) ... ok
+test_integrity_mismatch_is_rejected (test_replay.ReplayExportTests.test_integrity_mismatch_is_rejected) ... ok
+test_no_altitude_position_or_dsky_is_invented (test_replay.ReplayExportTests.test_no_altitude_position_or_dsky_is_invented) ... ok
+test_pinned_trace_hashes_match_both_compressed_and_raw_bytes (test_replay.ReplayExportTests.test_pinned_trace_hashes_match_both_compressed_and_raw_bytes) ... ok
+test_quaternion_normalization_and_signed_body_rates (test_replay.ReplayExportTests.test_quaternion_normalization_and_signed_body_rates) ... ok
+test_readiness_and_cdu_are_only_prior_actual_readbacks (test_replay.ReplayExportTests.test_readiness_and_cdu_are_only_prior_actual_readbacks) ... ok
+test_real_export_is_current_and_deterministic (test_replay.ReplayExportTests.test_real_export_is_current_and_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 5.116s
+
+OK
+node --test frontend/tests/replay.test.mjs frontend/tests/live.test.mjs
+✔ independent directions combine and opposing same-axis controls cancel (1.362375ms)
+✔ live controls require both server permission and original readiness (0.154917ms)
+✔ physical freeze and subsequent actual CPU counters remain separate (0.124125ms)
+✔ malformed live telemetry fails instead of creating a substitute state (0.187041ms)
+✔ separate held sources preserve another axis when one is released (3.399375ms)
+✔ neutral release can overtake an in-flight deflection with a newer sequence (0.366084ms)
+✔ connection loss releases controls and marks retained telemetry stale (0.167292ms)
+✔ inputs are not emitted before native startup is ready (0.262209ms)
+✔ exported real data satisfies the presentation contract (3.886625ms)
+✔ seeking holds the last real sample and never selects future telemetry (0.086ms)
+✔ RCS words follow interleaved actual event edges without looking ahead (0.358708ms)
+✔ source-derived jet names and bit positions remain distinct from axes (0.367625ms)
+✔ scalar-first active body-to-stable quaternion has the right handed sign (0.102958ms)
+✔ render rotation preserves vector lengths for actual compound attitude (0.060292ms)
+✔ SLERP follows the short quaternion arc and normalizes presentation (0.093167ms)
+✔ rendering freezes at the actual horizon without extrapolating residual rate (0.095542ms)
+✔ interpolated drawing does not mutate held actual samples (0.766292ms)
+✔ gimbal wrapping and octal register presentation preserve values (0.276875ms)
+✔ physical freeze is distinct from the one-count settlement tail (0.076083ms)
+✔ original readiness requires actual P00 and both original inhibition gates (0.106916ms)
+✔ malformed quaternion and command chronology fail rather than fabricate (17.697916ms)
+✔ non-numeric times and out-of-range authentic words are rejected (18.475292ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.982958

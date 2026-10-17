@@ -1,0 +1,47 @@
+python3 tools/reproducibility/bootstrap_runtime.py
+{
+  "schema": 1,
+  "version": "8.6.16",
+  "executable": "/Users/giorgikhubua/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+  "executable_sha256": "db6314a9581ae4d5f9df6cd8e9393d8e0bb94e7c57c707d5094075133d544b57",
+  "runtime_path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/reproducibility/runtime",
+  "runtime_tree_sha256": "6086df67a376157758f82a28c7b9025b2a63feb87992bbeb29def65235dad343",
+  "source_path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/reproducibility/sources/20261017T214201Z-563230eb/tcl8.6.16",
+  "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+  "archive_path": "/Users/giorgikhubua/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+  "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+  "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+  "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+  "build_record": "/Users/giorgikhubua/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T214201Z-563230eb",
+  "configure_arguments": [
+    "--disable-shared",
+    "--enable-threads",
+    "--disable-symbols"
+  ],
+  "cflags": "-O2",
+  "compiler": "/usr/bin/cc",
+  "compiler_version": "Apple clang version 17.0.0 (clang-1700.3.19.1)\nTarget: arm64-apple-darwin25.4.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "make": "/usr/bin/make",
+  "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+  "python_version": "3.11.8 (main, Apr  9 2026, 01:41:04) [Clang 17.0.0 (clang-1700.3.19.1)]",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "smoke_test": {
+    "version": "8.6.16",
+    "hypot_3_4": 5.0,
+    "status": "VERIFIED"
+  },
+  "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+}
+python3 -B frontend/serve.py --port 4173
+Apollo 11 Guidance Labs
+Local: http://127.0.0.1:4173/
+Pre-ignition recorded replay: http://127.0.0.1:4173/guidance.html
+Live control: available; native startup begins on request
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /play.html HTTP/1.1" 304 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /flight.css HTTP/1.1" 304 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /flight.mjs HTTP/1.1" 304 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /spacecraft-3d.mjs HTTP/1.1" 304 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /game-state.mjs HTTP/1.1" 304 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /api/bootstrap HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 02:25:36] "GET /favicon.svg HTTP/1.1" 304 -

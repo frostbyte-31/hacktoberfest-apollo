@@ -71,3 +71,9 @@ frontend-check:
 test-frontend:
 	$(PYTHON) -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
 	$(NODE) --test frontend/tests/*.test.mjs
+
+.PHONY: play
+
+# Playable live attitude trainer: original AGC + existing bounded external model.
+play: runtime
+	$(PYTHON) -B frontend/serve.py --port $(PORT)
