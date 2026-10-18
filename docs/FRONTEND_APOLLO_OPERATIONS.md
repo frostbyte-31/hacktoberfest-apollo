@@ -12,7 +12,13 @@ This is a chapter boundary, not the beginning of the complete mission. Launch, E
 
 The historical reference configuration is stage-specific. ACT-62–63 specifies **GUID CONT AGS**, both MODE CONT switches at **ATT HOLD**, all three ATTITUDE CONTROL switches at **PULSE**, and separate ACA/4 JET and TTCA/TRANSL enable settings. That differs from a later PGNS automatic-descent configuration. The exact reference list and page locators are in the JSON. A player must not be shown a completed checklist merely because they opened the page. [Original checklist](https://apollojournals.org/afj/ap11fj/pdf/a11_lm_systems_activation_checklist-19690708.pdf).
 
-The initial task should therefore read: **“Review Eagle's pre-undocking configuration and crew responsibilities.”** Until the backend supplies a validated historical checkpoint and actual switch readbacks, this is an inspectable preparation chapter with an explicit execution boundary. It cannot honestly offer a functional “Undock” button.
+The current first task is a selected **interactive undocking procedure trainer**:
+review its declared entry setup, take the crew stations in turn, set the cited
+controls and command the modeled CSM probe release. It has its own server-owned
+training state; it does not supply a validated historical flight checkpoint or
+actual switch/sensor readbacks. The live-flight integration requirements below
+still apply. See [the playable chapter contract](FRONTEND_UNDOCKING.md) and
+[page-specific undocking research](FRONTEND_UNDOCKING_RESEARCH.md).
 
 ## Preserve the chronological sequence
 

@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "id": "apollo11-undocking-v1",
+  "title": "Eagle undocking",
+  "mode": "INTERACTIVE PROCEDURE TRAINER",
+  "chapterId": "undocking",
+  "nextChapterId": "inspection",
+  "scope": "A selected Apollo 11 pre-undocking checklist and CSM release procedure. Backend-owned discrete training state; no original AGC execution, pressure model, latch dynamics, spacecraft physics or historical state vector.",
+  "historicalReference": {
+    "preparationGet": "100:05 (scheduled checklist)",
+    "undockingGet": "100:12:03 (actual onboard call)",
+    "clockMeaning": "Reference labels only; player actions have no reconstructed historical GET."
+  },
+  "sources": [
+    {
+      "id": "lm-act62",
+      "title": "Apollo 11 LM Systems Activation Checklist",
+      "url": "https://apollojournals.org/afj/ap11fj/pdf/a11_lm_systems_activation_checklist-19690708.pdf#page=68",
+      "locator": "ACT-62, PDF page 68, PREP FOR UNDOCKING",
+      "revisionScope": "LM-5; May 26 basic, June 20 page change; July 8, 1969 checklist"
+    },
+    {
+      "id": "lm-act63",
+      "title": "Apollo 11 LM Systems Activation Checklist",
+      "url": "https://apollojournals.org/afj/ap11fj/pdf/a11_lm_systems_activation_checklist-19690708.pdf#page=69",
+      "locator": "ACT-63, PDF page 69, PREP FOR UNDOCKING",
+      "revisionScope": "LM-5; July 4 page change; July 8, 1969 checklist"
+    },
+    {
+      "id": "csm-tunnel",
+      "title": "Collins flown CSM Operations Checklist",
+      "url": "https://apollojournals.org/afj/ap11fj/a11-csmocindex.html",
+      "locator": "F11-4 to F11-6; hatch integrity check and tunnel closeout",
+      "revisionScope": "Apollo 11 flown copy, NASM A19850133000; F11-6 changed July 15, 1969",
+      "pageUrls": [
+        "https://apollojournals.org/afj/ap11fj/a11csmoc/a11-csmoc-f11-04.jpg",
+        "https://apollojournals.org/afj/ap11fj/a11csmoc/a11-csmoc-f11-05.jpg",
+        "https://apollojournals.org/afj/ap11fj/a11csmoc/a11-csmoc-f11-06.jpg"
+      ]
+    },
+    {
+      "id": "cmp-66a",
+      "title": "Collins flown CMP Solo Book",
+      "url": "https://apollojournals.org/afj/ap11fj/a11-cmpsbindex.html",
+      "locator": "Page 66A: hand controllers, docking probe circuit breakers, undocking, inspection",
+      "revisionScope": "June 27 basic; Rev B July 8, 1969; flown annotations retain planned 100:15 undock"
+    },
+    {
+      "id": "flightplan-367",
+      "title": "Apollo 11 Flight Plan, flown copy",
+      "url": "https://apollojournals.org/afj/ap11fj/a11cmpsb/a11-cmpsb-016-3-67.jpg",
+      "locator": "Page 3-67, 100:00-101:00, crew columns",
+      "revisionScope": "July 1, 1969; planned sequence, not exact actual event time"
+    },
+    {
+      "id": "aoh-probe-switch",
+      "title": "Apollo Operations Handbook: Controls and Displays",
+      "url": "https://www.ibiblio.org/apollo/ApolloProjectOnline/Documents/SMA2A-03-BLOCK%20II%20Volume%201%2019691015/aoh-v1-3-cont%2Bdisp.pdf#page=98",
+      "locator": "Page 3-99 (PDF page 98), panel 2, area H, grid E-28",
+      "revisionScope": "Basic April 15, 1969, unchanged page in October compilation; hardware functions, not later mission procedure"
+    },
+    {
+      "id": "aoh-probe-indicators",
+      "title": "Apollo Operations Handbook: Controls and Displays",
+      "url": "https://www.ibiblio.org/apollo/ApolloProjectOnline/Documents/SMA2A-03-BLOCK%20II%20Volume%201%2019691015/aoh-v1-3-cont%2Bdisp.pdf#page=99",
+      "locator": "Page 3-100 (PDF page 99), panel 2, area H, grid D-28",
+      "revisionScope": "Basic April 15, 1969, unchanged page; two probe position indicators"
+    },
+    {
+      "id": "aoh-probe-mechanics",
+      "title": "Apollo Operations Handbook: Docking and Transfer",
+      "url": "https://apollojournals.org/afj/aoh/aoh-v1-2-13-dock.pdf#page=18",
+      "locator": "Pages 2.13-18 to 2.13-21; extension latch preload, capture latch release",
+      "revisionScope": "Basic April 15, 1969; relevant pages unchanged or July 16; do not use October-revised diagrams as flown procedure"
+    },
+    {
+      "id": "actual-undock",
+      "title": "Apollo 11 onboard transcript and Flight Journal",
+      "url": "https://apollojournals.org/afj/ap11fj/17day5-undock-doi.html",
+      "locator": "100:03:53, 100:11:47-100:12:19, 100:12:59-100:20",
+      "revisionScope": "Actual crew calls; undocking around 100:12:03 GET"
+    },
+    {
+      "id": "crew-debrief",
+      "title": "Apollo 11 Technical Crew Debriefing",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11tcdb.html",
+      "locator": "Sections 8.1.6, 8.1.13 and 8.2.28",
+      "revisionScope": "July 31, 1969; P47/AGS bookkeeping and rejection of untested soft undock"
+    }
+  ],
+  "initialControls": {},
+  "entryPreconditions": [
+    {
+      "id": "crew-stations",
+      "label": "Armstrong and Aldrin in Eagle; Collins in Columbia.",
+      "sourceIds": [
+        "flightplan-367"
+      ]
+    },
+    {
+      "id": "closeout",
+      "label": "Vehicle umbilicals removed/stowed; drogue and probe installed; probe umbilicals connected and probe preloaded; twelve docking-ring latches manually released/cocked; hatch secured.",
+      "sourceIds": [
+        "csm-tunnel",
+        "aoh-probe-mechanics"
+      ]
+    },
+    {
+      "id": "pressure",
+      "label": "Hatch integrity check and final tunnel venting completed; tunnel valve OFF; tunnel lights OFF. No measured pressures are supplied.",
+      "sourceIds": [
+        "csm-tunnel"
+      ]
+    },
+    {
+      "id": "activation",
+      "label": "Earlier LM activation, landing gear deployment, RCS/DPS checks, AGS calibration/update, undocking attitude and mission-control go/no-go are assumed completed.",
+      "sourceIds": [
+        "lm-act62",
+        "cmp-66a",
+        "flightplan-367"
+      ]
+    },
+    {
+      "id": "computer-boundary",
+      "label": "Original P47/AGS undocking delta-V bookkeeping was required in the flown procedure; it is not executed by this trainer.",
+      "sourceIds": [
+        "crew-debrief"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "verify-entry",
+      "kind": "crew-report",
+      "role": "CMP",
+      "label": "Verify completed tunnel closeout",
+      "correctValue": "confirmed",
+      "instructions": "Acknowledge the entry setup below. These earlier mechanical and pressure checks are assumed completed; this trainer does not simulate them.",
+      "sourceIds": [
+        "csm-tunnel",
+        "aoh-probe-mechanics",
+        "crew-debrief"
+      ],
+      "locator": "CSM Operations F11-4-F11-6; AOH 2.13-19"
+    },
+    {
+      "id": "lm-helmet-comms",
+      "kind": "crew-report",
+      "role": "LMP",
+      "label": "Report LM helmets, gloves and communications ready",
+      "correctValue": "confirmed",
+      "instructions": "Both LM crew have helmets and gloves on. Verify basic voice communication and the VHF B backup. This is a crew report.",
+      "sourceIds": [
+        "lm-act62"
+      ],
+      "locator": "ACT-62, step 1"
+    },
+    {
+      "id": "lm-hatch-environment",
+      "kind": "crew-report",
+      "role": "CDR",
+      "label": "Verify overhead hatch and cabin configuration",
+      "correctValue": "confirmed",
+      "instructions": "Report hatch LOCKED, overhead relief/dump valve AUTO and regulators A/B CABIN. Mission/event timer setup is a reference, not a running historical clock.",
+      "sourceIds": [
+        "lm-act62"
+      ],
+      "locator": "ACT-62, step 2"
+    },
+    {
+      "id": "lm-guidance",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.guidCont",
+      "label": "GUID CONT",
+      "correctValue": "AGS",
+      "options": [
+        {
+          "value": "PGNS",
+          "label": "PGNS"
+        },
+        {
+          "value": "AGS",
+          "label": "AGS"
+        }
+      ],
+      "sourceIds": [
+        "lm-act62"
+      ],
+      "locator": "ACT-62, step 3",
+      "instructions": "Select the abort guidance system for this pre-undocking configuration. This does not run an AGS emulator."
+    },
+    {
+      "id": "lm-displays",
+      "kind": "crew-report",
+      "role": "LMP",
+      "label": "Verify the pre-undocking display selections",
+      "correctValue": "confirmed",
+      "instructions": "Report the ACT-62 display configuration. These monitor selections do not establish a spacecraft attitude or navigation solution.",
+      "sourceIds": [
+        "lm-act62"
+      ],
+      "locator": "ACT-62, step 3",
+      "referenceItems": [
+        "MODE SEL: LDG RADAR",
+        "RNG/ALT MON: RNG/RNG RT",
+        "RATE ERR MON CDR: LDG RDR/CMPTR; LMP: RNDZ RDR",
+        "ATTITUDE MON CDR: PGNS; LMP: AGS",
+        "RATE SCALE: 5 degrees/SEC"
+      ]
+    },
+    {
+      "id": "lm-att-transl",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.attTransl",
+      "label": "ATT/TRANSL",
+      "correctValue": "2 JET",
+      "options": [
+        {
+          "value": "2 JET",
+          "label": "2 JET"
+        },
+        {
+          "value": "4 JET",
+          "label": "4 JET"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": ""
+    },
+    {
+      "id": "lm-balance-couple",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.balCpl",
+      "label": "BAL CPL",
+      "correctValue": "ON",
+      "options": [
+        {
+          "value": "OFF",
+          "label": "OFF"
+        },
+        {
+          "value": "ON",
+          "label": "ON"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": ""
+    },
+    {
+      "id": "lm-deadband",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.deadband",
+      "label": "DEADBAND",
+      "correctValue": "MAX",
+      "options": [
+        {
+          "value": "MIN",
+          "label": "MIN"
+        },
+        {
+          "value": "MAX",
+          "label": "MAX"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": ""
+    },
+    {
+      "id": "lm-pulse-roll",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.attitude.roll",
+      "label": "ATTITUDE CONTROL ROLL",
+      "correctValue": "PULSE",
+      "options": [
+        {
+          "value": "MODE CONT",
+          "label": "MODE CONT"
+        },
+        {
+          "value": "PULSE",
+          "label": "PULSE"
+        },
+        {
+          "value": "DIR",
+          "label": "DIR"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "All three independent axis switches must be checked."
+    },
+    {
+      "id": "lm-pulse-pitch",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.attitude.pitch",
+      "label": "ATTITUDE CONTROL PITCH",
+      "correctValue": "PULSE",
+      "options": [
+        {
+          "value": "MODE CONT",
+          "label": "MODE CONT"
+        },
+        {
+          "value": "PULSE",
+          "label": "PULSE"
+        },
+        {
+          "value": "DIR",
+          "label": "DIR"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "All three independent axis switches must be checked."
+    },
+    {
+      "id": "lm-pulse-yaw",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.attitude.yaw",
+      "label": "ATTITUDE CONTROL YAW",
+      "correctValue": "PULSE",
+      "options": [
+        {
+          "value": "MODE CONT",
+          "label": "MODE CONT"
+        },
+        {
+          "value": "PULSE",
+          "label": "PULSE"
+        },
+        {
+          "value": "DIR",
+          "label": "DIR"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "All three independent axis switches must be checked."
+    },
+    {
+      "id": "lm-hold-pgns",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.mode.pgns",
+      "label": "MODE CONT PGNS",
+      "correctValue": "ATT HOLD",
+      "options": [
+        {
+          "value": "AUTO",
+          "label": "AUTO"
+        },
+        {
+          "value": "ATT HOLD",
+          "label": "ATT HOLD"
+        },
+        {
+          "value": "OFF",
+          "label": "OFF"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "The checklist calls for BOTH guidance-mode switches at ATT HOLD."
+    },
+    {
+      "id": "lm-hold-ags",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.mode.ags",
+      "label": "MODE CONT AGS",
+      "correctValue": "ATT HOLD",
+      "options": [
+        {
+          "value": "AUTO",
+          "label": "AUTO"
+        },
+        {
+          "value": "ATT HOLD",
+          "label": "ATT HOLD"
+        },
+        {
+          "value": "OFF",
+          "label": "OFF"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "The checklist calls for BOTH guidance-mode switches at ATT HOLD."
+    },
+    {
+      "id": "lm-ttca-cdr",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.ttca.cdr",
+      "label": "TTCA CDR",
+      "correctValue": "JETS",
+      "options": [
+        {
+          "value": "JETS",
+          "label": "JETS"
+        },
+        {
+          "value": "THROTTLE",
+          "label": "THROTTLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "The checklist abbreviates this setting JET; the controller selector is JETS/THROTTLE."
+    },
+    {
+      "id": "lm-ttca-lmp",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.ttca.lmp",
+      "label": "TTCA LMP",
+      "correctValue": "JETS",
+      "options": [
+        {
+          "value": "JETS",
+          "label": "JETS"
+        },
+        {
+          "value": "THROTTLE",
+          "label": "THROTTLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "The checklist abbreviates this setting JET; the controller selector is JETS/THROTTLE."
+    },
+    {
+      "id": "lm-aca-disable-cdr",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.aca4Jet.cdr",
+      "label": "ACA/4 JET CDR",
+      "correctValue": "DISABLE",
+      "options": [
+        {
+          "value": "ENABLE",
+          "label": "ENABLE"
+        },
+        {
+          "value": "DISABLE",
+          "label": "DISABLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "This is the separate 4-jet enable path; do not interpret DISABLE as all attitude control disabled."
+    },
+    {
+      "id": "lm-aca-disable-lmp",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.aca4Jet.lmp",
+      "label": "ACA/4 JET LMP",
+      "correctValue": "DISABLE",
+      "options": [
+        {
+          "value": "ENABLE",
+          "label": "ENABLE"
+        },
+        {
+          "value": "DISABLE",
+          "label": "DISABLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": "This is the separate 4-jet enable path; do not interpret DISABLE as all attitude control disabled."
+    },
+    {
+      "id": "lm-translation-cdr",
+      "kind": "select",
+      "role": "CDR",
+      "controlId": "lm.ttcaTransl.cdr",
+      "label": "TTCA/TRANSL CDR",
+      "correctValue": "ENABLE",
+      "options": [
+        {
+          "value": "ENABLE",
+          "label": "ENABLE"
+        },
+        {
+          "value": "DISABLE",
+          "label": "DISABLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": ""
+    },
+    {
+      "id": "lm-translation-lmp",
+      "kind": "select",
+      "role": "LMP",
+      "controlId": "lm.ttcaTransl.lmp",
+      "label": "TTCA/TRANSL LMP",
+      "correctValue": "DISABLE",
+      "options": [
+        {
+          "value": "ENABLE",
+          "label": "ENABLE"
+        },
+        {
+          "value": "DISABLE",
+          "label": "DISABLE"
+        }
+      ],
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, step 4",
+      "instructions": ""
+    },
+    {
+      "id": "lm-remaining-reference",
+      "kind": "crew-report",
+      "role": "LMP",
+      "label": "Report the remaining preparation items checked",
+      "correctValue": "confirmed",
+      "instructions": "Report rendezvous radar SLEW, AOT heater breaker closed, camera mounted, COAS installed, and circuit breakers verified against the original charts. These are crew reports.",
+      "sourceIds": [
+        "lm-act63"
+      ],
+      "locator": "ACT-63, remaining items"
+    },
+    {
+      "id": "csm-undocking-ready",
+      "kind": "crew-report",
+      "role": "CMP",
+      "label": "Report Columbia configured for undocking",
+      "correctValue": "confirmed",
+      "instructions": "Report hand controllers adjusted/armed, THC power ON, GDC aligned and SCS/DAP/BMAG configuration checked using the flown Solo Book. CMC operations are not executed here.",
+      "sourceIds": [
+        "cmp-66a"
+      ],
+      "locator": "CMP Solo Book 66A",
+      "referenceItems": [
+        "SC CONT: SCS",
+        "CSM-only DAP reference: 11102 / 11111, V46",
+        "BMAGS: ATT 1 / RATE 2",
+        "16 mm camera: START"
+      ]
+    },
+    {
+      "id": "csm-probe-cb-mna",
+      "kind": "select",
+      "role": "CMP",
+      "controlId": "csm.dockProbeCb.mna",
+      "label": "DOCK PROBE MNA circuit breaker",
+      "correctValue": "IN",
+      "options": [
+        {
+          "value": "OUT",
+          "label": "OUT"
+        },
+        {
+          "value": "IN",
+          "label": "IN"
+        }
+      ],
+      "sourceIds": [
+        "cmp-66a",
+        "aoh-probe-switch"
+      ],
+      "locator": "CMP Solo Book 66A; AOH docking system locator 3-47/3-48",
+      "instructions": "Both docking-probe circuit breakers are on CSM panel 8."
+    },
+    {
+      "id": "csm-probe-cb-mnb",
+      "kind": "select",
+      "role": "CMP",
+      "controlId": "csm.dockProbeCb.mnb",
+      "label": "DOCK PROBE MNB circuit breaker",
+      "correctValue": "IN",
+      "options": [
+        {
+          "value": "OUT",
+          "label": "OUT"
+        },
+        {
+          "value": "IN",
+          "label": "IN"
+        }
+      ],
+      "sourceIds": [
+        "cmp-66a",
+        "aoh-probe-switch"
+      ],
+      "locator": "CMP Solo Book 66A; AOH docking system locator 3-47/3-48",
+      "instructions": "Both docking-probe circuit breakers are on CSM panel 8."
+    },
+    {
+      "id": "lm-ready-call",
+      "kind": "crew-report",
+      "role": "CDR",
+      "label": "Report Eagle ready to Mike",
+      "correctValue": "confirmed",
+      "instructions": "Confirm the LM checklist is ready before Collins operates the probe control. This represents the crew readiness exchange, not an AI-generated radio response.",
+      "sourceIds": [
+        "actual-undock"
+      ],
+      "locator": "Onboard transcript, 100:10:44-100:11:51"
+    },
+    {
+      "id": "csm-release-probe",
+      "kind": "momentary",
+      "role": "CMP",
+      "controlId": "csm.dockingProbe",
+      "label": "DOCKING PROBE - EXTD/REL",
+      "correctValue": "EXTD/REL",
+      "effect": "release",
+      "sourceIds": [
+        "aoh-probe-switch",
+        "actual-undock"
+      ],
+      "locator": "CSM panel 2, H, E-28; AOH 3-99",
+      "instructions": "Collins operates Columbia's probe extend/release control. In this discrete procedure model it releases the modeled connection. No probe timing, flight motion or sensor indication is simulated."
+    },
+    {
+      "id": "csm-probe-off",
+      "kind": "select",
+      "role": "CMP",
+      "controlId": "csm.dockingProbe",
+      "label": "DOCKING PROBE",
+      "correctValue": "OFF",
+      "options": [
+        {
+          "value": "EXTD/REL",
+          "label": "EXTD/REL"
+        },
+        {
+          "value": "OFF",
+          "label": "OFF"
+        },
+        {
+          "value": "RETRACT",
+          "label": "RETRACT"
+        }
+      ],
+      "sourceIds": [
+        "aoh-probe-switch"
+      ],
+      "locator": "CSM panel 2, H, E-28; AOH 3-99",
+      "instructions": "Return the control to OFF after the modeled release. Exact Apollo 11 hold duration is not established by the sources used here."
+    },
+    {
+      "id": "confirm-release",
+      "kind": "crew-report",
+      "role": "LMP",
+      "label": "Report separation visually confirmed",
+      "correctValue": "confirmed",
+      "instructions": "Record a crew observation of release. The expanded 3D diagram shows the disconnected arrangement; it does not measure separation distance or velocity.",
+      "sourceIds": [
+        "actual-undock"
+      ],
+      "locator": "Onboard transcript, 100:12:03-100:12:19"
+    },
+    {
+      "id": "inspection-handoff",
+      "kind": "crew-report",
+      "role": "CMP",
+      "label": "Hand off to the inspection chapter",
+      "correctValue": "confirmed",
+      "instructions": "Next came relative-motion management and LM inspection, then the separate CSM separation maneuver, LM alignment, DOI and P63 preparation. Do not skip directly to powered descent.",
+      "sourceIds": [
+        "flightplan-367",
+        "actual-undock"
+      ],
+      "locator": "Flight Plan 3-67; onboard transcript 100:12:59 onward"
+    }
+  ],
+  "limitations": [
+    "This is a playable selected procedure, not every Apollo 11 checklist item or a flight-qualified checklist replica.",
+    "Station assignment in the trainer routes controls to CDR, LMP or CMP; where the LM checklist does not identify a hand, the route is a teaching choice.",
+    "Control positions are modeled user selections. Crew reports acknowledge assumed tasks; they are not pressure, switch or latch sensor telemetry.",
+    "The release transition is a discrete training abstraction. There is no verified release duration, spring impulse, relative trajectory or achieved inspection attitude.",
+    "The two real probe indicators are contextual striped/gray flags, not a generic green undocked light; this trainer does not fabricate their readings.",
+    "Apollo 11 used the established release procedure. Do not substitute the later soft-undocking sequence that Armstrong described as untested before Apollo 11.",
+    "Further maneuvers remain unavailable until their actual guidance, controls and vehicle-state integration are implemented."
+  ],
+  "chapterOrder": [
+    {
+      "id": "preparation",
+      "title": "Docked preparation",
+      "implemented": true
+    },
+    {
+      "id": "undocking",
+      "title": "Release Eagle",
+      "implemented": true
+    },
+    {
+      "id": "inspection",
+      "title": "Relative motion and LM inspection",
+      "implemented": false
+    },
+    {
+      "id": "csm-separation",
+      "title": "Columbia separation maneuver",
+      "implemented": false
+    },
+    {
+      "id": "alignment",
+      "title": "LM alignment and DOI preparation",
+      "implemented": false
+    },
+    {
+      "id": "doi",
+      "title": "Eagle descent orbit insertion",
+      "implemented": false
+    },
+    {
+      "id": "p63-preparation",
+      "title": "P63 selection and ignition review",
+      "implemented": false
+    },
+    {
+      "id": "p63",
+      "title": "Powered descent braking",
+      "implemented": false
+    },
+    {
+      "id": "p64",
+      "title": "Approach and landing-area assessment",
+      "implemented": false
+    },
+    {
+      "id": "p66",
+      "title": "Final landing control",
+      "implemented": false
+    },
+    {
+      "id": "landing",
+      "title": "Contact and engine shutdown",
+      "implemented": false
+    },
+    {
+      "id": "surface",
+      "title": "Surface operations",
+      "implemented": false
+    },
+    {
+      "id": "ascent",
+      "title": "Ascent and rendezvous",
+      "implemented": false
+    },
+    {
+      "id": "return",
+      "title": "Return to Earth",
+      "implemented": false
+    }
+  ]
+}

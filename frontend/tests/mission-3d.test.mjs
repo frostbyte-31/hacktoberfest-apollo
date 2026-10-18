@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildSpacecraftMesh } from '../dist/spacecraft-mesh.mjs';
-import { buildMissionPresentation, buildDockedCsmMesh, validVector } from '../dist/mission-3d.mjs';
+import { buildMissionPresentation, buildDockedCsmMesh, createMissionRenderer, validVector } from '../dist/mission-3d.mjs';
 import { transformPoint } from '../dist/spacecraft-3d.mjs';
 
 const input={available:true,mode:'verified-recorded-execution',lunarRadiusM:1738090,
@@ -102,4 +102,73 @@ test('docked Columbia diagram has distinct capsule, service equipment, roof coll
   const bellColors=asset.colors.slice(bell.firstVertex*3,(bell.firstVertex+bell.vertexCount)*3);
   assert.ok(Math.min(...bellColors)<.04,'Engine interior must be dark and distinct from silver CM/SM');
   assert.match(asset.reference.scope,/not a measured physical/);
+});
+
+test('interactive procedure illustration exposes no orbital or separation telemetry',()=>{
+  const scene=buildMissionPresentation({...input,mode:'procedure-illustration',dockingState:'released'});
+  assert.equal(scene.mode,'procedure-illustration');assert.equal(scene.dockingState,'released');
+  assert.equal(scene.positionM,null);assert.equal(scene.velocityMps,null);assert.equal(scene.quaternion,null);
+  assert.equal(scene.velocityArrow,null);assert.deepEqual(scene.path,[]);assert.deepEqual(scene.trajectoryM,[]);
+  assert.equal(scene.metadata.spacecraftMetresPerModelUnit,null);
+  assert.match(scene.metadata.frame,/no observed coordinate frame/);
+  assert.match(scene.metadata.scale,/no physical separation scale/);
+  assert.match(scene.metadata.docking,/Connection released/);
+  assert.match(scene.metadata.docking,/diagram spacing/);
+  assert.match(scene.metadata.illustration,/no historical position, velocity, attitude or separation motion/);
+});
+
+test('release changes only the CSM exploded-diagram placement and requires the explicit procedure state',()=>{
+  const request={mode:'procedure-illustration',dockingState:'docked'};
+  const before=JSON.stringify(request),secured=buildMissionPresentation(request);
+  assert.equal(JSON.stringify(request),before,'Presentation must not change the procedure state');
+  const released=buildMissionPresentation({...request,dockingState:'released'});
+  assert.deepEqual(released.craftModel,secured.craftModel,'The LM diagram stays fixed');
+  assert.notDeepEqual(released.csmModel,secured.csmModel,'The released connection is visible in the assembly diagram');
+  const csmPoint=transformPoint(released.csmModel,[1.58,0,0]);
+  const lmPoint=transformPoint(released.craftModel,[1.58,0,0]);
+  assert.ok(csmPoint[0]>lmPoint[0]);close(csmPoint[1],lmPoint[1]);close(csmPoint[2],lmPoint[2]);
+  for(const dockingState of[undefined,'approaching','separated',true])assert.equal(buildMissionPresentation({...request,dockingState}).dockingState,'docked','Unknown states must not show a released connection');
+  const physical=buildMissionPresentation({...input,dockingState:'released'});
+  assert.equal(physical.csmModel,null);assert.equal(physical.dockingState,null,'Procedure controls must not alter retained physics');
+});
+
+test('procedure assembly spacing is a static two-state view with no clock-based motion',()=>{
+  const state={mode:'procedure-illustration',dockingState:'released'},first=buildMissionPresentation(state);
+  for(const t of[0,.5,10000]){
+    const next=buildMissionPresentation({...input,...state,t,elapsedSeconds:t,separationVelocityMps:100});
+    assert.deepEqual(next.craftModel,first.craftModel);assert.deepEqual(next.csmModel,first.csmModel);
+    assert.deepEqual(next.csmDiagramOffset,first.csmDiagramOffset);assert.deepEqual(next.path,[]);
+  }
+});
+
+test('Canvas fallback presents both procedure connection states without requiring a physical quaternion',()=>{
+  let faces=0;const coordinates=[],listeners=new Map();
+  const context={setTransform(){},fillRect(){},createRadialGradient(){return{addColorStop(){}};},beginPath(){},arc(x,y,r){coordinates.push(x,y,r);},closePath(){},fill(){faces++;},stroke(){},moveTo(x,y){coordinates.push(x,y);},lineTo(x,y){coordinates.push(x,y);}};
+  const canvas={clientWidth:800,clientHeight:600,width:0,height:0,getContext(kind){return kind==='2d'?context:null;},addEventListener(name,listener){listeners.set(name,listener);},removeEventListener(name){listeners.delete(name);}};
+  const renderer=createMissionRenderer(canvas);
+  assert.equal(renderer.kind,'Canvas 3D projection');
+  for(const dockingState of['docked','released']){
+    const count=faces;renderer.draw({mode:'procedure-illustration',dockingState});
+    assert.ok(faces-count>500,'Both the LM and CSM must have projected geometry');
+    assert.match(renderer.status.presentation.docking,dockingState==='released'?/Connection released/:/secured/);
+  }
+  assert.ok(coordinates.every(Number.isFinite),'The procedure diagram needs finite fallback projections');
+  renderer.dispose();assert.equal(listeners.size,0);
+});
+
+test('default docked framing fits the complete Eagle and Columbia assembly with viewport margins',()=>{
+  for(const [width,height] of [[845,600],[450,600],[350,440],[1600,800]]){
+    for(const mode of['historical-illustration','procedure-illustration']){
+      let points=[];const vertices=[];
+      const context={setTransform(){},fillRect(){},createRadialGradient(){return{addColorStop(){}};},beginPath(){points=[];},arc(){},closePath(){},fill(){if(points.length===3)vertices.push(...points);},stroke(){},moveTo(x,y){points.push([x,y]);},lineTo(x,y){points.push([x,y]);}};
+      const canvas={clientWidth:width,clientHeight:height,width:0,height:0,getContext(kind){return kind==='2d'?context:null;},addEventListener(){},removeEventListener(){}};
+      const renderer=createMissionRenderer(canvas);renderer.draw({mode,dockingState:'docked'});
+      assert.ok(vertices.length>1000,'The fit check must cover the complete projected spacecraft meshes');
+      for(const [x,y] of vertices){
+        assert.ok(x>=width*.12&&x<=width*.88,`${mode} ${width}x${height}: spacecraft exceeds horizontal margin (${x})`);
+        assert.ok(y>=height*.12&&y<=height*.88,`${mode} ${width}x${height}: spacecraft exceeds vertical margin (${y})`);
+      }
+      renderer.dispose();
+    }
+  }
 });

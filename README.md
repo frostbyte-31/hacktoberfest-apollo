@@ -2,10 +2,25 @@
 
 Start the **lunar-orbit mission starting point** with `make play`, then open
 **http://127.0.0.1:4173/play.html**. Eagle begins docked to Columbia, before
-undocking. Inspect Apollo's actual hand-controller functions and source-linked
-checklist references, then explore the chronological mission chapters.
+undocking. Select **Begin undocking checklist**, switch between the three crew
+stations, and complete 28 selected source-backed actions. Collins operates
+Columbia's **DOCKING PROBE EXTD/REL**, then returns it to **OFF**. The server
+checks role, order, selections and acknowledgments. Release is displayed as a
+labeled mechanical diagram; orbital flyaway, original AGC/AGS execution and
+physical sensors are not simulated by this trainer. The next handoff is Eagle
+inspection, before the later CSM separation maneuver and DOI.
 
-Select **Verified propulsion execution** to play the new backend's actual
+For the playable checklist, no native runtime preparation is needed:
+
+```sh
+python3 -B frontend/serve.py --port 4173
+```
+
+[How to play, implemented API and next integration](docs/FRONTEND_UNDOCKING.md);
+[undocking source research](docs/FRONTEND_UNDOCKING_RESEARCH.md);
+[tests and screenshots](docs/frontend-undocking-evidence/README.md).
+
+Select **Separate recorded propulsion experiment** to play the new backend's actual
 retained 3D position, velocity and fixed attitude, original DSKY, engine commands,
 thrust, fuel and PIPA/navigation feedback. Four causal cases are available.
 This is a bounded synthetic diagnostic, not a historical trajectory or complete
@@ -15,7 +30,7 @@ See [mission start and integration](docs/FRONTEND_MISSION_START.md),
 [Apollo controls and chronology sources](docs/FRONTEND_APOLLO_OPERATIONS.md), and
 [verification](docs/frontend-mission-start-evidence/README.md).
 
-For this recorded experience without native dependencies:
+For the recorded experience with interactive controls disabled:
 
 ```sh
 python3 -B frontend/serve.py --replay-only --port 4173

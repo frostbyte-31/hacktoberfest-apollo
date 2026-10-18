@@ -4,8 +4,12 @@ The new primary `/play.html` adds a source-linked historical lunar-orbit referen
 and sealed Phase 12 recorded propulsion adapter. Its exact fields, clocks, source
 pointers, capability gates, four causal cases and missing cockpit/mission APIs
 are specified in [the current mission integration contract](FRONTEND_MISSION_START.md).
-No new live HTTP endpoint was added. The Phase 10 and bounded-attitude contracts
-below remain implemented and unchanged.
+The subsequent undocking increment adds three implemented **procedure-training**
+routes: `GET /api/procedure/status`, `POST /api/procedure/start` and
+`POST /api/procedure/action`. These own modeled checklist/release state and do
+not expose AGC, sensor or flight capability. Their exact contract is in
+[FRONTEND_UNDOCKING.md](FRONTEND_UNDOCKING.md). The Phase 10 and bounded-attitude
+contracts below remain implemented and unchanged.
 
 This contract distinguishes the **implemented interfaces** found in the repository from **proposed future integration work**. The Phase 10 mission experience consumes verified recordings. The separate existing live service supports bounded yaw/pitch attitude experiments; it does not expose live P63 mission guidance, descent, landing, multiplayer or an AI crew.
 

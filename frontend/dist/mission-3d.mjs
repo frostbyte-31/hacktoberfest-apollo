@@ -19,45 +19,58 @@ const translated = (position,scale=1) => [scale,0,0,0,0,scale,0,0,0,0,scale,0,..
 
 /** Pure scene conversion. Physical samples are copied; only rendering units change. */
 export function buildMissionPresentation(state={},view='vehicle') {
-  const illustration=state.mode==='historical-illustration';
+  const procedure=state.mode==='procedure-illustration';
+  const illustration=state.mode==='historical-illustration'||procedure;
   const usable=state.available===true&&validVector(state.positionM)&&Math.hypot(...state.positionM)>0&&validQuaternion(state.quaternion);
-  const mode=illustration?'historical-illustration':usable?'verified-telemetry':'unavailable';
+  const mode=procedure?'procedure-illustration':illustration?'historical-illustration':usable?'verified-telemetry':'unavailable';
   const radiusM=Number.isFinite(state.lunarRadiusM)&&state.lunarRadiusM>0?state.lunarRadiusM:REFERENCE_RADIUS_M;
-  const positionM=illustration?[radiusM*1.12,0,0]:usable?state.positionM.slice():null;
-  const quaternion=illustration?IDENTITY.slice():usable?state.quaternion.slice():null;
+  // A procedure's visual composition is not a measured orbital state. Keep its
+  // anchor private to scene construction and expose no invented r/v/quaternion.
+  const displayAnchorM=illustration?[radiusM*1.12,0,0]:usable?state.positionM.slice():null;
+  const positionM=procedure?null:displayAnchorM;
+  const displayQuaternion=illustration?IDENTITY.slice():usable?state.quaternion.slice():null;
+  const quaternion=procedure?null:displayQuaternion;
   const velocityMps=usable&&!illustration&&validVector(state.velocityMps)?state.velocityMps.slice():null;
   const trajectoryM=usable&&!illustration&&Array.isArray(state.trajectoryM)?state.trajectoryM.filter(validVector).map(point=>point.slice()):[];
-  const radial=positionM?unit(positionM):[1,0,0];
+  const radial=displayAnchorM?unit(displayAnchorM):[1,0,0];
   const along=velocityMps||[0,0,1];
   const tangentCandidate=add(along,mul(radial,-dot(along,radial)));
   const tangent=Math.hypot(...tangentCandidate)>1e-8?unit(tangentCandidate):unit(cross(Math.abs(radial[1])<.8?[0,1,0]:[0,0,1],radial));
   const normal=unit(cross(radial,tangent));
-  const orbit=view==='orbit'||!positionM;
+  const orbit=view==='orbit'||!displayAnchorM;
   // Global view is uniform in distance. Vehicle view uses metres/5000 and an
   // enlarged display model so the LM remains readable above a real-radius sphere.
   const metresPerUnit=orbit?radiusM:5000;
-  const origin=orbit||!positionM?[0,0,0]:positionM;
+  const origin=orbit||!displayAnchorM?[0,0,0]:displayAnchorM;
   const displayPoint=point=>point.map((value,i)=>(value-origin[i])/metresPerUnit);
-  const spacecraftPosition=positionM?displayPoint(positionM):null;
+  const spacecraftPosition=displayAnchorM?displayPoint(displayAnchorM):null;
   // Keep the enlarged diagnostic model clear of the real-radius Moon. The
   // separate historical docked composition retains its own illustration scale.
   const modelScale=orbit?.035:illustration?1:.45;
-  const craftModel=quaternion?multiplyMatrices(translated(spacecraftPosition,modelScale),quaternionMatrix(quaternion)):null;
+  const craftModel=displayQuaternion?multiplyMatrices(translated(spacecraftPosition,modelScale),quaternionMatrix(displayQuaternion)):null;
+  // This is a two-state exploded assembly diagram, never a separation dynamics
+  // model. No time, velocity, thrust, distance or simulated motion is involved.
+  const dockingState=procedure&&state.dockingState==='released'?'released':'docked';
+  const exploded=procedure&&dockingState==='released';
+  const csmDiagramOffset=exploded?[2.1,0,0]:[0,0,0];
+  const csmModel=illustration&&craftModel?multiplyMatrices(craftModel,translated(csmDiagramOffset)):null;
   const velocityDirection=velocityMps&&Math.hypot(...velocityMps)>0?unit(velocityMps):null;
   const velocityArrow=spacecraftPosition&&velocityDirection?[spacecraftPosition,add(spacecraftPosition,mul(velocityDirection,orbit?.22:3.25))]:null;
-  return {mode,view:orbit?'orbit':'vehicle',positionM,velocityMps,quaternion,trajectoryM,
+  return {mode,view:orbit?'orbit':'vehicle',positionM,velocityMps,quaternion,displayQuaternion,trajectoryM,
     radiusM,metresPerUnit,origin:origin.slice(),radial,tangent,normal,
-    spacecraftPosition,craftModel,moonCenter:displayPoint([0,0,0]),moonRadius:radiusM/metresPerUnit,
+    spacecraftPosition,craftModel,csmModel,dockingState:procedure?dockingState:null,csmDiagramOffset,
+    moonCenter:displayPoint([0,0,0]),moonRadius:radiusM/metresPerUnit,
     path:trajectoryM.map(displayPoint),velocityArrow,
     metadata:{
-      mode,frame:'Moon-centered basic REF; supplied body-to-REF quaternion',
-      geometry:illustration?'Spherical Moon reference; schematic docked LM and CSM; geometry and position are illustrative':'Spherical Moon reference; illustrative Lunar Module mesh',
-      scale:`1 scene unit = ${metresPerUnit} m; Lunar Module enlarged for visibility`,
-      spacecraftMetresPerModelUnit:modelScale*metresPerUnit,
+      mode,frame:procedure?'Mechanical procedure diagram; no observed coordinate frame':'Moon-centered basic REF; supplied body-to-REF quaternion',
+      geometry:procedure?'Schematic Eagle and Columbia docking assembly; geometry, orbital composition and inspection spacing are illustrative':illustration?'Spherical Moon reference; schematic docked LM and CSM; geometry and position are illustrative':'Spherical Moon reference; illustrative Lunar Module mesh',
+      scale:procedure?'Diagram spacing only; no physical separation scale or measured orbital position':`1 scene unit = ${metresPerUnit} m; Lunar Module enlarged for visibility`,
+      spacecraftMetresPerModelUnit:procedure?null:modelScale*metresPerUnit,
       trajectory:'Retained sample positions only; no interpolation or propagation',
       velocity:'Arrow shows direction only; its display length does not encode speed',
       interaction:'Camera orbit and zoom only; these do not control the spacecraft',
-      illustration:illustration?'Static orbital composition; no historical position, velocity or attitude is asserted':null,
+      docking:procedure?(exploded?'Connection released; static exploded assembly view. The gap is diagram spacing, not spacecraft separation telemetry.':'Docking connection secured; schematic assembly view.'):null,
+      illustration:procedure?'Static mechanical procedure illustration; no historical position, velocity, attitude or separation motion is asserted':illustration?'Static orbital composition; no historical position, velocity or attitude is asserted':null,
     }};
 }
 
@@ -187,7 +200,7 @@ function createWebGLBackend(gl) {
     gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.useProgram(program);gl.uniformMatrix4fv(location.uViewProjection,false,viewProjection);
     drawGeometry(moon,gl.TRIANGLES,translated(scene.moonCenter,scene.moonRadius),0,1);
     if(scene.path.length>1){updateLines(scene.path,[.32,.65,.63]);drawGeometry(moving,gl.LINE_STRIP,identity,1,0,.8);}
-    if(scene.craftModel){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,1);drawGeometry(scene.mode==='historical-illustration'?dockedLunar:solid,gl.TRIANGLES,scene.craftModel);if(scene.mode==='historical-illustration')drawGeometry(dockedCsm,gl.TRIANGLES,scene.craftModel);gl.disable(gl.POLYGON_OFFSET_FILL);drawGeometry(edges,gl.LINES,scene.craftModel,1,0,.5);}
+    if(scene.craftModel){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,1);drawGeometry(scene.csmModel?dockedLunar:solid,gl.TRIANGLES,scene.craftModel);if(scene.csmModel)drawGeometry(dockedCsm,gl.TRIANGLES,scene.csmModel);gl.disable(gl.POLYGON_OFFSET_FILL);drawGeometry(edges,gl.LINES,scene.craftModel,1,0,.5);}
     if(scene.velocityArrow){
       const[a,b]=scene.velocityArrow,dir=unit(add(b,mul(a,-1))),side=unit(cross(dir,Math.abs(dir[1])<.8?[0,1,0]:[0,0,1])),length=scene.view==='orbit'?.035:.35;
       const wings=[add(b,add(mul(dir,-length),mul(side,length*.45))),add(b,add(mul(dir,-length),mul(side,-length*.45)))];
@@ -198,7 +211,7 @@ function createWebGLBackend(gl) {
 
 function createCanvasBackend(ctx) {
   const polygons=[];
-  for(const [asset,dockedOnly,standaloneOnly] of [[mesh,false,true],[dockedLm,true,false],[csm,true,false]])for(let i=0;i<asset.positions.length;i+=9)polygons.push({vertices:[asset.positions.slice(i,i+3),asset.positions.slice(i+3,i+6),asset.positions.slice(i+6,i+9)],index:i,asset,dockedOnly,standaloneOnly});
+  for(const [asset,dockedOnly,standaloneOnly,csmOnly] of [[mesh,false,true,false],[dockedLm,true,false,false],[csm,true,false,true]])for(let i=0;i<asset.positions.length;i+=9)polygons.push({vertices:[asset.positions.slice(i,i+3),asset.positions.slice(i+3,i+6),asset.positions.slice(i+6,i+9)],index:i,asset,dockedOnly,standaloneOnly,csmOnly});
   return{kind:'Canvas 3D projection',draw({scene,viewProjection,width,height,dpr,eye}){
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle='#05080b';ctx.fillRect(0,0,width,height);
     const project=(point,matrix=viewProjection)=>{const p=transformPoint(matrix,point);return p[3]>.001?[width*(p[0]/p[3]+1)/2,height*(1-p[1]/p[3])/2,p[2]/p[3]]:null;};
@@ -213,10 +226,10 @@ function createCanvasBackend(ctx) {
     ctx.strokeStyle='#609d97';ctx.lineWidth=1.2;ctx.beginPath();let started=false;
     for(const point of scene.path){const p=project(point);if(!p){started=false;continue;}if(started)ctx.lineTo(p[0],p[1]);else ctx.moveTo(p[0],p[1]);started=true;}ctx.stroke();
     if(scene.craftModel){
-      const matrix=multiplyMatrices(viewProjection,scene.craftModel);
-      const faces=polygons.filter(polygon=>(!polygon.dockedOnly||scene.mode==='historical-illustration')&&(!polygon.standaloneOnly||scene.mode!=='historical-illustration')).map(polygon=>({...polygon,points:polygon.vertices.map(vertex=>project(vertex,matrix))})).filter(polygon=>polygon.points.every(Boolean)).sort((a,b)=>b.points.reduce((sum,p)=>sum+p[2],0)-a.points.reduce((sum,p)=>sum+p[2],0));
+      const matrix=multiplyMatrices(viewProjection,scene.craftModel),csmMatrix=scene.csmModel?multiplyMatrices(viewProjection,scene.csmModel):null;
+      const faces=polygons.filter(polygon=>(!polygon.dockedOnly||scene.csmModel)&&(!polygon.standaloneOnly||!scene.csmModel)).map(polygon=>({...polygon,points:polygon.vertices.map(vertex=>project(vertex,polygon.csmOnly?csmMatrix:matrix))})).filter(polygon=>polygon.points.every(Boolean)).sort((a,b)=>b.points.reduce((sum,p)=>sum+p[2],0)-a.points.reduce((sum,p)=>sum+p[2],0));
       for(const face of faces){
-        const normal=transformPoint(quaternionMatrix(scene.quaternion),Array.from(face.asset.normals.slice(face.index,face.index+3))).slice(0,3),light=.35+Math.max(0,dot(normal,unit([.45,-.65,.60])))*.8;
+        const normal=transformPoint(quaternionMatrix(scene.displayQuaternion),Array.from(face.asset.normals.slice(face.index,face.index+3))).slice(0,3),light=.35+Math.max(0,dot(normal,unit([.45,-.65,.60])))*.8;
         ctx.fillStyle=`rgb(${Array.from(face.asset.colors.slice(face.index,face.index+3)).map(value=>Math.round(Math.min(1,value*light)*255)).join(',')})`;ctx.beginPath();face.points.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.fill();
       }
     }
@@ -224,7 +237,12 @@ function createCanvasBackend(ctx) {
   },dispose(){}};
 }
 
-/** Camera movement changes presentation only. The host supplies every sample. */
+/**
+ * Camera movement changes presentation only. The host supplies every sample.
+ * Procedure rehearsal: draw({mode:'procedure-illustration',
+ * dockingState:'docked'|'released'}). The released view is a static exploded
+ * assembly diagram; it does not supply or advance a physical vehicle state.
+ */
 export function createMissionRenderer(canvas) {
   let azimuth=.45,elevation=.24,distance=8.1,view='vehicle',width=1,height=1,dpr=1,disposed=false,contextLost=false,problem=null,last={available:false},scene=buildMissionPresentation(last,view),fallback=null,backend=null,gl=null,overviewBasis=null,previousMode=null;
   try{gl=canvas.getContext('webgl',{alpha:false,antialias:true,powerPreference:'low-power'});if(gl)backend=createWebGLBackend(gl);}catch(error){problem=error.message;}
@@ -237,13 +255,16 @@ export function createMissionRenderer(canvas) {
   function resize(){if(disposed)return;const target=surface();width=Math.max(1,target.clientWidth||canvas.clientWidth||640);height=Math.max(1,target.clientHeight||canvas.clientHeight||480);dpr=Math.min(globalThis.devicePixelRatio||1,2);const w=Math.round(width*dpr),h=Math.round(height*dpr);if(target.width!==w)target.width=w;if(target.height!==h)target.height=h;}
   function draw(state=last){
     if(disposed)return;last=state;scene=buildMissionPresentation(state,view);resize();if(contextLost)return;
-    const orbit=scene.view==='orbit',cameraDistance=orbit?distance*.46:distance*(scene.mode==='historical-illustration'?2.0:1);
+    const illustration=scene.mode==='historical-illustration'||scene.mode==='procedure-illustration';
+    // The docked assembly includes Columbia's full service module and engine;
+    // leave headroom for both spacecraft rather than framing only Eagle.
+    const orbit=scene.view==='orbit',cameraDistance=orbit?distance*.46:distance*(illustration?(scene.dockingState==='released'?2.35:2.65):1);
     if(previousMode!==scene.mode){overviewBasis=null;previousMode=scene.mode;}
     // Freeze overview camera axes at the first sample. Advancing telemetry must
     // move the vehicle in REF, rather than quietly orbit the camera with it.
     if(orbit&&!overviewBasis)overviewBasis={radial:scene.radial.slice(),tangent:scene.tangent.slice(),normal:scene.normal.slice()};
     const basis=orbit?overviewBasis:scene;
-    const focus=orbit?[0,0,0]:scene.mode==='historical-illustration'?add(scene.spacecraftPosition,mul(scene.radial,2.5)):scene.spacecraftPosition||[0,0,0];
+    const focus=orbit?[0,0,0]:illustration?add(scene.spacecraftPosition,mul(scene.radial,scene.dockingState==='released'?3.4:2.5)):scene.spacecraftPosition||[0,0,0];
     const angle=orbit?Math.max(-1.35,Math.min(1.35,.55+elevation*.5)):elevation;
     const offset=add(add(mul(basis.tangent,Math.sin(azimuth)*Math.cos(angle)*cameraDistance),mul(basis.normal,Math.cos(azimuth)*Math.cos(angle)*cameraDistance)),mul(basis.radial,Math.sin(angle)*cameraDistance));
     const eye=add(focus,offset),far=orbit?20:scene.moonRadius*4+cameraDistance;

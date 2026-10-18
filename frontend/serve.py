@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Loopback frontend and bounded live AGC inputs; no descent interface."""
+"""Loopback frontend, bounded native attitude inputs and checklist training."""
 import argparse
 import errno
 from functools import partial
@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.dont_write_bytecode = True
 from backend.control_service import ControlError, ControlService
+from backend.procedure_service import ProcedureService
 
 
 class ApolloHandler(SimpleHTTPRequestHandler):
@@ -56,9 +57,13 @@ class ApolloHandler(SimpleHTTPRequestHandler):
                 self._json(200, {'liveEnabled': self.server.live_enabled,
                                  'token': self.server.control_token if self.server.live_enabled else None,
                                  'axes': ['yaw', 'pitch'], 'deflectionCounts': 20,
-                                 'pulseLeaseSeconds': .5, 'scope': 'Bounded attitude only; no powered descent.'})
+                                 'pulseLeaseSeconds': .5, 'scope': 'Bounded attitude only; no powered descent.',
+                                 'procedureEnabled': self.server.procedure_enabled,
+                                 'procedureCapabilities': self.server.procedures.capabilities()})
             elif path == '/api/status':
                 self._json(200, self.server.controls.snapshot())
+            elif path == '/api/procedure/status':
+                self._json(200, self.server.procedures.snapshot(enabled=self.server.live_enabled))
             elif path == '/api/record':
                 self._token()
                 self._json(200, self.server.controls.record())
@@ -111,7 +116,13 @@ class ApolloHandler(SimpleHTTPRequestHandler):
                 self._json(202, self.server.controls.command(value['sessionId'], value['sequence'], value['yaw'], value['pitch']))
             elif path == '/api/session/stop' and set(value) == {'sessionId'}:
                 self._json(202, self.server.controls.stop(value['sessionId']))
-            elif path in ('/api/session/start', '/api/input', '/api/session/stop'):
+            elif path == '/api/procedure/start' and not value:
+                self._json(202, self.server.procedures.start())
+            elif path == '/api/procedure/action' and set(value) == {
+                    'sessionId', 'sequence', 'expectedRevision', 'role', 'action', 'value'}:
+                self._json(202, self.server.procedures.action(**value))
+            elif path in ('/api/session/start', '/api/input', '/api/session/stop',
+                          '/api/procedure/start', '/api/procedure/action'):
                 raise ControlError(400, 'Request fields do not match the bounded input contract.')
             else:
                 raise ControlError(404, 'Unknown local API route.')
@@ -122,12 +133,14 @@ class ApolloHandler(SimpleHTTPRequestHandler):
         self._json(403, {'error': 'Cross-origin control is not supported.'})
 
 
-def make_server(port=4173, controls=None, replay_only=False):
+def make_server(port=4173, controls=None, replay_only=False, procedures=None):
     handler = partial(ApolloHandler, directory=str(ROOT / 'frontend/dist'))
     server = ThreadingHTTPServer(('127.0.0.1', port), handler)
     server.control_token = secrets.token_urlsafe(32)
     server.controls = controls or ControlService()
+    server.procedures = procedures if procedures is not None else ProcedureService()
     server.live_enabled = not replay_only
+    server.procedure_enabled = not replay_only and server.procedures.available
     return server
 
 
@@ -144,8 +157,11 @@ def main():
         raise
     print('Apollo 11 Guidance Labs', flush=True)
     print('Local: http://127.0.0.1:{}/'.format(server.server_port), flush=True)
+    print('Mission and checklist: http://127.0.0.1:{}/play.html'.format(server.server_port), flush=True)
     print('Pre-ignition recorded replay: http://127.0.0.1:{}/guidance.html'.format(server.server_port), flush=True)
     print('Live control: {}'.format('disabled' if args.replay_only else 'available; native startup begins on request'), flush=True)
+    print('Checklist training: {}'.format('available; no flight physics or AGC commands'
+                                        if server.procedure_enabled else 'unavailable'), flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

@@ -1,0 +1,33 @@
+{
+  "baselineHead": "f3ec19819f152361d50bfb999f7c11703194009e",
+  "baselineTrackedFiles": 7462,
+  "changedSinceHashBaseline": [
+    "README.md",
+    "docs/FRONTEND_APOLLO_OPERATIONS.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/FRONTEND_MISSION_START.md",
+    "frontend/dist/lunar-mission.mjs",
+    "frontend/dist/mission-3d.mjs",
+    "frontend/dist/play.html",
+    "frontend/serve.py",
+    "frontend/tests/mission-3d.test.mjs"
+  ],
+  "existingFilesChangedFromHead": [
+    "README.md",
+    "docs/FRONTEND_APOLLO_OPERATIONS.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/FRONTEND_MISSION_START.md",
+    "frontend/dist/lunar-mission.mjs",
+    "frontend/dist/mission-3d.mjs",
+    "frontend/dist/play.html",
+    "frontend/serve.py",
+    "frontend/tests/mission-3d.test.mjs"
+  ],
+  "missingFiles": [],
+  "unexpectedChanges": [],
+  "unchangedSinceHashBaseline": 7452,
+  "note": "Hash baseline was captured while renderer tests were already being added. Both the hash baseline and Git HEAD are checked against the explicit frontend/server/docs allowlist.",
+  "result": "PASS"
+}

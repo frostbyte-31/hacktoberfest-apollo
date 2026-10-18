@@ -1,5 +1,12 @@
 # Apollo 11 mission starting point and 3D integration
 
+The starting chapter now includes a selected **interactive undocking procedure
+trainer**, with 28 server-checked crew actions and modeled mechanical release.
+Its command contract and source/physics boundary are documented in
+[FRONTEND_UNDOCKING.md](FRONTEND_UNDOCKING.md). The historical flight remains
+unavailable; the architectural description below still applies to the reference
+and independent retained propulsion viewer.
+
 The primary experience starts with **Eagle still docked to Columbia in lunar orbit, before undocking**. It combines a source-linked historical procedure reference with a separate inspection of the newly retained propulsion/navigation execution. **A player cannot yet execute the historical flight.** The historical chapter and the backend experiment have different initial conditions and must retain separate source and clock labels.
 
 ## Application entry points

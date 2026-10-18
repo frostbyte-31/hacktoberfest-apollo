@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-18",
+  "url": "http://127.0.0.1:4173/play.html",
+  "checks": {
+    "wrongStationBlocked": true,
+    "reloadRestoredSession": true,
+    "wrongSelection": {
+      "progress": "3 / 28 ACTIONS",
+      "message": "Modeled control selected; required checklist setting not reached.",
+      "selected": "true"
+    },
+    "actions": [
+      {
+        "title": "Verify the pre-undocking display selections",
+        "crew": "LMP",
+        "progress": "5 / 28 ACTIONS"
+      },
+      {
+        "title": "ATT/TRANSL",
+        "crew": "CDR",
+        "progress": "6 / 28 ACTIONS"
+      },
+      {
+        "title": "BAL CPL",
+        "crew": "CDR",
+        "progress": "7 / 28 ACTIONS"
+      },
+      {
+        "title": "DEADBAND",
+        "crew": "CDR",
+        "progress": "8 / 28 ACTIONS"
+      },
+      {
+        "title": "ATTITUDE CONTROL ROLL",
+        "crew": "LMP",
+        "progress": "9 / 28 ACTIONS"
+      },
+      {
+        "title": "ATTITUDE CONTROL PITCH",
+        "crew": "LMP",
+        "progress": "10 / 28 ACTIONS"
+      },
+      {
+        "title": "ATTITUDE CONTROL YAW",
+        "crew": "LMP",
+        "progress": "11 / 28 ACTIONS"
+      },
+      {
+        "title": "MODE CONT PGNS",
+        "crew": "LMP",
+        "progress": "12 / 28 ACTIONS"
+      },
+      {
+        "title": "MODE CONT AGS",
+        "crew": "LMP",
+        "progress": "13 / 28 ACTIONS"
+      },
+      {
+        "title": "TTCA CDR",
+        "crew": "CDR",
+        "progress": "14 / 28 ACTIONS"
+      },
+      {
+        "title": "TTCA LMP",
+        "crew": "LMP",
+        "progress": "15 / 28 ACTIONS"
+      },
+      {
+        "title": "ACA/4 JET CDR",
+        "crew": "CDR",
+        "progress": "16 / 28 ACTIONS"
+      },
+      {
+        "title": "ACA/4 JET LMP",
+        "crew": "LMP",
+        "progress": "17 / 28 ACTIONS"
+      },
+      {
+        "title": "TTCA/TRANSL CDR",
+        "crew": "CDR",
+        "progress": "18 / 28 ACTIONS"
+      },
+      {
+        "title": "TTCA/TRANSL LMP",
+        "crew": "LMP",
+        "progress": "19 / 28 ACTIONS"
+      },
+      {
+        "title": "Report the remaining preparation items checked",
+        "crew": "LMP",
+        "progress": "20 / 28 ACTIONS"
+      },
+      {
+        "title": "Report Columbia configured for undocking",
+        "crew": "CMP",
+        "progress": "21 / 28 ACTIONS"
+      },
+      {
+        "title": "DOCK PROBE MNA circuit breaker",
+        "crew": "CMP",
+        "progress": "22 / 28 ACTIONS"
+      },
+      {
+        "title": "DOCK PROBE MNB circuit breaker",
+        "crew": "CMP",
+        "progress": "23 / 28 ACTIONS"
+      },
+      {
+        "title": "Report Eagle ready to Mike",
+        "crew": "CDR",
+        "progress": "24 / 28 ACTIONS"
+      }
+    ],
+    "earlyWrongProbePosition": {
+      "progress": "24 / 28 ACTIONS",
+      "attachment": "DOCKED / MODEL",
+      "message": "This action does not match the current checklist instruction."
+    },
+    "completion": {
+      "count": "28 / 28 ACTIONS",
+      "attachment": "RELEASED / MODEL",
+      "handoffVisible": true
+    },
+    "nextChapter": {
+      "title": "Next: relative motion and Eagle inspection",
+      "description": "The crew next managed relative motion and inspected Eagle. Armstrong first controlled LM rates and maneuvered for Collins’s inspection. The later Columbia separation burn, LM alignment and DOI follow in that order. This next flight chapter requires authoritative attitude and relative-motion integration; reviewing it does not perform the inspection.",
+      "scene": "Connection released."
+    },
+    "completedSessionRestored": "28 / 28 ACTIONS",
+    "recordedModePreserved": {
+      "mode": "VERIFIED RECORDED EXECUTION",
+      "dsky": "63"
+    },
+    "mobile": {
+      "scrollWidth": 390,
+      "viewport": 390
+    },
+    "mobileControlAccepted": "4 / 28 ACTIONS",
+    "serverRestartRecovery": {
+      "controlsLocked": true,
+      "reconnectVisible": true,
+      "message": "Missing or invalid local control token. Reconnect to the local procedure service and review its current state before another action.",
+      "reconnected": {
+        "startEnabled": true,
+        "activeCardVisible": false,
+        "message": "Source-backed procedure model. Original AGC execution, physical sensors and orbital motion are not connected to this chapter."
+      }
+    },
+    "mobileHeroBeginsSession": true,
+    "finalReady": {
+      "startEnabled": true,
+      "mobileBeginEnabled": true,
+      "activeControlsHidden": true
+    }
+  },
+  "finalConsoleWarningsAndErrors": []
+}

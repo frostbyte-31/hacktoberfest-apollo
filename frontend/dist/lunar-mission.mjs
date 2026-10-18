@@ -1,8 +1,9 @@
 import {createMissionRenderer} from './mission-3d.mjs';
-import {PropulsionTraceProvider,observedCockpitSignals,missionGate} from './propulsion-provider.mjs';
+import {PropulsionTraceProvider,observedCockpitSignals} from './propulsion-provider.mjs';
 import {validateOperations,replayMilestones,physicalStart,adjacentReplayEvent} from './mission-start-state.mjs';
 import {renderDSKY} from './dsky-view.mjs';
 import {lastAt,formatTime} from './replay.mjs';
+import {createUndockingTrainer} from './undocking-ui.mjs';
 
 const $=id=>document.getElementById(id);
 const put=(id,value)=>{$(id).textContent=value;};
@@ -11,7 +12,7 @@ const pair=(dl,label,value)=>dl.append(element('dt',label),element('dd',value));
 const number=(value,digits=1)=>Number.isFinite(value)?value.toLocaleString('en-US',{minimumFractionDigits:digits,maximumFractionDigits:digits}):'—';
 const vector=(values,digits=2)=>Array.isArray(values)?values.map(v=>number(v,digits)).join(' / '):'Unavailable';
 let operations=null,provider=null,mode='historical',caseId='connected',time=0,playing=false,selectedEventId=null,lastPaint=0,disposed=false,renderedKey=null;
-let renderer=null;
+let renderer=null,trainer=null,presentedProcedureSession=null;
 $('recorded-mode').disabled=true;
 try{renderer=createMissionRenderer($('mission-canvas'));put('renderer-kind',renderer.kind.toUpperCase());}catch(error){showError(`The spacecraft viewer could not initialize: ${error.message}`);}
 
@@ -30,18 +31,18 @@ function renderOperations(){
   $('starting-config').replaceChildren();for(const label of primary){const item=operations.chapter.startingConfiguration.find(row=>row.label===label);if(item)pair($('starting-config'),label,item.referenceValue);}
   const details=element('details'),summary=element('summary','Full pre-undocking checklist reference');details.append(summary);const dl=element('dl');
   for(const row of operations.chapter.startingConfiguration)pair(dl,row.label,`${row.referenceValue} · ${row.locator}`);details.append(dl);$('starting-config').after(details);
-  put('mission-gate',missionGate().reason);
   const labels={aca:'ACA / attitude',ttca:'TTCA / translation','pgns-mode':'PGNS mode','attitude-axis':'Axis switches',rod:'ROD / descent rate',dsky:'DSKY'};
   $('control-tabs').replaceChildren(...operations.controls.map(control=>{const button=element('button',labels[control.id]??control.label);button.type='button';button.dataset.control=control.id;button.addEventListener('click',()=>inspectControl(control.id));return button;}));
   put('software-summary',operations.softwareEntry.summary);
   $('software-entries').replaceChildren(...operations.softwareEntry.files.map(file=>{const div=element('div',undefined,'software-entry');div.append(element('strong',file.symbol),element('p',file.meaning));const link=element('a',`${file.path} ↗`);link.href=operations.sources.find(s=>s.id==='luminary-entry').url.split('/Luminary099/')[0]+'/'+file.path;link.target='_blank';link.rel='noreferrer';div.append(link);return div;}));
   previewChapter('docked-preparation');inspectControl('aca');
+  trainer?.render();applyProcedurePresentation();
 }
 function previewChapter(id){
   const chapter=operations.timeline.find(item=>item.id===id);if(!chapter)return;
   document.querySelectorAll('[data-chapter]').forEach(button=>{const active=button.dataset.chapter===id;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
   put('preview-get',chapter.getLabel);put('preview-title',chapter.title);put('preview-description',chapter.description);put('preview-crew',`${chapter.crewRole} · ${chapter.vehicle}`);sources($('preview-sources'),chapter.sourceIds);
-  announce(`Historical reference: ${chapter.title}. The starting spacecraft configuration has not changed.`);
+  announce(`Historical reference: ${chapter.title}. Previewing a chapter does not perform its maneuver.`);
 }
 function inspectControl(id){
   const control=operations.controls.find(item=>item.id===id);if(!control)return;
@@ -58,6 +59,8 @@ function setMode(next){
   $('mission-sequence').closest('aside').hidden=recorded;
   $('historical-mode').classList.toggle('active',!recorded);$('historical-mode').setAttribute('aria-pressed',String(!recorded));$('recorded-mode').classList.toggle('active',recorded);$('recorded-mode').setAttribute('aria-pressed',String(recorded));
   $('historical-station').hidden=recorded;$('historical-preview').hidden=recorded;$('recorded-station').hidden=!recorded;$('replay-console').hidden=!recorded;
+  $('procedure-jump').hidden=recorded;
+  trainer?.setVisible(!recorded);
   put('chapter-kicker',recorded?'ORIGINAL LUMINARY / BOUNDED PROPULSION':'CHAPTER 01 / LUNAR ORBIT');
   $('mission-title').replaceChildren(document.createTextNode(recorded?'From command to ':'Before the '),element('em',recorded?'motion.':'descent.'));
   put('mission-intro',recorded?'Inspect the original engine command, actual model response and feedback into original guidance. This is a retained synthetic experiment.':'Eagle is still docked to Columbia. Learn the actual controls, then follow the mission in the order the crew did.');
@@ -67,7 +70,34 @@ function setMode(next){
   put('station-title',recorded?'Original computer + cockpit':'Your starting point');put('station-mode',recorded?'RECORDING':'REFERENCE');
   put('scene-vehicle',recorded?'LUNAR MODULE / RETAINED REF STATE':'EAGLE + COLUMBIA / DOCKED');
   if(recorded&&provider){selectCase(caseId);}else{put('mission-clock','~100:05 GET');put('scene-state','HISTORICAL CONFIGURATION / SCHEMATIC');$('scene-caption').replaceChildren(document.createTextNode('Columbia docked'),element('br'),document.createTextNode('to Eagle.'));put('scene-detail','The white command/service assembly is Columbia. The gold spacecraft below is Eagle, the Lunar Module.');put('scene-disclosure','Illustrative docked arrangement · spacecraft enlarged · geometry not to scale · camera controls only');drawScene();}
-  renderer?.resize();announce(recorded?'Verified synthetic propulsion recording selected.':'Historical lunar-orbit starting point selected.');
+  if(!recorded)applyProcedurePresentation();
+  renderer?.resize();announce(recorded?'Verified synthetic propulsion recording selected.':'Lunar-orbit undocking checklist selected.');
+}
+function applyProcedurePresentation(){
+  if(mode!=='historical')return;
+  const state=trainer?.state;
+  if(!state?.sessionId){document.querySelectorAll('[data-chapter]').forEach(button=>button.classList.remove('procedure-complete','procedure-current'));if(presentedProcedureSession){presentedProcedureSession=null;setMode('historical');}return;}
+  presentedProcedureSession=state.sessionId;
+  const released=state.attachment==='released';
+  put('execution-mode','INTERACTIVE PROCEDURE TRAINER');put('scope','Source-backed crew sequence · modeled docking hardware · no AGC or flight dynamics');
+  put('chapter-kicker',released?'CHAPTER 02 / DOCKING CONNECTION RELEASED':'CHAPTER 01 / PRE-UNDOCKING CHECKLIST');
+  $('mission-title').replaceChildren(document.createTextNode(released?'Docking ':'Prepare to '),element('em',released?'released.':'undock.'));
+  put('mission-intro',released?'The modeled docking connection is released. Complete the post-release actions before reviewing inspection and the later separation maneuver.':'Work the published preparation and release sequence across Eagle and Columbia. The server checks crew reports, order and modeled cockpit selections.');
+  put('clock-label','CHECKLIST PROGRESS / NOT A MISSION CLOCK');put('mission-clock',`${state.completedStepIds.length} / ${trainer.definition.steps.length} actions`);put('clock-note','Historical reference: ~100:05–100:12 GET. No historical flight clock is running.');
+  put('station-title','Current crew action');put('station-mode','PROCEDURE MODEL');
+  put('scene-vehicle',released?'RELEASED CONNECTION / EXPLODED DIAGRAM':'EAGLE + COLUMBIA / MODELED CONNECTION');
+  put('scene-state','MECHANICAL PROCEDURE DIAGRAM / NO FLIGHT TELEMETRY');put('scene-caption',released?'Connection released.':'Connection secured.');
+  put('scene-detail',released?'The gap shows the released docking assembly. It is diagram spacing, not a measured distance, velocity or orbital maneuver.':'Columbia’s docking probe connects the two spacecraft. Complete Eagle’s readiness checks before Collins operates the release control.');
+  put('scene-disclosure','STATIC MECHANICAL DIAGRAM · spacing has no physical units · no clearance or flight state is computed · camera controls only');
+  if(!trainer.ready){put('execution-mode','PROCEDURE TRAINER / CONTROLS UNAVAILABLE');put('scope','Last acknowledged model state · reconnect before operating controls');put('scene-state','LAST ACKNOWLEDGED PROCEDURE STATE / CONTROLS UNAVAILABLE');}
+  rootMilestones(state);drawScene();
+}
+function rootMilestones(state){
+  document.querySelectorAll('[data-chapter]').forEach(button=>{
+    const chapter=button.dataset.chapter;
+    button.classList.toggle('procedure-complete',chapter==='docked-preparation'&&state.attachment==='released');
+    button.classList.toggle('procedure-current',chapter===state.chapterId);
+  });
 }
 function events(){return provider?replayMilestones(provider.getCase(caseId),$('all-events').checked):[];}
 function renderEventList(){
@@ -83,7 +113,7 @@ function selectCase(id){
 function seek(seconds,id=null){time=Math.max(0,Math.min(provider.getCase(caseId).durationSeconds,seconds));playing=false;selectedEventId=id;renderRecorded();}
 function drawScene(snapshot=null){
   if(!renderer)return;
-  if(mode==='historical'){renderer.draw({mode:'historical-illustration'});return;}
+  if(mode==='historical'){const state=trainer?.state;renderer.draw(state?.sessionId?{mode:'procedure-illustration',dockingState:state.attachment}:{mode:'historical-illustration'});return;}
   if(!snapshot&&provider)snapshot=selectedEventId?provider.getEventSnapshot(caseId,selectedEventId):provider.getSnapshot(caseId,time);
   const craft=snapshot?.spacecraft,item=provider?.getCase(caseId);
   renderer.draw({mode:'recorded',available:Boolean(craft),positionM:craft?.positionM,velocityMps:craft?.velocityMps,quaternion:craft?.quaternion,trajectoryM:craft?provider.trajectoryThrough(caseId,time,selectedEventId?{rawLine:snapshot.source.rawLine}:{}):[],lunarRadiusM:item?.initialGeometry.lunarRadiusM});
@@ -126,8 +156,16 @@ new ResizeObserver(()=>{renderer?.resize();drawScene();}).observe($('mission-sce
 document.addEventListener('visibilitychange',()=>{if(document.hidden){playing=false;if(provider)renderRecorded();}});window.addEventListener('pagehide',()=>{playing=false;disposed=true;renderer?.dispose();});
 
 drawScene();requestAnimationFrame(tick);
+trainer=createUndockingTrainer({onState:()=>applyProcedurePresentation(),onHandoff:()=>{
+  if(!trainer.state?.completed)return;
+  previewChapter('undocking');
+  put('preview-title','Next: relative motion and Eagle inspection');put('preview-get','AFTER RELEASE / BEFORE THE CSM SEPARATION MANEUVER');put('preview-description','The crew next managed relative motion and inspected Eagle. Armstrong first controlled LM rates and maneuvered for Collins’s inspection. The later Columbia separation burn, LM alignment and DOI follow in that order. This next flight chapter requires authoritative attitude and relative-motion integration; reviewing it does not perform the inspection.');
+  $('historical-preview').scrollIntoView({behavior:'smooth',block:'center'});
+  announce('Next in mission order: relative motion and Eagle inspection. The CSM separation maneuver comes later. Flight commands remain unavailable.');
+}});
 const loadResults=await Promise.allSettled([
   fetch('./data/apollo-operations.json',{cache:'no-store'}).then(response=>{if(!response.ok)throw new Error(`Historical references could not load (${response.status}).`);return response.json();}).then(validateOperations).then(data=>{operations=data;renderOperations();}),
   PropulsionTraceProvider.load().then(data=>{provider=data;for(const id of ['recorded-mode','execution-case','replay-time','replay-play'])$(id).disabled=false;if(mode==='recorded')selectCase(caseId);}),
+  trainer.connect(),
 ]);
 const errors=loadResults.filter(result=>result.status==='rejected').map(result=>result.reason.message);if(errors.length)showError(errors.join(' '));

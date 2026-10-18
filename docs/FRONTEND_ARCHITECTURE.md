@@ -1,5 +1,10 @@
 # Apollo 11 frontend architecture
 
+The first chapter now supports a 28-action, server-owned **interactive undocking
+procedure trainer**. It adds source-linked cockpit selections and crew reports,
+with modeled docking release, independent of original AGC execution and flight
+physics. See [current playable chapter and contract](FRONTEND_UNDOCKING.md).
+
 The current primary entry point is `/play.html`: a historical lunar-orbit starting
 chapter plus a separately labeled 3D replay of the sealed Phase 12 propulsion and
 navigation experiment. See [current mission architecture](FRONTEND_MISSION_START.md)
