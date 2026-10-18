@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:4187/campaign.html?play=1&stage=earth-parking",
+  "mode": "LIVE ORIGINAL CMC / MODELED INSTRUMENTS",
+  "display": "COMP ACTY\nOFF\nPROG\n00\nVERB\n  \nNOUN\n  \nR1\n \n     \nR2\n \n     \nR3\n \n     ",
+  "checkpoints": [
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED"
+  ],
+  "instruction": "P52 alignment is complete in the modeled instrument fixture. Original Apollo 11 launch-vehicle execution and an S-IVB flight model are still required for TLI; this alignment does not simulate leaving Earth orbit.",
+  "measurements": "Marks captured: 4 (includes P51 setup). P52 marks: 2. Original gyro outputs: 3. Sensor counter operations: 35875.",
+  "lastKey": "Last applied key: ENTR · sequence 64 · channel 015 · code 034 octal · CPU call 26,321,550. This identifies the hardware input; the display above is the computer’s response."
+}

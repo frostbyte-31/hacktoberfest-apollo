@@ -21,9 +21,13 @@ Module Pilot in Eagle; and Collins, Command Module Pilot in Columbia. Collins
 remains in lunar orbit; his landing-lab communications/support role is a disclosed
 gameplay adaptation.
 
-### Playable original Columbia computer
+### Playable P52 alignment
 
-**/campaign.html?play=1** opens a cold-start Comanche 055 console with all nineteen
+**/campaign.html?play=1** opens original Comanche P52 with modeled CSM instruments. Prepare the instruments, identify stars 30/37, use the OHC and MARK controls, review original N05/N93, approve gyro correction and return P00. See [the player checklist](../docs/P52_PLAYER_GUIDE.md), [implemented API](../docs/EARTH_ALIGNMENT_INTEGRATION.md) and [fresh native evidence](../docs/earth-departure-evidence/README.md). The setup computes its initial reference through original P51; no historical flight checkpoint or TLI is supplied.
+
+### Retained cold-start Columbia diagnostic
+
+**/campaign.html?play=1&task=diagnostic** opens a cold-start Comanche 055 console with all nineteen
 real DSKY keys. Start the CMC and follow the server's five observed checkpoints:
 display test, P00, original clock, P52 readiness alarm and P00 recovery. Native
 packet acknowledgments and actual original output determine progress. This is

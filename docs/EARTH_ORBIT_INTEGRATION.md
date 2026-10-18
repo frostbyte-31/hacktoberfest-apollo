@@ -1,4 +1,6 @@
-# Playable Columbia computer integration
+# Retained cold-start Columbia computer integration
+
+The default task now supports [complete original P52 with modeled instruments](EARTH_ALIGNMENT_INTEGRATION.md). This document describes the separate cold-start diagnostic.
 
 The Earth-parking-orbit chapter now contains a manually playable **original
 Comanche 055 CMC** console. All nineteen DSKY keys send their actual hardware
@@ -22,7 +24,7 @@ make play
 ```
 
 Open `http://127.0.0.1:4173/`, choose **Apollo mission**, then **Open Earth-orbit
-task**. Direct entry: `http://127.0.0.1:4173/campaign.html?play=1`.
+task**, then select **Cold-start diagnostic**. Direct entry: `http://127.0.0.1:4173/campaign.html?play=1&task=diagnostic`.
 
 The CMC requires Python 3.9+ and `cc`. It builds from retained source on request,
 without downloading software or requiring Node, npm or Tcl. Existing lunar

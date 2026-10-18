@@ -1,0 +1,385 @@
+{
+  "mode": "bad-sighting",
+  "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+  "finalDsky": {
+    "PROG": "00",
+    "VERB": "  ",
+    "NOUN": "  ",
+    "R1": "     ",
+    "R2": "     ",
+    "R3": "     ",
+    "signs": {
+      "R1": " ",
+      "R2": " ",
+      "R3": " "
+    },
+    "lamps": {
+      "keyRelease": false,
+      "verbNounFlash": false,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "alignment": {
+    "referenceInitialized": true,
+    "p52Complete": false,
+    "p52Marks": 2,
+    "torqueApproved": true,
+    "torqueOutputCount": 34,
+    "completionCycle": null,
+    "gyroSensorFeedbackOperations": 552
+  },
+  "encoderReadback": {
+    "CDUX": 179,
+    "CDUY": 32619,
+    "CDUZ": 214,
+    "CDUT": 7364,
+    "CDUS": 9047
+  },
+  "gyroOutputs": [
+    {
+      "cycle": 11377525,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.028669505560434627,
+        -1.5577474538728469,
+        1.0542978112837746
+      ]
+    },
+    {
+      "cycle": 11399046,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.0334491199954908,
+        -1.5578427263344619,
+        1.2300140946275642
+      ]
+    },
+    {
+      "cycle": 11420593,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.03822936393146108,
+        -1.557952668161535,
+        1.4057303694133139
+      ]
+    },
+    {
+      "cycle": 11442112,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.0430103274323684,
+        -1.5580772845268993,
+        1.5814466344166063
+      ]
+    },
+    {
+      "cycle": 11463635,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.0477921006164082,
+        -1.5582165812948927,
+        1.7571628884122878
+      ]
+    },
+    {
+      "cycle": 11485156,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.05257477366274756,
+        -1.5583705650220314,
+        1.9328791301743748
+      ]
+    },
+    {
+      "cycle": 11506700,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.057358436818334184,
+        -1.5585392429577622,
+        2.108595358475963
+      ]
+    },
+    {
+      "cycle": 11528221,
+      "channel": 127,
+      "value": 31744,
+      "axis": "Z",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.06214318040471601,
+        -1.5587226230452957,
+        2.2843115720891323
+      ]
+    },
+    {
+      "cycle": 11549745,
+      "channel": 127,
+      "value": 31426,
+      "axis": "Z",
+      "pulses": -706,
+      "deltaDeg": -0.12119293212890625,
+      "gimbalsDeg": [
+        0.06544271326185251,
+        -1.5588576220253874,
+        2.405459655481732
+      ]
+    },
+    {
+      "cycle": 11646216,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.24131326215893864,
+        -1.566231715814929,
+        2.400666418912916
+      ]
+    },
+    {
+      "cycle": 11667758,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.4171825745026552,
+        -1.573591023182281,
+        2.395850590015771
+      ]
+    },
+    {
+      "cycle": 11689288,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.5930506469880891,
+        -1.58093547492851,
+        2.3910122143230406
+      ]
+    },
+    {
+      "cycle": 11710813,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.7689174763571464,
+        -1.5882650019982711,
+        2.3861513375793577
+      ]
+    },
+    {
+      "cycle": 11732337,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        0.9447830593986731,
+        -1.5955795354804505,
+        2.3812680057407967
+      ]
+    },
+    {
+      "cycle": 11753855,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        1.120647392948575,
+        -1.602879006608809,
+        2.3763622649744236
+      ]
+    },
+    {
+      "cycle": 11775398,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        1.2965104738899351,
+        -1.6101633467626217,
+        2.371434161657844
+      ]
+    },
+    {
+      "cycle": 11796924,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        1.472372299153128,
+        -1.6174324874673163,
+        2.3664837423787475
+      ]
+    },
+    {
+      "cycle": 11818445,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        1.6482328657159364,
+        -1.6246863603951096,
+        2.361511053934457
+      ]
+    },
+    {
+      "cycle": 11839968,
+      "channel": 127,
+      "value": 23552,
+      "axis": "X",
+      "pulses": -1024,
+      "deltaDeg": -0.17578125,
+      "gimbalsDeg": [
+        1.8240921706036595,
+        -1.6319248973656442,
+        2.356516143331466
+      ]
+    },
+    {
+      "cycle": 11861518,
+      "channel": 127,
+      "value": 23341,
+      "axis": "X",
+      "pulses": -813,
+      "deltaDeg": -0.13956069946289062,
+      "gimbalsDeg": [
+        1.963713940937389,
+        -1.6376609332768133,
+        2.352534663330559
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "kind": "p51-star-fit",
+      "cycle": 5106592,
+      "dsky": {
+        "PROG": "51",
+        "VERB": "06",
+        "NOUN": "05",
+        "R1": "00002",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": "+",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    },
+    {
+      "kind": "p52-star-fit",
+      "cycle": 10723286,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "06",
+        "NOUN": "05",
+        "R1": "00233",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": "+",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    },
+    {
+      "kind": "p52-torque-review",
+      "cycle": 11013423,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "06",
+        "NOUN": "93",
+        "R1": "01897",
+        "R2": "01558",
+        "R3": "02406",
+        "signs": {
+          "R1": "-",
+          "R2": "+",
+          "R3": "-"
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    }
+  ],
+  "finalCycle": 13079050,
+  "provenance": {
+    "ropeSha256": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+    "engineSha256": "2e36bc36431d9a3219dd925a2b006420851c3e827b11cab892d133979dd4bac4",
+    "sourceUrl": "https://github.com/virtualagc/virtualagc/tree/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055",
+    "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "engineSourceArchiveSha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+    "observerSha256": "e03f6e08cfdd705799d5070998f8af28fbbfdd293ed132b10f97d1a9f99a4be6",
+    "hostFlightMemoryWrites": false,
+    "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+    "externalHardwareInterrupt": "KEYRUPT2 after consumed channel016 MARK/REJECT"
+  },
+  "traceSha256": "5d52c3ac2c1f57a89bc03b8fa242269c6610a6f6c3dac24ac8e1b5f858156c21"
+}

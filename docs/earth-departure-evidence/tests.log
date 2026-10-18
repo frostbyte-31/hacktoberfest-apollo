@@ -1,0 +1,19 @@
+test_bad_optical_sighting_is_not_a_success_certificate (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_bad_optical_sighting_is_not_a_success_certificate) ... ok
+test_boot_reference_is_computed_by_original_p51_and_not_p52_success (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_boot_reference_is_computed_by_original_p51_and_not_p52_success) ... ok
+test_controller_motion_takes_reported_cpu_time (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_controller_motion_takes_reported_cpu_time) ... ok
+test_feedback_disconnected_does_not_certify_alignment (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_feedback_disconnected_does_not_certify_alignment) ... ok
+test_fixed_catalog_geometry_preserves_original_star_separation (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_fixed_catalog_geometry_preserves_original_star_separation) ... ok
+test_fresh_native_replay_is_byte_identical (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_fresh_native_replay_is_byte_identical) ... ok
+test_imu_off_remains_an_original_00210_alarm (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_imu_off_remains_an_original_00210_alarm) ... ok
+test_invalid_instrument_requests_do_not_advance_original_clock (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_invalid_instrument_requests_do_not_advance_original_clock) ... ok
+test_mark_packet_without_hardware_edge_leaves_original_waiting (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_mark_packet_without_hardware_edge_leaves_original_waiting) ... ok
+test_original_n93_requires_operator_approval (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_original_n93_requires_operator_approval) ... ok
+test_original_p52_optical_fit_torques_feedback_and_completion (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_original_p52_optical_fit_torques_feedback_and_completion) ... ok
+test_practical_104_point_4_degree_controller_target_completes (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_practical_104_point_4_degree_controller_target_completes) ... ok
+test_source_identity_clock_and_scope_remain_explicit (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_source_identity_clock_and_scope_remain_explicit) ... ok
+test_zero_switch_uses_original_counter_zeroing_and_manual_returns (backend.tests.test_cmc_alignment.OriginalCmcAlignmentTests.test_zero_switch_uses_original_counter_zeroing_and_manual_returns) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 7.043s
+
+OK

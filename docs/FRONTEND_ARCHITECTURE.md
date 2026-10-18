@@ -1,14 +1,14 @@
 # Current unified product
 
-Current playable first task: **Apollo mission → Open Earth-orbit task** at
-`/campaign.html?play=1`. It runs fresh original Comanche 055 through real DSKY
-inputs. This is a cold-start readiness diagnostic; historical orbital state,
-IMU/optics and completed P52 alignment remain unavailable.
-[Player to-do list](EARTH_ORBIT_PLAYABLE_GUIDE.md),
-[CMC integration contract](EARTH_ORBIT_INTEGRATION.md), and
-[original native/WASM evidence](earth-orbit-evidence/README.md) describe this addition.
+The default Earth-orbit task now completes **original Comanche P52 with modeled IMU/optics**. Manual marks, original star-fit/torque displays and actual gyro/CDU feedback determine completion. [Play guide](P52_PLAYER_GUIDE.md) and [implemented alignment contract](EARTH_ALIGNMENT_INTEGRATION.md) describe this extension. No original Saturn departure was added; full flight remains unavailable. The cold-start diagnostic below remains separately accessible with `?task=diagnostic`.
 
-Current chronological entry: `/` → **Historical mission** → `/campaign.html`,
+The earlier cold-start diagnostic remains at
+`/campaign.html?play=1&task=diagnostic`. It keeps its original IMU-off alarm,
+without the new instrument setup. Its [player guide](EARTH_ORBIT_PLAYABLE_GUIDE.md),
+[contract](EARTH_ORBIT_INTEGRATION.md) and [bounded native/WASM evidence](earth-orbit-evidence/README.md)
+retain that separate scope. The new P52 hardware integration has native evidence only.
+
+Current chronological entry: `/` → **Apollo mission** → `/campaign.html`,
 starting in Earth parking orbit. `?tour=1` starts reference navigation with
 separate original-AGC evidence inserts. This is not full-mission execution.
 [Campaign contract](APOLLO11_CAMPAIGN_INTEGRATION.md),

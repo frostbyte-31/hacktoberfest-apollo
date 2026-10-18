@@ -9,6 +9,7 @@ from urllib.parse import urlsplit
 from backend.control_service import ControlError, ControlService
 from backend.mission_service import MissionService
 from backend.earth_orbit_service import EarthOrbitService
+from backend.earth_alignment_service import EarthAlignmentService
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('apollo_existing_http', ROOT/'frontend/serve.py')
@@ -79,6 +80,20 @@ class FinalHandler(existing.ApolloHandler):
 
     def do_GET(self):
         path = urlsplit(self.path).path
+        if path.startswith('/api/earth-alignment/'):
+            try:
+                self._origin()
+                if path == '/api/earth-alignment/capabilities':
+                    result = self.server.earth_alignment.capabilities()
+                    result['token'] = self.server.control_token if result['available'] else None
+                elif path == '/api/earth-alignment/status':
+                    result = self.server.earth_alignment.snapshot()
+                else:
+                    raise ControlError(404, 'Unknown CSM alignment route.')
+                self._json(200, result)
+            except ControlError as error:
+                self._json(error.status, {'error': str(error)})
+            return
         if path.startswith('/api/earth-orbit/'):
             try:
                 self._origin()
@@ -113,6 +128,28 @@ class FinalHandler(existing.ApolloHandler):
 
     def do_POST(self):
         path = urlsplit(self.path).path
+        if path.startswith('/api/earth-alignment/'):
+            try:
+                self._origin(mutation=True)
+                self._token()
+                value = self._body()
+                if path == '/api/earth-alignment/start' and not value:
+                    result = self.server.earth_alignment.start()
+                elif path == '/api/earth-alignment/key' and set(value) == {'sessionId', 'sequence', 'key'}:
+                    result = self.server.earth_alignment.key(**value)
+                elif path == '/api/earth-alignment/instrument' and set(value) == {'sessionId', 'sequence', 'control', 'value'}:
+                    result = self.server.earth_alignment.instrument(**value)
+                elif path == '/api/earth-alignment/stop' and set(value) == {'sessionId'}:
+                    result = self.server.earth_alignment.stop(**value)
+                elif path in ('/api/earth-alignment/start', '/api/earth-alignment/key',
+                               '/api/earth-alignment/instrument', '/api/earth-alignment/stop'):
+                    raise ControlError(400, 'Request fields do not match the CSM instrument contract.')
+                else:
+                    raise ControlError(404, 'Unknown CSM alignment action.')
+                self._json(200, result)
+            except ControlError as error:
+                self._json(error.status, {'error': str(error)})
+            return
         if path.startswith('/api/earth-orbit/'):
             try:
                 self._origin(mutation=True)
@@ -163,7 +200,7 @@ class FinalHandler(existing.ApolloHandler):
 
 
 def make_server(port=4173, assets=None, assets_error=None, missions=None, ai_provider=None,
-                earth_orbit=None, cmc_enabled=True):
+                earth_orbit=None, cmc_enabled=True, earth_alignment=None):
     controls = ControlService(prepare=(lambda: assets) if assets else None)
     # The sourced checklist is Python-only. Missing compiled assets disable
     # native inputs without disabling that independent training service.
@@ -173,13 +210,17 @@ def make_server(port=4173, assets=None, assets_error=None, missions=None, ai_pro
     server.missions = missions or MissionService(assets=assets, ai_provider=ai_provider)
     server.assets_error = assets_error
     server.earth_orbit = earth_orbit or EarthOrbitService(enabled=cmc_enabled)
+    server.earth_alignment = earth_alignment or EarthAlignmentService(enabled=cmc_enabled)
     return server
 
 
 def close_server(server):
     errors = []
-    for close in (server.earth_orbit.close, server.missions.close,
-                  server.controls.close, server.server_close):
+    closes = [server.earth_orbit.close, server.missions.close,
+              server.controls.close, server.server_close]
+    if getattr(server, 'earth_alignment', None) is not None:
+        closes.insert(0, server.earth_alignment.close)
+    for close in closes:
         try:
             close()
         except Exception as error:

@@ -1,0 +1,137 @@
+{
+  "result": "VERIFIED",
+  "checked": [
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./favicon.svg"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./lunar-mission.css"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./launch.css"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./guidance.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./mission.html?new=1"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./guidance.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./campaign.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./campaign.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./play.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./mission.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./attitude-replay.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./attitude-lab.html"
+    },
+    {
+      "page": "frontend/dist/index.html",
+      "reference": "./launch.mjs?v=p52-1"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./favicon.svg"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./lunar-mission.css"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./campaign.css?v=earth-cmc-1"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./earth-orbit.css"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./earth-alignment.css?v=p52-2"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./guidance.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./play.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./campaign.html?play=1&stage=earth-parking"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./campaign.html?play=1&stage=earth-parking&task=diagnostic"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./play.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./play.html#flight-controls"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./guidance.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./play.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./attitude-replay.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./mission.html"
+    },
+    {
+      "page": "frontend/dist/campaign.html",
+      "reference": "./campaign.mjs?v=p52-2"
+    }
+  ]
+}

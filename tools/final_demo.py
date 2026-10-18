@@ -64,7 +64,11 @@ def main():
             parser.error('Port is already occupied; no process was stopped. Choose --port 4180.')
         raise
     print('Open: http://127.0.0.1:{}/'.format(server.server_port), flush=True)
-    print('Playable Columbia CMC: /campaign.html?stage=earth-parking (live original Comanche; no orbital flight)', flush=True)
+    print('Playable P52: /campaign.html?play=1&stage=earth-parking (original Comanche + modeled instruments; no orbital flight)', flush=True)
+    alignment = server.earth_alignment.capabilities()
+    print('Alignment instruments: '+('ready for original P51 setup and manual P52 on request'
+        if alignment['available'] else 'unavailable: '+str(alignment.get('unavailableReason'))), flush=True)
+    print('Cold-start diagnostic: /campaign.html?play=1&task=diagnostic', flush=True)
     cmc = server.earth_orbit.capabilities()
     print('Columbia computer: '+('ready for original native execution on request'
         if cmc['available'] else 'unavailable: '+str(cmc.get('unavailableReason'))), flush=True)

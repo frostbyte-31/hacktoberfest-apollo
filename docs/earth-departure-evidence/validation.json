@@ -1,0 +1,215 @@
+{
+  "utc": "2026-10-18T06:16:10.693589+00:00",
+  "python": "3.11.8 (main, Apr  9 2026, 01:41:04) [Clang 17.0.0 (clang-1700.3.19.1)]",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "nativeReplayByteIdentical": true,
+  "newHardwareWebAssemblyComparison": "NOT RUN",
+  "runs": {
+    "bad-sighting": {
+      "events": {
+        "cold_start": 1,
+        "output": 25429,
+        "input": 36104,
+        "switch": 1,
+        "key": 95,
+        "optics_position": 8,
+        "hardware_interrupt": 4,
+        "instrument_action": 9,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1,
+        "gyro_model": 34
+      },
+      "rawSha256": "5d52c3ac2c1f57a89bc03b8fa242269c6610a6f6c3dac24ac8e1b5f858156c21",
+      "finalCycle": 13079050,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": false,
+        "p52Marks": 2,
+        "torqueApproved": true,
+        "torqueOutputCount": 34,
+        "completionCycle": null,
+        "gyroSensorFeedbackOperations": 552
+      }
+    },
+    "connected": {
+      "events": {
+        "cold_start": 1,
+        "output": 25571,
+        "input": 36010,
+        "switch": 1,
+        "key": 95,
+        "optics_position": 9,
+        "hardware_interrupt": 4,
+        "instrument_action": 10,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1,
+        "gyro_model": 3,
+        "p52_completion": 1
+      },
+      "rawSha256": "6a25cf6c1bd978d93f8e6d896da66970006d5bfa4080861eb798630c0a14aa67",
+      "finalCycle": 13163833,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": true,
+        "p52Marks": 2,
+        "torqueApproved": true,
+        "torqueOutputCount": 3,
+        "completionCycle": 11388895,
+        "gyroSensorFeedbackOperations": 2
+      }
+    },
+    "feedback-off": {
+      "events": {
+        "cold_start": 1,
+        "output": 25571,
+        "input": 36008,
+        "switch": 1,
+        "key": 95,
+        "optics_position": 9,
+        "hardware_interrupt": 4,
+        "instrument_action": 10,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1,
+        "gyro_model": 3
+      },
+      "rawSha256": "cc03c8ea5aeaaf527894274c23da3cf7f1ddd91670725a83b9239b7c30aefdd1",
+      "finalCycle": 13163831,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": false,
+        "p52Marks": 2,
+        "torqueApproved": true,
+        "torqueOutputCount": 3,
+        "completionCycle": null,
+        "gyroSensorFeedbackOperations": 0
+      }
+    },
+    "imu-off": {
+      "events": {
+        "cold_start": 1,
+        "output": 14496,
+        "input": 26445,
+        "switch": 2,
+        "key": 55,
+        "optics_position": 3,
+        "hardware_interrupt": 2,
+        "instrument_action": 3,
+        "fixture_initialized": 1
+      },
+      "rawSha256": "1f0e5ea39ec501ea17be9c4291e77fc781f1010d6b11d6a35a62e3b5bf001a96",
+      "finalCycle": 7540310,
+      "alignment": {
+        "referenceInitialized": false,
+        "p52Complete": false,
+        "p52Marks": 0,
+        "torqueApproved": false,
+        "torqueOutputCount": 0,
+        "completionCycle": null,
+        "gyroSensorFeedbackOperations": 0
+      }
+    },
+    "mark-irq-off": {
+      "events": {
+        "cold_start": 1,
+        "output": 18793,
+        "input": 26465,
+        "switch": 1,
+        "key": 71,
+        "optics_position": 3,
+        "hardware_interrupt": 3,
+        "instrument_action": 3,
+        "fixture_initialized": 1
+      },
+      "rawSha256": "14325c2ad6b2af40bd4e411813a68478d1b6ee1f67f3d2aee146d116a4b71b4e",
+      "finalCycle": 9724860,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": false,
+        "p52Marks": 1,
+        "torqueApproved": false,
+        "torqueOutputCount": 0,
+        "completionCycle": null,
+        "gyroSensorFeedbackOperations": 0
+      }
+    },
+    "no-torque-approval": {
+      "events": {
+        "cold_start": 1,
+        "output": 24024,
+        "input": 35998,
+        "switch": 1,
+        "key": 87,
+        "optics_position": 9,
+        "hardware_interrupt": 4,
+        "instrument_action": 10,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1
+      },
+      "rawSha256": "25eb79f0953e8ea198c7d811fd50c42c7c12ade6a7f3268a1cc3153278f454c2",
+      "finalCycle": 12378756,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": false,
+        "p52Marks": 2,
+        "torqueApproved": false,
+        "torqueOutputCount": 0,
+        "completionCycle": null,
+        "gyroSensorFeedbackOperations": 0
+      }
+    },
+    "repeat": {
+      "events": {
+        "cold_start": 1,
+        "output": 25571,
+        "input": 36010,
+        "switch": 1,
+        "key": 95,
+        "optics_position": 9,
+        "hardware_interrupt": 4,
+        "instrument_action": 10,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1,
+        "gyro_model": 3,
+        "p52_completion": 1
+      },
+      "rawSha256": "6a25cf6c1bd978d93f8e6d896da66970006d5bfa4080861eb798630c0a14aa67",
+      "finalCycle": 13163833,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": true,
+        "p52Marks": 2,
+        "torqueApproved": true,
+        "torqueOutputCount": 3,
+        "completionCycle": 11388895,
+        "gyroSensorFeedbackOperations": 2
+      }
+    },
+    "ui-quantized": {
+      "events": {
+        "cold_start": 1,
+        "output": 25571,
+        "input": 36010,
+        "switch": 1,
+        "key": 95,
+        "optics_position": 9,
+        "hardware_interrupt": 4,
+        "instrument_action": 10,
+        "fixture_initialized": 1,
+        "p52_star_fit": 1,
+        "gyro_model": 3,
+        "p52_completion": 1
+      },
+      "rawSha256": "37100ff0dded4fef078ebb10afbf467acd694c6090ac05be3c08e233268439fa",
+      "finalCycle": 13163833,
+      "alignment": {
+        "referenceInitialized": true,
+        "p52Complete": true,
+        "p52Marks": 2,
+        "torqueApproved": true,
+        "torqueOutputCount": 3,
+        "completionCycle": 11388895,
+        "gyroSensorFeedbackOperations": 2
+      }
+    }
+  }
+}

@@ -1,7 +1,9 @@
 # Apollo 11 — the guidance experience
 
-Start in **Earth parking orbit** and play a live original **Comanche 055 CMC**
-readiness diagnostic using the real on-screen DSKY keys. Then explore Apollo 11 in chronological order:
+Start in **Earth parking orbit** and perform original **Comanche 055 P52**
+using DSKY input, manual optical marks and modeled gyro feedback. The original
+computer calculates the alignment; the stationary instruments use a disclosed
+training geometry. Then explore Apollo 11 in chronological order:
 reach lunar orbit, land Eagle, then return the crew by direct atmospheric entry
 and splashdown. The new 3D mission reference and guided tour connect source-backed
 history with clearly separate original-AGC recordings and a playable undocking
@@ -15,7 +17,9 @@ make play
 ```
 
 Open **http://127.0.0.1:4173/**. Choose **Apollo mission**, then **Open Earth-orbit task**.
-Use [the exact playable checklist](docs/EARTH_ORBIT_PLAYABLE_GUIDE.md).
+Use [the exact P52 player checklist](docs/P52_PLAYER_GUIDE.md) and
+[instrument integration contract](docs/EARTH_ALIGNMENT_INTEGRATION.md).
+The earlier [cold-start diagnostic](docs/EARTH_ORBIT_PLAYABLE_GUIDE.md) remains available separately.
 For the automated historical showcase, choose **Guided tour**, or open
 **http://127.0.0.1:4173/campaign.html?tour=1**. This tour reviews references and
 steps genuine recorded observations; it sends no flight commands.

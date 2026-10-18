@@ -1,4 +1,6 @@
-# Play the first Earth-orbit computer task
+# Play the cold-start computer diagnostic
+
+The default Earth-orbit task now supports [complete original P52 with modeled instruments](P52_PLAYER_GUIDE.md). This page documents the separately retained cold-start diagnostic.
 
 The first playable task operates **Columbia's original Comanche 055 Command Module Computer**. Your DSKY button presses are sent to the emulator as hardware inputs, and original Apollo software produces the displayed digits. The objective is to check the controls, inspect the live computer clock, diagnose P52's actual readiness gate, and recover to P00.
 
@@ -22,7 +24,7 @@ Then use `http://127.0.0.1:4180/` for every link below. A recorded-only server c
 
 ## To-do: observe and play the new starting point
 
-- [ ] On the home page, select **Apollo mission**, choose **Solo**, then **Open Earth-orbit task**. Alternatively open [the task directly](http://127.0.0.1:4173/campaign.html?play=1).
+- [ ] On the home page, select **Apollo mission**, choose **Solo**, then **Open Earth-orbit task**. Select **Cold-start diagnostic** above the console. Alternatively open [the task directly](http://127.0.0.1:4173/campaign.html?play=1&task=diagnostic).
 - [ ] Confirm the chapter is **Earth parking orbit**. All three astronauts are in Columbia; Eagle is stowed inside the closed adapter. The S-IVB is part of the correct departure configuration.
 - [ ] Click **Start Columbia's CMC**. Allow the initial execution and relay observations to arrive. The panel identifies **live original CMC execution** and reports CPU time separately from historical mission time.
 - [ ] Use the **on-screen DSKY**, one key at a time. After each click, wait until the execution acknowledgement finishes and the keys are enabled again. Read both the digits and the next-action instruction. There is no keyboard spacecraft steering.

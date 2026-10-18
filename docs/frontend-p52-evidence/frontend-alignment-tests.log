@@ -1,0 +1,31 @@
+✔ connection reads only and preserves the distinction between original execution and modeled instruments (1.603125ms)
+✔ an unavailable original computer cannot silently fall back to synthetic or recorded completion (0.393292ms)
+✔ source, clock, rope and modeled-instrument schema are checked before publication (0.604667ms)
+✔ star identities and geometry cannot be duplicated or non-finite (0.590959ms)
+✔ P00 and entered keys do not manufacture P52 completion; completion requires classified original evidence (0.480458ms)
+✔ DSKY and physical instruments share one monotonically acknowledged input sequence (0.990458ms)
+✔ an in-flight instrument input locks both input paths and changes no observation before the ACK (0.515541ms)
+✔ instrument bounds and unsupported keys fail before any POST (0.566833ms)
+✔ capability discovery restricts keys and instrument controls before input (0.171375ms)
+✔ unrelated key or instrument ACKs are rejected and cause one GET resynchronization (1.711708ms)
+✔ key ACKs need hardware channel/code fields matching the reported last native key (1.191292ms)
+✔ a semantically equal instrument ACK accepts reordered JSON fields without a spurious mutation failure (0.2385ms)
+✔ a lost mutation response is never retried and is reconciled by one status GET (0.291584ms)
+✔ an unreadable successful mutation response still resynchronizes once without repeating the action (0.168291ms)
+✔ failed resynchronization retains the last observation but locks further actions (0.14425ms)
+✔ 403 invalidates the token, preserves the observation and requires explicit reconnect (0.242ms)
+✔ unknown or duplicate capability entries are rejected rather than expanding authority (0.192125ms)
+✔ a star on the measured optical axis projects onto the reticle for arbitrary encoder angles (0.462ms)
+✔ a known angular separation follows perspective geometry rather than an arbitrary screen offset (0.087292ms)
+✔ changing measured encoders changes the sight picture while a fixed star remains fixed (0.314167ms)
+✔ targets beyond the declared 30-degree field radius are excluded (0.060959ms)
+✔ behind-axis stars stay off field with a finite direction, including the exact antipode (0.063166ms)
+✔ shaft wraparound represents the same direction and remains continuous near zero (0.04925ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.464625

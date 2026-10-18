@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/orbiternassp/NASSP",
+  "commit": "623a383a727d60949d9a9d4f5d729ce268c0de28",
+  "verifiedAgainst": "GitHub recursive tree at the immutable commit",
+  "checkedUtc": "2026-10-18T06:18:47.639516+00:00",
+  "files": [
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_csm/CSMcomputer.cpp",
+      "gitBlobSha1": "6ab44012a64c7468dc4e66d58df0bd15c2805c70",
+      "sha256": "fa0cb3a6d4750b25ce64e5b734043fe1b98b1099ef8ab3c1e646320c49b870bb",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_csm/CSMcomputer.cpp",
+      "retainedPath": "source-audit/NASSP/src_csm/CSMcomputer.cpp"
+    },
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_csm/CSMcomputer.h",
+      "gitBlobSha1": "4e08a7a8d3ac40639593511c147c56600e2c5e43",
+      "sha256": "9cbd02b78999fc66ee31ebbd371c76aea957f9e0e9c9ca0df0fe82926eb3dd40",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_csm/CSMcomputer.h",
+      "retainedPath": "source-audit/NASSP/src_csm/CSMcomputer.h"
+    },
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_sys/IMU.h",
+      "gitBlobSha1": "0b7e1d37eadc21e578e68dd7186294743775021b",
+      "sha256": "86de57690edc4f066a10e91a5e7de44740384d319619ec1efb1e4b6f0a9bc308",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_sys/IMU.h",
+      "retainedPath": "source-audit/NASSP/src_sys/IMU.h"
+    },
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_sys/imu.cpp",
+      "gitBlobSha1": "2c1c42a33abd6f8c05153711f13d85d4522465ce",
+      "sha256": "19757a1715fa200d3442be11ad471b356d78397b6afd0ebab617953121c41bea",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_sys/imu.cpp",
+      "retainedPath": "source-audit/NASSP/src_sys/imu.cpp"
+    },
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_sys/imumath.cpp",
+      "gitBlobSha1": "696891a7082be9b37c76a7d0ca134490247aabd7",
+      "sha256": "5b8099e1e49e9702289a278235a1bf8b4f89caef25fd8ec930fe983c0a6cb3e1",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_sys/imumath.cpp",
+      "retainedPath": "source-audit/NASSP/src_sys/imumath.cpp"
+    },
+    {
+      "path": "Orbitersdk/samples/ProjectApollo/src_sys/ioChannels.h",
+      "gitBlobSha1": "163cb3ad3ae84eff4539a525e60f5bc04fea3423",
+      "sha256": "9b0646502d22eef0b0048db480a4d04925e8309dac2f2b233fe62c13d224ca2a",
+      "url": "https://github.com/orbiternassp/NASSP/blob/623a383a727d60949d9a9d4f5d729ce268c0de28/Orbitersdk/samples/ProjectApollo/src_sys/ioChannels.h",
+      "retainedPath": "source-audit/NASSP/src_sys/ioChannels.h"
+    }
+  ],
+  "license": {
+    "url": "https://raw.githubusercontent.com/orbiternassp/NASSP/623a383a727d60949d9a9d4f5d729ce268c0de28/COPYING.txt",
+    "sha256": "a7f5eb7a9cba085028aecaf5b35148c15afa7342fd8e6ed84e77a4448444d25c",
+    "retainedPath": "source-audit/NASSP/COPYING.txt"
+  },
+  "scope": "Source convention audit only; NASSP engine is not an application or validation execution dependency."
+}

@@ -1,0 +1,187 @@
+{
+  "mode": "connected",
+  "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+  "finalDsky": {
+    "PROG": "00",
+    "VERB": "  ",
+    "NOUN": "  ",
+    "R1": "     ",
+    "R2": "     ",
+    "R3": "     ",
+    "signs": {
+      "R1": " ",
+      "R2": " ",
+      "R3": " "
+    },
+    "lamps": {
+      "keyRelease": false,
+      "verbNounFlash": false,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "alignment": {
+    "referenceInitialized": true,
+    "p52Complete": true,
+    "p52Marks": 2,
+    "torqueApproved": true,
+    "torqueOutputCount": 3,
+    "completionCycle": 11388895,
+    "gyroSensorFeedbackOperations": 2
+  },
+  "encoderReadback": {
+    "CDUX": 0,
+    "CDUY": 1,
+    "CDUZ": 32767,
+    "CDUT": 7364,
+    "CDUS": 9503
+  },
+  "gyroOutputs": [
+    {
+      "cycle": 11107760,
+      "channel": 127,
+      "value": 26687,
+      "axis": "Y",
+      "pulses": -63,
+      "deltaDeg": -0.010814666748046875,
+      "gimbalsDeg": [
+        -0.0,
+        0.010814666748046875,
+        0.0
+      ]
+    },
+    {
+      "cycle": 11111166,
+      "channel": 127,
+      "value": 14397,
+      "axis": "Z",
+      "pulses": 61,
+      "deltaDeg": 0.010471343994140625,
+      "gimbalsDeg": [
+        1.976482338691823e-06,
+        0.010814666928657264,
+        -0.01047134380760858
+      ]
+    },
+    {
+      "cycle": 11114590,
+      "channel": 127,
+      "value": 22547,
+      "axis": "X",
+      "pulses": -19,
+      "deltaDeg": -0.003261566162109375,
+      "gimbalsDeg": [
+        0.003263542640811314,
+        0.01081526299309214,
+        -0.010470728164993006
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "kind": "p51-star-fit",
+      "cycle": 5106592,
+      "dsky": {
+        "PROG": "51",
+        "VERB": "06",
+        "NOUN": "05",
+        "R1": "00002",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": "+",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    },
+    {
+      "kind": "p52-star-fit",
+      "cycle": 10808619,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "06",
+        "NOUN": "05",
+        "R1": "00002",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": "+",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    },
+    {
+      "kind": "p52-torque-review",
+      "cycle": 11098756,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "06",
+        "NOUN": "93",
+        "R1": "00003",
+        "R2": "00011",
+        "R3": "00010",
+        "signs": {
+          "R1": "-",
+          "R2": "-",
+          "R3": "+"
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    },
+    {
+      "kind": "p52-completion-display",
+      "cycle": 11388895,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "50",
+        "NOUN": "25",
+        "R1": "00014",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": " ",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      }
+    }
+  ],
+  "finalCycle": 13163833,
+  "provenance": {
+    "ropeSha256": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+    "engineSha256": "2e36bc36431d9a3219dd925a2b006420851c3e827b11cab892d133979dd4bac4",
+    "sourceUrl": "https://github.com/virtualagc/virtualagc/tree/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055",
+    "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "engineSourceArchiveSha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+    "observerSha256": "e03f6e08cfdd705799d5070998f8af28fbbfdd293ed132b10f97d1a9f99a4be6",
+    "hostFlightMemoryWrites": false,
+    "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+    "externalHardwareInterrupt": "KEYRUPT2 after consumed channel016 MARK/REJECT"
+  },
+  "traceSha256": "6a25cf6c1bd978d93f8e6d896da66970006d5bfa4080861eb798630c0a14aa67"
+}

@@ -1,0 +1,27 @@
+{
+  "baselineCommit": "9fb031787a44ca020fbaa0fb4fd6963fc304a468",
+  "baselineTrackedFiles": 8890,
+  "unchangedTrackedFiles": 8873,
+  "changedExistingFiles": [
+    "README.md",
+    "backend/final_server.py",
+    "docs/APOLLO11_CAMPAIGN_INTEGRATION.md",
+    "docs/EARTH_ORBIT_INTEGRATION.md",
+    "docs/EARTH_ORBIT_PLAYABLE_GUIDE.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/JUDGES_PRESENTATION_PLAN.md",
+    "docs/SUBMISSION_GUIDE.md",
+    "frontend/README.md",
+    "frontend/dist/campaign.html",
+    "frontend/dist/campaign.mjs",
+    "frontend/dist/earth-orbit-panel.mjs",
+    "frontend/dist/index.html",
+    "frontend/dist/launch.mjs",
+    "frontend/tsconfig.json",
+    "tools/final_demo.py"
+  ],
+  "deletedExistingFiles": [],
+  "unexpectedChanges": [],
+  "scope": "Earlier Apollo source, emulator source and captured evidence remain byte-identical. Changes are limited to current application integration, frontend and player/integration documentation."
+}

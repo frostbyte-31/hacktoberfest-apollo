@@ -1,0 +1,16 @@
+{
+  "directory": "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets",
+  "library": "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/cmc-alignment-engine.so",
+  "rope": "/Users/giorgikhubua/hacktoberfest-apollo/docs/earth-orbit-evidence/artifacts/Comanche055.bin",
+  "provenance": {
+    "ropeSha256": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+    "engineSha256": "2e36bc36431d9a3219dd925a2b006420851c3e827b11cab892d133979dd4bac4",
+    "sourceUrl": "https://github.com/virtualagc/virtualagc/tree/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055",
+    "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "engineSourceArchiveSha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+    "observerSha256": "e03f6e08cfdd705799d5070998f8af28fbbfdd293ed132b10f97d1a9f99a4be6",
+    "hostFlightMemoryWrites": false,
+    "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+    "externalHardwareInterrupt": "KEYRUPT2 after consumed channel016 MARK/REJECT"
+  }
+}

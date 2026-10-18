@@ -11,14 +11,14 @@ const FIELDS=Object.freeze({PROG:2,VERB:2,NOUN:2,R1:5,R2:5,R3:5});
 const oct=value=>Number.isSafeInteger(value)?value.toString(8).padStart(3,'0'):'?';
 
 /** A manually operated DSKY. Camera and historical navigation never issue computer keys. */
-export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetchImpl=globalThis.fetch}={}) {
+export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetchImpl=globalThis.fetch,clientFactory=options=>new EarthOrbitClient(options),labels={}}={}) {
   if (!root?.ownerDocument) throw new TypeError('A panel root element is required.');
   const doc=root.ownerDocument,make=(tag,text,className)=>{const el=doc.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;};
   let visible=false,loading=false,disposed=false,error=null,timer=null;
   const band=make('div','CONNECTING TO ORIGINAL CMC','earth-mode'),heading=make('div',undefined,'earth-heading');
-  const headingCopy=make('div');headingCopy.append(make('span','EARTH PARKING ORBIT / COLUMBIA','eyebrow'),make('h2','Your first computer procedure.'));
+  const headingCopy=make('div');headingCopy.append(make('span','EARTH PARKING ORBIT / COLUMBIA','eyebrow'),make('h2',labels.title??'Your first computer procedure.'));
   const clock=make('p','CPU clock unavailable','earth-clock');heading.append(headingCopy,clock);
-  const intro=make('p','Operate Columbia’s original Comanche 055 through the DSKY. This fresh computer startup is a readiness diagnostic: it has no reconstructed Apollo 11 orbital state, validated IMU alignment or star measurements. Each button sends a hardware input; the real computer supplies the display and any readiness alarm.','earth-intro');
+  const intro=make('p',labels.intro??'Operate Columbia’s original Comanche 055 through the DSKY. This fresh computer startup is a readiness diagnostic: it has no reconstructed Apollo 11 orbital state, validated IMU alignment or star measurements. Each button sends a hardware input; the real computer supplies the display and any readiness alarm.','earth-intro');
   const errorNode=make('div',undefined,'earth-error');errorNode.role='alert';errorNode.hidden=true;
   const toolbar=make('div',undefined,'earth-toolbar'),start=make('button','Start Columbia’s CMC','primary'),stop=make('button','Stop computer'),refresh=make('button','Refresh observation'),connect=make('button','Reconnect');
   for (const button of [start,stop,refresh,connect]) button.type='button';toolbar.append(start,stop,refresh,connect);
@@ -47,17 +47,17 @@ export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetch
   const provenance=make('details',undefined,'earth-provenance'),summary=make('summary','Original software and input provenance'),provenanceCopy=make('p','Start the original computer to inspect its source hashes.'),sourceLink=make('a','Comanche 055 source ↗');sourceLink.href='https://www.ibiblio.org/apollo/listings/Comanche055/MAIN.agc.html';sourceLink.target='_blank';sourceLink.rel='noopener';
   const referenceLink=make('a','DSKY hardware layout reference ↗');referenceLink.href='https://www.ibiblio.org/apollo/yaDSKY.html';referenceLink.target='_blank';referenceLink.rel='noopener';
   provenance.append(summary,provenanceCopy,sourceLink,referenceLink);grid.append(instrument,objective);root.replaceChildren(band,heading,intro,toolbar,status,errorNode,grid,lastKey,scope,provenance);root.classList.add('earth-orbit-panel');
-  const client=new EarthOrbitClient({fetchImpl,onState:()=>{render();publish();},onError:message=>{error=message;render();publish();}});
+  const client=clientFactory({fetchImpl,onState:()=>{render();publish();},onError:message=>{error=message;render();publish();}});
   function publicState() {return Object.freeze({available:client.available,loading,visible,busy:client.busy,snapshot:client.state,error});}
   function publish() {if (!disposed) onState(publicState());}
   function render() {
     if (disposed) return;
     const snapshot=client.state,computer=snapshot?.computer,busy=loading||client.busy,ready=visible&&client.available&&!error&&!busy&&snapshot?.status==='ready';
-    root.setAttribute('aria-busy',String(busy));band.textContent=loading?'CONNECTING TO ORIGINAL CMC':computer?EARTH_ORBIT_MODE:client.available?'ORIGINAL CMC / READY TO START':'ORIGINAL CMC / UNAVAILABLE';
+    root.setAttribute('aria-busy',String(busy));band.textContent=loading?'CONNECTING TO ORIGINAL CMC':computer?(labels.mode??EARTH_ORBIT_MODE):client.available?'ORIGINAL CMC / READY TO START':'ORIGINAL CMC / UNAVAILABLE';
     band.classList.toggle('earth-mode-stale',Boolean(error)||snapshot?.status==='error'||snapshot?.status==='stopped');
     clock.textContent=computer?`${computer.cpuSeconds.toFixed(3)} s CPU time · ${computer.cycle.toLocaleString('en-US')} calls`:'CPU clock unavailable';
     clock.title='Elapsed original computer execution. This is not historical mission elapsed time or a spacecraft clock.';
-    start.disabled=!visible||!client.available||busy;start.textContent=computer?'Restart Columbia’s CMC':'Start Columbia’s CMC';
+    start.disabled=!visible||!client.available||busy;start.textContent=computer?(labels.restart??'Restart Columbia’s CMC'):(labels.start??'Start Columbia’s CMC');
     stop.disabled=!visible||!client.available||busy||snapshot?.status!=='ready';refresh.disabled=!visible||!client.available||busy;connect.disabled=!visible||busy;
     for (const [key,button] of keys) button.disabled=!ready||!client.capabilities?.supportedKeys.includes(key);
     status.textContent=loading?'Connecting to the local original-computer service…':busy?'Executing original software. Wait for the computer acknowledgement…':error?'Observation needs review. No key was automatically retried. Refresh or reconnect before continuing.':snapshot?.status==='stopped'?'Computer stopped. Displays retain the last observed state.':snapshot?.status==='error'?'Original execution failed. No substitute display is shown.':snapshot?.status==='ready'?'Live original CMC · operate the DSKY keys one at a time.':client.message;
@@ -74,7 +74,7 @@ export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetch
     taskLabel.textContent=task?.complete?'COMPUTER CHECKPOINT OBSERVED':'YOUR OBJECTIVE';boundary.textContent=task?.scope??'No flight or alignment completion is inferred from pressing keys.';
     const key=computer?.lastKey;lastKey.textContent=key?`Last applied key: ${key.key} · sequence ${key.sequence} · channel ${oct(key.channel)} · code ${oct(key.code)} octal · CPU call ${key.cycle.toLocaleString('en-US')}. This identifies the hardware input; the display above is the computer’s response.`:'No key has been sent from this session.';
     scope.textContent=client.capabilities?.scope??'Original execution is unavailable. The historical chapter remains a visual reference; no substitute computer is run.';
-    if (computer) {provenanceCopy.textContent=`Software: ${computer.software}. Rope SHA-256: ${computer.provenance.ropeSha256}. Engine SHA-256: ${computer.provenance.engineSha256}. Session: ${snapshot.sessionId}. Original CPU clock: 12 / 1,024,000 seconds per call. Flight executed: no. Alignment completed: no.`;sourceLink.href=computer.provenance.sourceUrl;}
+    if (computer) {provenanceCopy.textContent=`Software: ${computer.software}. Rope SHA-256: ${computer.provenance.ropeSha256}. Engine SHA-256: ${computer.provenance.engineSha256}. Session: ${snapshot.sessionId}. Original CPU clock: 12 / 1,024,000 seconds per call. Flight executed: no. Original P52 completion observed: ${task?.alignmentCompleted===true?'yes':'no'}.`;sourceLink.href=computer.provenance.sourceUrl;}
   }
   function clearPoll() {if(timer!==null){clearTimeout(timer);timer=null;}}
   function schedule() {clearPoll();if(disposed||!visible||doc.hidden||!client.available||client.state?.status!=='ready'||error)return;timer=setTimeout(async()=>{if(!client.busy){try{await client.refresh();}catch{/* The client publishes the explicit failure. */}finally{render();publish();}}schedule();},1000);}
@@ -83,5 +83,5 @@ export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetch
   start.addEventListener('click',()=>run(()=>client.start()));stop.addEventListener('click',()=>run(()=>client.stop()));refresh.addEventListener('click',()=>run(()=>client.refresh()));connect.addEventListener('click',load);
   const visibility=()=>{if(doc.hidden)clearPoll();else schedule();};doc.addEventListener('visibilitychange',visibility);
   render();
-  return {load,setVisible(value){visible=value===true;render();publish();schedule();},get state(){return publicState();},dispose(){disposed=true;clearPoll();doc.removeEventListener('visibilitychange',visibility);root.replaceChildren();}};
+  return {load,instrument(control,value){if(typeof client.instrument!=='function')throw new Error('This console has no instrument provider.');return run(()=>client.instrument(control,value));},setVisible(value){visible=value===true;render();publish();schedule();},get state(){return publicState();},dispose(){disposed=true;clearPoll();doc.removeEventListener('visibilitychange',visibility);root.replaceChildren();}};
 }

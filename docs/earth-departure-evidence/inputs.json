@@ -1,0 +1,11 @@
+{
+  "backend/cmc_alignment.py": "63515626fc23e8f1ac65fabc991e732368674317daa666ac6002daa18e01d5d5",
+  "backend/cmc_native.py": "41aba2ad483895cbfdd8542af580e558e9391af3fde3650037653b3b6d6aa5bf",
+  "backend/tests/test_cmc_alignment.py": "5d0f4c8da2e86ac9b5cce5634b25e7323151adf304923da78e56db74af5fbea8",
+  "docs/earth-departure-evidence/experiments/alignment_observer.c": "e03f6e08cfdd705799d5070998f8af28fbbfdd293ed132b10f97d1a9f99a4be6",
+  "docs/earth-departure-evidence/experiments/run_validation.py": "942f6fddb4aed55975f5061d053f73600b2b57665ec565d4222e5c9198347053",
+  "docs/earth-orbit-evidence/artifacts/Comanche055.bin": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+  "docs/earth-orbit-evidence/corresponding-source.tar.gz": "8828f9a0f7e529b7072690a447d63385e67ab12e768a1cd4b199a642a79eac3d",
+  "docs/phase6-evidence/corresponding-source.tar.gz": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+  "docs/phase6-evidence/corresponding-source-hashes.json": "61e5f57dae86e3f4c6fd0f3a79d515b9a3c6b62c187b834159393f4136859538"
+}

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "cc",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-I/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC",
+    "/Users/giorgikhubua/hacktoberfest-apollo/docs/earth-departure-evidence/experiments/alignment_observer.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/agc_engine.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/wasm.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/agc_engine_init.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/agc_utilities.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/ringbuffer_api.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/ringbuffer.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/source/yaAGC/rfopen.c",
+    "-lm",
+    "-o",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-departure/final-native-assets/cmc-alignment-engine.so"
+  ],
+  "exit": 0
+}

@@ -1,5 +1,7 @@
 # Apollo 11 chronological campaign: integration boundary
 
+The Earth-parking chapter now also offers [original Comanche P52 with modeled instruments](EARTH_ALIGNMENT_INTEGRATION.md). It is a bounded stationary alignment fixture; all complete-flight capability gates below remain unchanged. The separate cold-start diagnostic retains its IMU-off behavior.
+
 The mission reference now begins in **Earth parking orbit** and follows three
 historical goals: reach lunar orbit, descend to the Moon, and return to Earth.
 The return ends with atmospheric entry and splashdown. Apollo 11 did not perform

@@ -1,5 +1,7 @@
 # Apollo 11: presentation plan
 
+The strongest interactive Earth-orbit opening is now [original P52 alignment](P52_PLAYER_GUIDE.md). Rehearse the full manual procedure, then prepare at **V06N93** for a short presentation: explain that the two optical sightings were taken beforehand, show the original torque angles, press **PRO**, observe actual gyro/CDU feedback and finish at P00. Show the live original code / modeled instruments label. This is a stationary instrument fixture, not historical flight telemetry. Nominal TLI remains a sourced reference because its original Saturn provider is unavailable.
+
 A new manually playable opening is available before the reference tour:
 [the original Columbia CMC diagnostic](EARTH_ORBIT_PLAYABLE_GUIDE.md). Show real
 DSKY input, V35 output, the running clock, original P52 `00210` readiness alarm

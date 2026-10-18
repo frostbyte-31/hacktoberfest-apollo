@@ -1,0 +1,149 @@
+{
+  "desktop": {
+    "height": 1000,
+    "keyCount": 19,
+    "pageWidth": 1440,
+    "stickiness": "sticky",
+    "width": 1440
+  },
+  "mobile": {
+    "height": 844,
+    "keys": [
+      {
+        "height": 47,
+        "label": "DSKY VERB",
+        "left": 49,
+        "right": 87.28125,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY NOUN",
+        "left": 49,
+        "right": 87.28125,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY +",
+        "left": 91.28125,
+        "right": 129.5703125,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY -",
+        "left": 91.28125,
+        "right": 129.5703125,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY 0",
+        "left": 91.28125,
+        "right": 129.5703125,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY 7",
+        "left": 133.5703125,
+        "right": 171.8515625,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY 4",
+        "left": 133.5703125,
+        "right": 171.8515625,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY 1",
+        "left": 133.5703125,
+        "right": 171.8515625,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY 8",
+        "left": 175.8515625,
+        "right": 214.140625,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY 5",
+        "left": 175.8515625,
+        "right": 214.140625,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY 2",
+        "left": 175.8515625,
+        "right": 214.140625,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY 9",
+        "left": 218.140625,
+        "right": 256.421875,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY 6",
+        "left": 218.140625,
+        "right": 256.421875,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY 3",
+        "left": 218.140625,
+        "right": 256.421875,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY CLR",
+        "left": 260.421875,
+        "right": 298.7109375,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY PRO",
+        "left": 260.421875,
+        "right": 298.7109375,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY KEY REL",
+        "left": 260.421875,
+        "right": 298.7109375,
+        "width": 38.2890625
+      },
+      {
+        "height": 47,
+        "label": "DSKY ENTR",
+        "left": 302.7109375,
+        "right": 340.9921875,
+        "width": 38.28125
+      },
+      {
+        "height": 47,
+        "label": "DSKY RSET",
+        "left": 302.7109375,
+        "right": 340.9921875,
+        "width": 38.28125
+      }
+    ],
+    "pageWidth": 390,
+    "width": 390
+  }
+}

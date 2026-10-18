@@ -1,10 +1,14 @@
 import {createCampaignState,selectCampaignStage,nextCampaignStage,previousCampaignStage,reviewCampaignStage,assessMissionAvailability} from './campaign-state.mjs';
 import {createCampaignViewer,buildCampaignConfiguration} from './campaign-view.mjs';
 import {createAgcShowcase} from './agc-showcase.mjs';
-import {createEarthOrbitPanel} from './earth-orbit-panel.mjs';
+import {createEarthOrbitPanel} from './earth-orbit-panel.mjs?v=p52-1';
+import {createEarthAlignmentPanel} from './earth-alignment-panel.mjs?v=p52-2';
 
 const $=id=>document.getElementById(id),params=new URLSearchParams(location.search);
+const diagnostic=params.get('task')==='diagnostic';
 let state=null,availability=null,viewer=null,showcase=null,touring=false,timer=null,waitingForEvidence=false,finished=false,loadController=null,earthPanel=null,cmcAvailable=false;
+let alignmentObserved=false;
+const computerCapability=()=>`${diagnostic?'LIVE CMC TASK / AVAILABLE':alignmentObserved?'P52 OBSERVED / MODELED INSTRUMENTS':'LIVE P52 / AVAILABLE'} · FULL FLIGHT / UNAVAILABLE`;
 const stageButtons=new Map(),goalNodes=new Map();
 const make=(tag,text,className)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;};
 function clearTimer(){if(timer!==null){clearTimeout(timer);timer=null;}}
@@ -46,11 +50,11 @@ function render(){
   const moon=stage.order>=5&&stage.order<=14;$('reference-body').textContent=moon?'MOON REFERENCE':'EARTH REFERENCE';document.querySelector('.campaign-scene').classList.toggle('moon',moon);viewer?.draw(configuration);
   $('review-count').textContent=`${state.reviewedStageIds.length} / 16 REVIEWED`;
   for(const item of state.catalog.stages){const button=stageButtons.get(item.id);button.setAttribute('aria-current',item.id===stage.id?'step':'false');button.querySelector('small').textContent=state.reviewedStageIds.includes(item.id)?'REFERENCE REVIEWED':item.evidenceIds.length?'REFERENCE + SEPARATE EVIDENCE':'HISTORICAL REFERENCE';}
-  for(const item of state.catalog.goals){const node=goalNodes.get(item.id);node.classList.toggle('active',item.id===goal.id);node.querySelector('small').textContent=item.id==='lunar-orbit'&&cmcAvailable?'LIVE CMC TASK / AVAILABLE · FULL FLIGHT / UNAVAILABLE':'FULL FLIGHT / UNAVAILABLE';}
+  for(const item of state.catalog.goals){const node=goalNodes.get(item.id);node.classList.toggle('active',item.id===goal.id);node.querySelector('small').textContent=item.id==='lunar-orbit'&&cmcAvailable?computerCapability():'FULL FLIGHT / UNAVAILABLE';}
   $('stage-sources').replaceChildren(...stage.sourceIds.map(id=>{const source=state.catalog.sources.find(item=>item.id===id),a=make('a',`${source.title} ↗`);a.href=source.url;a.target='_blank';a.rel='noopener';a.title=source.locator;return a;}));
   $('flight-gate').textContent=`This chapter can be explored as a historical reference. ${stage.evidenceIds.length?'Related evidence is identified separately below.':'No original-computer flight execution is connected for this stage.'}`;
   $('missing-capability').textContent=availability.stageAvailability[stage.id].missingCapabilities.join(', ');
-  const earth=stage.id==='earth-parking';$('earth-console').hidden=!earth;$('earth-open').hidden=!earth;earthPanel?.setVisible(earth);
+  const earth=stage.id==='earth-parking';$('earth-console').hidden=!earth;$('earth-open').hidden=!earth;$('earth-task-links').hidden=!earth;earthPanel?.setVisible(earth);
   const kind=evidenceKind();$('evidence-insert').hidden=!kind;$('trainer-insert').hidden=!stage.evidenceIds.includes('undocking-trainer');
   if(kind){showcase?.show(kind);$('evidence-title').textContent=kind==='guidance'?'How the original computer prepares guidance.':'Original engine commands and sensor feedback.';}else showcase?.pause();
   $('tour-complete').hidden=!finished;
@@ -80,7 +84,7 @@ try{showcase=createAgcShowcase({root:$('agc-showcase'),canvas:$('agc-canvas'),on
   if(touring&&waitingForEvidence&&record.available&&!record.excerptComplete){renderTransport();if(!record.playing)$('tour-status').textContent='The recorded excerpt is paused. Use Play observations to continue, or Pause tour to explore.';}
   if(touring&&waitingForEvidence&&record.excerptComplete&&!record.playing){waitingForEvidence=false;renderTransport();$('tour-status').textContent='Verified excerpt complete. Resuming the historical reference in 5 seconds; no flight maneuver was completed.';scheduleNext(5000);}
 }});showcase.load();}catch(error){$('agc-showcase').textContent=`Verified inspector unavailable: ${error.message}. No substitute telemetry is shown.`;}
-try{earthPanel=createEarthOrbitPanel({root:$('earth-console'),onAction:pauseTour,onState:observation=>{cmcAvailable=observation.available;const goal=goalNodes.get('lunar-orbit');if(goal)goal.querySelector('small').textContent=cmcAvailable?'LIVE CMC TASK / AVAILABLE · FULL FLIGHT / UNAVAILABLE':'FULL FLIGHT / UNAVAILABLE';}});earthPanel.load();}catch(error){$('earth-console').textContent=`Original CMC console unavailable: ${error.message}`;}
+try{earthPanel=(diagnostic?createEarthOrbitPanel:createEarthAlignmentPanel)({root:$('earth-console'),onAction:pauseTour,onState:observation=>{cmcAvailable=observation.available;alignmentObserved=observation.snapshot?.task.alignmentCompleted===true;const goal=goalNodes.get('lunar-orbit');if(goal)goal.querySelector('small').textContent=cmcAvailable?computerCapability():'FULL FLIGHT / UNAVAILABLE';}});earthPanel.load();$('earth-open').textContent=diagnostic?'Play cold-start diagnostic':'Play P52 alignment';}catch(error){$('earth-console').textContent=`Original CMC console unavailable: ${error.message}`;}
 $('earth-open').addEventListener('click',()=>{pauseTour();$('earth-console').scrollIntoView({block:'start'});});
 $('tour-start').addEventListener('click',()=>{if(!state)return;const resume=!finished;if(finished){state=createCampaignState(state.catalog);finished=false;render();}touring=true;renderTransport();paceTour(resume);});
 $('tour-pause').addEventListener('click',pauseTour);
