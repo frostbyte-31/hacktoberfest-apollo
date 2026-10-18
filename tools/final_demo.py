@@ -30,11 +30,16 @@ def main():
                                     cwd=ROOT, text=True, capture_output=True)
     if guidance_check.returncode:
         parser.error('Recorded guidance export failed verification. Run python3 -B frontend/tools/export_guidance.py --check for diagnostics.')
-    from backend.propulsion_recording import build_recording, serialize
+    from backend.propulsion_recording import build_recording, verify_export
     recording = ROOT/'frontend/dist/data/propulsion-lab.json'
-    if not recording.is_file() or recording.read_text() != serialize(build_recording()):
+    if not recording.is_file():
         parser.error('Authentic propulsion recording is missing or stale. Run python3 -B -m backend.propulsion_recording.')
+    try:
+        comparison = verify_export(recording.read_text(), build_recording())
+    except ValueError:
+        parser.error('Authentic propulsion recording differs from sealed source. Run python3 -B -m backend.propulsion_recording --check for diagnostics.')
     print('Recorded propulsion samples verified against actual raw traces.', flush=True)
+    print('Propulsion export verification: '+json.dumps(comparison), flush=True)
     assets, error = None, None
     if not args.recorded_only:
         try:
@@ -50,7 +55,7 @@ def main():
         provider = provider_from_environment()
     except ValueError:
         provider = None
-        print('Model configuration incomplete/invalid; LLM seats disabled. Deterministic fallback crew remains available.', flush=True)
+        print('Model configuration incomplete/invalid; LLM seats disabled.', flush=True)
     try:
         server = make_server(args.port, assets=assets, assets_error=error, ai_provider=provider)
     except OSError as failure:
@@ -59,10 +64,12 @@ def main():
         raise
     print('Open: http://127.0.0.1:{}/'.format(server.server_port), flush=True)
     print('Undocking checklist: /play.html · shared educational flight: /mission.html', flush=True)
-    print('Recorded guidance: /guidance.html · existing attitude controls: /attitude-lab.html', flush=True)
+    print('Recorded guidance: /guidance.html · existing attitude controls: /attitude-replay.html', flush=True)
     print('Mode: '+('verified native attitude + independent educational physics + authentic recordings + checklist training' if assets else 'recorded authentic execution + Python-only checklist training; native flight modes unavailable'), flush=True)
     print('Ctrl+C shuts down owned workers and physical model processes.', flush=True)
-    print('Model crew: '+('configured server-side; requests occur only for selected model seats' if provider else 'not configured; labeled deterministic crew available'), flush=True)
+    print('Model crew: '+('flight lab unavailable until verified physical dependencies are prepared'
+        if not assets else 'configured server-side; requests occur only for selected model seats'
+        if provider else 'not configured; labeled deterministic crew available'), flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

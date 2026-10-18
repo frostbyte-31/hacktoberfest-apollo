@@ -9,7 +9,7 @@ It does not propose a live original-AGC landing API.
 | Experience | Source | Commands | Physical authority |
 |---|---|---|---|
 | `/guidance.html` | Verified recorded Phase 10 execution | Replay navigation only | No propagated spacecraft |
-| `/index.html` | Live original Luminary and existing native attitude adapter | Existing validated yaw/pitch inputs | Existing bounded attitude model |
+| `/attitude-replay.html` | Live original Luminary and existing native attitude adapter | Existing validated yaw/pitch inputs | Existing bounded attitude model |
 | Engine inspector in `/mission.html` | Verified recorded Phase 12 raw runs | Case selection, play/pause/scrub | Recorded original experiment |
 | Flight laboratory in `/mission.html` | Live server educational physics | Validated manual/model/fallback actuator requests | One server-owned physical plant per shared mission |
 
@@ -144,3 +144,7 @@ editor, internet identity service, persisted session restore after server exit,
 voice link or full Command Module model. Those capabilities must be added only
 after source and end-to-end validation; the current capability response does
 not advertise them.
+
+## UI/UX integration update
+
+The current entry point `/` is the crew/experience launcher. It creates lab missions using the exact v1 contract above and restores the returned private participant only in the same tab. The source-backed orbital checklist is `/play.html`, served by independent `/api/procedure/status`, `/api/procedure/start` and `/api/procedure/action` routes ([contract](FRONTEND_UNDOCKING.md)). Missing native assets disable the physical lab and native inputs while keeping this Python-only trainer available; explicit `frontend/serve.py --replay-only` still disables all mutations. The new recorded engine inspector reads `data/propulsion-lab.json`; the earlier four-case export retains its original `data/propulsion.json` name. Live lab view defaults to 3D and offers the retained SVG diagnostic. Keyboard steering is a modern, explicit opt-in.

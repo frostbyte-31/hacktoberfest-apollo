@@ -24,8 +24,9 @@ export function validateUndockingDefinition(data){
 }
 
 /** Source-linked controls are rendered here; only the server advances the checklist. */
-export function createUndockingTrainer({root=document,onState=()=>{},onHandoff=()=>{}}={}){
+export function createUndockingTrainer({root=document,onState=()=>{},onHandoff=()=>{},humanParticipation='solo'}={}){
   const $=id=>root.getElementById(id);
+  const crewLabel=humanParticipation==='shared-device'?'SHARED DEVICE':'SOLO CREW';
   let definition=null,definitionHash=null,ready=false,visible=true,role='CDR',feedback='',failure=false,verifiedState=null;
   const client=new ProcedureClient({onState:()=>{render();if(ready)onState(client.state);},onError:message=>{feedback=message;failure=true;}});
   const put=(id,text)=>{$(id).textContent=text;};
@@ -89,9 +90,9 @@ export function createUndockingTrainer({root=document,onState=()=>{},onHandoff=(
     $('procedure-reconnect').hidden=ready;$('procedure-reconnect').disabled=client.busy;
     if(!ready){put('mission-gate',feedback||client.message||'Checking the local procedure service…');if(active){put('procedure-feedback',feedback||client.message);$('procedure-feedback').classList.add('error-feedback');root.querySelectorAll('#procedure-command button,.station-picker button').forEach(button=>{button.disabled=true;});}return;}
     put('mission-gate','Source-backed procedure model. Original AGC execution, physical sensors and orbital motion are not connected to this chapter.');
-    if(!active){put('opening-role','SOLO CREW / TWO SPACECRAFT');put('opening-task-title','Prepare to undock.');put('opening-task-copy','Begin the sourced checklist, then take the indicated crew station at each step.');if(failure&&feedback)put('mission-gate',`${feedback} Begin a new checklist if the local server was restarted.`);return;}
+    if(!active){put('opening-role',`${crewLabel} / TWO SPACECRAFT`);put('opening-task-title','Prepare to undock.');put('opening-task-copy','Begin the sourced checklist, then take the indicated crew station at each step.');if(failure&&feedback)put('mission-gate',`${feedback} Begin a new checklist if the local server was restarted.`);return;}
     const step=state.currentStep;
-    put('opening-role',`${CREW[role].station.toUpperCase()} / SOLO CREW`);
+    put('opening-role',`${CREW[role].station.toUpperCase()} / ${crewLabel}`);
     put('opening-task-title',state.attachment==='released'?'Docking connection released.':'Work the undocking checklist.');
     put('opening-task-copy',state.completed?'This procedure is complete. Review the next operation before any maneuver.':'Change crew station when the checklist calls for a different astronaut.');
     put('procedure-count',`${state.completedStepIds.length} / ${definition.steps.length} ACTIONS`);put('procedure-attachment',state.attachment==='released'?'RELEASED / MODEL':'DOCKED / MODEL');

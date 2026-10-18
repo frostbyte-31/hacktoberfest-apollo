@@ -1,3 +1,7 @@
+# Current unified product
+
+The final backend from main (`92adbb5`) is merged. `/` is now the crew/experience launcher. `/play.html` is the sourced orbital undocking trainer; `/mission.html` is the independent shared 3D educational landing laboratory. The original attitude console is preserved at `/attitude-replay.html`. The new lab never drives original AGC navigation. [Submission guide](SUBMISSION_GUIDE.md), [shared mission API](FINAL_INTEGRATION_CONTRACT.md), and [current verification](frontend-submission-evidence/README.md) supersede older entry-route instructions below.
+
 # Apollo 11 frontend architecture
 
 The first chapter now supports a 28-action, server-owned **interactive undocking

@@ -54,6 +54,53 @@ test('corrupt browser persistence does not create a fake participant',()=>{
  const client=new MissionLiveProvider({storage:{getItem:()=>'{broken'}});assert.equal(client.credentials,null);
 });
 
+function rejectOnAbort(signal) {
+ return new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(new DOMException('Request aborted','AbortError')),{once:true}));
+}
+test('capability discovery aborts a stalled request at its deadline without creating credentials or retrying',async()=>{
+ const calls=[];
+ const client=new MissionLiveProvider({storage:storage(),requestTimeoutMs:5,fetchImpl:async(path,init)=>{
+  calls.push({path,init});return rejectOnAbort(init.signal);
+ }});
+ await assert.rejects(client.discover(),error=>error.code==='timeout'&&/timed out/.test(error.message)&&error.commandOutcomeUnknown===false);
+ assert.equal(calls.length,1);assert.equal(calls[0].path,'/api/v1/capabilities');assert.equal(calls[0].init.signal.aborted,true);
+ assert.equal(client.token,null);assert.equal(client.credentials,null);
+});
+test('the request deadline also covers a response body that never finishes',async()=>{
+ let signal;
+ const client=new MissionLiveProvider({storage:storage(),requestTimeoutMs:5,fetchImpl:async(path,init)=>{
+  signal=init.signal;return {ok:true,status:200,json:()=>rejectOnAbort(signal)};
+ }});
+ await assert.rejects(client.discover(),error=>error.code==='timeout'&&/timed out/.test(error.message));
+ assert.equal(signal.aborted,true);assert.equal(client.token,null);
+});
+test('a timed-out mutation is never retried or treated as acknowledged and a later GET reconciles actual state',async()=>{
+ const calls=[],actual=state();actual.revision=2;actual.you.lastSequence=1;actual.physics.spacecraft.altitudeM=14999;
+ const client=new MissionLiveProvider({storage:storage(),requestTimeoutMs:5,fetchImpl:async(path,init)=>{
+  calls.push({path,init});
+  if(init.method==='POST')return rejectOnAbort(init.signal);
+  return response(actual);
+ }});
+ client.remember({missionId:'mission-1',participantToken:'private',snapshot:state()});
+ await assert.rejects(client.command('controls',{throttle:.4,pitch:0}),error=>error.code==='timeout'&&error.commandOutcomeUnknown===true&&/outcome is unknown/.test(error.message));
+ assert.equal(calls.length,1);assert.equal(client.credentials.sequence,1,'An uncertain sequence cannot be reused.');
+ const acknowledged=await client.snapshot();
+ assert.equal(acknowledged,actual);assert.equal(acknowledged.physics.spacecraft.altitudeM,14999);
+ assert.deepEqual(calls.map(call=>call.init.method),['POST','GET']);
+ assert.equal(JSON.parse(calls[0].init.body).sequence,1);assert.equal(client.credentials.sequence,1);
+});
+test('successful and rejected responses clear their deadline timers',async()=>{
+ const signals=[];
+ const client=new MissionLiveProvider({storage:storage(),requestTimeoutMs:5,fetchImpl:async(path,init)=>{
+  signals.push(init.signal);return signals.length===1
+   ?response({schemaVersion:1,token:'local-secret',capabilities:{},scenarios:[],crewRoles:[]})
+   :response({error:'Permission denied'},false,403);
+ }});
+ await client.discover();await assert.rejects(client.discover(),/Permission denied/);
+ await new Promise(resolve=>setTimeout(resolve,10));
+ assert.deepEqual(signals.map(signal=>signal.aborted),[false,false]);
+});
+
 import {readFile} from 'node:fs/promises';
 import {RecordedPropulsionProvider} from '../dist/mission-live-provider.mjs';
 const actualPropulsion = JSON.parse(await readFile(new URL('../dist/data/propulsion-lab.json', import.meta.url),'utf8'));

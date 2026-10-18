@@ -4,6 +4,9 @@ import {validateOperations,replayMilestones,physicalStart,adjacentReplayEvent} f
 import {renderDSKY} from './dsky-view.mjs';
 import {lastAt,formatTime} from './replay.mjs';
 import {createUndockingTrainer} from './undocking-ui.mjs';
+import {readCrewSetup,CURRENT_CREW_CAPABILITIES} from './crew-session.mjs';
+import {validateCrewSetup} from './crew-setup.mjs';
+import {buildSessionSummary} from './session-summary.mjs';
 
 const $=id=>document.getElementById(id);
 const put=(id,value)=>{$(id).textContent=value;};
@@ -13,6 +16,18 @@ const number=(value,digits=1)=>Number.isFinite(value)?value.toLocaleString('en-U
 const vector=(values,digits=2)=>Array.isArray(values)?values.map(v=>number(v,digits)).join(' / '):'Unavailable';
 let operations=null,provider=null,mode='historical',caseId='connected',time=0,playing=false,selectedEventId=null,lastPaint=0,disposed=false,renderedKey=null;
 let renderer=null,trainer=null,presentedProcedureSession=null;
+let crewStore;try{crewStore=sessionStorage;}catch{crewStore=null;}
+const crewSetup=readCrewSetup(crewStore);
+$('crew-session-label').textContent=validateCrewSetup(crewSetup,CURRENT_CREW_CAPABILITIES).description;
+let trainingSummary=null;
+function renderTrainingSummary(){
+  try{trainingSummary=trainer?.state?buildSessionSummary(trainer.state,crewSetup):null;}catch{trainingSummary=null;}
+  $('procedure-debrief').hidden=!trainingSummary;
+  if(!trainingSummary)return;
+  put('training-debrief-copy',crewSetup.humanParticipation==='shared-device'?'Your human crew completed the selected checklist by taking turns at each station.':'You worked all three Apollo crew stations through the selected undocking checklist.');
+  put('training-action-count',`${trainingSummary.completedActionCount} / 28`);put('training-report-count',String(trainingSummary.crewReportCount));put('training-correction-count',String(trainingSummary.wrongSelections));
+}
+$('training-download').addEventListener('click',()=>{if(!trainingSummary)return;const url=URL.createObjectURL(new Blob([JSON.stringify(trainingSummary,null,2)+'\n'],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='apollo11-undocking-training-summary.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 $('recorded-mode').disabled=true;
 try{renderer=createMissionRenderer($('mission-canvas'));put('renderer-kind',renderer.kind.toUpperCase());}catch(error){showError(`The spacecraft viewer could not initialize: ${error.message}`);}
 
@@ -156,7 +171,7 @@ new ResizeObserver(()=>{renderer?.resize();drawScene();}).observe($('mission-sce
 document.addEventListener('visibilitychange',()=>{if(document.hidden){playing=false;if(provider)renderRecorded();}});window.addEventListener('pagehide',()=>{playing=false;disposed=true;renderer?.dispose();});
 
 drawScene();requestAnimationFrame(tick);
-trainer=createUndockingTrainer({onState:()=>applyProcedurePresentation(),onHandoff:()=>{
+trainer=createUndockingTrainer({humanParticipation:crewSetup.humanParticipation,onState:()=>{applyProcedurePresentation();renderTrainingSummary();},onHandoff:()=>{
   if(!trainer.state?.completed)return;
   previewChapter('undocking');
   put('preview-title','Next: relative motion and Eagle inspection');put('preview-get','AFTER RELEASE / BEFORE THE CSM SEPARATION MANEUVER');put('preview-description','The crew next managed relative motion and inspected Eagle. Armstrong first controlled LM rates and maneuvered for Collins’s inspection. The later Columbia separation burn, LM alignment and DOI follow in that order. This next flight chapter requires authoritative attitude and relative-motion integration; reviewing it does not perform the inspection.');

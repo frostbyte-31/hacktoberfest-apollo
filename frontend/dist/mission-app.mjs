@@ -2,22 +2,24 @@ import { MissionLiveProvider, RecordedPropulsionProvider, ROLE_IDS } from './mis
 import { renderFlightView } from './flight-view.mjs';
 const $ = id => document.getElementById(id);
 const provider = new MissionLiveProvider();
-let discovery = null, snapshot = null, bounds = null, stopped = false, pitch = 0, throttle = 0;
+let discovery = null, snapshot = null, bounds = null, stopped = false, pitch = 0, throttle = 0, connected = false;
 let queue = Promise.resolve(), polling = false, propulsion = null;
 const number = (value, precision = 1) => Number.isFinite(value) ? value.toLocaleString('en-US', {minimumFractionDigits: precision, maximumFractionDigits: precision}) : '—';
 const text = (id, value) => { $(id).textContent = value; };
 function notice(message, error = false) { text('mission-notice', message); $('mission-notice').dataset.error = String(error); }
-function pilot() { return snapshot?.you?.role === 'commander' && snapshot?.status === 'running'; }
+function pilot() { return connected && snapshot?.you?.role === 'commander' && snapshot?.status === 'running'; }
 function item(tag, value, className) { const node = document.createElement(tag); node.textContent = value; if (className) node.className = className; return node; }
 function render(state) {
   if (snapshot?.id === state.id && snapshot.revision > state.revision) return;
   const newRun = snapshot?.runId !== state.runId;
-  snapshot = state;
+  snapshot = state; connected = true;
   if (newRun || !bounds) {
     bounds = {heightM: Math.max(100, state.physics.spacecraft.altitudeM * 1.18), widthM: Math.max(500, Math.abs(state.physics.spacecraft.downrangeM) + 1200)};
     throttle = 0; pitch = 0; $('manual-throttle').value = '0';
   }
   const physical = state.physics, craft = physical.spacecraft, engine = physical.engine;
+  const limits=physical.thresholds;
+  text('flight-objective',limits?`Touch down within ${number(limits.landingSiteDistanceM,0)} m of the amber reference, with vertical speed at most ${number(limits.verticalSpeedMps)} m/s, horizontal speed at most ${number(limits.horizontalSpeedMps)} m/s and tilt at most ${number(limits.pitchDeg,0)}°. These are synthetic teaching limits.`:'Landing limits unavailable. The server has not supplied a target criterion.');
   renderFlightView(document, craft, engine, bounds);
   text('mission-title', state.title); text('mission-status', state.status.toUpperCase());
   text('simulation-clock', `T + ${number(physical.simTimeSeconds, 2)} s`);
@@ -95,7 +97,7 @@ function neutral() { pitch = 0; throttle = 0; $('manual-throttle').value = '0'; 
 async function refresh() {
   if (stopped || !provider.credentials) return;
   try { render(await provider.snapshot()); }
-  catch (error) { notice(`Connection interrupted: ${error.message} The display holds its last server sample.`, true); }
+  catch (error) { connected=false;pitch=0;throttle=0;for(const id of ['manual-throttle','pitch-negative','pitch-positive','engine-cutoff','training-assist','crew-ready','mission-start','mission-pause','mission-restart','crew-message','message-send'])$(id).disabled=true;notice(`Connection interrupted: ${error.message} Controls are disabled; the display holds its last server sample.`, true); }
   setTimeout(refresh, 200);
 }
 function startPolling() { if (!polling) { polling = true; refresh(); } }
@@ -131,13 +133,14 @@ $('mission-restart').addEventListener('click',() => { neutral(); command('restar
 $('training-assist').addEventListener('change',event => { neutral(); command('assist',{enabled:event.target.checked}); });
 $('manual-throttle').addEventListener('input',event => { throttle=Number(event.target.value)/100; text('throttle-value',`${Math.round(throttle*100)}%`); controls(); });
 $('engine-cutoff').addEventListener('click',neutral);
+$('lab-keyboard').addEventListener('change',neutral);
 for (const [id,direction] of [['pitch-negative',-1],['pitch-positive',1]]) {
   const button=$(id);
   button.addEventListener('pointerdown',event => { if (button.disabled) return; event.preventDefault(); button.setPointerCapture(event.pointerId); pitch=direction; controls(); });
   for (const name of ['pointerup','pointercancel','lostpointercapture']) button.addEventListener(name,() => { pitch=0; controls(); });
 }
 document.addEventListener('keydown',event => {
-  if (!pilot() || snapshot.assistance || event.repeat || ['INPUT','SELECT','TEXTAREA'].includes(document.activeElement?.tagName)) return;
+  if (!$('lab-keyboard').checked || !pilot() || snapshot.assistance || event.repeat || ['INPUT','SELECT','TEXTAREA'].includes(document.activeElement?.tagName)) return;
   if (event.code==='KeyA' || event.code==='KeyD') { event.preventDefault(); pitch=event.code==='KeyA'?-1:1; controls(); }
   if (event.code==='ArrowUp' || event.code==='ArrowDown') { event.preventDefault(); throttle=Math.max(0,Math.min(1,throttle+(event.code === 'ArrowUp' ? .05 : -.05))); $('manual-throttle').value=String(Math.round(throttle*100)); text('throttle-value',`${Math.round(throttle*100)}%`); controls(); }
 });
@@ -226,7 +229,7 @@ async function initialize() {
     $('create-button').disabled=!discovery.capabilities.physicsLab; $('join-button').disabled=!discovery.capabilities.multiplayer;
     text('mission-limitations',discovery.limitations.join(' · '));
     notice(discovery.capabilities.physicsLab ? 'Mission service ready. Create a synthetic flight, or join your crew. Original AGC experiences remain available through the links above.' : 'The educational physics service is unavailable. Verified recorded guidance remains available.');
-    if (provider.credentials && !joinId) { try { entered(await provider.snapshot()); } catch (error) { notice(`Previous session cannot be resumed: ${error.message} Create or join a mission.`,true); } }
+    if (provider.credentials && !joinId && !new URLSearchParams(location.search).has('new')) { try { entered(await provider.snapshot()); } catch (error) { notice(`Previous session cannot be resumed: ${error.message} Create or join a mission.`,true); } }
   } catch (error) { notice(`${error.message} Use the documented final-demo server. Original recordings remain available through the guidance link.`,true); text('mission-limitations','No live mission data received. No fallback telemetry is fabricated.'); }
 }
 initialize();

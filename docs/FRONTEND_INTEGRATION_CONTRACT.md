@@ -1,3 +1,7 @@
+# Unified launch and final mission integration
+
+The merged final server now exposes the versioned shared-mission API documented in [FINAL_INTEGRATION_CONTRACT.md](FINAL_INTEGRATION_CONTRACT.md), alongside the bounded native and source-backed procedure APIs below. `/` is crew setup; the previous index attitude UI is `/attitude-replay.html`. Historical undocking and the educational physics lab are separate state domains. AI choices require the real server `llmConfigured` capability; deterministic fallback is separately labeled. The lab uses `propulsion-lab.json` (three raw-derived causal cases), while the existing mission viewer retains `propulsion.json` (four cases). No existing recorded provider is silently changed to the new format.
+
 # Frontend integration contract
 
 The new primary `/play.html` adds a source-linked historical lunar-orbit reference

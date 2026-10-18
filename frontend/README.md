@@ -1,27 +1,121 @@
-# Apollo 11 · Guidance Labs
+# Apollo 11 · Mission procedures and guidance
 
-## Procedure-led mission experience
+## Launch and choose the crew
+
+From the repository root, with Python 3.9 or newer:
 
 ```sh
 make play
+# Or directly:
+python3 -B tools/final_demo.py --port 4173
 ```
 
-Open **http://127.0.0.1:4173/play.html**. The main experience explains the current
-preparation task and steps through verified recorded software observations with
-a read-only DSKY and an illustrative 3D Lunar Module. This is a walkthrough of
-the synthetic experiment, not the full Apollo 11 flown checklist. Live DSKY,
-cockpit switches, crew continuation and powered descent are explicitly unavailable.
+Open **http://127.0.0.1:4173/** for the launch screen. Choose either the historical
+orbital procedure trainer or the separate educational landing laboratory. Every
+experience identifies its execution source and available controls. The landing
+lab does not continue the trainer's historical flight state.
+
+Exactly three crew slots represent Armstrong, Commander in Eagle; Aldrin, Lunar
+Module Pilot in Eagle; and Collins, Command Module Pilot in Columbia. Collins
+remains in lunar orbit; his landing-lab communications/support role is a disclosed
+gameplay adaptation.
+
+### Historical orbital procedures
+
+The **/play.html** experience starts with Eagle docked to Columbia. One person
+can take all three stations, or people can share one device and take assigned
+turns. Begin the undocking checklist and complete **28 selected source-backed
+actions**. Reports and cockpit switch positions are checked by the server for
+crew, order, sequence and revision. Collins releases Columbia's **DOCKING PROBE
+EXTD/REL**, then returns it to **OFF**. A labeled static 3D mechanical diagram
+shows the release.
+
+This is an **INTERACTIVE PROCEDURE TRAINER** with explicit entry assumptions,
+including earlier tunnel, pressure, probe and computer preparation. Some LM
+crew-station assignments are instructional. It does not execute the AGC/AGS,
+generate physical flyaway or reconstruct the full flown checklist. The next
+handoff is relative-motion management and Eagle inspection, before the later
+CSM separation maneuver, LM preparation/alignment, DOI and powered descent.
+Unsupported flight chapters remain gated.
+
+### Shared educational landing laboratory
+
+The **/mission.html** lab uses the new backend's authoritative spacecraft plant,
+with synthetic initial conditions and modern throttle/pitch controls. Select
+the training, braking or low-fuel scenario. Choose a human, **deterministic
+fallback**, or configured model provider for each of the three seats; your own
+seat is human. An observer host can instead watch three agent seats. Open human
+seats can be joined from another local browser/private window with the mission
+ID or invite. All three seats must be occupied and ready before start.
+
+The Commander controls flight and optional modern training assist. The LM Pilot
+reviews the lab checklist; joined crew can exchange messages. Pause, resume,
+restart and the final measured debrief operate on one shared server state. Human
+commands expire unless refreshed. Browser credentials are private to the tab;
+invites carry a mission ID. This is a loopback demonstration, not an internet
+deployment or a cross-device service.
+
+The mode is **EDUCATIONAL_PHYSICS_LAB**, with `authenticAGC: false`. The plant has
+3D position, velocity and attitude representations but only a bounded planar
+pitch actuator. This is not an authentic Apollo hand-controller model, a
+historical trajectory or an AGC-guided landing. Deterministic crew and training
+assist are labeled separately from model AI. The model-provider adapter exists;
+real LLM execution was **not run** in this delivery.
+
+Server-side model configuration uses `APOLLO_AI_MODEL`, `APOLLO_AI_BASE_URL`,
+`APOLLO_AI_PROTOCOL` (`responses` or `chat-completions`) and optional
+`APOLLO_AI_API_KEY` for a local provider. Remote providers require HTTPS. No
+ambient key is auto-discovered or exposed to the browser. Model seats are
+available only with a valid explicit provider configuration. Models propose
+role-permitted commands through the normal validator; they cannot write
+spacecraft state. Failures use explicitly labeled deterministic fallback.
+
+### Authentic recordings and native execution
+
+**VERIFIED RECORDED EXECUTION** and **STATIC EDUCATIONAL ILLUSTRATION** remain
+distinct from both playable modes. The separate propulsion recording includes
+actual retained 3D position/velocity, original DSKY observations, engine commands,
+thrust, fuel and PIPA/navigation feedback. Its retained causal cases are bounded
+synthetic diagnostics, not the historical Apollo 11 landing trajectory. The
+original guidance explorer and live bounded attitude laboratory are preserved.
+Arbitrary live mission DSKY commands and a complete authentic AGC-guided landing
+remain unavailable.
+
+If port 4173 already serves the current application, reuse it. To start another
+instance, use `make play PORT=4180` and open **http://127.0.0.1:4180/**. Restart an
+old server after updating backend routes. Keep the terminal open; Ctrl-C stops
+the server and its owned workers. Opening HTML directly from disk is unsupported.
+No npm installation is needed.
+
+The physical lab and live AGC attitude need a C compiler, make and the pinned Tcl
+runtime. On first use, run `python3 -B tools/final_demo.py --bootstrap-runtime`
+or prepare the runtime with `make runtime`, then `make play`. The launcher checks
+the original source/evidence and prepares the existing native assets. If those
+dependencies are unavailable, the launch screen reports the unavailable modes;
+the undocking trainer and authentic recordings remain available. To skip native
+preparation deliberately, use `python3 -B tools/final_demo.py --recorded-only`.
+The older `frontend/serve.py --replay-only` launch disables interactive commands
+and does not expose the new shared-mission service.
+
+See [play instructions and procedure API](../docs/FRONTEND_UNDOCKING.md),
+[historical sources](../docs/FRONTEND_UNDOCKING_RESEARCH.md),
+[undocking verification](../docs/frontend-undocking-evidence/README.md), and
+[submission guide](../docs/SUBMISSION_GUIDE.md). The new mission endpoints, crew
+permissions, clocks, units and provider boundary are documented in
+[the final integration contract](../docs/FINAL_INTEGRATION_CONTRACT.md).
 
 The modern target exercise remains at **/attitude-lab.html**, separate from
 mission procedures. Its illustrative hand controller uses existing live yaw/pitch
 inputs. Keyboard steering requires an explicit opt-in; accessible direction
 buttons remain available. The first live launch needs the pinned Tcl runtime,
-C compiler and make. `make demo` remains replay-only.
+C compiler and make; run `make runtime` to prepare it. `make demo` remains
+replay-only. The original attitude recording console is preserved at
+**/attitude-replay.html**.
 
-See [procedure architecture and missing contracts](../docs/FRONTEND_PROCEDURES.md)
-and [verification](../docs/frontend-procedure-evidence/README.md). The earlier
+The earlier [procedure architecture](../docs/FRONTEND_PROCEDURES.md) and
+[verification](../docs/frontend-procedure-evidence/README.md), and the
 [game contract](../docs/FRONTEND_GAME_CONTRACT.md) and its evidence describe the
-previous revision; the target exercise is now at the separate lab route.
+previous preparation/target revisions; the target exercise remains a separate lab.
 
 ## Phase 10 mission control
 
@@ -94,7 +188,12 @@ From the repository root, with Python 3.9 or newer:
 python3 -B frontend/serve.py
 ```
 
-Open **http://127.0.0.1:4173/**. Choose another local port with `--port 4174`. The server serves only `frontend/dist/` and binds to loopback. No AGC starts until you select **Live AGC → Start live AGC**. Stop the server with Ctrl-C. No npm installation, external assets, fonts, CDN or external service is needed. Opening `index.html` directly from disk is unsupported.
+Open **http://127.0.0.1:4173/attitude-replay.html** for this laboratory. Choose
+another local port with `--port 4174` and use the same path. The server serves
+only `frontend/dist/` and binds to loopback. No AGC starts until you select
+**Live AGC → Start live AGC**. Stop the server with Ctrl-C. No npm installation,
+external assets, fonts, CDN or external service is needed. Opening the HTML
+directly from disk is unsupported.
 
 Live mode also requires a C compiler (`cc`) and the locked Tcl runtime. Run `make runtime` first; its initial download is integrity checked. Select `python3 -B frontend/serve.py --replay-only` to disable the native API and use recordings without those dependencies.
 

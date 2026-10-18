@@ -1,0 +1,24 @@
+{
+  "baselineHead": "db707af4bc24ce8666e485927db278124f7247a4",
+  "fetchedMain": "92adbb5d5dd0bae5f3380dd97ed37176af41bd42",
+  "mergeCommit": "daffe51",
+  "mainIsAncestor": true,
+  "baselineTrackedFiles": 7488,
+  "missingExistingFiles": [],
+  "changedExistingFiles": [
+    "Makefile",
+    "README.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "frontend/README.md",
+    "frontend/dist/index.html",
+    "frontend/dist/lunar-mission.mjs",
+    "frontend/dist/play.html",
+    "frontend/dist/undocking-ui.mjs",
+    "frontend/serve.py"
+  ],
+  "protectedOriginalFiles": 7230,
+  "protectedOriginalChanges": [],
+  "oldAttitudePagePreservedAtNewPath": true,
+  "result": "PASS"
+}

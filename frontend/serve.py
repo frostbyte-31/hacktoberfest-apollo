@@ -80,7 +80,7 @@ class ApolloHandler(SimpleHTTPRequestHandler):
             self._token()
             path = urlsplit(self.path).path
             procedure_path = path in ('/api/procedure/start', '/api/procedure/action')
-            if procedure_path and not self.server.procedure_enabled:
+            if procedure_path and self.server.replay_only:
                 raise ControlError(409, 'Interactive procedures are disabled on this server.')
             if not procedure_path and not self.server.live_enabled:
                 raise ControlError(409, 'Live control is disabled on this replay-only server.')
@@ -141,6 +141,7 @@ def make_server(port=4173, controls=None, replay_only=False, procedures=None, na
     handler = partial(ApolloHandler, directory=str(ROOT / 'frontend/dist'))
     server = ThreadingHTTPServer(('127.0.0.1', port), handler)
     server.control_token = secrets.token_urlsafe(32)
+    server.replay_only = bool(replay_only)
     server.controls = controls or ControlService()
     server.procedures = procedures if procedures is not None else ProcedureService()
     server.live_enabled = not replay_only and native_enabled is not False

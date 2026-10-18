@@ -1,273 +1,94 @@
-# Apollo 11 — mission procedures and original guidance
+# Apollo 11 — the guidance experience
 
-Start the **lunar-orbit mission starting point** with `make play`, then open
-**http://127.0.0.1:4173/play.html**. Eagle begins docked to Columbia, before
-undocking. Select **Begin undocking checklist**, switch between the three crew
-stations, and complete 28 selected source-backed actions. Collins operates
-Columbia's **DOCKING PROBE EXTD/REL**, then returns it to **OFF**. The server
-checks role, order, selections and acknowledgments. Release is displayed as a
-labeled mechanical diagram; orbital flyaway, original AGC/AGS execution and
-physical sensors are not simulated by this trainer. The next handoff is Eagle
-inspection, before the later CSM separation maneuver and DOI.
+Assemble the three Apollo crew stations, work the source-backed undocking
+checklist, and explore lunar landing physics in a separate shared **3D flight
+laboratory**. Original Luminary 099 execution and verified DSKY/propulsion
+recordings remain available throughout the product.
 
-For the playable checklist, no native runtime preparation is needed:
+## Start
 
 ```sh
-python3 -B frontend/serve.py --port 4173
+make play
 ```
 
-[How to play, implemented API and next integration](docs/FRONTEND_UNDOCKING.md);
-[undocking source research](docs/FRONTEND_UNDOCKING_RESEARCH.md);
-[tests and screenshots](docs/frontend-undocking-evidence/README.md).
-
-Select **Separate recorded propulsion experiment** to play the new backend's actual
-retained 3D position, velocity and fixed attitude, original DSKY, engine commands,
-thrust, fuel and PIPA/navigation feedback. Four causal cases are available.
-This is a bounded synthetic diagnostic, not a historical trajectory or complete
-descent. Live historical flight and cockpit commands remain unavailable.
-The previous preparation walkthrough is preserved at **/preparation.html**.
-See [mission start and integration](docs/FRONTEND_MISSION_START.md),
-[Apollo controls and chronology sources](docs/FRONTEND_APOLLO_OPERATIONS.md), and
-[verification](docs/frontend-mission-start-evidence/README.md).
-
-For the recorded experience with interactive controls disabled:
+Open **http://127.0.0.1:4173/**. Choose an experience and your crew.
+The launcher verifies the retained evidence and prepares cached native assets.
+On a new checkout, enable the locked runtime bootstrap once:
 
 ```sh
-python3 -B frontend/serve.py --replay-only --port 4173
+python3 -B tools/final_demo.py --bootstrap-runtime
 ```
 
-If port 4173 already serves the app, open the existing page. To run a second
-server, use `make play PORT=4180` and open **http://127.0.0.1:4180/play.html**.
+Python 3.9+ runs the application. The physical lab/live attitude modes also need
+`cc`, `make`, and the verified Tcl runtime. No npm install is needed to play.
+If those native dependencies are unavailable, the sourced checklist and recorded
+experiments remain accessible; the app never substitutes invented live data.
 
-The former target/points exercise is preserved separately at
-**http://127.0.0.1:4173/attitude-lab.html**, clearly labeled synthetic. It now offers
-an explicitly modern two-axis pad, relative-target guidance and optional
-keyboard shortcuts that are off by default. This pad is not an Apollo ACA replica.
-[Previous procedure architecture and missing
-contracts](docs/FRONTEND_PROCEDURES.md); [verification](docs/frontend-procedure-evidence/README.md).
-
-The **Phase 10 mission-control frontend** explores three verified recorded
-synthetic pre-ignition experiments. Start with `make demo`, then open
-**http://127.0.0.1:4173/guidance.html**. It includes a trace-derived DSKY, static
-mission geometry, replay, scenario comparisons, engineering explanations and
-planned crew roles. See [startup and architecture](docs/FRONTEND_ARCHITECTURE.md),
-[integration contract](docs/FRONTEND_INTEGRATION_CONTRACT.md), and
-[frontend verification](docs/frontend-phase10-evidence/README.md).
-
-This repository runs original Luminary 099 through the pinned Virtual AGC engine.
-Phase 7 verifies bounded, simultaneous yaw/pitch spacecraft feedback, following
-independent single-axis demonstrations. A visual replay console presents the
-captured experiments and connects bounded pilot inputs to fresh native AGC sessions.
-Full independent three-axis control, sustained attitude
-stability, complete powered descent, landing, multiplayer and AI crew remain unverified.
-Phase 11/12 add sealed bounded propulsion/PIPA/navigation experiments, now
-connected to the recorded mission viewer; they do not add live cockpit APIs.
-
-The authentic flight computation, modern emulator, synthetic LM-7 dynamics and
-frontend remain separate. No npm installation is needed for the demo.
-
-## Open the visual demo
+If another server already uses 4173, reuse the current application or run
+`make play PORT=4180`. Open HTTP URLs, not files from disk. For recordings and
+checklist training without native preparation:
 
 ```sh
-python3 -B frontend/serve.py
+python3 -B tools/final_demo.py --recorded-only --port 4173
 ```
 
-Open **http://127.0.0.1:4173/**. The console shows a rotating illustrative lunar
-module, actual recorded RCS commands, sensor readouts and angular-rate histories.
-Switch yaw/pitch experiments, compare connected/disconnected feedback, scrub the
-timeline and download a provenance record. In **Live AGC** mode, start a fresh
-native Luminary session and hold **A/D for yaw**, **W/S for pitch**, or the
-on-screen buttons. Actual RHC hardware inputs reach the original software;
-actual RCS output drives the retained external model and CDU feedback.
+## Choose your experience
 
-Live mode needs the C compiler and pinned Tcl runtime (`make runtime` on first
-use). The server remains local and the CPU waits for the first pilot deflection
-after original readiness. Runs last at most 11.7 simulated seconds after that
-point. Release or input expiry neutralizes the controller; it does not instantly
-stop the vehicle. Use `--replay-only` for a recording viewer without native
-dependencies. No landing is simulated. See [frontend instructions and data
-boundaries](frontend/README.md) and [live validation evidence](docs/live-control-evidence/README.md).
+| Experience | What works | Source and limit |
+| --- | --- | --- |
+| **Apollo procedures** (`/play.html`) | 28 selected undocking actions, real control labels/positions, three local crew stations, server-checked order, release diagram, training debrief | Documented checklist training; earlier preparation is assumed. No AGC/AGS or separation dynamics is executed here. |
+| **3D landing laboratory** (`/mission.html`) | Shared missions, throttle/pitch, fuel/gravity/thrust, scenarios, pause/restart, crew messages/checks, measured outcome | Server-owned educational physics from synthetic initial conditions. Independent of original AGC guidance. |
+| **Original guidance** (`/guidance.html`) | Three Phase 10 scenarios, original P51/P27/P63 observations, authentic trace-derived DSKY, comparison and explanations | Verified recorded original-software execution in synthetic pre-ignition scenarios. |
+| **Propulsion inspectors** | Original engine/throttle/navigation/PIPA observations and causal controls, retained 3D state | Verified fixed-attitude Phase 12 experiments; not a calibrated historical descent. |
+| **Live attitude** (`/attitude-replay.html`) | Actual original AGC yaw/pitch hand-controller inputs, RCS outputs and sensor feedback | Bounded native two-axis fixture, not a whole flight. |
 
-Frontend data and presentation checks:
+The historical sequence is undocking → relative-motion management and Eagle
+inspection → Columbia separation → LM alignment → DOI → P63 preparation →
+powered descent. Unimplemented historical flight chapters remain gated. The
+synthetic landing lab is a separate teaching activity, never a substitute for
+those mission procedures or evidence of an original-AGC-controlled landing.
+
+## Crew and agents
+
+Exactly three seats are available: **Neil Armstrong / Commander / Eagle**,
+**Buzz Aldrin / Lunar Module Pilot / Eagle**, and **Michael Collins / Command
+Module Pilot / Columbia**. Collins remains in lunar orbit during landing.
+
+- Historical procedures: one player switches stations, or humans pass the same device.
+- Flight lab: 0–3 human crew seats share one authoritative mission on the local
+  server. Other humans join with the mission ID/invite in separate tabs.
+- **Assistant** is explicitly deterministic modern teaching logic.
+- **Model AI** uses a real optional server-side provider. The option is gated by
+  the service's configuration; it is not interchangeable with fallback logic.
+
+An observer can host three assistants for a presentation. Human seats must join
+and mark ready before flight starts. Each role has server-enforced permissions.
+Invites contain only the mission ID; private participant credentials remain in
+their own browser tab. This is a loopback/local demonstration, not an
+internet-authenticated multiplayer deployment.
+
+Model configuration is explicit and server-side: `APOLLO_AI_MODEL`,
+`APOLLO_AI_BASE_URL`, `APOLLO_AI_PROTOCOL` (`responses` or `chat-completions`),
+and optional `APOLLO_AI_API_KEY`. No key is entered into the frontend. Model
+proposals pass the same command validator and can fall back with visible labels.
+**Real external model execution has not been verified in this release**;
+provider protocols and failure cases are covered by stub tests.
+
+## Submission and verification
+
+[Judge demo and startup guide](docs/SUBMISSION_GUIDE.md) ·
+[Current screenshots and actual test results](docs/frontend-submission-evidence/README.md) ·
+[Implemented shared-mission contract](docs/FINAL_INTEGRATION_CONTRACT.md) ·
+[Undocking contract and primary sources](docs/FRONTEND_UNDOCKING.md) ·
+[Frontend development guide](frontend/README.md).
 
 ```sh
-python3 -B -m unittest discover -s frontend/tests -p test_replay.py -v
-node --test frontend/tests/replay.test.mjs frontend/tests/live.test.mjs
-make test-live      # includes local HTTP/worker contract tests; Node 20+
-make validate-live  # actual fresh native signed-axis/replay and HTTP experiments
+make frontend-check
+make test-final
+npm --prefix frontend run typecheck  # development only; needs npm ci in frontend
 ```
 
-## Check the evidence and tests
-
-Requirements: Python **3.9 or newer**, `make`, and a C compiler available as `cc`
-for the native CDU tests. The Python harnesses use the standard library and these
-checks require no downloads:
-
-```sh
-make verify
-make test
-```
-
-`make verify` checks the dated baseline's **307 retained files** against their
-SHA-256 hashes. It separately reports **29 missing historical logs**. New missing
-files, changed bytes, unsafe paths or unlisted retained evidence cause failure.
-The baseline does not reconstruct missing evidence or change old manifests.
-
-`make test` runs the unchanged Phase 2–6 suites, packaging tests, Milestone 2
-startup/CDU/component tests, and Milestone 3 selector/feedback checks.
-The historical result remains **38 tests: 35 passed, 3 errors** on missing logs.
-Only those exact preservation errors may be classified as known historical gaps;
-unexpected errors, failures or skipped tests make the command fail. A successful
-packaging check reports `verified_with_historical_gaps`, with
-`all_tests_passed: false`. It never reports that all 38 old tests passed.
-
-Each test invocation records commands, versions, per-test outcomes, tracebacks
-and integrity checks in a new `.build/reproducibility/tests/` directory. The
-original phase suites can still be run directly and still expose their errors.
-
-## Rebuild and reproduce the existing demonstration
-
-The bootstrap targets macOS and Linux, with Python >=3.9, a C compiler available
-as `cc`, `make`, and `curl` for the initial dependency download. This milestone
-was verified on macOS arm64; Linux execution remains **NOT RUN**:
-
-```sh
-make reproduce
-# Or run the tests and reproduction together:
-make check
-```
-
-The bootstrap downloads **Tcl 8.6.16** from the official release, checks the locked
-SHA-256 **before extraction**, and builds it locally under `.build/`. It installs
-no system packages and requires neither Nix nor Node. Network access is needed
-only for the first Tcl source download. For an offline build with the exact
-archive already available:
-
-```sh
-python3 tools/reproducibility/bootstrap_runtime.py --archive /absolute/path/tcl8.6.16-src.tar.gz
-make reproduce
-```
-
-[runtime-lock.json](tools/reproducibility/runtime-lock.json) pins Tcl source and
-build options. Host Python, compiler, make, OS and system libraries are recorded
-rather than pinned; portable byte-identical binaries are not claimed. Each reuse
-checks the downloaded source, extracted source, installed runtime and Tcl smoke
-test. If cached inputs change, select a fresh `--cache-dir` and investigate.
-
-The new launcher builds the unchanged pinned engine and Phase 5 bridge, runs
-connected feedback, disconnected feedback and a fresh connected replay, and
-reuses Phase 6's trace analysis. A narrow, recorded adapter replaces only the old
-runner's exact Nix/Tcl launch command with the locked Tcl executable. No emulator,
-vehicle model, schedule or guidance algorithm is duplicated or modified.
-
-New run directories under `.build/reproducibility/runs/` contain raw traces,
-categorized observations, `SUMMARY.md`, source/input/binary hashes, exact commands,
-dependency launch records and validation results. A successful run must pass the
-existing causal checks, preserve retained evidence and match **all three original
-raw traces byte for byte**. Existing output directories are never overwritten.
-
-This retained Phase 6 reproduction remains synthetic yaw/X-CDU only, with semi-implicit integration,
-about 10 ms maximum coupling latency and undrained counter queues. Operate-only
-readiness does not establish complete IMU alignment or clean mission startup.
-
-## Validate startup and signed CDU timing
-
-```sh
-make validate-milestone2
-```
-
-This runs seven stationary startup comparisons, nine X-CDU transport workloads
-with fresh-process replays, and 24 imposed-yaw component scenarios. `make check`
-also runs this validation after the original three-mode feedback reproduction.
-All source inputs are retained locally; only the first Tcl bootstrap needs a
-download. Earlier evidence stays unchanged.
-
-The new startup fixture reaches P00 with clear alarm registers after original
-V36 and observed software readiness. It retains and explains the initial
-`01107`; it does not claim alarm-free power-on or flight-ready alignment.
-Transport signs match within a fixed slow/fast mode, and queues settle for the
-supported finite cases. Capacity controls expose a silent FIFO drop. The
-Milestone 2 plant baseline selects slow mode for negative high rates: +8°/s produces
-FAST operations while −8°/s produces slow operations. That defect is diagnosed,
-not repaired by these validation harnesses.
-
-[Milestone 2 findings and evidence](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md)
-separate authentic software observations from synthetic sensor/component probes
-and state the limits on stronger control claims. No Phase 7 work is included.
-
-## Validate the corrected yaw selector and paced feedback
-
-```sh
-make validate-milestone3
-```
-
-The Milestone 3 fixture generates a derived model from the hash-checked original
-source. Its X-axis rate selector uses `abs(Omega_Yaw) < 4`; an explicit boundary
-rejects unsupported Y/Z increments. Earlier model files and traces remain intact.
-The emulator and Luminary are unchanged.
-
-Paired component probes check the selector correction. Coupled native runs use
-actual AGC RCS output, paced X-CDU feedback, and observations of packet
-consumption, FIFO enqueue and counter application. A separately labeled tail
-ends vehicle integration and sensor generation before draining finite queued
-work. Queue settlement does not establish vehicle stability or mission readiness.
-`make check` includes these fresh experiments after the earlier reproduction and
-Milestone 2 probes.
-
-[Milestone 3 findings and evidence](docs/MILESTONE3_SIGNED_FEEDBACK.md) record its
-single-axis outcomes and limits. Phase 7 extends that fixture separately below;
-powered descent remains unproven.
-
-## Phase 7: authentic multi-axis attitude validation
-
-```sh
-make test-phase7       # fresh locked-Tcl physics tests and integration checks
-make validate-phase7   # source checks and fresh native attitude experiments
-```
-
-Both targets use the existing source-locked runtime bootstrap. Only its first
-download requires network access. `make check` includes these targets after all
-earlier tests and reproductions.
-
-The Phase 7 fixture retains original Luminary, the emulator, jet decoding and
-model response coefficients. A source-locked external overlay adds quaternion
-orientation and rigid-body angular-momentum coupling. Body yaw/pitch commands
-and all three derived IMU gimbal measurements remain distinct. The authoritative
-rotational state is independent of display coordinates. The separate visual
-demo consumes retained traces without changing the validation fixture.
-
-[Phase 7 capability, actual results and limitations](docs/PHASE7_MULTIAXIS_VALIDATION.md)
-distinguish independent-axis tests, simultaneous control, modern physics unit
-checks and historical hardware assumptions. Earlier evidence remains intact.
-
-## Evidence and provenance
-
-- [Repository audit](docs/PROJECT_STATE_AUDIT.md) records what was verified before
-  packaging work and explains the reported Phase 1–6 results and limitations.
-- [Milestone 1 packaging report](docs/MILESTONE1_REPRODUCIBILITY.md) records the new
-  baseline and actual validation results.
-- [Milestone 2 validation report](docs/MILESTONE2_STARTUP_CDU_VALIDATION.md) records
-  the clean post-V36 interval, signed transport timing, capacity and model limits.
-- [Milestone 3 feedback report](docs/MILESTONE3_SIGNED_FEEDBACK.md) records the
-  external model correction, pacing and finite queue settlement.
-- [Phase 7 validation report](docs/PHASE7_MULTIAXIS_VALIDATION.md) records the
-  multi-axis source mappings, attitude model and actual native experiments.
-- [Phase 7 and frontend release checks](docs/phase7-evidence/release-checks/20261017T164459Z/SUMMARY.md)
-  preserve the final test results, unchanged trace references and browser proof.
-- [Historical gap inventory](docs/milestone1-evidence/missing-historical.json)
-  retains the 29 absent paths, original expected hashes and manifest references.
-  Recovered logs are accepted only at their original hash. Fresh logs belong in
-  dated new evidence, never under a missing historical filename.
-- [Phase 6 report](docs/PHASE6_DEMONSTRATION.md) describes the original demonstration
-  and retained minimal corresponding-source bundle. The engine revision is
-  `f577e3fd917866c59334e6cdd32504f09df76f60`; the retained rope SHA-256 is
-  `1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e`.
-
-The minimum source bundle rebuilds the emulator/model fixture; it does not include
-the full assembler and Luminary flight sources needed to reassemble the rope.
-Existing phase evidence and tracked historical Python caches are preserved.
-New bytecode and generated build outputs are ignored. Emulator/harness GPL and
-source-license files remain in the corresponding-source archives; the Tcl release
-contains its own license. That minimal archive predates Phase 7; the new external
-attitude fixture and its evidence are maintained separately in
-`docs/phase7-evidence/`.
+The final backend from `origin/main` (`92adbb5`) is merged into `UI/UX`.
+Original Apollo software, emulator semantics and scientific experiment evidence
+are preserved. The two propulsion export formats are retained separately as
+`propulsion.json` and `propulsion-lab.json`, with distinct providers.

@@ -154,7 +154,55 @@ class PropulsionRecordingTests(unittest.TestCase):
 
     def test_export_is_reproducible_from_verified_source(self):
         existing = (recording.ROOT/'frontend/dist/data/propulsion-lab.json').read_text()
-        self.assertEqual(existing, recording.serialize(self.data))
+        comparison = recording.verify_export(existing, self.data)
+        self.assertTrue(comparison['recordedObservationsExact'])
+        self.assertEqual(comparison['derivedProjectionUlpLimit'], 8)
+        exact = recording.verify_export(recording.serialize(self.data), self.data)
+        self.assertTrue(exact['byteIdentical'])
+        self.assertEqual(exact['derivedProjectionDifferences'], 0)
+
+    def test_export_allows_only_bounded_derived_projection_rounding(self):
+        expected = deepcopy(self.data)
+        # A small contract fixture value keeps the ULP boundary unambiguous.
+        expected['cases'][0]['frames'][0]['physics']['spacecraft']['pitchDeg'] = 1.5
+        actual = deepcopy(expected)
+        field = actual['cases'][0]['frames'][0]['physics']['spacecraft']
+        for _ in range(8):
+            field['pitchDeg'] = math.nextafter(field['pitchDeg'], math.inf)
+        comparison = recording.verify_export(recording.serialize(actual), expected)
+        self.assertFalse(comparison['byteIdentical'])
+        self.assertTrue(comparison['recordedObservationsExact'])
+        self.assertEqual(comparison['derivedProjectionDifferences'], 1)
+        field['pitchDeg'] = math.nextafter(field['pitchDeg'], math.inf)
+        with self.assertRaisesRegex(ValueError, 'pitchDeg'):
+            recording.verify_export(recording.serialize(actual), expected)
+
+    def test_export_rejects_even_one_ulp_change_in_raw_observations(self):
+        for field in ('positionM', 'velocityMps', 'quaternionBodyToRef'):
+            actual = deepcopy(self.data)
+            vector = actual['cases'][0]['frames'][0]['physics']['spacecraft'][field]
+            vector[0] = math.nextafter(vector[0], math.inf)
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, field):
+                recording.verify_export(recording.serialize(actual), self.data)
+
+    def test_export_rejects_source_hash_cycle_order_and_schema_tampering(self):
+        for mutate in (
+            lambda value: value['cases'][0]['frames'][0]['source'].update(traceSha256='0'*64),
+            lambda value: value['cases'][0]['frames'][0].update(cycle=0),
+            lambda value: value['cases'][0]['frames'].reverse(),
+            lambda value: value.update(extra='unsupported'),
+            lambda value: value.update(schemaVersion=True),
+        ):
+            actual = deepcopy(self.data)
+            mutate(actual)
+            with self.assertRaises(ValueError):
+                recording.verify_export(recording.serialize(actual), self.data)
+
+    def test_export_rejects_duplicate_or_nonfinite_json_fields(self):
+        for text in ('{"schemaVersion":1,"schemaVersion":1}', '{"value":NaN}',
+                     '{"value":Infinity}'):
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                recording.verify_export(text, self.data)
 
     def test_changed_raw_bytes_fail_even_when_gzip_is_valid(self):
         with tempfile.TemporaryDirectory() as directory:

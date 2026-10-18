@@ -1,0 +1,24 @@
+✔ the 3D laboratory preserves the supplied r/v/quaternion and identifies its educational source (1.401625ms)
+✔ local rendering is a proper basis rotation with uniform position scale and explicit origin (0.195416ms)
+✔ positive backend pitch directs thrust toward negative downrange without deriving attitude from a display angle (0.114375ms)
+✔ the enlarged illustrative mesh registers its lowest point at the measured reference without changing physical data (9.704083ms)
+✔ velocity cue uses only measured direction and never predicts a future position (0.237958ms)
+✔ invalid authoritative spatial state is rejected instead of substituting a demonstration orbit (0.269333ms)
+✔ plume visualization requires delivered enabled thrust rather than a requested throttle (0.139458ms)
+✔ Canvas fallback draws a finite 3D mesh and camera input changes no supplied state (62.903791ms)
+✔ default camera fits the complete LM and landing reference at all lab start heights on desktop and mobile (290.432292ms)
+✔ projection uses server altitude and downrange without advancing physical state (1.42875ms)
+✔ zero altitude reaches the surface; negative altitude is not visual extrapolation (0.082833ms)
+✔ out-of-view data is disclosed and missing telemetry rejected (0.116625ms)
+✔ exhaust visualization requires actual enabled nonzero thrust (0.051208ms)
+✔ positive physical pitch renders toward negative downrange (27.368333ms)
+✔ signed measured velocity drives the arrow without a trajectory prediction (0.173417ms)
+✔ unavailable signed horizontal velocity hides the arrow instead of guessing (0.097708ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 446.974292

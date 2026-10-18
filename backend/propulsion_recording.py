@@ -308,6 +308,72 @@ def serialize(recording):
     return json.dumps(recording, separators=(',', ':'), allow_nan=False)+'\n'
 
 
+DERIVED_PROJECTION_FIELDS = frozenset(('altitudeM', 'verticalSpeedMps',
+    'horizontalSpeedMps', 'horizontalVelocityMps', 'downrangeM', 'pitchDeg'))
+PROJECTION_ULP_LIMIT = 8
+
+
+def verify_export(text, expected):
+    """Compare to a fresh sealed-source export, allowing only display-math ULPs.
+
+    Host libm implementations can differ in their last bits. This allowance
+    applies only to six named projections computed by ``project_physics``.
+    Recorded vectors, engine/AGC observations, source hashes, sample order and
+    all other values must agree exactly, including the sign of a recorded zero.
+    The returned flag distinguishes equivalent observations from identical bytes.
+    """
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError('Duplicate propulsion export field')
+            result[key] = value
+        return result
+
+    actual = json.loads(text, object_pairs_hook=unique_object,
+        parse_constant=lambda _: (_ for _ in ()).throw(ValueError('Nonfinite export value')))
+    differences = 0
+
+    def compare(left, right, path=()):
+        nonlocal differences
+        def fail():
+            raise ValueError('Propulsion export differs from sealed source at '+
+                             '/'.join(str(part) for part in path))
+        if type(left) is not type(right):
+            fail()
+        if isinstance(right, dict):
+            if left.keys() != right.keys():
+                fail()
+            for key in right:
+                compare(left[key], right[key], (*path, key))
+        elif isinstance(right, list):
+            if len(left) != len(right):
+                fail()
+            for index, (a, b) in enumerate(zip(left, right)):
+                compare(a, b, (*path, index))
+        elif type(right) is float:
+            if not math.isfinite(left) or not math.isfinite(right):
+                fail()
+            if left.hex() == right.hex():
+                return
+            derived = (len(path) == 7 and path[0] == 'cases'
+                       and type(path[1]) is int and path[2] == 'frames'
+                       and type(path[3]) is int and path[4:6] == ('physics', 'spacecraft')
+                       and path[6] in DERIVED_PROJECTION_FIELDS)
+            limit = PROJECTION_ULP_LIMIT * max(math.ulp(left), math.ulp(right))
+            if not derived or abs(left-right) > limit:
+                fail()
+            differences += 1
+        elif left != right:
+            fail()
+
+    compare(actual, expected)
+    return {'byteIdentical': text == serialize(expected),
+            'recordedObservationsExact': True,
+            'derivedProjectionUlpLimit': PROJECTION_ULP_LIMIT,
+            'derivedProjectionDifferences': differences}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT/'frontend/dist/data/propulsion-lab.json')
@@ -315,16 +381,17 @@ def main():
     args = parser.parse_args()
     output = args.output.resolve()
     text = serialize(build_recording())
+    verification = None
     if args.check:
-        if output.read_text() != text:
-            raise ValueError('Propulsion recording export is stale')
+        verification = verify_export(output.read_text(), json.loads(text))
     else:
         if ROOT/'docs' == output or ROOT/'docs' in output.parents:
             raise ValueError('Exporter cannot write retained evidence')
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(text)
     print(json.dumps({'verified': True, 'mode': 'RECORDED_AUTHENTIC_AGC_EXPERIMENT',
-                      'cases': len(CASES), 'output': str(output), 'sha256': digest(output)}))
+                      'cases': len(CASES), 'output': str(output), 'sha256': digest(output),
+                      'verification': verification}))
 
 
 if __name__ == '__main__':

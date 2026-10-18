@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-18",
+  "checks": {
+    "aiUnavailable": {
+      "blocked": true,
+      "reason": "Model AI requires a configured server provider. Choose a deterministic Assistant to play without an AI service."
+    },
+    "lifecycle": {
+      "paused": "PAUSED",
+      "pausedTime": "T + 0.30 s",
+      "resumed": "RUNNING"
+    },
+    "assistantFlight": {
+      "status": "COMPLETED",
+      "title": "A measured soft landing.",
+      "measurements": "This is an educational physics result, not an original AGC-controlled Apollo landing. Final vertical velocity: -0.73 m/s. Horizontal speed: 0.04 m/s. Remaining propellant: 346.6 kg.",
+      "values": "Altitude\n-0.0 m\nDownrange\n3.8 m\nPitch\n-0.0°\nSimulation time\n33.74 s"
+    },
+    "finalAiGate": {
+      "presetDisabled": true,
+      "message": "Model AI is not configured. Deterministic Assistants are available in the 3D lab."
+    },
+    "sharedHumans": {
+      "crew": "Neil Armstrong · Commander\nLunar Module\nFlight commander · human · READY\nBuzz Aldrin · Lunar Module Pilot\nLunar Module\nAldrin player · human · READY\nMichael Collins · Command Module Pilot\nCommand Module in lunar orbit\nCollins player · human · READY",
+      "commanderCanStart": true,
+      "aldrinThrottleBlocked": true,
+      "collinsThrottleBlocked": true,
+      "messageReceived": true,
+      "checkReceived": true,
+      "pausedSamples": {
+        "commander": "T + 0.35 s",
+        "aldrin": "T + 0.35 s",
+        "collins": "T + 0.35 s"
+      }
+    },
+    "twoDimensionalDiagnostics": true,
+    "mobileFlight": {
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "manualCommand": {
+      "throttleRequest": "100%",
+      "deliveredThrust": "45,040 N",
+      "keyboardDefault": false
+    },
+    "reloadSharedMissionRestored": true,
+    "historicalCrewSetup": "Human crew members share this device and take turns at their stations.",
+    "historicalActions": [
+      {
+        "role": "CMP",
+        "progress": "1 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "2 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "3 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "4 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "5 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "6 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "7 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "8 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "9 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "10 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "11 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "12 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "13 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "14 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "15 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "16 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "17 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "18 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "19 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "20 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "21 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "22 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "23 / 28 ACTIONS"
+      },
+      {
+        "role": "CDR",
+        "progress": "24 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "25 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "26 / 28 ACTIONS"
+      },
+      {
+        "role": "LMP",
+        "progress": "27 / 28 ACTIONS"
+      },
+      {
+        "role": "CMP",
+        "progress": "28 / 28 ACTIONS"
+      }
+    ],
+    "historicalDebrief": {
+      "actions": "28 / 28",
+      "crewReports": "9",
+      "copy": "Your human crew completed the selected checklist by taking turns at each station."
+    },
+    "summaryDownloadInvoked": true,
+    "freshHistoricalProgress": "0 / 28 ACTIONS",
+    "mobileLaunch": {
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "finalLaunchReady": true,
+    "finalConsoleErrors": [],
+    "watchPreset": {
+      "experience": "Server-owned educational flight from synthetic initial conditions. This is separate from Apollo flight procedures.",
+      "ready": true,
+      "observer": true
+    },
+    "threeDimensionalView": true
+  }
+}

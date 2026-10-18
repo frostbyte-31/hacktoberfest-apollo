@@ -27,8 +27,10 @@ export function validateMission(input) {
   return input;
 }
 export class MissionLiveProvider {
-  constructor({fetchImpl = (url, init) => globalThis.fetch(url, init), storage = globalThis.sessionStorage} = {}) {
+  constructor({fetchImpl = (url, init) => globalThis.fetch(url, init), storage = globalThis.sessionStorage, requestTimeoutMs = 5000} = {}) {
+    if (!finite(requestTimeoutMs) || requestTimeoutMs <= 0 || requestTimeoutMs > 60000) throw new RangeError('Mission request timeout must be between 0 and 60000 milliseconds.');
     this.fetch = fetchImpl; this.storage = storage; this.token = null; this.credentials = null;
+    this.requestTimeoutMs = requestTimeoutMs;
     try {
       const saved = JSON.parse(storage?.getItem(SESSION_KEY) ?? 'null');
       if (saved && typeof saved.missionId === 'string' && typeof saved.participantToken === 'string' && Number.isInteger(saved.sequence)) this.credentials = saved;
@@ -39,11 +41,28 @@ export class MissionLiveProvider {
     const headers = {'Accept': 'application/json'};
     if (body !== undefined) { headers['Content-Type'] = 'application/json'; headers['X-Apollo-Token'] = this.token ?? ''; }
     if (participant && this.credentials) headers['X-Apollo-Participant'] = this.credentials.participantToken;
-    const response = await this.fetch(path, {method: body === undefined ? 'GET' : 'POST', headers, cache: 'no-store', credentials: 'same-origin', keepalive: body !== undefined, ...(body === undefined ? {} : {body: JSON.stringify(body)})});
-    let data;
-    try { data = await response.json(); } catch { throw new Error('The mission service returned an unreadable response.'); }
-    if (!response.ok) throw new Error(data.error ?? data.message ?? `Mission request failed (${response.status}).`);
-    return data;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), this.requestTimeoutMs);
+    try {
+      const response = await this.fetch(path, {method: body === undefined ? 'GET' : 'POST', headers, cache: 'no-store', credentials: 'same-origin', keepalive: body !== undefined, signal: controller.signal, ...(body === undefined ? {} : {body: JSON.stringify(body)})});
+      let data;
+      try { data = await response.json(); }
+      catch (error) {
+        if (controller.signal.aborted) throw error;
+        throw new Error('The mission service returned an unreadable response.');
+      }
+      if (!response.ok) throw new Error(data.error ?? data.message ?? `Mission request failed (${response.status}).`);
+      return data;
+    } catch (error) {
+      if (!controller.signal.aborted) throw error;
+      const failure = Object.assign(new Error(body === undefined
+        ? 'The mission request timed out. Check the local server and reconnect.'
+        : 'The mission request timed out. Its outcome is unknown; refresh shared state before another command.'),
+      {code: 'timeout', commandOutcomeUnknown: body !== undefined});
+      throw failure;
+    } finally {
+      clearTimeout(timer);
+    }
   }
   async discover() {
     const data = await this.request('/api/v1/capabilities');
