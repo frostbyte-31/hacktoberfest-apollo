@@ -47,7 +47,7 @@ def main():
             assets = prepare_demo_assets(bootstrap=args.bootstrap_runtime)
         except Exception as failure:
             error = str(failure)
-            print('Native/physical modes unavailable: '+error, flush=True)
+            print('Lunar attitude/physical laboratory modes unavailable: '+error, flush=True)
             print('Recorded guidance and propulsion remain available. See --bootstrap-runtime or make runtime.', flush=True)
     from backend.final_server import make_server, close_server
     from backend.crew_ai import provider_from_environment
@@ -57,12 +57,17 @@ def main():
         provider = None
         print('Model configuration incomplete/invalid; LLM seats disabled.', flush=True)
     try:
-        server = make_server(args.port, assets=assets, assets_error=error, ai_provider=provider)
+        server = make_server(args.port, assets=assets, assets_error=error, ai_provider=provider,
+                             cmc_enabled=not args.recorded_only)
     except OSError as failure:
         if failure.errno == errno.EADDRINUSE:
             parser.error('Port is already occupied; no process was stopped. Choose --port 4180.')
         raise
     print('Open: http://127.0.0.1:{}/'.format(server.server_port), flush=True)
+    print('Playable Columbia CMC: /campaign.html?stage=earth-parking (live original Comanche; no orbital flight)', flush=True)
+    cmc = server.earth_orbit.capabilities()
+    print('Columbia computer: '+('ready for original native execution on request'
+        if cmc['available'] else 'unavailable: '+str(cmc.get('unavailableReason'))), flush=True)
     print('Undocking checklist: /play.html · shared educational flight: /mission.html', flush=True)
     print('Recorded guidance: /guidance.html · existing attitude controls: /attitude-replay.html', flush=True)
     print('Mode: '+('verified native attitude + independent educational physics + authentic recordings + checklist training' if assets else 'recorded authentic execution + Python-only checklist training; native flight modes unavailable'), flush=True)

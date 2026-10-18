@@ -1,0 +1,19 @@
+test_discovery_has_no_build_or_computer_side_effect (backend.tests.test_cmc_native.DecoderTests.test_discovery_has_no_build_or_computer_side_effect) ... ok
+test_missing_input_is_unavailable_not_a_fake_computer (backend.tests.test_cmc_native.DecoderTests.test_missing_input_is_unavailable_not_a_fake_computer) ... ok
+test_relay_word_controls_only_its_actual_digit_pair (backend.tests.test_cmc_native.DecoderTests.test_relay_word_controls_only_its_actual_digit_pair) ... ok
+test_unobserved_registers_are_unavailable (backend.tests.test_cmc_native.DecoderTests.test_unobserved_registers_are_unavailable) ... ok
+test_cold_start_phase_alarm_is_visible_and_real_rset_clears_it (backend.tests.test_cmc_native.NativeCmcTests.test_cold_start_phase_alarm_is_visible_and_real_rset_clears_it) ... ok
+test_fresh_workers_start_with_identical_original_state (backend.tests.test_cmc_native.NativeCmcTests.test_fresh_workers_start_with_identical_original_state) ... ok
+test_invalid_key_sequences_and_time_do_not_run (backend.tests.test_cmc_native.NativeCmcTests.test_invalid_key_sequences_and_time_do_not_run) ... ok
+test_original_clock_advances_and_p00_selection_works (backend.tests.test_cmc_native.NativeCmcTests.test_original_clock_advances_and_p00_selection_works) ... ok
+test_original_lights_test_is_real_channel010_output (backend.tests.test_cmc_native.NativeCmcTests.test_original_lights_test_is_real_channel010_output) ... ok
+test_original_p52_blocks_missing_imu_and_can_recover (backend.tests.test_cmc_native.NativeCmcTests.test_original_p52_blocks_missing_imu_and_can_recover) ... ok
+test_original_software_rejects_invalid_verb_and_rset_clears_operator_error (backend.tests.test_cmc_native.NativeCmcTests.test_original_software_rejects_invalid_verb_and_rset_clears_operator_error) ... ok
+test_pro_is_separate_active_low_discrete_and_release (backend.tests.test_cmc_native.NativeCmcTests.test_pro_is_separate_active_low_discrete_and_release) ... ok
+test_withholding_keys_does_not_manufacture_a_lights_test (backend.tests.test_cmc_native.NativeCmcTests.test_withholding_keys_does_not_manufacture_a_lights_test) ... ok
+test_worker_timeout_terminates_the_owned_native_process (backend.tests.test_cmc_native.NativeCmcTests.test_worker_timeout_terminates_the_owned_native_process) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.239s
+
+OK

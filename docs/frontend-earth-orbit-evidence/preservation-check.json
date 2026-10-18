@@ -1,0 +1,25 @@
+{
+  "baselineCommit": "82dcfdd64ab4c61053ca777a0894b24f9b59b4d8",
+  "baselineTrackedFiles": 8811,
+  "unchangedTrackedFiles": 8796,
+  "changedExistingFiles": [
+    "README.md",
+    "backend/final_server.py",
+    "docs/APOLLO11_CAMPAIGN_INTEGRATION.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/JUDGES_PRESENTATION_PLAN.md",
+    "docs/SUBMISSION_GUIDE.md",
+    "frontend/README.md",
+    "frontend/dist/campaign.css",
+    "frontend/dist/campaign.html",
+    "frontend/dist/campaign.mjs",
+    "frontend/dist/index.html",
+    "frontend/dist/launch.mjs",
+    "frontend/tsconfig.json",
+    "tools/final_demo.py"
+  ],
+  "deletedExistingFiles": [],
+  "unexpectedChanges": [],
+  "scope": "All previous Apollo sources, emulator source and captured historical experiment evidence remain byte-identical. Listed application services, frontend and current integration documents were intentionally extended."
+}

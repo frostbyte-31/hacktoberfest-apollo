@@ -1,5 +1,13 @@
 # Apollo 11: presentation plan
 
+A new manually playable opening is available before the reference tour:
+[the original Columbia CMC diagnostic](EARTH_ORBIT_PLAYABLE_GUIDE.md). Show real
+DSKY input, V35 output, the running clock, original P52 `00210` readiness alarm
+and P00 recovery. Allow two additional minutes, or use the clock/alarm portion
+in place of some historical-reference narration. Explain that this is a
+cold-start control bench, not a restored orbital checkpoint or completed P52.
+The historical tour below remains a separate chronological reference.
+
 Present the mission in its real order: **Earth parking orbit → lunar orbit → Eagle landing → ascent and rendezvous → Earth entry and splashdown**. The complete mission is a guided historical reference. Demonstrate the independently classified original-AGC evidence and interactive procedures at the appropriate chapters.
 
 Opening sentence:

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/usr/bin/cc",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-I/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC",
+    "/Users/giorgikhubua/hacktoberfest-apollo/docs/earth-orbit-evidence/experiments/cmc_observer.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/agc_engine.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/wasm.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/agc_engine_init.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/agc_utilities.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/ringbuffer_api.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/ringbuffer.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/source/yaAGC/rfopen.c",
+    "-lm",
+    "-o",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/assets/cmc-engine.so"
+  ],
+  "exit": 0
+}

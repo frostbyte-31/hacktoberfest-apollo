@@ -1,5 +1,13 @@
 # Unified launch and final mission integration
 
+Current playable first task: **Apollo mission → Open Earth-orbit task** at
+`/campaign.html?play=1`. It runs fresh original Comanche 055 through real DSKY
+inputs. This is a cold-start readiness diagnostic; historical orbital state,
+IMU/optics and completed P52 alignment remain unavailable.
+[Player to-do list](EARTH_ORBIT_PLAYABLE_GUIDE.md),
+[CMC integration contract](EARTH_ORBIT_INTEGRATION.md), and
+[original native/WASM evidence](earth-orbit-evidence/README.md) describe this addition.
+
 Current chronological entry: `/` → **Historical mission** → `/campaign.html`,
 starting in Earth parking orbit. `?tour=1` starts reference navigation with
 separate original-AGC evidence inserts. This is not full-mission execution.

@@ -1,0 +1,630 @@
+{
+  "status": "VERIFIED",
+  "checkpoints": [
+    {
+      "name": "cold_start",
+      "cycle": 426667,
+      "dsky": {
+        "PROG": "  ",
+        "VERB": "??",
+        "NOUN": "??",
+        "R1": "?????",
+        "R2": "?????",
+        "R3": "???  ",
+        "signs": {
+          "R1": null,
+          "R2": null,
+          "R3": null
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": false,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 422647,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24832,
+            "cycle": 2810
+          },
+          "0": {
+            "value": 0,
+            "cycle": 422647
+          },
+          "1": {
+            "value": 2048,
+            "cycle": 6252
+          },
+          "11": {
+            "value": 22528,
+            "cycle": 9680
+          }
+        }
+      }
+    },
+    {
+      "name": "original_V35_lights_test",
+      "cycle": 733870,
+      "dsky": {
+        "PROG": "88",
+        "VERB": "88",
+        "NOUN": "88",
+        "R1": "88888",
+        "R2": "88888",
+        "R3": "88888",
+        "signs": {
+          "R1": "+",
+          "R2": "+",
+          "R3": "+"
+        },
+        "lamps": {
+          "keyRelease": true,
+          "verbNounFlash": true,
+          "operatorError": true,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 729848,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 25000,
+            "cycle": 535290
+          },
+          "0": {
+            "value": 0,
+            "cycle": 729848
+          },
+          "1": {
+            "value": 3005,
+            "cycle": 569463
+          },
+          "11": {
+            "value": 23485,
+            "cycle": 572880
+          },
+          "10": {
+            "value": 21437,
+            "cycle": 538732
+          },
+          "9": {
+            "value": 19389,
+            "cycle": 542157
+          },
+          "8": {
+            "value": 17341,
+            "cycle": 545574
+          },
+          "7": {
+            "value": 16317,
+            "cycle": 548983
+          },
+          "6": {
+            "value": 13245,
+            "cycle": 552396
+          },
+          "5": {
+            "value": 12221,
+            "cycle": 555814
+          },
+          "4": {
+            "value": 9149,
+            "cycle": 559223
+          },
+          "3": {
+            "value": 7101,
+            "cycle": 562636
+          },
+          "2": {
+            "value": 6077,
+            "cycle": 566053
+          }
+        }
+      }
+    },
+    {
+      "name": "original_P00",
+      "cycle": 1604276,
+      "dsky": {
+        "PROG": "00",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": " ",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": false,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 1600247,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24576,
+            "cycle": 1170169
+          },
+          "0": {
+            "value": 0,
+            "cycle": 1600247
+          },
+          "1": {
+            "value": 2048,
+            "cycle": 1405723
+          },
+          "11": {
+            "value": 23221,
+            "cycle": 1409147
+          },
+          "10": {
+            "value": 20480,
+            "cycle": 1412557
+          },
+          "9": {
+            "value": 18432,
+            "cycle": 1415973
+          },
+          "8": {
+            "value": 16384,
+            "cycle": 1419384
+          },
+          "7": {
+            "value": 14336,
+            "cycle": 1422796
+          },
+          "6": {
+            "value": 12288,
+            "cycle": 1426213
+          },
+          "5": {
+            "value": 10240,
+            "cycle": 1429624
+          },
+          "4": {
+            "value": 8192,
+            "cycle": 1433055
+          },
+          "3": {
+            "value": 6144,
+            "cycle": 1436453
+          },
+          "2": {
+            "value": 4096,
+            "cycle": 1439928
+          }
+        }
+      }
+    },
+    {
+      "name": "original_V16N36_clock",
+      "cycle": 2013881,
+      "dsky": {
+        "PROG": "00",
+        "VERB": "16",
+        "NOUN": "36",
+        "R1": "00000",
+        "R2": "00000",
+        "R3": "02323",
+        "signs": {
+          "R1": "+",
+          "R2": "+",
+          "R3": "+"
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": false,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 2009847,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24576,
+            "cycle": 1170169
+          },
+          "0": {
+            "value": 0,
+            "cycle": 2009847
+          },
+          "1": {
+            "value": 2875,
+            "cycle": 1839224
+          },
+          "11": {
+            "value": 23221,
+            "cycle": 1409147
+          },
+          "10": {
+            "value": 20604,
+            "cycle": 1682202
+          },
+          "9": {
+            "value": 19324,
+            "cycle": 1784602
+          },
+          "8": {
+            "value": 16405,
+            "cycle": 1815335
+          },
+          "7": {
+            "value": 16053,
+            "cycle": 1818744
+          },
+          "6": {
+            "value": 12981,
+            "cycle": 1822157
+          },
+          "5": {
+            "value": 11957,
+            "cycle": 1825575
+          },
+          "4": {
+            "value": 8885,
+            "cycle": 1828983
+          },
+          "3": {
+            "value": 6837,
+            "cycle": 1832397
+          },
+          "2": {
+            "value": 5947,
+            "cycle": 1989403
+          }
+        }
+      }
+    },
+    {
+      "name": "original_clock_progression",
+      "cycle": 2269881,
+      "dsky": {
+        "PROG": "00",
+        "VERB": "16",
+        "NOUN": "36",
+        "R1": "00000",
+        "R2": "00000",
+        "R3": "02623",
+        "signs": {
+          "R1": "+",
+          "R2": "+",
+          "R3": "+"
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": false,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 2265848,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24576,
+            "cycle": 1170169
+          },
+          "0": {
+            "value": 0,
+            "cycle": 2265848
+          },
+          "1": {
+            "value": 2875,
+            "cycle": 1839224
+          },
+          "11": {
+            "value": 23221,
+            "cycle": 1409147
+          },
+          "10": {
+            "value": 20604,
+            "cycle": 1682202
+          },
+          "9": {
+            "value": 19324,
+            "cycle": 1784602
+          },
+          "8": {
+            "value": 16405,
+            "cycle": 1815335
+          },
+          "7": {
+            "value": 16053,
+            "cycle": 1818744
+          },
+          "6": {
+            "value": 12981,
+            "cycle": 1822157
+          },
+          "5": {
+            "value": 11957,
+            "cycle": 1825575
+          },
+          "4": {
+            "value": 8885,
+            "cycle": 1828983
+          },
+          "3": {
+            "value": 6837,
+            "cycle": 1832397
+          },
+          "2": {
+            "value": 5948,
+            "cycle": 2245402
+          }
+        }
+      }
+    },
+    {
+      "name": "P52_selected_original_readiness_gate",
+      "cycle": 2679486,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "37",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": " ",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 2675447,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24832,
+            "cycle": 2480890
+          },
+          "0": {
+            "value": 0,
+            "cycle": 2675447
+          },
+          "1": {
+            "value": 2048,
+            "cycle": 2484333
+          },
+          "11": {
+            "value": 23513,
+            "cycle": 2487761
+          },
+          "10": {
+            "value": 21363,
+            "cycle": 2491174
+          },
+          "9": {
+            "value": 18432,
+            "cycle": 2494586
+          },
+          "8": {
+            "value": 16384,
+            "cycle": 2497997
+          },
+          "7": {
+            "value": 14336,
+            "cycle": 2501414
+          },
+          "6": {
+            "value": 12288,
+            "cycle": 2504824
+          },
+          "5": {
+            "value": 10240,
+            "cycle": 2508237
+          },
+          "4": {
+            "value": 8192,
+            "cycle": 2511654
+          },
+          "3": {
+            "value": 6144,
+            "cycle": 2515121
+          },
+          "2": {
+            "value": 4096,
+            "cycle": 2518476
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_original_0210_IMU_unavailable",
+      "cycle": 3089091,
+      "dsky": {
+        "PROG": "52",
+        "VERB": "05",
+        "NOUN": "09",
+        "R1": "00210",
+        "R2": "00000",
+        "R3": "00000",
+        "signs": {
+          "R1": " ",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": true,
+          "verbNounFlash": true,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 3085048,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24832,
+            "cycle": 2480890
+          },
+          "0": {
+            "value": 0,
+            "cycle": 3085048
+          },
+          "1": {
+            "value": 2741,
+            "cycle": 2914424
+          },
+          "11": {
+            "value": 23513,
+            "cycle": 2487761
+          },
+          "10": {
+            "value": 21182,
+            "cycle": 2757403
+          },
+          "9": {
+            "value": 19135,
+            "cycle": 2859804
+          },
+          "8": {
+            "value": 16405,
+            "cycle": 2890535
+          },
+          "7": {
+            "value": 15033,
+            "cycle": 2893943
+          },
+          "6": {
+            "value": 12405,
+            "cycle": 2897357
+          },
+          "5": {
+            "value": 10933,
+            "cycle": 2900773
+          },
+          "4": {
+            "value": 8885,
+            "cycle": 2904184
+          },
+          "3": {
+            "value": 6837,
+            "cycle": 2907597
+          },
+          "2": {
+            "value": 4789,
+            "cycle": 2911014
+          }
+        }
+      }
+    },
+    {
+      "name": "original_P00_recovery",
+      "cycle": 3532830,
+      "dsky": {
+        "PROG": "00",
+        "VERB": "  ",
+        "NOUN": "  ",
+        "R1": "     ",
+        "R2": "     ",
+        "R3": "     ",
+        "signs": {
+          "R1": " ",
+          "R2": " ",
+          "R3": " "
+        },
+        "lamps": {
+          "keyRelease": false,
+          "verbNounFlash": false,
+          "operatorError": false,
+          "computerActivity": false
+        }
+      },
+      "dskySource": {
+        "channel": 8,
+        "cycle": 3525367,
+        "relayWord": 0,
+        "rows": {
+          "12": {
+            "value": 24576,
+            "cycle": 3095291
+          },
+          "0": {
+            "value": 0,
+            "cycle": 3525367
+          },
+          "1": {
+            "value": 2048,
+            "cycle": 3330844
+          },
+          "11": {
+            "value": 23221,
+            "cycle": 3334267
+          },
+          "10": {
+            "value": 20480,
+            "cycle": 3337680
+          },
+          "9": {
+            "value": 18432,
+            "cycle": 3341097
+          },
+          "8": {
+            "value": 16384,
+            "cycle": 3344575
+          },
+          "7": {
+            "value": 14336,
+            "cycle": 3347916
+          },
+          "6": {
+            "value": 12288,
+            "cycle": 3351338
+          },
+          "5": {
+            "value": 10240,
+            "cycle": 3354757
+          },
+          "4": {
+            "value": 8192,
+            "cycle": 3358157
+          },
+          "3": {
+            "value": 6144,
+            "cycle": 3361574
+          },
+          "2": {
+            "value": 4096,
+            "cycle": 3364983
+          }
+        }
+      }
+    }
+  ],
+  "keyPacketsConsumed": 41,
+  "proceedDiscreteVerified": true,
+  "physicalFlightExecuted": false,
+  "alignmentCompleted": false,
+  "result": "Original CMC computer checkout and real IMU-readiness diagnosis; flight gate remains closed"
+}

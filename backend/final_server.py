@@ -8,6 +8,7 @@ from urllib.parse import urlsplit
 
 from backend.control_service import ControlError, ControlService
 from backend.mission_service import MissionService
+from backend.earth_orbit_service import EarthOrbitService
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('apollo_existing_http', ROOT/'frontend/serve.py')
@@ -78,6 +79,20 @@ class FinalHandler(existing.ApolloHandler):
 
     def do_GET(self):
         path = urlsplit(self.path).path
+        if path.startswith('/api/earth-orbit/'):
+            try:
+                self._origin()
+                if path == '/api/earth-orbit/capabilities':
+                    result = self.server.earth_orbit.capabilities()
+                    result['token'] = self.server.control_token if result['available'] else None
+                elif path == '/api/earth-orbit/status':
+                    result = self.server.earth_orbit.snapshot()
+                else:
+                    raise ControlError(404, 'Unknown CMC console route.')
+                self._json(200, result)
+            except ControlError as error:
+                self._json(error.status, {'error': str(error)})
+            return
         if not path.startswith('/api/v1/'):
             return super().do_GET()
         try:
@@ -98,6 +113,25 @@ class FinalHandler(existing.ApolloHandler):
 
     def do_POST(self):
         path = urlsplit(self.path).path
+        if path.startswith('/api/earth-orbit/'):
+            try:
+                self._origin(mutation=True)
+                self._token()
+                value = self._body()
+                if path == '/api/earth-orbit/start' and not value:
+                    result = self.server.earth_orbit.start()
+                elif path == '/api/earth-orbit/key' and set(value) == {'sessionId', 'sequence', 'key'}:
+                    result = self.server.earth_orbit.key(**value)
+                elif path == '/api/earth-orbit/stop' and set(value) == {'sessionId'}:
+                    result = self.server.earth_orbit.stop(**value)
+                elif path in ('/api/earth-orbit/start', '/api/earth-orbit/key', '/api/earth-orbit/stop'):
+                    raise ControlError(400, 'Request fields do not match the CMC key contract.')
+                else:
+                    raise ControlError(404, 'Unknown CMC console action.')
+                self._json(200, result)
+            except ControlError as error:
+                self._json(error.status, {'error': str(error)})
+            return
         if not path.startswith('/api/v1/'):
             return super().do_POST()
         try:
@@ -128,7 +162,8 @@ class FinalHandler(existing.ApolloHandler):
             self._json(503, {'error': 'The mission could not execute. Check the local server diagnostics; recordings remain available.'})
 
 
-def make_server(port=4173, assets=None, assets_error=None, missions=None, ai_provider=None):
+def make_server(port=4173, assets=None, assets_error=None, missions=None, ai_provider=None,
+                earth_orbit=None, cmc_enabled=True):
     controls = ControlService(prepare=(lambda: assets) if assets else None)
     # The sourced checklist is Python-only. Missing compiled assets disable
     # native inputs without disabling that independent training service.
@@ -137,10 +172,17 @@ def make_server(port=4173, assets=None, assets_error=None, missions=None, ai_pro
     server.RequestHandlerClass = partial(FinalHandler, directory=str(ROOT/'frontend/dist'))
     server.missions = missions or MissionService(assets=assets, ai_provider=ai_provider)
     server.assets_error = assets_error
+    server.earth_orbit = earth_orbit or EarthOrbitService(enabled=cmc_enabled)
     return server
 
 
 def close_server(server):
-    server.missions.close()
-    server.controls.close()
-    server.server_close()
+    errors = []
+    for close in (server.earth_orbit.close, server.missions.close,
+                  server.controls.close, server.server_close):
+        try:
+            close()
+        except Exception as error:
+            errors.append(error)
+    if errors:
+        raise RuntimeError('An owned demo worker failed to close cleanly.') from errors[0]

@@ -7,3 +7,6 @@
 /* Keep tour controls available while inspecting a long, sourced excerpt. */
 .campaign-transport{position:sticky;top:8px;z-index:8;background:#11191ef5;box-shadow:0 8px 25px #0006}.campaign-scene,.campaign-evidence{scroll-margin-top:125px}@media(max-width:640px){.campaign-scene,.campaign-evidence{scroll-margin-top:165px}}
 .agc-dsky-field output{min-height:32px}.agc-dsky-field:nth-child(n+4){align-items:center}#agc-showcase>h4{font-size:21px;font-weight:500;margin:15px 0 9px}.agc-telemetry{font-size:10px}@media(max-width:640px){.agc-telemetry{font-size:10px}.agc-source-band{font-size:8px}.agc-header h3{font-size:19px}}
+
+/* The playable console keeps its whole DSKY visible during manual operation. */
+.earth-playing .campaign-transport{position:static}.earth-playing .earth-orbit-panel{scroll-margin-top:16px}

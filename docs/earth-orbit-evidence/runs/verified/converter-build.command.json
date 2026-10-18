@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/usr/bin/cc",
+    "-O2",
+    "-DNVER=\"pinned-f577e3f\"",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/source/Tools/oct2bin.c",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/source/Tools/utils.c",
+    "-o",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/source/Tools/oct2bin"
+  ],
+  "cwd": "/Users/giorgikhubua/hacktoberfest-apollo",
+  "exit": 0
+}

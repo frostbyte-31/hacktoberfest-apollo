@@ -1,20 +1,22 @@
 import {createCampaignState,selectCampaignStage,nextCampaignStage,previousCampaignStage,reviewCampaignStage,assessMissionAvailability} from './campaign-state.mjs';
 import {createCampaignViewer,buildCampaignConfiguration} from './campaign-view.mjs';
 import {createAgcShowcase} from './agc-showcase.mjs';
+import {createEarthOrbitPanel} from './earth-orbit-panel.mjs';
 
 const $=id=>document.getElementById(id),params=new URLSearchParams(location.search);
-let state=null,availability=null,viewer=null,showcase=null,touring=false,timer=null,waitingForEvidence=false,finished=false,loadController=null;
+let state=null,availability=null,viewer=null,showcase=null,touring=false,timer=null,waitingForEvidence=false,finished=false,loadController=null,earthPanel=null,cmcAvailable=false;
 const stageButtons=new Map(),goalNodes=new Map();
 const make=(tag,text,className)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;};
 function clearTimer(){if(timer!==null){clearTimeout(timer);timer=null;}}
 function pauseTour(){touring=false;waitingForEvidence=false;clearTimer();showcase?.pause();renderTransport();}
 function evidenceKind(){return state?.currentStage.evidenceIds.find(id=>id==='guidance'||id==='propulsion')??null;}
 function renderTransport(){
+  document.body.classList.toggle('earth-playing',Boolean(state?.currentStageId==='earth-parking'&&!touring));
   const ready=Boolean(state);$('tour-start').disabled=!ready||touring;$('tour-pause').disabled=!touring;$('tour-restart').disabled=!ready;
   $('tour-start').textContent=finished?'Replay guided tour':state?.cursor?'Resume guided tour':'Start guided tour';
   $('previous-chapter').disabled=!ready||state.cursor===0;$('next-chapter').disabled=!ready||state.cursor===state.catalog.stages.length-1;$('review-chapter').disabled=!ready||state.reviewedStageIds.includes(state.currentStageId);
   $('review-chapter').textContent=ready&&state.reviewedStageIds.includes(state.currentStageId)?'Reference reviewed':'Mark reference reviewed';
-  $('tour-status').textContent=!ready?'Loading the sourced mission sequence…':finished?'Historical tour complete. No flight was executed.':touring?(waitingForEvidence?'Tour paused on a genuine recorded AGC excerpt. Exact observations advance every 2.5 seconds; the mission reference resumes afterward.':'Touring historical references in chronological order. Chapters advance after 8 seconds; no spacecraft is being flown.'):'Explore at your pace, or start the guided tour. Historical GET labels are references, not a running mission clock.';
+  $('tour-status').textContent=!ready?'Loading the sourced mission sequence…':finished?'Historical tour complete. No flight was executed.':touring?(waitingForEvidence?'Tour paused on a genuine recorded AGC excerpt. Exact observations advance every 2.5 seconds; the mission reference resumes afterward.':'Touring historical references in chronological order. Chapters advance after 8 seconds; no spacecraft is being flown.'):state?.currentStageId==='earth-parking'?'Play the original CMC task below. Historical chapter navigation and the optional tour remain separate from live computer input.':'Explore at your pace, or start the guided tour. Historical GET labels are references, not a running mission clock.';
 }
 function scheduleNext(delay=8000){clearTimer();if(!touring)return;timer=setTimeout(advanceTour,delay);}
 function advanceTour(){
@@ -44,10 +46,11 @@ function render(){
   const moon=stage.order>=5&&stage.order<=14;$('reference-body').textContent=moon?'MOON REFERENCE':'EARTH REFERENCE';document.querySelector('.campaign-scene').classList.toggle('moon',moon);viewer?.draw(configuration);
   $('review-count').textContent=`${state.reviewedStageIds.length} / 16 REVIEWED`;
   for(const item of state.catalog.stages){const button=stageButtons.get(item.id);button.setAttribute('aria-current',item.id===stage.id?'step':'false');button.querySelector('small').textContent=state.reviewedStageIds.includes(item.id)?'REFERENCE REVIEWED':item.evidenceIds.length?'REFERENCE + SEPARATE EVIDENCE':'HISTORICAL REFERENCE';}
-  for(const item of state.catalog.goals){const node=goalNodes.get(item.id);node.classList.toggle('active',item.id===goal.id);node.querySelector('small').textContent='FULL FLIGHT / UNAVAILABLE';}
+  for(const item of state.catalog.goals){const node=goalNodes.get(item.id);node.classList.toggle('active',item.id===goal.id);node.querySelector('small').textContent=item.id==='lunar-orbit'&&cmcAvailable?'LIVE CMC TASK / AVAILABLE · FULL FLIGHT / UNAVAILABLE':'FULL FLIGHT / UNAVAILABLE';}
   $('stage-sources').replaceChildren(...stage.sourceIds.map(id=>{const source=state.catalog.sources.find(item=>item.id===id),a=make('a',`${source.title} ↗`);a.href=source.url;a.target='_blank';a.rel='noopener';a.title=source.locator;return a;}));
   $('flight-gate').textContent=`This chapter can be explored as a historical reference. ${stage.evidenceIds.length?'Related evidence is identified separately below.':'No original-computer flight execution is connected for this stage.'}`;
   $('missing-capability').textContent=availability.stageAvailability[stage.id].missingCapabilities.join(', ');
+  const earth=stage.id==='earth-parking';$('earth-console').hidden=!earth;$('earth-open').hidden=!earth;earthPanel?.setVisible(earth);
   const kind=evidenceKind();$('evidence-insert').hidden=!kind;$('trainer-insert').hidden=!stage.evidenceIds.includes('undocking-trainer');
   if(kind){showcase?.show(kind);$('evidence-title').textContent=kind==='guidance'?'How the original computer prepares guidance.':'Original engine commands and sensor feedback.';}else showcase?.pause();
   $('tour-complete').hidden=!finished;
@@ -66,6 +69,7 @@ async function load(){
     state=createCampaignState(await response.json());availability=assessMissionAvailability(state.catalog);
     if(params.has('stage')){try{state=selectCampaignStage(state,params.get('stage'));}catch{/* Unknown bookmarks safely start in Earth orbit. */}}
     buildNavigation();render();
+    if(params.get('play')==='1'&&state.currentStageId==='earth-parking')$('earth-console').scrollIntoView({block:'start'});
     if(params.get('tour')==='1'){state=createCampaignState(state.catalog);render();touring=true;finished=false;renderTransport();paceTour();}
   }catch(error){$('campaign-error').hidden=false;$('campaign-error-copy').textContent=error.message;}
   finally{clearTimeout(timeout);}
@@ -76,6 +80,8 @@ try{showcase=createAgcShowcase({root:$('agc-showcase'),canvas:$('agc-canvas'),on
   if(touring&&waitingForEvidence&&record.available&&!record.excerptComplete){renderTransport();if(!record.playing)$('tour-status').textContent='The recorded excerpt is paused. Use Play observations to continue, or Pause tour to explore.';}
   if(touring&&waitingForEvidence&&record.excerptComplete&&!record.playing){waitingForEvidence=false;renderTransport();$('tour-status').textContent='Verified excerpt complete. Resuming the historical reference in 5 seconds; no flight maneuver was completed.';scheduleNext(5000);}
 }});showcase.load();}catch(error){$('agc-showcase').textContent=`Verified inspector unavailable: ${error.message}. No substitute telemetry is shown.`;}
+try{earthPanel=createEarthOrbitPanel({root:$('earth-console'),onAction:pauseTour,onState:observation=>{cmcAvailable=observation.available;const goal=goalNodes.get('lunar-orbit');if(goal)goal.querySelector('small').textContent=cmcAvailable?'LIVE CMC TASK / AVAILABLE · FULL FLIGHT / UNAVAILABLE':'FULL FLIGHT / UNAVAILABLE';}});earthPanel.load();}catch(error){$('earth-console').textContent=`Original CMC console unavailable: ${error.message}`;}
+$('earth-open').addEventListener('click',()=>{pauseTour();$('earth-console').scrollIntoView({block:'start'});});
 $('tour-start').addEventListener('click',()=>{if(!state)return;const resume=!finished;if(finished){state=createCampaignState(state.catalog);finished=false;render();}touring=true;renderTransport();paceTour(resume);});
 $('tour-pause').addEventListener('click',pauseTour);
 $('tour-restart').addEventListener('click',()=>{pauseTour();finished=false;state=createCampaignState(state.catalog);render();});
@@ -83,5 +89,5 @@ $('previous-chapter').addEventListener('click',()=>{pauseTour();finished=false;s
 $('next-chapter').addEventListener('click',()=>{pauseTour();finished=false;state=nextCampaignStage(state);render();});
 $('review-chapter').addEventListener('click',()=>{state=reviewCampaignStage(state);render();});
 $('reset-configuration').addEventListener('click',()=>viewer?.reset());$('retry-campaign').addEventListener('click',load);$('retry-recording').addEventListener('click',()=>showcase?.load());
-document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseTour();});window.addEventListener('pagehide',event=>{pauseTour();if(event.persisted)return;loadController?.abort();showcase?.dispose();viewer?.dispose();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseTour();});window.addEventListener('pagehide',event=>{pauseTour();if(event.persisted)return;loadController?.abort();showcase?.dispose();earthPanel?.dispose();viewer?.dispose();});
 load();

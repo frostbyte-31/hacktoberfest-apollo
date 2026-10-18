@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "sourceUrl": "https://github.com/virtualagc/virtualagc/tree/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055",
+  "files": {
+    "COPYING": {
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994",
+      "upstreamGitBlob": "5b6e7c66c276e7610d4a73c70ec1a1f7c1003259"
+    },
+    "Comanche055/AGC_BLOCK_TWO_SELF-CHECK.agc": {
+      "sha256": "674f22014a8d4c7abc6f376ed93ec6b3d76af7cd87dea2752bc251968d46695a",
+      "upstreamGitBlob": "8b1a04d5596a87d8eae88ff059246de1d1e94276"
+    },
+    "Comanche055/ALARM_AND_ABORT.agc": {
+      "sha256": "18ca3b8c644e24b2fef4da5371fb95c6af5648efc83713c042902b1a0c1ed695",
+      "upstreamGitBlob": "b8060b33b108ce89f5bc1ffdc6d80c9edbe2c645"
+    },
+    "Comanche055/ANGLFIND.agc": {
+      "sha256": "8657a83fc44eb7ba45065926d4441ac039c3ccc85175f1846d0aae2caa487e52",
+      "upstreamGitBlob": "6c9bf3178a93500844b53149d70032b81eaad307"
+    },
+    "Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc": {
+      "sha256": "82bf5a62884e71d635af13ed575111d03bf442b4aa07d12c17ccbd049e1909ff",
+      "upstreamGitBlob": "184c0357a390c71a2141a51f1200a8675bb15686"
+    },
+    "Comanche055/AUTOMATIC_MANEUVERS.agc": {
+      "sha256": "d0e7a7d485949dd694f7daa68574da44f6602eb794a7c74b5ba9c089ab085dd7",
+      "upstreamGitBlob": "5dca4afe10f3aaac803dcd8d9b554e59be90d116"
+    },
+    "Comanche055/CM_BODY_ATTITUDE.agc": {
+      "sha256": "862eab3639c30e2e09360b1c7959bea0e4db80b5f3f9f809ffd904db5dd70890",
+      "upstreamGitBlob": "d5e7e4b2c6553d7fd7b0d740e328ae8f6c8fc683"
+    },
+    "Comanche055/CM_ENTRY_DIGITAL_AUTOPILOT.agc": {
+      "sha256": "dbc221ec47602e86184c945f55ea72a640a29191c1f300e100acbe40a8fbe3ee",
+      "upstreamGitBlob": "69c53bf95c629b7811e624654d896bee2f9eeacc"
+    },
+    "Comanche055/CONIC_SUBROUTINES.agc": {
+      "sha256": "322f457bb3bbfa37dbe27f19bebc0dab5e21cf56ff2d42dd948c77d3a64957e6",
+      "upstreamGitBlob": "8e6862fa7cb0d1f4e0bf8a9dfc13e1b6c4e1eed7"
+    },
+    "Comanche055/CONTRACT_AND_APPROVALS.agc": {
+      "sha256": "19cda6b7a92d3aa060c37e9813ea7d6a353b8af8d1b546e980d41fd2f2fff3d0",
+      "upstreamGitBlob": "84407de4cec2761771169627540f862ec97bc570"
+    },
+    "Comanche055/CSM_GEOMETRY.agc": {
+      "sha256": "44b88d3f2f614a07a9eef7b12eed3d10ff5178bbee8ff16b0f0c101dfd0c78e4",
+      "upstreamGitBlob": "436888a9edf80f00a9e1b9fbd25f95afd5674ceb"
+    },
+    "Comanche055/Comanche055.binsource": {
+      "sha256": "5a910b1d69cf9ef3b0f1ecc241271e0dd15f27e305d533028061ed2b71ffafcf",
+      "upstreamGitBlob": "9e9c391c9e2564a32991bd40e9bdbfba028defc7"
+    },
+    "Comanche055/DISPLAY_INTERFACE_ROUTINES.agc": {
+      "sha256": "6dc2a2c886f1fa8e0e45f4dbac3192fe63c1922ef884c18490283b0a84e879a7",
+      "upstreamGitBlob": "aa9422ead1f4a39912754638361ee3e124437114"
+    },
+    "Comanche055/DOWN-TELEMETRY_PROGRAM.agc": {
+      "sha256": "940e9cb34e0c024018f3ea635f6dc5e7725323d038fb16d382d3059d54fe4160",
+      "upstreamGitBlob": "f82d4b92d501860bb2bb1f877857745e5314b386"
+    },
+    "Comanche055/DOWNLINK_LISTS.agc": {
+      "sha256": "11c49bb3a15bac08bb6da67593c9ca8134027bf3a8728a31e06d58ecb39edc8e",
+      "upstreamGitBlob": "00ffc3167088dbf8ba96352285227a306f4f0e7d"
+    },
+    "Comanche055/Default.style": {
+      "sha256": "d53664e2d89e0ab9592141679b38943d58ea037264aca67b46b6cd247172beb3",
+      "upstreamGitBlob": "1e05caa1f9907f0b6d8756219a4e246147331f04"
+    },
+    "Comanche055/ENTRY_LEXICON.agc": {
+      "sha256": "39ae1536e15340f62bab94bc3bca4d6018e03f13f75798e927db73ce6d5d747f",
+      "upstreamGitBlob": "1d5a253df5db1b92c7cba425f8ea47a4c61fffe6"
+    },
+    "Comanche055/ERASABLE_ASSIGNMENTS.agc": {
+      "sha256": "b3ac7e266a61300d3e432ab5ce9abceb5a75fe941ab62e8ecce96b150d1af4a3",
+      "upstreamGitBlob": "4d042f69c6ff5ae9c4acdf9fa5366c420577255a"
+    },
+    "Comanche055/EXECUTIVE.agc": {
+      "sha256": "8c7438f412a2d61da61f181526c4f70b920f88bc0b764be6ec9c26299780bedc",
+      "upstreamGitBlob": "7fb22c36e0a3e379a134d779cfda29eac23bd9cb"
+    },
+    "Comanche055/EXTENDED_VERBS.agc": {
+      "sha256": "25118318ebf18f364864453d16238a99f349a0be9f30df002f0b85cac46c51a0",
+      "upstreamGitBlob": "b932f93edf3487ff16c0f1a2bdfa1d1080e880f5"
+    },
+    "Comanche055/FIXED-FIXED_CONSTANT_POOL.agc": {
+      "sha256": "de1173bad2dab8fce81ecd089578d55a8ff7bb6ce48a49ef13fd75bde6928a08",
+      "upstreamGitBlob": "fc9976bf3a84d6613fc866b7461eee138c64f514"
+    },
+    "Comanche055/FRESH_START_AND_RESTART.agc": {
+      "sha256": "31a65512645178e14dd150d2f56128f31a374697e2af4d69c87204e5df775ff7",
+      "upstreamGitBlob": "7bd3d22c4bc89617477a7a9066021608f63b5f9d"
+    },
+    "Comanche055/GIMBAL_LOCK_AVOIDANCE.agc": {
+      "sha256": "0748adbd4846a5dad0dddd3cc0dcb46a6a840902608217ef934921b02dfeeb0d",
+      "upstreamGitBlob": "23c69d7797abb59e0680294a79bada9f97e224e2"
+    },
+    "Comanche055/GROUND_TRACKING_DETERMINATION_PROGRAM_-_P21.agc": {
+      "sha256": "8df00206ac94cafccb372d5cca7dfd398efd597c60f697b8a86baa6ebccc530b",
+      "upstreamGitBlob": "fbbcd05ac0ae614f914272175772fb381c04a0ab"
+    },
+    "Comanche055/IMU_CALIBRATION_AND_ALIGNMENT.agc": {
+      "sha256": "fd38ceecb690d916f14ea23526a9239f3fa5e4677db8d045404e5bae10974a73",
+      "upstreamGitBlob": "e7e5a61eb1d8115983b0c1df4ad68a93fef9370c"
+    },
+    "Comanche055/IMU_COMPENSATION_PACKAGE.agc": {
+      "sha256": "091d5845d656909ddd70abdf1b93d04eaee3e1e0b58c1688a01bbc2a29594d50",
+      "upstreamGitBlob": "fe9d7c4f87635a7b1b97a4f562b8fa505ef31d25"
+    },
+    "Comanche055/IMU_MODE_SWITCHING_ROUTINES.agc": {
+      "sha256": "2673b921276d857942caa9da558e806df69b5b9a595489765578e973f004550a",
+      "upstreamGitBlob": "a9faf7209efdf3380a24e8a7f11ffd50908b7c83"
+    },
+    "Comanche055/INFLIGHT_ALIGNMENT_ROUTINES.agc": {
+      "sha256": "8e98320ad32b18de1707af36b3d3c868f135f2a2226d4182ca3d08a3ebdedb79",
+      "upstreamGitBlob": "9c46b4e5996a3b92d62c8dc2206e15f4ce568d64"
+    },
+    "Comanche055/INTEGRATION_INITIALIZATION.agc": {
+      "sha256": "a424b3edc650ebee4e977a2a564d6df290acc97e66afad20ad1a2629a9a5d827",
+      "upstreamGitBlob": "303b57be68efc4170872f48b1892ff19f33ceaee"
+    },
+    "Comanche055/INTER-BANK_COMMUNICATION.agc": {
+      "sha256": "419bfa14adf835e4fe2c458ebd4fa3e27b568e24d991609e3d8d0072ff10e7cd",
+      "upstreamGitBlob": "0063d757097a5d61524b073214dd85a0d6a7c207"
+    },
+    "Comanche055/INTERPRETER.agc": {
+      "sha256": "d6a0707c5e58a82516b4cbca7d8941b7a7fb610b82c3da3cfc6103c2214ffd99",
+      "upstreamGitBlob": "8747e8d441593be88fbed38ce1dbb2a547492ad6"
+    },
+    "Comanche055/INTERPRETIVE_CONSTANTS.agc": {
+      "sha256": "af7d372d68515a024fc0f64cfd0f1b5ce09a80a96f2d93914863481fec972000",
+      "upstreamGitBlob": "eca647c7d2375a83afc9d31fa57f57aefdea9e9b"
+    },
+    "Comanche055/INTERRUPT_LEAD_INS.agc": {
+      "sha256": "fa37557939f7f6e37cd148d6566824c950cd36e5a6e40f264602a3b52a4ac173",
+      "upstreamGitBlob": "8dc77b694c92560afeb00a7ba24ade6cc072aeb4"
+    },
+    "Comanche055/JET_SELECTION_LOGIC.agc": {
+      "sha256": "72010f990fcd934e425a4d361acfc7880d4206ffd70498ffbd2c5c7ad3f3965c",
+      "upstreamGitBlob": "7b6c887e7087dad02f7515c34fcb517bf36fe765"
+    },
+    "Comanche055/KALCMANU_STEERING.agc": {
+      "sha256": "f5ccbbcfab87903148508ad1ef2cba1917aec71db6e8cf7f9bd4b677f5b62e2a",
+      "upstreamGitBlob": "882d3dda805bdd2ec0f95ee90c573d3a9bd94fdf"
+    },
+    "Comanche055/KEYRUPT,_UPRUPT.agc": {
+      "sha256": "1db1e318c1723457212005071d3ce35b95a802e540ea3df5c07d8facf814529d",
+      "upstreamGitBlob": "9b27958b866f2d4c44d2d461a26aa0a6d509b4f4"
+    },
+    "Comanche055/LATITUDE_LONGITUDE_SUBROUTINES.agc": {
+      "sha256": "e2dcb5c0d0557d690dd4d0548aca1a3f746cd50c214d1ba473a90c9c77047bee",
+      "upstreamGitBlob": "524df018a6b30d621674068932e781ef784d7d7a"
+    },
+    "Comanche055/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc": {
+      "sha256": "e03999c446612f407d95497bfb3aa79221adcecfdc076df0e6507d0529181118",
+      "upstreamGitBlob": "f1e6e5b9872baed55a72c3cdf048541cae4812b3"
+    },
+    "Comanche055/LUNAR_LANDMARK_SELECTION_FOR_CM.agc": {
+      "sha256": "23878be5d00c43cf12887821ddcaccfa93bebd506cd7f8664ebf5107eb39b30e",
+      "upstreamGitBlob": "798da34b67b4464d436841817cd1275574524f71"
+    },
+    "Comanche055/MAIN.agc": {
+      "sha256": "ee88096c97867b901dc6dc5215d943cbe62b01f7dacdbea4ab2c1fd6eae07b70",
+      "upstreamGitBlob": "13e00d150555f4235d7151b61ffec173e1947af1"
+    },
+    "Comanche055/MEASUREMENT_INCORPORATION.agc": {
+      "sha256": "f41b7334e6702cb81c87b7c50684c3585acd6800fb8d3467749328957bc641d3",
+      "upstreamGitBlob": "c5c046b107858e71d241e04de700b388624e6aae"
+    },
+    "Comanche055/MYSUBS.agc": {
+      "sha256": "d8bfaa9b75b5df220a2dcba54d7e97e8310ee6880036ea16bb277a977e841b7c",
+      "upstreamGitBlob": "94af90aff9c3d53490781fd945f6f4b5bcdff40c"
+    },
+    "Comanche055/Makefile": {
+      "sha256": "404eb86c3f5818a5bfa9d8f9e49fb7bbdf874ae59ed83e79eb4706583cc24d8a",
+      "upstreamGitBlob": "398cb41e8d2fac78e59c0703bad231bd4f5db7f6"
+    },
+    "Comanche055/ORBITAL_INTEGRATION.agc": {
+      "sha256": "ecdde31e7523d38f4941afab9feae2075d668b8cdb5b59eb87115a01c0ded243",
+      "upstreamGitBlob": "71f2da4c2ccca5611a392ab6231286f1bab2991a"
+    },
+    "Comanche055/P11.agc": {
+      "sha256": "8b4b384e34c77bc5bb15206e6d202d26cf6e35abbcf043b0972b4044c1e4759b",
+      "upstreamGitBlob": "4b0d2e0a82d84f90f4e210d5bd03d137568a5c06"
+    },
+    "Comanche055/P20-P25.agc": {
+      "sha256": "4ca82b7e206540ac490bc2dd6fa050c9d14f7f0a4db382261479e283ba993433",
+      "upstreamGitBlob": "fa365ea6a45e362ed30a5af357959d03a1c3aa44"
+    },
+    "Comanche055/P30,P37.agc": {
+      "sha256": "875d3a2a865543a6a3ceeea7a36723972d6823792e4f07398168c0741628cf87",
+      "upstreamGitBlob": "0510522d4f51c447ac3f4e264bb14e9c4788b2cc"
+    },
+    "Comanche055/P32-P33,_P72-P73.agc": {
+      "sha256": "3010a01b6d8043e52acd96cdeae19ad2be563d1f2f075260719ca7330e2f3a14",
+      "upstreamGitBlob": "0104413b844cbf090bf13aaf8bf4c742abdc7d0e"
+    },
+    "Comanche055/P34-P35,_P74-P75.agc": {
+      "sha256": "815a746d94b8b8e1dc303aad5370c60b7158823f8f0bf0e343de5027a4728748",
+      "upstreamGitBlob": "52947f216bde24bc85f5276dcc864dee77debb58"
+    },
+    "Comanche055/P37,P70.agc": {
+      "sha256": "b3ac38ca294065f0e2de71327c1accfd5d5d7b63db422b32f55f503a8eb7cfc6",
+      "upstreamGitBlob": "c8ce7817c5eaa4dabc29b8771b95a0df155f7009"
+    },
+    "Comanche055/P40-P47.agc": {
+      "sha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+      "upstreamGitBlob": "fb7e0d3b9b3e9adcb6a7c79141421829561021d0"
+    },
+    "Comanche055/P51-P53.agc": {
+      "sha256": "d16d4ea64e82028e1f39e906993aa1132335bc22f9b4986d32232b7a5da4b997",
+      "upstreamGitBlob": "75920a3a60f949dee02f9b749abfc9544d0b05c3"
+    },
+    "Comanche055/P61-P67.agc": {
+      "sha256": "78fa4bf9db6d1e4b217de2f1195d36975ef15a832a3d067a45e9dfc0aae8d6fd",
+      "upstreamGitBlob": "e2c465164b40be777ea8169b866fe604cdc9812b"
+    },
+    "Comanche055/P76.agc": {
+      "sha256": "c1bb6117a393b6f6a0f4081ade514b6d3fc04c335cb29f387b4c483eeb005571",
+      "upstreamGitBlob": "ee3f567c422504d7eedc39a3d80959acdb06036c"
+    },
+    "Comanche055/PHASE_TABLE_MAINTENANCE.agc": {
+      "sha256": "ddaad2c1a102c0b0dffd53f05145f7597bc0bedf66381058cc397cb379953c9d",
+      "upstreamGitBlob": "78cd96462a95fc84f20f5ed4b5d1e83549798e85"
+    },
+    "Comanche055/PINBALL_GAME__BUTTONS_AND_LIGHTS.agc": {
+      "sha256": "e1417a1773bf2ab5c48fd803f85c39ea0e411b1b92785fe8cf066a86465aeb83",
+      "upstreamGitBlob": "9a74f55071c73a7721f0e2cd6361aa97295ed610"
+    },
+    "Comanche055/PINBALL_NOUN_TABLES.agc": {
+      "sha256": "dfab797afc11e58caefa9a8632394023eae037448f8e6b539aa59be5eaddd28f",
+      "upstreamGitBlob": "2d3c7ea07006f97a46e600ae5f7affbad6f9336b"
+    },
+    "Comanche055/PLANETARY_INERTIAL_ORIENTATION.agc": {
+      "sha256": "2f5f777fb8e5cec6290a3088b462d6f94caef910aa5eba32f137b600d75a4883",
+      "upstreamGitBlob": "b395b93437925115b3ab4407f9573bcba0d02b74"
+    },
+    "Comanche055/POWERED_FLIGHT_SUBROUTINES.agc": {
+      "sha256": "b05ee0af32b2a73dc56c23c90f9044fa6b8dc5b3f8c47d812304f6405a846688",
+      "upstreamGitBlob": "1d2ce1227647b052c0beb59ff70831a097494948"
+    },
+    "Comanche055/R30.agc": {
+      "sha256": "9115680b856f2f7399dfbefa84c2dfd3526bbb67231004472ac1d25e54ef6a9f",
+      "upstreamGitBlob": "d9baa1427dea45f3762f9280e7deb4a94a23667e"
+    },
+    "Comanche055/R31.agc": {
+      "sha256": "732de9ae897981c132b2c8097a159f81a56d9aa712691791f087b4ecc379e160",
+      "upstreamGitBlob": "6109fc4b1c0cc8875f213e99619ca1253453847b"
+    },
+    "Comanche055/R60,R62.agc": {
+      "sha256": "e79a1b5ccd734e1139a98cc6986b0bdab090ee7253827b283cada57c3fdee8e6",
+      "upstreamGitBlob": "b41e7fd579f75dea9f2317f3b8e06c54b7473721"
+    },
+    "Comanche055/RCS-CSM_DAP_EXECUTIVE_PROGRAMS.agc": {
+      "sha256": "f6c0d7ed93b32469cbeda822b332821579bdbbca095123e9176cd5ef3c3dedbc",
+      "upstreamGitBlob": "f05362e4f038593592de7880d857a4db8c687ad3"
+    },
+    "Comanche055/RCS-CSM_DIGITAL_AUTOPILOT.agc": {
+      "sha256": "3f51d1ecb81041def0c7b9c2fd9ba36b08c984a3eb213c9d893c78a52851d7b2",
+      "upstreamGitBlob": "c2212dcc9f27d23cdf9b25f06611b5c72f831f46"
+    },
+    "Comanche055/REENTRY_CONTROL.agc": {
+      "sha256": "22336cd7da71ecd48cecfa380d261ad4ed09518ffbcf8a3dc8c736ac0fd2b01d",
+      "upstreamGitBlob": "7678369fc3b06f643f64455ab81dbd2ff4cdf8ba"
+    },
+    "Comanche055/RESTARTS_ROUTINE.agc": {
+      "sha256": "6eb48551701638ef1da5836ba6deddc89aa8175a63567a2b2907fd0363840d82",
+      "upstreamGitBlob": "7419c61d850e49bb96a81cd36862f15549f8fb6a"
+    },
+    "Comanche055/RESTART_TABLES.agc": {
+      "sha256": "c1ac982e35a4fafdacfd1a203c85c8ae169cbdbe01d8dc105899ec349c248583",
+      "upstreamGitBlob": "7449a24e368bebf107aa8118df82e94a71719cfc"
+    },
+    "Comanche055/RTB_OP_CODES.agc": {
+      "sha256": "77d4efc7163a700d642b8ac30a6ad048aaa8d25c8dc1aebe8216c54dd385d314",
+      "upstreamGitBlob": "53181de08b83649c2e17e40c13abacbb737d3cf8"
+    },
+    "Comanche055/S-BAND_ANTENNA_FOR_CM.agc": {
+      "sha256": "2eecbdd4a0f66afae9a2857803903e7612e697e59e15aaaf0d76c215bfa3a2b7",
+      "upstreamGitBlob": "d1a963106ee3b57a63fe3291f13ddcab46e2cd27"
+    },
+    "Comanche055/SERVICER207.agc": {
+      "sha256": "5f091b1d128cddbe9c3b24b9fc2718d6f779b978ec1e888f24ee91ea40704272",
+      "upstreamGitBlob": "8665492a0e6a647c31eba5ec04af2c2a3bee8b2a"
+    },
+    "Comanche055/SERVICE_ROUTINES.agc": {
+      "sha256": "1ca70c4f75bb2302096b67fcfcbafde798ab138762393238067adf7bb625d767",
+      "upstreamGitBlob": "9cd6cf92dbc5f7399079af67a67c9d0933e2c972"
+    },
+    "Comanche055/SINGLE_PRECISION_SUBROUTINES.agc": {
+      "sha256": "7acad48b95f6d724b81234e7fb7b7a41de4b9b2e99d69172a8773c44a6d74727",
+      "upstreamGitBlob": "1072b186998034d9e2f1fc0137af6ef95cd932bb"
+    },
+    "Comanche055/STABLE_ORBIT_-_P38-P39.agc": {
+      "sha256": "fcc01b6e6accb619cc121009dd800ae5ef990afbda770c39356249644313d510",
+      "upstreamGitBlob": "e9e31748d4ae4b5f35d702b8f02dcc044164a466"
+    },
+    "Comanche055/STAR_TABLES.agc": {
+      "sha256": "f3fa1120682600f8b3ba4aef484b1fd620cc16b536ef27eaab8fbc29809f618e",
+      "upstreamGitBlob": "0ee7925d000bb22d5b1248e9c15b83132b5b3828"
+    },
+    "Comanche055/SXTMARK.agc": {
+      "sha256": "fb9eddcf07ffa752607f0b14d83daf6bdc4b3606f957e02de4ecf1ff66e7816c",
+      "upstreamGitBlob": "bcf5ea7274ffe265f169b9f018499c798b466793"
+    },
+    "Comanche055/SYSTEM_TEST_STANDARD_LEAD_INS.agc": {
+      "sha256": "9c0e13c109f8f3966036cb5c7e7f32b5312d50fd4918887291194832b7105bea",
+      "upstreamGitBlob": "396442e57569d6a69ee65ed305c4c1714373300c"
+    },
+    "Comanche055/T4RUPT_PROGRAM.agc": {
+      "sha256": "76841a1a39e6d40d79623082468c3ae8bcc48a0692c3fb9d03d43022eaed48e3",
+      "upstreamGitBlob": "43d02724f804a2ebca771b0bc96f4cb3fae2a3b2"
+    },
+    "Comanche055/TAGS_FOR_RELATIVE_SETLOC_AND_BLANK_BANK_CARDS.agc": {
+      "sha256": "6b78c145e87848f3114967008fbc7d188bbcc04b65fffabc690cf0fb70f821f6",
+      "upstreamGitBlob": "7d8911f86f6fd2a345644f4e6352d04d495e5995"
+    },
+    "Comanche055/TIME_OF_FREE_FALL.agc": {
+      "sha256": "254ea1fde3dd9611c1ade8d37fd51da6684daa1ce80070315f88de5c1d5001e7",
+      "upstreamGitBlob": "40a75d8507caf635c70b8561d8cc6b7b3ae99a42"
+    },
+    "Comanche055/TPI_SEARCH.agc": {
+      "sha256": "ae24c9e547a3ab632777036fa7af4b13c009aac598c8d8602ef35bf86d3abf3f",
+      "upstreamGitBlob": "d4ceabda3ff53cf86d73853883f47c75556bea0b"
+    },
+    "Comanche055/TVCDAPS.agc": {
+      "sha256": "d095a2a1a4f66abc3c4809f4244e194226c0692f9e33e38c8c035866f8df894a",
+      "upstreamGitBlob": "84f823090bd58c060f6af9de351cba3c3e7ad6e9"
+    },
+    "Comanche055/TVCEXECUTIVE.agc": {
+      "sha256": "2e8903ec0ed4e5fc15dd8d7b5723b3c93b0b50daabbb4e434f451d5b0e572488",
+      "upstreamGitBlob": "a9a13ff29c281e05c4aa383cdb785bebf6a9ead5"
+    },
+    "Comanche055/TVCINITIALIZE.agc": {
+      "sha256": "51fb37c83df98b3b062f31af4590f9068535e9d14ef5213d7fbc72097ac2ee6e",
+      "upstreamGitBlob": "40dd5a02b2fe6c1af9c0139873c6d4b80091f0e8"
+    },
+    "Comanche055/TVCMASSPROP.agc": {
+      "sha256": "808fc80f5dc68f24851ab6616f07e37b6e7bd656362563bc1cd5cd70f444c45b",
+      "upstreamGitBlob": "acdad91f0b5825fbd53bb83ef2dd55ec5755b1a0"
+    },
+    "Comanche055/TVCRESTARTS.agc": {
+      "sha256": "c57133e367a8277da4664823ddf62a7cd226855710692227a24c9206656ad44d",
+      "upstreamGitBlob": "d62c1215188c498615fe6f485eb377925f4ddc0c"
+    },
+    "Comanche055/TVCROLLDAP.agc": {
+      "sha256": "98354834fff73097507151fc4ae6dc00ea846b72659c9886202987c1d9f3cb22",
+      "upstreamGitBlob": "8b52a653994c1a41c1f26e1c404b809891a34f00"
+    },
+    "Comanche055/TVCSTROKETEST.agc": {
+      "sha256": "9a9d9050d28409fce789ea595a0469ab0986b4fbaf37a0a8786f50c468f06881",
+      "upstreamGitBlob": "846c48bb94e7242d46df2dd88e8433a57d10a4f8"
+    },
+    "Comanche055/UPDATE_PROGRAM.agc": {
+      "sha256": "533fd555cbfbe52b95b126d4eeafcf6758782a2447c9faad39830b1b5ac8cbb5",
+      "upstreamGitBlob": "c3eb3960a427683ae5167e4f6b6f080e2061042c"
+    },
+    "Comanche055/WAITLIST.agc": {
+      "sha256": "c25e9c56706fd619e491f03a0ffba24beaa86403f86543700840c42d969bdbce",
+      "upstreamGitBlob": "f9fa374062389609de142bb37a4c3aa18ea24b75"
+    },
+    "LICENSE.txt": {
+      "sha256": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799",
+      "upstreamGitBlob": "17105c71065a40b3ea33534aa1daf5f57342e8e6"
+    },
+    "Makefile.inc": {
+      "sha256": "0840ddba85ed5c883ebdeac46a5815b0445f8a0bb5755974a1815863f15249bc",
+      "upstreamGitBlob": "2f2cb307532300f7d2573c84b0fe6aa893ffe911"
+    },
+    "Tools/oct2bin.c": {
+      "sha256": "887bca3a89338d36ab8305b1c4643940700ec37621bb44b220fe46fb6b159e09",
+      "upstreamGitBlob": "a4f1a1219534156dd05fe95690f72172fc3a9536"
+    },
+    "Tools/utils.c": {
+      "sha256": "6e39fbe21d82bbe779ea31795849341e6175e5b48bad73d56448f45725efbce6",
+      "upstreamGitBlob": "ff55f28e9a698310f57258a39bfa2f0870172d16"
+    },
+    "Tools/utils.h": {
+      "sha256": "cb6b9e809af0562f0d5bca03069ce7f4c28c9519869d0938db46c13423812254",
+      "upstreamGitBlob": "cc0b6567cf19784530980569f1064275fbd3207f"
+    },
+    "yaYUL/GetOctOrDec.c": {
+      "sha256": "7989fd8c2ecac1e0f57a8e6352796d178f99b489260a7a9f770078e927061e66",
+      "upstreamGitBlob": "dfcb8c9f8206de3f575683b289c76816aceb9514"
+    },
+    "yaYUL/IncPc.c": {
+      "sha256": "194f2f7724c59f472ee0554804929128d1fe52b0d16c8a2cf6146cf48f450bb9",
+      "upstreamGitBlob": "4cd4abea117a6105de464d9a2ef76d6bc98000b6"
+    },
+    "yaYUL/Makefile": {
+      "sha256": "0c7f3363ae2b3a2b8e4b386b684f7b2efe2d60f7cbaa85ef5e5e088c2fa44400",
+      "upstreamGitBlob": "934a639e5a6933f38fed5baa0a7fb3631391e332"
+    },
+    "yaYUL/Parse2CADR.c": {
+      "sha256": "7bb06616ff8589b4bbe0f16c3cbda4fc66a969118dd8e66b189c61d1dd68a2d3",
+      "upstreamGitBlob": "a029e6bd167a9ae83ee87b91bccc4c6e27874112"
+    },
+    "yaYUL/Parse2DEC.c": {
+      "sha256": "ef5f09736c683fa2197c76ac886486333f2321f03f85bbb02f61602113d7f5e0",
+      "upstreamGitBlob": "8ee99d4dc347c296f01e252a32811e9ece83e99b"
+    },
+    "yaYUL/Parse2FCADR.c": {
+      "sha256": "4ddb19fe23d8580438e0cc76d541bf95cf095d025f85332a916663b678342790",
+      "upstreamGitBlob": "7a651e63a5f2462f1b0f031736092f2b69353f19"
+    },
+    "yaYUL/ParseBANK.c": {
+      "sha256": "8a02a10690f6f782f276326c24875677b905d9c5962eb672a0cd01b10f4be4f6",
+      "upstreamGitBlob": "74ac408c2e86b715388bb321b1f5b363d4fe605b"
+    },
+    "yaYUL/ParseBBCON.c": {
+      "sha256": "0db406606bd186a49b6c4c0f1ae6091b9e449a7047e9fe5078cf63b660cdf849",
+      "upstreamGitBlob": "cbadcfd4159bac77d3617536e1512a1e6e829eeb"
+    },
+    "yaYUL/ParseBLOCK.c": {
+      "sha256": "e8630abb5bdda76aad4d127af1b54ff7bf4868ee4bb4c00ecc4c4aa2084a31d8",
+      "upstreamGitBlob": "39706ea664da9ff9a69782dad1368826a59b602c"
+    },
+    "yaYUL/ParseCADR.c": {
+      "sha256": "cb9ec3071a135018589d8321483d06779310611ba722226351d164e4c7b45a50",
+      "upstreamGitBlob": "a2463b796655b6ecc1e07494130c4df6645c28c1"
+    },
+    "yaYUL/ParseCHECKequals.c": {
+      "sha256": "8a8d5833f10e8bc7de0e7f31b2335e82cb0d55dab822c46ae710d3b4121f6c7d",
+      "upstreamGitBlob": "9e51bf38dc37a0a9d6d074c6b48e4295498c5d6b"
+    },
+    "yaYUL/ParseEBANKEquals.c": {
+      "sha256": "4f28d449410c8f2927abfae6aa06ea1cdcffafd1b62bf04d6232898d2ec6519a",
+      "upstreamGitBlob": "809308031a6bf8b05163c1611d2a8ad43a079fa3"
+    },
+    "yaYUL/ParseECADR.c": {
+      "sha256": "c8dbc687229f1d9a4504f095eecf7020b3f1511986bae258dce0e7127c2da802",
+      "upstreamGitBlob": "6f6822eb5ff363651754a535c11523cab5e814f3"
+    },
+    "yaYUL/ParseEQUALS.c": {
+      "sha256": "f51f50575642c2289cc6fdbc4f3299679e30830d8b320f99c03193be3eed286c",
+      "upstreamGitBlob": "3624b11b91635a68379fd0145ac6ad59cf5f515d"
+    },
+    "yaYUL/ParseERASE.c": {
+      "sha256": "4c2bd2773ead71dfc5b6354a643c3bf83d3c9b90768c89b21c2f90b93d9326d1",
+      "upstreamGitBlob": "2f4e65d1c6dcdaa0fdef290404b498217328e444"
+    },
+    "yaYUL/ParseEqMinus.c": {
+      "sha256": "4fc6bf81e478156c303f25eea07f266c92b49b2bca1bdd77e247d9fa8585fb43",
+      "upstreamGitBlob": "bfef34539838a50fb104e0994a56c64f62299b03"
+    },
+    "yaYUL/ParseEqualsECADR.c": {
+      "sha256": "2ea16c5b84a84681ab8700ea3f99e098d0c3ec9dc91a65206e2edd7596fdc6b7",
+      "upstreamGitBlob": "28d39d52f7422fb7980a390aaa6aa2d10ea4c3b8"
+    },
+    "yaYUL/ParseGENADR.c": {
+      "sha256": "0dc5c3d3fdfeb72a802e647d05f0701fa505b5e85b40329a8b53eafdb7357933",
+      "upstreamGitBlob": "5a14e1d92653073a360a0d63cb404b56408e919c"
+    },
+    "yaYUL/ParseGeneral.c": {
+      "sha256": "ede774ea52aeb14f371697bcfe1316ec53c047c2775b1e631da316cb004559ba",
+      "upstreamGitBlob": "5b12811d5ce7c175fdd626307ab50825f350d888"
+    },
+    "yaYUL/ParseINDEX.c": {
+      "sha256": "f48eee5bb25bef93028db4345ff85c2bf6fc117e1bb8e389fad28215e4a893f8",
+      "upstreamGitBlob": "37e0f7c3ee2ad7dc1ba5f87321c53ac392ee4a7b"
+    },
+    "yaYUL/ParseInterpretiveOperand.c": {
+      "sha256": "7a258c55949ca9afda6fd4d21196191889f7ce050211e13cc7e8a6fedf8b1b43",
+      "upstreamGitBlob": "adc554733a9a27cfbce5f7ccc4f94c8ca2f383f4"
+    },
+    "yaYUL/ParseOCT.c": {
+      "sha256": "651da140de6534b1bbe75b6604f9cd9398e2b9c39457447e0369d73832b3eda0",
+      "upstreamGitBlob": "3ea274145cbf396c586ffaed325044579b31fa7c"
+    },
+    "yaYUL/ParseSBANKEquals.c": {
+      "sha256": "5a66ba638709d90adfc9962e9258eb6fa4ea33a3b62a08bfa5800601fc828016",
+      "upstreamGitBlob": "a86c637dd5792c72e0f2d4f45c21d1bc6e092b6b"
+    },
+    "yaYUL/ParseSETLOC.c": {
+      "sha256": "0480e82ae4720bc5e8663ea17e4e126fdefe9346f02473de662845b62d62e686",
+      "upstreamGitBlob": "ccd6dbce317b355b856108d554d05ff3f4af10a1"
+    },
+    "yaYUL/ParseST.c": {
+      "sha256": "875367e6c6cf5177678795f7a1eccdd9e08c7924d5814d772f0f56d2a2217a62",
+      "upstreamGitBlob": "2f6a268dbc707b7015d5562b5c36edad607b80d2"
+    },
+    "yaYUL/ParseXCADR.c": {
+      "sha256": "b5318768e6f557a7134a5a6c9e32e7c55677bad5843bc4dfca1705ca76659bbd",
+      "upstreamGitBlob": "3a65dd28dc191b313d1f528f2a5846d80b21f95c"
+    },
+    "yaYUL/Pass.c": {
+      "sha256": "782fdef308a9a1382a8ba9d265535c5d619b001cf49951cb75f885e21416fbfd",
+      "upstreamGitBlob": "1f0fccedcd2726d90fa188b13d4da93dff4c5ba7"
+    },
+    "yaYUL/PseudoToSegmented.c": {
+      "sha256": "6ddf4a0c34715bf8cad30150ea5b2d344da915ac1ee93f9470f1857c8b78374f",
+      "upstreamGitBlob": "0e061d5b5065344ceff7f844c9d336b46f45f3e8"
+    },
+    "yaYUL/SymbolPass.c": {
+      "sha256": "38ea77a82ae111c2053d8ee5a0698654ae1ba6acae816cc2aaa815e2560c0a65",
+      "upstreamGitBlob": "c7555d43aaf5042002f0b3290d7e3ded567fc8b8"
+    },
+    "yaYUL/SymbolTable.c": {
+      "sha256": "fecac9d16d1692246032fdd4960991aa0cd016900bbe6316a9e9fa09082bb7b6",
+      "upstreamGitBlob": "d45d7336f9b5cd8b70fcef4bccae6aae20e35512"
+    },
+    "yaYUL/Utilities.c": {
+      "sha256": "40257dd1b5401b716b4b38de55cc3ed8d0f0719c43da5d69b182d93dbbda36a8",
+      "upstreamGitBlob": "fc205856617657184e09c3a59e735ec54873fd97"
+    },
+    "yaYUL/strcmpEBCDIC.c": {
+      "sha256": "fa93fd02a84684005db5068e5cae9818e7ca26205f1745f84f81db6376e59ab8",
+      "upstreamGitBlob": "050f052e562203af70e6aff8b42395eae5dc437a"
+    },
+    "yaYUL/yaYUL.c": {
+      "sha256": "82e9ddb76e22fcfd48c4f22245e7b2d7299f10b4293f62e9fbb16c36d2cda6b2",
+      "upstreamGitBlob": "5f10783eb002f14f40d440f36db3997ec9c46ab3"
+    },
+    "yaYUL/yaYUL.h": {
+      "sha256": "0b384ffec2f7f69d1420145729d3c24c57bc5e665f233897b26bc0a2a78b8e45",
+      "upstreamGitBlob": "15beddc7456c9ecb4826a5a1a53eeb8dd0ba4591"
+    },
+    "yaYUL/yul2agc.c": {
+      "sha256": "c27fb4c3078687c0be6091e1f6244f6cdab9035626e26119ca4c388337b021af",
+      "upstreamGitBlob": "a9fa6f4cd6e4065585108746fdd2d8f307d2d42f"
+    }
+  },
+  "artifacts": {
+    "corresponding-source.tar.gz": "8828f9a0f7e529b7072690a447d63385e67ab12e768a1cd4b199a642a79eac3d",
+    "artifacts/Comanche055.bin": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+    "COPYING": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994",
+    "LICENSE.txt": "d2621425eaef6dd0811db4c80062427ba36aa11a3184353ce0d76ef8d73e3799"
+  },
+  "assembly": {
+    "fatalErrors": 0,
+    "warnings": 0,
+    "proofedOctalListingByteIdentical": true,
+    "bytes": 73728,
+    "method": "Unmodified pinned yaYUL assembled MAIN.agc; unmodified pinned Tools/oct2bin independently converted Comanche055.binsource; byte identity verified."
+  },
+  "scope": "Transcribed original Apollo11 CommandModule flightsoftware, native CPU/DSKY control bench. Coldstart; no historical flight memory checkpoint, physical IMU, star observations, orbit propagation or TLI integration."
+}

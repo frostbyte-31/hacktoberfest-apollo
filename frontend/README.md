@@ -10,7 +10,8 @@ make play
 python3 -B tools/final_demo.py --port 4173
 ```
 
-Open **http://127.0.0.1:4173/** for the launch screen. Choose **Historical mission** to begin in Earth parking orbit, or the separate
+Open **http://127.0.0.1:4173/** for the launch screen. Choose **Apollo mission** → **Open Earth-orbit task** for live original CMC
+operation in the Earth-orbit chapter, or the separate
 educational landing laboratory. Every
 experience identifies its execution source and available controls. The landing
 lab does not continue the trainer's historical flight state.
@@ -19,6 +20,18 @@ Exactly three crew slots represent Armstrong, Commander in Eagle; Aldrin, Lunar
 Module Pilot in Eagle; and Collins, Command Module Pilot in Columbia. Collins
 remains in lunar orbit; his landing-lab communications/support role is a disclosed
 gameplay adaptation.
+
+### Playable original Columbia computer
+
+**/campaign.html?play=1** opens a cold-start Comanche 055 console with all nineteen
+real DSKY keys. Start the CMC and follow the server's five observed checkpoints:
+display test, P00, original clock, P52 readiness alarm and P00 recovery. Native
+packet acknowledgments and actual original output determine progress. This is
+computer control practice, not a restored orbital state or successful alignment.
+Python and `cc` are required; this CMC mode needs neither Tcl nor Node.
+
+[Exact player to-do list](../docs/EARTH_ORBIT_PLAYABLE_GUIDE.md) ·
+[implemented CMC contract](../docs/EARTH_ORBIT_INTEGRATION.md).
 
 ### Chronological historical mission
 

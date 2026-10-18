@@ -68,7 +68,9 @@ Historically, vehicle switches, docking mechanisms, crew decisions, launch
 vehicle guidance and spacecraft computers had different authorities. Preserving
 those authorities is more accurate than attributing every Apollo action to one
 AGC. The catalog identifies the relevant crew, computer and control system for
-each chapter. No current CSM computer or Saturn LVDC interface is exposed.
+each chapter. A fresh original CMC DSKY console is now implemented as a separate readiness
+diagnostic; see [the CMC contract](EARTH_ORBIT_INTEGRATION.md). It does not expose
+initialized historical CSM flight or a Saturn LVDC interface.
 
 ## Implemented HTTP interfaces
 
@@ -187,7 +189,8 @@ not satisfy them.
 | Transearth coast | `historicalTransearthCoast` |
 | Earth entry and recovery | `historicalEarthEntryRecovery` |
 
-There are no implemented whole-mission initialization, TLI, LOI, DOI, lunar
+The new cold-start CMC console supports real DSKY interaction, without a flown
+checkpoint or operating IMU. There are no implemented whole-mission initialization, TLI, LOI, DOI, lunar
 ascent, rendezvous, TEI or Earth-entry services. CSM original software, Saturn
 guidance, validated mission state transitions and their physical integration
 cannot be replaced by relabeling the LM's original Luminary recordings.

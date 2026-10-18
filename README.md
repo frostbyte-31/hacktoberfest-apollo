@@ -1,6 +1,7 @@
 # Apollo 11 — the guidance experience
 
-Start in **Earth parking orbit** and explore Apollo 11 in chronological order:
+Start in **Earth parking orbit** and play a live original **Comanche 055 CMC**
+readiness diagnostic using the real on-screen DSKY keys. Then explore Apollo 11 in chronological order:
 reach lunar orbit, land Eagle, then return the crew by direct atmospheric entry
 and splashdown. The new 3D mission reference and guided tour connect source-backed
 history with clearly separate original-AGC recordings and a playable undocking
@@ -13,7 +14,8 @@ unavailable; the interface never turns chapter navigation into a flight result.
 make play
 ```
 
-Open **http://127.0.0.1:4173/**. Choose **Historical mission**, then **Begin in Earth orbit**.
+Open **http://127.0.0.1:4173/**. Choose **Apollo mission**, then **Open Earth-orbit task**.
+Use [the exact playable checklist](docs/EARTH_ORBIT_PLAYABLE_GUIDE.md).
 For the automated historical showcase, choose **Guided tour**, or open
 **http://127.0.0.1:4173/campaign.html?tour=1**. This tour reviews references and
 steps genuine recorded observations; it sends no flight commands.
@@ -41,6 +43,7 @@ python3 -B tools/final_demo.py --recorded-only --port 4173
 
 | Experience | What works | Source and limit |
 | --- | --- | --- |
+| **Live Columbia CMC** (`/campaign.html?play=1`) | Actual Comanche execution, all 19 DSKY keys, original digit/sign/indicator observations, display test, clock, P52 readiness diagnosis and P00 recovery | Cold-start computer bench; no historical orbital checkpoint, operating IMU, star measurements or completed alignment/flight. Requires `cc`. |
 | **Historical mission** (`/campaign.html`) | Sixteen sourced chapters, three goals, correct static 3D spacecraft configurations, guided reference tour, original AGC evidence inserts | Historical reference. Flight execution and completion are gated; presentation pacing is not a mission clock. |
 | **Apollo procedures** (`/play.html`) | 28 selected undocking actions, real control labels/positions, three local crew stations, server-checked order, release diagram, training debrief | Documented checklist training; earlier preparation is assumed. No AGC/AGS or separation dynamics is executed here. |
 | **3D landing laboratory** (`/mission.html`) | Shared missions, throttle/pitch, fuel/gravity/thrust, scenarios, pause/restart, crew messages/checks, measured outcome | Server-owned educational physics from synthetic initial conditions. Independent of original AGC guidance. |
@@ -89,7 +92,7 @@ provider protocols and failure cases are covered by stub tests.
 ## Submission and verification
 
 [Judge demo and startup guide](docs/SUBMISSION_GUIDE.md) ·
-[Current campaign screenshots and actual test results](docs/frontend-campaign-evidence/README.md) ·
+[Current playable CMC screenshots and test results](docs/frontend-earth-orbit-evidence/README.md) ·
 [Implemented shared-mission contract](docs/FINAL_INTEGRATION_CONTRACT.md) ·
 [Undocking contract and primary sources](docs/FRONTEND_UNDOCKING.md) ·
 [Frontend development guide](frontend/README.md).

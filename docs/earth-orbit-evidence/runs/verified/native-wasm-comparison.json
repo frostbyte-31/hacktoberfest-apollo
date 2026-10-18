@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED",
+  "cpuCycles": 3566967,
+  "inputPackets": 44,
+  "outputPackets": 6915,
+  "exactCycleChannelValueIdentity": true,
+  "wasmSha256": "5409ecf3000493db731b8143a78855470688f058c5cb8460dff5e848aae00759",
+  "ropeSha256": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+  "packetTupleSha256": "2b3408a881543c05dfbffee3c85db58588f9bdc39926512d5b7c60a1c434956a",
+  "wasiCalls": {},
+  "scope": "Original Comanche DSKY/PRO subset only; native and retained WASM use the same pinned ringbuffer core. The retained WASM exports lack CM personality selection; no personality-specific RHC path is exercised. No vehicle, IMU, optics or flight-state fidelity is inferred."
+}

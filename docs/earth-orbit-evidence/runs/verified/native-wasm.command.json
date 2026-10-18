@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/node",
+    "/Users/giorgikhubua/hacktoberfest-apollo/docs/earth-orbit-evidence/experiments/compare_wasm.mjs",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/first/trace.jsonl",
+    "/Users/giorgikhubua/hacktoberfest-apollo/docs/phase2-evidence/artifacts/yaAGC.wasm",
+    "/Users/giorgikhubua/hacktoberfest-apollo/docs/earth-orbit-evidence/artifacts/Comanche055.bin",
+    "/Users/giorgikhubua/hacktoberfest-apollo/.build/earth-orbit/validation/run-03/native-wasm-comparison.json"
+  ],
+  "cwd": "/Users/giorgikhubua/hacktoberfest-apollo",
+  "exit": 0
+}

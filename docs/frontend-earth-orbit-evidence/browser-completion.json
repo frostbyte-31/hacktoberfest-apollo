@@ -1,0 +1,16 @@
+{
+  "url": "http://127.0.0.1:4173/campaign.html?play=1&stage=earth-parking",
+  "mode": "LIVE ORIGINAL CMC EXECUTION",
+  "clock": "76.298 s CPU time · 6,510,778 calls",
+  "display": "COMP ACTY\nON\nPROG\n00\nVERB\n  \nNOUN\n  \nR1\n \n     \nR2\n \n  000\nR3\n \n000  ",
+  "stepStates": [
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED",
+    "OBSERVED"
+  ],
+  "instruction": "Computer diagnostic complete. A known-reference IMU/optics integration is needed before P52 alignment or TLI can proceed.",
+  "source": "Original channel 010 relay digits/signs · last relay at CPU call 6,510,343. Decoded indicators use held original channel 011 bits.",
+  "lastKey": "Last applied key: ENTR · sequence 40 · channel 015 · code 034 octal · CPU call 6,476,644. This identifies the hardware input; the display above is the computer’s response."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "files": {
+    "01-live-display-test.png": "23285dc8a074c62aa1310c4fbd0139fac248c8424ff7bcfbb03af0eb187ca121",
+    "02-original-p52-alarm.png": "4ddda199f0cc8c95c88a125a1b4a5f49ad1d531a60dbad381579cd9b8fc08e93",
+    "03-desktop-complete.png": "6dc5d83ddaf4f7b14be4295f6be8d508f56934ca5955c726716ef56805f4f078",
+    "04-mobile-console.png": "0dbaf67f455ccff46333e820f36a652c6ecbafe5f1af6b46af27850916c6fd7d",
+    "05-mobile-keys.png": "885b25d1cf24b1c72fb0535925b2a57e828113a8265661237e5c0220cb05cb42",
+    "06-ready-to-play.png": "c05730b7d00e4b1676470f540cb03b6082f0aeca49e3223afb9f6ab852fe8408",
+    "README.md": "433a81381c2c960690e4b7625282542ca4088498a482dfa91964d64d2f25ca2e",
+    "backend-tests.log": "eac320479f2a354bc58474efbda130c77b5352b5bde880e7075618fad2af5e30",
+    "browser-completion.json": "c6b3409a167ad78ae4e915bc42f88ddb547bdb9bae9bdbadaf4cc05f4395f481",
+    "browser-session-console.jsonl": "cf88da9031dab78adf03bf369ccb246c8e1bf25848ecfe6091c5be09191ad1cf",
+    "frontend-check.log": "b9e585ff293ef48f3a050a103d196bc3034c2de8e6a391eb8a0de8957fd4546e",
+    "frontend-js-tests.log": "1ddd93d1034590c608019d4ae27614ec92ab536d2cf1fdb84df48dc14a6c39ed",
+    "frontend-python-tests.log": "7a07ff160fe9fa60ebe2a5b36895cadc86d4b761f07cf2ec2502ad2fe641bc89",
+    "local-links.json": "d9d0fe6d7ffb82b5156e63155eec96ea934955c163a91150c565cf3f7a268526",
+    "preservation-check.json": "f0c01906c132c793e84e39ba3b67f2483f1deeb77c496f35f519d1c379414e36",
+    "responsive-check.json": "36846dac27a88923fd0674132a4b59802297cb9cac85b8a0e05847a4cb4f6ae7",
+    "typecheck.log": "71a0ac651cd9e747668bd90fbf751cb0e49826aa7f9ac819852b416a66d7ce02"
+  }
+}
