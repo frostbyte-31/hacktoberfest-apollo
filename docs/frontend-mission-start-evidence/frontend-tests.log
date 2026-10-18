@@ -1,0 +1,184 @@
+python3 -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
+test_causal_scenarios_retain_real_difference_and_negative_failure (test_guidance_data.GuidanceDataTests.test_causal_scenarios_retain_real_difference_and_negative_failure) ... ok
+test_compressed_and_raw_trace_hashes_match_source (test_guidance_data.GuidanceDataTests.test_compressed_and_raw_trace_hashes_match_source) ... ok
+test_each_display_is_held_from_an_actual_channel_010_packet (test_guidance_data.GuidanceDataTests.test_each_display_is_held_from_an_actual_channel_010_packet) ... ok
+test_events_point_to_real_recorded_rows_and_source_routines (test_guidance_data.GuidanceDataTests.test_events_point_to_real_recorded_rows_and_source_routines) ... ok
+test_frames_have_actual_ordered_cycles_and_recorded_endpoints (test_guidance_data.GuidanceDataTests.test_frames_have_actual_ordered_cycles_and_recorded_endpoints) ... ok
+test_generated_data_is_current_and_byte_deterministic (test_guidance_data.GuidanceDataTests.test_generated_data_is_current_and_byte_deterministic) ... ok
+test_ignition_solution_available_only_after_original_completion (test_guidance_data.GuidanceDataTests.test_ignition_solution_available_only_after_original_completion) ... ok
+test_integrity_checker_rejects_changed_bytes (test_guidance_data.GuidanceDataTests.test_integrity_checker_rejects_changed_bytes) ... ok
+test_no_trajectory_or_interpolated_motion_exists_in_frames (test_guidance_data.GuidanceDataTests.test_no_trajectory_or_interpolated_motion_exists_in_frames) ... ok
+test_observed_clocks_are_decoded_only_from_native_snapshots (test_guidance_data.GuidanceDataTests.test_observed_clocks_are_decoded_only_from_native_snapshots) ... ok
+test_only_three_verified_cases_and_recorded_mode_are_exposed (test_guidance_data.GuidanceDataTests.test_only_three_verified_cases_and_recorded_mode_are_exposed) ... ok
+test_signed_root_outputs_keep_original_words_and_are_not_ignition_countdowns (test_guidance_data.GuidanceDataTests.test_signed_root_outputs_keep_original_words_and_are_not_ignition_countdowns) ... ok
+test_static_three_dimensional_inputs_match_original_p27_stores (test_guidance_data.GuidanceDataTests.test_static_three_dimensional_inputs_match_original_p27_stores) ... ok
+test_synthetic_scope_and_unimplemented_physics_are_explicit (test_guidance_data.GuidanceDataTests.test_synthetic_scope_and_unimplemented_physics_are_explicit) ... ok
+test_actual_key_transactions_and_cockpit_discretes_are_not_fake_live_controls (test_propulsion_data.PropulsionDataTests.test_actual_key_transactions_and_cockpit_discretes_are_not_fake_live_controls) ... ok
+test_causal_disconnections_have_actual_distinct_physical_and_sensor_outcomes (test_propulsion_data.PropulsionDataTests.test_causal_disconnections_have_actual_distinct_physical_and_sensor_outcomes) ... ok
+test_cpu_replay_is_chronological_and_keeps_both_native_endpoints (test_propulsion_data.PropulsionDataTests.test_cpu_replay_is_chronological_and_keeps_both_native_endpoints) ... ok
+test_crew_permission_ignition_flatout_software_stop_and_disarm_remain_separate (test_propulsion_data.PropulsionDataTests.test_crew_permission_ignition_flatout_software_stop_and_disarm_remain_separate) ... ok
+test_every_dsky_display_is_an_actual_held_relay_observation (test_propulsion_data.PropulsionDataTests.test_every_dsky_display_is_an_actual_held_relay_observation) ... ok
+test_every_event_has_an_exact_raw_row_snapshot_with_no_later_held_source (test_propulsion_data.PropulsionDataTests.test_every_event_has_an_exact_raw_row_snapshot_with_no_later_held_source) ... ok
+test_four_causal_cases_and_immutable_original_software_are_identified (test_propulsion_data.PropulsionDataTests.test_four_causal_cases_and_immutable_original_software_are_identified) ... ok
+test_full_release_seal_and_trace_fingerprints_still_match (test_propulsion_data.PropulsionDataTests.test_full_release_seal_and_trace_fingerprints_still_match) ... ok
+test_generated_export_matches_fresh_verified_read_only_derivation (test_propulsion_data.PropulsionDataTests.test_generated_export_matches_fresh_verified_read_only_derivation) ... ok
+test_integrity_guard_rejects_changed_source_bytes (test_propulsion_data.PropulsionDataTests.test_integrity_guard_rejects_changed_source_bytes) ... ok
+test_no_historical_flight_or_landing_claims_are_introduced (test_propulsion_data.PropulsionDataTests.test_no_historical_flight_or_landing_claims_are_introduced) ... ok
+test_original_navigation_stays_distinct_from_physical_plant_state (test_propulsion_data.PropulsionDataTests.test_original_navigation_stays_distinct_from_physical_plant_state) ... ok
+test_physical_clock_units_and_fixed_attitude_are_explicit (test_propulsion_data.PropulsionDataTests.test_physical_clock_units_and_fixed_attitude_are_explicit) ... ok
+test_physical_samples_keep_original_first_final_and_approx_quarter_second_spacing (test_propulsion_data.PropulsionDataTests.test_physical_samples_keep_original_first_final_and_approx_quarter_second_spacing) ... ok
+test_physical_values_are_copied_without_extrapolation_or_frame_conversion (test_propulsion_data.PropulsionDataTests.test_physical_values_are_copied_without_extrapolation_or_frame_conversion) ... ok
+test_same_cycle_reviews_precede_initial_physics_and_each_crew_packet (test_propulsion_data.PropulsionDataTests.test_same_cycle_reviews_precede_initial_physics_and_each_crew_packet) ... ok
+test_clock_horizons_and_queue_tail (test_replay.ReplayExportTests.test_clock_horizons_and_queue_tail) ... ok
+test_disconnected_controls_keep_zero_actual_counters (test_replay.ReplayExportTests.test_disconnected_controls_keep_zero_actual_counters) ... ok
+test_display_sampling_is_bounded_and_endpoints_retained (test_replay.ReplayExportTests.test_display_sampling_is_bounded_and_endpoints_retained) ... ok
+test_every_frame_is_an_exact_original_model_sample (test_replay.ReplayExportTests.test_every_frame_is_an_exact_original_model_sample) ... ok
+test_exact_agc_output_packet_sequence_is_preserved (test_replay.ReplayExportTests.test_exact_agc_output_packet_sequence_is_preserved) ... ok
+test_five_cases_and_evidence_level_are_explicit (test_replay.ReplayExportTests.test_five_cases_and_evidence_level_are_explicit) ... ok
+test_integrity_mismatch_is_rejected (test_replay.ReplayExportTests.test_integrity_mismatch_is_rejected) ... ok
+test_no_altitude_position_or_dsky_is_invented (test_replay.ReplayExportTests.test_no_altitude_position_or_dsky_is_invented) ... ok
+test_pinned_trace_hashes_match_both_compressed_and_raw_bytes (test_replay.ReplayExportTests.test_pinned_trace_hashes_match_both_compressed_and_raw_bytes) ... ok
+test_quaternion_normalization_and_signed_body_rates (test_replay.ReplayExportTests.test_quaternion_normalization_and_signed_body_rates) ... ok
+test_readiness_and_cdu_are_only_prior_actual_readbacks (test_replay.ReplayExportTests.test_readiness_and_cdu_are_only_prior_actual_readbacks) ... ok
+test_real_export_is_current_and_deterministic (test_replay.ReplayExportTests.test_real_export_is_current_and_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 17.072s
+
+OK
+node --test frontend/tests/*.test.mjs
+✔ target rotations preserve quaternion convention and contain no roll objective (1.645916ms)
+✔ relative quaternion errors handle sign-equivalent orientation and arbitrary reference frames (0.156583ms)
+✔ a genuine ready sample anchors a fixed target and waits without wall-clock progress (0.448166ms)
+✔ authoritative movement starts elapsed time; native angular rate units stay degrees/second (0.456542ms)
+✔ success requires observed target acquisition and low rates over contiguous physical samples (0.574791ms)
+✔ duplicate polls, a frozen CPU, and a presentation timestamp cannot earn a hold (0.641916ms)
+✔ a large telemetry gap resets hold instead of assuming unobserved stability (0.197416ms)
+✔ high rate or leaving the target clears the measured hold (0.164708ms)
+✔ replay, absent telemetry, invalid data, and missing original readiness cannot grant success (0.227458ms)
+✔ backward model time and changing orientation at a frozen time invalidate a run (0.219167ms)
+✔ a stop cannot turn a near-target sample into success and horizon completion is a timeout (0.203333ms)
+✔ new native sessions and resets clear the target and score while retaining an earned personal best (0.246959ms)
+✔ running state cannot silently define its own initial reference after missing the ready sample (0.129417ms)
+✔ reducer and target calculations do not modify input snapshots or earlier game state (0.2395ms)
+✔ training rule validation rejects impossible or nonfinite thresholds (0.461125ms)
+✔ actual captured yaw short-pulse attitude achieves the training target before the CPU settlement tail (4.9375ms)
+✔ actual captured pitch short-pulse attitude achieves the training target before the CPU settlement tail (4.401041ms)
+✔ actual captured combined short-pulse attitude achieves the training target before the CPU settlement tail (3.9355ms)
+✔ captured completion with no achieved hold times out using physical epochs, excluding the real CPU settlement tail (3.528ms)
+✔ retained three-scenario guidance recording has required display and source data (6.449084ms)
+✔ a replay labelled live cannot be accepted as a recorded experiment (19.060792ms)
+✔ missing trace fingerprint or display field is rejected instead of substituted (39.229875ms)
+✔ malformed observed quantities and reversed chronology are rejected (33.609208ms)
+✔ frame lookup holds actual observations between samples without interpolation (0.159208ms)
+✔ replay bounds keep observations within the retained execution horizon (0.085542ms)
+✔ event stepping selects real distinct event times and stops at bounds (0.132334ms)
+✔ paced replay stops at horizon and rejects a negative elapsed interval (0.088792ms)
+✔ nominal and altered-state outcomes come from their own recorded scenarios (0.076417ms)
+✔ missing-site control never supplies a fabricated ignition result or site (0.15475ms)
+✔ signed time-to-go is preserved independently from absolute TIG and solution lead (0.127708ms)
+✔ clock and quantity formatters preserve unavailable values and signed zeros (0.071042ms)
+✔ static projection uses X–Z of supplied 3D state and actual lunar radius (0.065583ms)
+✔ landing marker uses documented future-epoch site rather than initial spacecraft position (0.058542ms)
+✔ independent directions combine and opposing same-axis controls cancel (1.478375ms)
+✔ live controls require both server permission and original readiness (0.130292ms)
+✔ physical freeze and subsequent actual CPU counters remain separate (0.107709ms)
+✔ malformed live telemetry fails instead of creating a substitute state (0.164084ms)
+✔ separate held sources preserve another axis when one is released (5.80025ms)
+✔ neutral release can overtake an in-flight deflection with a newer sequence (0.70625ms)
+✔ connection loss releases controls and marks retained telemetry stale (0.36725ms)
+✔ inputs are not emitted before native startup is ready (0.559833ms)
+✔ retained state is preserved exactly while vehicle view changes presentation units (2.095167ms)
+✔ global overview preserves supplied position ratios and only enlarges the visual LM (0.299041ms)
+✔ body-to-REF quaternion controls mesh axes without introducing an attitude transform (0.222ms)
+✔ missing or invalid authoritative state never substitutes an illustrated orbit (0.223375ms)
+✔ historical docked composition requires explicit illustration mode and exposes no telemetry (0.231917ms)
+✔ trajectory contains retained samples only and direction arrow cannot invent a speed (0.405125ms)
+✔ radial velocity and polar position retain a finite camera basis (0.236167ms)
+✔ enlarged vehicle model stays above the Moon throughout all retained physical cases (67.502875ms)
+✔ docked Columbia diagram has distinct capsule, service equipment, roof collar and dark open engine (2.685291ms)
+✔ provider retains independently sourced results for all three scenarios (1.767291ms)
+✔ provider owns immutable evidence without freezing the caller data (0.285958ms)
+✔ event navigation retains only actual milestones with explicit time and trace metadata (0.531459ms)
+✔ sample-and-hold preserves actual DSKY and per-quantity observation timestamps (0.67675ms)
+✔ static geometry keeps its 3D state and separate epochs throughout replay (0.473291ms)
+✔ missing-site negative control and early unknown observations stay unavailable (0.284833ms)
+✔ mid-sample replay never interpolates numerical guidance (0.290375ms)
+✔ malformed and unsourced numerical values are rejected at the provider boundary (60.44625ms)
+✔ incomplete or inconsistent summaries cannot become a fabricated comparison outcome (59.049541ms)
+✔ negative cycles and absent or duplicate event provenance fail before rendering (66.162291ms)
+✔ loader uses a static retained export and surfaces missing or corrupt data (21.004917ms)
+✔ guidance capabilities disable unsupported commands and live provider never requests a service (0.159417ms)
+✔ crew contract contains exactly the historical three planned roles and keeps Collins in orbit (0.061625ms)
+✔ actual Apollo operations reference validates all fourteen ordered chapters and six controls (0.9745ms)
+✔ source citations require HTTPS and referenced identifiers must exist (0.7685ms)
+✔ duplicate identities, missing chapters, reversed order, and a synthetic starting chapter are rejected (0.693041ms)
+✔ validation checks citation structure without rewriting historical prose or parsing approximate GET labels (0.134583ms)
+✔ significant replay milestones begin at actual P63LM and omit individual recorded input transactions (1.263375ms)
+✔ full milestone review preserves every retained event and original raw-row order (0.942042ms)
+✔ physical replay start is the first real spacecraft frame rather than CPU or historical mission zero (71.867666ms)
+✔ next and previous selection step through distinct actual raw rows sharing one CPU cycle (0.189708ms)
+✔ all milestones remain individually reachable in both directions including tied final disarm and finish (0.146125ms)
+✔ clock-based selection uses strict direction and bounds when no event identity is selected (0.127667ms)
+✔ invalid replay clock and direction cannot accidentally expose a future event (0.122791ms)
+✔ every procedure item comes from its own retained scenario event and cannot execute a command (0.632833ms)
+✔ nominal and altitude variants reach their actual review display without substituting final digits (0.736584ms)
+✔ P63 program entry retains the genuinely lagging P00 display instead of inventing P63 digits (0.102167ms)
+✔ negative control exposes the actual failure and never fabricates crew review or ignition (0.117791ms)
+✔ briefing contains unknown DSKY digits and cannot be mistaken for a completed action (0.301125ms)
+✔ a missing required event fails rather than skipping a procedure checkpoint (0.054083ms)
+✔ lab directional cue uses body relative error rather than camera orientation (0.138709ms)
+✔ illustrative controller quantizes only existing supported axes with a neutral deadband (0.07775ms)
+✔ provider accepts all four actual retained causal executions and preserves recorded source mode (5.036042ms)
+✔ provider owns an immutable copy without freezing or mutating caller data (118.473208ms)
+✔ snapshot holds actual samples between native observations without interpolation (0.247625ms)
+✔ physical state remains unavailable before its first actual observation (0.176542ms)
+✔ no snapshot exposes an event or value whose source is after the requested clock (7.783583ms)
+✔ snapshot and trajectory requests respect native bounds and reject invalid times (0.455958ms)
+✔ trajectory contains only observed physical endpoints through the requested instant (0.231417ms)
+✔ active-low cockpit signals match actual crew-set channel words (0.101542ms)
+✔ missing or deasserted AUTO never invents ATT HOLD, OFF, AGS, or manual mode (0.082708ms)
+✔ capabilities prevent a historical mission start and do not enable synthetic live substitutes (0.171792ms)
+✔ loading fetches only the recording with explicit cache and signal options (66.419833ms)
+✔ missing release fingerprints, unsafe trace paths, wrong units, and mode masquerading are rejected (417.015833ms)
+✔ future-dated display, physical, receiver, hardware, and sensor sources are rejected (220.182292ms)
+✔ malformed event clocks, duplicate native frames, invalid attitudes, and nonphysical quantities are rejected (311.673708ms)
+✔ event selection preserves exact row identity and never exposes a later held source in the same CPU cycle (2.7555ms)
+✔ crew switch review precedes each of the three distinct active-low packets at one CPU timestamp (0.343ms)
+✔ event-scoped state and trajectory remain unavailable immediately before same-cycle plant initialization (0.467916ms)
+✔ same-cycle PIPA generation and counter delivery retain distinct recorded counter totals (0.068625ms)
+✔ tied final crew disarm and experiment finish remain separately selectable without future program sources (0.165208ms)
+✔ missing event snapshots and same-cycle later-row substitutions are rejected (172.397917ms)
+✔ exported real data satisfies the presentation contract (3.263667ms)
+✔ seeking holds the last real sample and never selects future telemetry (0.224709ms)
+✔ RCS words follow interleaved actual event edges without looking ahead (0.961875ms)
+✔ source-derived jet names and bit positions remain distinct from axes (0.33975ms)
+✔ scalar-first active body-to-stable quaternion has the right handed sign (0.20325ms)
+✔ render rotation preserves vector lengths for actual compound attitude (0.117458ms)
+✔ SLERP follows the short quaternion arc and normalizes presentation (0.194459ms)
+✔ rendering freezes at the actual horizon without extrapolating residual rate (0.155917ms)
+✔ interpolated drawing does not mutate held actual samples (3.127875ms)
+✔ gimbal wrapping and octal register presentation preserve values (0.159167ms)
+✔ physical freeze is distinct from the one-count settlement tail (0.052625ms)
+✔ original readiness requires actual P00 and both original inhibition gates (0.127875ms)
+✔ malformed quaternion and command chronology fail rather than fabricate (23.599667ms)
+✔ non-numeric times and out-of-range authentic words are rejected (31.599375ms)
+✔ GPU rotation respects the fixture scalar-first body-to-stable quaternion convention (0.595958ms)
+✔ unavailable, malformed or non-unit orientations do not become invented attitude (0.201375ms)
+✔ perspective camera separates front from back and matrix composition preserves world coordinates (0.150708ms)
+✔ LM mesh is finite depth geometry with normalized faces and distinct structural components (13.8175ms)
+✔ procedural visual model is deterministic and rebuilding does not accumulate geometry (20.03475ms)
+✔ 3D fallback hides unavailable flight orientation and camera controls never mutate supplied state (30.290458ms)
+✔ all retained initial states pass the renderer boundary without modifying supplied data (1.114125ms)
+✔ unavailable or malformed geometry is rejected instead of producing placeholder coordinates (0.086667ms)
+✔ an absent target or optional scalar remains absent without deriving substitute telemetry (0.096459ms)
+✔ three-dimensional numerical values retain the Y axis that the X–Z picture omits (0.111458ms)
+✔ renderer can be mounted with optional readouts absent and reports missing geometry (0.241375ms)
+ℹ tests 127
+ℹ suites 0
+ℹ pass 127
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1555.683667

@@ -1,5 +1,12 @@
 # Frontend integration contract
 
+The new primary `/play.html` adds a source-linked historical lunar-orbit reference
+and sealed Phase 12 recorded propulsion adapter. Its exact fields, clocks, source
+pointers, capability gates, four causal cases and missing cockpit/mission APIs
+are specified in [the current mission integration contract](FRONTEND_MISSION_START.md).
+No new live HTTP endpoint was added. The Phase 10 and bounded-attitude contracts
+below remain implemented and unchanged.
+
 This contract distinguishes the **implemented interfaces** found in the repository from **proposed future integration work**. The Phase 10 mission experience consumes verified recordings. The separate existing live service supports bounded yaw/pitch attitude experiments; it does not expose live P63 mission guidance, descent, landing, multiplayer or an AI crew.
 
 ## Inspected implementation

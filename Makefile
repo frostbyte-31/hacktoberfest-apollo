@@ -65,6 +65,7 @@ demo-reproduce:
 # Static application: verify exported evidence and check source syntax; no bundler.
 frontend-check:
 	$(PYTHON) -B frontend/tools/export_guidance.py --check
+	$(PYTHON) -B frontend/tools/export_propulsion.py --check
 	@for source in frontend/dist/*.mjs; do $(NODE) --check "$$source" || exit 1; done
 
 # Read-only export/provenance and presentation-contract regression tests.
@@ -74,6 +75,6 @@ test-frontend:
 
 .PHONY: play
 
-# Mission procedures and separate live lab: original AGC + bounded external model.
+# Historical lunar-orbit reference, verified 3D propulsion replay and separate live lab.
 play: runtime
 	$(PYTHON) -B frontend/serve.py --port $(PORT)

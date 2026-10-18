@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0c1015">
-  <meta name="description" content="Pilot a 3D Apollo lunar module in a bounded live AGC attitude-training challenge. Original Luminary controls, authoritative rotational physics, no descent simulation.">
+  <meta name="description" content="A modern two-axis yaw/pitch lab using original Luminary execution and bounded rotational physics. Not an Apollo ACA replica or a historical mission procedure.">
   <title>Apollo 11 · Synthetic Attitude Lab</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./flight.css">
 </head>
@@ -14,7 +14,7 @@
     <nav aria-label="Mission navigation"><a href="./play.html">Mission procedures ↗</a><a href="./guidance.html">Guidance explorer ↗</a><a href="./">Systems lab ↗</a><button id="help-open">How to fly <span>?</span></button></nav>
   </header>
   <main>
-    <div class="lab-scope"><strong>SEPARATE SYNTHETIC ATTITUDE LAB</strong><span>The targets, timer and points are modern exercises, not Apollo 11 crew procedures.</span><a href="./play.html">Return to mission procedures →</a></div><div class="flight-status"><span class="status-source"><i id="source-dot"></i><strong id="backend-mode">CHECKING LOCAL AGC</strong></span><span class="status-description" id="session-status" role="status">Connecting to the local flight service…</span><span class="training-label">SYNTHETIC ATTITUDE TRAINING</span></div>
+    <div class="lab-scope"><strong>SEPARATE SYNTHETIC ATTITUDE LAB</strong><span>The yaw/pitch pad, targets, timer and points are modern exercises, not Apollo 11 cockpit controls or crew procedures.</span><a href="./play.html">Return to mission procedures →</a></div><div class="flight-status"><span class="status-source"><i id="source-dot"></i><strong id="backend-mode">CHECKING LOCAL AGC</strong></span><span class="status-description" id="session-status" role="status">Connecting to the local flight service…</span><span class="training-label">SYNTHETIC ATTITUDE TRAINING</span></div>
     <div class="flight-layout">
       <section class="mission-brief" aria-labelledby="flight-title">
         <div class="eyebrow">EAGLE / ATTITUDE EXERCISE</div>
@@ -57,7 +57,7 @@
 
     <section class="control-deck" id="flight-controls" aria-labelledby="controls-title">
       <div class="launch-controls"><span class="eyebrow" id="controls-title">02 — TAKE CONTROL</span><button id="flight-start" class="launch-button" disabled><span aria-hidden="true">▶</span><span id="start-label">Checking service…</span></button><button id="flight-stop" class="stop-button" disabled>End run</button></div>
-      <div class="lab-controller"><div class="stick-field" id="rhc-pad" role="group" aria-label="Illustrative two-axis hand controller. Drag right for positive yaw, left for negative yaw, up for positive pitch, down for negative pitch."><span class="stick-up">+PITCH</span><span class="stick-left">−YAW</span><span class="stick-right">+YAW</span><span class="stick-down">−PITCH</span><i id="rhc-handle"></i></div><div><strong>ILLUSTRATIVE HAND CONTROLLER</strong><p>Drag and hold, release to neutral.<br>Discrete yaw/pitch only; not a full hardware replica.</p><label><input type="checkbox" id="keyboard-assist"> Optional shortcuts: A/D yaw, S/W pitch</label></div></div><div class="pilot-controls" role="group" aria-label="Accessible alternatives to the illustrative hand controller">
+      <div class="lab-controller"><div class="stick-field" id="rhc-pad" role="group" aria-label="Modern two-axis lab pad, not an Apollo ACA. In this lab, drag right for positive yaw, left for negative yaw, up for positive pitch, down for negative pitch."><span class="stick-up">+PITCH</span><span class="stick-left">−YAW</span><span class="stick-right">+YAW</span><span class="stick-down">−PITCH</span><i id="rhc-handle"></i></div><div><strong>MODERN TWO-AXIS LAB PAD</strong><p>Lab: left/right yaw, up/down pitch.<br>Apollo ACA: fore/aft pitch, left/right roll, twist yaw. Roll and twist are unavailable here.</p><label><input type="checkbox" id="keyboard-assist"> Optional shortcuts: A/D yaw, S/W pitch</label></div></div><div class="pilot-controls" role="group" aria-label="Accessible alternatives to the modern yaw/pitch lab pad; not Apollo cockpit controls">
         <div class="pilot-axis"><span>YAW</span><button data-pilot="yaw-" aria-label="Hold negative yaw" disabled><kbd>−YAW</kbd><span>−</span></button><button data-pilot="yaw+" aria-label="Hold positive yaw" disabled><kbd>+YAW</kbd><span>+</span></button></div>
         <div class="pilot-axis"><span>PITCH</span><button data-pilot="pitch-" aria-label="Hold negative pitch" disabled><kbd>−PITCH</kbd><span>−</span></button><button data-pilot="pitch+" aria-label="Hold positive pitch" disabled><kbd>+PITCH</kbd><span>+</span></button></div>
         <button id="flight-neutral" class="neutral-button" disabled>Return to neutral</button>
@@ -67,7 +67,7 @@
     <div class="flight-notice" id="flight-error" role="alert" hidden><strong>Live controls unavailable.</strong><p id="flight-error-copy"></p><button id="service-retry">Check again</button><button id="setup-open">Startup instructions ↗</button></div>
     <footer><span><i></i><strong>Original AGC commands.</strong> Synthetic rotational dynamics. Training score.</span><button id="scope-open">How this simulation works ↗</button><span>No translation, engine ignition or landing.</span></footer>
   </main>
-  <dialog id="flight-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">APOLLO 11 / FLIGHT TRAINER</span><button id="dialog-close" aria-label="Close flight help">×</button></div><h2 id="dialog-title">How to fly</h2><div id="dialog-content"></div></dialog>
+  <dialog id="flight-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">APOLLO 11 / MODERN ATTITUDE LAB</span><button id="dialog-close" aria-label="Close flight help">×</button></div><h2 id="dialog-title">How to fly</h2><div id="dialog-content"></div></dialog>
   <div class="sr-only" role="status" aria-live="polite" id="flight-announcement"></div>
   <script type="module" src="./flight.mjs"></script>
 </body>

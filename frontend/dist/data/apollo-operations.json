@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "chapter": {
+    "id": "lunar-orbit",
+    "title": "Before undocking · lunar orbit",
+    "startDescription": "Eagle is still docked to Columbia. Armstrong and Aldrin prepare the LM; Collins remains in the CSM. The AGC is already operating. This chapter is a historical procedure reference, not a validated historical flight initial state.",
+    "getLabel": "~100:05 GET · checklist reference",
+    "startingConfiguration": [
+      { "label": "GUID CONT", "referenceValue": "AGS", "locator": "ACT-62 step 3", "sourceIds": ["activation-checklist"] },
+      { "label": "RATE SCALE", "referenceValue": "5°/SEC", "locator": "ACT-62 step 3", "sourceIds": ["activation-checklist"] },
+      { "label": "ATT/TRANSL", "referenceValue": "2 JET", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "BAL CPL", "referenceValue": "ON", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "DEADBAND", "referenceValue": "MAX", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "ATTITUDE CONTROL · all three axes", "referenceValue": "PULSE", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "MODE CONT · PGNS and AGS", "referenceValue": "ATT HOLD", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "TTCA · both", "referenceValue": "JET", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "RNDZ RDR", "referenceValue": "SLEW", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "ACA/4 JET · both", "referenceValue": "DISABLE", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "TTCA/TRANSL · CDR", "referenceValue": "ENABLE", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] },
+      { "label": "TTCA/TRANSL · LMP", "referenceValue": "DISABLE", "locator": "ACT-63 step 4", "sourceIds": ["activation-checklist"] }
+    ]
+  },
+  "sources": [
+    { "id": "activation-checklist", "title": "Apollo 11 LM Systems Activation Checklist", "url": "https://apollojournals.org/afj/ap11fj/pdf/a11_lm_systems_activation_checklist-19690708.pdf", "locator": "ACT-6–8, ACT-33–34, ACT-47–53, ACT-62–63; PDF pages 11–13, 39–40, 53–59, 68–69", "revisionScope": "Apollo 11 LM-5; July 8, 1969 cover. ACT-62 changed June 20; ACT-63 changed July 4. Planned checklist times are not measured event times." },
+    { "id": "undocking-journal", "title": "Apollo 11 Flight Journal · Undocking and the Descent Orbit", "url": "https://apollojournals.org/afj/ap11fj/17day5-undock-doi.html", "locator": "100:12:03 undocking; 100:39 separation maneuver; 101:17:07 P52 discussion; 101:36:14 DOI", "revisionScope": "Apollo 11 transcript with later editorial commentary; distinguish spoken calls, planned PAD times, and measured events." },
+    { "id": "mission-report", "title": "Apollo 11 Mission Report · MSC-00171", "url": "https://ntrs.nasa.gov/api/citations/19700008096/downloads/19700008096.pdf", "locator": "Sections 5.1–5.3; pages 5-1–5-2; Table 5-I page 5-13", "revisionScope": "NASA Mission Evaluation Team, November 1969. Primary postflight report; table event times differ slightly from transcript calls." },
+    { "id": "landing-transcript", "title": "Apollo 11 Lunar Surface Journal · The First Lunar Landing", "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html", "locator": "102:29:38 checklist; 102:41:35 P64; 102:43:15–22 manual takeover; 102:45:40–47 contact and shutdown", "revisionScope": "Apollo 11 transcript and crew debrief commentary. Later-mission control improvements in commentary must not be assigned to Eagle." },
+    { "id": "lm-controls-handbook", "title": "Apollo Operations Handbook · LM control hardware excerpt", "url": "https://www.ibiblio.org/apollo/Documents/LMA790-3-LM-2.1.pdf", "locator": "§2.1.1.3.1–2, pages 2.1-12 and 2.1-15, Figures 2.1-9–10; Table 2.1-1", "revisionScope": "LM-10 and subsequent, basic date February 1, 1970, June 15 changes on controller pages. Corroborative hardware reference only; this is not an Apollo 11 checklist or authority for later software modes." },
+    { "id": "control-panel-reference", "title": "NASA Apollo Lunar Landing Experience · control panel", "url": "https://www.nasa.gov/wp-content/uploads/2023/06/eppler-slides-apollo-lunar-landing-experience-report-20070-r4.pdf", "locator": "Slide 68 of 154, LM STAB/CONT panel and P66 sequence", "revisionScope": "NASA historical technical retrospective. Panel labels corroborate the contemporary Apollo 11 checklist and flown source; not a live control contract." },
+    { "id": "luminary-assembly", "title": "Pinned Luminary 099 · assembly source entry", "url": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/MAIN.agc", "locator": "Source include list; retained docs/phase7-evidence/source/upstream/Luminary099/MAIN.agc and source/manifest.json", "revisionScope": "Repository-pinned revision f577e3fd917866c59334e6cdd32504f09df76f60; source assembly order, not mission event order." },
+    { "id": "luminary-entry", "title": "Pinned Luminary 099 · interrupt entry and startup", "url": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/INTERRUPT_LEAD_INS.agc", "locator": "Listing pages 153–154, SETLOC 4000; retained docs/phase9-evidence/source/INTERRUPT_LEAD_INS.agc and source_hashes.json", "revisionScope": "Repository-pinned revision f577e3fd917866c59334e6cdd32504f09df76f60; original Apollo 11 LMY99 revision 001 transcription." },
+    { "id": "luminary-start", "title": "Pinned Luminary 099 · fresh start, restart, major-mode dispatch", "url": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/FRESH_START_AND_RESTART.agc", "locator": "Listing pages 211–237; SLAP1, DOFSTART, GOPROG, V37XEQ, FCADRMM1; retained docs/phase9-evidence/source/FRESH_START_AND_RESTART.agc", "revisionScope": "Same repository-pinned flight-source revision. A fresh start is computer initialization, not the historical start of lunar landing operations." },
+    { "id": "luminary-landing", "title": "Pinned Luminary 099 · The Lunar Landing", "url": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/THE_LUNAR_LANDING.agc", "locator": "Listing pages 785–792, P63LM and IGNALG; retained docs/phase9-evidence/source/THE_LUNAR_LANDING.agc", "revisionScope": "P63 braking-program entry. Existing source execution does not establish a full historical mission scenario." },
+    { "id": "luminary-modes", "title": "Pinned Luminary 099 · landing guidance and mode monitor", "url": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc", "locator": "Listing pages 798–803 and 816–817; GUILDEN, STABL?, P66NOW?, STARTP66, STARTP67, RODCOMP", "revisionScope": "Use this flown revision for Apollo 11 mode transitions rather than an improved P66 from later missions." },
+    { "id": "mission-overview", "title": "NASA · Apollo 11 Mission Overview", "url": "https://www.nasa.gov/history/apollo-11-mission-overview/", "locator": "Mission Highlights, surface operations and return", "revisionScope": "Historical overview for the future chapter order, not spacecraft state initialization." }
+  ],
+  "timeline": [
+    { "id": "docked-preparation", "title": "Prepare Eagle while docked", "vehicle": "Docked CSM / LM", "crewRole": "Commander and LM Pilot in Eagle; CM Pilot in Columbia", "getLabel": "~100:05 · checklist reference", "order": 1, "sourceIds": ["activation-checklist"], "description": "Review the pre-undocking checklist. Confirm the control configuration and crew responsibilities before release." },
+    { "id": "undocking", "title": "Undock and inspect Eagle", "vehicle": "Eagle and Columbia", "crewRole": "LM crew maneuver; Collins inspects from Columbia", "getLabel": "~100:12 GET", "order": 2, "sourceIds": ["undocking-journal"], "description": "Undocking precedes visual inspection and the later CSM separation burn." },
+    { "id": "separation", "title": "CSM separation maneuver", "vehicle": "Columbia", "crewRole": "Command Module Pilot", "getLabel": "~100:39 GET", "order": 3, "sourceIds": ["undocking-journal"], "description": "Columbia performs the separation maneuver; this is distinct from undocking." },
+    { "id": "alignment", "title": "Realign and prepare for DOI", "vehicle": "Eagle", "crewRole": "Commander and Lunar Module Pilot", "getLabel": "~101:17 GET", "order": 4, "sourceIds": ["undocking-journal"], "description": "Review P52 alignment and the DOI maneuver data before the burn." },
+    { "id": "doi", "title": "Descent orbit insertion", "vehicle": "Eagle", "crewRole": "Commander and Lunar Module Pilot", "getLabel": "~101:36 GET", "order": 5, "sourceIds": ["undocking-journal"], "description": "Eagle fires its descent engine to lower perilune. Apollo 11 did not use the later mission sequence in which the CSM performs DOI before LM undocking." },
+    { "id": "p63", "title": "P63 · prepare powered descent", "vehicle": "Eagle", "crewRole": "Commander and Lunar Module Pilot", "getLabel": "After DOI · before PDI", "order": 6, "sourceIds": ["mission-report", "luminary-landing"], "description": "Select and review the landing braking program with valid navigation, alignment, target, switch configuration, and ignition authorization." },
+    { "id": "pdi", "title": "Powered descent initiation", "vehicle": "Eagle", "crewRole": "LM crew monitor automatic braking", "getLabel": "~102:33 GET", "order": 7, "sourceIds": ["mission-report"], "description": "The descent engine ignites under the prepared P63 sequence." },
+    { "id": "p64", "title": "P64 · approach and landing-site assessment", "vehicle": "Eagle", "crewRole": "Armstrong assesses terrain; Aldrin monitors and calls data", "getLabel": "~102:41 GET", "order": 8, "sourceIds": ["mission-report", "landing-transcript"], "description": "Approach guidance and pitchover expose the landing area. Landing-point redesignation is a mode-dependent use of the ACA." },
+    { "id": "p66", "title": "P66 · commanded descent rate", "vehicle": "Eagle", "crewRole": "Commander controls attitude; LM Pilot calls flight data", "getLabel": "~102:43 GET", "order": 9, "sourceIds": ["mission-report", "luminary-modes"], "description": "ATT HOLD followed by ROD switch actuation enters P66. The crew commands attitude while the computer controls throttle to the selected descent rate." },
+    { "id": "touchdown", "title": "Contact, shutdown, and landing checks", "vehicle": "Eagle", "crewRole": "Commander and Lunar Module Pilot", "getLabel": "~102:45 GET", "order": 10, "sourceIds": ["mission-report", "landing-transcript"], "description": "Distinguish contact indication, engine shutdown, and postlanding switch actions." },
+    { "id": "surface", "title": "Surface operations · future chapter", "vehicle": "Eagle / Tranquility Base", "crewRole": "Armstrong and Aldrin on the surface; Collins in orbit", "getLabel": "After landing", "order": 11, "sourceIds": ["mission-overview"], "description": "Landing checks precede preparation for EVA and surface work. This is a roadmap chapter, not implemented gameplay." },
+    { "id": "ascent", "title": "Lunar ascent · future chapter", "vehicle": "Eagle ascent stage", "crewRole": "Commander and Lunar Module Pilot", "getLabel": "After surface operations", "order": 12, "sourceIds": ["mission-overview"], "description": "The ascent stage leaves the descent stage on the Moon and returns toward lunar orbit. This is a roadmap chapter." },
+    { "id": "rendezvous", "title": "Rendezvous and docking · future chapter", "vehicle": "Eagle ascent stage and Columbia", "crewRole": "All three crew members in their respective spacecraft", "getLabel": "After lunar ascent", "order": 13, "sourceIds": ["mission-overview"], "description": "Rendezvous, docking, and crew transfer precede Earth return. This is a roadmap chapter." },
+    { "id": "earth-return", "title": "Earth return and entry · future chapter", "vehicle": "Columbia / CSM", "crewRole": "Three crew members reunited in Columbia", "getLabel": "After rendezvous", "order": 14, "sourceIds": ["mission-overview"], "description": "Trans-Earth injection, coast, command-module entry, and recovery complete the mission chronology. This is a roadmap chapter." }
+  ],
+  "controls": [
+    {
+      "id": "aca", "label": "ACA · attitude hand controller", "hardware": "Right-hand pistol grip; spring-centered rotational controller", "location": "Beside each crew station, right hand", "purpose": "Change spacecraft orientation. Fore/aft commands pitch; left/right commands roll; twist commands yaw.",
+      "modes": [
+        { "id": "rate-command", "label": "PGNS ATT HOLD · rate command", "behavior": "With the appropriate DAP and axis configuration, stick displacement requests angular rate and return to detent requests stabilization at the acquired attitude.", "sourceIds": ["lm-controls-handbook", "activation-checklist"] },
+        { "id": "minimum-impulse", "label": "Minimum impulse / pulse", "behavior": "Pulse and direct paths depend on the axis switches, selected guidance system, and DSKY commands. They are not interchangeable with proportional rate command.", "sourceIds": ["activation-checklist", "luminary-modes"] },
+        { "id": "lpd", "label": "P64 landing-point redesignation", "behavior": "In the permitted approach mode, ACA inputs adjust the computer's landing target rather than acting as ordinary free steering.", "sourceIds": ["lm-controls-handbook", "luminary-modes"] }
+      ],
+      "sourceIds": ["lm-controls-handbook", "activation-checklist"],
+      "limitations": "A browser pointer, keyboard, or gamepad is an input proxy. A two-axis yaw/pitch pad does not reproduce the ACA's pitch/roll/twist geometry, detents, hardover contacts, or all three independent axes. Exact live ACA behavior is not currently asserted."
+    },
+    {
+      "id": "ttca", "label": "TTCA · thrust / translation controller", "hardware": "Separate left-hand T-handle with THROTTLE / JETS selector", "location": "Beside each crew station, left hand", "purpose": "Command translation with RCS, or descent-engine thrust, according to selector and authority settings.",
+      "modes": [
+        { "id": "jets", "label": "JETS", "behavior": "Translation along vehicle X, Y, and Z axes; this changes linear velocity rather than simply rotating the LM.", "sourceIds": ["activation-checklist", "lm-controls-handbook"] },
+        { "id": "throttle", "label": "THROTTLE", "behavior": "Vertical handle travel controls descent thrust under the enabled throttle authority. The THR CONT switch and MAN THROT crew selector are separate controls.", "sourceIds": ["activation-checklist", "lm-controls-handbook"] }
+      ],
+      "sourceIds": ["activation-checklist", "lm-controls-handbook"],
+      "limitations": "No current live TTCA translation/throttle contract is asserted. Do not turn a generic thrust slider into a claimed Apollo 11 hand controller."
+    },
+    {
+      "id": "pgns-mode", "label": "MODE CONTROL · PGNS", "hardware": "Three-position toggle: AUTO / ATT HOLD / OFF", "location": "STAB/CONT panel 3, above the DSKY", "purpose": "Select primary guidance attitude-control authority.",
+      "modes": [
+        { "id": "auto", "label": "AUTO", "behavior": "Follow guidance attitude commands when the surrounding control configuration permits.", "sourceIds": ["lm-controls-handbook", "control-panel-reference"] },
+        { "id": "att-hold", "label": "ATT HOLD", "behavior": "Permit the selected manual attitude-control mode. During landing, ATT HOLD plus a ROD actuation selects P66; ATT HOLD alone is not a universal P66 command.", "sourceIds": ["mission-report", "luminary-modes"] },
+        { "id": "off", "label": "OFF", "behavior": "Not a pause control. Changing guidance authority affects the spacecraft's control paths.", "sourceIds": ["activation-checklist", "control-panel-reference"] }
+      ],
+      "sourceIds": ["activation-checklist", "control-panel-reference", "luminary-modes"],
+      "limitations": "Historical labels are inspectable reference information until a backend switch command, readback, and interlocks are implemented. AGS has a separate mode-control switch."
+    },
+    {
+      "id": "attitude-axis", "label": "ATTITUDE CONTROL · ROLL / PITCH / YAW", "hardware": "One toggle per axis: MODE CONT / PULSE / DIR", "location": "STAB/CONT panel 3", "purpose": "Select an axis control path independently of the PGNS / AGS mode toggles.",
+      "modes": [
+        { "id": "mode-cont", "label": "MODE CONT", "behavior": "Use the selected guidance-system mode for the axis.", "sourceIds": ["control-panel-reference", "activation-checklist"] },
+        { "id": "pulse", "label": "PULSE", "behavior": "Use the pulse path appropriate to the selected guidance configuration.", "sourceIds": ["control-panel-reference", "activation-checklist"] },
+        { "id": "direct", "label": "DIR", "behavior": "Direct control is a distinct electrical path; it must not be emulated by bypassing the backend's validated command model.", "sourceIds": ["lm-controls-handbook", "control-panel-reference"] }
+      ],
+      "sourceIds": ["activation-checklist", "control-panel-reference"],
+      "limitations": "Not live switch controls. ACA/4 JET and TTCA/TRANSL ENABLE/DISABLE are additional separate switches."
+    },
+    {
+      "id": "rod", "label": "ROD · rate-of-descent switch", "hardware": "Momentary up / down switch", "location": "Commander's left-hand control area, inboard of TTCA", "purpose": "Adjust commanded vertical descent rate in P66; it does not directly prescribe a throttle percentage.",
+      "modes": [
+        { "id": "p66-rod", "label": "P66 · computer throttle", "behavior": "An up pulse reduces commanded descent rate by 1 ft/s; a down pulse increases it by 1 ft/s. The LGC computes the throttle response.", "sourceIds": ["mission-report", "control-panel-reference", "luminary-modes"] }
+      ],
+      "sourceIds": ["mission-report", "control-panel-reference", "luminary-modes"],
+      "limitations": "Live ROD commands and P66 operation have not been exposed as a validated mission-control API."
+    },
+    {
+      "id": "dsky", "label": "DSKY · display and keyboard", "hardware": "Dedicated verb / noun keyboard and numeric registers", "location": "Panel 4, central instrument area", "purpose": "Select programs, enter or review mission data, and respond to original software prompts.",
+      "modes": [
+        { "id": "v37", "label": "V37 · change major mode", "behavior": "The original major-mode dispatcher validates and schedules the selected program; selecting P63 is one operation in an already initialized mission.", "sourceIds": ["luminary-start", "luminary-landing"] }
+      ],
+      "sourceIds": ["activation-checklist", "luminary-start"],
+      "limitations": "A drawn keypad must remain unavailable unless real key delivery, release behavior, and original AGC readback are supported; never synthesize arbitrary key responses."
+    }
+  ],
+  "softwareEntry": {
+    "summary": "Luminary is scheduled, interrupt-driven flight software, not a linear mission script. The reset/restart entry, requested fresh start, idle P00, and selection of a mission program are different events. Start the lunar-orbit chapter with a validated running AGC checkpoint; do not present a fresh start or P63 selection as the beginning of Apollo 11.",
+    "files": [
+      { "path": "Luminary099/MAIN.agc", "symbol": "assembly include list", "meaning": "Assembles source sections; it is not a game-style main() mission loop. Retained under docs/phase7-evidence/source/upstream/Luminary099/MAIN.agc.", "sourceIds": ["luminary-assembly"] },
+      { "path": "Luminary099/INTERRUPT_LEAD_INS.agc", "symbol": "SETLOC 4000 → GOPROG", "meaning": "The fixed interrupt/reset lead-in establishes the bank context and transfers to restart processing.", "sourceIds": ["luminary-entry"] },
+      { "path": "Luminary099/FRESH_START_AND_RESTART.agc", "symbol": "SLAP1 / STARTSUB / DOFSTART", "meaning": "Requested fresh-start initialization. This is not a historical pre-undocking checklist step.", "sourceIds": ["luminary-start"] },
+      { "path": "Luminary099/FRESH_START_AND_RESTART.agc", "symbol": "V37XEQ / FCADRMM1", "meaning": "Major-mode selection and dispatch, with program table entries and execution scheduling.", "sourceIds": ["luminary-start"] },
+      { "path": "Luminary099/THE_LUNAR_LANDING.agc", "symbol": "P63LM / IGNALG", "meaning": "P63 braking-program entry and ignition preparation require the mission state and alignment inputs; they do not reconstruct the previous mission.", "sourceIds": ["luminary-landing"] },
+      { "path": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc", "symbol": "GUILDEN / P66NOW? / RODCOMP", "meaning": "Mode-dependent landing guidance and commanded vertical-rate processing. Its input discretes must come from authoritative cockpit state.", "sourceIds": ["luminary-modes"] }
+    ],
+    "sourceIds": ["luminary-assembly", "luminary-entry", "luminary-start", "luminary-landing", "luminary-modes"]
+  }
+}

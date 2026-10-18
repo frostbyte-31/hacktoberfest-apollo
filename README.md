@@ -1,15 +1,34 @@
 # Apollo 11 — mission procedures and original guidance
 
-Start the **procedure-led mission screen** with `make play`, then open
-**http://127.0.0.1:4173/play.html**. Review the original computer's recorded
-preparation sequence, inspect actual DSKY observations and see where live crew
-controls are unavailable. This uses synthetic test inputs; it does not claim a
-complete historical Apollo 11 checklist or landing.
+Start the **lunar-orbit mission starting point** with `make play`, then open
+**http://127.0.0.1:4173/play.html**. Eagle begins docked to Columbia, before
+undocking. Inspect Apollo's actual hand-controller functions and source-linked
+checklist references, then explore the chronological mission chapters.
+
+Select **Verified propulsion execution** to play the new backend's actual
+retained 3D position, velocity and fixed attitude, original DSKY, engine commands,
+thrust, fuel and PIPA/navigation feedback. Four causal cases are available.
+This is a bounded synthetic diagnostic, not a historical trajectory or complete
+descent. Live historical flight and cockpit commands remain unavailable.
+The previous preparation walkthrough is preserved at **/preparation.html**.
+See [mission start and integration](docs/FRONTEND_MISSION_START.md),
+[Apollo controls and chronology sources](docs/FRONTEND_APOLLO_OPERATIONS.md), and
+[verification](docs/frontend-mission-start-evidence/README.md).
+
+For this recorded experience without native dependencies:
+
+```sh
+python3 -B frontend/serve.py --replay-only --port 4173
+```
+
+If port 4173 already serves the app, open the existing page. To run a second
+server, use `make play PORT=4180` and open **http://127.0.0.1:4180/play.html**.
 
 The former target/points exercise is preserved separately at
 **http://127.0.0.1:4173/attitude-lab.html**, clearly labeled synthetic. It now offers
-an illustrative hand controller, clearer relative-target guidance and optional
-keyboard shortcuts that are off by default. [Procedure architecture and missing
+an explicitly modern two-axis pad, relative-target guidance and optional
+keyboard shortcuts that are off by default. This pad is not an Apollo ACA replica.
+[Previous procedure architecture and missing
 contracts](docs/FRONTEND_PROCEDURES.md); [verification](docs/frontend-procedure-evidence/README.md).
 
 The **Phase 10 mission-control frontend** explores three verified recorded
@@ -25,7 +44,9 @@ Phase 7 verifies bounded, simultaneous yaw/pitch spacecraft feedback, following
 independent single-axis demonstrations. A visual replay console presents the
 captured experiments and connects bounded pilot inputs to fresh native AGC sessions.
 Full independent three-axis control, sustained attitude
-stability, powered descent, landing, multiplayer and AI crew remain unverified.
+stability, complete powered descent, landing, multiplayer and AI crew remain unverified.
+Phase 11/12 add sealed bounded propulsion/PIPA/navigation experiments, now
+connected to the recorded mission viewer; they do not add live cockpit APIs.
 
 The authentic flight computation, modern emulator, synthetic LM-7 dynamics and
 frontend remain separate. No npm installation is needed for the demo.

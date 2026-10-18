@@ -1,5 +1,12 @@
 # Apollo 11 frontend architecture
 
+The current primary entry point is `/play.html`: a historical lunar-orbit starting
+chapter plus a separately labeled 3D replay of the sealed Phase 12 propulsion and
+navigation experiment. See [current mission architecture](FRONTEND_MISSION_START.md)
+and [Apollo hardware and chronology](FRONTEND_APOLLO_OPERATIONS.md). The earlier
+preparation walkthrough remains at `/preparation.html`. The Phase 10 architecture
+below continues to describe the unchanged `/guidance.html` explorer.
+
 ## Delivered experience
 
 The Phase 10 mission-control screen is `frontend/dist/guidance.html`. It presents

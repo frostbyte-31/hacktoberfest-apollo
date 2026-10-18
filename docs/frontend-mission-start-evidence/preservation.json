@@ -1,0 +1,15 @@
+{
+  "baselineHead": "9202b82ad5ae419bb78d1d606ec5b2ed606acbb6",
+  "trackedFilesCompared": 7433,
+  "intentionallyChanged": [
+    "Makefile",
+    "README.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "frontend/dist/attitude-lab.html",
+    "frontend/dist/flight.mjs",
+    "frontend/dist/play.html"
+  ],
+  "unchangedExistingFiles": 7426,
+  "backendEmulatorApolloEvidenceUnchanged": true
+}

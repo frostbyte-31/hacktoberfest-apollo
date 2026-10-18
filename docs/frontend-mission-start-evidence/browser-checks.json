@@ -1,0 +1,48 @@
+{
+  "viewportChecks": [
+    {
+      "width": 1440,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 806,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "horizontalOverflow": false
+    }
+  ],
+  "caseObservations": [
+    {
+      "case": "connected",
+      "clock": "05:26.661 CPU",
+      "thrust": "45.04 kN",
+      "fuel": "8,079.5 kg",
+      "pipa": "2379 / 0 / 0"
+    },
+    {
+      "case": "sink",
+      "thrust": "0.00 kN",
+      "fuel": "8,196.0 kg",
+      "pipa": "0 / 0 / 0"
+    },
+    {
+      "case": "no-feedback",
+      "thrust": "45.04 kN",
+      "fuel": "8,079.5 kg",
+      "pipa": "0 / 0 / 0"
+    },
+    {
+      "case": "repeat",
+      "thrust": "45.04 kN",
+      "fuel": "8,079.5 kg",
+      "pipa": "2379 / 0 / 0"
+    }
+  ],
+  "chronologyPreviewPreservesDockedState": true,
+  "sameCycleHardwarePacketsObservedIndividually": true,
+  "playPauseAdvancedActualPhysicalSamples": true,
+  "readOnlyControlsDisabled": true,
+  "console": []
+}

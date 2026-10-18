@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1015">
+  <meta name="description" content="Apollo 11 mission preparation: a guided review of verified original Luminary execution, with explicit historical and simulation boundaries.">
+  <title>Apollo 11 · Phase 10 Preparation Evidence</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./flight.css"><link rel="stylesheet" href="./procedures.css">
+</head>
+<body class="procedure-page">
+  <a class="skip-link" href="#current-task">Skip to current task</a>
+  <header class="flight-header">
+    <a class="brand" href="./play.html"><span class="mission-patch" aria-hidden="true">A</span>APOLLO <b>11</b><small>MISSION PROCEDURES</small></a>
+    <nav aria-label="Mission navigation"><a href="./play.html">Mission start ↗</a><a href="./guidance.html">Full evidence explorer ↗</a><a href="./attitude-lab.html">Separate attitude lab ↗</a></nav>
+  </header>
+  <main>
+    <div class="procedure-source"><strong id="execution-mode">LOADING VERIFIED RECORDING</strong><span>Synthetic experiment inputs · not historical flight telemetry</span></div>
+    <section class="mission-intent"><div><span class="eyebrow">LUNAR MODULE / PRE-IGNITION PREPARATION</span><h1>Follow the <em>procedure.</em></h1><p>Understand what the crew must check before a burn.<br>Start with the original computer’s recorded preparation sequence.</p></div><div class="task-boundary"><span class="eyebrow">WHAT YOU CAN DO HERE</span><strong>Review evidence, step by step.</strong><p>This is a guided recording of our test sequence, not Apollo 11’s complete flown checklist. Live cockpit commands and the historical landing sequence are not connected yet.</p></div></section>
+    <div class="scenario-choice"><label for="procedure-scenario">RETAINED EXPERIMENT</label><select id="procedure-scenario" disabled><option value="nominal">A · Synthetic 15 km orbit</option><option value="altitude-16km">B · Synthetic 16 km orbit</option><option value="missing-site">C · Landing target omitted</option></select><span>Each selection uses its own recorded outcome.</span></div>
+    <div class="procedure-error" id="procedure-error" role="alert" hidden><strong>Recording unavailable.</strong><p id="procedure-error-copy"></p><button id="procedure-retry">Reload verified evidence</button></div>
+    <section class="current-task" id="current-task" aria-labelledby="task-title" aria-busy="true"><div><span class="eyebrow" id="task-number">YOUR CURRENT TASK</span><h2 id="task-title">Review the guidance preparation.</h2><p id="task-focus">You are not aiming the spacecraft at a landing point in this recording. Inspect alignment, mission inputs and P63, then read the recorded crew-review display.</p></div><div class="task-actions"><button id="procedure-back" disabled aria-label="Previous recorded checkpoint">← Previous</button><button class="primary-action" id="procedure-next" disabled>Loading evidence…</button></div></section>
+    <div class="procedure-console">
+      <aside class="procedure-checklist" aria-labelledby="checklist-title"><div class="section-label"><span class="eyebrow" id="checklist-title">RECORDED TEST SEQUENCE</span><small id="step-count">8 observations</small></div><ol id="procedure-steps"></ol><p class="checklist-note">Selecting a step seeks a recording. It does not perform an astronaut action or send a command.</p><a href="./guidance.html">Inspect every retained event →</a></aside>
+      <section class="procedure-vehicle" aria-label="Illustrative three-dimensional Lunar Module">
+        <canvas id="procedure-canvas" aria-label="Illustrative 3D Lunar Module. Drag to orbit the viewing camera. This recording supplies no spacecraft attitude or motion."></canvas>
+        <div class="vehicle-top"><span>LM / EAGLE</span><span id="procedure-renderer">3D VISUAL MODEL</span></div><div class="vehicle-note"><span>STATIC EDUCATIONAL ILLUSTRATION</span><strong>Camera view, not flight state.</strong><p>The recording supplies no propagated attitude or descent. Turning this model only moves your viewing camera.</p></div>
+        <div class="camera-tools"><button id="procedure-camera-reset" aria-label="Reset model camera">↺</button><button id="procedure-camera-in" aria-label="Zoom in">+</button><button id="procedure-camera-out" aria-label="Zoom out">−</button></div>
+      </section>
+      <aside class="procedure-computer" aria-labelledby="computer-title"><div class="section-label"><span class="eyebrow" id="computer-title">ORIGINAL DSKY OUTPUT</span><strong>READ ONLY</strong></div>
+        <div class="procedure-dsky"><div class="dsky-program"><span>PROG</span><strong id="dsky-program">??</strong></div><div class="dsky-verbs"><div><span>VERB</span><strong id="dsky-verb">??</strong></div><div><span>NOUN</span><strong id="dsky-noun">??</strong></div></div><div class="dsky-register"><span>R1</span><strong id="dsky-r1">?????</strong></div><div class="dsky-register"><span>R2</span><strong id="dsky-r2">?????</strong></div><div class="dsky-register"><span>R3</span><strong id="dsky-r3">?????</strong></div><small>CHANNEL 010 · RECORDED DIGITS</small></div>
+        <p class="display-note">Blank and unknown digits are preserved. Sign and indicator lamps are unavailable. The display may lag the program event.</p><div class="keypad-boundary"><span class="eyebrow">DSKY KEYPAD</span><strong>Live entry unavailable</strong><p>This recording cannot accept DSKY input. Live keypad control is not connected.</p><button disabled>VERB / NOUN / ENTR</button></div><p class="trace-location" id="dsky-source">Awaiting a recorded display observation.</p>
+      </aside>
+    </div>
+    <section class="observation-details" aria-label="Selected original software observation"><div><span class="eyebrow">WHY THIS STEP MATTERS</span><p id="step-why">The computer needs a reference orientation and coherent navigation and target inputs before calculating when a burn should begin.</p></div><div><span class="eyebrow">CONTROL / OBSERVATION IN THIS RUN</span><strong id="step-control">Recorded execution only</strong><p id="step-expect">Begin at the startup checkpoint. No flight or control action is implied by reviewing it.</p></div><div class="recorded-values"><span class="eyebrow">ACTUAL GUIDANCE OBSERVATIONS</span><dl><dt>Root results</dt><dd id="procedure-roots">—</dd><dt>Ignition time</dt><dd id="procedure-tig">—</dd><dt>Recorded alarms</dt><dd id="procedure-alarms">—</dd></dl><p id="step-source">No checkpoint selected.</p></div></section>
+    <section class="mission-limit" id="mission-limit" hidden aria-labelledby="limit-title"><span class="eyebrow">END OF AVAILABLE PROCEDURE EVIDENCE</span><h2 id="limit-title">Crew continuation is not connected.</h2><p id="limit-copy">The recording stops before ignition. There is no verified engine-arm, PROCEED or powered-descent action available here.</p><button disabled>Continue to powered descent · unavailable</button></section>
+    <section class="historical-context" aria-labelledby="history-title"><div><span class="eyebrow">THE HISTORICAL EXPERIENCE WE ARE BUILDING TOWARD</span><h2 id="history-title">Cockpit actions, in mission context.</h2><p>Apollo 11’s crew used checklists, DSKY entries, switches and hand controllers. During P64, Armstrong checked manual attitude response; later he used P66 during final descent. That sequence is different from our synthetic target exercise.</p><a href="https://apollojournals.org/alsj/a11/a11.landing.html" target="_blank" rel="noreferrer">Read the landing transcript and crew commentary ↗</a></div><div class="historical-stages"><span>Pre-descent checks <small>Historical checklist mapping needed</small></span><span>P63 · braking <small>Ignition and flight unavailable</small></span><span>P64 · approach <small>Flight controls unavailable</small></span><span>P66 · landing <small>Thrust and touchdown unavailable</small></span></div></section>
+    <footer><span><strong>Original software. Clearly bounded evidence.</strong> The lab is separate from the mission.</span><a href="./attitude-lab.html">Open synthetic attitude exercise ↗</a></footer>
+  </main>
+  <div class="sr-only" role="status" aria-live="polite" id="procedure-announcement"></div>
+  <script type="module" src="./procedures.mjs"></script>
+</body>
+</html>
