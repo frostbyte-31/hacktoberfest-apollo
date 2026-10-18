@@ -1,0 +1,3 @@
+usage: final_demo.py [-h] [--port PORT] [--recorded-only]
+                     [--bootstrap-runtime]
+final_demo.py: error: Port is already occupied; no process was stopped. Choose --port 4180.

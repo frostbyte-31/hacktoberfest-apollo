@@ -1,0 +1,12 @@
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /guidance.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /mission-control.css HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /guidance.css HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /guidance.mjs HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /guidance-state.mjs HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /mission-provider.mjs HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /spacecraft-view.mjs HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /replay.mjs HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] code 503, message Intentional UI-test recording outage
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /data/guidance.json HTTP/1.1" 503 -
+127.0.0.1 - - [18/Oct/2026 01:29:48] "GET /favicon.svg HTTP/1.1" 200 -

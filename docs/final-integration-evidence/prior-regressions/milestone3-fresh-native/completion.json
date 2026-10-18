@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED",
+  "experiments": [
+    "source-locked yaw magnitude selector",
+    "paced negative X feedback and diagnostic queue settlement"
+  ],
+  "prior_files_preserved": 1135,
+  "limits": "Synthetic single-axis fixture; queue settlement is distinct from physical vehicle stability; not Phase7, descent or landing"
+}

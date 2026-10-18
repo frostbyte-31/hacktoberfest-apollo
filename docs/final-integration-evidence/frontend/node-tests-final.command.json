@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "frontend/tests/flight-view.test.mjs",
+    "frontend/tests/guidance.test.mjs",
+    "frontend/tests/live.test.mjs",
+    "frontend/tests/mission-live-provider.test.mjs",
+    "frontend/tests/mission-provider.test.mjs",
+    "frontend/tests/replay.test.mjs",
+    "frontend/tests/spacecraft-view.test.mjs"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+  "startedAt": "2026-10-18T00:18:53.334285+00:00",
+  "finishedAt": "2026-10-18T00:18:54.223302+00:00",
+  "exitCode": 0
+}

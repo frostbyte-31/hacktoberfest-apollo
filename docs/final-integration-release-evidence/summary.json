@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-18T00:41:16.170750+00:00",
+  "source_base": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "branch": "codex/final-integration",
+  "passed": 526,
+  "failed": 0,
+  "errored": 3,
+  "skipped": 0,
+  "historical_error_count": 3,
+  "original_final_seal_files": 736,
+  "original_final_seal_sha256": "eed2e6f5ffef19348800f9c2490a273e48a08f9c5f81c8f4fc57033e8c8ac2b5",
+  "original_final_seal_verified": true,
+  "application_source_changes_during_release": false,
+  "push_scope": "Only codex/final-integration; frontend/main/backend branches unchanged."
+}

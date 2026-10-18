@@ -1,0 +1,24 @@
+{
+  "mvp_files": 413,
+  "prior_evidence_files": 4809,
+  "problems": [
+    {
+      "error": "SHA-256 mismatch",
+      "path": "Makefile"
+    },
+    {
+      "error": "SHA-256 mismatch",
+      "path": "frontend/README.md"
+    },
+    {
+      "error": "SHA-256 mismatch",
+      "path": "frontend/dist/guidance.html"
+    },
+    {
+      "error": "SHA-256 mismatch",
+      "path": "frontend/dist/guidance.mjs"
+    }
+  ],
+  "scope": "Evidence/package integrity; not an AGC execution or UI test",
+  "verified": false
+}

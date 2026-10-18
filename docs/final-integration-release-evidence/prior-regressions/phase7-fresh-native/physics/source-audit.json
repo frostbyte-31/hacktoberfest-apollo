@@ -1,0 +1,31 @@
+{
+  "status": "DERIVED",
+  "source_revision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+  "source_hashes": {
+    "Contributed/LM_Simulator/modules/AGC_IMU.tcl": "4f63cf0954d4587ec6e983428d7e43d4473c11da72210444c2aa0ae4204e9c7e",
+    "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+    "Contributed/LM_Simulator/lm_simulator.tcl": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+  },
+  "retained_server_sha256": "9e14770f744d3d2b7ffa09cb5f05a489de19b812526463a939df4b69f714622b",
+  "overlay_sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a",
+  "destination": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase7/runs/20261018T003720Z-feb2a1d3/physics/derived-physics.tcl",
+  "derived_sha256": "946a4db6d38fb2824b7a4ee3539d76fd62c395fc6af674a69676466c7e28b075",
+  "selector_replacements": [
+    [
+      "if {$Omega_Yaw < 4} {",
+      "if {abs($Omega_Yaw) < 4} {"
+    ],
+    [
+      "if {$Omega_Pitch < 4.0} {",
+      "if {abs($Omega_Pitch) < 4.0} {"
+    ],
+    [
+      "if {$Omega_Roll < 4.0} {",
+      "if {abs($Omega_Roll) < 4.0} {"
+    ]
+  ],
+  "exact_legacy_decode": " set j 0\n foreach name {Q4U Q4D Q3U Q3D Q2U Q2D Q1U Q1D} {\n  set $name [expr {$blocked ? 0 : (($jet5 >> $j) & 1)}]; incr j\n }\n set j 0\n foreach name {Q3A Q4F Q1F Q2A Q2L Q3R Q4R Q1L} {\n  set $name [expr {$blocked ? 0 : (($jet6 >> $j) & 1)}]; incr j\n }\n",
+  "imu_diff": "--- pinned/AGC_IMU.tcl\n+++ phase7/AGC_IMU.tcl\n@@ -524,7 +524,7 @@\n      set PIMUX [expr $PIMUX + $ANGLE_INCR_SIGN]\n      set ang_delta [expr $ang_delta - $ANGLE_INCR]\n      # ---- LM X-Axis/YAW-Axis ----\n-     if {$Omega_Yaw < 4} {\n+     if {abs($Omega_Yaw) < 4} {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 32} else {write_socket \"PCDU\" 32}\n      } else {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 32} else {write_socket \"PCDU_FAST\" 32}\n@@ -555,7 +555,7 @@\n      set PIMUY [expr $PIMUY + $ANGLE_INCR_SIGN]\n      set ang_delta [expr $ang_delta - $ANGLE_INCR]\n      # ---- LM Y-Axis/PITCH-Axis ----\n-     if {$Omega_Pitch < 4.0} {\n+     if {abs($Omega_Pitch) < 4.0} {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 33} else {write_socket \"PCDU\" 33}\n      } else {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 33} else {write_socket \"PCDU_FAST\" 33}\n@@ -589,7 +589,7 @@\n      set PIMUZ [expr $PIMUZ + $ANGLE_INCR_SIGN]\n      set ang_delta [expr $ang_delta - $ANGLE_INCR]\n      # ---- LM Z-Axis/ROLL-Axis ----\n-     if {$Omega_Roll < 4.0} {\n+     if {abs($Omega_Roll) < 4.0} {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU\" 34} else {write_socket \"PCDU\" 34}\n      } else {\n        if {$ANGLE_INCR_SIGN < 0} {write_socket \"MCDU_FAST\" 34} else {write_socket \"PCDU_FAST\" 34}\n",
+  "upstream_modified": false,
+  "assumptions": "Synthetic effective perjet torque components445Nm (1m assumed component arm); I(m)=445/legacyAlphaRad; perinterval frozen I and corotating expelled-mass angular-momentum flux cancels I_dot*omega"
+}

@@ -1,0 +1,105 @@
+{
+  "tests_run": 16,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_physics.FreshPhysicsTests.test_adapter_protects_retained_paths_and_symlinks",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.002008792000000259
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_adapter_rejects_changed_source_and_existing_destinations",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0028264579999999206
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_assumed_inertias_and_source_jet_torque_are_positive_physical",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 6.958300000015072e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_bounds_and_nonconvergence_fail_explicitly",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 5.2999999999858716e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_constant_principal_torque_uses_declared_semiimplicit_step",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.2040999999937156e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_coordinate_roundtrip_and_rotation_matrix",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.204199999957581e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_fresh_actual_execution_and_complete_markers",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00031483300000001435
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_inertial_momentum_direction_converges_at_first_order",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.3082999999999316e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_original_gimbal_jacobian_matches_body_rate_quaternion",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.629199999988231e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_parser_rejects_incomplete_or_wrong_convention_trace",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0011805840000000956
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_principal_physical_motion_emits_correct_signed_cdu_axis",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 4.154199999995001e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_source_locked_selectors_and_exact_decode",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0002927090000000021
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_translation_logs_suppression_and_never_produces_pipa",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.6750000000029814e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_two_torques_include_induced_third_axis_motion",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.916700000017315e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_unequal_inertia_torque_free_energy_and_momentum_norm",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.983299999976708e-05
+    },
+    {
+      "id": "test_physics.FreshPhysicsTests.test_yaw_remains_within_legacy_predeclared_tolerance",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 3.433300000033057e-05
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}

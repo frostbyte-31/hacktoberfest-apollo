@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/typescript-5.9.3/package/lib/tsc.js",
+    "-p",
+    "frontend/tsconfig.json"
+  ],
+  "exit_code": 0,
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration"
+}

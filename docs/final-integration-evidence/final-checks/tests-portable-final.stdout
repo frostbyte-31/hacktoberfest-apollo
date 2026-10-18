@@ -1,0 +1,101 @@
+python3 -B -m backend.final_assets --bootstrap
+{"assets": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration/.build/final-demo-assets.json", "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration/.build/live/assets/20261018T002609Z-c0586cfb/source", "tcl": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6"}
+python3 -B -m unittest discover -s backend/tests -v
+{"experiment": "actual three-fallback educational flight", "repetition": 0, "classification": "DETERMINISTIC_FALLBACK; not LLM or original AGC control", "outcome": {"success": true, "reasons": ["contact meets the synthetic teaching limits"], "measured": {"altitudeM": -0.006075211334973574, "verticalSpeedMps": -0.7310571827551907, "horizontalSpeedMps": 0.0446695401527585, "horizontalVelocityMps": -0.04466954015275741, "downrangeM": 3.7765330557629024, "pitchDeg": -0.01760058952412761, "fuelKg": 346.5788876619173, "massKg": 7846.578887661881}, "thresholds": {"verticalSpeedMps": 2.0, "horizontalSpeedMps": 1.5, "pitchDeg": 8.0, "landingSiteDistanceM": 75.0, "lossOfControlPitchDeg": 70.0, "timeLimitSeconds": 180.0}}, "simTimeSeconds": 33.74, "physics_sha256": "ff9c6331e9bbb0cf99ad7d9f3e04afd2e41c4075936dbc55957cbb13c2e2fc26"}
+{"experiment": "actual validated fallback command schedule", "repetition": 0, "commands": 178, "command_values_sha256": "b73126cd637c20120a0623d97a3a57e90da3211c2296afd75ccf8edacd5837af", "comparison_scope": "Compare actual audited command values; retain unique run IDs in unmodified raw audit copies."}
+{"experiment": "actual three-fallback educational flight", "repetition": 1, "classification": "DETERMINISTIC_FALLBACK; not LLM or original AGC control", "outcome": {"success": true, "reasons": ["contact meets the synthetic teaching limits"], "measured": {"altitudeM": -0.006075211334973574, "verticalSpeedMps": -0.7310571827551907, "horizontalSpeedMps": 0.0446695401527585, "horizontalVelocityMps": -0.04466954015275741, "downrangeM": 3.7765330557629024, "pitchDeg": -0.01760058952412761, "fuelKg": 346.5788876619173, "massKg": 7846.578887661881}, "thresholds": {"verticalSpeedMps": 2.0, "horizontalSpeedMps": 1.5, "pitchDeg": 8.0, "landingSiteDistanceM": 75.0, "lossOfControlPitchDeg": 70.0, "timeLimitSeconds": 180.0}}, "simTimeSeconds": 33.74, "physics_sha256": "ff9c6331e9bbb0cf99ad7d9f3e04afd2e41c4075936dbc55957cbb13c2e2fc26"}
+{"experiment": "actual validated fallback command schedule", "repetition": 1, "commands": 178, "command_values_sha256": "b73126cd637c20120a0623d97a3a57e90da3211c2296afd75ccf8edacd5837af", "comparison_scope": "Compare actual audited command values; retain unique run IDs in unmodified raw audit copies."}
+python3 -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
+python3 -B -m unittest discover -s tools/demo/tests -v
+git-archive: exit 0
+python3 -B -m unittest discover -s docs/live-control-evidence -p 'test_*.py' -v
+/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test frontend/tests/*.test.mjs
+✔ projection uses server altitude and downrange without advancing physical state (1.975ms)
+✔ zero altitude reaches the surface; negative altitude is not visual extrapolation (0.16175ms)
+✔ out-of-view data is disclosed and missing telemetry rejected (0.230583ms)
+✔ exhaust visualization requires actual enabled nonzero thrust (0.71575ms)
+✔ positive physical pitch renders toward negative downrange (30.495542ms)
+✔ signed measured velocity drives the arrow without a trajectory prediction (0.331167ms)
+✔ unavailable signed horizontal velocity hides the arrow instead of guessing (0.204375ms)
+✔ retained three-scenario guidance recording has required display and source data (6.551875ms)
+✔ a replay labelled live cannot be accepted as a recorded experiment (27.568208ms)
+✔ missing trace fingerprint or display field is rejected instead of substituted (96.101ms)
+✔ malformed observed quantities and reversed chronology are rejected (50.552791ms)
+✔ frame lookup holds actual observations between samples without interpolation (0.220875ms)
+✔ replay bounds keep observations within the retained execution horizon (0.138375ms)
+✔ event stepping selects real distinct event times and stops at bounds (0.207ms)
+✔ paced replay stops at horizon and rejects a negative elapsed interval (0.192584ms)
+✔ nominal and altered-state outcomes come from their own recorded scenarios (0.146958ms)
+✔ missing-site control never supplies a fabricated ignition result or site (0.2755ms)
+✔ signed time-to-go is preserved independently from absolute TIG and solution lead (0.222917ms)
+✔ clock and quantity formatters preserve unavailable values and signed zeros (0.121375ms)
+✔ static projection uses X–Z of supplied 3D state and actual lunar radius (0.181292ms)
+✔ landing marker uses documented future-epoch site rather than initial spacecraft position (0.172625ms)
+✔ independent directions combine and opposing same-axis controls cancel (1.530875ms)
+✔ live controls require both server permission and original readiness (0.901208ms)
+✔ physical freeze and subsequent actual CPU counters remain separate (0.216625ms)
+✔ malformed live telemetry fails instead of creating a substitute state (0.433958ms)
+✔ separate held sources preserve another axis when one is released (4.961209ms)
+✔ neutral release can overtake an in-flight deflection with a newer sequence (0.555042ms)
+✔ connection loss releases controls and marks retained telemetry stale (0.272333ms)
+✔ inputs are not emitted before native startup is ready (0.665208ms)
+✔ only actual versioned educational mission snapshots are accepted (2.254666ms)
+✔ missing or nonfinite physical state never becomes invented zero telemetry (0.238625ms)
+✔ crew validation requires exactly the original three independent roles (0.140375ms)
+✔ capability discovery returns public capabilities without leaking bootstrap token (0.543084ms)
+✔ creating a mission sends the specified crew modes and no spacecraft state (1.425333ms)
+✔ joining encodes the mission identifier and stores participant identity (0.265875ms)
+✔ commands are sequenced after the authoritative last sequence and carry current run identity (0.265667ms)
+✔ status polling uses the participant header without sending a command (0.156833ms)
+✔ unavailable service and permission rejection propagate honestly (0.417791ms)
+✔ corrupt browser persistence does not create a fake participant (0.221042ms)
+✔ three real propulsion cases retain source fingerprints and original software outcomes (2.237334ms)
+✔ propulsion replay holds preceding real frames rather than interpolating guidance values (2.47925ms)
+✔ a recorded experiment relabeled live or missing provenance is rejected (14.573667ms)
+✔ recorded propulsion loading makes only its existing static GET request (0.993417ms)
+✔ recorded provider preserves actual three scenarios and trace fingerprints (53.2805ms)
+✔ provider defensively copies and deeply freezes validated data and snapshots (73.488333ms)
+✔ sample-and-hold retains per-field evidence instead of interpolating clock or guidance (0.282958ms)
+✔ absolute ignition time, signed time to go and solution lead remain distinct (0.17825ms)
+✔ static three-dimensional state discloses frame, units, separate epochs and no propagation (0.293084ms)
+✔ missing-site scenario reports authentic failure, unavailable target and no ignition result (0.153792ms)
+✔ DSKY digit strings are unchanged and undecoded light states are unavailable (0.184709ms)
+✔ events include only actual observations at or before replay cursor (0.227625ms)
+✔ scenario comparison uses final retained outcomes independently of current cursor (0.243458ms)
+✔ unknown scenarios, invalid time, missing provenance and extra scenarios are rejected (132.426875ms)
+✔ recorded loading performs GET and reports HTTP or malformed data failures (33.297417ms)
+✔ live discovery reads existing endpoints only and never starts a native session or publishes token (0.559542ms)
+✔ replay-only discovery distinguishes available status service from disabled live execution (0.193209ms)
+✔ offline, invalid and failed-status backend data return explicit unavailability (0.649916ms)
+✔ crew metadata contains exactly three correct positions without active multiplayer or AI (0.197708ms)
+✔ default browser transport preserves Window.fetch receiver for recording and discovery (29.791708ms)
+✔ injected fetch transport is never invoked with the provider as its receiver (0.276417ms)
+✔ exported real data satisfies the presentation contract (3.9035ms)
+✔ seeking holds the last real sample and never selects future telemetry (0.127375ms)
+✔ RCS words follow interleaved actual event edges without looking ahead (0.785625ms)
+✔ source-derived jet names and bit positions remain distinct from axes (0.26975ms)
+✔ scalar-first active body-to-stable quaternion has the right handed sign (0.135417ms)
+✔ render rotation preserves vector lengths for actual compound attitude (0.075125ms)
+✔ SLERP follows the short quaternion arc and normalizes presentation (0.163875ms)
+✔ rendering freezes at the actual horizon without extrapolating residual rate (0.135084ms)
+✔ interpolated drawing does not mutate held actual samples (1.142083ms)
+✔ gimbal wrapping and octal register presentation preserve values (0.179875ms)
+✔ physical freeze is distinct from the one-count settlement tail (0.074667ms)
+✔ original readiness requires actual P00 and both original inhibition gates (0.153583ms)
+✔ malformed quaternion and command chronology fail rather than fabricate (31.901208ms)
+✔ non-numeric times and out-of-range authentic words are rejected (74.771125ms)
+✔ renderer keeps the initialized 3D state as a static X–Z projection (0.962166ms)
+✔ planned landing site preserves its future TLAND epoch independently of spacecraft epoch (0.281208ms)
+✔ velocity arrow conveys direction only and no motion is propagated (0.673333ms)
+✔ projection preserves dimensional inputs and leaves source state unchanged (0.129375ms)
+✔ renderer uses only the supplied DOM root and writes source-based labels (0.946458ms)
+✔ switching to missing-site scenario removes earlier marker rather than inventing a target (0.492875ms)
+✔ a renderer missing required markup fails visibly instead of substituting data (0.480417ms)
+ℹ tests 81
+ℹ suites 0
+ℹ pass 81
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 502.30025

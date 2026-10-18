@@ -1,5 +1,40 @@
 # Apollo 11 · Guidance Labs
 
+## Mission-control frontend
+
+The current `/guidance.html` screen extends the Phase 10.5 replay with a typed
+frontend data provider, independent SVG viewer, recorded-outcome comparison,
+read-only backend discovery and three **planned** Apollo crew positions. It
+keeps the same verified recordings and authentic DSKY digit observations.
+Indicator lamps and arbitrary DSKY commands remain unavailable.
+
+```sh
+make demo PORT=4182
+```
+
+Open `http://127.0.0.1:4182/guidance.html`. Python 3.9+ is sufficient; the browser
+runs native ES modules without a bundler or JavaScript package installation.
+This command starts a **replay-only** server. For the existing live attitude
+experience, run `python3 -B frontend/serve.py --port 4183` and open `/` instead.
+Live attitude and recorded pre-ignition guidance remain separate capabilities.
+
+Development-only checks use Node and pinned TypeScript:
+
+```sh
+npm --prefix frontend ci
+npm --prefix frontend run typecheck
+npm --prefix frontend test
+```
+
+The type check emits no files and adds no browser/runtime dependency. Existing
+backend/data checks are listed below; the focused captured suite can be run with
+`python3 -B docs/frontend-evidence/run_checks.py --output .build/frontend-checks`.
+That suite includes loopback HTTP tests and must be allowed to bind localhost.
+See [frontend architecture](../docs/FRONTEND_ARCHITECTURE.md) and the
+[integration contract](../docs/FRONTEND_INTEGRATION_CONTRACT.md) for real APIs,
+units, timing, capability limits and future integration boundaries. This is a
+frontend milestone; descent propulsion/backend Phase 11 was not implemented.
+
 ## Educational pre-ignition replay — Phase 10.5
 
 From the repository root, with Python 3.9 or newer:

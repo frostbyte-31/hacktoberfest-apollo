@@ -1,0 +1,895 @@
+{
+  "all_tests_passed": false,
+  "argv": [
+    "docs/milestone1-evidence/run_tests.py"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "finished_utc": "2026-10-18T00:18:52.282165+00:00",
+  "git": {
+    "revision": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "22bd3c24c524334973beb6f9b3d168f21ca93e71\n"
+    },
+    "working_tree": {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "input_sha256": {
+    "docs/milestone1-evidence/baseline.json": "698368f1413b453ac5e37098e64cf8232fb10f3f22e62f18e45fc124acebf264",
+    "docs/milestone1-evidence/evidence.py": "4326e5695c0a386a2b1142bc0d49733bd9736a670dbe23f1ee0bd6fa21d7d3cc",
+    "docs/milestone1-evidence/missing-historical.json": "8dd7633cdcdf87886fe216126295ae2a20f366872160ea815a3fd8a8935bc9a6",
+    "docs/milestone1-evidence/run_tests.py": "bbe13f5f0487385b95c7494e353d2134d623e058c8a6fc0aaa49f139d1556733",
+    "docs/milestone1-evidence/tests/test_evidence.py": "639a18bcaccd6f375e9d46dfef0e2b24702f7102bc33ae5ec0ff1542404411e9",
+    "docs/milestone1-evidence/tests/test_reproduce.py": "93581da1d1d57519c84ce6628e0af23d717fb9ad63c11eb9164814a4a6724286",
+    "docs/milestone1-evidence/tests/test_runtime.py": "9ffbf774019682c722e03545a8f95d0cf0d43240d74c14a15e71a384d6c68c27",
+    "docs/milestone1-evidence/tests/test_test_runner.py": "91258e074987909b7049d8457895b1196037041f496bac6c829909bb7b25e433",
+    "docs/phase2-evidence/test_validation.py": "6b3713970f3df864acc6f75c69c61d73747e197e0bdf844ef49a6fc99ad48c60",
+    "docs/phase3-evidence/test_loop.py": "54f2982af00ee95b8f58aa9c4c6bf50507259900313c877b6db7c513cace38cf",
+    "docs/phase4-evidence/test_control_path.py": "fffba09bf32eb9fc4f93712fb0d2885679d1832a2b58e02aae19dd4d32daae6a",
+    "docs/phase5-evidence/test_readiness.py": "815a00482764cfe5d4c7a7b78684932300d569271d3ed63317f8e197b1b2dccf",
+    "docs/phase6-evidence/test_demonstration.py": "62e743b854bed8ba038c93e03a28da3acd1067fbce483759bbaa460082247047"
+  },
+  "legacy": {
+    "known_historical_errors": 3,
+    "outcomes": {
+      "error": 3,
+      "passed": 35
+    },
+    "tests_run": 38
+  },
+  "milestone1": {
+    "known_historical_errors": 0,
+    "outcomes": {
+      "passed": 55
+    },
+    "tests_run": 55
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "policy_satisfied": true,
+  "python": {
+    "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]"
+  },
+  "root": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "schema_version": 1,
+  "started_utc": "2026-10-18T00:18:46.731331+00:00",
+  "status": "verified_with_historical_gaps",
+  "suites": [
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase2",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/phase2.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-18T00:18:49.446516+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 2
+        },
+        "discovery": {
+          "directory": "docs/phase2-evidence",
+          "pattern": "test_validation.py"
+        },
+        "expected_test_count": 2,
+        "outcomes": {
+          "passed": 2
+        },
+        "policy_satisfied": true,
+        "suite": "phase2",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012069170000000018,
+            "id": "test_validation.ValidationTests.test_identical_initial_conditions_and_outputs",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.008970708,
+            "id": "test_validation.ValidationTests.test_p63_readiness_failure_not_descent",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 2,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-18T00:18:49.318840+00:00",
+      "suite": "phase2"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase3",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/phase3.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-18T00:18:49.795014+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 7
+        },
+        "discovery": {
+          "directory": "docs/phase3-evidence",
+          "pattern": "test_loop.py"
+        },
+        "expected_test_count": 7,
+        "outcomes": {
+          "passed": 7
+        },
+        "policy_satisfied": true,
+        "suite": "phase3",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.061457542,
+            "id": "test_loop.LoopEvidence.test_actuator_changes_plant",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.084252125,
+            "id": "test_loop.LoopEvidence.test_disconnected_feedback_fails",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.02895262500000001,
+            "id": "test_loop.LoopEvidence.test_negative_sign",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.003793084000000002,
+            "id": "test_loop.LoopEvidence.test_prior_evidence_unchanged",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002881250000000002,
+            "id": "test_loop.LoopEvidence.test_reproducible",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.028843499999999994,
+            "id": "test_loop.LoopEvidence.test_return_measurement_and_agc_response",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.029055125000000015,
+            "id": "test_loop.LoopEvidence.test_sensor_reception",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 7,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-18T00:18:49.446827+00:00",
+      "suite": "phase3"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase4",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/phase4.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-18T00:18:50.080469+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 5
+        },
+        "discovery": {
+          "directory": "docs/phase4-evidence",
+          "pattern": "test_control_path.py"
+        },
+        "expected_test_count": 6,
+        "outcomes": {
+          "error": 1,
+          "passed": 5
+        },
+        "policy_satisfied": true,
+        "suite": "phase4",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00017241600000000162,
+            "id": "test_control_path.ControlEvidence.test_component_yaw_sign_and_sensor",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.15105174999999998,
+            "id": "test_control_path.ControlEvidence.test_phase3_not_a_thruster_experiment",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.008258083999999999,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_control_path.ControlEvidence.test_prior_evidence_preserved",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase4-evidence/test_control_path.py\", line 10, in test_prior_evidence_preserved\n    for name,digest in hashes.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.01789112499999998,
+            "id": "test_control_path.ControlEvidence.test_probe_inputs_received",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00028791599999999917,
+            "id": "test_control_path.ControlEvidence.test_replay",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.018573124999999996,
+            "id": "test_control_path.ControlEvidence.test_source_readiness_blocks_actuation",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 6,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-18T00:18:49.795310+00:00",
+      "suite": "phase4"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase5",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/phase5.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-18T00:18:50.808174+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 11
+        },
+        "discovery": {
+          "directory": "docs/phase5-evidence",
+          "pattern": "test_readiness.py"
+        },
+        "expected_test_count": 12,
+        "outcomes": {
+          "error": 1,
+          "passed": 11
+        },
+        "policy_satisfied": true,
+        "suite": "phase5",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012395410000000107,
+            "id": "test_readiness.EvidenceTests.test_actual_jets_move_vehicle_and_read_back",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0023373340000000242,
+            "id": "test_readiness.EvidenceTests.test_actuator_disconnect_removes_motion",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.026510000000000034,
+            "id": "test_readiness.EvidenceTests.test_baseline_reproduces_original_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0002134579999999442,
+            "id": "test_readiness.EvidenceTests.test_correction_changes_only_operate_bit",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009051249999999511,
+            "id": "test_readiness.EvidenceTests.test_exact_replays",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004959708000000007,
+            "id": "test_readiness.EvidenceTests.test_feedback_changes_original_commands",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.013831040999999988,
+            "id": "test_readiness.EvidenceTests.test_fixture_stays_single_axis",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0035285840000000013,
+            "id": "test_readiness.EvidenceTests.test_imu_off_restores_rejection",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009226249999999547,
+            "id": "test_readiness.EvidenceTests.test_opposite_input_reverses_initial_response",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002855959000000019,
+            "id": "test_readiness.EvidenceTests.test_original_issup_clears_the_gate",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.0070162919999999795,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_readiness.EvidenceTests.test_prior_evidence_unchanged",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase5-evidence/test_readiness.py\", line 17, in test_prior_evidence_unchanged\n    for p, h in hashes.items(): self.assertEqual(hashlib.sha256((ROOT / p).read_bytes()).hexdigest(), h, p)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005189667000000009,
+            "id": "test_readiness.EvidenceTests.test_sensor_disconnect_removes_readback",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 12,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-18T00:18:50.080806+00:00",
+      "suite": "phase5"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "phase6",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/phase6.json"
+      ],
+      "exit_code": 1,
+      "finished_utc": "2026-10-18T00:18:51.418294+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": false,
+        "classifications": {
+          "known_historical_gap": 1,
+          "passed": 10
+        },
+        "discovery": {
+          "directory": "docs/phase6-evidence",
+          "pattern": "test_demonstration.py"
+        },
+        "expected_test_count": 11,
+        "outcomes": {
+          "error": 1,
+          "passed": 10
+        },
+        "policy_satisfied": true,
+        "suite": "phase6",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001931083,
+            "id": "test_demonstration.DemonstrationTests.test_actual_sensor_acceptance_and_counter_application_distinct",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.006029583000000005,
+            "id": "test_demonstration.DemonstrationTests.test_changed_measurements_change_original_commands",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.000272207999999996,
+            "id": "test_demonstration.DemonstrationTests.test_compiler_and_runs_exit_zero",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009240420000000138,
+            "id": "test_demonstration.DemonstrationTests.test_delivery_timestamp_preserved_separately",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00048512499999997516,
+            "id": "test_demonstration.DemonstrationTests.test_fresh_replay_exact",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.18965712499999998,
+            "id": "test_demonstration.DemonstrationTests.test_inspection_is_deterministic",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0014823330000000023,
+            "id": "test_demonstration.DemonstrationTests.test_nonfinite_state_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006221250000000289,
+            "id": "test_demonstration.DemonstrationTests.test_original_jets_follow_controller_input",
+            "outcome": "passed"
+          },
+          {
+            "classification": "known_historical_gap",
+            "duration_seconds": 0.011278624999999987,
+            "errno": 2,
+            "exception_filename": "docs/phase3-evidence/build.log",
+            "exception_message": "[Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'",
+            "exception_type": "FileNotFoundError",
+            "id": "test_demonstration.DemonstrationTests.test_prior_evidence_preserved",
+            "outcome": "error",
+            "traceback": "Traceback (most recent call last):\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py\", line 550, in _callTestMethod\n    method()\n  File \"/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase6-evidence/test_demonstration.py\", line 27, in test_prior_evidence_preserved\n    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), expected, path)\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1249, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1242, in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n  File \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py\", line 1110, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase3-evidence/build.log'\n"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.006905500000000009,
+            "id": "test_demonstration.DemonstrationTests.test_sensor_disconnect_removes_readback_not_motion",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0007196250000000015,
+            "id": "test_demonstration.DemonstrationTests.test_truncated_trace_rejected",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 11,
+        "unittest_successful": false
+      },
+      "started_utc": "2026-10-18T00:18:50.808603+00:00",
+      "suite": "phase6"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_tests.py",
+        "--_child",
+        "milestone1",
+        "--root",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+        "--missing",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/missing-historical.json",
+        "--child-result",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/tests/tests-20261018T001846.730422Z/milestone1.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-18T00:18:52.150144+00:00",
+      "policy_satisfied": true,
+      "result": {
+        "all_tests_passed": true,
+        "classifications": {
+          "passed": 55
+        },
+        "discovery": {
+          "directory": "docs/milestone1-evidence/tests",
+          "pattern": "test_*.py"
+        },
+        "expected_test_count": null,
+        "outcomes": {
+          "passed": 55
+        },
+        "policy_satisfied": true,
+        "suite": "milestone1",
+        "tests": [
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0043105420000000005,
+            "id": "test_evidence.EvidenceIntegrityTests.test_baseline_paths_cannot_escape_repository",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005504707999999983,
+            "id": "test_evidence.EvidenceIntegrityTests.test_changed_retained_file_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.09775575,
+            "id": "test_evidence.EvidenceIntegrityTests.test_cli_exit_codes_and_report_output",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.07272208299999999,
+            "id": "test_evidence.EvidenceIntegrityTests.test_cli_refuses_to_overwrite_retained_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.017600832999999982,
+            "id": "test_evidence.EvidenceIntegrityTests.test_complete_recovery_is_reported_separately",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00993608300000004,
+            "id": "test_evidence.EvidenceIntegrityTests.test_conflicting_original_hashes_are_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.008842500000000031,
+            "id": "test_evidence.EvidenceIntegrityTests.test_duplicate_json_key_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.025505708000000016,
+            "id": "test_evidence.EvidenceIntegrityTests.test_each_historical_record_requires_its_exact_original_hash",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.007235750000000041,
+            "id": "test_evidence.EvidenceIntegrityTests.test_inventory_cannot_add_or_drop_exceptions",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00945216600000004,
+            "id": "test_evidence.EvidenceIntegrityTests.test_known_gaps_remain_explicit_and_do_not_count_as_matches",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005178458999999969,
+            "id": "test_evidence.EvidenceIntegrityTests.test_malformed_metadata_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004669584000000004,
+            "id": "test_evidence.EvidenceIntegrityTests.test_missing_inventory_is_a_machine_readable_failure",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.006217291999999985,
+            "id": "test_evidence.EvidenceIntegrityTests.test_new_missing_retained_file_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.006848500000000035,
+            "id": "test_evidence.EvidenceIntegrityTests.test_new_unlisted_evidence_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005228291999999968,
+            "id": "test_evidence.EvidenceIntegrityTests.test_original_manifest_is_verified_directly",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0066115829999999765,
+            "id": "test_evidence.EvidenceIntegrityTests.test_symlink_substitution_is_fatal_even_for_identical_bytes",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004301209000000028,
+            "id": "test_evidence.EvidenceIntegrityTests.test_unpinned_inventory_change_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.083751417,
+            "id": "test_evidence.RetainedRepositoryTests.test_original_snapshot_and_29_gaps_are_intact",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0013593330000000181,
+            "id": "test_reproduce.DependencyAdapterTests.test_direct_adapter_cannot_write_retained_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.000140665999999956,
+            "id": "test_reproduce.DependencyAdapterTests.test_only_exact_retained_launch_is_translated",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001065457999999908,
+            "id": "test_reproduce.SourceAndOutputTests.test_build_symlink_cannot_authorize_writes_into_old_evidence",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0020982500000000792,
+            "id": "test_reproduce.SourceAndOutputTests.test_changed_or_unsafe_archive_rejected_before_extraction",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0008649159999999378,
+            "id": "test_reproduce.SourceAndOutputTests.test_duplicate_archive_members_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.097764458,
+            "id": "test_reproduce.SourceAndOutputTests.test_failed_and_timed_out_commands_leave_execution_records",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012439579999999895,
+            "id": "test_reproduce.SourceAndOutputTests.test_prior_evidence_and_existing_outputs_are_read_only",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.013836917000000004,
+            "id": "test_reproduce.SourceAndOutputTests.test_retained_bundle_extracts_with_exact_member_hashes",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0050702910000000045,
+            "id": "test_runtime.RuntimeChecks.test_added_runtime_file_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012270830000000732,
+            "id": "test_runtime.RuntimeChecks.test_archive_links_are_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0012799999999999478,
+            "id": "test_runtime.RuntimeChecks.test_archive_members_are_all_checked_before_extraction",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.003956791999999987,
+            "id": "test_runtime.RuntimeChecks.test_archive_mismatch_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0017811660000000007,
+            "id": "test_runtime.RuntimeChecks.test_cache_cannot_write_retained_evidence_even_through_build_symlink",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004243624999999973,
+            "id": "test_runtime.RuntimeChecks.test_changed_library_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004117666000000075,
+            "id": "test_runtime.RuntimeChecks.test_changed_source_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002564041999999933,
+            "id": "test_runtime.RuntimeChecks.test_corrupt_offline_archive_is_not_extracted",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00364191700000005,
+            "id": "test_runtime.RuntimeChecks.test_lock_mismatch_is_rejected_before_execution",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004357041999999978,
+            "id": "test_runtime.RuntimeChecks.test_matching_files_reach_smoke_test",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0006398749999999565,
+            "id": "test_runtime.RuntimeChecks.test_real_build_cache_is_allowed",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00036966699999996244,
+            "id": "test_runtime.RuntimeChecks.test_zero_exit_without_smoke_marker_fails",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009934580000000581,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_bytes_filename_cannot_match_known_gap",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009706250000000027,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_different_missing_path_in_preservation_check_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.004721500000000045,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_exact_known_gap_retains_error_and_explicit_classification",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0011343329999999874,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_filename_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0010228750000000897,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_missing_tests_and_setup_errors_are_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009324579999999694,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_other_errno_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.000979249999999987,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_other_exception_types_are_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.001379500000000089,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_previously_missing_path_now_present_cannot_be_exempted",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0007586250000000128,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_same_missing_path_in_unrelated_test_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0009384159999999975,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_suite_policy_rejects_every_unverified_outcome",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0011164169999999807,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_uninventoried_missing_log_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0016836249999999664,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_function_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.002503499999999992,
+            "id": "test_test_runner.HistoricalGapClassificationTests.test_unrelated_source_frame_is_fatal",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.0022500830000000693,
+            "id": "test_test_runner.OutputProtectionTests.test_build_milestone_records_and_external_scratch_are_allowed",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.005397582999999928,
+            "id": "test_test_runner.OutputProtectionTests.test_retained_phase_and_audit_outputs_rejected_before_any_write",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.00243916700000002,
+            "id": "test_test_runner.OutputProtectionTests.test_symlink_alias_to_retained_evidence_is_rejected",
+            "outcome": "passed"
+          },
+          {
+            "classification": "passed",
+            "duration_seconds": 0.003826666000000034,
+            "id": "test_test_runner.OutputProtectionTests.test_unrelated_repository_outputs_and_existing_directories_are_rejected",
+            "outcome": "passed"
+          }
+        ],
+        "tests_run": 55,
+        "unittest_successful": true
+      },
+      "started_utc": "2026-10-18T00:18:51.418639+00:00",
+      "suite": "milestone1"
+    }
+  ],
+  "warning": "Historical-gap classification does not turn original unittest errors into passed tests."
+}

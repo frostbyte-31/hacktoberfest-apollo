@@ -1,0 +1,122 @@
+{
+  "classification": "VERIFIED bounded synthetic original-software DPS/PIPA release gate",
+  "utc": "2026-10-18T00:40:01.477177+00:00",
+  "source_checkout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "raw_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release",
+  "source_revision": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "source_branch": "codex/backend-phase12",
+  "source_working_tree": "",
+  "original_evidence_seals": {
+    "phase10-evidence": {
+      "files_checked": 739,
+      "seal_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc",
+      "changed_or_missing": []
+    },
+    "phase11-evidence": {
+      "files_checked": 509,
+      "seal_sha256": "184c996c9930f54d5851ad1c7f794ea5245d252fb0b79e03b636ccda092f7c47",
+      "changed_or_missing": []
+    },
+    "phase12-evidence": {
+      "files_checked": 538,
+      "seal_sha256": "353c3ef0cbadb2c19937ecf826450e029694c9f7ec328ff6e040407a6f5a8236",
+      "changed_or_missing": []
+    },
+    "phase12-release-evidence": {
+      "files_checked": 468,
+      "seal_sha256": "5bf1b34d2a467d22a142859e2ef67994adc0c3210729bb2bcfbeeba565dfee40",
+      "changed_or_missing": []
+    }
+  },
+  "prior_files": {
+    "files_checked": 6340,
+    "changed_or_missing": []
+  },
+  "protected_frontend": {
+    "root": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/frontend-mission-control",
+    "files_checked": 5607,
+    "changed_or_missing": [],
+    "inventory_added": [],
+    "inventory_removed": [],
+    "branch": "codex/frontend-mission-control",
+    "head": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+    "status": " M frontend/README.md\n M frontend/dist/guidance.html\n M frontend/dist/guidance.mjs\n?? docs/FRONTEND_ARCHITECTURE.md\n?? docs/FRONTEND_INTEGRATION_CONTRACT.md\n?? docs/FRONTEND_MVP_VALIDATION.md\n?? docs/frontend-evidence/\n?? frontend/dist/mission-control.css\n?? frontend/dist/mission-provider.mjs\n?? frontend/dist/mission-types.d.ts\n?? frontend/dist/spacecraft-view.mjs\n?? frontend/package-lock.json\n?? frontend/package.json\n?? frontend/tests/mission-provider.test.mjs\n?? frontend/tests/spacecraft-view.test.mjs\n?? frontend/tsconfig.json\n",
+    "unchanged": true
+  },
+  "fresh_trace_comparisons": {
+    "sink": {
+      "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/sink/trace.jsonl.gz",
+      "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/sink/native/trace.jsonl",
+      "retained_raw_sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "fresh_raw_sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "fresh_bytes": 95246632,
+      "blocks_compared": 91,
+      "byte_for_byte_equal": true
+    },
+    "connected": {
+      "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/connected/trace.jsonl.gz",
+      "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/connected/native/trace.jsonl",
+      "retained_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "fresh_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "fresh_bytes": 194558720,
+      "blocks_compared": 186,
+      "byte_for_byte_equal": true
+    },
+    "no-feedback": {
+      "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/no-feedback/trace.jsonl.gz",
+      "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/no-feedback/native/trace.jsonl",
+      "retained_raw_sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "fresh_raw_sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "fresh_bytes": 104903145,
+      "blocks_compared": 101,
+      "byte_for_byte_equal": true
+    },
+    "repeat": {
+      "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/repeat/trace.jsonl.gz",
+      "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/repeat/native/trace.jsonl",
+      "retained_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "fresh_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "fresh_bytes": 194558720,
+      "blocks_compared": 186,
+      "byte_for_byte_equal": true
+    }
+  },
+  "fresh_test_results": {
+    "native": {
+      "passed": 16,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "model": {
+      "passed": 23,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "total_passed": 39,
+  "all_four_traces_equal": true,
+  "original_setup": {
+    "archive": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+    "archiveSHA256": "1df5e3c4432d58d30736cf2a46b7456a9de99debe1d35dfed72be37dcd813267",
+    "assembly": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/assembly-c1fe8313e0f84fe89574062ebd4b1077",
+    "licensing": "Original Luminary source is public domain; Virtual AGC tools carry GPL notices. See source/COPYING, LICENSE.txt and individual source headers.",
+    "listing": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/assembly-c1fe8313e0f84fe89574062ebd4b1077/Luminary099/MAIN.agc.lst",
+    "provenance": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/setups/20261018T003531Z-761ad7f7",
+    "rope": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/assembly-c1fe8313e0f84fe89574062ebd4b1077/Luminary099/MAIN.agc.bin",
+    "ropeSHA256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+    "setupFile": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/setups/20261018T003531Z-761ad7f7/setup.json",
+    "source": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/source",
+    "sourceFileCount": 359,
+    "sourceRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "symbols": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/assembly-c1fe8313e0f84fe89574062ebd4b1077/symbols.json",
+    "symtab": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/dependencies/assembly-c1fe8313e0f84fe89574062ebd4b1077/Luminary099/MAIN.agc.symtab",
+    "verified": true
+  },
+  "limitations": [
+    "Bounded synthetic fixed-attitude scenario; not calibrated historical descent.",
+    "The original flight computer controls the documented engine/PIPA experiment; this is not a complete landing.",
+    "Raw fresh streams remain in the build output; matching immutable retained compressed streams supply the same bytes."
+  ]
+}

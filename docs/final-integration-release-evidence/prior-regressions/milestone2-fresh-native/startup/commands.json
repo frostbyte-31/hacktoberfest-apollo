@@ -1,0 +1,111 @@
+[
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "--version"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:18.686023+00:00",
+    "end_utc": "2026-10-18T00:36:18.722989+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/usr/bin/cc",
+      "-O2",
+      "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone2-evidence/startup/startup_probe.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/wasm.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/agc_engine.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/agc_engine_init.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/agc_utilities.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/ringbuffer_api.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/ringbuffer.c",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source/yaAGC/rfopen.c",
+      "-lm",
+      "-o",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:18.723633+00:00",
+    "end_utc": "2026-10-18T00:36:19.436779+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/legacy.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:19.438409+00:00",
+    "end_utc": "2026-10-18T00:36:20.002507+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/delayed.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.014018+00:00",
+    "end_utc": "2026-10-18T00:36:20.197331+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/repeat.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.213968+00:00",
+    "end_utc": "2026-10-18T00:36:20.400470+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/without_v36.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.411794+00:00",
+    "end_utc": "2026-10-18T00:36:20.592894+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/imu_off.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.603820+00:00",
+    "end_utc": "2026-10-18T00:36:20.779289+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/v37_before_ready.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.790298+00:00",
+    "end_utc": "2026-10-18T00:36:20.974222+00:00",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/startup_probe",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase1-evidence/artifacts/MAIN.agc.bin",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup/v37_after_ready.inputs.txt"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:20.990960+00:00",
+    "end_utc": "2026-10-18T00:36:21.170787+00:00",
+    "exit": 0
+  }
+]

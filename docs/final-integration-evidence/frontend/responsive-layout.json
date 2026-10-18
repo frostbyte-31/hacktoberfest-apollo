@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-10-18T00:17:10.056Z",
+  "method": "Same-origin temporary HTML iframe rendered the actual mission.html at width 390 and height 844 CSS pixels. Fixture removed from application dist after capture; its source retained beside this receipt.",
+  "observed": {
+    "frameWidth": 390,
+    "frameHeight": 844,
+    "screenshot": "screenshots/mobile-layout-frame.png",
+    "twoColumnMetrics": true,
+    "stackedFlightAndControls": true
+  },
+  "limitations": [
+    "Chrome viewport capability did not change actual 1470px desktop viewport; no mobile-device emulation claimed.",
+    "Touch behavior and an actual mobile device were not tested."
+  ]
+}

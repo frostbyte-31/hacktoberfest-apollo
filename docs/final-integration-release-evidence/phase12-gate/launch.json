@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "docs/phase12-evidence/validate.py",
+    "--archive",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/phase89/virtualagc-f577e3fd.tar.gz",
+    "--runtime-manifest",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime-manifest.json",
+    "--output",
+    ".build/phase12/final-integration-release"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "started_utc": "2026-10-18T00:35:31.140340+00:00",
+  "exit": 0,
+  "ended_utc": "2026-10-18T00:39:51.233160+00:00"
+}

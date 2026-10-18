@@ -1,9 +1,13 @@
-import { validateGuidance, frameAt, boundedTime, nextEventTime, advanceReplay, seconds, clock, projectInitialState } from './guidance-state.mjs';
+import { boundedTime, nextEventTime, advanceReplay, seconds, clock } from './guidance-state.mjs';
+import { RecordedTraceProvider, LiveBackendProvider } from './mission-provider.mjs';
+import { renderSpacecraftView } from './spacecraft-view.mjs';
 import { lastAt } from './replay.mjs';
 
 const $ = id => document.getElementById(id);
 const text = (id, value) => { $(id).textContent = value; };
 let data = null;
+let provider = null;
+let liveDiscovery = null;
 let scenario = null;
 let time = 0;
 let playing = false;
@@ -57,53 +61,6 @@ function jump(target) {
   render();
 }
 
-function svgAttributes(id, values) {
-  for (const [name, value] of Object.entries(values)) $(id).setAttribute(name, String(value));
-}
-
-function drawInitialState() {
-  const initial = scenario.initialState;
-  const projection = projectInitialState(initial);
-  const x = p => 400 + p.x * 151;
-  const y = p => 206 + p.y * 151;
-  const p = projection.position;
-  svgAttributes('orbit-outline', { r: 151 * projection.orbitRadius });
-  $('craft-marker').hidden = false;
-  $('craft-marker').removeAttribute('hidden');
-  svgAttributes('craft-icon', { transform: `translate(${x(p)},${y(p)})` });
-  svgAttributes('craft-guide', { d: `M${x(p) - 10} ${y(p) + 7} L${x(p) - 43} ${y(p) + 40} H${x(p) - 150}` });
-  svgAttributes('craft-title', { x: x(p) - 150, y: y(p) + 54 });
-  svgAttributes('craft-subtitle', { x: x(p) - 150, y: y(p) + 69 });
-  text('craft-subtitle', `Navigation epoch ${seconds(initial.epochSeconds, { precision: 1 })} s · supplied state`);
-  if (projection.velocity) {
-    const v = projection.velocity;
-    svgAttributes('velocity-vector', { d: `M${x(p) + v.x * 13} ${y(p) + v.y * 13} L${x(p) + v.x * 65} ${y(p) + v.y * 65}` });
-  } else svgAttributes('velocity-vector', { d: '' });
-  if (projection.site) {
-    const site = projection.site;
-    $('site-marker').removeAttribute('hidden');
-    svgAttributes('site-ring', { cx: x(site), cy: y(site) });
-    svgAttributes('site-point', { cx: x(site), cy: y(site) });
-    svgAttributes('site-guide', { d: `M${x(site) + 7} ${y(site)} H${x(site) + 27} V${y(site) - 30} H${x(site) + 42}` });
-    svgAttributes('site-title', { x: x(site) + 46, y: y(site) - 32 });
-    svgAttributes('site-subtitle', { x: x(site) + 46, y: y(site) - 16 });
-    text('site-title', 'PLANNED LANDING SITE');
-    text('site-subtitle', `At TLAND ${seconds(initial.targetLandingTimeSeconds, { precision: 1 })} s`);
-    $('missing-site-note').setAttribute('hidden', '');
-  } else {
-    $('site-marker').setAttribute('hidden', '');
-    $('missing-site-note').removeAttribute('hidden');
-  }
-  text('moon-radius', `Reference radius · ${(initial.lunarRadiusM / 1000).toFixed(2)} km`);
-  text('orbit-altitude', `CIRCULAR INITIAL ORBIT · ${(initial.altitudeM / 1000).toFixed(2)} km`);
-  text('projection-epoch-note', projection.site
-    ? `Spacecraft at ${seconds(initial.epochSeconds, { precision: 0 })} s · planned site at TLAND ${seconds(initial.targetLandingTimeSeconds, { precision: 1 })} s. Separate epochs; static illustration.`
-    : `Spacecraft at ${seconds(initial.epochSeconds, { precision: 0 })} s · no landing site initialized. Static illustration; no motion is simulated.`);
-  setValue('initial-altitude', (initial.altitudeM / 1000).toFixed(2), 'km');
-  setValue('initial-speed', initial.speedMps.toFixed(2), 'm/s');
-  setValue('initial-epoch', seconds(initial.epochSeconds, { precision: 0 }), 's');
-}
-
 function buildEvents() {
   const list = $('guidance-events');
   const marks = $('guidance-timeline-marks');
@@ -137,7 +94,7 @@ function buildEvents() {
 }
 
 function selectScenario(id) {
-  scenario = data.cases.find(item => item.id === id);
+  scenario = provider.getScenario(id);
   if (!scenario) return;
   setPlaying(false);
   lastFrame = null;
@@ -150,7 +107,7 @@ function selectScenario(id) {
   $('guidance-scrubber').max = scenario.durationSeconds;
   text('replay-duration', clock(scenario.durationSeconds).slice(3));
   text('replay-end-label', scenario.result.reviewReached ? 'V06 N61 · CREW REVIEW' : '01406 · NUMERICAL FAILURE');
-  drawInitialState();
+  renderSpacecraftView($('spacecraft-overview'), scenario.initialState);
   buildEvents();
   // Open at an actual P63 checkpoint. Restart retains access to the entire startup.
   time = scenario.events.find(event => event.id === 'p63')?.t ?? 0;
@@ -160,7 +117,7 @@ function selectScenario(id) {
 
 function render() {
   if (!scenario) return;
-  const frame = frameAt(scenario, time);
+  const frame = provider.getSnapshot(scenario.id, time).frame;
   const event = lastAt(scenario.events, time);
   text('replay-time', clock(time).slice(3));
   if (!playing) $('guidance-play').lastElementChild.textContent = time >= scenario.durationSeconds ? 'Replay again' : 'Start replay';
@@ -170,6 +127,8 @@ function render() {
     lastFrame = frame;
     for (const [key, id] of Object.entries({ PROG: 'dsky-program', VERB: 'dsky-verb', NOUN: 'dsky-noun', R1: 'dsky-r1', R2: 'dsky-r2', R3: 'dsky-r3' })) text(id, frame.dsky[key]);
     text('guidance-stage', frame.stage);
+    text('top-mission-stage', frame.stage);
+    text('top-mission-clock', clock(frame.observedClockSeconds));
     text('mission-clock', clock(frame.observedClockSeconds));
     setValue('guidance-ttf', seconds(frame.signedTimeToGoSeconds, { signed: true }), 's');
     setValue('guidance-tig', seconds(frame.ignitionTimeSeconds), 's GET');
@@ -212,7 +171,44 @@ function openDetails(kind) {
   const body = $('guidance-dialog-body');
   body.replaceChildren();
   body.className = 'g-provenance';
-  if (kind === 'projection') {
+  if (kind === 'compare') {
+    text('guidance-dialog-title', 'One changed input. Original answers.');
+    addParagraph(body, 'Completed recordings compared at their retained horizons. These are original AGC observations from separate synthetic experiments; changing a selection does not run a new guidance calculation.');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'g-comparison-scroll';
+    const table = document.createElement('table');
+    table.className = 'g-comparison';
+    const caption = document.createElement('caption');
+    caption.textContent = 'Verified recorded execution · completed experiment outcomes';
+    const head = document.createElement('thead');
+    const labels = document.createElement('tr');
+    for (const label of ['Scenario', 'Ignition time', 'Observed roots', 'Outcome']) {
+      const th = document.createElement('th'); th.scope = 'col'; th.textContent = label; labels.append(th);
+    }
+    head.append(labels);
+    const rows = document.createElement('tbody');
+    for (const result of provider.compareScenarios()) {
+      const row = document.createElement('tr');
+      const title = document.createElement('th'); title.scope = 'row'; title.textContent = result.title; row.append(title);
+      for (const value of [result.ignitionTimeSeconds === null ? 'Not calculated' : `${seconds(result.ignitionTimeSeconds)} s GET`, String(result.rootCount), result.reviewReached ? 'V06 N61 · pre-ignition review' : `${result.finalAlarms.join(' / ')} · guidance stopped`]) {
+        const td = document.createElement('td'); td.textContent = value; row.append(td);
+      }
+      rows.append(row);
+    }
+    table.append(caption, head, rows); wrapper.append(table); body.append(wrapper);
+    addParagraph(body, 'A root observation alone is not a completed ignition solution. The missing-site control reaches provisional root results before its genuine 01406 alarm; no ignition time is supplied. All absolute ignition times are mission elapsed seconds, not countdowns.');
+  } else if (kind === 'capabilities') {
+    text('guidance-dialog-title', 'What is available right now?');
+    addParagraph(body, 'This screen reads verified recordings. Backend discovery only makes read-only status requests. It does not start an AGC, send key commands or control a vehicle.');
+    addParagraph(body, liveDiscovery?.message ?? 'Backend discovery has not returned. Recorded playback remains independent of a backend.');
+    const list = document.createElement('dl');
+    for (const capability of liveDiscovery?.capabilities ?? []) {
+      const dt = document.createElement('dt'); dt.textContent = `${capability.label} · ${capability.availability}`;
+      const dd = document.createElement('dd'); dd.textContent = capability.description; list.append(dt, dd);
+    }
+    body.append(list);
+    addParagraph(body, 'For bounded live yaw/pitch controls, open the existing attitude lab on a server launched with live execution enabled. Recorded Phase 10 pre-ignition guidance does not become live when that lab is available. Engine ignition, descent, multiplayer and AI crew are not available here.');
+  } else if (kind === 'projection') {
     text('guidance-dialog-title', 'A starting point, not a flight path.');
     addParagraph(body, data?.labels.projection ?? 'A static illustration of supplied initialization data.');
     addParagraph(body, 'The circle uses the magnitude of the supplied three-dimensional position and the documented lunar reference radius. The arrow shows the initial velocity projected into X–Z. Lunar-surface texture and the vehicle symbol are illustrative. No position changes when the replay runs.');
@@ -240,6 +236,13 @@ function openDetails(kind) {
       }
       body.append(list);
       addParagraph(body, data.labels.scope, 'g-proof-note');
+      addParagraph(body, 'The display layout is Apollo-inspired. Program, verb, noun and register digits come from the verified relay decoder; lamp names follow Virtual AGC references. Indicator and sign-lamp states are unavailable here, so the panel is not a complete historical DSKY replica.');
+      const dskyReference = document.createElement('a');
+      dskyReference.href = 'https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/yaDSKY2/LM.ini';
+      dskyReference.textContent = 'Pinned Virtual AGC Lunar Module DSKY reference ↗';
+      dskyReference.target = '_blank';
+      dskyReference.rel = 'noopener';
+      body.append(dskyReference);
       addParagraph(body, 'The original regression suite still identifies three missing historical evidence errors. They are not passing tests and are not needed to manufacture this recording. The Phase 10.5 report documents the recovery investigation.');
       const link = document.createElement('a');
       link.href = './data/guidance.json';
@@ -252,24 +255,56 @@ function openDetails(kind) {
   $('guidance-dialog').showModal();
 }
 
+function clearUnavailableRecording() {
+  setPlaying(false);
+  provider = null;
+  data = null;
+  scenario = null;
+  lastFrame = null;
+  selectedEvent = null;
+  time = 0;
+  for (const id of ['dsky-program', 'dsky-verb', 'dsky-noun']) text(id, '??');
+  for (const id of ['dsky-r1', 'dsky-r2', 'dsky-r3', 'mission-clock', 'top-mission-clock', 'guidance-ttf', 'guidance-tig', 'guidance-lead', 'initial-altitude', 'initial-speed', 'initial-epoch', 'replay-duration', 'moon-radius', 'orbit-altitude']) text(id, '—');
+  text('guidance-stage', 'Recording unavailable');
+  text('top-mission-stage', 'Recording unavailable');
+  text('guidance-stage-detail', 'No substitute AGC values are displayed. Retry after restoring the verified dataset.');
+  text('root-count', '—');
+  text('observation-note', 'No verified observation loaded.');
+  text('projection-epoch-note', 'Initialized geometry is unavailable. No substitute position is drawn.');
+  text('event-count', 'NO VERIFIED RECORDING');
+  text('replay-time', '00:00.00');
+  text('replay-end-label', 'NO VERIFIED RECORDING');
+  $('guidance-alarm').hidden = true;
+  $('craft-marker').setAttribute('hidden', '');
+  $('site-marker').setAttribute('hidden', '');
+  $('missing-site-note').setAttribute('hidden', '');
+  $('velocity-vector').setAttribute('d', '');
+  $('orbit-outline').setAttribute('hidden', '');
+  $('guidance-scrubber').value = 0;
+  $('guidance-scrubber').style.setProperty('--g-progress', '0%');
+  $('guidance-events').replaceChildren();
+  $('guidance-timeline-marks').replaceChildren();
+}
+
 async function load() {
+  setPlaying(false);
   $('guidance-loading').hidden = false;
   $('guidance-error').hidden = true;
   $('guidance-console').setAttribute('aria-busy', 'true');
+  for (const control of document.querySelectorAll('[data-scenario], #guidance-compare, #guidance-outcome, #guidance-transport button, #guidance-transport select, #guidance-transport input')) control.disabled = true;
   try {
-    const response = await fetch('./data/guidance.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`Recording request returned HTTP ${response.status}.`);
-    data = validateGuidance(await response.json());
+    provider = await RecordedTraceProvider.load({ url: './data/guidance.json' });
+    data = provider.recording;
     for (const button of document.querySelectorAll('[data-scenario]')) button.disabled = false;
-    for (const id of ['guidance-play', 'guidance-restart', 'guidance-previous', 'guidance-next', 'guidance-speed', 'guidance-scrubber', 'guidance-jump']) $(id).disabled = false;
+    for (const id of ['guidance-play', 'guidance-restart', 'guidance-previous', 'guidance-next', 'guidance-speed', 'guidance-scrubber', 'guidance-jump', 'guidance-compare', 'guidance-outcome']) $(id).disabled = false;
     $('guidance-console').setAttribute('aria-busy', 'false');
     selectScenario('nominal');
   } catch (error) {
-    setPlaying(false);
+    clearUnavailableRecording();
     text('guidance-error-detail', `${error.message} Start the documented demo server and verify the replay export.`);
     $('guidance-error').hidden = false;
     announce('Guidance recording unavailable. No replacement telemetry is displayed.');
-  } finally { $('guidance-loading').hidden = true; }
+  } finally { $('guidance-loading').hidden = true; $('guidance-console').setAttribute('aria-busy', 'false'); }
 }
 
 for (const button of document.querySelectorAll('[data-scenario]')) button.addEventListener('click', () => selectScenario(button.dataset.scenario));
@@ -289,6 +324,21 @@ $('guidance-retry').addEventListener('click', load);
 $('provenance-open').addEventListener('click', () => openDetails('provenance'));
 $('provenance-footer').addEventListener('click', () => openDetails('provenance'));
 $('projection-explain').addEventListener('click', () => openDetails('projection'));
+$('guidance-outcome').addEventListener('click', () => {
+  if (!scenario) return;
+  jump(scenario.durationSeconds);
+  announce('Showing the selected experiment’s final retained observation. This is recorded execution, not a new guidance calculation.');
+});
+$('guidance-compare').addEventListener('click', () => openDetails('compare'));
+$('capabilities-open').addEventListener('click', () => openDetails('capabilities'));
 $('guidance-dialog-close').addEventListener('click', () => $('guidance-dialog').close());
 document.addEventListener('visibilitychange', () => { if (document.hidden) setPlaying(false); });
 load();
+
+// Read-only discovery never starts a session or changes this screen's recorded mode.
+new LiveBackendProvider().discover().then(discovery => {
+  liveDiscovery = discovery;
+  text('backend-availability', discovery.available && discovery.liveEnabled ? 'Live attitude lab available separately' : discovery.available ? 'Recorded demo server · live controls disabled' : 'No live backend connected');
+}).catch(() => {
+  text('backend-availability', 'Live backend unavailable · recordings separate');
+});

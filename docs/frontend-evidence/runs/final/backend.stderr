@@ -1,0 +1,37 @@
+test_exact_fields_and_pilot_value_bounds_reject_without_forwarding (test_http.HttpTests) ... ok
+test_host_origin_and_fetch_site_reject_cross_site_control_before_state_changes (test_http.HttpTests) ... ok
+test_localhost_requires_its_own_matching_origin (test_http.HttpTests) ... ok
+test_non_finite_duplicate_malformed_and_non_object_json_never_submit_inputs (test_http.HttpTests) ... ok
+test_preflight_has_no_cors_grant_and_cannot_start_native_work (test_http.HttpTests) ... ok
+test_read_only_routes_do_not_create_session_or_submit_inputs (test_http.HttpTests) ... ok
+test_replay_only_server_discloses_disabled_live_and_rejects_all_mutations (test_http.HttpTests) ... ok
+test_request_framing_body_limit_and_content_type_fail_before_mutation (test_http.HttpTests) ... ok
+test_start_input_and_stop_preserve_session_identity_and_forward_only_pilot_inputs (test_http.HttpTests) ... ok
+test_static_routes_serve_dist_and_never_repository_source (test_http.HttpTests) ... ok
+test_token_is_required_for_mutation_and_record_and_non_ascii_is_rejected (test_http.HttpTests) ... ok
+test_all_source_mapped_signed_rhc_switch_words (test_native.NativeContractTests) ... ok
+test_command_lease_bounds_and_zero_duration_neutral (test_native.NativeContractTests) ... ok
+test_conservative_fast_sensor_choice_is_permitted (test_native.NativeContractTests) ... ok
+test_execution_rejects_invalid_cycle_values (test_native.NativeContractTests) ... ok
+test_returned_frame_cannot_mutate_authoritative_state (test_native.NativeContractTests) ... ok
+test_rhc_rejects_bool_float_string_and_out_of_range_values (test_native.NativeContractTests) ... ok
+test_runtime_tree_validation_failure_prevents_engine_creation (test_native.NativeContractTests) ... ok
+test_slow_sensor_mode_is_limited_by_actual_gimbal_rate (test_native.NativeContractTests) ... ok
+test_tampered_prepared_source_rejected_before_engine_creation (test_native.NativeContractTests) ... ok
+test_tampered_runtime_manifest_rejected_before_engine_creation (test_native.NativeContractTests) ... ok
+test_unstarted_session_rejects_commands_and_execution (test_native.NativeContractTests) ... ok
+test_wrong_thread_rejected_before_native_execution (test_native.NativeContractTests) ... ok
+test_cached_snapshots_and_downloads_cannot_mutate_authoritative_state (test_service.ServiceTests) ... ok
+test_expired_queued_deflection_never_reaches_native_and_lost_client_neutralizes (test_service.ServiceTests) ... ok
+test_neutral_cancels_a_full_pending_queue_and_bypasses_rate_limit (test_service.ServiceTests) ... ok
+test_one_owner_drives_commands_stop_and_persisted_record (test_service.ServiceTests) ... ok
+test_processing_delay_does_not_extend_receipt_based_wall_lease (test_service.ServiceTests) ... ok
+test_ready_is_paused_and_neutral_does_not_start_native_time (test_service.ServiceTests) ... ok
+test_stop_during_startup_does_not_publish_ready_or_accept_input (test_service.ServiceTests) ... ok
+test_strict_inputs_session_identity_and_sequence_rejection_do_not_reach_native (test_service.ServiceTests) ... ok
+test_unready_startup_faults_and_never_accepts_pilot_input (test_service.ServiceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.229s
+
+OK

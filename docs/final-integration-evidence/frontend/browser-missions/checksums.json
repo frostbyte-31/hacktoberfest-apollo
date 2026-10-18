@@ -1,0 +1,24 @@
+[
+  {
+    "label": "manual",
+    "missionId": "2e83d6080c807849",
+    "files": {
+      "audit.jsonl": "d77d76039cd04f7e154d8333ae3a672f7da18bef92c2af07bcf331d8fb103dea"
+    }
+  },
+  {
+    "label": "three-human",
+    "missionId": "0d9764baefe2d205",
+    "files": {
+      "audit.jsonl": "a251ef6dc446afc781aba2cb4c288ce42ca5e8a5cddc1612035ad61b6b34784a"
+    }
+  },
+  {
+    "label": "fallback-debrief",
+    "missionId": "653a02d87f4d7761",
+    "files": {
+      "audit.jsonl": "d24a7f2314942599467f40a9c6f637bf104edf78ee0ca3feb2038ed90977f57f",
+      "debrief-90bec5d617f95e46.json": "771574a90398f8e153605135edff65377831815bf05229ba0b0f5a28faee3c22"
+    }
+  }
+]

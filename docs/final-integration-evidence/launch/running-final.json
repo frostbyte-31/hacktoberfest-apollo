@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-18T00:29:27.553299+00:00",
+  "url": "http://127.0.0.1:52732/mission.html",
+  "command": [
+    "python3",
+    "-B",
+    "tools/final_demo.py",
+    "--bootstrap-runtime",
+    "--port",
+    "0"
+  ],
+  "capabilities": {
+    "schemaVersion": 1,
+    "capabilities": {
+      "recordedGuidance": true,
+      "liveAuthenticAttitude": true,
+      "recordedPropulsion": true,
+      "physicsLab": true,
+      "multiplayer": true,
+      "deterministicCrew": true,
+      "llmConfigured": false,
+      "authenticLanding": false
+    },
+    "crewRoles": [
+      {
+        "id": "commander",
+        "name": "Neil Armstrong",
+        "role": "Commander",
+        "location": "Lunar Module",
+        "responsibility": "Educational flight controls"
+      },
+      {
+        "id": "lunar-module-pilot",
+        "name": "Buzz Aldrin",
+        "role": "Lunar Module Pilot",
+        "location": "Lunar Module",
+        "responsibility": "Telemetry and learning checklist"
+      },
+      {
+        "id": "command-module-pilot",
+        "name": "Michael Collins",
+        "role": "Command Module Pilot",
+        "location": "Command Module in lunar orbit",
+        "responsibility": "Communication and mission coordination"
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "training",
+        "title": "Final approach",
+        "altitudeM": 150.0,
+        "verticalSpeedMps": -5.0,
+        "horizontalSpeedMps": 1.0,
+        "massKg": 8000.0,
+        "fuelKg": 500.0,
+        "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+      },
+      {
+        "id": "braking",
+        "title": "Brake before touchdown",
+        "altitudeM": 300.0,
+        "verticalSpeedMps": -15.0,
+        "horizontalSpeedMps": 3.0,
+        "massKg": 8000.0,
+        "fuelKg": 500.0,
+        "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+      },
+      {
+        "id": "low-fuel",
+        "title": "Limited propellant",
+        "altitudeM": 150.0,
+        "verticalSpeedMps": -5.0,
+        "horizontalSpeedMps": 1.0,
+        "massKg": 8000.0,
+        "fuelKg": 15.0,
+        "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+      }
+    ],
+    "networkScope": "Shared local server; three browser clients use one authoritative mission.",
+    "limitations": [
+      "Original AGC-guided landing has not been demonstrated.",
+      "Educational lab controls are independent of Luminary; deterministic assistance is not an LLM.",
+      "Recorded authentic propulsion remains a fixed-attitude bounded experiment."
+    ],
+    "dependencyError": null
+  },
+  "served_documents_sha256": {
+    "mission.html": "6dfff79f8319680daa3014c088436385c2c7322e652c4275e44fa8bcbf484e44",
+    "guidance.html": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8",
+    "index.html": "46a5fde985f6847752e0c9abb77058ca47136e8dea8d7e5ac179977f66ad9988"
+  },
+  "status": "VERIFIED running final source; server left available for user",
+  "occupied_prior_attempts": [
+    {
+      "port": 4173,
+      "exit": 2
+    },
+    {
+      "port": 4180,
+      "exit": 2
+    }
+  ],
+  "occupied_handling": "Both prior services preserved; operating system selected a free port for this owned server."
+}

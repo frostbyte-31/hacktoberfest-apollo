@@ -1,0 +1,105 @@
+{
+  "tests_run": 16,
+  "passed": true,
+  "tests": [
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_all_workloads_replay_exactly",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0025507909999999967
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_backlog_can_catch_up_faster_than_nominal_deadline_spacing",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00011350000000032168
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_deadline_cadence_uses_exact_clock_and_not_rounded_wrapper",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0001513329999998092
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_each_supported_packet_is_enqueued_and_applied",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00015245800000052157
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_fifo_capacity_control_detects_silent_loss_despite_packet_acceptance",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00014175000000005156
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_mixed_runs_preserve_order_and_signed_net_count",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0005222919999994247
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_other_axes_remain_zero",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.011240166999999524
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_packet_consumption_and_actual_application_are_separate",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.002698999999999785
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_pure_signed_fast_counts_and_symmetric_application_times",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.00010729099999995384
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_pure_signed_slow_counts_and_symmetric_application_times",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 7.470799999964584e-05
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_queue_settlement_and_quiet_observation_are_bounded",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.0005387499999995882
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_ringbuffer_capacity_control_and_same_run_coalescing",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 6.520900000062113e-05
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_signed_wrap_uses_packets_without_counter_initialization_writes",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 5.658300000010996e-05
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_build_symlink_escape_into_retained_evidence",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.08245349999999974
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_existing_output_without_writing",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.08333812500000004
+    },
+    {
+      "id": "test_cdu_timing.NativeCduTiming.test_worker_rejects_new_retained_evidence_path_before_loading_engine",
+      "outcome": "passed",
+      "classification": "passed",
+      "duration_seconds": 0.08351958299999929
+    }
+  ],
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0
+}

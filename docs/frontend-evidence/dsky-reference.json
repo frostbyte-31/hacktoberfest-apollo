@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/yaDSKY2/LM.ini",
+  "local_sha256": "5ebfa0fdb970e1f18d962c00ea1e7c5d680c205e7c0915df633d8790754a1ba2",
+  "references": [
+    "https://www.ibiblio.org/apollo/yaDSKY.html",
+    "https://www.ibiblio.org/apollo/developer.html"
+  ],
+  "scope": "Apollo-inspired labels; not a flight-exact faceplate. Recording exporter decodes digit relays only; indicator and sign lamps remain UNKNOWN."
+}

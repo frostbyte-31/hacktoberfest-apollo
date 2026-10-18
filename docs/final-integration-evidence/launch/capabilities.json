@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "capabilities": {
+    "recordedGuidance": true,
+    "liveAuthenticAttitude": false,
+    "recordedPropulsion": true,
+    "physicsLab": false,
+    "multiplayer": false,
+    "deterministicCrew": false,
+    "llmConfigured": false,
+    "authenticLanding": false
+  },
+  "crewRoles": [
+    {
+      "id": "commander",
+      "name": "Neil Armstrong",
+      "role": "Commander",
+      "location": "Lunar Module",
+      "responsibility": "Educational flight controls"
+    },
+    {
+      "id": "lunar-module-pilot",
+      "name": "Buzz Aldrin",
+      "role": "Lunar Module Pilot",
+      "location": "Lunar Module",
+      "responsibility": "Telemetry and learning checklist"
+    },
+    {
+      "id": "command-module-pilot",
+      "name": "Michael Collins",
+      "role": "Command Module Pilot",
+      "location": "Command Module in lunar orbit",
+      "responsibility": "Communication and mission coordination"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "training",
+      "title": "Final approach",
+      "altitudeM": 150.0,
+      "verticalSpeedMps": -5.0,
+      "horizontalSpeedMps": 1.0,
+      "massKg": 8000.0,
+      "fuelKg": 500.0,
+      "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+    },
+    {
+      "id": "braking",
+      "title": "Brake before touchdown",
+      "altitudeM": 300.0,
+      "verticalSpeedMps": -15.0,
+      "horizontalSpeedMps": 3.0,
+      "massKg": 8000.0,
+      "fuelKg": 500.0,
+      "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+    },
+    {
+      "id": "low-fuel",
+      "title": "Limited propellant",
+      "altitudeM": 150.0,
+      "verticalSpeedMps": -5.0,
+      "horizontalSpeedMps": 1.0,
+      "massKg": 8000.0,
+      "fuelKg": 15.0,
+      "description": "Synthetic manual-control landing laboratory; no AGC guidance."
+    }
+  ],
+  "networkScope": "Shared local server; three browser clients use one authoritative mission.",
+  "limitations": [
+    "Original AGC-guided landing has not been demonstrated.",
+    "Educational lab controls are independent of Luminary; deterministic assistance is not an LLM.",
+    "Recorded authentic propulsion remains a fixed-attitude bounded experiment."
+  ],
+  "dependencyError": null
+}

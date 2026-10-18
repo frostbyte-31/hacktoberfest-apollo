@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED",
+  "experiments": [
+    "software-owned startup",
+    "X-CDU sign/rate/settlement/capacity",
+    "unchanged plant signed-selector component"
+  ],
+  "prior_files_preserved": 534,
+  "limits": "Diagnostic validation, not general sensor/vehicle fidelity, Phase7, descent or landing"
+}

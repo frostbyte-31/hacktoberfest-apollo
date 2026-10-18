@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "frontend/tests/flight-view.test.mjs",
+    "frontend/tests/guidance.test.mjs",
+    "frontend/tests/live.test.mjs",
+    "frontend/tests/mission-live-provider.test.mjs",
+    "frontend/tests/mission-provider.test.mjs",
+    "frontend/tests/replay.test.mjs",
+    "frontend/tests/spacecraft-view.test.mjs"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+  "exit_code": 0,
+  "reason": "Final endpoint explanation labels frozen contact state instead of continuing descent."
+}

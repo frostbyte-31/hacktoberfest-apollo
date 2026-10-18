@@ -1,0 +1,312 @@
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:2: trailing whitespace.
++rate_1.0	1	0.00999716	1.0	0.00999716	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:13: trailing whitespace.
++rate_1.0	12	0.11996592	1.0	0.11996592000000002	0.10986328125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:24: trailing whitespace.
++rate_1.0	23	0.22993468	1.0	0.22993468000000006	0.2197265625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:35: trailing whitespace.
++rate_1.0	34	0.33990344	1.0	0.3399034400000001	0.32958984375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:46: trailing whitespace.
++rate_1.0	45	0.4498722	1.0	0.44987220000000017	0.439453125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:57: trailing whitespace.
++rate_1.0	56	0.5598409599999999	1.0	0.5598409599999999	0.54931640625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:68: trailing whitespace.
++rate_1.0	67	0.6698097199999999	1.0	0.6698097199999994	0.6591796875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:79: trailing whitespace.
++rate_1.0	78	0.7797784799999999	1.0	0.7797784799999988	0.76904296875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:90: trailing whitespace.
++rate_1.0	89	0.8897472399999999	1.0	0.8897472399999983	0.87890625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:101: trailing whitespace.
++rate_1.0	100	0.9997159999999999	1.0	0.9997159999999977	0.98876953125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:102: trailing whitespace.
++rate_-1.0	1	0.00999716	-1.0	359.99000284	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:113: trailing whitespace.
++rate_-1.0	12	0.11996592	-1.0	359.88003407999986	359.89013671875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:124: trailing whitespace.
++rate_-1.0	23	0.22993468	-1.0	359.77006531999973	359.7802734375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:135: trailing whitespace.
++rate_-1.0	34	0.33990344	-1.0	359.6600965599996	359.67041015625	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:146: trailing whitespace.
++rate_-1.0	45	0.4498722	-1.0	359.5501277999995	359.560546875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:157: trailing whitespace.
++rate_-1.0	56	0.5598409599999999	-1.0	359.44015903999934	359.45068359375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:168: trailing whitespace.
++rate_-1.0	67	0.6698097199999999	-1.0	359.3301902799992	359.3408203125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:179: trailing whitespace.
++rate_-1.0	78	0.7797784799999999	-1.0	359.2202215199991	359.23095703125	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:190: trailing whitespace.
++rate_-1.0	89	0.8897472399999999	-1.0	359.11025275999896	359.12109375	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:201: trailing whitespace.
++rate_-1.0	100	0.9997159999999999	-1.0	359.0002839999988	359.01123046875	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1002: trailing whitespace.
++quant_1_0.999	1	0.00999716	1	0.010975341796875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1003: trailing whitespace.
++quant_1_1.0	1	0.00999716	1	0.010986328125	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1006: trailing whitespace.
++quant_-1_0.999	1	0.00999716	-1	359.9890246582031	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1007: trailing whitespace.
++quant_-1_1.0	1	0.00999716	-1	359.989013671875	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1014: trailing whitespace.
++inhibit_zero	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	
+docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout:1015: trailing whitespace.
++inhibit_locked	1	0.00999716	8.0	0.0	0.0	0	0	0	0	0.010986328125	

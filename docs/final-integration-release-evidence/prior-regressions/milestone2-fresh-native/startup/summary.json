@@ -1,0 +1,416 @@
+{
+  "legacy": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "882f5e0ed95565ab4ad77511cb78c8b69953a2429c40d1f301abb2c79b6da3dd",
+    "first_modreg_p00_after_startup": null,
+    "first_issup_clear": 1480209,
+    "first_startdap": 1484080,
+    "first_cantroo": 1128333,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 1128360,
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 32767,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "delayed": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641",
+    "first_modreg_p00_after_startup": 1729504,
+    "first_issup_clear": 1480208,
+    "first_startdap": 1484077,
+    "first_cantroo": null,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 0,
+      "imodes30": 15889,
+      "imodes33": 15360,
+      "failreg": [
+        0,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "repeat": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "3ce19b0640e9e42c5afd4a6b169972051e7d51ef3e610a4ecbc867d17ac2c641",
+    "first_modreg_p00_after_startup": 1729504,
+    "first_issup_clear": 1480208,
+    "first_startdap": 1484077,
+    "first_cantroo": null,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 0,
+      "imodes30": 15889,
+      "imodes33": 15360,
+      "failreg": [
+        0,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "without_v36": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "34a9cefa241221d918726b4ab2ec3d632890a2508dea27d8b2d68281e3ec94d2",
+    "first_modreg_p00_after_startup": 1730626,
+    "first_issup_clear": 1077436,
+    "first_startdap": 1078745,
+    "first_cantroo": null,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 0,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        583,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "imu_off": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "eab2852b9ad4c9fec9d6959ded7c0b44c24188603350e2f5a4901d7875b7e287",
+    "first_modreg_p00_after_startup": 1729394,
+    "first_issup_clear": null,
+    "first_startdap": null,
+    "first_cantroo": null,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491371,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 0,
+      "imodes30": 16137,
+      "imodes33": 15392,
+      "failreg": [
+        0,
+        0,
+        0
+      ],
+      "chan30": 15871,
+      "chan31": 28671,
+      "chan12": 0,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "v37_before_ready": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "3ec8c4e6db3d5d250fb946de27fe12808d1f97f5fa2b04ecc5ca9f84ae19f672",
+    "first_modreg_p00_after_startup": null,
+    "first_issup_clear": 1480208,
+    "first_startdap": 1484078,
+    "first_cantroo": 1428398,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 1428425,
+        "failreg": [
+          848,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 32767,
+      "imodes30": 15873,
+      "imodes33": 15360,
+      "failreg": [
+        848,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  },
+  "v37_after_ready": {
+    "status": "VERIFIED observations",
+    "raw_sha256": "a56855dcffd766e8fddadfacb8076d414cfd2f122fa1e08b52076a3788d7f99d",
+    "first_modreg_p00_after_startup": 1629438,
+    "first_issup_clear": 1480208,
+    "first_startdap": 1484077,
+    "first_cantroo": null,
+    "ptbad_cycles": [
+      526
+    ],
+    "failreg_changes": [
+      {
+        "cycle": 0,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 553,
+        "failreg": [
+          583,
+          0,
+          0
+        ]
+      },
+      {
+        "cycle": 491361,
+        "failreg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "last_state": {
+      "ev": "sample",
+      "cycle": 2200000,
+      "modreg": 0,
+      "imodes30": 15889,
+      "imodes33": 15360,
+      "failreg": [
+        0,
+        0,
+        0
+      ],
+      "chan30": 15615,
+      "chan31": 28671,
+      "chan12": 32,
+      "cdu": [
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_jet_words": 0
+  }
+}

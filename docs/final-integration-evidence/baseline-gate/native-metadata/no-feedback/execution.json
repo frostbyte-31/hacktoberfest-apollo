@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/run_engine.py",
+    "--setup",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/setups/20261017T235404Z-0ddce461/setup.json",
+    "--plant-source",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/plant-source",
+    "--tcl",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+    "--runtime-manifest",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime-manifest.json",
+    "--case",
+    "no-feedback",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/runs/no-feedback"
+  ],
+  "revision": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "utc": "2026-10-17T23:55:44.761143+00:00",
+  "driver_sha256": "e06c8eeaf3703daf4460e17eb82e6a837a6b54e36b42314a1f71ff5ddd5b9d86",
+  "engine_sha256": "eb9723f5c667f4ee365954c9b5014a383f42f1cf4e6aea767d38970df948785b",
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "case": "no-feedback",
+  "physical_engine_connected": true,
+  "pipa_feedback_connected": false,
+  "scope": "SYNTHETIC fixed-attitude P63 engine experiment; original outputs, external legacy propulsion and optional PIPA; no landing"
+}

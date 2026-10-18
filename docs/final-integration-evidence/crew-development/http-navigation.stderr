@@ -1,0 +1,26 @@
+test_cross_site_navigation_allows_static_documents_only_with_a_valid_host (test_final_http.FinalHttpTests) ... FAIL
+test_global_token_origin_host_and_participant_auth_are_enforced (test_final_http.FinalHttpTests) ... ok
+test_identical_http_inputs_and_owner_ticks_are_deterministic (test_final_http.FinalHttpTests) ... ok
+test_invalid_json_nonfinite_duplicates_and_extra_fields_never_create_a_mission (test_final_http.FinalHttpTests) ... ok
+test_preserved_old_routes_and_static_data_do_not_start_native_execution (test_final_http.FinalHttpTests) ... ok
+test_request_size_type_length_and_incomplete_bodies_fail_closed (test_final_http.FinalHttpTests) ... ok
+test_restart_stale_epoch_duplicate_sequence_and_reload_state (test_final_http.FinalHttpTests) ... ok
+test_role_permissions_prevent_flight_or_state_writes_and_preserve_sequence (test_final_http.FinalHttpTests) ... ok
+test_start_requires_exactly_three_occupied_ready_roles_and_seats_cannot_collide (test_final_http.FinalHttpTests) ... ok
+test_three_independent_clients_share_one_real_physical_state_and_audit (test_final_http.FinalHttpTests) ... ok
+test_unavailable_native_capabilities_keep_authentic_recordings_accessible (test_final_http.FinalHttpTests) ... ok
+test_unknown_routes_and_no_public_arbitrary_time_step_endpoint (test_final_http.FinalHttpTests) ... ok
+test_unsupported_actions_invalid_actuators_and_cross_mission_tokens_are_rejected (test_final_http.FinalHttpTests) ... ok
+
+======================================================================
+FAIL: test_cross_site_navigation_allows_static_documents_only_with_a_valid_host (test_final_http.FinalHttpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration/backend/tests/test_final_http.py", line 363, in test_cross_site_navigation_allows_static_documents_only_with_a_valid_host
+    self.assertEqual(self.host.request('HEAD', '/mission.html', headers={
+AssertionError: 200 != 421
+
+----------------------------------------------------------------------
+Ran 13 tests in 5.795s
+
+FAILED (failures=1)

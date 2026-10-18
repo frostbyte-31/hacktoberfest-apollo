@@ -1,0 +1,20 @@
+{
+  "python_source_files": [
+    "backend/__init__.py",
+    "backend/control_service.py",
+    "backend/crew_ai.py",
+    "backend/final_assets.py",
+    "backend/final_server.py",
+    "backend/mission_service.py",
+    "backend/native_session.py",
+    "backend/physics_lab.py",
+    "backend/propulsion_recording.py",
+    "tools/final_demo.py",
+    "docs/final-integration-evidence/check_launch.py",
+    "docs/final-integration-evidence/check_preservation.py"
+  ],
+  "python_syntax": "PASS",
+  "tracked_whitespace_exit": 0,
+  "tracked_whitespace_stdout": "",
+  "tracked_whitespace_stderr": ""
+}

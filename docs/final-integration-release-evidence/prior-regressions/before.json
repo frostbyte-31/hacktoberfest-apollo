@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-18T00:35:26.018683+00:00",
+  "baseline": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "branch": "codex/backend-phase12",
+  "head": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "working_tree_status": "",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "scope": "Run original scientific checks unchanged in clean prior backend checkout. New application checks run independently in current integration checkout.",
+  "source_sha256": {
+    "Makefile": "6615e9bde2bf7523968546de50dbfb3b8883017b12ea3fc02b7b9d72fdcc9ed1",
+    "docs/milestone1-evidence/run_tests.py": "bbe13f5f0487385b95c7494e353d2134d623e058c8a6fc0aaa49f139d1556733",
+    "docs/milestone2-evidence/run_tests.py": "77abfed79f1f5cf67de4025997aaf77d4f104e459d740b66ea4d15e667a8d028",
+    "docs/milestone3-evidence/run_tests.py": "0265592065421bce873034375670cef0aa7049e145e3eab2329f956a0d3b0a04",
+    "docs/phase7-evidence/run_tests.py": "8aba30ae62292f48c29ddd653efd62a82cf525a2f616ff5c9122d477e0f8fcc7",
+    "docs/phase7-evidence/validate.py": "24a504f88a6036b0fa8593f6179f27e7e3306d0cffbda6900c098581526ba34b",
+    "docs/phase10_5-evidence/check_integrity.py": "d9ec56ca346923e036c6ae9b4256864c4aeeff0c9c2c0cb2334deb2b85f66272",
+    "docs/phase10_5-evidence/retain_native.py": "c8fd034d7c79d884696579abb96ccb17a033f3419e03259d97a1d8bd54e8cb2d",
+    "tools/demo/demo.py": "e5b5723791b1813dd14452896277a2dee5fe83df72a3ae48175aac794b3408bb"
+  }
+}

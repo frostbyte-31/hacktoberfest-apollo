@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "tools/final_demo.py",
+    "--recorded-only",
+    "--port",
+    "0"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+  "checks": {
+    "offline_capabilities_honest": true,
+    "three_real_app_documents_served": {
+      "mission.html": "6dfff79f8319680daa3014c088436385c2c7322e652c4275e44fa8bcbf484e44",
+      "guidance.html": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8",
+      "index.html": "46a5fde985f6847752e0c9abb77058ca47136e8dea8d7e5ac179977f66ad9988"
+    },
+    "occupied_port_does_not_stop_owner": true,
+    "owned_launcher_shutdown_clean": true
+  },
+  "occupiedCommand": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "tools/final_demo.py",
+    "--recorded-only",
+    "--port",
+    "50042"
+  ],
+  "launcherExitCode": 0
+}

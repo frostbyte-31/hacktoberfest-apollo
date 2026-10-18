@@ -1,0 +1,811 @@
+{
+  "full_staged_command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "full_staged_exit": 2,
+  "findings": [
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone2-fresh-native/plant/probe.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/corrected.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 35,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 79,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 101,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 102,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 113,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 124,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 135,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 146,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 157,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 168,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 179,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 190,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 201,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1002,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1003,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1006,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1007,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1014,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "docs/final-integration-release-evidence/prior-regressions/milestone3-fresh-native/model/original.stdout",
+      "line": 1015,
+      "message": "trailing whitespace."
+    }
+  ],
+  "source_command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    "Makefile",
+    "backend/",
+    "frontend/",
+    "tools/",
+    "docs/FINAL_INTEGRATION.md",
+    "docs/FINAL_INTEGRATION_CONTRACT.md",
+    "docs/FINAL_INTEGRATION_RELEASE.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/FRONTEND_MVP_VALIDATION.md"
+  ],
+  "source_exit": 0,
+  "interpretation": "All findings are trailing delimiters in preserved raw stdout evidence; source checks pass. Captured bytes are intentionally preserved.",
+  "capture_scope": "Initial staged candidate before adding these diagnostic receipts. The receipt preserves the exact quoted trailing delimiters too."
+}

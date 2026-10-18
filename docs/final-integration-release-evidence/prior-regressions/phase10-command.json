@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/baseline/docs/phase10-evidence/run_tests.py",
+    "--runs",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/baseline/docs/phase10-evidence/runs/final-validation",
+    "--output",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration/docs/final-integration-release-evidence/prior-regressions/phase10-staged-tests"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase11/release-final-20261018/runs/zero/baseline",
+  "source": "Unmodified isolated Phase 10 source staged by the unchanged Phase 11 validator",
+  "started_utc": "2026-10-18T00:35:39.340938+00:00",
+  "environment_overrides": {
+    "SOURCE_DATE_EPOCH": "1792195200",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0,
+  "ended_utc": "2026-10-18T00:35:45.890351+00:00"
+}

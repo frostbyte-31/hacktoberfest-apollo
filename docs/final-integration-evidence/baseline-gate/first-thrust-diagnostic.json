@@ -1,0 +1,19 @@
+{
+  "classification": "VERIFIED independent diagnostic of actual synthetic physical-model output; not an original AGC calculation",
+  "source_trace_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+  "cycle_mct": 25169431,
+  "coordinate_frame": "Moon-centered basic REF",
+  "force_ref_n": [
+    4559.999999802056,
+    -0.042434358111679,
+    -0.002139939618551218
+  ],
+  "velocity_before_ref_m_s": [
+    546.8200945794558,
+    0.0,
+    1580.3914538952781
+  ],
+  "thrust_dot_velocity_w": 2493496.2492317935,
+  "radial_velocity_before_m_s": -4.0211476315751894e-05,
+  "interpretation": "Thrust adds kinetic energy at this first-thrust sample; no achieved retrograde braking attitude or complete descent is established."
+}

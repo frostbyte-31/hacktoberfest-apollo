@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-18T00:39:14.699477+00:00",
+  "worktree": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/frontend-mission-control",
+  "expectedCount": 5607,
+  "actualInventoryCount": 5607,
+  "fingerprintsChecked": 5607,
+  "changedPaths": [],
+  "addedInventoryPaths": [],
+  "missingInventoryPaths": [],
+  "branch": "codex/frontend-mission-control",
+  "head": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+  "gitStateMatches": {
+    "branch": true,
+    "head": true,
+    "status": true
+  },
+  "gitStatusSha256": "12e1045cf3dd3ec428542da94237ccd6e44b47364e89688866de8326bf0706c3",
+  "copiedPathsChecked": 79,
+  "copiedPathsChanged": [
+    "frontend/tsconfig.json"
+  ],
+  "reviewedIntegrationCopyChanges": {
+    "frontend/tsconfig.json": {
+      "reason": "Intentional final-integration extension: also check the new live-domain types/provider.",
+      "addedCompilerFiles": [
+        "dist/mission-live-types.d.ts",
+        "dist/mission-live-provider.mjs"
+      ],
+      "compilerOptionsUnchanged": true,
+      "originalWorktreeUnchanged": true,
+      "currentBytesIncludedIn736EntrySeal": true
+    }
+  },
+  "unexpectedIntegrationCopyChanges": [],
+  "modifiedTrackedFrontendBasesAgree": {
+    "frontend/README.md": true,
+    "frontend/dist/guidance.html": true,
+    "frontend/dist/guidance.mjs": true
+  },
+  "originalWorktreeVerified": true,
+  "verified": true
+}

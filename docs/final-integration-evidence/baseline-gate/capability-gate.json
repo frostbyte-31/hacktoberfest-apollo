@@ -1,0 +1,398 @@
+{
+  "classification": "VERIFIED bounded authentic control experiment; not complete or calibrated descent",
+  "highest_product_capability_level": "B \u2014 bounded authentic control experiment",
+  "source_revision": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "source_checkout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "fresh_output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline",
+  "source_working_tree_after": "",
+  "fresh_native_execution": true,
+  "tests": {
+    "native": {
+      "passed": 16,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "model": {
+      "passed": 23,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "passed": 39,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "all_native_and_causal_checks_pass": true,
+  "checks_per_native_case": 33,
+  "causal_comparisons": 13,
+  "raw_trace_comparisons": {
+    "sink": {
+      "fresh": {
+        "sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+        "bytes": 95246632
+      },
+      "retained": {
+        "sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+        "bytes": 95246632
+      },
+      "byte_identical": true
+    },
+    "connected": {
+      "fresh": {
+        "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "bytes": 194558720
+      },
+      "retained": {
+        "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "bytes": 194558720
+      },
+      "byte_identical": true
+    },
+    "no-feedback": {
+      "fresh": {
+        "sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+        "bytes": 104903145
+      },
+      "retained": {
+        "sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+        "bytes": 104903145
+      },
+      "byte_identical": true
+    },
+    "repeat": {
+      "fresh": {
+        "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "bytes": 194558720
+      },
+      "retained": {
+        "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+        "bytes": 194558720
+      },
+      "byte_identical": true
+    }
+  },
+  "capabilities": {
+    "A": {
+      "verified": true,
+      "meaning": "Original engine-control signals",
+      "evidence": [
+        "original_ignition_instruction_emits_engine_on",
+        "original_p63_zoom_and_flatout_execute",
+        "genuine_dinc_drives_counter_outputs"
+      ]
+    },
+    "B": {
+      "verified": true,
+      "meaning": "Physical synthetic engine thrust",
+      "evidence": [
+        "physical_engine_model_observations_present",
+        "zero_force_before_authentic_ignition",
+        "physical_units_frame_gravity_integration_and_mass_flow"
+      ]
+    },
+    "C": {
+      "verified": true,
+      "meaning": "Physical translational acceleration from thrust and central gravity",
+      "evidence": [
+        "physical_units_frame_gravity_integration_and_mass_flow"
+      ]
+    },
+    "D": {
+      "verified": true,
+      "meaning": "Integrated three-component position and velocity",
+      "evidence": [
+        "physical_units_frame_gravity_integration_and_mass_flow",
+        "engine_connection_causes_physical_velocity_position_and_fuel_change"
+      ]
+    },
+    "E": {
+      "verified": true,
+      "meaning": "Physical specific force becomes genuine PIPA hardware counter input",
+      "evidence": [
+        "source_pipa_addresses_and_sign_operations",
+        "bounded_sensor_coupling_and_real_packet_acceptance",
+        "physical_sensor_count_and_delivery_match"
+      ]
+    },
+    "F": {
+      "verified": true,
+      "meaning": "Original navigation consumes PIPA input and calculates state changes",
+      "evidence": [
+        "original_navigation_consumes_delivered_counts",
+        "original_munrvg_math_matches_independent_pulse_and_gravity_arithmetic",
+        "engine_derived_feedback_reaches_original_navigation"
+      ]
+    },
+    "G": {
+      "verified": true,
+      "meaning": "Subsequent original guidance/control execution and output causally respond",
+      "evidence": [
+        "feedback_changes_original_navigation_words",
+        "feedback_changes_original_control_execution",
+        "feedback_changes_authentic_throttle_counter_output"
+      ],
+      "limit": "Does not prove calibrated trajectory regulation: both connected physical engines saturate at maximum thrust."
+    }
+  },
+  "case_details": {
+    "sink": {
+      "original_checkpoints": {
+        "IGNITION": 1,
+        "FLATOUT": 1,
+        "READACCS": 32,
+        "PIPASR": 32,
+        "SERVICER": 32,
+        "MUNRVG": 32,
+        "MUNRETRN": 32,
+        "LUNLAND": 4,
+        "THROTTLE": 0
+      },
+      "sensor": {
+        "generated_counts": [
+          0,
+          0,
+          0
+        ],
+        "delivered_counts": [
+          0,
+          0,
+          0
+        ],
+        "consumed_counts": [
+          0,
+          0,
+          0
+        ],
+        "ending_counter_counts": [
+          0,
+          0,
+          0
+        ],
+        "counter_balance_error": [
+          0,
+          0,
+          0
+        ],
+        "counter_errors": [],
+        "maximum_counter_delivery_delay_mct": 0,
+        "maximum_coupling_delay_mct": 0,
+        "specific_impulse_stable_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ending_quantization_remainder_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_mass_kg": 15000.0,
+      "raw_bytes": 95246632
+    },
+    "connected": {
+      "original_checkpoints": {
+        "IGNITION": 1,
+        "FLATOUT": 1,
+        "READACCS": 32,
+        "PIPASR": 32,
+        "SERVICER": 32,
+        "MUNRVG": 32,
+        "MUNRETRN": 32,
+        "LUNLAND": 4,
+        "THROTTLE": 4
+      },
+      "sensor": {
+        "generated_counts": [
+          3301,
+          0,
+          0
+        ],
+        "delivered_counts": [
+          3301,
+          0,
+          0
+        ],
+        "consumed_counts": [
+          3101,
+          0,
+          0
+        ],
+        "ending_counter_counts": [
+          200,
+          0,
+          0
+        ],
+        "counter_balance_error": [
+          0,
+          0,
+          0
+        ],
+        "counter_errors": [],
+        "maximum_counter_delivery_delay_mct": 2,
+        "maximum_coupling_delay_mct": 425,
+        "specific_impulse_stable_m_s": [
+          33.01351071298574,
+          2.4613845882080994e-07,
+          2.426073674737929e-07
+        ],
+        "ending_quantization_remainder_m_s": [
+          0.0035107129855433657,
+          2.461384588208104e-07,
+          2.426073674737941e-07
+        ]
+      },
+      "final_mass_kg": 14838.513939222963,
+      "raw_bytes": 194558720
+    },
+    "no-feedback": {
+      "original_checkpoints": {
+        "IGNITION": 1,
+        "FLATOUT": 1,
+        "READACCS": 32,
+        "PIPASR": 32,
+        "SERVICER": 32,
+        "MUNRVG": 32,
+        "MUNRETRN": 32,
+        "LUNLAND": 4,
+        "THROTTLE": 0
+      },
+      "sensor": {
+        "generated_counts": [
+          3296,
+          0,
+          0
+        ],
+        "delivered_counts": [
+          0,
+          0,
+          0
+        ],
+        "consumed_counts": [
+          0,
+          0,
+          0
+        ],
+        "ending_counter_counts": [
+          0,
+          0,
+          0
+        ],
+        "counter_balance_error": [
+          0,
+          0,
+          0
+        ],
+        "counter_errors": [],
+        "maximum_counter_delivery_delay_mct": 0,
+        "maximum_coupling_delay_mct": 425,
+        "specific_impulse_stable_m_s": [
+          32.96951516984365,
+          2.4581044174689053e-07,
+          2.42284056139625e-07
+        ],
+        "ending_quantization_remainder_m_s": [
+          0.009515169843816866,
+          2.4581044174689037e-07,
+          2.422840561396248e-07
+        ]
+      },
+      "final_mass_kg": 14838.727832596513,
+      "raw_bytes": 104903145
+    },
+    "repeat": {
+      "original_checkpoints": {
+        "IGNITION": 1,
+        "FLATOUT": 1,
+        "READACCS": 32,
+        "PIPASR": 32,
+        "SERVICER": 32,
+        "MUNRVG": 32,
+        "MUNRETRN": 32,
+        "LUNLAND": 4,
+        "THROTTLE": 4
+      },
+      "sensor": {
+        "generated_counts": [
+          3301,
+          0,
+          0
+        ],
+        "delivered_counts": [
+          3301,
+          0,
+          0
+        ],
+        "consumed_counts": [
+          3101,
+          0,
+          0
+        ],
+        "ending_counter_counts": [
+          200,
+          0,
+          0
+        ],
+        "counter_balance_error": [
+          0,
+          0,
+          0
+        ],
+        "counter_errors": [],
+        "maximum_counter_delivery_delay_mct": 2,
+        "maximum_coupling_delay_mct": 425,
+        "specific_impulse_stable_m_s": [
+          33.01351071298574,
+          2.4613845882080994e-07,
+          2.426073674737929e-07
+        ],
+        "ending_quantization_remainder_m_s": [
+          0.0035107129855433657,
+          2.461384588208104e-07,
+          2.426073674737941e-07
+        ]
+      },
+      "final_mass_kg": 14838.513939222963,
+      "raw_bytes": 194558720
+    }
+  },
+  "original_seals_after": {
+    "phase10-evidence": {
+      "files_checked": 739,
+      "changed_or_missing": [],
+      "seal_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc"
+    },
+    "phase11-evidence": {
+      "files_checked": 509,
+      "changed_or_missing": [],
+      "seal_sha256": "184c996c9930f54d5851ad1c7f794ea5245d252fb0b79e03b636ccda092f7c47"
+    },
+    "phase12-evidence": {
+      "files_checked": 538,
+      "changed_or_missing": [],
+      "seal_sha256": "353c3ef0cbadb2c19937ecf826450e029694c9f7ec328ff6e040407a6f5a8236"
+    },
+    "phase12-release-evidence": {
+      "files_checked": 468,
+      "changed_or_missing": [],
+      "seal_sha256": "5bf1b34d2a467d22a142859e2ef67994adc0c3210729bb2bcfbeeba565dfee40"
+    }
+  },
+  "prior_files_preserved": 6340,
+  "remaining_descent_blockers": [
+    "Burn attitude is asserted by crew at R60 review, not physically achieved: fixed attitude and RCS remain disconnected.",
+    "P51 uses a mathematically valid synthetic stationary alignment; physical calibration and consistency with a descent fixture are unverified.",
+    "LOWCRIT/HIGHCRIT hysteresis padloads remain zero; flight-valid values and DPS force/DECA calibration are unresolved.",
+    "First physical thrust adds kinetic energy (positive thrust dot velocity); the current fixture is not established retrograde braking.",
+    "Engine response is instantaneous with synthetic inherited LM-7 parameters; transients, gimbal trim and exhaustion are not modeled.",
+    "Actual landing radar measurements, P64/P66, terrain, touchdown and full landing are not demonstrated."
+  ],
+  "not_run": [
+    "All older regression suites during this independent gate; prior444-pass result not counted as a new run",
+    "Calibrated historical descent or landing",
+    "New live multiplayer or AI behavior"
+  ],
+  "recording_note": "Fresh raw traces remain under fresh_output and exactly match already retained lossless Phase12 captures. This directory retains actual fresh commands, source/build metadata, analysis, tests and fingerprints without duplicating hundreds of MB of identical raw trace bytes."
+}

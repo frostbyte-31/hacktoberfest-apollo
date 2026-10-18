@@ -59,3 +59,17 @@ demo-verify:
 # Rebuild/replay the unchanged frozen Phase 10 experiment in an isolated copy.
 demo-reproduce:
 	$(PYTHON) -B tools/demo/demo.py reproduce
+
+.PHONY: demo-final test-final
+
+# One local server; old replay and authentic attitude routes remain available.
+demo-final:
+	$(PYTHON) -B tools/final_demo.py --port $(PORT)
+
+test-final:
+	$(PYTHON) -B -m backend.final_assets --bootstrap
+	$(PYTHON) -B -m unittest discover -s backend/tests -v
+	$(PYTHON) -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
+	$(PYTHON) -B -m unittest discover -s tools/demo/tests -v
+	$(PYTHON) -B -m unittest discover -s docs/live-control-evidence -p 'test_*.py' -v
+	$(NODE) --test frontend/tests/*.test.mjs

@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-18T00:17:43.338Z",
+  "origin": "http://127.0.0.1:4189",
+  "method": "Opened preserved guidance link and selected each scenario through browser controls; selected View recorded outcome. Propulsion cases selected through the new recorded evidence dialog, with play/pause and end scrubbing.",
+  "guidance": [
+    {
+      "scenario": "15 km",
+      "rootResults": 9,
+      "timeToGoSeconds": -582.79,
+      "ignitionTimeGETSeconds": 360.29,
+      "ignitionLeadSeconds": 139.03
+    },
+    {
+      "scenario": "16 km",
+      "rootResults": 9,
+      "timeToGoSeconds": -583.25,
+      "ignitionTimeGETSeconds": 360.44,
+      "ignitionLeadSeconds": 139.18
+    },
+    {
+      "scenario": "Missing landing site",
+      "rootResults": 3,
+      "alarm": "01520 / 01406",
+      "ignitionTimeGETSeconds": null
+    }
+  ],
+  "propulsion": [
+    {
+      "case": "connected",
+      "rawSha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "originalThrottleCalls": 4,
+      "originalNavigationPasses": 32,
+      "finalThrustN": 0
+    },
+    {
+      "case": "sink",
+      "rawSha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "originalThrottleCalls": 0,
+      "originalNavigationPasses": 32,
+      "finalThrustN": 0
+    },
+    {
+      "case": "no-feedback",
+      "rawSha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "originalThrottleCalls": 0,
+      "originalNavigationPasses": 32,
+      "finalThrustN": 0
+    }
+  ],
+  "limitations": [
+    "These are UI observations of retained authentic execution data, not new AGC execution proof.",
+    "No landing or continuous live propulsion was shown by these recordings."
+  ]
+}

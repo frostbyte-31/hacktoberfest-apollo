@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "cc",
+    "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/runs/sink/baseline/docs/phase9-evidence",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC",
+    "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/runs/sink/baseline/docs/phase5-evidence",
+    "-I/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/runs/sink/native",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase11-evidence/pipa_bridge.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/wasm.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/agc_engine.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/agc_engine_init.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/agc_utilities.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/ringbuffer_api.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/ringbuffer.c",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/dependencies/source/yaAGC/rfopen.c",
+    "-lm",
+    "-o",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-baseline/runs/sink/native/engine.so"
+  ],
+  "exit": 0
+}

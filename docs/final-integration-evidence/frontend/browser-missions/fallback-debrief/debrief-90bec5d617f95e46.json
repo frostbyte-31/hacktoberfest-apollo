@@ -1,0 +1,184 @@
+{
+  "mode": "EDUCATIONAL_PHYSICS_LAB",
+  "status": "landed",
+  "simTimeSeconds": 33.74,
+  "outcome": {
+    "success": true,
+    "reasons": [
+      "contact meets the synthetic teaching limits"
+    ],
+    "measured": {
+      "altitudeM": -0.006075211334973574,
+      "verticalSpeedMps": -0.7310571827551907,
+      "horizontalSpeedMps": 0.0446695401527585,
+      "horizontalVelocityMps": -0.04466954015275741,
+      "downrangeM": 3.7765330557629024,
+      "pitchDeg": -0.01760058952412761,
+      "fuelKg": 346.5788876619173,
+      "massKg": 7846.578887661881
+    },
+    "thresholds": {
+      "verticalSpeedMps": 2.0,
+      "horizontalSpeedMps": 1.5,
+      "pitchDeg": 8.0,
+      "landingSiteDistanceM": 75.0,
+      "lossOfControlPitchDeg": 70.0,
+      "timeLimitSeconds": 180.0
+    }
+  },
+  "fuelUsedKg": 153.4211123380827,
+  "maximumAltitudeM": 150.0,
+  "minimumAltitudeM": -0.006075211334973574,
+  "maximumSpeedMps": 6.007474944375295,
+  "commandsApplied": 169,
+  "finalState": {
+    "mode": "EDUCATIONAL_PHYSICS_LAB",
+    "source": "live server simulation; manual modern actuators",
+    "status": "landed",
+    "tick": 3374,
+    "simTimeSeconds": 33.74,
+    "scenario": "training",
+    "controls": {
+      "throttle": 0.22281148846779797,
+      "pitch": 1.297534477690996e-05
+    },
+    "spacecraft": {
+      "altitudeM": -0.006075211334973574,
+      "verticalSpeedMps": -0.7310571827551907,
+      "horizontalSpeedMps": 0.0446695401527585,
+      "horizontalVelocityMps": -0.04466954015275741,
+      "downrangeM": 3.7765330557629024,
+      "pitchDeg": -0.01760058952412761,
+      "fuelKg": 346.5788876619173,
+      "massKg": 7846.578887661881,
+      "positionM": [
+        1738089.9939206857,
+        0.0,
+        3.7765330425596724
+      ],
+      "velocityMps": [
+        -0.7310570856952029,
+        0.0,
+        -0.044671128598369005
+      ],
+      "accelerationMps2": [
+        -1.6229222331810889,
+        0.0,
+        -3.5262957962767037e-06
+      ],
+      "specificForceMps2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gravityMps2": [
+        -1.6229222331810889,
+        -0.0,
+        -3.5262957962767037e-06
+      ],
+      "quaternionBodyToRef": [
+        0.9999999880369681,
+        0.0,
+        -0.00015468052132145115,
+        0.0
+      ],
+      "angularVelocityRadps": [
+        0.0,
+        1.1382519366255602e-06,
+        0.0
+      ]
+    },
+    "engine": {
+      "enabled": false,
+      "throttle": 0.22281148846779797,
+      "thrustN": 0.0,
+      "massFlowKgps": 0.0,
+      "thrustVectorN": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lastStepAverageThrustN": 13579.409053176461
+    },
+    "outcome": {
+      "success": true,
+      "reasons": [
+        "contact meets the synthetic teaching limits"
+      ],
+      "measured": {
+        "altitudeM": -0.006075211334973574,
+        "verticalSpeedMps": -0.7310571827551907,
+        "horizontalSpeedMps": 0.0446695401527585,
+        "horizontalVelocityMps": -0.04466954015275741,
+        "downrangeM": 3.7765330557629024,
+        "pitchDeg": -0.01760058952412761,
+        "fuelKg": 346.5788876619173,
+        "massKg": 7846.578887661881
+      },
+      "thresholds": {
+        "verticalSpeedMps": 2.0,
+        "horizontalSpeedMps": 1.5,
+        "pitchDeg": 8.0,
+        "landingSiteDistanceM": 75.0,
+        "lossOfControlPitchDeg": 70.0,
+        "timeLimitSeconds": 180.0
+      }
+    },
+    "thresholds": {
+      "verticalSpeedMps": 2.0,
+      "horizontalSpeedMps": 1.5,
+      "pitchDeg": 8.0,
+      "landingSiteDistanceM": 75.0,
+      "lossOfControlPitchDeg": 70.0,
+      "timeLimitSeconds": 180.0
+    },
+    "units": {
+      "position": "m",
+      "velocity": "m/s",
+      "acceleration": "m/s\u00b2",
+      "mass": "kg",
+      "time": "s",
+      "thrust": "N",
+      "angularVelocity": "rad/s",
+      "pitch": "degree"
+    },
+    "frame": {
+      "name": "Moon-centered inertial REF",
+      "origin": "Moon center",
+      "initialUp": "+X",
+      "downrange": "+Z",
+      "thrustBodyAxis": "+X",
+      "positivePitch": "right-handed about body +Y; thrust turns toward REF -Z"
+    },
+    "provenance": {
+      "upstream_source_sha256": {
+        "Contributed/LM_Simulator/modules/AGC_Simulation_Monitor_Control.tcl": "594463405c85a11a10b2ca158f637b87d55fd8d7d3660bb38c91ca80a3cdab60",
+        "Contributed/LM_Simulator/lm_simulator.tcl": "74520ebccf4afeb8f5005a3142efd769c4cfb66c85ba093b099ec53f43ee37c5"
+      },
+      "phase7_orientation_sha256": "9f43c7d75afa8b2e78edc3f60c1a31bb8bf6f730bda005681193d1184bc45b7a",
+      "adapter_sha256": "338a05982eac5d17d918684761f63d6d1ad898c8d647f7f8a2380d52b99e135c",
+      "tcl_executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+      "engine_response": "ASSUMED instantaneous upstream model",
+      "force_scale": "ASSUMED nominal guidance pulse/N applied to physical plant",
+      "exhaust_velocity_m_s": 3050.0,
+      "max_interval_s": 0.010001
+    },
+    "assumptions": [
+      "SYNTHETIC educational scenario, not Apollo 11 flight data.",
+      "No AGC guidance, PIPA delivery or RCS commands drive this mode.",
+      "Existing central lunar gravity and velocity-Verlet translation; fixed 10 ms ticks.",
+      "Existing ideal instantaneous engine; thrust min/max and exhaust velocity are model parameters.",
+      "Synthetic pitch motor: I=12000 kg\u00b7m\u00b2, commanded torque=\u00b12400 N\u00b7m, damping=2/s.",
+      "Pitch actuator propellant and changing rotational inertia are not modeled.",
+      "Surface outcome uses actual integrated endpoint; no position or velocity snapping.",
+      "Terminal physics freezes; engine telemetry then reports OFF.",
+      "Fuel exhaustion leaves at most 1e-8 kg numerical reserve."
+    ]
+  },
+  "lessons": [
+    "Thrust changes acceleration; existing velocity takes time to brake.",
+    "Tilting redirects thrust and can trade vertical braking for horizontal motion.",
+    "Free fall has gravity acceleration and zero ideal accelerometer specific force.",
+    "These manual physics results are separate from original Luminary guidance."
+  ]
+}

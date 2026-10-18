@@ -1,0 +1,20 @@
+{
+  "closed": {
+    "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_reference": "docs/phase6-evidence/demo-run/closed.jsonl",
+    "byte_identical": true
+  },
+  "feedback_off": {
+    "fresh_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+    "retained_sha256": "3756cefe0aec140d29425096818260c18b3f9b355ece065c6356851030d56096",
+    "retained_reference": "docs/phase6-evidence/demo-run/feedback_off.jsonl",
+    "byte_identical": true
+  },
+  "repeat": {
+    "fresh_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_sha256": "9708a22c8066d2d829e756b5f3a865f0ab68a7ff5c27dae05403174944fdad99",
+    "retained_reference": "docs/phase6-evidence/demo-run/repeat.jsonl",
+    "byte_identical": true
+  }
+}
