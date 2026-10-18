@@ -1,0 +1,31 @@
+{
+  "reviewed_utc": "2026-10-18T00:20:54.140898+00:00",
+  "scope": "Independent read-only source review; not a claim of authentic closed-loop AGC landing or external live model success",
+  "sources_sha256": {
+    "backend/final_assets.py": "a18ded06ef10cf40feda90511bd3c8380eadabba449ef6815a81aad43d31d511",
+    "backend/final_server.py": "1b9ea381f227c9733e4777aef906f8168f4b465713737e52181955040b4923d9",
+    "backend/mission_service.py": "b2f010109cac2d48f0f2cf7e5c1fdfe11d68be3a446d9983c30e7e5861dfff2a",
+    "backend/crew_ai.py": "2be4af37dc5a0d56937bbc86c803a208a0eeb0355b9cc907e14fb5ef05d99fe8",
+    "tools/final_demo.py": "f78032c27e60f43bf7b9f6ac36a521a13cccb050519a1bf59b5527263a2cfeb2"
+  },
+  "findings": [
+    {
+      "status": "resolved_by_root",
+      "item": "Original test-final target omitted crew_ai.py provider tests; root reports replacing it with complete backend discovery."
+    }
+  ],
+  "verified_source_properties": [
+    "Scientific artifact seals are checked before launch and authentic recordings are derived from retained execution traces.",
+    "Educational physical controls remain a separate explicitly labeled mode without authentic AGC navigation claims.",
+    "All human, fallback and model command proposals use the same role, run ID, sequence and finite actuator validation path.",
+    "Server-side provider adapter limits tool scopes by the three historical crew roles and omits credentials and native paths from supplied telemetry.",
+    "Model requests run asynchronously from fixed-step physics; provider failure falls back to labeled deterministic policies.",
+    "Original bounded attitude endpoints remain inherited rather than being replaced."
+  ],
+  "limits": [
+    "This review does not verify an external live model provider; protocol and failure cases require separate tests.",
+    "Local shared browser clients are supported; this service binds only to loopback.",
+    "Original full-sprint authentic AGC-guided landing is still unavailable, and the independent educational landing mode must retain that distinction."
+  ],
+  "read_only": true
+}

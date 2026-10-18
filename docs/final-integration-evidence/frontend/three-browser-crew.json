@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-18T00:15:42.290Z",
+  "origin": "http://127.0.0.1:4189",
+  "method": "Three independent Chrome tabs joined by actual create/join forms, then readiness, checklist, messages, start and pause through UI.",
+  "observations": [
+    {
+      "participant": "commander",
+      "observation": {
+        "checklistEnabled": false,
+        "crew": "Neil Armstrong · CommanderLunar ModuleArmstrong browser · human · READYBuzz Aldrin · Lunar Module PilotLunar ModuleAldrin browser · human · READYMichael Collins · Command Module PilotCommand Module in lunar orbitCollins browser · human · READY",
+        "identity": "Mission 0d9764baefe2d205 · sample 60",
+        "messages": "Aldrin browser · human · 0 sPosition and velocity checked by the Lunar Module Pilot.Collins browser · human · 0 sCommand Module support is on the crew channel.",
+        "notice": "Mission command accepted: pause.",
+        "role": "Armstrong browser · commander",
+        "status": "PAUSED",
+        "throttleEnabled": false,
+        "title": "Apollo 11 — Flight laboratory"
+      }
+    },
+    {
+      "participant": "lunar-module-pilot",
+      "observation": {
+        "checklistEnabled": true,
+        "crew": "Neil Armstrong · CommanderLunar ModuleArmstrong browser · human · READYBuzz Aldrin · Lunar Module PilotLunar ModuleAldrin browser · human · READYMichael Collins · Command Module PilotCommand Module in lunar orbitCollins browser · human · READY",
+        "identity": "Mission 0d9764baefe2d205 · sample 60",
+        "messages": "Aldrin browser · human · 0 sPosition and velocity checked by the Lunar Module Pilot.Collins browser · human · 0 sCommand Module support is on the crew channel.",
+        "notice": "Mission command accepted: message.",
+        "role": "Aldrin browser · lunar-module-pilot",
+        "status": "PAUSED",
+        "throttleEnabled": false,
+        "title": "Apollo 11 — Flight laboratory"
+      }
+    },
+    {
+      "participant": "command-module-pilot",
+      "observation": {
+        "checklistEnabled": false,
+        "crew": "Neil Armstrong · CommanderLunar ModuleArmstrong browser · human · READYBuzz Aldrin · Lunar Module PilotLunar ModuleAldrin browser · human · READYMichael Collins · Command Module PilotCommand Module in lunar orbitCollins browser · human · READY",
+        "identity": "Mission 0d9764baefe2d205 · sample 60",
+        "messages": "Aldrin browser · human · 0 sPosition and velocity checked by the Lunar Module Pilot.Collins browser · human · 0 sCommand Module support is on the crew channel.",
+        "notice": "Mission command accepted: message.",
+        "role": "Collins browser · command-module-pilot",
+        "status": "PAUSED",
+        "throttleEnabled": false,
+        "title": "Apollo 11 — Flight laboratory"
+      }
+    }
+  ]
+}

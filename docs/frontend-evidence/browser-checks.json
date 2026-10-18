@@ -1,0 +1,185 @@
+{
+  "url": "http://127.0.0.1:4182/guidance.html",
+  "method": "Actual browser interactions and read-only DOM observations; development observations labeled separately. Viewport dimensions verified by actual innerWidth.",
+  "checks": [
+    {
+      "test": "desktop-nominal-outcome",
+      "values": {
+        "crew": 3,
+        "dsky-noun": "61",
+        "dsky-program": "63",
+        "dsky-verb": "06",
+        "guidance-lead": "139.03s",
+        "guidance-stage": "Pre-ignition crew review",
+        "guidance-tig": "360.29s GET",
+        "mission-clock": "00:03:41.26",
+        "root-count": "9",
+        "scrollWidth": 1440,
+        "staticCraft": "translate(533.6585740669356,279.0180117255148)",
+        "width": 1440
+      }
+    },
+    {
+      "test": "completed-outcome-comparison",
+      "values": {
+        "open": true,
+        "text": "Completed recordings compared at their retained horizons. These are original AGC observations from separate synthetic experiments; changing a selection does not run a new guidance calculation.Verified recorded execution · completed experiment outcomesScenarioIgnition timeObserved rootsOutcomeSynthetic 15 km orbit360.29 s GET9V06 N61 · pre-ignition reviewSynthetic 16 km orbit360.44 s GET9V06 N61 · pre-ignition reviewMissing landing-site initializationNot calculated301520 / 01406 · guidance stoppedA root observation alone is not a completed ignition solution. The missing-site control reaches provisional root results before its genuine 01406 alarm; no ignition time is supplied. All absolute ignition times are mission elapsed seconds, not countdowns."
+      }
+    },
+    {
+      "test": "16km-recorded-result",
+      "values": {
+        "altitude": "16.00km",
+        "roots": "9",
+        "tig": "360.44s GET"
+      }
+    },
+    {
+      "test": "missing-site-failure",
+      "values": {
+        "alarm": "01520 / 01406",
+        "roots": "3",
+        "siteHidden": true,
+        "stage": "Guidance stopped · missing input",
+        "tig": "—s GET"
+      }
+    },
+    {
+      "test": "capability-discovery",
+      "values": {
+        "open": true,
+        "text": "This screen reads verified recordings. Backend discovery only makes read-only status requests. It does not start an AGC, send key commands or control a vehicle.Failed to execute 'fetch' on 'Window': Illegal invocationBounded live AGC attitude · UNAVAILABLEExisting local attitude backend could not be discovered; recorded guidance remains available.Phase 10 guidance replay · AVAILABLEThree retained original Luminary experiments; sample and hold without interpolation.Synthetic mission geometry · AVAILABLEStatic projection of initialized 3D state; spacecraft and planned site have explicitly separate epochs.Live pre-ignition guidance · UNAVAILABLEThe existing live service exposes bounded attitude only, not live Phase 10 mission initialization or P63 guidance.Descent propulsion · UNAVAILABLENo verified engine/throttle-to-thrust plant is connected.Three-person crew operations · PLANNEDCrew roles are interface metadata; participant sessions and communications are unavailable.AI crew · PLANNEDNo operational AI participants or recommendations.For bounded live yaw/pitch controls, open the existing attitude lab on a server launched with live execution enabled. Recorded Phase 10 pre-ignition guidance does not become live when that lab is available. Engine ignition, descent, multiplayer and AI crew are not available here."
+      },
+      "phase": "development-before-fetch-binding-fix"
+    },
+    {
+      "test": "play",
+      "values": {
+        "craft": "translate(533.6585740669356,279.0180117255148)",
+        "state": "RECORDED · PLAYING",
+        "time": "00:01.47"
+      }
+    },
+    {
+      "test": "pause",
+      "values": {
+        "craft": "translate(533.6585740669356,279.0180117255148)",
+        "state": "RECORDED · PAUSED",
+        "time": "00:01.73"
+      }
+    },
+    {
+      "test": "next-event",
+      "values": {
+        "cursor": "0.006"
+      }
+    },
+    {
+      "test": "previous-event",
+      "values": {
+        "cursor": "0"
+      }
+    },
+    {
+      "test": "capability-discovery-after-browser-fetch-fix",
+      "values": {
+        "label": "Recorded demo server · live controls disabled",
+        "text": "This screen reads verified recordings. Backend discovery only makes read-only status requests. It does not start an AGC, send key commands or control a vehicle.This server is replay-only; native attitude startup is disabled.Bounded live AGC attitude · UNAVAILABLEThis server is replay-only; native attitude startup is disabled.Phase 10 guidance replay · AVAILABLEThree retained original Luminary experiments; sample and hold without interpolation.Synthetic mission geometry · AVAILABLEStatic projection of initialized 3D state; spacecraft and planned site have explicitly separate epochs.Live pre-ignition guidance · UNAVAILABLEThe existing live service exposes bounded attitude only, not live Phase 10 mission initialization or P63 guidance.Descent propulsion · UNAVAILABLENo verified engine/throttle-to-thrust plant is connected.Three-person crew operations · PLANNEDCrew roles are interface metadata; participant sessions and communications are unavailable.AI crew · PLANNEDNo operational AI participants or recommendations.For bounded live yaw/pitch controls, open the existing attitude lab on a server launched with live execution enabled. Recorded Phase 10 pre-ignition guidance does not become live when that lab is available. Engine ignition, descent, multiplayer and AI crew are not available here."
+      }
+    },
+    {
+      "test": "mobile-layout",
+      "values": {
+        "crewNames": [
+          "Neil Armstrong",
+          "Buzz Aldrin",
+          "Michael Collins"
+        ],
+        "dskyY": 359.609375,
+        "orbitY": 359.609375,
+        "scrollWidth": 1440,
+        "tig": "360.29s GET",
+        "width": 1440
+      },
+      "phase": "invalid-viewport-target-discarded"
+    },
+    {
+      "test": "mobile-390-verified",
+      "values": {
+        "crewNames": [
+          "Neil Armstrong",
+          "Buzz Aldrin",
+          "Michael Collins"
+        ],
+        "dskyY": 1371.1328125,
+        "orbitY": 487.9765625,
+        "scrollWidth": 390,
+        "tig": "360.29s GET",
+        "width": 390
+      }
+    },
+    {
+      "test": "mobile-comparison-dialog",
+      "values": {
+        "dialogWidth": 356,
+        "open": true,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "test": "tablet-1024",
+      "values": {
+        "grid": "255px 709px",
+        "scrollWidth": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "test": "recording-http503-final",
+      "values": {
+        "backend": "No live backend connected",
+        "craftHidden": true,
+        "error": "Guidance recording is unavailable (HTTP 503). Start the documented demo server and verify the replay export.",
+        "errorVisible": true,
+        "outcomeDisabled": true,
+        "playDisabled": true,
+        "stage": "Recording unavailable",
+        "tig": "—"
+      }
+    },
+    {
+      "test": "retry-restores-actual-recording-without-api",
+      "values": {
+        "backend": "No live backend connected",
+        "errorHidden": true,
+        "mode": "VERIFIED RECORDED EXECUTION",
+        "rootCount": "9",
+        "tig": "360.29s GET"
+      }
+    },
+    {
+      "test": "keyboard-seek-start",
+      "values": {
+        "cursor": "0",
+        "speed": "8",
+        "time": "00:00.00"
+      }
+    },
+    {
+      "test": "keyboard-seek-end",
+      "values": {
+        "cursor": "227.622",
+        "roots": "9",
+        "tig": "360.29s GET"
+      }
+    },
+    {
+      "test": "escape-closes-dialog",
+      "values": {
+        "dialogOpen": false
+      }
+    }
+  ],
+  "mainConsoleWarningsAndErrors": []
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "backend.tests.test_physics_lab",
+    "-v"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0
+}

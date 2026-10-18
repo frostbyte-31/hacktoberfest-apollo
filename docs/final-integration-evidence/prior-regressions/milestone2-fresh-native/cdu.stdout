@@ -1,0 +1,182 @@
+{
+  "positive_slow": {
+    "applied": 12,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 203561,
+      "cdu": [
+        12,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 202774,
+      "checker": 1
+    }
+  },
+  "negative_slow": {
+    "applied": 12,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 203561,
+      "cdu": [
+        32756,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 202774,
+      "checker": 1
+    }
+  },
+  "positive_fast": {
+    "applied": 24,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 201321,
+      "cdu": [
+        24,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 200334,
+      "checker": 0
+    }
+  },
+  "negative_fast": {
+    "applied": 24,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 201321,
+      "cdu": [
+        32744,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 200334,
+      "checker": 0
+    }
+  },
+  "mixed": {
+    "applied": 22,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 4,
+    "final_state": {
+      "cycle": 202894,
+      "cdu": [
+        2,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 201907,
+      "checker": 0
+    }
+  },
+  "alternating_supported": {
+    "applied": 64,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 64,
+    "final_state": {
+      "cycle": 208456,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 207467,
+      "checker": 2
+    }
+  },
+  "signed_wrap": {
+    "applied": 2,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 202429,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 201641,
+      "checker": 1
+    }
+  },
+  "fifo_capacity_control": {
+    "applied": 128,
+    "fifo_dropped": 1,
+    "ringbuffer_rejected": 0,
+    "max_fifo_entries": 128,
+    "final_state": {
+      "cycle": 228308,
+      "cdu": [
+        0,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 227521,
+      "checker": 0
+    }
+  },
+  "ringbuffer_capacity_control": {
+    "applied": 1023,
+    "fifo_dropped": 0,
+    "ringbuffer_rejected": 2,
+    "max_fifo_entries": 1,
+    "final_state": {
+      "cycle": 214642,
+      "cdu": [
+        1023,
+        0,
+        0
+      ],
+      "fifo_entries": 0,
+      "fifo_pending": 0,
+      "fifo_head_code": 0,
+      "incoming": 0,
+      "next_update": 213654,
+      "checker": 2
+    }
+  }
+}

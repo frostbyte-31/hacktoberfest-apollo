@@ -1,0 +1,14 @@
+{
+  "passed": 220,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "groups": {
+    "backend": 98,
+    "frontend_python": 26,
+    "demo_guards": 6,
+    "retained_attitude_evidence": 9,
+    "frontend_node": 81
+  },
+  "scope": "Current application, adapter/physical model, recorded data and test-double model-provider checks. Real LLM execution is not claimed."
+}

@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-18T00:36:58.742471+00:00",
+  "filesScanned": 736,
+  "totalBytes": 28914536,
+  "largestFiles": [
+    {
+      "path": "frontend/dist/data/propulsion.json",
+      "bytes": 2508975
+    },
+    {
+      "path": "docs/final-integration-evidence/preservation-before.json",
+      "bytes": 2025372
+    },
+    {
+      "path": "docs/final-integration-evidence/physics/manual-braking.jsonl",
+      "bytes": 1594688
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/phase7-fresh-native/integration/summary.json",
+      "bytes": 1255651
+    },
+    {
+      "path": "docs/final-integration-evidence/frontend/final-polish/browser-mission/audit.jsonl",
+      "bytes": 1154282
+    },
+    {
+      "path": "docs/final-integration-evidence/frontend/browser-missions/fallback-debrief/audit.jsonl",
+      "bytes": 1149844
+    },
+    {
+      "path": "docs/final-integration-evidence/crew-service/actual-audits/fallback-0-audit.jsonl",
+      "bytes": 1149836
+    },
+    {
+      "path": "docs/final-integration-evidence/crew-service/actual-audits/fallback-1-audit.jsonl",
+      "bytes": 1149836
+    },
+    {
+      "path": "docs/final-integration-evidence/controller-development/missions/7ea6273802b0760d/audit.jsonl",
+      "bytes": 896127
+    },
+    {
+      "path": "docs/frontend-evidence/baseline.json",
+      "bytes": 856457
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/phase7-fresh-native/integration/pitch.jsonl.gz",
+      "bytes": 787024
+    },
+    {
+      "path": "docs/final-integration-evidence/prior-regressions/phase7-fresh-native/integration/pitch_replay.jsonl.gz",
+      "bytes": 787024
+    }
+  ],
+  "filesAtLeast50MiB": [],
+  "filesAtLeast100MiB": [],
+  "suspiciousFilenames": [],
+  "compiledExecutableMagic": [],
+  "credentialPatternFindings": [],
+  "ignoredManifestPaths": [],
+  "limitations": [
+    "Heuristic structural scan, not proof that every possible secret format is absent.",
+    "Only filenames, pattern identifiers and counts are reported; matched values are never printed.",
+    "Gzip evidence was inspected after decompression; original bytes were not modified."
+  ]
+}

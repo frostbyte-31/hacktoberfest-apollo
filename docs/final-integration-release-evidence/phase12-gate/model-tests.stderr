@@ -1,0 +1,28 @@
+test_acceleration_direction_is_not_velocity_direction (__main__.PhysicalModelTests) ... ok
+test_ballistic_translation_matches_analytic_motion (__main__.PhysicalModelTests) ... ok
+test_central_gravity_direction_and_magnitude (__main__.PhysicalModelTests) ... ok
+test_engine_disconnected_is_a_physical_negative_control (__main__.PhysicalModelTests) ... ok
+test_first_step_acceleration_matches_analytic_position (__main__.PhysicalModelTests) ... ok
+test_fuel_exhaustion_is_rejected_not_silently_integrated (__main__.PhysicalModelTests) ... ok
+test_identical_runs_have_identical_modern_physics_trace (__main__.PhysicalModelTests) ... ok
+test_invalid_frames_and_unbounded_inputs_are_rejected (__main__.PhysicalModelTests) ... ok
+test_mass_freezing_converges_toward_independent_rocket_equation (__main__.PhysicalModelTests) ... ok
+test_original_plant_force_mass_and_fuel_units (__main__.PhysicalModelTests) ... ok
+test_original_source_integrity_guard_rejects_changed_model (__main__.PhysicalModelTests) ... ok
+test_phase11_sensor_sees_force_not_gravity (__main__.PhysicalModelTests) ... ok
+test_rotated_body_thrust_uses_phase7_quaternion_matrix (__main__.PhysicalModelTests) ... ok
+test_velocity_verlet_preserves_circular_orbit_energy (__main__.PhysicalModelTests) ... ok
+test_zero_specific_force_free_fall_changes_inertial_velocity (__main__.PhysicalModelTests) ... ok
+test_conflicting_and_malformed_commands_are_rejected (__main__.ReceiverTests) ... ok
+test_disarming_resets_physical_automatic_counter (__main__.ReceiverTests) ... ok
+test_engine_off_reset_requires_actual_decrement_pulses (__main__.ReceiverTests) ... ok
+test_engine_requires_both_arm_and_on (__main__.ReceiverTests) ... ok
+test_hardware_counter_and_mechanical_force_stop_are_distinct (__main__.ReceiverTests) ... ok
+test_manual_minimum_is_separate_from_automatic_offset (__main__.ReceiverTests) ... ok
+test_positive_negative_and_zero_pulses (__main__.ReceiverTests) ... ok
+test_unrelated_dsky_bits_do_not_turn_engine_on (__main__.ReceiverTests) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 6.776s
+
+OK

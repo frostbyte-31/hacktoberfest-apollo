@@ -1,0 +1,56 @@
+{
+  "scope": "Original worktrees and preserved backend/evidence bytes in integration",
+  "originals": {
+    "backend": {
+      "checked": 7348,
+      "unexpectedChanges": [],
+      "declaredApplicationChanges": {},
+      "verified": true,
+      "branch": "codex/backend-phase12",
+      "head": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+      "status": ""
+    },
+    "frontend": {
+      "checked": 5607,
+      "unexpectedChanges": [],
+      "declaredApplicationChanges": {},
+      "verified": true,
+      "branch": "codex/frontend-mission-control",
+      "head": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+      "status": "M frontend/README.md\n M frontend/dist/guidance.html\n M frontend/dist/guidance.mjs\n?? docs/FRONTEND_ARCHITECTURE.md\n?? docs/FRONTEND_INTEGRATION_CONTRACT.md\n?? docs/FRONTEND_MVP_VALIDATION.md\n?? docs/frontend-evidence/\n?? frontend/dist/mission-control.css\n?? frontend/dist/mission-provider.mjs\n?? frontend/dist/mission-types.d.ts\n?? frontend/dist/spacecraft-view.mjs\n?? frontend/package-lock.json\n?? frontend/package.json\n?? frontend/tests/mission-provider.test.mjs\n?? frontend/tests/spacecraft-view.test.mjs\n?? frontend/tsconfig.json"
+    }
+  },
+  "integration": {
+    "checked": 7348,
+    "unexpectedChanges": [],
+    "declaredApplicationChanges": {
+      "Makefile": {
+        "before": "6615e9bde2bf7523968546de50dbfb3b8883017b12ea3fc02b7b9d72fdcc9ed1",
+        "after": "1caddb42215064b70aebc8d3a17f83f7b0b20381f078b3ee2bbc7e30942932af"
+      },
+      "frontend/README.md": {
+        "before": "be08bcaae7a189019607ec078ce599435dda0d2afb3cc789014dd65e0a513fdc",
+        "after": "11bd471db2ee2591cb7c18d9337561a4f3a3a6d9ee416afb350af03f5863a243"
+      },
+      "frontend/dist/guidance.html": {
+        "before": "b0afa056e2de28009b3defeef11c7349c49dbff4c59009a8b17a516f4b6621d1",
+        "after": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8"
+      },
+      "frontend/dist/guidance.mjs": {
+        "before": "ff9cd399dea86b00ed8286e2915ce47e1d358a05c34390cb2ff65a1866332bea",
+        "after": "3128716df8c34b28ddc9e17c861e4552d21dce0e66df5f48ef2b9eebe2b17b0f"
+      }
+    },
+    "verified": true
+  },
+  "scientificSeals": {
+    "ropeSha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+    "sealedFiles": {
+      "phase10": 739,
+      "phase11": 509,
+      "phase12": 538
+    },
+    "sourceRevision": "f577e3fd917866c59334e6cdd32504f09df76f60"
+  },
+  "verified": true
+}

@@ -1,0 +1,15 @@
+test_ballistic_surface_contact_is_actual_crash_without_position_snap (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_commands_validate_atomically_and_never_set_vehicle_state (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_free_fall_gravity_is_not_specific_force (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_fuel_exhaustion_is_real_partial_burn_without_negative_fuel (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_initial_data_units_frames_and_synthetic_provenance (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_manual_braking_can_reach_a_measured_soft_contact (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_pitch_motor_rotates_actual_force_and_neutral_damps_rate (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_repeated_fixed_step_runs_are_identical (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_retained_engine_force_mass_flow_and_motion (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+test_synthetic_outcome_limits_report_measured_failures (backend.tests.test_physics_lab.PhysicsLabTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 7.767s
+
+OK

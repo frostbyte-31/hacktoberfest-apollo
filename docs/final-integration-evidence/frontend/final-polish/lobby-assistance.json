@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-10-18T00:30:48.185Z",
+  "origin": "http://127.0.0.1:52732",
+  "observation": {
+    "assistanceChecked": true,
+    "assistanceEnabled": true,
+    "crew": "Neil Armstrong · CommanderLunar ModuleFinal acceptance commander · human · NOT READYBuzz Aldrin · Lunar Module PilotLunar ModuleDeterministic fallback · deterministic fallback · READY · deterministic fallbackMichael Collins · Command Module PilotCommand Module in lunar orbitDeterministic fallback · deterministic fallback · READY · deterministic fallback",
+    "identity": "Mission c80999f2b9aff4da · sample 0",
+    "mode": "EDUCATIONAL PHYSICS LAB",
+    "notice": "Mission command accepted: assist.",
+    "pilotLabel": "MODERN TRAINING ASSIST ACTIVE",
+    "status": "LOBBY"
+  }
+}

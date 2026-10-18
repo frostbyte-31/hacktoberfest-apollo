@@ -1,0 +1,18 @@
+test_accepted_and_rejected_commands_have_distinct_audit_records (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_all_fallback_real_physics_flight_is_deterministic_and_not_an_llm (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_all_required_human_fallback_compositions_use_three_seats (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_all_three_occupied_ready_seats_required_before_start (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_assistance_is_labeled_and_manual_override_requires_disabling (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_control_lease_releases_engine_and_pitch_once (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_create_rejects_unhashable_scenario_and_invalid_compositions (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_exactly_three_roles_and_collins_remains_orbital_support (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_finite_controls_payload_shapes_and_ready_boolean_are_validated (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_monotonic_sequences_and_restart_reject_stale_run_commands (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_pause_freezes_simulation_and_resume_reuses_authoritative_lab (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_role_permissions_prevent_collins_and_lmp_from_flight_control (backend.tests.test_mission_service.MissionServiceTests) ... ok
+test_shared_three_client_views_are_copies_of_one_authoritative_state (backend.tests.test_mission_service.MissionServiceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 12.726s
+
+OK

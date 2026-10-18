@@ -1,0 +1,22 @@
+prepare started
+prepare exit 0
+sink started
+sink running
+sink exit 0
+connected started
+connected running
+connected running
+connected exit 0
+no-feedback started
+no-feedback running
+no-feedback exit 0
+repeat started
+repeat running
+repeat exit 0
+analysis started
+analysis exit 0
+native-tests started
+native-tests exit 0
+model-tests started
+model-tests exit 0
+{"all_pass": true, "output": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release", "test_results": {"native": {"passed": 16, "failed": 0, "errored": 0, "skipped": 0}, "model": {"passed": 23, "failed": 0, "errored": 0, "skipped": 0}}}

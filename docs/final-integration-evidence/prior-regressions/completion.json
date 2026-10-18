@@ -1,0 +1,92 @@
+{
+  "completed_utc": "2026-10-18T00:22:01.449680+00:00",
+  "baseline_branch": "codex/backend-phase12",
+  "baseline_commit": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "baseline_worktree_status": "",
+  "make_check": {
+    "exit": 0,
+    "passed": 210,
+    "failed": 0,
+    "errored": 3,
+    "skipped": 0,
+    "historical_missing_evidence_errors": 3,
+    "groups": [
+      {
+        "name": "Phases2-6",
+        "passed": 35,
+        "errored": 3
+      },
+      {
+        "name": "milestone1",
+        "passed": 55,
+        "errored": 0
+      },
+      {
+        "name": "milestone2",
+        "passed": 47,
+        "errored": 0
+      },
+      {
+        "name": "milestone3",
+        "passed": 34,
+        "errored": 0
+      },
+      {
+        "name": "phase7",
+        "passed": 39,
+        "errored": 0
+      }
+    ],
+    "fresh_native_validations": [
+      "Phase6 closed/disconnected/repeat",
+      "milestone2 signed CDU startup and timing",
+      "milestone3 negative-rate paced feedback and queue settlement",
+      "Phase7 independent and simultaneous yaw/pitch connected/disconnected/replay"
+    ]
+  },
+  "phase10_staged": {
+    "exit": 0,
+    "passed": 57,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0,
+    "groups": [
+      {
+        "group": "phase10-math",
+        "passed": 14,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "group": "phase10-native",
+        "passed": 14,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "group": "phase8",
+        "passed": 10,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "group": "phase9",
+        "passed": 19,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      }
+    ],
+    "scope": "Original retained-data tests executed from the untouched staged baseline, avoiding legacy whole-application preservation guards without changing any guard or assertion. Fresh numerical execution is separately owned by root."
+  },
+  "combined_disjoint_tests": {
+    "passed": 267,
+    "failed": 0,
+    "errored": 3,
+    "skipped": 0
+  },
+  "claims": "Old source remains unchanged. These original-checkout regressions do not replace current application tests or establish authentic AGC-guided landing."
+}

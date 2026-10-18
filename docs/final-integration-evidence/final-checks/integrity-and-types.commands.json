@@ -1,0 +1,96 @@
+[
+  {
+    "label": "types",
+    "argv": [
+      "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/typescript-5.9.3/package/lib/tsc.js",
+      "-p",
+      "frontend/tsconfig.json"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 1.0604604579999999
+  },
+  {
+    "label": "guidance-export",
+    "argv": [
+      "python3",
+      "-B",
+      "frontend/tools/export_guidance.py",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 7.695359582999999
+  },
+  {
+    "label": "propulsion-export",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "backend.propulsion_recording",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 16.364072209
+  },
+  {
+    "label": "frontend-preservation",
+    "argv": [
+      "python3",
+      "-B",
+      "docs/frontend-evidence/check_integrity.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 1.0652225419999972
+  },
+  {
+    "label": "mvp-preservation",
+    "argv": [
+      "python3",
+      "-B",
+      "docs/phase10_5-evidence/check_integrity.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 1,
+    "elapsed_seconds": 0.6135774580000017
+  },
+  {
+    "label": "mvp-native-package",
+    "argv": [
+      "python3",
+      "-B",
+      "docs/phase10_5-evidence/retain_native.py",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 0.16428283300000146
+  },
+  {
+    "label": "scientific-seals",
+    "argv": [
+      "python3",
+      "-B",
+      "-c",
+      "import json; from backend.final_assets import verify_science; print(json.dumps(verify_science(),indent=2))"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 0.34824725
+  },
+  {
+    "label": "whitespace",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+    "exit_code": 0,
+    "elapsed_seconds": 1.7965463329999984
+  }
+]

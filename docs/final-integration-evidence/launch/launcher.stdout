@@ -1,0 +1,13 @@
+Apollo 11 · final mission laboratory
+Original Luminary rope and sealed Phases 10–12 evidence verified.
+Recorded propulsion samples verified against actual raw traces.
+Open: http://127.0.0.1:50042/mission.html
+Recorded guidance: /guidance.html · existing attitude controls: /index.html
+Mode: offline recorded authentic execution
+Ctrl+C shuts down owned workers and physical model processes.
+Model crew: not configured; labeled deterministic crew available
+127.0.0.1 - - [18/Oct/2026 04:18:40] "GET /api/v1/capabilities HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 04:18:40] "GET /mission.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 04:18:40] "GET /guidance.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 04:18:40] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 04:19:00] "GET /mission.html HTTP/1.1" 200 -

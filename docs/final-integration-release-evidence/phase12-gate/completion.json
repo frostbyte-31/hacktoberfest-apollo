@@ -1,0 +1,26 @@
+{
+  "classification": "See original analysis",
+  "native_cases": [
+    "sink",
+    "connected",
+    "no-feedback",
+    "connected repeat"
+  ],
+  "test_results": {
+    "native": {
+      "passed": 16,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    },
+    "model": {
+      "passed": 23,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0
+    }
+  },
+  "all_native_and_causal_checks_pass": true,
+  "prior_files_preserved": 6340,
+  "scope": "Bounded SYNTHETIC fixture; consult analysis for actually demonstrated feedback level; no landing claim"
+}

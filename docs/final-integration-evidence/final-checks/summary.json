@@ -1,0 +1,38 @@
+{
+  "application": {
+    "backend": 98,
+    "frontend_python": 26,
+    "demo_guards": 6,
+    "retained_attitude_evidence": 9,
+    "frontend_node": 81,
+    "passed": 220,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0
+  },
+  "fresh_phase12_gate": {
+    "passed": 39,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0
+  },
+  "prior_regressions": {
+    "passed": 267,
+    "failed": 0,
+    "errored": 3,
+    "skipped": 0
+  },
+  "total_disjoint_tests": {
+    "passed": 526,
+    "failed": 0,
+    "errored": 3,
+    "skipped": 0
+  },
+  "historical_errors": "Three missing docs/phase3-evidence/build.log preservation errors; not successful tests.",
+  "development_findings": "Earlier failed fallback-controller and HTTP HEAD guard checks retained separately; corrected before final suites.",
+  "old_mvp_package_guard": "In integration, rejects exactly four declared application changes; passed unchanged in original backend checkout. Not counted as a test failure or silently rewritten.",
+  "real_llm": "NOT RUN; provider and async behavior use explicit test doubles.",
+  "mobile_hardware_and_touch": "NOT RUN; actual responsive 390\u00d7844 iframe layout verified.",
+  "final_application_command": "tests-portable-final.command.json",
+  "final_application_asset_preparation": "Verified asset builder is part of make test-final, so no undocumented test assets cache is required."
+}

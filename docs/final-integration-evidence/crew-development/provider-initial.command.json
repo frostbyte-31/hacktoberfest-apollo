@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "backend/tests",
+    "-p",
+    "test_crew_ai.py",
+    "-v"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+  "started_utc": "2026-10-18T00:17:40.445950+00:00",
+  "classification": "Synthetic provider stubs; no real model credentials or remote model requests",
+  "exit": 0,
+  "ended_utc": "2026-10-18T00:17:40.599365+00:00"
+}

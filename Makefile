@@ -75,6 +75,15 @@ test-frontend:
 
 .PHONY: play
 
-# Historical lunar-orbit reference, verified 3D propulsion replay and separate live lab.
-play: runtime
-	$(PYTHON) -B frontend/serve.py --port $(PORT)
+# Unified crew launch, historical procedures and independent educational flight.
+play:
+	$(PYTHON) -B tools/final_demo.py --port $(PORT)
+
+.PHONY: demo-final test-final
+
+demo-final: play
+
+test-final:
+	$(PYTHON) -B -m unittest discover -s backend/tests -v
+	$(PYTHON) -B -m unittest discover -s frontend/tests -p 'test_*.py' -v
+	$(NODE) --test frontend/tests/*.test.mjs

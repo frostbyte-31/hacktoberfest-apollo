@@ -1,0 +1,48 @@
+{
+  "classification": "VERIFIED retained baseline source/evidence integrity; fresh gate running separately",
+  "utc": "2026-10-17T23:54:48.552118+00:00",
+  "source_checkout": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "source_revision": "22bd3c24c524334973beb6f9b3d168f21ca93e71",
+  "source_working_tree": "",
+  "seals": {
+    "phase10-evidence": {
+      "files_checked": 739,
+      "changed_or_missing": [],
+      "seal_sha256": "10b77abb67914dd6e0f4a13afb967b67f8e96b161217b63f9b0706f9a78fa7cc"
+    },
+    "phase11-evidence": {
+      "files_checked": 509,
+      "changed_or_missing": [],
+      "seal_sha256": "184c996c9930f54d5851ad1c7f794ea5245d252fb0b79e03b636ccda092f7c47"
+    },
+    "phase12-evidence": {
+      "files_checked": 538,
+      "changed_or_missing": [],
+      "seal_sha256": "353c3ef0cbadb2c19937ecf826450e029694c9f7ec328ff6e040407a6f5a8236"
+    },
+    "phase12-release-evidence": {
+      "files_checked": 468,
+      "changed_or_missing": [],
+      "seal_sha256": "5bf1b34d2a467d22a142859e2ef67994adc0c3210729bb2bcfbeeba565dfee40"
+    }
+  },
+  "retained_raw_trace_integrity": {
+    "sink": {
+      "sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+      "bytes": 95246632
+    },
+    "connected": {
+      "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "bytes": 194558720
+    },
+    "no-feedback": {
+      "sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+      "bytes": 104903145
+    },
+    "repeat": {
+      "sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+      "bytes": 194558720
+    }
+  },
+  "rope_sha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e"
+}

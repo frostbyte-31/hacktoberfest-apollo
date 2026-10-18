@@ -1,0 +1,19 @@
+{
+  "adapter": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone1-evidence/run_loop_with_tcl.py",
+  "retained_runner": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase5-evidence/run_loop.py",
+  "requested_legacy_command": [
+    "nix",
+    "shell",
+    "nixpkgs#tcl",
+    "-c",
+    "tclsh",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase5-evidence/plant_server.tcl",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/runs/20261018T003559Z-ff2a2e19/source"
+  ],
+  "actual_command": [
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase5-evidence/plant_server.tcl",
+    "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/reproducibility/runs/20261018T003559Z-ff2a2e19/source"
+  ],
+  "change": "Dependency executable selection only; no Nix process is run."
+}

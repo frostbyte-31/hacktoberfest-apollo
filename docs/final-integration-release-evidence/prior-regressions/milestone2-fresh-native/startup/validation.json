@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "cold_phase_table_zero_pair_is_rejected": true,
+    "cold_alarm_01107_observed": true,
+    "v36_clears_original_alarm": true,
+    "source_observed_ready_precedes_v37": true,
+    "delayed_v37_reaches_p00": true,
+    "legacy_v37_gets_01520": true,
+    "before_ready_gets_01520": true,
+    "after_ready_reaches_p00": true,
+    "imu_off_p00_does_not_enable_dap": true,
+    "without_v36_alarm_remains_despite_p00": true,
+    "exact_replay": true,
+    "stationary_scope_all_runs": true
+  },
+  "all_pass": true,
+  "clean_post_v36_interval_cpu_calls": [
+    491361,
+    2200000
+  ],
+  "ready_observation_cpu_call": 1480208,
+  "first_v37_key_cpu_call": 1600000,
+  "scope": "Schedule-specific acceptance; original cold restart01107 is retained, not alarm-free power-on or flight-ready alignment"
+}

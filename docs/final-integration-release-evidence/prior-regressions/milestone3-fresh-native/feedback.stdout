@@ -1,0 +1,97 @@
+{
+  "checks": {
+    "exact_corrected_replay": true,
+    "natural_negative_high_rate_observed": true,
+    "original_selector_slow_at_negative_high_rate": true,
+    "original_no_negative_fast": true,
+    "feedback_changes_timed_rcs": true,
+    "feedback_changes_held_rhc_commands": true,
+    "full_positive_jet_word_only_connected": true,
+    "short_stop_exercises_nonempty_diagnostic_drain": true,
+    "disconnected_no_delivery": true,
+    "disconnected_counter_zero": true,
+    "all_connected_settled_without_loss": true
+  },
+  "cases": {
+    "original_negative": {
+      "counts": {
+        "generated": 1439,
+        "delivered": 1439,
+        "consumed": 1439,
+        "enqueued": 1439,
+        "applied": 1439,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 5.646112945333554,
+      "generated_negative_fast": 0,
+      "max_host_queue": 128,
+      "max_origin_to_delivery_calls": 27351
+    },
+    "corrected_negative": {
+      "counts": {
+        "generated": 1582,
+        "delivered": 1582,
+        "consumed": 1582,
+        "enqueued": 1582,
+        "applied": 1582,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 4.858000127629546,
+      "generated_negative_fast": 691,
+      "max_host_queue": 5,
+      "max_origin_to_delivery_calls": 710
+    },
+    "corrected_feedback_off": {
+      "counts": {
+        "generated": 16169,
+        "delivered": 0,
+        "consumed": 0,
+        "enqueued": 0,
+        "applied": 0,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 16169
+      },
+      "peak_abs_yaw_deg_s": 11.3399576784135,
+      "generated_negative_fast": 16021,
+      "max_host_queue": 0,
+      "max_origin_to_delivery_calls": 0
+    },
+    "corrected_repeat": {
+      "counts": {
+        "generated": 1582,
+        "delivered": 1582,
+        "consumed": 1582,
+        "enqueued": 1582,
+        "applied": 1582,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 4.858000127629546,
+      "generated_negative_fast": 691,
+      "max_host_queue": 5,
+      "max_origin_to_delivery_calls": 710
+    },
+    "corrected_drain": {
+      "counts": {
+        "generated": 501,
+        "delivered": 501,
+        "consumed": 501,
+        "enqueued": 501,
+        "applied": 501,
+        "ringbuffer_rejects": 0,
+        "silent_fifo_drops": 0,
+        "intentionally_disconnected": 0
+      },
+      "peak_abs_yaw_deg_s": 4.858000127629546,
+      "generated_negative_fast": 338,
+      "max_host_queue": 5,
+      "max_origin_to_delivery_calls": 648
+    }
+  }
+}

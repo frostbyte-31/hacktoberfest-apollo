@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--check",
+    "frontend/dist/mission-app.mjs"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": ""
+}

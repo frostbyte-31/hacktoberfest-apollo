@@ -1,0 +1,96 @@
+{
+  "utc": "2026-10-18T00:39:37.819059+00:00",
+  "checks": [
+    {
+      "path": "frontend/dist/mission.html",
+      "line": 4,
+      "present": true,
+      "meaning": "Primary experience explicitly identifies the independent educational physical model.",
+      "sourceSha256": "6dfff79f8319680daa3014c088436385c2c7322e652c4275e44fa8bcbf484e44"
+    },
+    {
+      "path": "frontend/dist/mission.html",
+      "line": 6,
+      "present": true,
+      "meaning": "Primary screen keeps authentic AGC modes separate.",
+      "sourceSha256": "6dfff79f8319680daa3014c088436385c2c7322e652c4275e44fa8bcbf484e44"
+    },
+    {
+      "path": "frontend/dist/mission-app.mjs",
+      "line": 69,
+      "present": true,
+      "meaning": "Measured landing debrief discloses that original AGC landing is not demonstrated.",
+      "sourceSha256": "5899e95dc18cd23055ca1f3a904e3c5c2b69255def9b56d1b183cc05a13747a9"
+    },
+    {
+      "path": "frontend/dist/mission-app.mjs",
+      "line": 191,
+      "present": true,
+      "meaning": "Original engine experiment is explicitly recorded.",
+      "sourceSha256": "5899e95dc18cd23055ca1f3a904e3c5c2b69255def9b56d1b183cc05a13747a9"
+    },
+    {
+      "path": "frontend/dist/mission-app.mjs",
+      "line": 191,
+      "present": true,
+      "meaning": "Recorded authentic engine experiment retains its bounded scope.",
+      "sourceSha256": "5899e95dc18cd23055ca1f3a904e3c5c2b69255def9b56d1b183cc05a13747a9"
+    },
+    {
+      "path": "frontend/dist/mission-app.mjs",
+      "line": 30,
+      "present": true,
+      "meaning": "Completed physical outcome is frozen, without further motion claims.",
+      "sourceSha256": "5899e95dc18cd23055ca1f3a904e3c5c2b69255def9b56d1b183cc05a13747a9"
+    },
+    {
+      "path": "frontend/dist/guidance.html",
+      "line": 23,
+      "present": true,
+      "meaning": "Preserved numerical guidance screen identifies prerecorded execution.",
+      "sourceSha256": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8"
+    },
+    {
+      "path": "frontend/dist/guidance.html",
+      "line": 33,
+      "present": true,
+      "meaning": "Preserved orbital geometry is labeled static.",
+      "sourceSha256": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8"
+    },
+    {
+      "path": "backend/mission_service.py",
+      "line": 91,
+      "present": true,
+      "meaning": "Capability discovery denies authentic AGC landing.",
+      "sourceSha256": "b2f010109cac2d48f0f2cf7e5c1fdfe11d68be3a446d9983c30e7e5861dfff2a"
+    },
+    {
+      "path": "backend/mission_service.py",
+      "line": 220,
+      "present": true,
+      "meaning": "The modern physical mission snapshot does not claim AGC navigation/control.",
+      "sourceSha256": "b2f010109cac2d48f0f2cf7e5c1fdfe11d68be3a446d9983c30e7e5861dfff2a"
+    },
+    {
+      "path": "backend/physics_lab.py",
+      "line": 212,
+      "present": true,
+      "meaning": "Physical model assumptions explicitly distinguish modern lab from authentic native experiments.",
+      "sourceSha256": "c4e9ed66374e8bcbc763d048591be8ae2bc61fac9d0e1b6531a16e50077d07d2"
+    }
+  ],
+  "propulsionMode": "RECORDED_AUTHENTIC_AGC_EXPERIMENT",
+  "propulsionCapabilities": {
+    "liveExecution": false,
+    "replay": true,
+    "arbitraryCommands": false,
+    "completeDescent": false,
+    "landing": false,
+    "causalNavigationAndOriginalThrottle": true
+  },
+  "verified": true,
+  "limitations": [
+    "Text/contract review complements previously retained actual browser verification; it is not a new flight or native execution test.",
+    "Real model-provider execution and authentic AGC-controlled landing remain NOT RUN/unproven as documented."
+  ]
+}

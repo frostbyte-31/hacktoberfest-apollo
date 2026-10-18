@@ -1,0 +1,56 @@
+[
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone2-evidence/startup/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/startup",
+      "--cc",
+      "/usr/bin/cc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:18.586576+00:00",
+    "end_utc": "2026-10-18T00:36:21.311724+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone2-evidence/cdu/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/cdu",
+      "--cc",
+      "/usr/bin/cc"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:21.312337+00:00",
+    "end_utc": "2026-10-18T00:36:25.474264+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  },
+  {
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/milestone2-evidence/plant/run_validation.py",
+      "--source",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/source",
+      "--output",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/milestone2/runs/20261018T003617Z-92b2cd44/plant",
+      "--tcl",
+      "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "start_utc": "2026-10-18T00:36:25.474966+00:00",
+    "end_utc": "2026-10-18T00:36:26.520764+00:00",
+    "exit": 0,
+    "timeout_seconds": 300
+  }
+]

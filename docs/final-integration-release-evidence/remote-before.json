@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-18T00:38:39.305284+00:00",
+  "argv": [
+    "git",
+    "ls-remote",
+    "--heads",
+    "origin",
+    "refs/heads/codex/final-integration",
+    "refs/heads/codex/backend-phase12",
+    "refs/heads/codex/frontend-mission-control",
+    "refs/heads/main"
+  ],
+  "stdout": "22bd3c24c524334973beb6f9b3d168f21ca93e71\trefs/heads/codex/backend-phase12\n5a689c75d43613f29a49fa32d9bd786437825ee5\trefs/heads/main\n",
+  "stderr": "",
+  "interpretation": "Final integration branch absent on origin. Only that new branch will be pushed; main/backend/frontend refs are protected."
+}

@@ -1,0 +1,9 @@
+{
+  "fresh_replay_byte_identical": true,
+  "feedback_changes_agc_rcs_transcript": true,
+  "connected_has_opposite_word_disconnected_does_not": true,
+  "connected_readback_nonzero": true,
+  "disconnected_readback_zero": true,
+  "disconnected_generated_but_delivered_none": true,
+  "connected_all_requests_accepted": true
+}

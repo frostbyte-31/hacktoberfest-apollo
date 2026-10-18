@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE AND VERIFIED for frontend MVP scope",
+  "tests_passed": 133,
+  "failed_assertions": 0,
+  "errors": 0,
+  "skips": 0,
+  "groups": {
+    "backend": 32,
+    "recorded-attitude": 12,
+    "recorded-guidance": 14,
+    "launcher": 6,
+    "live-evidence": 9,
+    "presentation": 60
+  },
+  "typecheck": "PASSED TypeScript 5.9.3 strict noEmit",
+  "source_changed_during_checks": [],
+  "protected_files": 5509,
+  "protected_files_unchanged": true,
+  "agc_execution": "NOT RUN in this frontend milestone; sealed original traces verified and reused",
+  "historical_missing_evidence_errors": "Three known errors remain; full historical suites NOT RUN by this focused frontend suite",
+  "known_backend_issue": "Prior source audit found HTTP validator only accepts native-deadline neutralization and rejects earlier wall-watchdog neutralization; reproduced before and after Phase 10. No backend or test assertion changed here.",
+  "no_propulsion": true,
+  "no_multiplayer": true,
+  "no_ai_crew": true,
+  "optional_AR": "NOT RUN/deferred; no model dependency added",
+  "branch": "codex/frontend-mission-control",
+  "base_head": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+  "committed": false,
+  "pushed": false,
+  "preservation": {
+    "verified": true,
+    "protected_files": 5509,
+    "changed_or_missing": [],
+    "scope": "Historical evidence/backend preservation; new frontend behavior is tested separately."
+  },
+  "browser_fixes": "Corrected native Window.fetch receiver binding, added two regression tests; improved missing-backend copy to avoid claiming replay ready when recording unavailable."
+}

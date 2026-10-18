@@ -1,0 +1,9 @@
+{
+  "capturedAt": "2026-10-18T00:30:57.532Z",
+  "observation": {
+    "assistanceChecked": true,
+    "assistanceEnabled": true,
+    "notice": "Mission command accepted: assist.",
+    "status": "PAUSED"
+  }
+}

@@ -1,0 +1,390 @@
+/* Mission-control composition layered over the retained guidance laboratory. */
+.mission-control {
+  --g-line: #313b3c;
+  --g-paper: #ecece0;
+  --g-gold: #d9bc86;
+  --g-mint: #b5d0b0;
+  --g-muted: #a1afa5;
+  background: radial-gradient(ellipse at 52% 5%, #202a2a55, transparent 65%), #101617;
+  font-size: 14px;
+}
+.mission-control .g-header { height: 88px; padding: 0 28px; gap: 26px; background: #111819dc; }
+.mission-control .g-wordmark { flex-shrink: 0; font-size: 21px; letter-spacing: 3px; }
+.mission-control .g-wordmark small { display: none; }
+.mission-control .g-header nav { margin-left: auto; gap: 22px; font-size: 12px; }
+.mission-control .g-header nav button { font-size: 12px; }
+.mc-top-status { border-left: 1px solid #3b4746; padding-left: 24px; min-width: 0; }
+.mc-status-label, .mc-clock>span { display: block; font: 10px/1.5 var(--g-mono); letter-spacing: 1px; color: #91a39a; }
+.mc-top-status strong { display: block; font-size: 14px; font-weight: 400; margin-top: 5px; color: #dce2d5; }
+.mc-clock { margin-left: auto; white-space: nowrap; }
+.mc-clock strong { display: block; color: #e4dec5; font: 19px/1.4 var(--g-mono); letter-spacing: -.5px; margin-top: 3px; }
+.mission-control .g-main { max-width: 1920px; padding: 28px 28px 24px; }
+.mission-control .g-intro { margin-bottom: 25px; align-items: flex-end; }
+.mission-control .g-eyebrow { font-size: 11px; letter-spacing: 1.1px; color: #a5b2a7; }
+.mission-control .g-intro h1 { font-size: clamp(38px, 4.3vw, 67px); line-height: 1; letter-spacing: -2.5px; margin: 12px 0 14px; }
+.mission-control .g-intro p { font-size: 14px; line-height: 1.65; color: #aeb9ae; }
+.mission-control .g-mode { margin: 0 0 4px; min-width: 310px; background: #202b25; border-color: #4b5d4b; padding: 14px 17px; }
+.mission-control .g-mode strong { font: 11px/1.6 var(--g-mono); letter-spacing: .7px; }
+.mission-control .g-mode div>span { font-size: 10px; color: #a1b29a; }
+.mc-mode-boundaries { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; border-top: 1px solid var(--g-line); padding: 13px 0 17px; font-size: 12px; color: #a1afa5; }
+.mc-mode-boundaries>span { display: flex; align-items: center; gap: 7px; }
+.mc-mode-boundaries b { color: #d2d9c9; font-weight: 400; }
+.mc-mode-boundaries>button { margin-left: auto; text-align: right; font: 11px/1.5 var(--g-mono); color: #c7ba94; padding: 0; }
+.mission-control .g-console { display: grid; grid-template-columns: minmax(250px, .9fr) minmax(0, 2.4fr) minmax(270px, 1fr); gap: 16px; align-items: stretch; }
+.mission-control .g-panel { border-color: #34403e; background: #192121; border-radius: 5px; }
+.mission-control .g-panel-heading { min-height: 54px; height: auto; padding: 15px; gap: 10px; }
+.mission-control .g-panel-heading h2 { font-size: 13px; line-height: 1.5; font-weight: 500; }
+.mission-control .g-tag { font-size: 9px; color: #a6b7a1; letter-spacing: .5px; }
+.mission-control .g-computer-panel { grid-column: 1; grid-row: 1; }
+.mission-control .g-orbit-panel { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; }
+.mission-control .g-calculations { grid-column: 3; grid-row: 1; }
+.mission-control .g-computer-panel .g-panel-heading h2 { font-size: 13px; }
+.mission-control .g-orbit-panel .g-panel-heading .g-tag { color: #b8a67c; }
+.mission-control .g-orbit-view { background: radial-gradient(ellipse at center, #24312e44, transparent 73%), #111a1b; display: flex; flex-direction: column; flex: 1; min-height: 410px; }
+.mission-control .g-orbit-view>svg { width: 100%; height: auto; min-height: 345px; flex: 1; }
+.mission-control .g-view-top { position: static; padding: 16px 17px 0; font-size: 9px; color: #a0b1a2; letter-spacing: .35px; }
+.mission-control .g-view-top>span:last-child { display: block; color: #b8a985; text-align: right; }
+.mission-control .g-orbit-outline { stroke: #b7d3ac; stroke-width: 1.1; opacity: .82; }
+.mission-control .g-moon-caption text:first-child { font-size: 12px; fill: #c8d2c1; letter-spacing: 3px; }
+.mission-control .g-moon-caption text:last-child { font-size: 10px; fill: #a6b79d; }
+.mission-control .g-svg-note { font-size: 11px; fill: #b1c0ad; }
+.mission-control .g-site-label, .mission-control .g-craft-label, .mission-control .g-missing-label { font-size: 11px; letter-spacing: .5px; }
+.mission-control .g-orbit-reference text { font-size: 10px; fill: #9aaf96; }
+.mission-control .g-orbit-reference text:last-child { font-size: 8px; }
+.mission-control .g-view-bottom { font-size: 10px; gap: 18px; padding: 0 17px 14px; flex-wrap: wrap; color: #aebca5; }
+.mission-control .g-view-bottom .g-not-motion { font-size: 10px; display: flex !important; color: #c6b893; }
+.mission-control .g-projection-note { font: 11px/1.7 var(--g-mono); padding: 0 17px 17px; color: #a6b89b; }
+.mission-control .g-initial-readouts { padding: 18px 17px; background: #202b27; gap: 13px; flex-wrap: wrap; }
+.mission-control .g-initial-readouts>div { flex: 1; }
+.mission-control .g-initial-readouts>div>span { font-size: 9px; letter-spacing: .6px; color: #a5b39c; }
+.mission-control .g-initial-readouts strong { font-size: clamp(21px, 1.8vw, 29px); color: #e3e6d5; }
+.mission-control .g-initial-readouts small { font-size: 11px; margin-left: 5px; color: #aebd9d; }
+.mission-control .g-initial-readouts>button { width: 28px; height: 28px; font-size: 15px; }
+.mission-control .g-dsky { margin: 14px 12px 0; padding: 15px 13px 11px; background: #101a16; border: 1px solid #667264; border-top: 3px solid #83907b; box-shadow: inset 0 3px 22px #0006, 0 6px 18px #0002; }
+.mission-control .g-dsky-name { font-size: 11px; letter-spacing: .7px; color: #c5cbb6; flex-wrap: wrap; }
+.mission-control .g-dsky-name>span { font-size: 8px; color: #8ca17d; }
+.mission-control .g-dsky-heading { margin: 22px 0 17px; gap: 8px; }
+.mission-control .g-dsky-heading>div>span { font-size: 10px; letter-spacing: .7px; color: #a1b592; }
+.mission-control .g-dsky-heading strong { font-size: clamp(28px, 2.5vw, 38px); letter-spacing: 3px; color: #c0e0a9; }
+.mission-control .g-dsky-register { font-size: 10px; padding: 8px 0; color: #a0b18c; }
+.mission-control .g-dsky-register strong { font-size: clamp(20px, 1.9vw, 27px); letter-spacing: 2px; color: #c3e3ae; }
+.mission-control .g-dsky-foot { font-size: 9px; line-height: 1.4; align-items: flex-start; color: #9caf89; gap: 6px; }
+.mission-control .g-dsky-foot>span:last-child { color: #b4bca3; font-size: 8px; white-space: nowrap; }
+.mc-recorded-mark { font-size: 12px; line-height: 1; }
+.mc-indicators { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 5px; margin-top: 14px; border-top: 1px solid #43503f; padding-top: 11px; }
+.mc-indicators>span { display: flex; justify-content: space-between; align-items: center; gap: 4px; border: 1px solid #576151; background: #30372f; padding: 6px; font: 9px/1.4 var(--g-mono); color: #c3c8b8; }
+.mc-indicators b { font-weight: 400; color: #adb3a4; }
+.mc-indicators small { grid-column: 1 / -1; font: 8px/1.7 var(--g-mono); letter-spacing: .3px; color: #9da992; margin-top: 1px; }
+.mission-control .g-stage { margin: 17px 15px 12px; padding-bottom: 15px; border-color: #3b473f; }
+.mission-control .g-stage .g-eyebrow { font-size: 9px; }
+.mission-control .g-stage strong { font-size: 15px; color: #e4e5d0; }
+.mission-control .g-stage>span:last-child { font-size: 12px; line-height: 1.65; color: #a3b49a; }
+.mission-control .g-dsky-note { font: 11px/1.7 var(--g-mono); color: #a4b394; margin: auto 15px 16px; }
+.mission-control .g-alarm { margin: 0 15px 14px; padding: 10px; border-color: #877044; background: #342e23; }
+.mission-control .g-alarm>span { font-size: 9px; }
+.mission-control .g-alarm>strong { font-size: 15px; }
+.mission-control .g-alarm p { font-size: 12px; line-height: 1.6; }
+.mission-control .g-calculations .g-panel-heading { align-items: flex-start; flex-direction: column; gap: 2px; }
+.mc-guidance-intro { padding: 16px 17px 0; }
+.mc-guidance-intro .g-eyebrow { font-size: 9px; }
+.mc-guidance-intro p { margin: 6px 0 14px; color: #c6cdbb; font-size: 13px; line-height: 1.7; }
+.mission-control .g-calculation-grid { display: grid; grid-template-columns: 1fr; padding: 0 17px; }
+.mission-control .g-calculation-grid>div { border: 0; border-top: 1px solid #3b463c; padding: 15px 0; }
+.mission-control .g-value-label { font-size: 10px; color: #a5b49b; letter-spacing: .6px; }
+.mission-control .g-calculation-grid strong { font-size: 25px; line-height: 1.4; margin: 6px 0 3px; letter-spacing: -.8px; }
+.mission-control .g-calculation-grid strong>small { font-size: 11px; margin-left: 6px; }
+.mission-control .g-calculation-grid>div>small { font-size: 11px; line-height: 1.6; color: #a2b195; max-width: none; }
+.mission-control .g-calculation-grid .g-tig { order: -1; border-top-color: #8b7852; background: linear-gradient(90deg, #4b402521, transparent); }
+.mission-control .g-calculation-grid .g-tig strong { font-size: 30px; }
+.mission-control .g-calculation-foot { flex-direction: column; align-items: flex-start; padding: 13px 17px; font: 10px/1.7 var(--g-mono); gap: 6px; background: #202b24; }
+.mission-control .g-calculation-foot>span:last-child { text-align: left; color: #9aaf8e; }
+.mission-control .g-scenarios { margin: 24px 0 0; padding: 18px 0; gap: 22px; }
+.mission-control .g-scenario-label { min-width: 195px; }
+.mission-control .g-scenario-label>span:last-of-type { font-size: 12px; color: #a0af9a; display: block; margin-top: 3px; }
+.mc-compare { font-size: 12px; color: #dbc494; padding: 0 0 2px; border-bottom: 1px solid #7e7253; margin-top: 8px; }
+.mission-control .g-scenario-options { grid-template-columns: 1fr 1fr 1.2fr; gap: 10px; }
+.mission-control .g-scenario-options button { min-height: 70px; padding: 12px 15px; background: #19211e; }
+.mission-control .g-scenario-options strong { font-size: 14px; line-height: 1.5; white-space: normal; }
+.mission-control .g-scenario-options small { font-size: 11px; line-height: 1.5; color: #a7b39c; }
+.mission-control .g-scenario-letter { width: 29px; height: 29px; font-size: 12px; }
+.mission-control .g-scenario-options button.selected { border-color: #c2a876; background: #373525; }
+.mission-control .g-scenario-options button.selected .g-scenario-letter { border-color: #c2a876; }
+.mission-control .g-scenario-indicator { font-size: 12px; }
+.mission-control .g-transport { margin: 0 0 24px; padding: 17px 18px 15px; background: #202923; border-color: #4c5c46; }
+.mission-control .g-transport-top { flex-wrap: wrap; gap: 14px; }
+.mission-control .g-icon-button { min-width: 38px; height: 38px; font-size: 20px; }
+.mission-control .g-play { height: 38px; min-width: 136px; font-size: 13px; }
+.mission-control .g-transport select { height: 38px; font-size: 12px; padding: 0 9px; }
+.mission-control .g-jump { font-size: 12px; }
+.mission-control .g-replay-clock { font-size: 12px; gap: 10px; }
+.mission-control .g-replay-clock strong { font-size: 17px; }
+.mission-control .g-replay-clock small { display: inline; font-size: 9px; }
+.mission-control .g-transport-state { font-size: 10px; }
+.mission-control .g-timeline-labels { font-size: 9px; line-height: 1.6; letter-spacing: .5px; }
+.mission-control .g-timeline-labels>span:nth-child(2) { color: #93a583; }
+.mission-control .g-timeline-wrap { height: 24px; margin-top: 20px; }
+.mission-control .g-timeline-wrap input { top: 8px; height: 4px; }
+.mission-control .g-timeline-wrap input::-webkit-slider-thumb { height: 19px; width: 13px; }
+.mission-control .g-timeline-wrap input::-moz-range-thumb { height: 15px; width: 9px; }
+.mission-control .g-timeline-marks i { height: 20px; }
+.mission-control .g-lower-grid { grid-template-columns: minmax(0,1.12fr) minmax(0,1fr); gap: 18px; }
+.mission-control .g-event-heading { font-size: 9px; grid-template-columns: 78px 1fr; padding: 15px 18px 10px; color: #9aad90; }
+.mission-control .g-events { max-height: 580px; }
+.mission-control .g-events button { grid-template-columns: 78px 1fr; padding: 15px 8px; gap: 15px; }
+.mission-control .g-events time { font-size: 12px; }
+.mission-control .g-events strong { font-size: 14px; line-height: 1.5; }
+.mission-control .g-events p { font-size: 12px; line-height: 1.7; color: #9db090; }
+.mission-control .g-events button.current p { color: #bdcaaa; }
+.mission-control .g-event-note { font: 11px/1.8 var(--g-mono); padding: 15px 18px; color: #a0b18f; }
+.mission-control .g-learn-intro { padding: 23px; }
+.mission-control .g-learn-intro>span { font-size: 9px; top: 25px; right: 23px; }
+.mission-control .g-learn-intro h3 { font-size: 34px; line-height: 1.15; margin-bottom: 15px; }
+.mission-control .g-learn-intro p { font-size: 14px; line-height: 1.8; max-width: 500px; color: #a6b79a; }
+.mission-control .g-lessons { padding: 0 22px 10px; }
+.mission-control .g-lessons summary { font-size: 14px; line-height: 1.6; padding: 16px 21px 16px 0; color: #d0d9c1; }
+.mission-control .g-lessons summary>span { font-size: 10px; margin-right: 11px; }
+.mission-control .g-lessons summary:after { top: 15px; }
+.mission-control .g-lessons p { font-size: 14px; line-height: 1.8; padding-left: 27px; margin-bottom: 18px; color: #a8ba9b; }
+.mission-control .g-lessons code { font-size: 13px; }
+.mc-crew { margin-top: 23px; }
+.mc-crew-intro { font-size: 13px; color: #a7b39e; margin: 18px 19px; line-height: 1.7; }
+.mc-crew-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.mc-crew-grid article { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 13px; padding: 5px 19px 23px; border-right: 1px solid #3b473c; }
+.mc-crew-grid article:last-child { border-right: 0; }
+.mc-crew-code { width: 44px; height: 51px; border: 1px solid #58634e; display: flex; flex-direction: column; align-items: center; justify-content: center; font: 12px var(--g-mono); color: #d2c29a; border-radius: 3px; }
+.mc-crew-code small { font-size: 9px; color: #92a384; margin-top: 5px; }
+.mc-crew-grid h3 { font-size: 17px; font-weight: 400; margin: 0 0 4px; color: #dedfce; }
+.mc-crew-grid article>div>span { font: 11px/1.7 var(--g-mono); color: #b1bfa2; }
+.mc-crew-grid article p { font-size: 12px; color: #a1b093; line-height: 1.7; margin: 8px 0 13px; }
+.mc-planned { grid-column: 2; font: 10px/1.7 var(--g-mono); color: #9b9c89; }
+.mission-control .g-footer { font-size: 12px; gap: 20px; align-items: flex-start; }
+.mission-control .g-footer strong, .mission-control .g-footer button { font-size: 12px; }
+.mission-control .g-footer>div>span:last-child { display: inline; color: #a0ae96; }
+.mission-control .g-provenance { font-size: 14px; }
+.mission-control .g-provenance p { font-size: 14px; line-height: 1.85; color: #b6c5aa; }
+.mission-control .g-provenance dl { grid-template-columns: 128px 1fr; }
+.mission-control .g-provenance dt, .mission-control .g-provenance dd { font: 11px/1.8 var(--g-mono); }
+.mission-control dialog { width: min(900px, calc(100% - 32px)); padding: 24px; background: #1b2521; }
+.mission-control dialog h2 { font-size: 30px; }
+.mission-control .dialog-heading .eyebrow { font-size: 10px; }
+.mission-control .dialog-heading button { height: 38px; width: 38px; font-size: 24px; }
+.g-comparison-scroll { overflow-x: auto; }
+.g-comparison { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+.g-comparison caption { color: #a3b49a; text-align: left; font: 10px/1.8 var(--g-mono); margin-bottom: 12px; }
+.g-comparison th, .g-comparison td { border-top: 1px solid #495640; padding: 14px 11px; text-align: left; vertical-align: top; font-weight: 400; }
+.g-comparison thead th { font: 10px/1.7 var(--g-mono); color: #b4c3a6; }
+.g-comparison tbody th { color: #e5dcc1; min-width: 140px; }
+.g-comparison tbody td { font: 12px/1.7 var(--g-mono); color: #d4d9bf; min-width: 90px; }
+@media (min-width: 1750px) {
+  .mission-control .g-orbit-view>svg { min-height: 425px; }
+  .mission-control .g-console { grid-template-columns: 310px minmax(0, 1fr) 320px; }
+}
+@media (max-width: 1250px) {
+  .mission-control .g-header { gap: 20px; padding: 0 22px; }
+  .mission-control .g-header nav { gap: 14px; }
+  .mission-control .g-header nav a:nth-child(2) { display: none; }
+  .mc-top-status { padding-left: 18px; }
+  .mc-top-status strong { font-size: 12px; max-width: 190px; }
+  .mc-clock strong { font-size: 17px; }
+  .mission-control .g-main { padding: 24px 22px; }
+  .mission-control .g-console { grid-template-columns: 255px minmax(0, 1fr); gap: 16px; }
+  .mission-control .g-calculations { grid-column: 1 / -1; grid-row: 2; }
+  .mission-control .g-calculations .g-panel-heading { flex-direction: row; align-items: center; }
+  .mc-guidance-intro { display: none; }
+  .mission-control .g-calculation-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; }
+  .mission-control .g-calculation-grid>div { padding: 20px 15px; border: 0; border-right: 1px solid #3b463c; }
+  .mission-control .g-calculation-grid>div:last-child { border: 0; }
+  .mission-control .g-calculation-grid .g-tig { order: 0; background: none; }
+  .mission-control .g-calculation-grid strong { font-size: 24px; }
+  .mission-control .g-calculation-grid .g-tig strong { font-size: 27px; }
+  .mission-control .g-calculation-foot { flex-direction: row; justify-content: space-between; gap: 20px; }
+  .mission-control .g-calculation-foot>span:last-child { text-align: right; }
+  .mission-control .g-dsky-heading strong { font-size: 32px; }
+  .mission-control .g-dsky-register strong { font-size: 23px; }
+}
+@media (max-width: 900px) {
+  .mission-control .g-header { flex-wrap: wrap; height: auto; min-height: 92px; padding: 16px 20px; gap: 12px 22px; }
+  .mission-control .g-wordmark { font-size: 18px; }
+  .mc-top-status { order: 3; width: calc(100% - 200px); border: 0; padding: 0; }
+  .mc-top-status strong { max-width: none; font-size: 13px; }
+  .mc-top-status .mc-status-label { font-size: 9px; }
+  .mc-clock { order: 4; text-align: right; margin-left: auto; }
+  .mc-clock>span { font-size: 8px; }
+  .mission-control .g-header nav { gap: 19px; }
+  .mission-control .g-main { padding: 25px 18px; }
+  .mission-control .g-intro { gap: 18px; }
+  .mission-control .g-intro h1 { font-size: 48px; }
+  .mission-control .g-intro p { font-size: 13px; }
+  .mission-control .g-mode { min-width: 250px; padding: 13px; }
+  .mission-control .g-mode strong { font-size: 9px; }
+  .mission-control .g-mode div>span { font-size: 9px; }
+  .mc-mode-boundaries { gap: 10px 17px; }
+  .mc-mode-boundaries>button { margin-left: 0; text-align: left; flex-basis: 100%; }
+  .mission-control .g-console { grid-template-columns: 245px minmax(0, 1fr); gap: 13px; }
+  .mission-control .g-view-top { font-size: 8px; flex-direction: column; gap: 4px; }
+  .mission-control .g-view-top>span:last-child { text-align: left; }
+  .mission-control .g-orbit-view>svg { min-height: 300px; }
+  .mission-control .g-initial-readouts { gap: 16px 10px; }
+  .mission-control .g-initial-readouts>div { flex: 1 1 40%; }
+  .mission-control .g-calculation-grid { grid-template-columns: 1fr 1fr; }
+  .mission-control .g-calculation-grid>div { border-bottom: 1px solid #3b463c; padding: 18px; }
+  .mission-control .g-calculation-grid>div:nth-child(2) { border-right: 0; }
+  .mission-control .g-calculation-grid>div:nth-child(n+3) { border-bottom: 0; }
+  .mission-control .g-scenario-label { min-width: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 7px 16px; margin: 0 0 13px; }
+  .mission-control .g-scenario-label>span:last-of-type { margin: 0; font-size: 12px; }
+  .mission-control .g-scenario-label .mc-compare { margin: 0; }
+  .mission-control .g-scenarios { display: block; }
+  .mission-control .g-scenario-options button { padding: 10px; gap: 9px; }
+  .mission-control .g-scenario-options strong { font-size: 12px; }
+  .mission-control .g-scenario-options small { font-size: 10px; }
+  .mission-control .g-scenario-letter { width: 25px; height: 25px; }
+  .mission-control .g-replay-clock small { display: none; }
+  .mission-control .g-lower-grid { grid-template-columns: 1fr; }
+  .mc-crew-grid { grid-template-columns: 1fr; }
+  .mc-crew-grid article { padding: 18px 20px; border-right: 0; border-bottom: 1px solid #3b473c; }
+  .mc-crew-grid article:last-child { border-bottom: 0; }
+  .mc-crew-grid article p { margin-bottom: 10px; }
+  .mc-crew-grid h3 { font-size: 18px; }
+}
+@media (max-width: 680px) {
+  .mission-control .g-header { padding: 14px 16px; gap: 13px; }
+  .mission-control .g-header nav { gap: 15px; }
+  .mission-control .g-header nav a, .mission-control .g-header nav button { font-size: 11px; }
+  .mc-top-status { width: calc(100% - 170px); }
+  .mc-top-status strong { font-size: 12px; line-height: 1.5; }
+  .mc-clock>span { max-width: 145px; white-space: normal; letter-spacing: .4px; }
+  .mc-clock strong { font-size: 18px; }
+  .mission-control .g-main { padding: 23px 14px; }
+  .mission-control .g-intro { display: block; margin-bottom: 18px; }
+  .mission-control .g-intro .g-eyebrow { font-size: 9px; letter-spacing: .7px; }
+  .mission-control .g-intro h1 { font-size: 50px; margin: 14px 0; }
+  .mission-control .g-intro p { font-size: 14px; }
+  .mission-control .g-mode { min-width: 0; margin-top: 20px; padding: 13px; }
+  .mission-control .g-mode strong { font-size: 11px; }
+  .mission-control .g-mode div>span { font-size: 10px; }
+  .mc-mode-boundaries { align-items: flex-start; font-size: 11px; padding-bottom: 18px; gap: 9px; }
+  .mc-mode-boundaries>span { flex-wrap: wrap; gap: 5px; }
+  .mc-mode-boundaries>button { font-size: 10px; line-height: 1.7; }
+  .mission-control .g-console { display: flex; flex-direction: column; gap: 16px; }
+  .mission-control .g-orbit-panel { order: 0; }
+  .mission-control .g-calculations { order: 1; }
+  .mission-control .g-computer-panel { order: 2; }
+  .mission-control .g-panel-heading { padding: 14px; min-height: 50px; gap: 8px; }
+  .mission-control .g-panel-heading h2 { font-size: 13px; }
+  .mission-control .g-tag { font-size: 8px; white-space: normal; text-align: right; line-height: 1.5; }
+  .mission-control .g-orbit-view { min-height: 0; }
+  .mission-control .g-orbit-view>svg { min-height: 235px; height: 235px; flex: initial; }
+  .mission-control .g-view-top { flex-direction: row; font-size: 7px; padding: 13px 12px 0; gap: 10px; }
+  .mission-control .g-view-top>span:last-child { text-align: right; max-width: 115px; }
+  .mission-control .g-view-bottom { font-size: 10px; gap: 10px 15px; padding: 0 13px 12px; }
+  .mission-control .g-view-bottom .g-not-motion { margin-left: 0; font-size: 10px; }
+  .mission-control .g-projection-note { padding: 0 13px 14px; font-size: 11px; }
+  .mission-control .g-svg-note { font-size: 17px; }
+  .mission-control .g-site-label, .mission-control .g-craft-label, .mission-control .g-missing-label { font-size: 17px; }
+  .mission-control .g-moon-caption text:first-child { font-size: 19px; }
+  .mission-control .g-moon-caption text:last-child { font-size: 15px; }
+  .mission-control .g-initial-readouts { padding: 16px 13px; flex-wrap: nowrap; gap: 12px; }
+  .mission-control .g-initial-readouts>div { flex: 1; }
+  .mission-control .g-initial-readouts>div>span { font-size: 8px; letter-spacing: .3px; }
+  .mission-control .g-initial-readouts strong { font-size: 22px; }
+  .mission-control .g-initial-readouts small { font-size: 10px; margin-left: 3px; }
+  .mission-control .g-initial-readouts>button { width: 26px; height: 26px; font-size: 15px; }
+  .mission-control .g-calculations .g-panel-heading { flex-direction: row; }
+  .mission-control .g-calculations .g-tag { font-size: 8px; max-width: 110px; }
+  .mission-control .g-value-label { font-size: 9px; }
+  .mission-control .g-calculation-grid>div { padding: 16px 13px; }
+  .mission-control .g-calculation-grid strong { font-size: 22px; }
+  .mission-control .g-calculation-grid .g-tig strong { font-size: 24px; }
+  .mission-control .g-calculation-grid strong>small { font-size: 10px; margin-left: 5px; }
+  .mission-control .g-calculation-grid>div>small { font-size: 11px; }
+  .mission-control .g-calculation-foot { display: flex; flex-direction: column; gap: 8px; font-size: 10px; padding: 13px; }
+  .mission-control .g-calculation-foot>span:last-child { text-align: left; }
+  .mission-control .g-dsky { margin: 15px 16px 0; padding: 18px; }
+  .mission-control .g-dsky-name { font-size: 12px; }
+  .mission-control .g-dsky-name>span { font-size: 9px; }
+  .mission-control .g-dsky-heading { margin: 23px 0 18px; gap: 20px; }
+  .mission-control .g-dsky-heading>div>span { font-size: 11px; }
+  .mission-control .g-dsky-heading strong { font-size: 40px; }
+  .mission-control .g-dsky-register { font-size: 12px; }
+  .mission-control .g-dsky-register strong { font-size: 29px; letter-spacing: 3px; }
+  .mission-control .g-dsky-foot { font-size: 10px; }
+  .mission-control .g-dsky-foot>span:last-child { font-size: 9px; }
+  .mc-indicators>span { font-size: 11px; padding: 8px; }
+  .mc-indicators small { font-size: 10px; }
+  .mission-control .g-stage { margin: 19px 18px 15px; }
+  .mission-control .g-stage .g-eyebrow { font-size: 10px; }
+  .mission-control .g-stage strong { font-size: 17px; }
+  .mission-control .g-stage>span:last-child { font-size: 13px; }
+  .mission-control .g-dsky-note { margin: 0 18px 18px; font-size: 11px; }
+  .mission-control .g-scenarios { margin-top: 23px; }
+  .mission-control .g-scenario-label { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .mission-control .g-scenario-label>span:last-of-type { grid-column: 1; text-align: left; max-width: none; font-size: 11px; }
+  .mission-control .g-scenario-label .mc-compare { grid-column: 2; grid-row: 1 / 3; font-size: 11px; }
+  .mission-control .g-scenario-options { grid-template-columns: 1fr; gap: 8px; }
+  .mission-control .g-scenario-options button { min-height: 63px; padding: 11px 13px; gap: 12px; }
+  .mission-control .g-scenario-options button>span:nth-child(2) { display: block; }
+  .mission-control .g-scenario-options strong { font-size: 14px; min-width: 0; }
+  .mission-control .g-scenario-options small { font-size: 11px; margin-top: 2px; }
+  .mission-control .g-scenario-letter { width: 29px; height: 29px; font-size: 12px; }
+  .mission-control .g-transport { padding: 15px 12px; }
+  .mission-control .g-transport-top { gap: 15px; }
+  .mission-control .g-transport-buttons { flex-wrap: wrap; gap: 7px; width: 100%; }
+  .mission-control .g-icon-button { min-width: 34px; height: 38px; padding: 0 6px; }
+  .mission-control .g-play { min-width: 126px; font-size: 12px; padding: 0 10px; }
+  .mission-control .g-transport select { font-size: 11px; padding: 0 6px; }
+  .mission-control .g-jump { margin-left: 0; font-size: 11px; }
+  .mission-control .g-replay-clock { order: 3; flex-basis: 100%; font-size: 12px; }
+  .mission-control .g-replay-clock strong { font-size: 17px; }
+  .mission-control .g-replay-clock small { display: inline; font-size: 8px; }
+  .mission-control .g-transport-state { font-size: 9px; margin-left: auto; }
+  .mission-control .g-timeline-labels { font-size: 8px; letter-spacing: .3px; }
+  .mission-control .g-events { max-height: 440px; padding: 0 10px; }
+  .mission-control .g-event-heading { grid-template-columns: 66px 1fr; font-size: 9px; }
+  .mission-control .g-events button { grid-template-columns: 66px 1fr; gap: 11px; padding: 15px 7px; }
+  .mission-control .g-events time { font-size: 11px; }
+  .mission-control .g-events strong { font-size: 14px; }
+  .mission-control .g-events p { font-size: 12px; }
+  .mission-control .g-event-note { font-size: 11px; padding: 15px; }
+  .mission-control .g-learn-intro { padding: 22px 19px; }
+  .mission-control .g-learn-intro h3 { font-size: 31px; }
+  .mission-control .g-learn-intro>span { font-size: 8px; right: 19px; }
+  .mission-control .g-learn-intro p { font-size: 14px; }
+  .mission-control .g-lessons { padding: 0 18px 7px; }
+  .mission-control .g-lessons summary { font-size: 14px; padding: 17px 22px 17px 0; }
+  .mission-control .g-lessons p { font-size: 14px; }
+  .mission-control .g-lessons code { font-size: 12px; }
+  .mc-crew-intro { margin: 16px; font-size: 13px; }
+  .mc-crew-grid article { padding: 17px 16px; gap: 12px; }
+  .mc-crew-grid h3 { font-size: 18px; }
+  .mc-crew-grid article p { font-size: 13px; }
+  .mc-crew-grid article>div>span, .mc-planned { font-size: 11px; }
+  .mission-control .g-footer { font-size: 11px; gap: 15px; }
+  .mission-control .g-footer>div { max-width: 230px; }
+  .mission-control .g-footer strong, .mission-control .g-footer button { font-size: 11px; }
+  .mission-control .g-footer>div>span:last-child { display: block; margin-top: 5px; }
+  .mission-control .g-provenance dl { grid-template-columns: 1fr; }
+  .mission-control dialog { padding: 20px; }
+  .mission-control dialog h2 { font-size: 25px; }
+}
+
+/* Primary action reaches an actual final observation, including negative controls. */
+.mc-mode-boundaries>.mc-outcome {
+  margin-left: auto;
+  padding: 8px 12px;
+  border: 1px solid #a58f61;
+  border-radius: 3px;
+  background: #3a3626;
+  color: #efdbb0;
+  font: 12px/1.5 var(--g-sans);
+  text-align: center;
+}
+.mc-mode-boundaries>.mc-outcome:hover:not(:disabled) { background: #51472e; border-color: #dcc08c; }
+.mc-mode-boundaries>#capabilities-open { margin-left: 0; }
+@media (max-width: 900px) {
+  .mc-mode-boundaries>.mc-outcome { margin-left: 0; flex-basis: auto; }
+  .mc-mode-boundaries>#capabilities-open { flex-basis: auto; }
+}
+@media (max-width: 680px) {
+  .mc-mode-boundaries>.mc-outcome { margin: 7px 0 2px; min-height: 40px; }
+  .mc-mode-boundaries>#capabilities-open { flex-basis: 100%; }
+}

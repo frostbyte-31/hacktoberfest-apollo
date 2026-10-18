@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "make",
+    "test-final",
+    "NODE=/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/final-integration",
+  "utc": "2026-10-18T00:21:39.970405+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 101.709257,
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit"
+}

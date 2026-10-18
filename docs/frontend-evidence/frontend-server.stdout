@@ -1,0 +1,14 @@
+python3 -B tools/demo/demo.py launch --port 4182
+{
+  "result": "VERIFIED",
+  "mode": "recorded authentic replay",
+  "bytes": 2736537,
+  "sha256": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709",
+  "checked": false
+}
+RECORDED AUTHENTIC EXECUTION REPLAY · SYNTHETIC · powered descent NOT RUN
+Open http://127.0.0.1:4182/guidance.html
+Apollo 11 Guidance Labs
+Local: http://127.0.0.1:4182/
+Pre-ignition recorded replay: http://127.0.0.1:4182/guidance.html
+Live control: disabled

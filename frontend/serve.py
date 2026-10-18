@@ -55,7 +55,7 @@ class ApolloHandler(SimpleHTTPRequestHandler):
             path = urlsplit(self.path).path
             if path == '/api/bootstrap':
                 self._json(200, {'liveEnabled': self.server.live_enabled,
-                                 'token': self.server.control_token if self.server.live_enabled else None,
+                                 'token': self.server.control_token if self.server.live_enabled or self.server.procedure_enabled else None,
                                  'axes': ['yaw', 'pitch'], 'deflectionCounts': 20,
                                  'pulseLeaseSeconds': .5, 'scope': 'Bounded attitude only; no powered descent.',
                                  'procedureEnabled': self.server.procedure_enabled,
@@ -63,7 +63,7 @@ class ApolloHandler(SimpleHTTPRequestHandler):
             elif path == '/api/status':
                 self._json(200, self.server.controls.snapshot())
             elif path == '/api/procedure/status':
-                self._json(200, self.server.procedures.snapshot(enabled=self.server.live_enabled))
+                self._json(200, self.server.procedures.snapshot(enabled=self.server.procedure_enabled))
             elif path == '/api/record':
                 self._token()
                 self._json(200, self.server.controls.record())
@@ -78,7 +78,11 @@ class ApolloHandler(SimpleHTTPRequestHandler):
         try:
             self._origin(mutation=True)
             self._token()
-            if not self.server.live_enabled:
+            path = urlsplit(self.path).path
+            procedure_path = path in ('/api/procedure/start', '/api/procedure/action')
+            if procedure_path and not self.server.procedure_enabled:
+                raise ControlError(409, 'Interactive procedures are disabled on this server.')
+            if not procedure_path and not self.server.live_enabled:
                 raise ControlError(409, 'Live control is disabled on this replay-only server.')
             if self.headers.get('Transfer-Encoding'):
                 raise ControlError(400, 'Transfer-encoded requests are not accepted.')
@@ -133,13 +137,13 @@ class ApolloHandler(SimpleHTTPRequestHandler):
         self._json(403, {'error': 'Cross-origin control is not supported.'})
 
 
-def make_server(port=4173, controls=None, replay_only=False, procedures=None):
+def make_server(port=4173, controls=None, replay_only=False, procedures=None, native_enabled=None):
     handler = partial(ApolloHandler, directory=str(ROOT / 'frontend/dist'))
     server = ThreadingHTTPServer(('127.0.0.1', port), handler)
     server.control_token = secrets.token_urlsafe(32)
     server.controls = controls or ControlService()
     server.procedures = procedures if procedures is not None else ProcedureService()
-    server.live_enabled = not replay_only
+    server.live_enabled = not replay_only and native_enabled is not False
     server.procedure_enabled = not replay_only and server.procedures.available
     return server
 

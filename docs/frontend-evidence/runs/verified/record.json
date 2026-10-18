@@ -1,0 +1,196 @@
+{
+  "base_revision": "5a689c75d43613f29a49fa32d9bd786437825ee5",
+  "changed_during_checks": [],
+  "commands": [
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/frontend-mission-control/docs/frontend-evidence/check_integrity.py"
+      ],
+      "ended_utc": "2026-10-17T21:36:07.456401+00:00",
+      "exit": 0,
+      "name": "preservation-before",
+      "started_utc": "2026-10-17T21:36:06.394982+00:00"
+    },
+    {
+      "argv": [
+        "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/typescript-5.9.3/package/lib/tsc.js",
+        "-p",
+        "frontend/tsconfig.json"
+      ],
+      "ended_utc": "2026-10-17T21:36:08.197261+00:00",
+      "exit": 0,
+      "name": "typecheck",
+      "started_utc": "2026-10-17T21:36:07.457085+00:00"
+    },
+    {
+      "argv": [
+        "/Users/ggtrinkalipu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "frontend/tests/guidance.test.mjs",
+        "frontend/tests/live.test.mjs",
+        "frontend/tests/mission-provider.test.mjs",
+        "frontend/tests/replay.test.mjs",
+        "frontend/tests/spacecraft-view.test.mjs"
+      ],
+      "ended_utc": "2026-10-17T21:36:08.679359+00:00",
+      "exit": 0,
+      "name": "presentation",
+      "started_utc": "2026-10-17T21:36:08.197915+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "backend/tests",
+        "-v"
+      ],
+      "ended_utc": "2026-10-17T21:36:09.109366+00:00",
+      "exit": 0,
+      "name": "backend",
+      "started_utc": "2026-10-17T21:36:08.679994+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "frontend/tests",
+        "-p",
+        "test_replay.py",
+        "-v"
+      ],
+      "ended_utc": "2026-10-17T21:36:15.994820+00:00",
+      "exit": 0,
+      "name": "recorded-attitude",
+      "started_utc": "2026-10-17T21:36:09.110079+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "frontend/tests",
+        "-p",
+        "test_guidance_data.py",
+        "-v"
+      ],
+      "ended_utc": "2026-10-17T21:36:27.551787+00:00",
+      "exit": 0,
+      "name": "recorded-guidance",
+      "started_utc": "2026-10-17T21:36:15.995758+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/demo/tests",
+        "-v"
+      ],
+      "ended_utc": "2026-10-17T21:36:32.280646+00:00",
+      "exit": 0,
+      "name": "launcher",
+      "started_utc": "2026-10-17T21:36:27.552502+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/live-control-evidence",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "ended_utc": "2026-10-17T21:36:42.065623+00:00",
+      "exit": 0,
+      "name": "live-evidence",
+      "started_utc": "2026-10-17T21:36:32.281407+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "tools/demo/demo.py",
+        "verify"
+      ],
+      "ended_utc": "2026-10-17T21:36:47.611918+00:00",
+      "exit": 0,
+      "name": "export-verification",
+      "started_utc": "2026-10-17T21:36:42.066854+00:00"
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/frontend-mission-control/docs/frontend-evidence/check_integrity.py"
+      ],
+      "ended_utc": "2026-10-17T21:36:48.278924+00:00",
+      "exit": 0,
+      "name": "preservation-after",
+      "started_utc": "2026-10-17T21:36:47.612760+00:00"
+    }
+  ],
+  "interpretation": "Frontend/API/data checks do not prove powered descent or new AGC execution. Historical missing-log checks were not rerun by this focused suite.",
+  "passed": true,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "source_sha256": {
+    "backend/__init__.py": "16891c1417a38ca9411e892d34719e2ff29e4dc4348a9ad76e659562fd3f48c5",
+    "backend/control_service.py": "c524ef2624b673e966ae6fc067e088ae88bbc4c05dc881c3a6c5b110aaf07f68",
+    "backend/native_session.py": "154a8706c7922f194e75e514055a19913cb468040f4c12bac212133d8c25506c",
+    "backend/tests/test_http.py": "47ac7b501036b769fb06c9156985087a6b6707418de0f953b1acb940e0c72179",
+    "backend/tests/test_native.py": "f69773a465269d64e194592079a0c9803bc42391e175c876c97cc948c7e9e842",
+    "backend/tests/test_service.py": "f81701d867faa9626e037a9f15a0cf9e5c8c52442c45acd960ee8748bd4ad47a",
+    "frontend/README.md": "11bd471db2ee2591cb7c18d9337561a4f3a3a6d9ee416afb350af03f5863a243",
+    "frontend/dist/app.js": "0e1c8480657c82d37f684cd1065dd9ff65731a5327fd5229c55884399f6d49fd",
+    "frontend/dist/data/guidance.json": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709",
+    "frontend/dist/data/replay.json": "54ba56d08f75fd13a48611c99873a0fa6c18e4d402a4e126235140112b80535e",
+    "frontend/dist/favicon.svg": "1d76cf7cab439b68ed21d0dbf8caf698930ed8f773b90ece17da59334ec18390",
+    "frontend/dist/guidance-state.mjs": "8195bb69d827262a6dae379fbc5d56ff14b2a61b1b038a52347e8013fa9626fd",
+    "frontend/dist/guidance.css": "154c495ce725c73c894efbc0061513e05386ad181b95c1371f043096536c3b2d",
+    "frontend/dist/guidance.html": "8c6f6b220a73b939121e018087389cbe0708bf7be0a7444e24d9aac4b52722f8",
+    "frontend/dist/guidance.mjs": "3128716df8c34b28ddc9e17c861e4552d21dce0e66df5f48ef2b9eebe2b17b0f",
+    "frontend/dist/index.html": "46a5fde985f6847752e0c9abb77058ca47136e8dea8d7e5ac179977f66ad9988",
+    "frontend/dist/live.mjs": "093fcaf8344d79b319a1d700e7de555829aed73100e1198e1aaa1a9cc6e71324",
+    "frontend/dist/mission-control.css": "3765c64fa3e9acc1071fe92d8134ad652df7c7905919a3c994b11442a11db97a",
+    "frontend/dist/mission-provider.mjs": "e34946dd61d40aa6b054897d495983412765bf4591fa544855d8406b1a3b3ffc",
+    "frontend/dist/mission-types.d.ts": "b7ca8fb1f93852ab8c1e5b2e870481374df454215ffdf5913b9f0633dc708186",
+    "frontend/dist/replay.mjs": "5f22429eabb9a2f14bfd247cfe16917ab083dba3c3e94f3fe0d475efae2f6217",
+    "frontend/dist/spacecraft-view.mjs": "5dadab12d8c58205071a043f6aa8935ee4bab731f0715a025b1ba1914aaadb53",
+    "frontend/dist/spacecraft.mjs": "2a79c5aeded8c14a5242b0c31af7535ef6fc0393f30eebce6fe3697bb07634f1",
+    "frontend/dist/styles.css": "3e80272e71d788d028fbcab9bc02fdfe1d6d258fcd6786c290c88ceb77a95dde",
+    "frontend/package-lock.json": "dd550cd9c5c77aa2de002cff311f7239e8caa9c27f28a641e5b317138481076b",
+    "frontend/package.json": "090142de6ef8798e3b5e5c5eeb0734c8ec6b1a2cb551a4b43d63357aca1374a6",
+    "frontend/serve.py": "c1cf04692d133f56cc41dcc9886da5445cf8834e053bec4f0749fadc63f8a590",
+    "frontend/tests/guidance.test.mjs": "dea7c8e668e102ad3353f0c395ea60a5462068dc603a42b7dad563f1a2d2d0c2",
+    "frontend/tests/live.test.mjs": "28c26cb3a98a0cb8956fabbe4aa487fbc142d24b3c5e42467bf4786707e6be1f",
+    "frontend/tests/mission-provider.test.mjs": "36330245533dd123643e829e637561c03e2f75833748ea2475264a4bd9dd5827",
+    "frontend/tests/replay.test.mjs": "7c66811d46fc923be3b334f15b9f3f601ddde96b9db9a73a232e5cc97c5532c9",
+    "frontend/tests/spacecraft-view.test.mjs": "2c1670f106958180016df1bdace7d15bf58d404bf1560f659e667cb1886d92a0",
+    "frontend/tests/test_guidance_data.py": "bbfd7e1e122ec61d3532e7ed113195bd7fae63d062629fb3471c8fc9b0c64bd0",
+    "frontend/tests/test_replay.py": "e41d08178283683d71f70528a0857043c90a59a739941a22d2135c5f9d073be2",
+    "frontend/tools/export_guidance.py": "cfd92235e060e47dda78a4680642c51cb7e9c13ae8209a8e543ec6236a4d0baf",
+    "frontend/tools/export_replay.py": "06ee6fdb3799de605cd780dd64032952936f248b0903d9bb0151f20142c2c432",
+    "frontend/tsconfig.json": "8e741ac6de2352e49f6aae58dcbf8230d36d7bce2c120d4da77ca77b3f87f284"
+  }
+}

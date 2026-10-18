@@ -1,0 +1,38 @@
+{
+  "sink": {
+    "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/sink/trace.jsonl.gz",
+    "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/sink/native/trace.jsonl",
+    "retained_raw_sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+    "fresh_raw_sha256": "34fefc6bd8963de1f96cf42a9d1ad3e3bde6bbb7389d59b924b4306d9baadaa2",
+    "fresh_bytes": 95246632,
+    "blocks_compared": 91,
+    "byte_for_byte_equal": true
+  },
+  "connected": {
+    "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/connected/trace.jsonl.gz",
+    "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/connected/native/trace.jsonl",
+    "retained_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+    "fresh_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+    "fresh_bytes": 194558720,
+    "blocks_compared": 186,
+    "byte_for_byte_equal": true
+  },
+  "no-feedback": {
+    "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/no-feedback/trace.jsonl.gz",
+    "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/no-feedback/native/trace.jsonl",
+    "retained_raw_sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+    "fresh_raw_sha256": "39f5783d0b37e80a1916e6bcb49b9050eb90beaa0e308d9a54e95761a699e74f",
+    "fresh_bytes": 104903145,
+    "blocks_compared": 101,
+    "byte_for_byte_equal": true
+  },
+  "repeat": {
+    "retained_gzip": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/docs/phase12-evidence/runs/verified/repeat/trace.jsonl.gz",
+    "fresh_raw": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12/.build/phase12/final-integration-release/runs/repeat/native/trace.jsonl",
+    "retained_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+    "fresh_raw_sha256": "8fcc5ecb31bcf8c0158f71657c04dd1cbb8eca1455bae5d3db48f37bd6d37b53",
+    "fresh_bytes": 194558720,
+    "blocks_compared": 186,
+    "byte_for_byte_equal": true
+  }
+}

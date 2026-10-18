@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-10-18T00:15:48.264Z",
+  "missionId": "0d9764baefe2d205",
+  "method": "Resumed through commander UI and inspected each real browser control.",
+  "runningPermissions": [
+    {
+      "role": "commander",
+      "throttleEnabled": true
+    },
+    {
+      "role": "lunar-module-pilot",
+      "throttleEnabled": false
+    },
+    {
+      "role": "command-module-pilot",
+      "throttleEnabled": false
+    }
+  ]
+}

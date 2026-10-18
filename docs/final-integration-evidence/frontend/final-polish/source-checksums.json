@@ -1,0 +1,10 @@
+{
+  "frontend/dist/mission.html": "6dfff79f8319680daa3014c088436385c2c7322e652c4275e44fa8bcbf484e44",
+  "frontend/dist/mission-app.mjs": "5899e95dc18cd23055ca1f3a904e3c5c2b69255def9b56d1b183cc05a13747a9",
+  "frontend/dist/flight-view.mjs": "0cdfa4e424fa2122df02cb7c3bf706a477ed63d7185a56b9e7219de1c8834fe9",
+  "frontend/dist/mission-live-provider.mjs": "1b65e7074ea188b6ec7e00f26a54b3c1237113555bfd5332a7f7f662bb8e4838",
+  "frontend/dist/mission-live-types.d.ts": "fe8ef73bd831e176d17205dce9b9fdf3f5f2c6f3593fd7c0ac34a36faa57f848",
+  "frontend/dist/mission.css": "94955273781c6168e4de7dce2ab8215d545c94fecc7aedb8cb9c4fa874664618",
+  "frontend/tests/mission-live-provider.test.mjs": "ebd2a7cf018fed8c18348c9bbfd8ecde9e0c4f7243de5cdaab12685227f95866",
+  "frontend/tests/flight-view.test.mjs": "437a21fd247176552ce6f14dc3674996450ccdc9ae12152056a697f3b49c08c7"
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "original-phase10-5-integrity",
+    "argv": [
+      "python3",
+      "-B",
+      "docs/phase10_5-evidence/check_integrity.py"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-18T00:22:08.627377+00:00",
+    "scope": "Untouched original backend-phase12 checkout; current application deltas validated separately by root",
+    "exit": 0,
+    "ended_utc": "2026-10-18T00:22:09.137421+00:00"
+  },
+  {
+    "name": "original-phase10-5-native-retention",
+    "argv": [
+      "python3",
+      "-B",
+      "docs/phase10_5-evidence/retain_native.py",
+      "--check"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-18T00:22:09.137977+00:00",
+    "scope": "Untouched original backend-phase12 checkout; current application deltas validated separately by root",
+    "exit": 0,
+    "ended_utc": "2026-10-18T00:22:09.251814+00:00"
+  },
+  {
+    "name": "original-demo-integrity",
+    "argv": [
+      "python3",
+      "-B",
+      "tools/demo/demo.py",
+      "verify"
+    ],
+    "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+    "started_utc": "2026-10-18T00:22:09.252222+00:00",
+    "scope": "Untouched original backend-phase12 checkout; current application deltas validated separately by root",
+    "exit": 0,
+    "ended_utc": "2026-10-18T00:22:15.120017+00:00"
+  }
+]

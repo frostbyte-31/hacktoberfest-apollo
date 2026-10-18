@@ -1,0 +1,159 @@
+test_duplicate_nonfinite_malformed_and_nonobject_arguments_fail_closed (test_crew_ai.CrewProviderTests) ... ok
+test_explicit_environment_supports_both_formats_without_requesting_any_model (test_crew_ai.CrewProviderTests) ... ok
+test_no_implicit_model_or_credentials_are_used (test_crew_ai.CrewProviderTests) ... ok
+test_private_keys_tokens_native_paths_are_omitted_from_model_context (test_crew_ai.CrewProviderTests) ... ok
+test_provider_url_model_protocol_and_timeout_configuration_fail_closed (test_crew_ai.CrewProviderTests) ... ok
+test_response_size_and_command_count_are_bounded (test_crew_ai.CrewProviderTests) ... ok
+test_responses_and_chat_formats_parse_only_declared_role_tools (test_crew_ai.CrewProviderTests) ... ok
+test_timeout_propagates_for_the_service_to_use_labeled_fallback (test_crew_ai.CrewProviderTests) ... ok
+test_tools_have_strict_bounded_schemas_and_role_scopes (test_crew_ai.CrewProviderTests) ... ok
+test_unknown_roles_and_unavailable_tools_fail_before_proposals_are_returned (test_crew_ai.CrewProviderTests) ... ok
+test_cross_site_navigation_allows_static_documents_only_with_a_valid_host (test_final_http.FinalHttpTests) ... ok
+test_global_token_origin_host_and_participant_auth_are_enforced (test_final_http.FinalHttpTests) ... ok
+test_identical_http_inputs_and_owner_ticks_are_deterministic (test_final_http.FinalHttpTests) ... ok
+test_invalid_json_nonfinite_duplicates_and_extra_fields_never_create_a_mission (test_final_http.FinalHttpTests) ... ok
+test_preserved_old_routes_and_static_data_do_not_start_native_execution (test_final_http.FinalHttpTests) ... ok
+test_request_size_type_length_and_incomplete_bodies_fail_closed (test_final_http.FinalHttpTests) ... ok
+test_restart_stale_epoch_duplicate_sequence_and_reload_state (test_final_http.FinalHttpTests) ... ok
+test_role_permissions_prevent_flight_or_state_writes_and_preserve_sequence (test_final_http.FinalHttpTests) ... ok
+test_start_requires_exactly_three_occupied_ready_roles_and_seats_cannot_collide (test_final_http.FinalHttpTests) ... ok
+test_three_independent_clients_share_one_real_physical_state_and_audit (test_final_http.FinalHttpTests) ... ok
+test_unavailable_native_capabilities_keep_authentic_recordings_accessible (test_final_http.FinalHttpTests) ... ok
+test_unknown_routes_and_no_public_arbitrary_time_step_endpoint (test_final_http.FinalHttpTests) ... ok
+test_unsupported_actions_invalid_actuators_and_cross_mission_tokens_are_rejected (test_final_http.FinalHttpTests) ... ok
+test_exact_fields_and_pilot_value_bounds_reject_without_forwarding (test_http.HttpTests) ... ok
+test_host_origin_and_fetch_site_reject_cross_site_control_before_state_changes (test_http.HttpTests) ... ok
+test_localhost_requires_its_own_matching_origin (test_http.HttpTests) ... ok
+test_non_finite_duplicate_malformed_and_non_object_json_never_submit_inputs (test_http.HttpTests) ... ok
+test_preflight_has_no_cors_grant_and_cannot_start_native_work (test_http.HttpTests) ... ok
+test_read_only_routes_do_not_create_session_or_submit_inputs (test_http.HttpTests) ... ok
+test_replay_only_server_discloses_disabled_live_and_rejects_all_mutations (test_http.HttpTests) ... ok
+test_request_framing_body_limit_and_content_type_fail_before_mutation (test_http.HttpTests) ... ok
+test_start_input_and_stop_preserve_session_identity_and_forward_only_pilot_inputs (test_http.HttpTests) ... ok
+test_static_routes_serve_dist_and_never_repository_source (test_http.HttpTests) ... ok
+test_token_is_required_for_mutation_and_record_and_non_ascii_is_rejected (test_http.HttpTests) ... ok
+test_all_human_model_compositions_use_exactly_three_roles_with_stub_only (test_mission_ai.MissionAiTests) ... ok
+test_global_model_jobs_are_bounded_and_second_mission_still_advances (test_mission_ai.MissionAiTests) ... ok
+test_held_model_controls_expire_into_explicitly_labeled_fallback (test_mission_ai.MissionAiTests) ... ok
+test_lmp_and_collins_model_cannot_operate_flight_controls (test_mission_ai.MissionAiTests) ... ok
+test_model_flight_proposal_uses_normal_audited_validation_and_private_tokens_stay_private (test_mission_ai.MissionAiTests) ... ok
+test_model_payload_shape_bounds_and_arbitrary_state_actions_are_rejected (test_mission_ai.MissionAiTests) ... ok
+test_old_run_provider_response_is_ignored_after_restart (test_mission_ai.MissionAiTests) ... ok
+test_pending_model_job_cannot_block_actual_physics_and_fallback_is_labeled (test_mission_ai.MissionAiTests) ... ok
+test_provider_error_is_sanitized_and_fallback_remains_operational (test_mission_ai.MissionAiTests) ... ok
+test_wall_request_cadence_is_bounded_and_recent_results_are_returned (test_mission_ai.MissionAiTests) ... ok
+test_accepted_and_rejected_commands_have_distinct_audit_records (test_mission_service.MissionServiceTests) ... ok
+test_all_fallback_real_physics_flight_is_deterministic_and_not_an_llm (test_mission_service.MissionServiceTests) ... ok
+test_all_required_human_fallback_compositions_use_three_seats (test_mission_service.MissionServiceTests) ... ok
+test_all_three_occupied_ready_seats_required_before_start (test_mission_service.MissionServiceTests) ... ok
+test_assistance_is_labeled_and_manual_override_requires_disabling (test_mission_service.MissionServiceTests) ... ok
+test_control_lease_releases_engine_and_pitch_once (test_mission_service.MissionServiceTests) ... ok
+test_create_rejects_unhashable_scenario_and_invalid_compositions (test_mission_service.MissionServiceTests) ... ok
+test_exactly_three_roles_and_collins_remains_orbital_support (test_mission_service.MissionServiceTests) ... ok
+test_finite_controls_payload_shapes_and_ready_boolean_are_validated (test_mission_service.MissionServiceTests) ... ok
+test_monotonic_sequences_and_restart_reject_stale_run_commands (test_mission_service.MissionServiceTests) ... ok
+test_pause_freezes_simulation_and_resume_reuses_authoritative_lab (test_mission_service.MissionServiceTests) ... ok
+test_role_permissions_prevent_collins_and_lmp_from_flight_control (test_mission_service.MissionServiceTests) ... ok
+test_shared_three_client_views_are_copies_of_one_authoritative_state (test_mission_service.MissionServiceTests) ... ok
+test_all_source_mapped_signed_rhc_switch_words (test_native.NativeContractTests) ... ok
+test_command_lease_bounds_and_zero_duration_neutral (test_native.NativeContractTests) ... ok
+test_conservative_fast_sensor_choice_is_permitted (test_native.NativeContractTests) ... ok
+test_execution_rejects_invalid_cycle_values (test_native.NativeContractTests) ... ok
+test_returned_frame_cannot_mutate_authoritative_state (test_native.NativeContractTests) ... ok
+test_rhc_rejects_bool_float_string_and_out_of_range_values (test_native.NativeContractTests) ... ok
+test_runtime_tree_validation_failure_prevents_engine_creation (test_native.NativeContractTests) ... ok
+test_slow_sensor_mode_is_limited_by_actual_gimbal_rate (test_native.NativeContractTests) ... ok
+test_tampered_prepared_source_rejected_before_engine_creation (test_native.NativeContractTests) ... ok
+test_tampered_runtime_manifest_rejected_before_engine_creation (test_native.NativeContractTests) ... ok
+test_unstarted_session_rejects_commands_and_execution (test_native.NativeContractTests) ... ok
+test_wrong_thread_rejected_before_native_execution (test_native.NativeContractTests) ... ok
+test_ballistic_surface_contact_is_actual_crash_without_position_snap (test_physics_lab.PhysicsLabTests) ... ok
+test_commands_validate_atomically_and_never_set_vehicle_state (test_physics_lab.PhysicsLabTests) ... ok
+test_free_fall_gravity_is_not_specific_force (test_physics_lab.PhysicsLabTests) ... ok
+test_fuel_exhaustion_is_real_partial_burn_without_negative_fuel (test_physics_lab.PhysicsLabTests) ... ok
+test_initial_data_units_frames_and_synthetic_provenance (test_physics_lab.PhysicsLabTests) ... ok
+test_manual_braking_can_reach_a_measured_soft_contact (test_physics_lab.PhysicsLabTests) ... ok
+test_pitch_motor_rotates_actual_force_and_neutral_damps_rate (test_physics_lab.PhysicsLabTests) ... ok
+test_repeated_fixed_step_runs_are_identical (test_physics_lab.PhysicsLabTests) ... ok
+test_retained_engine_force_mass_flow_and_motion (test_physics_lab.PhysicsLabTests) ... ok
+test_synthetic_outcome_limits_report_measured_failures (test_physics_lab.PhysicsLabTests) ... ok
+test_causal_controls_are_preserved_without_claiming_a_landing (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_changed_raw_bytes_fail_even_when_gzip_is_valid (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_display_projection_is_independent_math_not_dynamics (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_event_sources_and_original_routine_counts_match_raw (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_every_selected_frame_and_dsky_matches_exact_raw_observation (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_export_is_reproducible_from_verified_source (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_modes_and_unavailable_capabilities_are_explicit (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_nonfinite_physical_projection_fails_closed (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_original_evidence_seal_and_true_raw_repeat_verified (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_sample_hold_has_real_endpoints_and_bounded_gaps (test_propulsion_recording.PropulsionRecordingTests) ... ok
+test_cached_snapshots_and_downloads_cannot_mutate_authoritative_state (test_service.ServiceTests) ... ok
+test_expired_queued_deflection_never_reaches_native_and_lost_client_neutralizes (test_service.ServiceTests) ... ok
+test_neutral_cancels_a_full_pending_queue_and_bypasses_rate_limit (test_service.ServiceTests) ... ok
+test_one_owner_drives_commands_stop_and_persisted_record (test_service.ServiceTests) ... ok
+test_processing_delay_does_not_extend_receipt_based_wall_lease (test_service.ServiceTests) ... ok
+test_ready_is_paused_and_neutral_does_not_start_native_time (test_service.ServiceTests) ... ok
+test_stop_during_startup_does_not_publish_ready_or_accept_input (test_service.ServiceTests) ... ok
+test_strict_inputs_session_identity_and_sequence_rejection_do_not_reach_native (test_service.ServiceTests) ... ok
+test_unready_startup_faults_and_never_accepts_pilot_input (test_service.ServiceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 98 tests in 54.215s
+
+OK
+test_causal_scenarios_retain_real_difference_and_negative_failure (test_guidance_data.GuidanceDataTests) ... ok
+test_compressed_and_raw_trace_hashes_match_source (test_guidance_data.GuidanceDataTests) ... ok
+test_each_display_is_held_from_an_actual_channel_010_packet (test_guidance_data.GuidanceDataTests) ... ok
+test_events_point_to_real_recorded_rows_and_source_routines (test_guidance_data.GuidanceDataTests) ... ok
+test_frames_have_actual_ordered_cycles_and_recorded_endpoints (test_guidance_data.GuidanceDataTests) ... ok
+test_generated_data_is_current_and_byte_deterministic (test_guidance_data.GuidanceDataTests) ... ok
+test_ignition_solution_available_only_after_original_completion (test_guidance_data.GuidanceDataTests) ... ok
+test_integrity_checker_rejects_changed_bytes (test_guidance_data.GuidanceDataTests) ... ok
+test_no_trajectory_or_interpolated_motion_exists_in_frames (test_guidance_data.GuidanceDataTests) ... ok
+test_observed_clocks_are_decoded_only_from_native_snapshots (test_guidance_data.GuidanceDataTests) ... ok
+test_only_three_verified_cases_and_recorded_mode_are_exposed (test_guidance_data.GuidanceDataTests) ... ok
+test_signed_root_outputs_keep_original_words_and_are_not_ignition_countdowns (test_guidance_data.GuidanceDataTests) ... ok
+test_static_three_dimensional_inputs_match_original_p27_stores (test_guidance_data.GuidanceDataTests) ... ok
+test_synthetic_scope_and_unimplemented_physics_are_explicit (test_guidance_data.GuidanceDataTests) ... ok
+test_clock_horizons_and_queue_tail (test_replay.ReplayExportTests) ... ok
+test_disconnected_controls_keep_zero_actual_counters (test_replay.ReplayExportTests) ... ok
+test_display_sampling_is_bounded_and_endpoints_retained (test_replay.ReplayExportTests) ... ok
+test_every_frame_is_an_exact_original_model_sample (test_replay.ReplayExportTests) ... ok
+test_exact_agc_output_packet_sequence_is_preserved (test_replay.ReplayExportTests) ... ok
+test_five_cases_and_evidence_level_are_explicit (test_replay.ReplayExportTests) ... ok
+test_integrity_mismatch_is_rejected (test_replay.ReplayExportTests) ... ok
+test_no_altitude_position_or_dsky_is_invented (test_replay.ReplayExportTests) ... ok
+test_pinned_trace_hashes_match_both_compressed_and_raw_bytes (test_replay.ReplayExportTests) ... ok
+test_quaternion_normalization_and_signed_body_rates (test_replay.ReplayExportTests) ... ok
+test_readiness_and_cdu_are_only_prior_actual_readbacks (test_replay.ReplayExportTests) ... ok
+test_real_export_is_current_and_deterministic (test_replay.ReplayExportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 16.979s
+
+OK
+test_archive_does_not_overwrite_existing_files (test_demo.DemoGuards) ... ok
+test_archive_rejects_escaping_members (test_demo.DemoGuards) ... ok
+test_hash_guard_rejects_changed_bytes (test_demo.DemoGuards) ... ok
+test_manifest_guard_rejects_escape_and_symlink (test_demo.DemoGuards) ... ok
+test_native_staging_uses_original_revision_and_excludes_new_application (test_demo.DemoGuards) ... ok
+test_sealed_phase10_and_original_rope_match_actual_files (test_demo.DemoGuards) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.546s
+
+OK
+test_actual_native_counter_queues_settle_without_loss (test_evidence.LiveEvidenceTests) ... ok
+test_all_prior_evidence_is_still_byte_identical (test_evidence.LiveEvidenceTests) ... ok
+test_all_signed_cases_are_actual_original_execution (test_evidence.LiveEvidenceTests) ... ok
+test_altered_actual_wire_packet_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_altered_native_application_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_cycle_identical_combined_replay_has_identical_complete_raw_bytes (test_evidence.LiveEvidenceTests) ... ok
+test_missing_automatic_neutral_is_rejected (test_evidence.LiveEvidenceTests) ... ok
+test_original_gated_reads_observe_both_signs_and_neutral (test_evidence.LiveEvidenceTests) ... ok
+test_positive_and_negative_commands_have_signed_body_response (test_evidence.LiveEvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 9.206s
+
+OK

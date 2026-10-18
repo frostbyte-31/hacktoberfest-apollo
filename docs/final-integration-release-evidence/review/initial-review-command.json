@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "docs/final-integration-release-evidence/review/review.py"
+  ],
+  "exitCode": 1,
+  "reason": "All original frontend fingerprints/Git state matched. Initial script also required all integrated copy bytes to equal initial copy receipt; intentional expanded tsconfig produced a review finding, not original frontend damage."
+}

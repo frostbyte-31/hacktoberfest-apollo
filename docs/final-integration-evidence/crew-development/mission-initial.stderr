@@ -1,0 +1,15 @@
+test_all_human_model_compositions_use_exactly_three_roles_with_stub_only (test_mission_ai.MissionAiTests) ... ok
+test_global_model_jobs_are_bounded_and_second_mission_still_advances (test_mission_ai.MissionAiTests) ... ok
+test_held_model_controls_expire_into_explicitly_labeled_fallback (test_mission_ai.MissionAiTests) ... ok
+test_lmp_and_collins_model_cannot_operate_flight_controls (test_mission_ai.MissionAiTests) ... ok
+test_model_flight_proposal_uses_normal_audited_validation_and_private_tokens_stay_private (test_mission_ai.MissionAiTests) ... ok
+test_model_payload_shape_bounds_and_arbitrary_state_actions_are_rejected (test_mission_ai.MissionAiTests) ... ok
+test_old_run_provider_response_is_ignored_after_restart (test_mission_ai.MissionAiTests) ... ok
+test_pending_model_job_cannot_block_actual_physics_and_fallback_is_labeled (test_mission_ai.MissionAiTests) ... ok
+test_provider_error_is_sanitized_and_fallback_remains_operational (test_mission_ai.MissionAiTests) ... ok
+test_wall_request_cadence_is_bounded_and_recent_results_are_returned (test_mission_ai.MissionAiTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 9.205s
+
+OK

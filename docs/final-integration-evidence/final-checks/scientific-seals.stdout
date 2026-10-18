@@ -1,0 +1,9 @@
+{
+  "ropeSha256": "1f5326e038de5b741b2f27b01ec949dbd688cf1906994e997402587c8628f40e",
+  "sealedFiles": {
+    "phase10": 739,
+    "phase11": 509,
+    "phase12": 538
+  },
+  "sourceRevision": "f577e3fd917866c59334e6cdd32504f09df76f60"
+}

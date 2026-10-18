@@ -1,0 +1,45 @@
+{
+  "argv": [
+    "docs/milestone2-evidence/validate.py"
+  ],
+  "cwd": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/backend-phase12",
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "compiler": "/usr/bin/cc",
+  "runtime_manifest_sha256": "ce75919822600fd3f311e9a7689aac1b81b52f9ea1e4bfa2cd4e902015773b14",
+  "runtime": {
+    "schema": 1,
+    "version": "8.6.16",
+    "executable": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime/bin/tclsh8.6",
+    "executable_sha256": "19511d9077305e03800d447955af480ba723a2b467b18ce923a395e11d22cf21",
+    "runtime_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/runtime",
+    "runtime_tree_sha256": "c6a329b4802893c15807c92792d3dd947ae49d35a438d06805379a0364bd4979",
+    "source_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/sources/20261017T133908Z-e486b112/tcl8.6.16",
+    "source_tree_sha256": "ba0a9d9ab1aea63d09fad4a51219391947e88b9f7585ac80b22f99c4cf1c9389",
+    "archive_path": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/downloads/tcl8.6.16-src.tar.gz",
+    "source_sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+    "lock_sha256": "07914e708c04dc0bc18b3710423a5b1f23b82387a20d7c2691ebcc52e53f6481",
+    "source_url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+    "build_record": "/Users/ggtrinkalipu/Documents/hacktoberfest-apollo/.build/reproducibility/build-records/20261017T133908Z-e486b112",
+    "configure_arguments": [
+      "--disable-shared",
+      "--enable-threads",
+      "--disable-symbols"
+    ],
+    "cflags": "-O2",
+    "compiler": "/usr/bin/cc",
+    "compiler_version": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "make": "/usr/bin/make",
+    "make_version": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0\n",
+    "python_version": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "smoke_test": {
+      "version": "8.6.16",
+      "hypot_3_4": 5.0,
+      "status": "VERIFIED"
+    },
+    "toolchain_scope": "Pins Tcl source and build options. Host Python, C compiler, make, operating system and system libraries are recorded, not pinned; portable bit-identical binaries are not claimed."
+  },
+  "scope": "Original startup and synthetic yaw/X-CDU diagnostics only"
+}
