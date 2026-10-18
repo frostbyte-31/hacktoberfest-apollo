@@ -1,6 +1,14 @@
 # Current unified product
 
-The final backend from main (`92adbb5`) is merged. `/` is now the crew/experience launcher. `/play.html` is the sourced orbital undocking trainer; `/mission.html` is the independent shared 3D educational landing laboratory. The original attitude console is preserved at `/attitude-replay.html`. The new lab never drives original AGC navigation. [Submission guide](SUBMISSION_GUIDE.md), [shared mission API](FINAL_INTEGRATION_CONTRACT.md), and [current verification](frontend-submission-evidence/README.md) supersede older entry-route instructions below.
+Current chronological entry: `/` → **Historical mission** → `/campaign.html`,
+starting in Earth parking orbit. `?tour=1` starts reference navigation with
+separate original-AGC evidence inserts. This is not full-mission execution.
+[Campaign contract](APOLLO11_CAMPAIGN_INTEGRATION.md),
+[chronology](APOLLO11_CHRONOLOGY.md), and
+[presentation plan](JUDGES_PRESENTATION_PLAN.md) describe the current extension;
+older milestone-specific details below retain their original scope.
+
+The final backend from main (`92adbb5`) is merged. `/` is now the crew/experience launcher. `/play.html` is the sourced orbital undocking trainer; `/mission.html` is the independent shared 3D educational landing laboratory. The original attitude console is preserved at `/attitude-replay.html`. The new lab never drives original AGC navigation. [Submission guide](SUBMISSION_GUIDE.md), [shared mission API](FINAL_INTEGRATION_CONTRACT.md), and [earlier integrated verification](frontend-submission-evidence/README.md) supersede older entry-route instructions below.
 
 # Apollo 11 frontend architecture
 
@@ -9,7 +17,7 @@ procedure trainer**. It adds source-linked cockpit selections and crew reports,
 with modeled docking release, independent of original AGC execution and flight
 physics. See [current playable chapter and contract](FRONTEND_UNDOCKING.md).
 
-The current primary entry point is `/play.html`: a historical lunar-orbit starting
+The earlier lunar-orbit increment used `/play.html` as its primary entry: a historical lunar-orbit starting
 chapter plus a separately labeled 3D replay of the sealed Phase 12 propulsion and
 navigation experiment. See [current mission architecture](FRONTEND_MISSION_START.md)
 and [Apollo hardware and chronology](FRONTEND_APOLLO_OPERATIONS.md). The earlier

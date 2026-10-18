@@ -11,5 +11,6 @@
     "skipLibCheck": false
   },
   "files": ["dist/mission-types.d.ts", "dist/mission-provider.mjs",
-            "dist/mission-live-types.d.ts", "dist/mission-live-provider.mjs"]
+            "dist/mission-live-types.d.ts", "dist/mission-live-provider.mjs",
+            "dist/campaign-types.d.ts"]
 }

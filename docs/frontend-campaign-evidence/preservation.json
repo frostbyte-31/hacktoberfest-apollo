@@ -1,0 +1,33 @@
+{
+  "baselineHead": "e243e6035fd7017aa2842c5b37a955ac592692fd",
+  "baselineTrackedFiles": 8778,
+  "allowedApplicationDocumentationEdits": [
+    "README.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/SUBMISSION_GUIDE.md",
+    "frontend/README.md",
+    "frontend/dist/index.html",
+    "frontend/dist/launch.mjs",
+    "frontend/dist/mission.html",
+    "frontend/dist/play.html",
+    "frontend/tsconfig.json"
+  ],
+  "changedExistingFiles": [
+    "README.md",
+    "docs/FRONTEND_ARCHITECTURE.md",
+    "docs/FRONTEND_INTEGRATION_CONTRACT.md",
+    "docs/SUBMISSION_GUIDE.md",
+    "frontend/README.md",
+    "frontend/dist/index.html",
+    "frontend/dist/launch.mjs",
+    "frontend/dist/mission.html",
+    "frontend/dist/play.html",
+    "frontend/tsconfig.json"
+  ],
+  "missingExistingFiles": [],
+  "protectedExistingFiles": 8768,
+  "protectedOriginalChanges": [],
+  "result": "PASS",
+  "scope": "All baseline files except ten named existing application/documentation/configuration files remain byte-identical. Includes Apollo sources, emulator, backend, captured historical evidence and existing exports."
+}

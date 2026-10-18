@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-18",
+  "server": "http://127.0.0.1:4173/",
+  "tool": "Visible browser interface through CUA; DOM readings and screenshots",
+  "desktop": {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "horizontalOverflow": false,
+    "startingStage": "earth-parking"
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false,
+    "testedPages": [
+      "campaign.html",
+      "index.html",
+      "campaign.html?stage=lm-preparation"
+    ],
+    "configurationCanvasCssSize": [
+      360,
+      307
+    ],
+    "recordedDskyOutputCells": 6
+  },
+  "guidedTour": {
+    "start": "earth-parking",
+    "end": "entry-splashdown",
+    "reviewed": 16,
+    "automaticExcerpts": [
+      "guidance:8 exact observations",
+      "propulsion:18 exact observations"
+    ],
+    "result": "Historical tour complete. No flight was executed.",
+    "missionExecutionButtonEnabled": false
+  },
+  "resume": {
+    "before": "Observation 2 / 8, 00:55.785 CPU elapsed",
+    "after": "Observation 2 / 8, 00:55.785 CPU elapsed",
+    "preserved": true
+  },
+  "recordedGuidance": {
+    "program": "63",
+    "verb": "06",
+    "noun": "61",
+    "registers": [
+      "09 43",
+      "02 01",
+      "00009"
+    ],
+    "signsAndLamps": "unavailable"
+  },
+  "recordedPropulsion": {
+    "observation": 9,
+    "eventCount": 18,
+    "cpuCall": 25169431,
+    "rawLine": 90755,
+    "thrustN": 4560,
+    "massKg": 15000,
+    "clockScope": "CPU elapsed and plant time are not historical GET"
+  },
+  "navigationBackFromTrainer": {
+    "restoredStage": "lm-preparation",
+    "nextObservationWorked": true
+  },
+  "launchPaths": {
+    "historical": "Begin in Earth orbit -> earth-parking",
+    "guided": "Guided tour -> automatic reference navigation",
+    "independentLab": "Existing lab options visible, Create enabled; no new lab flight run in this browser test"
+  },
+  "consoleWarningsOrErrors": [],
+  "scope": "Reference navigation and retained execution playback were tested. No fresh original-AGC whole-mission flight was performed."
+}

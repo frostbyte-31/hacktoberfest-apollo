@@ -1,10 +1,18 @@
 # Unified launch and final mission integration
 
+Current chronological entry: `/` → **Historical mission** → `/campaign.html`,
+starting in Earth parking orbit. `?tour=1` starts reference navigation with
+separate original-AGC evidence inserts. This is not full-mission execution.
+[Campaign contract](APOLLO11_CAMPAIGN_INTEGRATION.md),
+[chronology](APOLLO11_CHRONOLOGY.md), and
+[presentation plan](JUDGES_PRESENTATION_PLAN.md) describe the current extension;
+older milestone-specific details below retain their original scope.
+
 The merged final server now exposes the versioned shared-mission API documented in [FINAL_INTEGRATION_CONTRACT.md](FINAL_INTEGRATION_CONTRACT.md), alongside the bounded native and source-backed procedure APIs below. `/` is crew setup; the previous index attitude UI is `/attitude-replay.html`. Historical undocking and the educational physics lab are separate state domains. AI choices require the real server `llmConfigured` capability; deterministic fallback is separately labeled. The lab uses `propulsion-lab.json` (three raw-derived causal cases), while the existing mission viewer retains `propulsion.json` (four cases). No existing recorded provider is silently changed to the new format.
 
 # Frontend integration contract
 
-The new primary `/play.html` adds a source-linked historical lunar-orbit reference
+The earlier lunar-orbit `/play.html` increment adds a source-linked historical lunar-orbit reference
 and sealed Phase 12 recorded propulsion adapter. Its exact fields, clocks, source
 pointers, capability gates, four causal cases and missing cockpit/mission APIs
 are specified in [the current mission integration contract](FRONTEND_MISSION_START.md).

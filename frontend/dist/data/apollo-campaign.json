@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "postlaunch-events",
+      "title": "NASA Apollo 11 postlaunch mission operation report",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap11fj/pdf/a11-postlaunch-rep.pdf",
+      "locator": "Table 5, actual mission sequence of events; early report, superseded where final-report-backed times are available"
+    },
+    {
+      "id": "earth-orbit-tli",
+      "title": "Apollo 11 Flight Journal: Earth orbit and translunar injection",
+      "url": "https://apollojournals.org/afj/ap11fj/02earth-orbit-tli.html",
+      "locator": "000:18:23 insertion checklist; 000:18:42 P52; 002:26:38 Go for TLI; 002:44:16 ignition"
+    },
+    {
+      "id": "tde",
+      "title": "Apollo 11 Flight Journal: Transposition, docking and extraction",
+      "url": "https://apollojournals.org/afj/ap11fj/03tde.html",
+      "locator": "003:17:00 CSM separation; 003:24:03.1 docking; 004:16:59.1 LM extraction, final Mission Report times"
+    },
+    {
+      "id": "lunar-orbit-insertion",
+      "title": "Apollo 11 Flight Journal: Entering lunar orbit",
+      "url": "https://apollojournals.org/afj/ap11fj/12day4-loi1.html",
+      "locator": "075:49:45 flashing Verb 99; 075:49:46 Proceed; 075:49:50–51 ignition and subsequent manual B-bank selection"
+    },
+    {
+      "id": "undock-doi",
+      "title": "Apollo 11 Flight Journal: Undocking and the descent orbit",
+      "url": "https://apollojournals.org/afj/ap11fj/17day5-undock-doi.html",
+      "locator": "100:12:03 undocking; inspection; ~100:39:50 CSM separation maneuver; 101:36:14 DOI"
+    },
+    {
+      "id": "landing",
+      "title": "NASA Apollo Lunar Surface Journal: The first lunar landing",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html",
+      "locator": "PDI ~102:33; Mission Report Table 5-I: P64 102:41:32, P66 102:43:22; landing ~102:45:40; ACA/engine-stop crew actions"
+    },
+    {
+      "id": "mission-report",
+      "title": "NASA Apollo 11 Mission Report, November 1969",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/apollo50th/pdf/A11_MissionReport.pdf",
+      "locator": "Sections 5.1 descent, 5.6–5.7 ascent/rendezvous, 7.4.7 liftoff at 124:22:00.8, 7.4.8 TEI, 7.5 entry"
+    },
+    {
+      "id": "rendezvous",
+      "title": "Apollo 11 Flight Journal: Rendezvous and docking",
+      "url": "https://apollojournals.org/afj/ap11fj/19day6-rendezvs-dock.html",
+      "locator": "Ascent-orbit rendezvous maneuvers; final Mission Report docking time 128:03:00; crew discussion of AGS attitude hold and probe retraction"
+    },
+    {
+      "id": "tei",
+      "title": "Apollo 11 Flight Journal: Trans-Earth injection",
+      "url": "https://apollojournals.org/afj/ap11fj/21day6-tei.html",
+      "locator": "135:23:42.3 ignition, final Mission Report; crew PRO acknowledgment and manual B-bank opening"
+    },
+    {
+      "id": "entry",
+      "title": "Apollo 11 Flight Journal: Entry and splashdown",
+      "url": "https://apollojournals.org/afj/ap11fj/27day9-entry.html",
+      "locator": "194:49:12.7 SM jettison; 195:03:06 entry interface; 195:18:35 final Mission Report splashdown time, distinct from PAO unofficial time"
+    },
+    {
+      "id": "mission-overview",
+      "title": "NASA Apollo 11 mission overview",
+      "url": "https://www.nasa.gov/missions/apollo/apollo-11-mission-overview/",
+      "locator": "Translunar coast, lunar surface stay, return rendezvous, LM jettison, TEI and direct entry/recovery overview"
+    },
+    {
+      "id": "saturn-astrionics",
+      "title": "NASA Saturn launch vehicles Astrionics System Handbook",
+      "url": "https://ibiblio.org/apollo/Documents/MSFC-IV-4-401-1-AstrionicsSystemHandbookSaturnLaunchVehicles.pdf",
+      "locator": "Section 1.4, Figure 1.4-2, Saturn V operational vehicle: LVDC, LVDA, flight control computer and spacecraft alternate steering interfaces"
+    },
+    {
+      "id": "lvdc",
+      "title": "Virtual AGC: Launch Vehicle Digital Computer archive",
+      "url": "https://www.ibiblio.org/apollo/LVDC.html",
+      "locator": "What is the LVDC? and Saturn interaction with the AGC; normal IU guidance versus CMC backup steering"
+    },
+    {
+      "id": "comanche-source",
+      "title": "Original Comanche 055 Command Module computer listing",
+      "url": "https://www.ibiblio.org/apollo/listings/Comanche055/MAIN.agc.html",
+      "locator": "Colossus 2A / Comanche 055, NASA 2021113-051; P11, P30/P37, P40–P47, P61–P67 and entry/DAP sections"
+    },
+    {
+      "id": "luminary-source",
+      "title": "Virtual AGC: Luminary source and revision provenance",
+      "url": "https://www.ibiblio.org/apollo/Luminary.html",
+      "locator": "Luminary 099/0 preflight release and 099/1 / LMY99 revision 001 flown-version distinction"
+    },
+    {
+      "id": "flight-plan",
+      "title": "NASA Apollo 11 final flight plan, July 1, 1969",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/apollo50th/pdf/a11final-fltpln.pdf",
+      "locator": "Chronological CSM, CDR, LMP and ground work columns; page 3-90, P12 ascent preparations. Planned times are not final actual event times."
+    }
+  ],
+  "goals": [
+    {
+      "id": "lunar-orbit",
+      "title": "Reach lunar orbit",
+      "summary": "Begin in Earth parking orbit, depart with the Saturn upper stage, retrieve Eagle, then brake Columbia and Eagle into lunar orbit.",
+      "stageIds": ["earth-parking", "tli", "transposition-extraction", "translunar-coast", "lunar-orbit-insertion", "lunar-orbit"]
+    },
+    {
+      "id": "lunar-landing",
+      "title": "Land Eagle on the Moon",
+      "summary": "Prepare and undock Eagle, inspect it, lower its orbit and descend. Armstrong and Aldrin land while Collins remains aboard Columbia in lunar orbit.",
+      "stageIds": ["lm-preparation", "undocking-inspection", "descent-orbit-insertion", "powered-descent", "lunar-surface"]
+    },
+    {
+      "id": "earth-return",
+      "title": "Return the crew to Earth",
+      "summary": "Launch Eagle's ascent stage, rendezvous with Columbia and return all three astronauts by direct atmospheric entry and Pacific splashdown.",
+      "stageIds": ["lunar-ascent", "rendezvous-docking", "transearth-injection", "transearth-coast", "entry-splashdown"]
+    }
+  ],
+  "stages": [
+    {
+      "id": "earth-parking", "goalId": "lunar-orbit", "order": 1,
+      "title": "Earth parking orbit", "getLabel": "~000:12 GET · historical reference",
+      "vehicle": "Columbia + stowed Eagle + S-IVB", "configuration": "earth-stack",
+      "computer": "Saturn LVDC; Columbia CMC / Comanche 055",
+      "controlAuthority": "Saturn IU guidance; crew checks and CMC navigation/alignment",
+      "description": "The spacecraft has reached Earth orbit. Eagle remains inside the closed adapter below Columbia; the S-IVB upper stage is still attached.",
+      "historicalAction": "Complete insertion and spacecraft checks, perform the CMC P52 platform realignment, and await the Go for TLI.",
+      "requiredCapabilities": ["historicalEarthParkingOrbit"], "evidenceIds": [],
+      "sourceIds": ["postlaunch-events", "earth-orbit-tli", "comanche-source", "saturn-astrionics"]
+    },
+    {
+      "id": "tli", "goalId": "lunar-orbit", "order": 2,
+      "title": "Translunar injection", "getLabel": "002:44:16 GET · historical ignition",
+      "vehicle": "CSM / stowed LM / S-IVB stack", "configuration": "earth-stack",
+      "computer": "Saturn Launch Vehicle Digital Computer (LVDC)",
+      "controlAuthority": "LVDC guidance and analog flight control computer; crew monitors the burn",
+      "description": "The S-IVB restarts its J-2 engine to leave parking orbit on a path toward the Moon. This burn belongs to Saturn's guidance system.",
+      "historicalAction": "Receive the Go for TLI and monitor stage thrust, guidance and cutoff. Luminary does not command the Saturn engine.",
+      "requiredCapabilities": ["historicalSaturnTli"], "evidenceIds": [],
+      "sourceIds": ["earth-orbit-tli", "lvdc", "saturn-astrionics"]
+    },
+    {
+      "id": "transposition-extraction", "goalId": "lunar-orbit", "order": 3,
+      "title": "Retrieve Eagle", "getLabel": "003:17–004:17 GET · historical reference",
+      "vehicle": "Columbia maneuvers to dock with and extract Eagle", "configuration": "docked-csm-lm",
+      "computer": "Columbia CMC / Comanche 055; crew docking controls",
+      "controlAuthority": "Collins uses CSM attitude/translation controls; crew operates separation and docking hardware",
+      "description": "Columbia separates from the upper stage, turns around, docks with Eagle and extracts it. The resulting docked pair continues toward the Moon.",
+      "historicalAction": "Separate at 003:17:00, dock at 003:24:03 and extract Eagle at 004:16:59; manage probe and vehicle controls with crew oversight.",
+      "requiredCapabilities": ["historicalTranspositionExtraction"], "evidenceIds": [],
+      "sourceIds": ["tde", "comanche-source"]
+    },
+    {
+      "id": "translunar-coast", "goalId": "lunar-orbit", "order": 4,
+      "title": "Navigate to the Moon", "getLabel": "Translunar coast · historical reference",
+      "vehicle": "Docked Columbia and Eagle", "configuration": "docked-csm-lm",
+      "computer": "Columbia CMC / Comanche 055",
+      "controlAuthority": "Ground tracking and updates, crew navigation observations, CMC guidance and vehicle controls",
+      "description": "The docked spacecraft coasts toward the Moon. Navigation, spacecraft checks and the required midcourse correction prepare the arrival.",
+      "historicalAction": "Monitor the trajectory, maintain alignment and spacecraft condition, and perform the required correction using Columbia's propulsion and guidance.",
+      "requiredCapabilities": ["historicalTranslunarCoast"], "evidenceIds": [],
+      "sourceIds": ["mission-overview", "flight-plan", "comanche-source"]
+    },
+    {
+      "id": "lunar-orbit-insertion", "goalId": "lunar-orbit", "order": 5,
+      "title": "Brake into lunar orbit", "getLabel": "~075:49:50 GET · historical ignition",
+      "vehicle": "Docked Columbia and Eagle; CSM SPS engine", "configuration": "docked-csm-lm",
+      "computer": "Columbia CMC / Comanche 055",
+      "controlAuthority": "CMC-guided SPS burn, enabled and monitored by the crew",
+      "description": "Columbia fires its service engine on the far side of the Moon, reducing speed enough for lunar capture.",
+      "historicalAction": "Prepare the SPS maneuver, acknowledge the CMC's flashing Verb 99 with PRO, monitor ignition and select the second valve bank as required.",
+      "requiredCapabilities": ["historicalLunarOrbitInsertion"], "evidenceIds": [],
+      "sourceIds": ["lunar-orbit-insertion", "comanche-source"]
+    },
+    {
+      "id": "lunar-orbit", "goalId": "lunar-orbit", "order": 6,
+      "title": "Establish the lunar parking orbit", "getLabel": "080:11:36 GET · historical circularization burn",
+      "vehicle": "Docked Columbia and Eagle", "configuration": "docked-csm-lm",
+      "computer": "Columbia CMC / Comanche 055",
+      "controlAuthority": "CMC-guided SPS maneuver and crew spacecraft management",
+      "description": "A second SPS burn lowers the high side of the lunar orbit. The crew prepares for the later LM departure.",
+      "historicalAction": "Complete lunar orbit circularization, verify the orbit, and continue LM checkout and mission preparations.",
+      "requiredCapabilities": ["historicalLunarOrbit"], "evidenceIds": [],
+      "sourceIds": ["postlaunch-events", "mission-overview", "flight-plan", "comanche-source"]
+    },
+    {
+      "id": "lm-preparation", "goalId": "lunar-landing", "order": 7,
+      "title": "Activate Eagle and prepare guidance", "getLabel": "Before ~100:12 GET · historical reference",
+      "vehicle": "Eagle docked to Columbia", "configuration": "docked-csm-lm",
+      "computer": "Eagle LGC / Luminary family; separate AGS backup; Columbia CMC",
+      "controlAuthority": "Crew activation and hardware checks, LM primary guidance and separate abort guidance",
+      "description": "Armstrong and Aldrin prepare Eagle for independent flight while Collins manages Columbia. Alignment, navigation and target readiness precede descent.",
+      "historicalAction": "Complete the LM activation and guidance preparations. The linked synthetic P51/P27/P63 experiment demonstrates bounded original-software calculations, not this complete historical activation.",
+      "requiredCapabilities": ["historicalLmActivation"], "evidenceIds": ["guidance"],
+      "sourceIds": ["flight-plan", "undock-doi", "luminary-source"]
+    },
+    {
+      "id": "undocking-inspection", "goalId": "lunar-landing", "order": 8,
+      "title": "Undock and inspect Eagle", "getLabel": "100:12:03 GET · historical undocking",
+      "vehicle": "Eagle and Columbia become separate spacecraft", "configuration": "docked-csm-lm",
+      "computer": "Separate LGC, AGS and CMC; docking probe is crew-operated hardware",
+      "controlAuthority": "Collins commands the CSM probe release; LM crew confirms release and manages Eagle",
+      "description": "Collins releases Eagle from Columbia. The crews manage relative motion and inspect Eagle before the later CSM separation maneuver.",
+      "historicalAction": "Use the selected, source-backed undocking checklist trainer for crew readiness and EXTD/REL → OFF. Its modeled release does not simulate the full inspection or orbital separation.",
+      "requiredCapabilities": ["historicalOrbitalUndocking"], "evidenceIds": ["undocking-trainer"],
+      "sourceIds": ["undock-doi", "flight-plan"]
+    },
+    {
+      "id": "descent-orbit-insertion", "goalId": "lunar-landing", "order": 9,
+      "title": "Lower Eagle's orbit", "getLabel": "101:36:14 GET · historical DOI ignition",
+      "vehicle": "Eagle; Columbia remains in lunar orbit", "configuration": "lm",
+      "computer": "Eagle LGC / Luminary family; AGS backup",
+      "controlAuthority": "LM guidance, crew maneuver setup and descent-engine controls",
+      "description": "After inspection, CSM separation and LM alignment, Eagle fires its descent engine to establish the low point from which powered descent begins.",
+      "historicalAction": "Verify guidance alignment and the descent-orbit maneuver, perform DOI, and prepare for powered descent. DOI and PDI are separate burns.",
+      "requiredCapabilities": ["historicalDescentOrbitInsertion"], "evidenceIds": [],
+      "sourceIds": ["undock-doi", "mission-report", "luminary-source"]
+    },
+    {
+      "id": "powered-descent", "goalId": "lunar-landing", "order": 10,
+      "title": "Descend and land Eagle", "getLabel": "~102:33–102:45:40 GET · historical reference",
+      "vehicle": "Eagle descent and ascent stages", "configuration": "lm",
+      "computer": "Eagle LGC: P63 braking, P64 approach, P66 assisted manual landing",
+      "controlAuthority": "Original LM guidance/DAP, crew engine and attitude controls, radar feedback and Armstrong's final piloting",
+      "description": "Eagle brakes, pitches toward the landing area and completes an assisted manual landing. Collins remains aboard Columbia in orbit.",
+      "historicalAction": "Monitor P63/P64 guidance and alarms, then use the ACA and rate-of-descent controls in P66. The linked propulsion replay is a bounded synthetic fixture, not this flown descent.",
+      "requiredCapabilities": ["historicalAgcPoweredDescent"], "evidenceIds": ["propulsion"],
+      "sourceIds": ["landing", "mission-report", "luminary-source"]
+    },
+    {
+      "id": "lunar-surface", "goalId": "lunar-landing", "order": 11,
+      "title": "Tranquility Base", "getLabel": "~102:45–124:22 GET · historical surface stay",
+      "vehicle": "Eagle on the Moon; Columbia in lunar orbit", "configuration": "lm",
+      "computer": "Eagle LGC and AGS; Columbia CMC remains separate",
+      "controlAuthority": "Crew surface procedures, spacecraft hardware, life support and guidance preparation",
+      "description": "Armstrong and Aldrin perform the surface mission and prepare to leave. Collins continues the independent Columbia orbital mission.",
+      "historicalAction": "Secure the descent engine, perform surface operations and ascent preparations. EVA and sample collection are human operations, not AGC commands.",
+      "requiredCapabilities": ["historicalLunarSurfaceOperations"], "evidenceIds": [],
+      "sourceIds": ["mission-overview", "flight-plan", "landing"]
+    },
+    {
+      "id": "lunar-ascent", "goalId": "earth-return", "order": 12,
+      "title": "Launch from the Moon", "getLabel": "124:22:00.8 GET · historical liftoff",
+      "vehicle": "Eagle ascent stage; descent stage stays on the Moon", "configuration": "ascent-csm",
+      "computer": "Eagle LGC: P12 ascent; AGS backup",
+      "controlAuthority": "Crew staging/engine preparations and LM ascent guidance; Columbia supports rendezvous",
+      "description": "Eagle's ascent stage lifts off, leaving its descent stage behind. Armstrong and Aldrin must rendezvous with Collins before returning home.",
+      "historicalAction": "Prepare the ascent vehicle and P12 guidance, stage and lift off, then verify orbital insertion and prepare the rendezvous maneuvers.",
+      "requiredCapabilities": ["historicalLunarAscent"], "evidenceIds": [],
+      "sourceIds": ["mission-report", "flight-plan", "rendezvous", "luminary-source"]
+    },
+    {
+      "id": "rendezvous-docking", "goalId": "earth-return", "order": 13,
+      "title": "Rejoin Columbia", "getLabel": "128:03:00 GET · historical docking",
+      "vehicle": "Eagle ascent stage and Columbia", "configuration": "ascent-csm",
+      "computer": "Eagle LGC and AGS; Columbia CMC / Comanche 055",
+      "controlAuthority": "Rendezvous guidance, crew RCS piloting, docking probe hardware and crew transfer procedures",
+      "description": "The crews rendezvous and dock. Armstrong, Aldrin and the return cargo transfer to Columbia; Eagle's ascent stage is then jettisoned.",
+      "historicalAction": "Complete rendezvous, docking and transfer, then discard the LM before the CSM return burn. Eagle does not return to Earth.",
+      "requiredCapabilities": ["historicalRendezvousDocking"], "evidenceIds": [],
+      "sourceIds": ["rendezvous", "mission-overview", "comanche-source", "luminary-source"]
+    },
+    {
+      "id": "transearth-injection", "goalId": "earth-return", "order": 14,
+      "title": "Depart lunar orbit", "getLabel": "135:23:42.3 GET · historical TEI ignition",
+      "vehicle": "Columbia Command and Service Modules; all three crew aboard", "configuration": "csm",
+      "computer": "Columbia CMC / Comanche 055",
+      "controlAuthority": "CMC-guided SPS maneuver with crew enable, valve selection and monitoring",
+      "description": "Columbia's service engine accelerates the spacecraft out of lunar orbit and onto the return path.",
+      "historicalAction": "Prepare TEI, settle propellant, acknowledge the CMC's burn request with PRO, and monitor the SPS maneuver and residual velocity.",
+      "requiredCapabilities": ["historicalTransearthInjection"], "evidenceIds": [],
+      "sourceIds": ["tei", "comanche-source"]
+    },
+    {
+      "id": "transearth-coast", "goalId": "earth-return", "order": 15,
+      "title": "Navigate home", "getLabel": "After TEI to ~194:49 GET · historical reference",
+      "vehicle": "Columbia Command and Service Modules", "configuration": "csm",
+      "computer": "Columbia CMC / Comanche 055",
+      "controlAuthority": "Ground tracking, CMC navigation, crew correction and entry preparations",
+      "description": "Columbia coasts toward Earth's atmospheric entry corridor. Navigation and the required correction prepare the direct return.",
+      "historicalAction": "Verify the return trajectory, make the required correction, stow equipment and configure the spacecraft for entry. No Earth-orbit insertion burn follows.",
+      "requiredCapabilities": ["historicalTransearthCoast"], "evidenceIds": [],
+      "sourceIds": ["mission-overview", "entry", "comanche-source"]
+    },
+    {
+      "id": "entry-splashdown", "goalId": "earth-return", "order": 16,
+      "title": "Enter Earth's atmosphere and splash down", "getLabel": "195:03:06 entry · 195:18:35 splashdown · historical GET",
+      "vehicle": "Columbia Command Module only", "configuration": "cm",
+      "computer": "Columbia CMC / Comanche 055 entry guidance",
+      "controlAuthority": "Crew separation/configuration, CMC entry guidance and RCS, heat shield, parachute/recovery systems",
+      "description": "The Service Module is discarded before atmospheric entry. Columbia slows in the atmosphere and lands under parachutes in the Pacific Ocean.",
+      "historicalAction": "Separate the Service Module, orient the heat shield for entry, monitor guidance and deploy/recover under the entry and landing systems. Apollo 11 does not enter a return Earth parking orbit.",
+      "requiredCapabilities": ["historicalEarthEntryRecovery"], "evidenceIds": [],
+      "sourceIds": ["entry", "comanche-source"]
+    }
+  ]
+}

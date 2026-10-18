@@ -1,0 +1,10 @@
+python3 -B frontend/tools/export_guidance.py --check
+{
+  "result": "VERIFIED",
+  "mode": "recorded authentic replay",
+  "bytes": 2736537,
+  "sha256": "36d380a5274312621145d3549a161fea7040d269c549738239ac4e7dabf52709",
+  "checked": true
+}
+python3 -B frontend/tools/export_propulsion.py --check
+{"output": "/Users/giorgikhubua/hacktoberfest-apollo/frontend/dist/data/propulsion.json", "bytes": 8113654, "sha256": "68809e065832e07484c1f96816b4c9b32c08d09cdccbc65115e8d8665eb82751", "source": "sealed Phase 12 release evidence", "mode": "VERIFIED RECORDED EXECUTION"}

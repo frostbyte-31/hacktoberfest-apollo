@@ -1,9 +1,11 @@
 # Apollo 11 — the guidance experience
 
-Assemble the three Apollo crew stations, work the source-backed undocking
-checklist, and explore lunar landing physics in a separate shared **3D flight
-laboratory**. Original Luminary 099 execution and verified DSKY/propulsion
-recordings remain available throughout the product.
+Start in **Earth parking orbit** and explore Apollo 11 in chronological order:
+reach lunar orbit, land Eagle, then return the crew by direct atmospheric entry
+and splashdown. The new 3D mission reference and guided tour connect source-backed
+history with clearly separate original-AGC recordings and a playable undocking
+trainer. A complete original-computer-controlled Earth–Moon–Earth flight remains
+unavailable; the interface never turns chapter navigation into a flight result.
 
 ## Start
 
@@ -11,7 +13,10 @@ recordings remain available throughout the product.
 make play
 ```
 
-Open **http://127.0.0.1:4173/**. Choose an experience and your crew.
+Open **http://127.0.0.1:4173/**. Choose **Historical mission**, then **Begin in Earth orbit**.
+For the automated historical showcase, choose **Guided tour**, or open
+**http://127.0.0.1:4173/campaign.html?tour=1**. This tour reviews references and
+steps genuine recorded observations; it sends no flight commands.
 The launcher verifies the retained evidence and prepares cached native assets.
 On a new checkout, enable the locked runtime bootstrap once:
 
@@ -36,17 +41,24 @@ python3 -B tools/final_demo.py --recorded-only --port 4173
 
 | Experience | What works | Source and limit |
 | --- | --- | --- |
+| **Historical mission** (`/campaign.html`) | Sixteen sourced chapters, three goals, correct static 3D spacecraft configurations, guided reference tour, original AGC evidence inserts | Historical reference. Flight execution and completion are gated; presentation pacing is not a mission clock. |
 | **Apollo procedures** (`/play.html`) | 28 selected undocking actions, real control labels/positions, three local crew stations, server-checked order, release diagram, training debrief | Documented checklist training; earlier preparation is assumed. No AGC/AGS or separation dynamics is executed here. |
 | **3D landing laboratory** (`/mission.html`) | Shared missions, throttle/pitch, fuel/gravity/thrust, scenarios, pause/restart, crew messages/checks, measured outcome | Server-owned educational physics from synthetic initial conditions. Independent of original AGC guidance. |
 | **Original guidance** (`/guidance.html`) | Three Phase 10 scenarios, original P51/P27/P63 observations, authentic trace-derived DSKY, comparison and explanations | Verified recorded original-software execution in synthetic pre-ignition scenarios. |
 | **Propulsion inspectors** | Original engine/throttle/navigation/PIPA observations and causal controls, retained 3D state | Verified fixed-attitude Phase 12 experiments; not a calibrated historical descent. |
 | **Live attitude** (`/attitude-replay.html`) | Actual original AGC yaw/pitch hand-controller inputs, RCS outputs and sensor feedback | Bounded native two-axis fixture, not a whole flight. |
 
-The historical sequence is undocking → relative-motion management and Eagle
-inspection → Columbia separation → LM alignment → DOI → P63 preparation →
-powered descent. Unimplemented historical flight chapters remain gated. The
-synthetic landing lab is a separate teaching activity, never a substitute for
-those mission procedures or evidence of an original-AGC-controlled landing.
+The sequence is Earth parking orbit → TLI → transposition/docking/extraction →
+translunar coast → lunar arrival → LM preparation → undocking/inspection → DOI →
+powered descent → surface → ascent/rendezvous → TEI → Earth entry/splashdown.
+Saturn LVDC, Columbia's CMC, Eagle's LGC and the crew have distinct authority.
+The full-flight integration gaps are explicit at each chapter. The synthetic
+landing lab remains a separate teaching activity.
+
+[Chronology and primary sources](docs/APOLLO11_CHRONOLOGY.md),
+[campaign integration contract](docs/APOLLO11_CAMPAIGN_INTEGRATION.md),
+[judges' chronological presentation plan](docs/JUDGES_PRESENTATION_PLAN.md), and
+[current visual and test evidence](docs/frontend-campaign-evidence/README.md).
 
 ## Crew and agents
 
@@ -77,7 +89,7 @@ provider protocols and failure cases are covered by stub tests.
 ## Submission and verification
 
 [Judge demo and startup guide](docs/SUBMISSION_GUIDE.md) ·
-[Current screenshots and actual test results](docs/frontend-submission-evidence/README.md) ·
+[Current campaign screenshots and actual test results](docs/frontend-campaign-evidence/README.md) ·
 [Implemented shared-mission contract](docs/FINAL_INTEGRATION_CONTRACT.md) ·
 [Undocking contract and primary sources](docs/FRONTEND_UNDOCKING.md) ·
 [Frontend development guide](frontend/README.md).

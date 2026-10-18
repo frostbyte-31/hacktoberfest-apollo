@@ -1,6 +1,13 @@
 # Apollo 11 — submission and demonstration guide
 
-The application combines a source-backed orbital undocking trainer, a shared
+The default experience now begins in **Earth parking orbit** at `/campaign.html`.
+Its sixteen historical chapters cover lunar arrival, landing, ascent and direct
+Earth entry/splashdown. The guided tour (`?tour=1`) reviews historical references
+and steps verified original-AGC excerpts; it does not execute a complete flight.
+See [the chronological judges presentation plan](JUDGES_PRESENTATION_PLAN.md) and
+[the current campaign verification](frontend-campaign-evidence/README.md).
+
+The application also combines a source-backed orbital undocking trainer, a shared
 educational landing laboratory, original Luminary 099 recordings and bounded
 live AGC attitude control. Each experience displays its source and scope. The
 educational landing lab is a separate synthetic experiment; it does not continue
@@ -58,6 +65,7 @@ disclosed gameplay adaptation; he does not pilot Eagle.
 
 | Experience | Crew choices and play | Authority and boundary |
 | --- | --- | --- |
+| Historical mission at `/campaign.html` | Start above Earth; explore or automatically tour sixteen sourced chapters and two original-recording excerpts | Static 3D configurations and source-backed history; no full-flight execution or mission completion |
 | Orbital undocking at `/play.html` | Solo station switching or human turns on one device; 28 selected source-backed checks and cockpit actions | Server-validated procedure model; static 3D mechanical release diagram, no physical flyaway or AGC/AGS execution |
 | Landing lab at `/mission.html` | Three human/fallback/configured-model seats; training, braking and low-fuel scenarios; modern throttle/pitch, checklist, messages, lifecycle and debrief | One shared server-owned educational plant; synthetic conditions, planar pitch actuation, no original AGC landing guidance |
 | Propulsion recording in the mission viewers | Play, pause, inspect observations and compare retained causal cases | Actual retained original engine output, 3D physical samples and sensor/navigation feedback; bounded synthetic experiment |
@@ -101,31 +109,19 @@ explicit fallback labels. See [the implemented contract](FINAL_INTEGRATION_CONTR
 for request bounds, permissions, authentication, sequence/run checks and source
 identifiers. Configuration support is not proof that a real provider was run.
 
-## Three-minute judged demonstration
+## Chronological judged demonstration
 
-1. **Mission purpose and authentic controls (45 seconds).** Open the launch
-   screen and choose orbital undocking. Point out the source label, docked
-   Columbia/Eagle and historical order. Begin the checklist, review the declared
-   entry assumptions, select a crew station and perform a check. Explain that
-   Collins later commands Columbia's DOCKING PROBE **EXTD/REL**, then **OFF**.
-   Do not skip required actions or present the static release gap as flight.
-2. **Crew choice and measured gameplay (60 seconds).** Return to launch and
-   choose the separate educational landing lab. Choose an observer host with
-   three deterministic fallback seats in the training scenario. Create and start
-   the flight. Watch server telemetry, labeled crew activity and the measured
-   terminal debrief. Earlier retained training runs landed in about 34 simulated
-   seconds; the current server's measured outcome is the result to present.
-3. **Original software evidence (45 seconds).** Open the recorded propulsion
-   inspector, inspect an actual engine/navigation observation and compare a
-   connected case with a disconnected causal control. Keep the recorded source
-   label visible. This is where original Luminary behavior is evidenced; it is
-   separate from the educational landing controller.
-4. **Chronology and next authentic integration (30 seconds).** Show the
-   historical mission sequence: undocking, relative-motion management/Eagle
-   inspection, the later CSM separation maneuver, LM preparation/alignment, DOI,
-   then powered descent. The trainer's inspection handoff does not unlock a
-   validated historical landing. Explain the preserved source, evidence and
-   capability gates.
+Use the [seven-minute and three-minute presentation plans](JUDGES_PRESENTATION_PLAN.md).
+Begin with Earth parking orbit and the correct Saturn/adapter configuration;
+explain TLI and lunar arrival before demonstrating LM guidance and the undocking
+trainer. Show DOI before powered descent, then the ascent-stage rendezvous and
+Columbia's direct atmospheric return. The **Guided tour** preset opens this
+historical sequence; it does not create an assistant-controlled landing.
+
+The separate educational landing lab remains an optional hands-on extension
+outside the authentic mission presentation. An observer can still select three
+assistants in that lab's crew form. Original execution, historical reference,
+procedure training and modern assistance must retain their visible source labels.
 
 A longer demonstration can complete all 28 undocking actions. Only the valid
 CMP release action changes the modeled attachment. Returning the control to OFF

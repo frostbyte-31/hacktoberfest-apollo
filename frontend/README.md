@@ -10,8 +10,8 @@ make play
 python3 -B tools/final_demo.py --port 4173
 ```
 
-Open **http://127.0.0.1:4173/** for the launch screen. Choose either the historical
-orbital procedure trainer or the separate educational landing laboratory. Every
+Open **http://127.0.0.1:4173/** for the launch screen. Choose **Historical mission** to begin in Earth parking orbit, or the separate
+educational landing laboratory. Every
 experience identifies its execution source and available controls. The landing
 lab does not continue the trainer's historical flight state.
 
@@ -19,6 +19,25 @@ Exactly three crew slots represent Armstrong, Commander in Eagle; Aldrin, Lunar
 Module Pilot in Eagle; and Collins, Command Module Pilot in Columbia. Collins
 remains in lunar orbit; his landing-lab communications/support role is a disclosed
 gameplay adaptation.
+
+### Chronological historical mission
+
+**/campaign.html** starts in Earth parking orbit with Eagle stowed in the closed
+adapter above the S-IVB. Sixteen sourced chapters cover lunar arrival, Eagle's
+landing, ascent/rendezvous and Columbia's direct entry/splashdown. All three crew
+members begin in Columbia; only Armstrong and Aldrin later transfer to Eagle.
+
+Choose **Guided tour** on the home screen, or open **/campaign.html?tour=1**.
+The tour advances historical references every eight seconds and steps two genuine
+original-AGC excerpts at the relevant lunar chapters. These excerpts come from
+the same retained synthetic Phase 12 experiment. They are not a continuous
+historical flight. Pausing and resuming keeps the current exact observation.
+
+The historical models are static 3D configurations; dragging changes only the
+camera. All full-flight commands and goals remain unavailable. Reviewing the
+sixteen chapters never completes a flight goal. See the
+[campaign contract](../docs/APOLLO11_CAMPAIGN_INTEGRATION.md) and
+[chronological judge presentation plan](../docs/JUDGES_PRESENTATION_PLAN.md).
 
 ### Historical orbital procedures
 
