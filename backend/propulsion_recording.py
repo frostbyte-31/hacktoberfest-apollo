@@ -117,25 +117,37 @@ def _vector(value, length=3):
     return list(value)
 
 
+def _ordered_projection_sum(values):
+    """Preserve the display adapter's original pre-Python3.12 arithmetic order.
+
+    This computes only independent read-only local projections. Recorded
+    physical vectors and original computer measurements are copied unchanged.
+    """
+    total = 0.0
+    for value in values:
+        total += value
+    return total
+
+
 def project_physics(telemetry, radius_m, origin_angle):
     """Independent display projections of recorded state, not propagation."""
     position = _vector(telemetry['position_ref_m'])
     velocity = _vector(telemetry['velocity_ref_m_s'])
-    radius = math.sqrt(sum(x*x for x in position))
+    radius = math.sqrt(_ordered_projection_sum(x*x for x in position))
     plane_radius = math.hypot(position[0], position[2])
     if radius <= 1 or plane_radius <= 1:
         raise ValueError('Recorded position cannot define this local projection')
     up = [x/radius for x in position]
     tangent = [-position[2]/plane_radius, 0.0, position[0]/plane_radius]
-    vertical = sum(v*u for v, u in zip(velocity, up))
-    horizontal = math.sqrt(max(0.0, sum(v*v for v in velocity)-vertical*vertical))
+    vertical = _ordered_projection_sum(v*u for v, u in zip(velocity, up))
+    horizontal = math.sqrt(max(0.0, _ordered_projection_sum(v*v for v in velocity)-vertical*vertical))
     matrix = [_vector(row) for row in telemetry['rotation_body_to_ref']]
     body_x = [matrix[i][0] for i in range(3)]
     # Same right-handed +body-Y convention as the educational lab: positive
     # pitch turns body +X towards negative local downrange. This is a derived
     # XZ projection; no orientation or sensor measurement is changed.
-    pitch = math.degrees(math.atan2(-sum(a*b for a, b in zip(body_x, tangent)),
-                                   sum(a*b for a, b in zip(body_x, up))))
+    pitch = math.degrees(math.atan2(-_ordered_projection_sum(a*b for a, b in zip(body_x, tangent)),
+                                   _ordered_projection_sum(a*b for a, b in zip(body_x, up))))
     return {
         'simTimeSeconds': telemetry['time_s'],
         'spacecraft': {
@@ -148,7 +160,7 @@ def project_physics(telemetry, radius_m, origin_angle):
             'massKg': telemetry['mass_kg'], 'fuelKg': telemetry['fuel_kg'],
             'altitudeM': radius-radius_m, 'verticalSpeedMps': vertical,
             'horizontalSpeedMps': horizontal,
-            'horizontalVelocityMps': sum(v*t for v, t in zip(velocity, tangent)),
+            'horizontalVelocityMps': _ordered_projection_sum(v*t for v, t in zip(velocity, tangent)),
             'downrangeM': radius_m*(math.atan2(position[2], position[0])-origin_angle),
             'pitchDeg': pitch,
         },

@@ -75,6 +75,32 @@ class EarthAlignmentServiceTests(unittest.TestCase):
         self.assertFalse(state['task']['complete'])
         self.assertEqual(self.engines, [])
 
+    def test_program_discovery_never_advertises_unverified_p47_monitoring(self):
+        programs = self.service.capabilities()['originalPrograms']
+        self.assertTrue(programs['P52']['available'])
+        self.assertEqual(programs['P52']['classification'], MODE)
+        self.assertIs(programs['P47']['available'], False)
+        self.assertEqual(programs['P47']['classification'], 'UNVALIDATED ORIGINAL PROGRAM')
+        self.assertIn('01204', programs['P47']['unavailableReason'])
+        self.assertIn('N62 display alone', programs['P47']['unavailableReason'])
+        with patch.object(self.service, 'discovery', return_value={'available': False}):
+            programs = self.service.capabilities()['originalPrograms']
+            self.assertFalse(programs['P52']['available'])
+            self.assertFalse(programs['P47']['available'])
+        self.assertIsNone(self.service.thread)
+
+    def test_p47_key_script_and_cold_n62_cannot_create_alignment_or_flight_success(self):
+        state = self.service.start()
+        state = self.keys(state, ['VERB', '3', '7', 'ENTR', '4', '7', 'ENTR',
+                                 'VERB', '1', '6', 'NOUN', '6', '2', 'ENTR'])
+        state = self.observe(PROG='47', VERB='16', NOUN='62',
+                             R1='00000', R2='00000', R3='00000')
+        self.assertFalse(state['task']['complete'])
+        self.assertFalse(state['task']['alignmentCompleted'])
+        self.assertFalse(state['task']['flightExecuted'])
+        self.assertEqual(state['task']['checkpoints'], [])
+        self.assertFalse(self.service.capabilities()['originalPrograms']['P47']['available'])
+
     def test_keys_and_instrument_controls_use_one_strict_sequence_and_native_acks(self):
         state = self.service.start()
         state = self.keys(state, ['VERB'])

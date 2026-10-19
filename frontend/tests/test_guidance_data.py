@@ -33,6 +33,18 @@ class GuidanceDataTests(unittest.TestCase):
         self.assertEqual(exporter.DEFAULT_OUTPUT.read_bytes(), exporter.encoded(self.data))
         self.assertEqual(exporter.encoded(self.data), exporter.encoded(exporter.build_guidance()))
 
+    def test_static_illustration_dot_product_keeps_export_order_across_python_versions(self):
+        # Python3.12+ sum(float) preserves the two unit terms; Python3.11's
+        # left-to-right sum rounds both away. Serialized presentation geometry
+        # must use the existing order regardless of the host Python version.
+        terms = [1e16, 1., 1.]
+        self.assertEqual(math.fsum(terms), 1e16+2)
+        self.assertEqual(exporter.ordered_dot3(terms, [1., 1., 1.]), 1e16)
+        self.assertEqual(self.cases['nominal']['initialState']['landingSiteBasicRefAtTlandM'][0],
+                         1738089.94652812)
+        self.assertEqual(self.cases['altitude-16km']['initialState']['landingSiteBasicRefAtTlandM'][0],
+                         1738089.94652812)
+
     def test_only_three_verified_cases_and_recorded_mode_are_exposed(self):
         self.assertEqual(list(self.cases), ["nominal", "altitude-16km", "missing-site"])
         self.assertEqual(self.data["mode"], "RECORDED AUTHENTIC EXECUTION REPLAY")

@@ -1,0 +1,1523 @@
+{
+  "schemaVersion": 1,
+  "classification": "SOURCE_INDEX_ONLY",
+  "executionDisclaimer": "Original source locations explain the next integration. Reading a listing or completing a procedure does not execute a flight program, authorize flight controls or prove a spacecraft maneuver.",
+  "lineConvention": "line identifies the original include-file source line, not the global assembler listing line or a printed-page number.",
+  "capabilityNote": "requiredCapability names come from the campaign catalog and are proposed complete-operation requirements. This file does not announce backend capabilities.",
+  "availabilityNote": "availability describes an existing bounded experience or source availability, not completion of a complete historical flight. The current P47 native probe reaches original alarm 01204; its cause remains unresolved and the monitor is unavailable.",
+  "software": [
+    {
+      "id": "comanche055",
+      "computer": "Columbia Command Module Computer (CMC)",
+      "version": "Comanche 055 / Colossus 2A",
+      "archivePath": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+      "archiveSha256": "8828f9a0f7e529b7072690a447d63385e67ab12e768a1cd4b199a642a79eac3d",
+      "binaryPath": "docs/earth-orbit-evidence/artifacts/Comanche055.bin",
+      "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+      "provenanceNote": "Original source members and their raw bytes are retained in the corresponding-source archive. Excerpts are read-only navigation aids."
+    },
+    {
+      "id": "luminary099",
+      "computer": "Eagle Lunar Module Guidance Computer (LGC)",
+      "version": "Archived Luminary 099/0",
+      "sourceManifestPath": "docs/phase9-evidence/setup/setups/20261017T181903Z-486ff63e/source-archive-hashes.json",
+      "assemblyListingPath": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+      "assemblyListingSha256": "2ddf3731093b06a93dc3428704bae338f0e0790b9214e8238406f7febb0724e0",
+      "binaryPath": "docs/phase1-evidence/artifacts/Luminary099.bin",
+      "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+      "provenanceNote": "The retained assembler listing supplies original include-file line numbers; raw-source SHA-256 values come from the retained pinned source manifest. Luminary099 MAIN is an index, not a complete local source tree. Archived 099/0 must not be silently called the exact flown 099/1 rope image.",
+      "versionReferenceUrl": "https://www.ibiblio.org/apollo/Luminary.html"
+    }
+  ],
+  "stages": [
+    {
+      "stageId": "earth-parking",
+      "title": "Earth parking orbit",
+      "station": "Columbia CMC",
+      "controlAuthority": "Saturn IU guidance; crew checks and CMC navigation/alignment",
+      "requiredCapability": "historicalEarthParkingOrbit",
+      "availability": "original-task",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P52",
+          "label": "CSM platform realignment",
+          "file": "Comanche055/P51-P53.agc",
+          "symbol": "PROG52",
+          "line": 148,
+          "sourceSha256": "d16d4ea64e82028e1f39e906993aa1132335bc22f9b4986d32232b7a5da4b997",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P51-P53.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P51-P53.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P51-P53.agc"
+          },
+          "excerpt": "PROG52\t\tTC\tPHASCHNG\n\t\tOCT\t00254\n\t\tTC\tDOWNFLAG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n## Page 739\n\t\tTC\tDOWNFLAG\n\t\tADRES\tTRACKFLG\t# BIT 5 FLAG 1\n\t\tTC\tBANKCALL",
+          "excerptLineNumbers": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "The existing Earth-orbit task executes this original program with stationary modeled instruments."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P11",
+          "label": "Earth-orbit insertion monitor",
+          "file": "Comanche055/P11.agc",
+          "symbol": "P11",
+          "line": 167,
+          "sourceSha256": "8b4b384e34c77bc5bb15206e6d202d26cf6e35abbcf043b0972b4044c1e4759b",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P11.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P11.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P11.agc"
+          },
+          "excerpt": "P11\t\tCA\tEBANK3\n\t\tTS\tEBANK\n\t\t\n\t\tEXTEND\n\t\tDCA\tREP11S\t\t# DIRECT RESTARTS TO REP11\n\t\tDXCH\t-PHASE3\n\t\tCS\tZERO\n\t\tZL",
+          "excerptLineNumbers": [
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Contains insertion monitoring and Saturn backup interfaces, not proof of nominal CMC-controlled TLI."
+        }
+      ],
+      "crewHardware": [
+        "DSKY keys",
+        "Manual optics handcontroller",
+        "MARK / MARK REJECT"
+      ],
+      "missingSystems": [
+        "Historical post-insertion state and measured spacecraft attitude",
+        "Complete insertion/system checks"
+      ],
+      "nextIntegration": "Preserve the completed original P52 task; add historical instrument/spacecraft initialization before extending flight.",
+      "historicalSourceIds": [
+        "postlaunch-events",
+        "earth-orbit-tli",
+        "comanche-source",
+        "saturn-astrionics"
+      ]
+    },
+    {
+      "stageId": "tli",
+      "title": "Translunar injection",
+      "station": "Saturn IU; Columbia CMC monitor",
+      "controlAuthority": "LVDC guidance and analog flight control computer; crew monitors the burn",
+      "requiredCapability": "historicalSaturnTli",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P47",
+          "label": "CSM thrust monitor",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P47CSM",
+          "line": 392,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P47CSM\t\tTC\tBANKCALL\t# IMU STATUS CHECK\n\t\tCADR\tR02BOTH\n\t\tTC\tINTPRET\n\t\tCALRB\n\t\t\tMIDTOAV2\n\t\tCA\tMPAC +1\t\t# DELTA TIME TO RPEREAD (LESS THAN 1000\n\t\tTS\tP40TMP\t\t#\tCS, WITH A TPAGREE, INT.INIT.)\n\t\tTC\tWAITLIST",
+          "excerptLineNumbers": [
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "A monitor integrates measured acceleration; selecting it does not command Saturn TLI."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P11",
+          "label": "Earth-orbit insertion monitor",
+          "file": "Comanche055/P11.agc",
+          "symbol": "P11",
+          "line": 167,
+          "sourceSha256": "8b4b384e34c77bc5bb15206e6d202d26cf6e35abbcf043b0972b4044c1e4759b",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P11.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P11.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P11.agc"
+          },
+          "excerpt": "P11\t\tCA\tEBANK3\n\t\tTS\tEBANK\n\t\t\n\t\tEXTEND\n\t\tDCA\tREP11S\t\t# DIRECT RESTARTS TO REP11\n\t\tDXCH\t-PHASE3\n\t\tCS\tZERO\n\t\tZL",
+          "excerptLineNumbers": [
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Contains insertion monitoring and Saturn backup interfaces, not proof of nominal CMC-controlled TLI."
+        }
+      ],
+      "crewHardware": [
+        "LV GUIDANCE IU",
+        "XLUNAR INJECT",
+        "SC CONT SCS",
+        "EMS and event timer"
+      ],
+      "missingSystems": [
+        "Resolve the original P47 probe alarm 01204 before enabling the CMC thrust-monitor task",
+        "Original AS-506 LVDC program/provider",
+        "LVDA and analog flight-control computer",
+        "S-IVB/J-2 and Saturn instrument feedback",
+        "Authoritative departure trajectory"
+      ],
+      "nextIntegration": "Resolve the original P47 native probe alarm 01204 and validate the monitor against acceleration inputs. The monitor cannot replace Saturn guidance or report TLI completion.",
+      "historicalSourceIds": [
+        "earth-orbit-tli",
+        "lvdc",
+        "saturn-astrionics"
+      ]
+    },
+    {
+      "stageId": "transposition-extraction",
+      "title": "Retrieve Eagle",
+      "station": "Columbia CMC / manual crew",
+      "controlAuthority": "Collins uses CSM attitude/translation controls; crew operates separation and docking hardware",
+      "requiredCapability": "historicalTranspositionExtraction",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "RCS DAP",
+          "label": "CSM attitude and automatic maneuver control",
+          "file": "Comanche055/AUTOMATIC_MANEUVERS.agc",
+          "symbol": "AUTOCONT",
+          "line": 59,
+          "sourceSha256": "d0e7a7d485949dd694f7daa68574da44f6602eb794a7c74b5ba9c089ab085dd7",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/AUTOMATIC_MANEUVERS.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/AUTOMATIC_MANEUVERS.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/AUTOMATIC_MANEUVERS.agc"
+          },
+          "excerpt": "AUTOCONT\tCA\tHOLDFLAG\t# IF HOLDFLAG IS +, GO TO GRABANG.\n\t\tEXTEND\t\t\t# OTHERWISE, GO TO ATTHOLD.\n\t\tBZMF\tATTHOLD\n\t\tTCF\tGRABANG\n\t\t\n# MINIMUM IMPULSE CONTROL\n\nFREECONT\tCAF\tONE",
+          "excerptLineNumbers": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Related original attitude-control code; it does not operate the mechanical separation button or docking probe."
+        }
+      ],
+      "crewHardware": [
+        "CM/LV SEP",
+        "RCS rotation and translation handcontrollers",
+        "CMC AUTO / FREE",
+        "Docking-probe capture and retraction controls"
+      ],
+      "missingSystems": [
+        "Exact selected checklist mapping",
+        "CSM/S-IVB/LM relative dynamics",
+        "Probe capture and docking interlocks",
+        "SLA separation and extraction hardware"
+      ],
+      "nextIntegration": "Connect the CSM DAP to documented handcontroller inputs and a separate backend docking mechanism/relative-motion model.",
+      "historicalSourceIds": [
+        "tde",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "translunar-coast",
+      "title": "Navigate to the Moon",
+      "station": "Columbia CMC",
+      "controlAuthority": "Ground tracking and updates, crew navigation observations, CMC guidance and vehicle controls",
+      "requiredCapability": "historicalTranslunarCoast",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P23",
+          "label": "Cislunar navigation observations",
+          "file": "Comanche055/P20-P25.agc",
+          "symbol": "P23",
+          "line": 2769,
+          "sourceSha256": "4ca82b7e206540ac490bc2dd6fa050c9d14f7f0a4db382261479e283ba993433",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P20-P25.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P20-P25.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P20-P25.agc"
+          },
+          "excerpt": "P23\t\tTC\tDOWNFLAG\n\t\tADRES\tRNDVZFLG\n\t\t\n\t\tTC\t2PHSCHNG\n\t\tOCT\t00004\t\t# LEAVE GROUP 4\n\t\tOCT\t00012\t\t# ENTER GROUP 2\n\t\tCAF\tPRIO13\n\t\tTS\tPHSPRDT2",
+          "excerptLineNumbers": [
+            2769,
+            2770,
+            2771,
+            2772,
+            2773,
+            2774,
+            2775,
+            2776
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Requires star/horizon observations, state vectors and optics/IMU interfaces; not presently a validated playable navigation task."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P30",
+          "label": "External delta-V maneuver preparation",
+          "file": "Comanche055/P30,P37.agc",
+          "symbol": "P30",
+          "line": 127,
+          "sourceSha256": "875d3a2a865543a6a3ceeea7a36723972d6823792e4f07398168c0741628cf87",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P30,P37.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P30,P37.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P30,P37.agc"
+          },
+          "excerpt": "P30\t\tTC\tP30/P31\n\t\tTC\tCNTNUP30\n\t\tTC\tDOWNFLAG\t# RESET UPDATFLG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n\t\tTC\tINTPRET\n\t\tCALL\t\n\t\t\tS30.1\n\t\tEXIT",
+          "excerptLineNumbers": [
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Prepares a supplied maneuver; historical PAD, frame, epoch and state must be established separately."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P40",
+          "label": "CSM SPS thrusting",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P40CSM",
+          "line": 55,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P40CSM\t\tTC\tDOWNFLAG\n\t\tADRES\tENG2FLAG\n\t\t\n\t\tTC\tINTPRET\n\t\tSLOAD\tBOFF\n\t\t\tECSTEER\t\t# IS THIS AN EXTERNAL DELTA V BURN\n\t\t\tXDELVFLG\n\t\t\tP40S/C\t\t# NO\tCSTEER = ECSTEER",
+          "excerptLineNumbers": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original SPS burn program; source availability is not evidence of an integrated LOI or TEI burn."
+        }
+      ],
+      "crewHardware": [
+        "Sextant and telescope",
+        "MARK",
+        "UP TLM ACCEPT / BLOCK",
+        "SPS maneuver controls"
+      ],
+      "missingSystems": [
+        "Cislunar state vectors and frames",
+        "Star/horizon optics geometry",
+        "P23 procedure mapping and measurement incorporation",
+        "SPS/IMU loop for an actually flown correction"
+      ],
+      "nextIntegration": "Prove one original P23 sighting with external optics measurements; do not turn canceled maneuver opportunities into mandatory burns.",
+      "historicalSourceIds": [
+        "mission-overview",
+        "flight-plan",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "lunar-orbit-insertion",
+      "title": "Brake into lunar orbit",
+      "station": "Columbia CMC",
+      "controlAuthority": "CMC-guided SPS burn, enabled and monitored by the crew",
+      "requiredCapability": "historicalLunarOrbitInsertion",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P30",
+          "label": "External delta-V maneuver preparation",
+          "file": "Comanche055/P30,P37.agc",
+          "symbol": "P30",
+          "line": 127,
+          "sourceSha256": "875d3a2a865543a6a3ceeea7a36723972d6823792e4f07398168c0741628cf87",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P30,P37.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P30,P37.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P30,P37.agc"
+          },
+          "excerpt": "P30\t\tTC\tP30/P31\n\t\tTC\tCNTNUP30\n\t\tTC\tDOWNFLAG\t# RESET UPDATFLG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n\t\tTC\tINTPRET\n\t\tCALL\t\n\t\t\tS30.1\n\t\tEXIT",
+          "excerptLineNumbers": [
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Prepares a supplied maneuver; historical PAD, frame, epoch and state must be established separately."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P40",
+          "label": "CSM SPS thrusting",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P40CSM",
+          "line": 55,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P40CSM\t\tTC\tDOWNFLAG\n\t\tADRES\tENG2FLAG\n\t\t\n\t\tTC\tINTPRET\n\t\tSLOAD\tBOFF\n\t\t\tECSTEER\t\t# IS THIS AN EXTERNAL DELTA V BURN\n\t\t\tXDELVFLG\n\t\t\tP40S/C\t\t# NO\tCSTEER = ECSTEER",
+          "excerptLineNumbers": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original SPS burn program; source availability is not evidence of an integrated LOI or TEI burn."
+        }
+      ],
+      "crewHardware": [
+        "DSKY PRO at V99",
+        "SPS valve-bank controls",
+        "EMS and engine/attitude checks"
+      ],
+      "missingSystems": [
+        "Historical LOI PAD and initialized CSM state",
+        "SPS interlocks and gimbal/engine dynamics",
+        "Accelerometer feedback",
+        "Verified achieved lunar capture"
+      ],
+      "nextIntegration": "Execute original CSM P30/P40 through a source-backed SPS fixture and verify cutoff before enabling a physical LOI outcome.",
+      "historicalSourceIds": [
+        "lunar-orbit-insertion",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "lunar-orbit",
+      "title": "Establish the lunar parking orbit",
+      "station": "Columbia CMC",
+      "controlAuthority": "CMC-guided SPS maneuver and crew spacecraft management",
+      "requiredCapability": "historicalLunarOrbit",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P30",
+          "label": "External delta-V maneuver preparation",
+          "file": "Comanche055/P30,P37.agc",
+          "symbol": "P30",
+          "line": 127,
+          "sourceSha256": "875d3a2a865543a6a3ceeea7a36723972d6823792e4f07398168c0741628cf87",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P30,P37.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P30,P37.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P30,P37.agc"
+          },
+          "excerpt": "P30\t\tTC\tP30/P31\n\t\tTC\tCNTNUP30\n\t\tTC\tDOWNFLAG\t# RESET UPDATFLG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n\t\tTC\tINTPRET\n\t\tCALL\t\n\t\t\tS30.1\n\t\tEXIT",
+          "excerptLineNumbers": [
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Prepares a supplied maneuver; historical PAD, frame, epoch and state must be established separately."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P40",
+          "label": "CSM SPS thrusting",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P40CSM",
+          "line": 55,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P40CSM\t\tTC\tDOWNFLAG\n\t\tADRES\tENG2FLAG\n\t\t\n\t\tTC\tINTPRET\n\t\tSLOAD\tBOFF\n\t\t\tECSTEER\t\t# IS THIS AN EXTERNAL DELTA V BURN\n\t\t\tXDELVFLG\n\t\t\tP40S/C\t\t# NO\tCSTEER = ECSTEER",
+          "excerptLineNumbers": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original SPS burn program; source availability is not evidence of an integrated LOI or TEI burn."
+        }
+      ],
+      "crewHardware": [
+        "CMC AUTO",
+        "GDC ALIGN",
+        "TVC and servo-power controls",
+        "SPS A-bank-only circularization configuration"
+      ],
+      "missingSystems": [
+        "LOI-2 checklist mapping and historical state",
+        "SPS/gimbal/IMU feedback",
+        "Verified orbit after cutoff"
+      ],
+      "nextIntegration": "Reuse a validated SPS integration with the LOI-2 configuration. Do not copy the second-bank operation from long LOI-1/TEI burns.",
+      "historicalSourceIds": [
+        "postlaunch-events",
+        "mission-overview",
+        "flight-plan",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "lm-preparation",
+      "title": "Activate Eagle and prepare guidance",
+      "station": "Eagle LGC; separate AGS and Columbia CMC",
+      "controlAuthority": "Crew activation and hardware checks, LM primary guidance and separate abort guidance",
+      "requiredCapability": "historicalLmActivation",
+      "availability": "recorded-evidence",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P51",
+          "label": "LM IMU orientation determination",
+          "file": "Luminary099/P51-P53.agc",
+          "symbol": "P51",
+          "line": 1019,
+          "sourceSha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P51-P53.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P51-P53.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P51-P53.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P51                TC       BANKCALL                      \t# IS ISS ON - IF NOT, IMUCHK WILL SEND\n                   CADR     IMUCHK                        \t# ALARM CODE 210 AND EXIT VIA GOTOPOOH.\n\n                   CAF      OCT15                         \t#\n                   TC       BANKCALL                      \t#\n                   CADR     GOPERF1                       \t#\n                   TC       GOTOPOOH                      \t# TERM.\n                   TCF      P51B                          \t# V33",
+          "excerptLineNumbers": [
+            1019,
+            1020,
+            1021,
+            1022,
+            1023,
+            1024,
+            1025,
+            1026
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Retained synthetic guidance experiments execute original alignment code; this is not the complete historical LM activation."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P27 / V71",
+          "label": "LM mission-data update",
+          "file": "Luminary099/UPDATE_PROGRAM.agc",
+          "symbol": "V71UPDAT",
+          "line": 170,
+          "sourceSha256": "b38bebf20bcdce89b3a26ae66d4df6f97ae8dbab0a47aa41c9717408deddd78b",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/UPDATE_PROGRAM.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/UPDATE_PROGRAM.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/UPDATE_PROGRAM.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "V71UPDAT           CAF      UP71                          \t# COMES HERE ON V71E\n                   TCF      V73UPDAT   +1                 \t#\n\n\nV72UPDAT           CAF      UP72                          \t# COMES HERE ON V72E\n                   TCF      V73UPDAT   +1                 \t#\n\n",
+          "excerptLineNumbers": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Original contiguous data-update path used by the retained synthetic initialization experiment."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P63",
+          "label": "LM landing preparation and ignition algorithm",
+          "file": "Luminary099/THE_LUNAR_LANDING.agc",
+          "symbol": "P63LM",
+          "line": 47,
+          "sourceSha256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/THE_LUNAR_LANDING.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/THE_LUNAR_LANDING.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/THE_LUNAR_LANDING.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P63LM              TC       PHASCHNG                      \t#\n                   OCT      04024                         \t#\n\n                   TC       BANKCALL                      \t# DO IMU STATUS CHECK ROUTINE R02\n                   CADR     R02BOTH                       \t#\n\n                   CAF      P63ADRES                      \t# INITIALIZE WHICH FOR BURNBABY\n                   TS       WHICH                         \t#",
+          "excerptLineNumbers": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Retained original guidance solutions use synthetic mission inputs; this entry does not establish a completed descent."
+        }
+      ],
+      "crewHardware": [
+        "LM power and activation controls",
+        "DSKY",
+        "AGS/DEDA separately",
+        "Landing-gear and propulsion checks"
+      ],
+      "missingSystems": [
+        "Complete historical activation/checklist state",
+        "Validated LM IMU/optics",
+        "AGS and radar",
+        "Pressure, power, gear and propulsion systems"
+      ],
+      "nextIntegration": "Expose retained P51/P27/P63 calculations with their synthetic classification, then validate one live LM instrument task.",
+      "historicalSourceIds": [
+        "flight-plan",
+        "undock-doi",
+        "luminary-source"
+      ]
+    },
+    {
+      "stageId": "undocking-inspection",
+      "title": "Undock and inspect Eagle",
+      "station": "Columbia probe controls; Eagle crew",
+      "controlAuthority": "Collins commands the CSM probe release; LM crew confirms release and manages Eagle",
+      "requiredCapability": "historicalOrbitalUndocking",
+      "availability": "procedure-task",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P47",
+          "label": "CSM thrust monitor",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P47CSM",
+          "line": 392,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P47CSM\t\tTC\tBANKCALL\t# IMU STATUS CHECK\n\t\tCADR\tR02BOTH\n\t\tTC\tINTPRET\n\t\tCALRB\n\t\t\tMIDTOAV2\n\t\tCA\tMPAC +1\t\t# DELTA TIME TO RPEREAD (LESS THAN 1000\n\t\tTS\tP40TMP\t\t#\tCS, WITH A TPAGREE, INT.INIT.)\n\t\tTC\tWAITLIST",
+          "excerptLineNumbers": [
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "A monitor integrates measured acceleration; selecting it does not command Saturn TLI."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P47",
+          "label": "LM thrust monitor",
+          "file": "Luminary099/P40-P47.agc",
+          "symbol": "P47LM",
+          "line": 364,
+          "sourceSha256": "1522e7cdc1a33328b49f57d4768a820f3f940bbefbb97152051342c1464d651c",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P40-P47.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P40-P47.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P47LM              TC       BANKCALL                      \t#\n                   CADR     R02BOTH                       \t#\n                   TC       INTPRET                       \t#\n                   CALRB                                  \t#\n                            MIDTOAV2                      \t#\n\n                   CA       MPAC       +1                 \t#\n                   TC       TWIDDLE                       \t#",
+          "excerptLineNumbers": [
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Related original LM acceleration-monitor code; the discrete undocking trainer does not execute this bookkeeping or the separate AGS."
+        }
+      ],
+      "crewHardware": [
+        "DOCK PROBE circuit breakers",
+        "DOCKING PROBE EXTD/REL then OFF",
+        "LM ACT-63 settings",
+        "Crew readiness and release reports"
+      ],
+      "missingSystems": [
+        "Original P47/AGS undocking delta-V bookkeeping",
+        "Probe timing/mechanics",
+        "Inspection and relative-motion flight integration"
+      ],
+      "nextIntegration": "Keep the validated 28-action discrete trainer; add original computer bookkeeping and measured relative motion as separate verified increments.",
+      "historicalSourceIds": [
+        "undock-doi",
+        "flight-plan"
+      ]
+    },
+    {
+      "stageId": "descent-orbit-insertion",
+      "title": "Lower Eagle's orbit",
+      "station": "Eagle LGC",
+      "controlAuthority": "LM guidance, crew maneuver setup and descent-engine controls",
+      "requiredCapability": "historicalDescentOrbitInsertion",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P52",
+          "label": "LM platform realignment",
+          "file": "Luminary099/P51-P53.agc",
+          "symbol": "PROG52",
+          "line": 135,
+          "sourceSha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P51-P53.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P51-P53.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P51-P53.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "PROG52             TC       BANKCALL                      \t#\n                   CADR     R02BOTH                       \t# IMU STATUS CHECK\n                   CAF      PFRATBIT                      \t#\n                   MASK     FLAGWRD2                      \t# IS PFRATFLG SET?\n                   CCS      A                             \t#\n                   TC       P52A                          \t# YES\n                   CAF      BIT2                          \t# NO\n                   TC       P52A       +1                 \t#",
+          "excerptLineNumbers": [
+            135,
+            136,
+            137,
+            138,
+            139,
+            141,
+            142,
+            143
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Uses LM instruments and control paths; the CSM stationary P52 fixture cannot be relabeled an LM flight checkpoint."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P40",
+          "label": "LM descent-engine thrusting",
+          "file": "Luminary099/P40-P47.agc",
+          "symbol": "P40LM",
+          "line": 121,
+          "sourceSha256": "1522e7cdc1a33328b49f57d4768a820f3f940bbefbb97152051342c1464d651c",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P40-P47.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P40-P47.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P40LM              TC       PHASCHNG                      \t#\n                   OCT      04024                         \t#\n\n                   CAF      P40ADRES                      \t# INITIALIZATION FOR BURNBABY.\n                   TS       WHICH                         \t#\n\n                   CA       FLGWRD10                      \t#\n                   MASK     APSFLBIT                      \t#",
+          "excerptLineNumbers": [
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "The LM P40 controls the DPS, unlike the CSM P40 that controls the SPS. DOI needs the complete LM vehicle loop."
+        }
+      ],
+      "crewHardware": [
+        "LM DSKY maneuver preparation",
+        "Engine arm/descent controls",
+        "DPS and RCS controls",
+        "UPDATA LINK DATA / BLOCK"
+      ],
+      "missingSystems": [
+        "Flown DOI PAD/state/frame mapping",
+        "Prior CSM separation and LM alignment",
+        "LM DPS burn/IMU loop",
+        "Measured descent orbit and residuals"
+      ],
+      "nextIntegration": "Verify original LM P40 with source-backed DOI inputs and backend propulsion/counter feedback before claiming the orbit is lowered.",
+      "historicalSourceIds": [
+        "undock-doi",
+        "mission-report",
+        "luminary-source"
+      ]
+    },
+    {
+      "stageId": "powered-descent",
+      "title": "Descend and land Eagle",
+      "station": "Eagle LGC / Armstrong and Aldrin",
+      "controlAuthority": "Original LM guidance/DAP, crew engine and attitude controls, radar feedback and Armstrong's final piloting",
+      "requiredCapability": "historicalAgcPoweredDescent",
+      "availability": "recorded-evidence",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P63",
+          "label": "LM landing preparation and ignition algorithm",
+          "file": "Luminary099/THE_LUNAR_LANDING.agc",
+          "symbol": "P63LM",
+          "line": 47,
+          "sourceSha256": "3bbcc4c34d50456bcabf4c0eb6ebe427a3d28b56ed44b0e1ec7728c05d199b4d",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/THE_LUNAR_LANDING.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/THE_LUNAR_LANDING.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/THE_LUNAR_LANDING.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P63LM              TC       PHASCHNG                      \t#\n                   OCT      04024                         \t#\n\n                   TC       BANKCALL                      \t# DO IMU STATUS CHECK ROUTINE R02\n                   CADR     R02BOTH                       \t#\n\n                   CAF      P63ADRES                      \t# INITIALIZE WHICH FOR BURNBABY\n                   TS       WHICH                         \t#",
+          "excerptLineNumbers": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Retained original guidance solutions use synthetic mission inputs; this entry does not establish a completed descent."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P64",
+          "label": "LM landing approach transition",
+          "file": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+          "symbol": "STARTP64",
+          "line": 269,
+          "sourceSha256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "STARTP64           TC       NEWMODEX                      \t#\n                   DEC      64         B-14               \t#\n                   CA       DELTTFAP                      \t# AUGMENT TTF/8\n                   ADS      TTF/8TMP                      \t#\n                   CA       BIT12                         \t# ENABLE RUPT10\n                   EXTEND                                 \t#\n                   WOR      CHAN13                        \t#\n                   TC       DOWNFLAG                      \t# INITIALIZE REDESIGNATION FLAG",
+          "excerptLineNumbers": [
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Changes to the LM approach program; unrelated to Comanche entry P64."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P66",
+          "label": "LM assisted manual landing transition",
+          "file": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+          "symbol": "STARTP66",
+          "line": 152,
+          "sourceSha256": "544a199bb9808a225b5c14eeead783fe52cdad92c9b10a63697fc1aec921f44f",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "STARTP66           TC       FASTCHNG                      \t# YES\n                   TC       NEWMODEX                      \t#\nDEC66              DEC      66         B-14               \t#\n                   EXTEND                                 \t#\n                   DCA      HDOTDISP                      \t# SET DESIRED ALTITUDE RATE = CURRENT\n                   DXCH     VDGVERT                       \t#       ALTITUDE RATE.\nSTRTP66A           TC       INTPRET                       \t#\n                   SLOAD    PUSH                          \t#",
+          "excerptLineNumbers": [
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Original attitude-hold/rate-of-descent landing path requires actual crew discretes, engine response and sensor feedback."
+        }
+      ],
+      "crewHardware": [
+        "DSKY crew review",
+        "ACA attitude controller",
+        "Rate-of-descent control",
+        "Engine arm / engine stop",
+        "Landing-radar controls"
+      ],
+      "missingSystems": [
+        "Historical navigation initialization",
+        "Continuous three-dimensional descent",
+        "Radar and PIPA feedback",
+        "Validated P64/P66 handcontroller mappings",
+        "Surface contact and touchdown validation"
+      ],
+      "nextIntegration": "Extend the retained bounded original propulsion loop incrementally; prove radar, descent guidance, final control and contact separately.",
+      "historicalSourceIds": [
+        "landing",
+        "mission-report",
+        "luminary-source"
+      ]
+    },
+    {
+      "stageId": "lunar-surface",
+      "title": "Tranquility Base",
+      "station": "Eagle LGC / manual crew; Columbia remains separate",
+      "controlAuthority": "Crew surface procedures, spacecraft hardware, life support and guidance preparation",
+      "requiredCapability": "historicalLunarSurfaceOperations",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P57",
+          "label": "LM lunar-surface alignment",
+          "file": "Luminary099/P51-P53.agc",
+          "symbol": "P57",
+          "line": 2051,
+          "sourceSha256": "5c09c5ed2f59ac52f48590d00aa5b346bd9f10068b0aa823887e0390b0afc1dc",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P51-P53.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P51-P53.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P51-P53.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P57                TC       BANKCALL                      \t# IS ISS ON - IF NOT, IMUCHK WILL SEND\n                   CADR     IMUCHK                        \t# ALARM CODE 210 AND EXIT VIA GOTOPOOH\n\n                   CAF      THREE                         \t# JAM REFSMMAT OPTION 3 FOR INITIAL DISP.\n                   TS       OPTION2                       \t#\nP57OPT             CAF      BIT1                          \t#\n                   TC       BANKCALL                      \t#\n                   CADR     GOPERF4R                      \t# FLASH V04N06 FOR ALIGNMENT CODE",
+          "excerptLineNumbers": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055,
+            2056,
+            2057,
+            2058
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "A guidance task on the lunar surface; it does not simulate EVA, sample collection or life support."
+        }
+      ],
+      "crewHardware": [
+        "Surface alignment optics",
+        "Surface checklist and ECS controls",
+        "Hatches, suits and sampling equipment"
+      ],
+      "missingSystems": [
+        "Stationary lunar gravity/optics measurements for P57",
+        "Surface checklist mapping",
+        "ECS and pressure models",
+        "EVA/sample operations"
+      ],
+      "nextIntegration": "Build a measured original P57 alignment task. Keep manual surface work separate from AGC program execution.",
+      "historicalSourceIds": [
+        "mission-overview",
+        "flight-plan",
+        "landing"
+      ]
+    },
+    {
+      "stageId": "lunar-ascent",
+      "title": "Launch from the Moon",
+      "station": "Eagle LGC / Armstrong and Aldrin",
+      "controlAuthority": "Crew staging/engine preparations and LM ascent guidance; Columbia supports rendezvous",
+      "requiredCapability": "historicalLunarAscent",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P12",
+          "label": "LM powered ascent",
+          "file": "Luminary099/P12.agc",
+          "symbol": "P12LM",
+          "line": 42,
+          "sourceSha256": "4380d7f3940bd55eb0e2438f45e1e125e8a5da650855c12b5a11587605e9dc03",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P12.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P12.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P12.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P12LM              TC       PHASCHNG                      \t#\n                   OCT      04024                         \t#\n\n                   TC       BANKCALL                      \t#\n                   CADR     R02BOTH                       \t# CHECK THE STATUS OF THE IMU.\n\n                   TC       UPFLAG                        \t#\n                   ADRES    MUNFLAG                       \t#",
+          "excerptLineNumbers": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Original ascent preparation/guidance entry; no full ascent vehicle integration or verified orbital insertion is exposed."
+        }
+      ],
+      "crewHardware": [
+        "MASTER ARM",
+        "ABORT STAGE",
+        "ENGINE ARM ASCENT",
+        "DSKY PRO",
+        "RCS residual trim"
+      ],
+      "missingSystems": [
+        "Surface/ascent state and P12 PAD initialization",
+        "Staging and ascent-engine model",
+        "IMU/PIPA feedback",
+        "Verified insertion and residuals"
+      ],
+      "nextIntegration": "Start with original P12 preparation in a source-backed ascent fixture; require measured engine/staging outcomes before awarding liftoff or orbit.",
+      "historicalSourceIds": [
+        "mission-report",
+        "flight-plan",
+        "rendezvous",
+        "luminary-source"
+      ]
+    },
+    {
+      "stageId": "rendezvous-docking",
+      "title": "Rejoin Columbia",
+      "station": "Eagle LGC / Columbia CMC / manual docking hardware",
+      "controlAuthority": "Rendezvous guidance, crew RCS piloting, docking probe hardware and crew transfer procedures",
+      "requiredCapability": "historicalRendezvousDocking",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "luminary099",
+          "program": "P20 / P22",
+          "label": "LM rendezvous and surface radar tracking entry",
+          "file": "Luminary099/P20-P25.agc",
+          "symbol": "PROG20",
+          "line": 110,
+          "sourceSha256": "ce962e50196333b8d053b649e71363cf42359b3cbce3b4f9b12d1632a762f41b",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P20-P25.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P20-P25.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P20-P25.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "PROG20             TC       2PHSCHNG                      \t#\n                   OCT      4                             \t#\n                   OCT      05022                         \t#\n                   OCT      26000                         \t# PRIORITY 26\n                   TC       LUNSFCHK                      \t# CHECK IF ON LUNAR SURFACE\n                   TC       ORBCHGO                       \t# YES\n                   TC       PROG20A    -2                 \t# NO - CONTINUE WITH P20\nORBCHGO            TC       UPFLAG                        \t# SET VEHUPFLG - CSM STATE",
+          "excerptLineNumbers": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            116,
+            117,
+            118
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "The listing aliases PROG22 to PROG20; actual mode, radar and vehicle state still determine the operation."
+        },
+        {
+          "softwareId": "luminary099",
+          "program": "P32",
+          "label": "LM coelliptic sequence initiation",
+          "file": "Luminary099/P32-P35,_P72-P75.agc",
+          "symbol": "P32",
+          "line": 213,
+          "sourceSha256": "0633f9c6903384558817a0a9b49a0929d039b3567d90a580fa4132c65ed0af4a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Luminary099/P32-P35,_P72-P75.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Luminary099/P32-P35,_P72-P75.agc",
+          "localSource": {
+            "kind": "assembly-listing",
+            "path": "docs/phase9-evidence/setup/prepared-assembly-1/Luminary099/MAIN.agc.lst.gz",
+            "member": "Luminary099/P32-P35,_P72-P75.agc",
+            "lineConvention": "Second decimal field before the colon is the include-file source line."
+          },
+          "excerpt": "P32                TC       AVFLAGA                       \t#\n                   TC       P32STRT                       \t#\nP72                TC       AVFLAGP                       \t#\nP32STRT            EXTEND                                 \t#\n                   DCA      P30ZERO                       \t#\n                   DXCH     CENTANG                       \t#\n                   TC       P32/P72A                      \t#\nALMXITA            SXA,2                                  \t#",
+          "excerptLineNumbers": [
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220
+          ],
+          "excerptFormat": "Original source fields from the retained assembler listing; address/object-code columns omitted.",
+          "scope": "Rendezvous-targeting source requires two-vehicle state and navigation updates; not a complete rendezvous."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P20",
+          "label": "CSM rendezvous navigation",
+          "file": "Comanche055/P20-P25.agc",
+          "symbol": "PROG20",
+          "line": 106,
+          "sourceSha256": "4ca82b7e206540ac490bc2dd6fa050c9d14f7f0a4db382261479e283ba993433",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P20-P25.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P20-P25.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P20-P25.agc"
+          },
+          "excerpt": "PROG20\t\tTC\tBANKCALL\n\t\tCADR\tR02BOTH\t\t# IMU STATUS CHECK\n\t\t\t\t\t# BLOCKING OF UPLINK IS DONE BY UPLINK PRG\n\t\tCAF\tZERO\n\t\tTS\tTRKMKCNT\t# ZERO REND TRACKING MARK COUNTER\n\t\tTS\tVHFCNT\t\t# ZERO REND VHF RNG MRK COUNTER\n\t\tTC\tUPFLAG\t\t# SET PREF TRACK ATT FLAG\n\t\tADRES\tPRFTRKAT\t# BIT 10 FLAG 5",
+          "excerptLineNumbers": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Uses the CSM navigation system; independent from the LM program and mechanical docking."
+        }
+      ],
+      "crewHardware": [
+        "RCS rotation and translation controllers",
+        "CMC AUTO / FREE",
+        "Probe RETRACT PRIMARY 2",
+        "Crew transfer and LM jettison hardware"
+      ],
+      "missingSystems": [
+        "Two authoritative spacecraft states",
+        "Rendezvous radar and navigation updates",
+        "Targeting/burn sequence",
+        "Contact, probe and docking dynamics",
+        "Transfer and jettison checklist mapping"
+      ],
+      "nextIntegration": "Validate two-vehicle navigation and one targeting maneuver before final docking; the actual Apollo 11 retract upset must not become a fabricated perfect flight.",
+      "historicalSourceIds": [
+        "rendezvous",
+        "mission-overview",
+        "comanche-source",
+        "luminary-source"
+      ]
+    },
+    {
+      "stageId": "transearth-injection",
+      "title": "Depart lunar orbit",
+      "station": "Columbia CMC; all three crew aboard",
+      "controlAuthority": "CMC-guided SPS maneuver with crew enable, valve selection and monitoring",
+      "requiredCapability": "historicalTransearthInjection",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P30",
+          "label": "External delta-V maneuver preparation",
+          "file": "Comanche055/P30,P37.agc",
+          "symbol": "P30",
+          "line": 127,
+          "sourceSha256": "875d3a2a865543a6a3ceeea7a36723972d6823792e4f07398168c0741628cf87",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P30,P37.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P30,P37.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P30,P37.agc"
+          },
+          "excerpt": "P30\t\tTC\tP30/P31\n\t\tTC\tCNTNUP30\n\t\tTC\tDOWNFLAG\t# RESET UPDATFLG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n\t\tTC\tINTPRET\n\t\tCALL\t\n\t\t\tS30.1\n\t\tEXIT",
+          "excerptLineNumbers": [
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Prepares a supplied maneuver; historical PAD, frame, epoch and state must be established separately."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P40",
+          "label": "CSM SPS thrusting",
+          "file": "Comanche055/P40-P47.agc",
+          "symbol": "P40CSM",
+          "line": 55,
+          "sourceSha256": "ea232bb84ee6aad447b437eeaa6b7125c3a8067120b22755fe96b035becbf35a",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P40-P47.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P40-P47.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P40-P47.agc"
+          },
+          "excerpt": "P40CSM\t\tTC\tDOWNFLAG\n\t\tADRES\tENG2FLAG\n\t\t\n\t\tTC\tINTPRET\n\t\tSLOAD\tBOFF\n\t\t\tECSTEER\t\t# IS THIS AN EXTERNAL DELTA V BURN\n\t\t\tXDELVFLG\n\t\t\tP40S/C\t\t# NO\tCSTEER = ECSTEER",
+          "excerptLineNumbers": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original SPS burn program; source availability is not evidence of an integrated LOI or TEI burn."
+        }
+      ],
+      "crewHardware": [
+        "DSKY P40 and PRO at V99",
+        "CMC AUTO",
+        "Ullage handcontroller input",
+        "SPS second valve bank",
+        "Postburn residual controls"
+      ],
+      "missingSystems": [
+        "Completed crew transfer/LM discard",
+        "TEI state and PAD initialization",
+        "SPS/RCS/IMU loop",
+        "Verified Earth-return trajectory"
+      ],
+      "nextIntegration": "Reuse a proven CSM SPS integration with TEI-specific initialization and checklist; Eagle does not perform this burn.",
+      "historicalSourceIds": [
+        "tei",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "transearth-coast",
+      "title": "Navigate home",
+      "station": "Columbia CMC / manual crew",
+      "controlAuthority": "Ground tracking, CMC navigation, crew correction and entry preparations",
+      "requiredCapability": "historicalTransearthCoast",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P52",
+          "label": "CSM platform realignment",
+          "file": "Comanche055/P51-P53.agc",
+          "symbol": "PROG52",
+          "line": 148,
+          "sourceSha256": "d16d4ea64e82028e1f39e906993aa1132335bc22f9b4986d32232b7a5da4b997",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P51-P53.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P51-P53.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P51-P53.agc"
+          },
+          "excerpt": "PROG52\t\tTC\tPHASCHNG\n\t\tOCT\t00254\n\t\tTC\tDOWNFLAG\n\t\tADRES\tUPDATFLG\t# BIT 7 FLAG 1\n## Page 739\n\t\tTC\tDOWNFLAG\n\t\tADRES\tTRACKFLG\t# BIT 5 FLAG 1\n\t\tTC\tBANKCALL",
+          "excerptLineNumbers": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "The existing Earth-orbit task executes this original program with stationary modeled instruments."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P23",
+          "label": "Cislunar navigation observations",
+          "file": "Comanche055/P20-P25.agc",
+          "symbol": "P23",
+          "line": 2769,
+          "sourceSha256": "4ca82b7e206540ac490bc2dd6fa050c9d14f7f0a4db382261479e283ba993433",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P20-P25.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P20-P25.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P20-P25.agc"
+          },
+          "excerpt": "P23\t\tTC\tDOWNFLAG\n\t\tADRES\tRNDVZFLG\n\t\t\n\t\tTC\t2PHSCHNG\n\t\tOCT\t00004\t\t# LEAVE GROUP 4\n\t\tOCT\t00012\t\t# ENTER GROUP 2\n\t\tCAF\tPRIO13\n\t\tTS\tPHSPRDT2",
+          "excerptLineNumbers": [
+            2769,
+            2770,
+            2771,
+            2772,
+            2773,
+            2774,
+            2775,
+            2776
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Requires star/horizon observations, state vectors and optics/IMU interfaces; not presently a validated playable navigation task."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P61",
+          "label": "CSM entry preparation",
+          "file": "Comanche055/P61-P67.agc",
+          "symbol": "P61",
+          "line": 79,
+          "sourceSha256": "78fa4bf9db6d1e4b217de2f1195d36975ef15a832a3d067a45e9dfc0aae8d6fd",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P61-P67.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P61-P67.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P61-P67.agc"
+          },
+          "excerpt": "P61\t\tCA\tBIT14\t\t# EXTENDED VERB SHOULD BE FREE THIS CLOSE\n\t\tTS\tEXTVBACT\t# TO V37\n\t\t\t\t\t# LOCK OUT EXTENDED VERBS SO CAN USE TFF\n\t\t\t\t\t# ROUTINES.  EXT VERB ERASE IS USED\n\t\t\t\t\t\n\t\tCS\tONE\t\t# REMOVE IF HEADSUP EVER ON UPLINK DATA\n\t\tTS\tHEADSUP\t\t# PRELOAD\n\t\t",
+          "excerptLineNumbers": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original entry program; requires entry initialization, orientation and an atmospheric vehicle model."
+        }
+      ],
+      "crewHardware": [
+        "Optics and DSKY",
+        "Entry PAD readback",
+        "Stowage and entry configuration"
+      ],
+      "missingSystems": [
+        "Return-trajectory state and required corrections",
+        "Entry-navigation/PAD initialization",
+        "Actual checklist and stowage state"
+      ],
+      "nextIntegration": "Connect return alignment and entry preparation to a verified return state; do not invent an Earth-orbit insertion or require canceled MCC-7.",
+      "historicalSourceIds": [
+        "mission-overview",
+        "entry",
+        "comanche-source"
+      ]
+    },
+    {
+      "stageId": "entry-splashdown",
+      "title": "Enter Earth's atmosphere and splash down",
+      "station": "Columbia CMC / SECS / Earth landing systems",
+      "controlAuthority": "Crew separation/configuration, CMC entry guidance and RCS, heat shield, parachute/recovery systems",
+      "requiredCapability": "historicalEarthEntryRecovery",
+      "availability": "source-only",
+      "completeFlightAvailable": false,
+      "originalPrograms": [
+        {
+          "softwareId": "comanche055",
+          "program": "P61",
+          "label": "CSM entry preparation",
+          "file": "Comanche055/P61-P67.agc",
+          "symbol": "P61",
+          "line": 79,
+          "sourceSha256": "78fa4bf9db6d1e4b217de2f1195d36975ef15a832a3d067a45e9dfc0aae8d6fd",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P61-P67.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P61-P67.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P61-P67.agc"
+          },
+          "excerpt": "P61\t\tCA\tBIT14\t\t# EXTENDED VERB SHOULD BE FREE THIS CLOSE\n\t\tTS\tEXTVBACT\t# TO V37\n\t\t\t\t\t# LOCK OUT EXTENDED VERBS SO CAN USE TFF\n\t\t\t\t\t# ROUTINES.  EXT VERB ERASE IS USED\n\t\t\t\t\t\n\t\tCS\tONE\t\t# REMOVE IF HEADSUP EVER ON UPLINK DATA\n\t\tTS\tHEADSUP\t\t# PRELOAD\n\t\t",
+          "excerptLineNumbers": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Original entry program; requires entry initialization, orientation and an atmospheric vehicle model."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P63",
+          "label": "CSM entry initialization",
+          "file": "Comanche055/P61-P67.agc",
+          "symbol": "P63",
+          "line": 309,
+          "sourceSha256": "78fa4bf9db6d1e4b217de2f1195d36975ef15a832a3d067a45e9dfc0aae8d6fd",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P61-P67.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P61-P67.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P61-P67.agc"
+          },
+          "excerpt": "P63\t\tTC\tNEWMODEX\n\t\tMM\t63\n\t\t\n\t\t\t\t\t\t# ARRIVE WITH EBANK = AOG.\n\t\t\t\t\t\t\n\t\tCA\tENTCADR\t\t\t# CONTINUE AT STARTENT AFTER CM/POSE.\n\t\t\n\t\t\t\t\t\t# AT END OF STARTENT, CHANGE ADDRESS IN GOTOADDR",
+          "excerptLineNumbers": [
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Comanche entry P63 is not Luminary lunar-landing P63."
+        },
+        {
+          "softwareId": "comanche055",
+          "program": "P64",
+          "label": "CSM entry after 0.05 g",
+          "file": "Comanche055/P61-P67.agc",
+          "symbol": "P64",
+          "line": 375,
+          "sourceSha256": "78fa4bf9db6d1e4b217de2f1195d36975ef15a832a3d067a45e9dfc0aae8d6fd",
+          "listingUrl": "https://www.ibiblio.org/apollo/listings/Comanche055/P61-P67.agc.html",
+          "pinnedSourceUrl": "https://github.com/virtualagc/virtualagc/blob/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055/P61-P67.agc",
+          "localSource": {
+            "kind": "archive-member",
+            "path": "docs/earth-orbit-evidence/corresponding-source.tar.gz",
+            "member": "Comanche055/P61-P67.agc"
+          },
+          "excerpt": "P64\t\tTC\tNEWMODEX\t\t# ENTER VIA RTB WHEN .05G IS EXCEEDED.\n\t\tMM\t64\n\t\tCA\tV06N74\t\t\t# ROLLC\t\tVI\t\tD\n\t\t\t\t\t\t# XXX.XX DEG\tXXXXX. FPS\tXXX.XX G\n\t\tTS\tENTRYVN\t\t\t# DISPLAY VIA OVERNOUT.\n\t\t\n\t\tTC\tDANZIG\t\t\t# ... AND CONTINUE IN INITROLL ...\n",
+          "excerptLineNumbers": [
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382
+          ],
+          "excerptFormat": "Original source text from the retained corresponding-source archive.",
+          "scope": "Comanche atmospheric-entry P64 is not Luminary landing-approach P64."
+        }
+      ],
+      "crewHardware": [
+        "Guarded CM/SM SEP switches",
+        "CMC AUTO",
+        "Entry-monitor controls",
+        "Automatic landing-system configuration and manual backups"
+      ],
+      "missingSystems": [
+        "SECS/deadfacing and SM separation",
+        "Atmosphere and capsule aerodynamics",
+        "Entry RCS/IMU feedback",
+        "Heat/load and guidance validation",
+        "Parachute/recovery systems"
+      ],
+      "nextIntegration": "Execute original Comanche entry guidance with measured atmospheric response. Keep automatic parachute sequencing separate from invented DSKY actions.",
+      "historicalSourceIds": [
+        "entry",
+        "comanche-source"
+      ]
+    }
+  ]
+}

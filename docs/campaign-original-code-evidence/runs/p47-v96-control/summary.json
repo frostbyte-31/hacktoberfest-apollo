@@ -1,0 +1,109 @@
+{
+  "classification": "NEGATIVE ORIGINAL EXECUTION PROBE",
+  "scope": "Stationary synthetic CSM instrument fixture; no validated navigation initialization or flight state.",
+  "originalSoftware": "Comanche055",
+  "provenance": {
+    "ropeSha256": "2ba31de9291cd10fb351a64d261bae8514a1cb75b4651bfa6a135dfa821a2d79",
+    "engineSha256": "e4c22f27ad2b85231ad3f0ba4f8204093da6eb26059eb23ba04337a84e409a39",
+    "sourceUrl": "https://github.com/virtualagc/virtualagc/tree/f577e3fd917866c59334e6cdd32504f09df76f60/Comanche055",
+    "upstreamRevision": "f577e3fd917866c59334e6cdd32504f09df76f60",
+    "engineSourceArchiveSha256": "6385d1a7abc4dec0ade1931cde2c29ac8801a56f1a0110a24265a2dde4c3a61d",
+    "observerSha256": "e03f6e08cfdd705799d5070998f8af28fbbfdd293ed132b10f97d1a9f99a4be6",
+    "hostFlightMemoryWrites": false,
+    "scope": "Modeled stationary CSM instruments and fixed original-catalog star field; P51 establishes this fixture's reference through original optical marks. Not a restored Apollo 11 Earth-orbit checkpoint, calibrated IMU, orbit dynamics or TLI.",
+    "externalHardwareInterrupt": "KEYRUPT2 after consumed channel016 MARK/REJECT"
+  },
+  "hostFlightMemoryWrites": false,
+  "flightExecuted": false,
+  "historicalCheckpointLoaded": false,
+  "terminateIntegrationControl": true,
+  "p52QualifiedBeforeP47": true,
+  "requestedAtCycle": 13658768,
+  "originalP47RelayObserved": true,
+  "firstP47RelayCycle": 13872935,
+  "lastP47RelayCycle": 13889441,
+  "originalP47N83MonitorObserved": false,
+  "afterRequestDsky": {
+    "PROG": "  ",
+    "VERB": "37",
+    "NOUN": "  ",
+    "R1": "     ",
+    "R2": "     ",
+    "R3": "     ",
+    "signs": {
+      "R1": " ",
+      "R2": " ",
+      "R3": " "
+    },
+    "lamps": {
+      "keyRelease": false,
+      "verbNounFlash": true,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "n62DskyAfterAbort": {
+    "PROG": "  ",
+    "VERB": "16",
+    "NOUN": "62",
+    "R1": "00000",
+    "R2": "00000",
+    "R3": "00000",
+    "signs": {
+      "R1": "+",
+      "R2": "+",
+      "R3": "+"
+    },
+    "lamps": {
+      "keyRelease": true,
+      "verbNounFlash": true,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "alarmDsky": {
+    "PROG": "  ",
+    "VERB": "05",
+    "NOUN": "09",
+    "R1": "01204",
+    "R2": "00000",
+    "R3": "00000",
+    "signs": {
+      "R1": " ",
+      "R2": " ",
+      "R3": " "
+    },
+    "lamps": {
+      "keyRelease": true,
+      "verbNounFlash": true,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "finalDsky": {
+    "PROG": "00",
+    "VERB": "  ",
+    "NOUN": "  ",
+    "R1": "     ",
+    "R2": "     ",
+    "R3": "     ",
+    "signs": {
+      "R1": " ",
+      "R2": " ",
+      "R3": " "
+    },
+    "lamps": {
+      "keyRelease": false,
+      "verbNounFlash": false,
+      "operatorError": false,
+      "computerActivity": false
+    }
+  },
+  "p47MonitoringQualified": false,
+  "observedFailure": "Original 01204: negative or zero WAITLIST call.",
+  "cause": "Exact initialization cause is unresolved; this fixture supplies no validated CMC navigation state.",
+  "interpretation": "Original P47 was selected transiently but did not sustain its automatic N83 monitor. N62 zeros after abort are not a qualified P47 result.",
+  "traceSha256": "eec09a27379eb85b9249bc76f3db8b9c7fc31c9941a5d9f0536134fae34c9899",
+  "rawTraceBytes": 6675350,
+  "frameCount": 23
+}

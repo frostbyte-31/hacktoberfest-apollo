@@ -135,6 +135,28 @@ class OriginalCmcAlignmentTests(unittest.TestCase):
             self.assertIs(computer['historicalCheckpointLoaded'],False)
             self.assertAlmostEqual(computer['cpuSeconds'],computer['cycle']*PERIOD,places=9)
 
+    def test_fresh_original_p47_probe_cannot_qualify_from_cold_n62_zeros(self):
+        runner = ROOT/'docs/campaign-original-code-evidence/experiments/probe_p47.py'
+        folder = self.base/'p47-negative'
+        result = subprocess.run([sys.executable, '-B', str(runner), '--out', str(folder),
+                                 '--assets', str(self.spec)], cwd=ROOT,
+                                capture_output=True, text=True, timeout=30)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        summary = json.loads((folder/'summary.json').read_text())
+        self.assertTrue(summary['p52QualifiedBeforeP47'])
+        self.assertTrue(summary['originalP47RelayObserved'])
+        self.assertFalse(summary['originalP47N83MonitorObserved'])
+        self.assertFalse(summary['p47MonitoringQualified'])
+        self.assertNotEqual(summary['afterRequestDsky']['PROG'], '47')
+        self.assertEqual(summary['n62DskyAfterAbort']['NOUN'], '62')
+        self.assertNotEqual(summary['n62DskyAfterAbort']['PROG'], '47')
+        self.assertEqual(summary['alarmDsky']['R1'], '01204')
+        self.assertEqual(summary['finalDsky']['PROG'], '00')
+        self.assertFalse(summary['hostFlightMemoryWrites'])
+        self.assertFalse(summary['flightExecuted'])
+        self.assertFalse(summary['historicalCheckpointLoaded'])
+        self.assertEqual(summary['provenance']['ropeSha256'], ROPE_SHA256)
+
     def test_invalid_instrument_requests_do_not_advance_original_clock(self):
         computer=CmcAlignmentProcess(self.assets,self.base/'invalid')
         try:

@@ -53,7 +53,7 @@ export function createEarthOrbitPanel({root,onState=()=>{},onAction=()=>{},fetch
   function render() {
     if (disposed) return;
     const snapshot=client.state,computer=snapshot?.computer,busy=loading||client.busy,ready=visible&&client.available&&!error&&!busy&&snapshot?.status==='ready';
-    root.setAttribute('aria-busy',String(busy));band.textContent=loading?'CONNECTING TO ORIGINAL CMC':computer?(labels.mode??EARTH_ORBIT_MODE):client.available?'ORIGINAL CMC / READY TO START':'ORIGINAL CMC / UNAVAILABLE';
+    root.setAttribute('aria-busy',String(busy));band.textContent=loading?'CONNECTING TO ORIGINAL CMC':computer?(error||snapshot?.status==='stopped'||snapshot?.status==='error'?'ORIGINAL CMC / LAST OBSERVATION':labels.mode??EARTH_ORBIT_MODE):client.available?'ORIGINAL CMC / READY TO START':'ORIGINAL CMC / UNAVAILABLE';
     band.classList.toggle('earth-mode-stale',Boolean(error)||snapshot?.status==='error'||snapshot?.status==='stopped');
     clock.textContent=computer?`${computer.cpuSeconds.toFixed(3)} s CPU time · ${computer.cycle.toLocaleString('en-US')} calls`:'CPU clock unavailable';
     clock.title='Elapsed original computer execution. This is not historical mission elapsed time or a spacecraft clock.';

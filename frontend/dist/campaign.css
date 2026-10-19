@@ -10,3 +10,25 @@
 
 /* The playable console keeps its whole DSKY visible during manual operation. */
 .earth-playing .campaign-transport{position:static}.earth-playing .earth-orbit-panel{scroll-margin-top:16px}
+
+/* Current player task stays separate from reference and flight progress. */
+.campaign-task{margin:0 0 18px;padding:22px;border-color:#536e5b;scroll-margin-top:125px;background:linear-gradient(125deg,#18291f,#10191d 60%)}
+.campaign-task-top,.campaign-task-foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.campaign-task-top{padding-bottom:16px;border-bottom:1px solid #354739;margin-bottom:20px;font:9px/1.7 ui-monospace,monospace}
+.campaign-task-mode{color:#c5dfbc;letter-spacing:.8px}.campaign-task-progress{color:#aab9a5;text-align:right}
+.campaign-task-layout{display:grid;grid-template-columns:minmax(300px,1.6fr) minmax(260px,1fr);gap:35px}
+.campaign-task h2{font-size:29px;line-height:1.2;margin:8px 0 12px}.campaign-task .eyebrow{font-size:9px}
+.campaign-task-objective{font-size:13px;line-height:1.9;max-width:850px;color:#bacbbd}
+.campaign-task-next{font-size:12px;line-height:1.8;padding:13px 15px;background:#0b1612;border-left:2px solid #97b58d;margin-top:16px;color:#d5e3c9}
+.campaign-task-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.campaign-task-actions button{font-size:11px;padding:11px 15px}
+.campaign-task-result{font:9px/1.8 ui-monospace,monospace;color:#a4b1a2;margin-top:12px;overflow-wrap:anywhere}
+.campaign-task-source{font-size:11px;line-height:1.85;background:#0d1518;border:1px solid #2e4138;border-radius:3px;padding:15px;align-self:start}
+.campaign-task-source summary{font-size:12px;cursor:pointer;color:#c8d9c8}.campaign-task-source p{margin-top:12px;color:#a1b6a9}
+.campaign-task-source ul{list-style:none;padding:0;margin:12px 0 0}.campaign-task-source li{margin:0 0 14px}
+.campaign-task-source small{display:block;font:9px/1.8 ui-monospace,monospace;color:#94aa9d;overflow-wrap:anywhere}
+.campaign-task-source a{font-size:11px;line-height:1.8;overflow-wrap:anywhere}.campaign-task-missing{font-size:10px;border-top:1px solid #2a3a31;padding-top:10px}
+.campaign-task-source li details{margin-top:8px}.campaign-task-source li summary{font-size:10px;color:#9ab49d}.campaign-task-source pre{padding:10px;background:#060c0a;border:1px solid #263b2c;overflow:auto;font:9px/1.8 ui-monospace,monospace;tab-size:3;color:#bed6b9;max-height:250px}
+.campaign-task-foot{border-top:1px solid #354739;margin-top:18px;padding-top:12px}.campaign-task-foot p{font-size:10px;line-height:1.8;max-width:880px;color:#96a99a}.campaign-task-foot button{font-size:9px;white-space:nowrap}
+.campaign-task[data-task-status=complete]{border-color:#c0d49b}.campaign-chapters button[data-task-status=completed-current-run] small{color:#c2e0ae}
+@media(max-width:950px){.campaign-task-layout{grid-template-columns:1fr;gap:18px}.campaign-task-source{width:100%}.campaign-task h2{font-size:26px}}
+@media(max-width:640px){.campaign-task{padding:17px;scroll-margin-top:170px}.campaign-task-top,.campaign-task-foot{display:block}.campaign-task-top{font-size:8px}.campaign-task-progress{display:block;text-align:left;margin-top:7px}.campaign-task h2{font-size:24px}.campaign-task-objective{font-size:12px}.campaign-task-foot button{margin-top:12px}.campaign-task-actions button{font-size:10px;flex:1}.campaign-task-layout{display:block}.campaign-task-source{margin-top:18px}}

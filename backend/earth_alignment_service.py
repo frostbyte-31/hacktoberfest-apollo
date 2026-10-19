@@ -85,7 +85,20 @@ class EarthAlignmentService(EarthOrbitService):
         return {**data, 'mode': MODE, 'software': 'Comanche055', 'scope': SCOPE,
                 'supportedKeys': list(KEYS) if data.get('available') is True else [],
                 'supportedControls': list(CONTROLS) if data.get('available') is True else [],
-                'flightExecuted': False, 'translunarInjection': False}
+                'flightExecuted': False, 'translunarInjection': False,
+                'originalPrograms': {
+                    'P52': {'available': data.get('available') is True,
+                            'classification': MODE,
+                            'scope': 'Qualified original P52 with stationary modeled CSM instruments.'},
+                    'P47': {'available': False,
+                            'classification': 'UNVALIDATED ORIGINAL PROGRAM',
+                            'unavailableReason': (
+                                'P47 has no validated playable task in this instrument fixture. '
+                                'A fresh original P52-to-P47 probe reached original alarm 01204 '
+                                'instead of sustained thrust monitoring. The exact initialization '
+                                'cause is unresolved; no validated CMC navigation state is supplied. '
+                                'An N62 display alone is not evidence that P47 is running. '
+                                'See docs/campaign-original-code-evidence/README.md.')}}}
 
     def instrument(self, sessionId, sequence, control, value):
         if type(sequence) is not int or not 0 <= sequence <= 2**31-1:

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "runs": {
+    "p47-probe": {
+      "traceSha256": "a19129773bd7201258cbae6a0fc3c286e13868dd210731f0775d521726d7f682",
+      "rawTraceBytes": 6629204,
+      "alarm": "01204",
+      "originalP47MonitorObserved": false,
+      "v96Control": false
+    },
+    "p47-repeat": {
+      "traceSha256": "a19129773bd7201258cbae6a0fc3c286e13868dd210731f0775d521726d7f682",
+      "rawTraceBytes": 6629204,
+      "alarm": "01204",
+      "originalP47MonitorObserved": false,
+      "v96Control": false
+    },
+    "p47-v96-control": {
+      "traceSha256": "eec09a27379eb85b9249bc76f3db8b9c7fc31c9941a5d9f0536134fae34c9899",
+      "rawTraceBytes": 6675350,
+      "alarm": "01204",
+      "originalP47MonitorObserved": false,
+      "v96Control": true
+    }
+  },
+  "connectedRepeatIdentical": true,
+  "tests": {
+    "count": 38,
+    "result": "PASS",
+    "elapsedSeconds": 33.064
+  },
+  "webAssemblyValidation": "NOT RUN",
+  "flightExecuted": false
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "order": 1,
+    "title": "Earth parking orbit",
+    "mode": "ORIGINAL CMC / LAST OBSERVATION",
+    "sourceLinks": 2
+  },
+  {
+    "order": 2,
+    "title": "Translunar injection",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 3,
+    "title": "Retrieve Eagle",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 1
+  },
+  {
+    "order": 4,
+    "title": "Navigate to the Moon",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 3
+  },
+  {
+    "order": 5,
+    "title": "Brake into lunar orbit",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 6,
+    "title": "Establish the lunar parking orbit",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 7,
+    "title": "Activate Eagle and prepare guidance",
+    "mode": "VERIFIED RECORDING / SEPARATE EXPERIMENT",
+    "sourceLinks": 3
+  },
+  {
+    "order": 8,
+    "title": "Undock and inspect Eagle",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 9,
+    "title": "Lower Eagle's orbit",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 10,
+    "title": "Descend and land Eagle",
+    "mode": "VERIFIED RECORDING / SEPARATE EXPERIMENT",
+    "sourceLinks": 3
+  },
+  {
+    "order": 11,
+    "title": "Tranquility Base",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 1
+  },
+  {
+    "order": 12,
+    "title": "Launch from the Moon",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 1
+  },
+  {
+    "order": 13,
+    "title": "Rejoin Columbia",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 3
+  },
+  {
+    "order": 14,
+    "title": "Depart lunar orbit",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 2
+  },
+  {
+    "order": 15,
+    "title": "Navigate home",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 3
+  },
+  {
+    "order": 16,
+    "title": "Enter Earth's atmosphere and splash down",
+    "mode": "ORIGINAL SOURCE / FLIGHT SYSTEMS REQUIRED",
+    "sourceLinks": 3
+  }
+]

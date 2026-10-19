@@ -3,17 +3,51 @@ import {createCampaignViewer,buildCampaignConfiguration} from './campaign-view.m
 import {createAgcShowcase} from './agc-showcase.mjs';
 import {createEarthOrbitPanel} from './earth-orbit-panel.mjs?v=p52-1';
 import {createEarthAlignmentPanel} from './earth-alignment-panel.mjs?v=p52-2';
+import {createCampaignTaskPanel} from './campaign-task-panel.mjs';
+import {campaignTaskStatus,observeCampaignTaskSnapshot,invalidateCampaignTaskSession,readCampaignTaskProgress,saveCampaignTaskProgress,resetCampaignTaskProgress,serializeCampaignTaskProgress} from './campaign-task-state.mjs';
+import {validateCampaignProgramIndex} from './campaign-programs.mjs';
 
 const $=id=>document.getElementById(id),params=new URLSearchParams(location.search);
 const diagnostic=params.get('task')==='diagnostic';
 let state=null,availability=null,viewer=null,showcase=null,touring=false,timer=null,waitingForEvidence=false,finished=false,loadController=null,earthPanel=null,cmcAvailable=false;
 let alignmentObserved=false;
+let taskPanel=null,observation=null,programIndex=null,taskProgress,taskStorage=null,storageAvailable=true,lastSavedHistory=null,historyClearedSessionId=null;
+try{taskStorage=globalThis.localStorage;}catch{storageAvailable=false;}
+taskProgress=readCampaignTaskProgress(taskStorage);
 const computerCapability=()=>`${diagnostic?'LIVE CMC TASK / AVAILABLE':alignmentObserved?'P52 OBSERVED / MODELED INSTRUMENTS':'LIVE P52 / AVAILABLE'} · FULL FLIGHT / UNAVAILABLE`;
 const stageButtons=new Map(),goalNodes=new Map();
 const make=(tag,text,className)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;};
 function clearTimer(){if(timer!==null){clearTimeout(timer);timer=null;}}
 function pauseTour(){touring=false;waitingForEvidence=false;clearTimer();showcase?.pause();renderTransport();}
 function evidenceKind(){return state?.currentStage.evidenceIds.find(id=>id==='guidance'||id==='propulsion')??null;}
+function updateTask(){
+  if(!state||!taskPanel)return;
+  const status=campaignTaskStatus(taskProgress,state.currentStageId,{alignmentAvailable:cmcAvailable});
+  $('campaign-task').hidden=diagnostic;
+  taskPanel.update({stage:state.currentStage,status,observation,programs:programIndex?.stages.find(item=>item.stageId===state.currentStageId),savedCount:taskProgress.receipts.length,storageAvailable});
+  for(const item of state.catalog.stages){
+    const button=stageButtons.get(item.id);if(!button)continue;
+    const task=campaignTaskStatus(taskProgress,item.id,{alignmentAvailable:cmcAvailable});
+    button.dataset.taskStatus=task.status;
+    button.querySelector('small').textContent=task.currentRun?'ORIGINAL TASK VERIFIED':task.complete?'SAVED TASK HISTORY':task.canOperate?'PLAY ORIGINAL CMC':item.evidenceIds.includes('undocking-trainer')?'SEPARATE CHECKLIST TRAINER':item.evidenceIds.length?'SEPARATE RECORDED EVIDENCE':'FLIGHT SYSTEMS REQUIRED';
+  }
+}
+function observeTask(value){
+  observation=value;cmcAvailable=value.available;alignmentObserved=value.snapshot?.task.complete===true;
+  if(value.error||!value.available){taskProgress=invalidateCampaignTaskSession(taskProgress);}
+  else if(!diagnostic&&value.snapshot&&(historyClearedSessionId===null||value.snapshot.sessionId!==historyClearedSessionId)){
+    try{
+      taskProgress=observeCampaignTaskSnapshot(taskProgress,value.snapshot);
+      const saved=serializeCampaignTaskProgress(taskProgress);
+      if(saved!==lastSavedHistory){storageAvailable=saveCampaignTaskProgress(taskStorage,taskProgress);lastSavedHistory=saved;}
+    }catch(error){
+      // Invalid/stale observations cannot retain a claim about a live run.
+      taskProgress=readCampaignTaskProgress(taskStorage);
+      observation={...value,error:`Task qualification needs a fresh observation: ${error.message}`};
+    }
+  }
+  updateTask();const goal=goalNodes.get('lunar-orbit');if(goal)goal.querySelector('small').textContent=cmcAvailable?computerCapability():'FULL FLIGHT / UNAVAILABLE';
+}
 function renderTransport(){
   document.body.classList.toggle('earth-playing',Boolean(state?.currentStageId==='earth-parking'&&!touring));
   const ready=Boolean(state);$('tour-start').disabled=!ready||touring;$('tour-pause').disabled=!touring;$('tour-restart').disabled=!ready;
@@ -58,6 +92,7 @@ function render(){
   const kind=evidenceKind();$('evidence-insert').hidden=!kind;$('trainer-insert').hidden=!stage.evidenceIds.includes('undocking-trainer');
   if(kind){showcase?.show(kind);$('evidence-title').textContent=kind==='guidance'?'How the original computer prepares guidance.':'Original engine commands and sensor feedback.';}else showcase?.pause();
   $('tour-complete').hidden=!finished;
+  updateTask();
   const url=new URL(location.href);url.searchParams.set('stage',stage.id);url.searchParams.delete('tour');history.replaceState(null,'',url);
   renderTransport();
 }
@@ -73,9 +108,16 @@ async function load(){
     state=createCampaignState(await response.json());availability=assessMissionAvailability(state.catalog);
     if(params.has('stage')){try{state=selectCampaignStage(state,params.get('stage'));}catch{/* Unknown bookmarks safely start in Earth orbit. */}}
     buildNavigation();render();
-    if(params.get('play')==='1'&&state.currentStageId==='earth-parking')$('earth-console').scrollIntoView({block:'start'});
+    if(params.get('play')==='1')$(diagnostic?'earth-console':'campaign-task').scrollIntoView({block:'start'});
     if(params.get('tour')==='1'){state=createCampaignState(state.catalog);render();touring=true;finished=false;renderTransport();paceTour();}
   }catch(error){$('campaign-error').hidden=false;$('campaign-error-copy').textContent=error.message;}
+  finally{clearTimeout(timeout);}
+}
+taskPanel=createCampaignTaskPanel({root:$('campaign-task'),onOperate:()=>{pauseTour();$('earth-console').scrollIntoView({block:'start'});},onContinue:()=>{pauseTour();state=nextCampaignStage(state);render();$('campaign-task').scrollIntoView({block:'start'});},onEvidence:()=>{pauseTour();$('evidence-insert').scrollIntoView({block:'start'});},onReset:()=>{historyClearedSessionId=observation?.snapshot?.sessionId??null;taskProgress=resetCampaignTaskProgress();storageAvailable=saveCampaignTaskProgress(taskStorage,taskProgress);lastSavedHistory=serializeCampaignTaskProgress(taskProgress);updateTask();}});
+async function loadProgramIndex(){
+  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),10000);
+  try{const response=await fetch('./data/campaign-programs.json',{cache:'no-cache',signal:controller.signal});if(!response.ok)throw new Error(`HTTP ${response.status}`);programIndex=validateCampaignProgramIndex(await response.json());updateTask();}
+  catch(error){taskPanel.sourceError(error.message);}
   finally{clearTimeout(timeout);}
 }
 try{viewer=createCampaignViewer($('campaign-canvas'));new ResizeObserver(()=>viewer?.draw()).observe($('campaign-canvas'));}catch(error){$('graphics-status').textContent=`3D configuration unavailable: ${error.message}. Historical text and sources remain accessible.`;}
@@ -84,7 +126,7 @@ try{showcase=createAgcShowcase({root:$('agc-showcase'),canvas:$('agc-canvas'),on
   if(touring&&waitingForEvidence&&record.available&&!record.excerptComplete){renderTransport();if(!record.playing)$('tour-status').textContent='The recorded excerpt is paused. Use Play observations to continue, or Pause tour to explore.';}
   if(touring&&waitingForEvidence&&record.excerptComplete&&!record.playing){waitingForEvidence=false;renderTransport();$('tour-status').textContent='Verified excerpt complete. Resuming the historical reference in 5 seconds; no flight maneuver was completed.';scheduleNext(5000);}
 }});showcase.load();}catch(error){$('agc-showcase').textContent=`Verified inspector unavailable: ${error.message}. No substitute telemetry is shown.`;}
-try{earthPanel=(diagnostic?createEarthOrbitPanel:createEarthAlignmentPanel)({root:$('earth-console'),onAction:pauseTour,onState:observation=>{cmcAvailable=observation.available;alignmentObserved=observation.snapshot?.task.alignmentCompleted===true;const goal=goalNodes.get('lunar-orbit');if(goal)goal.querySelector('small').textContent=cmcAvailable?computerCapability():'FULL FLIGHT / UNAVAILABLE';}});earthPanel.load();$('earth-open').textContent=diagnostic?'Play cold-start diagnostic':'Play P52 alignment';}catch(error){$('earth-console').textContent=`Original CMC console unavailable: ${error.message}`;}
+try{earthPanel=(diagnostic?createEarthOrbitPanel:createEarthAlignmentPanel)({root:$('earth-console'),onAction:pauseTour,onState:observeTask});earthPanel.load();$('earth-open').textContent=diagnostic?'Play cold-start diagnostic':'Play P52 alignment';}catch(error){$('earth-console').textContent=`Original CMC console unavailable: ${error.message}`;}
 $('earth-open').addEventListener('click',()=>{pauseTour();$('earth-console').scrollIntoView({block:'start'});});
 $('tour-start').addEventListener('click',()=>{if(!state)return;const resume=!finished;if(finished){state=createCampaignState(state.catalog);finished=false;render();}touring=true;renderTransport();paceTour(resume);});
 $('tour-pause').addEventListener('click',pauseTour);
@@ -93,5 +135,5 @@ $('previous-chapter').addEventListener('click',()=>{pauseTour();finished=false;s
 $('next-chapter').addEventListener('click',()=>{pauseTour();finished=false;state=nextCampaignStage(state);render();});
 $('review-chapter').addEventListener('click',()=>{state=reviewCampaignStage(state);render();});
 $('reset-configuration').addEventListener('click',()=>viewer?.reset());$('retry-campaign').addEventListener('click',load);$('retry-recording').addEventListener('click',()=>showcase?.load());
-document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseTour();});window.addEventListener('pagehide',event=>{pauseTour();if(event.persisted)return;loadController?.abort();showcase?.dispose();earthPanel?.dispose();viewer?.dispose();});
-load();
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseTour();});window.addEventListener('pagehide',event=>{pauseTour();if(event.persisted)return;loadController?.abort();showcase?.dispose();earthPanel?.dispose();viewer?.dispose();taskPanel?.dispose();});
+load();loadProgramIndex();

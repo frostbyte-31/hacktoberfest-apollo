@@ -79,6 +79,16 @@ def source(row: dict, line: int, **extra) -> dict:
     return {"rawLine": line, "cycle": row["cycle"], **extra}
 
 
+def ordered_dot3(a, b):
+    """Keep the static illustration's serialized arithmetic stable across Python.
+
+    Python3.12 changed builtin sum(float) to compensated summation. Explicit
+    left-to-right additions preserve the already exported presentation values;
+    this independent illustration never supplies AGC telemetry or physics.
+    """
+    return (a[0] * b[0] + a[1] * b[1]) + a[2] * b[2]
+
+
 def export_case(identifier: str, retained_name: str, title: str, analysis_key: str,
                 inventory: dict, retained_analysis: dict, analyzer) -> dict:
     directory = RUNS / retained_name
@@ -133,7 +143,7 @@ def export_case(identifier: str, retained_name: str, title: str, analysis_key: s
     # M transpose for the documented nominal, zero-libration rotation. This
     # independently calculated static site illustration is never AGC telemetry.
     matrix = geometry["independent_physical_moon_matrix_at_TLAND"]
-    site_ref = [sum(matrix[j][i] * site[j] for j in range(3)) for i in range(3)] if site else None
+    site_ref = [ordered_dot3([matrix[j][i] for j in range(3)], site) for i in range(3)] if site else None
     initial = {
         "classification": "SYNTHETIC initialized state; not historical flight telemetry",
         "positionM": position, "velocityMps": velocity,

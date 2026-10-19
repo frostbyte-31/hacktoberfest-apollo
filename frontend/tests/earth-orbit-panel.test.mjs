@@ -77,3 +77,10 @@ test('only human console actions notify the campaign; loading and polling cannot
   try {panel.setVisible(true);await panel.load();assert.equal(actions,0);context.mock.timers.tick(1001);await flush();assert.equal(actions,0);button(root,'Refresh observation').click();await flush();assert.equal(actions,1);context.mock.timers.tick(1001);await flush();assert.equal(actions,1);}
   finally {panel.dispose();}
 });
+
+test('stopping the original computer labels retained output as a last observation',async()=>{
+  const doc=new Document(),root=doc.createElement('section');
+  const panel=createEarthOrbitPanel({root,fetchImpl:async path=>response(path.endsWith('/capabilities')?capabilities():path.endsWith('/stop')?{...frame(),status:'stopped'}:frame())});
+  try{panel.setVisible(true);await panel.load();button(root,'Stop computer').click();await flush();assert.equal(panel.state.snapshot.status,'stopped');assert.match(root.textContent,/ORIGINAL CMC \/ LAST OBSERVATION/);assert.equal(key(root,'VERB').disabled,true);assert.equal(output(root,'PROG').textContent,'00');}
+  finally{panel.dispose();}
+});

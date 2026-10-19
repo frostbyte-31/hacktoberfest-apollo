@@ -96,6 +96,16 @@ class PropulsionRecordingTests(unittest.TestCase):
                     self.assertLessEqual(display_source['cycle'], frame['cycle'])
             self.assertEqual(found, len(selected))
 
+    def test_display_projection_sum_does_not_follow_host_python_algorithm_changes(self):
+        # Python3.12+ builtin sum(float) retains these small terms; Python3.11
+        # rounded them in insertion order. Projection export must retain its
+        # existing operation order without changing raw recorded measurements.
+        for values, expected in [([1e16, 1., 1.], 1e16),
+                                  ([1e16, 1., -1e16], 0.)]:
+            with self.subTest(values=values):
+                self.assertEqual(recording._ordered_projection_sum(values), expected)
+                self.assertNotEqual(math.fsum(values), expected)
+
     def test_display_projection_is_independent_math_not_dynamics(self):
         for case in self.cases.values():
             origin = case['source']['initialProjectionAngleRad']

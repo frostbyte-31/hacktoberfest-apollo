@@ -1,0 +1,16 @@
+python3 -B tools/final_demo.py --port 4181
+Apollo 11 · final mission laboratory
+Original Luminary rope and sealed Phases 10–12 evidence verified.
+Recorded propulsion samples verified against actual raw traces.
+Propulsion export verification: {"byteIdentical": true, "recordedObservationsExact": true, "derivedProjectionUlpLimit": 8, "derivedProjectionDifferences": 0}
+Checking locked runtime and preparing original attitude/engine assets…
+Open: http://127.0.0.1:4181/
+Playable P52: /campaign.html?play=1&stage=earth-parking (original Comanche + modeled instruments; no orbital flight)
+Alignment instruments: ready for original P51 setup and manual P52 on request
+Cold-start diagnostic: /campaign.html?play=1&task=diagnostic
+Columbia computer: ready for original native execution on request
+Undocking checklist: /play.html · shared educational flight: /mission.html
+Recorded guidance: /guidance.html · existing attitude controls: /attitude-replay.html
+Mode: verified native attitude + independent educational physics + authentic recordings + checklist training
+Ctrl+C shuts down owned workers and physical model processes.
+Model crew: not configured; labeled deterministic crew available
